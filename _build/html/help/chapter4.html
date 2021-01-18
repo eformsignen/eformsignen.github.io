@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Introduction to Form Builder</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Managing Templates in Web Form Designer" href="chapter5.html" />
+  <link rel="prev" title="Introduction to Web Form Designer" href="chapter3.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <img class="logo" src="../_static/forcs.png" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter2.html" class="reference internal ">Basic Info</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Introduction to Web Form Designer</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Introduction to Form Builder</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#form-builder-overview" class="reference internal">Form Builder Overview</a></li>
+                
+                  <li class="toctree-l2"><a href="#overview-of-components" class="reference internal">Overview of Components</a></li>
+                
+                  <li class="toctree-l2"><a href="#how-to-use-each-component-type" class="reference internal">How to Use Each Component Type</a></li>
+                
+                  <li class="toctree-l2"><a href="#upload-form-file" class="reference internal">Upload Form File</a></li>
+                
+                  <li class="toctree-l2"><a href="#configuring-template-settings" class="reference internal">Configuring Template Settings</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Managing Templates in Web Form Designer</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Managing Templates in Form Builder</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Managing Documents</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Customizing eformsign</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Connecting with External Services</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+    <li>Introduction to Form Builder</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="chapter3.html"
+       title="previous chapter">← Introduction to Web Form Designer</a>
+  </li>
+  <li class="next">
+    <a href="chapter5.html"
+       title="next chapter">Managing Templates in Web Form Designer →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="introduction-to-form-builder">
+<span id="formbuilder"></span><h1>Introduction to Form Builder<a class="headerlink" href="#introduction-to-form-builder" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="form-builder-overview">
+<h2>Form Builder Overview<a class="headerlink" href="#form-builder-overview" title="Permalink to this headline">¶</a></h2>
+<p>Form Builder Also known as OZ in Office, Form Builder is a form editor
+which converts documents created using Microsoft Office into electronic
+documents containing components (fields). By using OZ in Office, you can
+easily convert existing Excel, Word, and PowerPoint forms such as
+contracts, applications, and agreements into electronic documents.</p>
+<p>Previously, converting Excel, Word, or PowerPoint documents into
+electronic documents required the use of an IDE (Integrated Development
+Environment) needing a high degree of programming knowledge. Now, with
+OZ in Office, anyone with the ability to use Microsoft Office can easily
+create electronic documents.</p>
+<p>OZ in Office, provided as a Microsoft Office add-in, is easy to use as
+it’s displayed as a ribbon menu and contains various components
+including signature, check box, text box, camera, and voice.</p>
+<p>The process of creating electronic documents using OZ in Office’s
+components is as follows:</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/ozinoffice-flow_1.png"><img alt="OZ in Office Usage Flow" src="../_images/ozinoffice-flow_1.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">OZ in Office Usage Flow</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="download-form-builder">
+<h3>Download Form Builder<a class="headerlink" href="#download-form-builder" title="Permalink to this headline">¶</a></h3>
+<p>Download Form Builder 1. Login to eformsign and then click the menu icon
+(<img alt="image1" src="../_images/menu_icon.png" />) on the top left corner of the dashboard screen to open the
+sidebar menu. Then, click the <strong>Download eformsign form builder</strong> button
+at the bottom.</p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/formbuilder_download.png"><img alt="Location of the Download eformsign Form Builder Button" src="../_images/formbuilder_download.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">Location of the Download eformsign Form Builder Button</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>2. The <strong>Download eformsign form builder</strong> page will be displayed, as
+shown below. Click the <strong>Download form builder</strong> button at the bottom of
+the page.</p>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/formbuilder_download_2.png"><img alt="eformsign Form Builder Download Page" src="../_images/formbuilder_download_2.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">eformsign Form Builder Download Page</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>3. Select a location to save the Form Builder executable file and
+download it.</p>
+</div>
+<div class="section" id="install-form-builder">
+<h3>Install Form Builder<a class="headerlink" href="#install-form-builder" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the Form Builder executable file to run it.</p></li>
+</ol>
+<p>2. When the Wizard screen shown below is displayed, select the
+<strong>Complete</strong> option and then click the <strong>Next</strong> button.</p>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/formbuilder_wizard_1.png"><img alt="Form Builder Installation Screen (1)" src="../_images/formbuilder_wizard_1.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Form Builder Installation Screen (1)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>When the installation proceeds, the following screen is displayed.</p></li>
+</ol>
+<div class="figure align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/formbuilder_wizard_2.png"><img alt="Form Builder Installation Screen (2)" src="../_images/formbuilder_wizard_2.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Form Builder Installation Screen (2)</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>4. When the installation is completed, the following screen is
+displayed. Click the <strong>Finish</strong> button to close the installation screen.</p>
+<div class="figure align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/formbuilder_wizard_3.png"><img alt="Form Builder Installation Screen (3)" src="../_images/formbuilder_wizard_3.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Form Builder Installation Screen (3)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>5. Check whether Form Builder was installed properly by running MS
+Office (Word, Excel, PowerPoint). If <strong>OZ in Word/Excel/PowerPoint</strong> is
+displayed as below, then it was installed properly.</p>
+<div class="figure align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/formbuilder_word_4.png"><img alt="OZ in Word Ribbon Menu" src="../_images/formbuilder_word_4.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">OZ in Word Ribbon Menu</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="form-builder-menu-layout">
+<h3>Form Builder Menu Layout<a class="headerlink" href="#form-builder-menu-layout" title="Permalink to this headline">¶</a></h3>
+<p>If you run Microsoft Office Excel, Word, or PowerPoint after installing
+Form Builder, you can see that the <strong>OZ in Excel, OZ in Word, or OZ in
+PowerPoint</strong> tab is added to the OZ in Office ribbon menu.</p>
+<div class="figure align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/ozinoffice.png"><img alt="Microsoft Office OZ in Office Ribbon Menu" src="../_images/ozinoffice.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">Microsoft Office OZ in Office Ribbon Menu</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple">
+<li><p><strong>File:</strong> Allows to execute (preview) the document as an electronic
+form, upload the document to eformsign as a template, or download an
+electronic form from eformsign.</p></li>
+<li><p><strong>Property:</strong> Sets the component properties including ID, and Items.</p></li>
+<li><p><strong>Input:</strong> Adds components used in templates.</p></li>
+<li><p><strong>Info:</strong> Adds the necessary components in order to have information
+such as user and date to be automatically entered into templates.</p></li>
+<li><p><strong>Drawing:</strong> Draws components in the location and size you want.
+<strong>Drawing</strong> is supported only in Word and PowerPoint.</p></li>
+<li><p><strong>Deletion:</strong> Deletes components after selecting components and then
+clicking the <strong>Delete</strong> button.</p></li>
+<li><p><strong>Window:</strong> Allows to open the <strong>Properties</strong> tab of the selected
+component or display selected components in the <strong>Selection</strong> tab.</p></li>
+<li><p><strong>Help:</strong> Checks the version of Form Builder and performs updates.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="overview-of-components">
+<h2>Overview of Components<a class="headerlink" href="#overview-of-components" title="Permalink to this headline">¶</a></h2>
+<p>Components Components are used to create fields in electronic documents
+in which users can enter information. Many different components
+including signature, check, date, and text are provided in Form Builder,
+and each component can be configured in detail by using the <strong>Component
+Properties</strong> tab.</p>
+<div class="section" id="component-types">
+<h3>Component Types<a class="headerlink" href="#component-types" title="Permalink to this headline">¶</a></h3>
+<p>The components provided in eformsign are as follows:</p>
+<div class="figure align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/components-in-word.png"><img alt="Component Types" src="../_images/components-in-word.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Component Types</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="#check">Check</a><strong>:</strong> Components Check Ticks a check box.</p></li>
+<li><p><a class="reference external" href="#select">Radio</a><strong>:</strong> Components Radio Selects an item among
+multiple items (can also be set to select multiple items).</p></li>
+<li><p><a class="reference external" href="#text">Text</a><strong>:</strong> Components Text Enters short text (usually 1
+to 2 words).</p></li>
+<li><p><a class="reference external" href="#text">Multiline</a><strong>:</strong> Components Multiline Enters long text
+with multiple lines.</p></li>
+<li><p><a class="reference external" href="#combo">Combo</a><strong>:</strong> Components Combo Displays a drop-down menu
+that allows you to select an item.</p></li>
+<li><p><a class="reference external" href="#date">Datetime</a><strong>:</strong> Components Datetime Enters a specific
+date.</p></li>
+<li><p><a class="reference external" href="#numeric">Numeric</a><strong>:</strong> Components Numeric Enters a number.</p></li>
+<li><p><a class="reference external" href="#toggle">Toggle</a><strong>:</strong> Components Toggle Switches to another
+value if two or more values are entered.</p></li>
+<li><p><a class="reference external" href="#signature">Signature</a><strong>:</strong> Components Signature Enters a
+signature.</p></li>
+<li><p><a class="reference external" href="#camera">Camera</a><strong>:</strong> Components Camera Takes a photo using a
+camera or selects a photo from an album in devices with a built-in
+camera (e.g. smartphone, tablet, etc.). Selects an image file in
+devices without a camera (e.g. desktop PC).</p></li>
+<li><p><a class="reference external" href="#record">Voice</a><strong>:</strong> Components Voice Records audio in devices
+with a voice recording function.</p></li>
+<li><p><a class="reference external" href="#attach">Attachment</a><strong>:</strong> Components Attachment Attaches a
+file.</p></li>
+<li><p><a class="reference external" href="#user">User:</a> Components User Enters information of the document
+user.</p></li>
+<li><p><a class="reference external" href="#usedate">Date</a><strong>:</strong> Components Date Enters the date in which
+the document is created or modified.</p></li>
+<li><p><a class="reference external" href="#document">Document</a><strong>:</strong> Components Document Enters the
+document number or ID in the document itself.</p></li>
+<li><p><a class="reference external" href="#label">Label</a><strong>:</strong> Components Label Sets the form ID.</p></li>
+</ul>
+</div>
+<div class="section" id="accessing-component-properties">
+<h3>Accessing Component Properties<a class="headerlink" href="#accessing-component-properties" title="Permalink to this headline">¶</a></h3>
+<p>Every component has its own detailed settings called <strong>OZ Component
+Properties</strong>. The properties of each component can be accessed by
+selecting a component and then clicking the property icon or the
+<strong>Properties</strong> menu.</p>
+<div class="figure align-default" id="id11">
+<a class="reference internal image-reference" href="../_images/checking-components-properties.png"><img alt="Accessing Component Properties" src="../_images/checking-components-properties.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Accessing Component Properties</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All components must have an ID. An ID is automatically generated when
+you create a component, but it is recommended to rename it to
+something you can easily recognize. For example, you can rename the
+ID of a component for entering John Doe, Jane Doe, etc. as ‘name’. By
+doing so, it is easier to identify components when deciding whether
+to display a field to a specific user when you are configuring the
+Field settings of a template.</p>
+</div>
+</div>
+<div class="section" id="how-to-add-components">
+<h3>How to Add Components<a class="headerlink" href="#how-to-add-components" title="Permalink to this headline">¶</a></h3>
+<p>There are two different ways of adding components: adding components in
+Excel, and adding components in Word/PowerPoint. In Word or PowerPoint,
+you can add components in two different ways.</p>
+<div class="section" id="adding-components-in-excel">
+<h4>Adding Components in Excel<a class="headerlink" href="#adding-components-in-excel" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Open Excel and go to the <strong>OZ in Excel</strong> ribbon menu.</p></li>
+</ol>
+<div class="figure align-default" id="id12">
+<a class="reference internal image-reference" href="../_images/ozinexcel_1.png"><img alt="Adding Components in Excel (1)" src="../_images/ozinexcel_1.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Adding Components in Excel (1)</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Select the cell in which you want to add a component.</p></li>
+</ol>
+<div class="figure align-default" id="id13">
+<a class="reference internal image-reference" href="../_images/ozinexcel_2.png"><img alt="Adding Components in Excel (2)" src="../_images/ozinexcel_2.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Adding Components in Excel (2)</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Click the component you want.</p></li>
+</ol>
+<div class="figure align-default" id="id14">
+<a class="reference internal image-reference" href="../_images/ozinexcel_3.png"><img alt="Adding Components in Excel (3)" src="../_images/ozinexcel_3.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Adding Components in Excel (3)</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+<p>4. Check that the component has been added by viewing the <strong>OZ Component
+Properties</strong> tab.</p>
+</div>
+<div class="section" id="adding-components-in-word-or-powerpoint">
+<h4>Adding Components in Word or PowerPoint<a class="headerlink" href="#adding-components-in-word-or-powerpoint" title="Permalink to this headline">¶</a></h4>
+<p><strong>Method 1: Adding Components by Clicking a Component Type</strong></p>
+<p>1. Open Word or PowerPoint and select the location in the document where
+you want to add the component.</p>
+<p>2. Click the component type you want to add in the ribbon menu of <strong>OZ
+in Word</strong> or <strong>OZ in PowerPoint</strong>.</p>
+<ol class="arabic simple" start="3">
+<li><p>Adjust the size of the component.</p></li>
+</ol>
+<p><strong>Method 2: Adding Components by Drawing a Component</strong></p>
+<p>1. Open Word or PowerPoint and go to the <strong>OZ in Word/Powerpoint</strong>
+ribbon menu.</p>
+<p>2. Click the <strong>Drawing Component</strong> icon and select the component type
+you want to add in the drop-down menu displayed.</p>
+<ol class="arabic simple" start="3">
+<li><p>Add the component in the position and size you want.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="how-to-delete-components">
+<h3>How to Delete Components<a class="headerlink" href="#how-to-delete-components" title="Permalink to this headline">¶</a></h3>
+<p>Select the component you want to delete and then click the <strong>Delete</strong>
+icon (<img alt="image2" src="../_images/delete-icon.png" />) in the <strong>OZ in Office</strong> menu. You can also select and
+delete multiple components.</p>
+</div>
+</div>
+<div class="section" id="how-to-use-each-component-type">
+<h2>How to Use Each Component Type<a class="headerlink" href="#how-to-use-each-component-type" title="Permalink to this headline">¶</a></h2>
+<p>eformsign provides various types of components such as check box, combo
+box, text, and signature through Microsoft Office’s <strong>OZ in Office</strong>
+ribbon menu.</p>
+<p>All components of <strong>OZ in Office</strong> have both common and unique
+properties. You can view both the common and unique properties of
+components in the <strong>OZ Component Properties</strong> tab. Common properties
+include ID and Tooltip Text, and the meaning of each property is as
+follows:</p>
+<ul class="simple">
+<li><p><strong>ID:</strong> Components ID Unique key for using an entered value in
+eformsign.</p></li>
+<li><p><strong>Tooltip Text:</strong> Components Tooltip Text In Windows, the text in the
+Tooltip Text box of a component is displayed in the form of a speech
+bubble when hovering the mouse over the component. In mobile, the
+text is displayed on the quick type bar when clicking on the
+component.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To open the <strong>OZ Component Properties</strong> window, click on a component
+and then click the <strong>Properties</strong> icon (<img alt="image3" src="../_images/property-icon.png" /> ) in the <strong>OZ in
+Office</strong> ribbon menu.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Tooltip Text feature is not provided for the Info group including
+User, Date, Document, and Label component types.</p>
+</div>
+<p>The description of each component type provided in eformsign is as
+follows.</p>
+<div class="section" id="check">
+<h3>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h3>
+<p>Components Check The <strong>Check</strong> component is used to check whether an
+item is checked or not. This component is similar to the <strong>Radio</strong>
+component, but it is used for checking the status of an item (whether it
+is checked or not) while the <strong>Radio</strong> component is used for checking
+which item among multiple items is checked.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_check.png"><img alt="image4" src="../_images/form-builder-components_check.png" style="width: 730px;" /></a></p>
+<p>When data is downloaded in the CSV format, the <strong>Check</strong> component’s
+input value is displayed as follows:</p>
+<ul class="simple">
+<li><p>When the item is checked: true</p></li>
+<li><p>When the item is not checked: false</p></li>
+</ul>
+<p>In Word and PowerPoint, the <strong>Check</strong> component is shown as a
+rectangular shape. Make sure to enter data inside the rectangular shape.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id15">
+<a class="reference internal image-reference" href="../_images/check-component-properties-1.png"><img alt="Setting Check Component Properties" src="../_images/check-component-properties-1.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Setting Check Component Properties</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Each Check component must be given a different ID. If multiple check
+components are given the same ID, then only the value of the last
+component is displayed.</p>
+<p><strong>② Check Style</strong></p>
+<p>You can specify the style of each component in <strong>Component Properties</strong>.
+The check box is set as the default style, and you can change it to
+another style (radio button or red circle).</p>
+<p>The below example shows how check boxes are displayed according to the
+selected style.</p>
+<p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image5" src="../_images/check-component-style-settings.png" style="width: 600px;" /></a></p>
+</div>
+<div class="section" id="radio">
+<span id="select"></span><h3>Radio<a class="headerlink" href="#radio" title="Permalink to this headline">¶</a></h3>
+<p>Components Radio The Radio component is used for checking which radio
+button is selected among multiple items. When data is downloaded in the
+CSV format, the selected item will be displayed.</p>
+<p><a class="reference internal" href="../_images/form-builder-components.png"><img alt="image6" src="../_images/form-builder-components.png" style="width: 730px;" /></a></p>
+<p>In Word and PowerPoint, the radio component is shown as a rectangular
+shape. Make sure to enter data inside the rectangular shape.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id16">
+<a class="reference internal image-reference" href="../_images/Radio-component-properties.png"><img alt="Setting Radio Component Properties" src="../_images/Radio-component-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Radio Component Properties</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>In <strong>Component Properties</strong>, make sure that all the selected radio
+buttons are assigned the same ID.</p>
+<p>For example, if there are six choices available in a multiple-choice
+question, assign “question1” as the ID for all of them. In the example
+shown below, the IDs of all the items are set to the same “question 1”.</p>
+<div class="figure align-default" id="id17">
+<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID.png"><img alt="Example of Setting a Radio Component" src="../_images/radio-items-should-have-same-ID.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Example of Setting a Radio Component</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>② Check Style</strong></p>
+<p>You can choose the style of the Radio component in <strong>Component
+Properties</strong>. The default style is the <strong>Circle</strong>, and you can change it
+to another style (check box and radio button).</p>
+<p><strong>③ Multiselectable</strong></p>
+<p>Checking the <strong>Multi-selectable</strong> option allows you to select multiple
+items. If you select more than one item, then when data is saved, each
+item is separated by a comma (,).</p>
+<p><strong>④ Uncheckable</strong></p>
+<p>Checking the <strong>Uncheckable</strong> option allows you to deselect a selected
+item by clicking it again.</p>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="combo">
+<h3>Combo<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h3>
+<p>Components Combo The Combo component is used when you need to select one
+of the multiple items.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_Combo.png"><img alt="image7" src="../_images/form-builder-components_Combo.png" style="width: 730px;" /></a></p>
+<p>If you click a combo component, a list of items is displayed as follows:</p>
+<p><a class="reference internal" href="../_images/combo-1.png"><img alt="image8" src="../_images/combo-1.png" style="width: 500px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id18">
+<a class="reference internal image-reference" href="../_images/combo-component-properties.png"><img alt="Setting Combo Component Properties" src="../_images/combo-component-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Combo Component Properties</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Combo component. For example, the ID of the
+component for selecting the favorite color can be ‘favoriteColor’.</p>
+<p><strong>② Items</strong></p>
+<p>Enters the items you want. You can separate the items by pressing Enter.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to display a message such as ‘Please select a color’ in a
+combo box in a document for recipients to view, then enter the
+message at the top of the list of items in the combo box and select
+it before sending the document.</p>
+</div>
+<p><strong>③ Allow Empty Value</strong></p>
+<p>Checking the <strong>Allow Empty Value</strong> option allows you to deselect a
+selected item. You can initialize data when filling in a combo component
+in the following ways:</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component and select the <strong>Initialize Input
+Data</strong> option in the pop-up menu.</p></li>
+<li><p>Mobile: Click the Trash icon.</p></li>
+</ul>
+<p><strong>④ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="text-and-multiline">
+<span id="text"></span><h3>Text and Multiline<a class="headerlink" href="#text-and-multiline" title="Permalink to this headline">¶</a></h3>
+<p>Components Text Components Multiline Both Text and Multiline components
+are used to create text fields. The Text component is suitable for short
+text with 1 to 2 words, and the Multiline component is suitable for long
+text with more than 1 line.</p>
+<p><a class="reference internal" href="../_images/text-and-muliline-components.png"><img alt="image9" src="../_images/text-and-muliline-components.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id19">
+<a class="reference internal image-reference" href="../_images/text-component-properties.png"><img alt="Setting Text and Multiline Component Properties" src="../_images/text-component-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Text and Multiline Component Properties</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the text/multiline component. For example, the ID of
+the component in which John Doe, Jane Doe, etc. are entered can be named
+‘personName’.</p>
+<p><strong>② Max Length</strong></p>
+<p>Sets the maximum length of characters (including space) that can be
+entered. By default, it is set to ‘0’, and in this case, there is no
+limit for the number of characters.</p>
+<p><strong>③ Keyboard Type</strong></p>
+<p>Selects the keyboard type to be used when entering text in the
+component. Keyboard Type can only be used in mobile devices such as
+smartphones and tablets.</p>
+<p><strong>④ Show Password Characters</strong></p>
+<p>This option can be set only in the text component. By checking this
+option, the password is hidden with the password symbol (●) when
+entering text. The password is also hidden with the password symbol in
+PDFs, and can only be seen when downloaded in the CSV format.</p>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="datetime">
+<span id="date"></span><h3>Datetime<a class="headerlink" href="#datetime" title="Permalink to this headline">¶</a></h3>
+<p>Components Datetime This component is used for entering a date. Clicking
+the component displays a date selection window where you can select the
+date you want.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_datetime.png"><img alt="image10" src="../_images/form-builder-components_datetime.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id20">
+<a class="reference internal image-reference" href="../_images/datetime-component-properties_02.png"><img alt="Setting Datetime Component Properties" src="../_images/datetime-component-properties_02.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Datetime Component Properties</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Datetime component. For example, the ID of the
+component for selecting the vacation start date can be named
+‘vacationStartDate’.</p>
+<p><strong>② Format</strong></p>
+<p>Sets the format in which date is displayed. The default setting is
+date_yyyy-MM-dd.</p>
+<ul class="simple">
+<li><p><strong>yyyy:</strong> Displays the year.</p></li>
+<li><p><strong>MM:</strong> Displays the month. Must be in uppercase.</p></li>
+<li><p><strong>dd:</strong> Displays the days.</p></li>
+</ul>
+<p>For example, if you want to display the date in the format of
+‘15-02-2020’, then enter <strong>dd-MM-yyyy</strong> in the Format field.</p>
+<p><strong>③ Minimum Date/Maximum Date</strong></p>
+<p>Sets the range of dates that can be selected in the component by
+specifying the minimum and maximum dates.</p>
+<p><strong>④ Display Today for Empty Value</strong></p>
+<p>Checking this option automatically enters the date (the date in which
+the document is opened) when the document is opened. This option is
+checked by default when you add a <strong>Datetime</strong> component. You can change
+the date by clicking the component.</p>
+<p><strong>⑤ Allow Empty Value</strong></p>
+<p>Checking this option allows you to clear the number displayed on a
+Numeric component. In a Datetime component, once you select a date, you
+can change it to another date but cannot clear the date. However,
+checking this option allows you to clear the date displayed on the
+Datetime component. If no date is selected in the Datetime component but
+the <strong>Display Today for Empty Value</strong> option is checked, then the date
+component is automatically filled in with the date in which the document
+is opened.</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component to display the pop-up menu and then
+select the <strong>Initialize Input Data</strong> menu.</p></li>
+<li><p>Mobile: Click the Trash icon.</p></li>
+</ul>
+<p><strong>⑥ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="numeric">
+<h3>Numeric<a class="headerlink" href="#numeric" title="Permalink to this headline">¶</a></h3>
+<p>Components Numeric This component is used for entering a number.
+Clicking the component displays two arrows on the right, and you can
+increase or decrease the number by clicking them. In PCs, you can
+directly enter the desired number into the component by using a
+keyboard. In smartphones and tablets, you can scroll through the list of
+numbers and select the one you want.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_numeric.png"><img alt="image11" src="../_images/form-builder-components_numeric.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id21">
+<a class="reference internal image-reference" href="../_images/number-component-properties.png"><img alt="Setting Numeric Component Properties" src="../_images/number-component-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Numeric Component Properties</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the numeric component. For example, the ID of the
+component for entering the number of people in a reservation can be
+named ‘peopleCount’.</p>
+<p><strong>② Unit of Change</strong></p>
+<p>Enters the unit of number that will increase/decrease the number
+whenever the up/down arrow icon is clicked. For example, if the ‘Unit of
+Change’ is set to 100, then when you click the up arrow icon (▲), the
+number is increased by 100 such as 200, 300, 400, and so on.</p>
+<p><strong>③ Minimum/Maximum Value</strong></p>
+<p>Sets the range of numbers that can be entered into the component by
+specifying the minimum and maximum values. For example, for the date of
+birth, setting the Minimum Value to 1900, Maximum Value to the current
+year, and the Unit of Change to 1. Also, if you enter a value that is
+lower/higher than the Minimum/Maximum Value, then the Minimum/Maximum
+Value will be automatically entered. For example, if the Maximum Value
+is set to 100 and you enter 101, then the number will automatically
+change to 100.</p>
+<p><strong>④ Allow Empty Value</strong></p>
+<p>Checking the <strong>Allow Empty Value</strong> option allows you to clear the number
+displayed on the numeric component. After entering a number in a numeric
+component, you can change the number again, but cannot clear the number.
+However, by checking this option, you can clear the number displayed on
+the component as described below.</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component to display the pop-up menu and then
+select the <strong>Initialize Input Data</strong> menu.</p></li>
+<li><p>Mobile: Click the Trash icon.</p></li>
+</ul>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="toggle">
+<h3>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h3>
+<p>Components Toggle This component is used for indicating a specific
+status such as ON/OFF. If you use this component, then the input value
+is switched according to a defined order whenever the component is
+clicked.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_toggle.png"><img alt="image12" src="../_images/form-builder-components_toggle.png" style="width: 730px;" /></a></p>
+<p>You can change the status to <strong>Good</strong> or <strong>Bad</strong> by clicking the
+components as follows:</p>
+<p><a class="reference internal" href="../_images/toggle.png"><img alt="image13" src="../_images/toggle.png" style="width: 400px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id22">
+<a class="reference internal image-reference" href="../_images/toggle-component-properties.png"><img alt="Toggle Component Properties" src="../_images/toggle-component-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Toggle Component Properties</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the toggle component. For example, the ID of the
+component for the first inspection item can be named ‘inspection1’.</p>
+<p><strong>② Items</strong></p>
+<p>Enters the list of items that will be toggled whenever the toggle
+component is clicked. You can separate each item by pressing Enter.</p>
+<p><strong>③ Allow Empty Value</strong></p>
+<p>Checking this option allows you to clear the item displayed on the
+toggle component. When you select a toggle component, you can toggle to
+another item but cannot clear the item displayed on the component.
+However, by checking this option, you can clear the item displayed on
+the component as described below:</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component to display the pop-up menu and then
+select the <strong>Initialize Input Data</strong> menu.</p></li>
+<li><p>Mobile: Click the Trash icon.</p></li>
+</ul>
+<p><strong>④ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="signature">
+<h3>Signature<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h3>
+<p>Components Signature This component is used for signing a signature on a
+document.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_signature.png"><img alt="image14" src="../_images/form-builder-components_signature.png" style="width: 730px;" /></a></p>
+<p>Clicking the signature area displays the <strong>Signature</strong> pop-up which
+allows you to sign a signature by drawing, entering text, or using a
+previously registered signature.</p>
+<p><a class="reference internal" href="../_images/signature.png"><img alt="image15" src="../_images/signature.png" style="width: 400px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id23">
+<a class="reference internal image-reference" href="../_images/Signature-component-properties.png"><img alt="Setting Signature Component Properties" src="../_images/Signature-component-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Signature Component Properties</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the signature component. For example, the ID of the
+component can be ‘signerSignature’ for contract signers.</p>
+<p><strong>② Signature Type</strong></p>
+<p>Selects the signature type to be used when signing.</p>
+<ul class="simple">
+<li><p><strong>Enter Directly:</strong> Clicking a signature area displays the
+<strong>Signature</strong> pop-up which allows you to sign by selecting one of the
+multiple signing methods which are <strong>Draw</strong>, <strong>Text</strong>, <strong>Mobile</strong>,
+<strong>Stamp</strong>, and <strong>Registered signature</strong>.</p></li>
+<li><p><strong>Registered Signature:</strong> If the user has already registered a
+signature on eformsign, then clicking a signature area inserts the
+registered signature into the document.</p></li>
+<li><p><strong>Registered Initials:</strong> If the user has already registered an
+initial on eformsign, then clicking a signature area inserts the
+registered initial into the document.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have registered a signature or initial on eformsign, then when
+you click on a signature component, the registered signature/initial
+will be automatically entered into the component. However, if there
+is no registered signature or initial, then a regular <strong>Signature</strong>
+pop-up will be displayed when you click on a signature component.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some cases, you may need to use a seal or stamp on a document
+rather than your own signature. With eformsign, you can also use a
+stamp image to stamp the signature on a document. To use a stamp
+image when submitting a document, click the <strong>Stamp</strong> tab in the
+<strong>Signature</strong> pop-up, and then select a stamp image and click <strong>OK</strong>.</p>
+</div>
+<p><strong>③ Signature Pen Thick</strong></p>
+<p>Sets the signature pen thickness.</p>
+<p><strong>④ Signature Pen Color</strong></p>
+<p>Sets the signature pen color.</p>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can set the signature date to be automatically entered in
+documents that require signature, such as electronic contracts and
+electronic agreements.</p>
+<p>1. Open the document file (Word, Excel, PowerPoint) to be converted
+into an electronic form or create a new document.</p>
+<p>2. Add a Signature component in the area of the document to be
+signed.</p>
+<p>3. Enter the ID of the Signature component in the <strong>Component
+Properties</strong> tab. For example, the ID can be named ‘signature1’.</p>
+<p>4. Add the Date (not to be confused with Datetime) component where
+the signature date will be entered.</p>
+<ol class="arabic simple" start="5">
+<li><p>Open the <strong>Component Properties</strong> tab of the Date component.</p></li>
+<li><p>Select the <strong>Date Type</strong> as <strong>Last modified date of the content</strong>.</p></li>
+</ol>
+<p>7. Enter the ID of the Signature component in the Input Component ID
+field on the bottom. In this case, it would be ‘signature1’.</p>
+<p>※ You can select the Format of date to be displayed on the Date
+component by selecting the desired date format in the <strong>Component
+Properties</strong> tab.</p>
+</div>
+</div>
+<div class="section" id="camera">
+<h3>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h3>
+<p>Components Camera This component is for uploading photos (taken with a
+device with a built-in camera such as smartphones and tablets) on a
+document. In PCs without a camera, clicking the component displays a
+window for selecting the desired image file.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_camera.png"><img alt="image16" src="../_images/form-builder-components_camera.png" style="width: 730px;" /></a></p>
+<p>If the size of the selected image is larger than the size of the text
+box, then it is resized to fit the component.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For devices with a built-in camera, the camera feature will be
+executed. For devices without a camera, a window for selecting an
+image file will be displayed.</p>
+</div>
+<p><a class="reference internal" href="../_images/camera1.png"><img alt="image17" src="../_images/camera1.png" style="width: 350px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id24">
+<a class="reference internal image-reference" href="../_images/Camera-component-properties-.png"><img alt="Setting Camera Component Properties" src="../_images/Camera-component-properties-.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Camera Component Properties</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Camera component. For example, the ID of the
+component that takes the photo of a driver’s license can be
+‘driverLicense’.</p>
+<p><strong>② Tooltip Text</strong></p>
+<p>Displays the description in the Tooltip Text when you hover the mouse
+over a component.</p>
+</div>
+<div class="section" id="voice">
+<span id="record"></span><h3>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">¶</a></h3>
+<p>Components Voice This component is used for storing recorded voice. You
+can set the maximum recording time and you can also configure the
+settings to allow users to only listen to the voice recording.</p>
+<p>When you add a Voice component in OZ in Office, you can record voice or
+play a voice recording as follows:</p>
+<p><a class="reference internal" href="../_images/record1.png"><img alt="image18" src="../_images/record1.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the recording time limit is set to 1 or higher, recording is
+completed automatically at the time set (unit: seconds).</p>
+<p>In the case of ActiveX viewer, the recording playback UI is supported
+from Windows 8 and later.</p>
+<p>In PCs, the Voice component works only when a voice recording device
+is connected to a PC.</p>
+</div>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id25">
+<a class="reference internal image-reference" href="../_images/record_component.png"><img alt="Setting Voice Component Properties" src="../_images/record_component.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Voice Component Properties</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enter the ID of the Voice component. For example, the ID of the
+component that plays voice recordings can be named ‘Record1’.</p>
+<p><strong>② Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="attachment">
+<span id="attach"></span><h3>Attachment<a class="headerlink" href="#attachment" title="Permalink to this headline">¶</a></h3>
+<p>Components Attachment This component is used for attaching a file to a
+document. When attaching a file to a document by using the Attachment
+component, the file will be attached at the very end of the document as
+a new page.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_attachment.png"><img alt="image19" src="../_images/form-builder-components_attachment.png" style="width: 730px;" /></a></p>
+<p>The types and sizes of files that can be attached are as follows:</p>
+<ul class="simple">
+<li><p>File type: PDF, JPG, PNG, and GIF</p></li>
+<li><p>File size: Up to 5MB</p></li>
+</ul>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id26">
+<a class="reference internal image-reference" href="../_images/Attachment-component-properties.png"><img alt="Setting Attachment Component Properties" src="../_images/Attachment-component-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Attachment Component Properties</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Attachment component. For example, the ID of the
+component for attaching a resume can be named ‘myResume’.</p>
+<p><strong>② Tooltip Text</strong></p>
+<p>Displays the description Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="user">
+<h3>User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h3>
+<p>Components User This component is used for entering the information of
+the user who created or modified a document. The user’s basic
+information such as name or contact information, or custom field
+information is automatically entered into the user component based on
+the settings.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_user.png"><img alt="image20" src="../_images/form-builder-components_user.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id27">
+<a class="reference internal image-reference" href="../_images/user-component-properties-.png"><img alt="Setting User Component Properties" src="../_images/user-component-properties-.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting User Component Properties</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the user component. For example, the ID of the
+component that displays the name of the document creator can be named
+‘documentCreator’.</p>
+<p><strong>② User Type</strong></p>
+<ul class="simple">
+<li><p><strong>Document Creator:</strong> Displays the information of the user who
+created the document.</p></li>
+<li><p><strong>Current User:</strong> Displays the information of the user who has most
+recently opened or modified the document.</p></li>
+<li><p><strong>Last modified user of the content:</strong> Displays the information of
+the user who entered information in a specific component.</p></li>
+</ul>
+<p>If you select <strong>Last modified user of the content</strong>, then the <strong>Input
+Component ID</strong> field will be displayed. In this field, enter the ID of
+the component that will display the information when triggered.</p>
+<p><a class="reference internal" href="../_images/user-input-certain-component.png"><img alt="image21" src="../_images/user-input-certain-component.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have either the company administrator or template manager
+permission to perform this action.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To automatically fill in the signer’s name in the User component,
+create a Signature component and then name the ID (for example,
+signer1). Then, create the User component that will display the
+signer’s name when triggered and name the ID (for example,
+signer1name). Then, select <strong>Last modified user of the content</strong>
+under User Type and enter the ID of the Signature component (in this
+case, signer1) under <strong>Input Component ID</strong>.</p>
+</div>
+<p><strong>③ User Field Name</strong></p>
+<p>This field allows to select the type of member information that will be
+displayed. You can select basic information in the <strong>Manage member &gt;
+Member info</strong> menu of the member or information in a custom field.</p>
+<ul class="simple">
+<li><p>Basic member information types: Name, ID, Department, Position,
+Mobile, and Telephone</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have the company administrator permission to change basic
+member information.</p>
+<p>To modify a member’s basic information, login to eformsign and go to
+the <strong>Manage company &gt; Manage members</strong> menu. Select a member in the
+member list and edit the information in the <strong>Member info tab</strong> on
+the right. Then, click the <strong>Save</strong> button.</p>
+</div>
+</div>
+<div class="section" id="document">
+<h3>Document<a class="headerlink" href="#document" title="Permalink to this headline">¶</a></h3>
+<p>Components Document This component is used for entering document-related
+information in the document itself. You can select either one of the
+document ID or document number.</p>
+<p><a class="reference internal" href="../_images/document-component-in-list.png"><img alt="image22" src="../_images/document-component-in-list.png" style="width: 730px;" /></a></p>
+<p>The document ID is a unique document ID assigned in the system, so it
+does not require separate settings. For settings related to document
+number, upload a template and then go to <strong>Template settings &gt;
+General</strong>.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id28">
+<a class="reference internal image-reference" href="../_images/document-domponent-properties.png"><img alt="Setting Document Component Properties" src="../_images/document-domponent-properties.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Document Component Properties</span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the document component. For example, the component ID
+can be ‘docNum’ for document number.</p>
+<p><strong>② Document info type</strong></p>
+<p>Selects the type of information that will be used.</p>
+<ul class="simple">
+<li><p><strong>Document ID:</strong> A unique ID containing 32 digits of alphanumeric
+characters assigned to all documents in the system. E.g.
+0077af27a98846c8872f5333920679b7.</p></li>
+<li><p><strong>Document no.:</strong> The document number set in <strong>Template settings &gt;
+General.</strong> For information on how to set a document number, go to
+<a class="reference external" href="#docnumber_wd">???</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="usedate">
+<span id="id1"></span><h3>Date<a class="headerlink" href="#usedate" title="Permalink to this headline">¶</a></h3>
+<p>Components Date This component is used for automatically entering the
+date in which a document is created, accessed, or modified into the
+document. You can automatically enter one of the following dates
+according to the date type selected: the date in which the document is
+created (Date created), the date in which the document is last accessed
+(Date accessed), or the date in which a specific component is filled in
+(Last modified date of the content).</p>
+<p><a class="reference internal" href="../_images/form-builder-components_date.png"><img alt="image23" src="../_images/form-builder-components_date.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id29">
+<a class="reference internal image-reference" href="../_images/date-component-properties_.png"><img alt="Setting Date Component Properties" src="../_images/date-component-properties_.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Date Component Properties</span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Date component. For example, the ID of the
+component that displays the date in which the document is signed can be
+named ‘signed date’.</p>
+<p><strong>② Format</strong></p>
+<p>Sets the format in which the date will be displayed.</p>
+<ul class="simple">
+<li><p><strong>yyyy:</strong> Displays the year.</p></li>
+<li><p><strong>MM:</strong> Displays the month. Must be in uppercase.</p></li>
+<li><p><strong>dd:</strong> Displays the day.</p></li>
+</ul>
+<p>For example, if you want to display the date in the format of
+‘15-20-2020’, then enter dd-MM-yyyy in the Format field.</p>
+<p><strong>③ Date Type</strong></p>
+<ul class="simple">
+<li><p><strong>Date created:</strong> Displays the date in which the document is created.</p></li>
+<li><p><strong>Date accessed:</strong> Displays the most recent date in which the
+document is modified or opened.</p></li>
+<li><p><strong>Last modified date of the content:</strong> Displays the date in which the
+information of a specific component is filled in.</p></li>
+</ul>
+<p>If <strong>Last modified date of the content</strong> is selected, the <strong>Input
+Component ID</strong> field is displayed. In this field, enter the ID of the
+component that will display the information when triggered.</p>
+<p><a class="reference internal" href="../_images/date-component-connecting-other-component.png"><img alt="image24" src="../_images/date-component-connecting-other-component.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have either the company administrator or template manager
+permission to perform this action.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want the signature date of a signer to be displayed
+automatically in a contract, first add a Signature component and then
+name the ID (e.g. ‘contractSign’). Then, add a Date component which
+will display the date in which the signature is signed and name the
+ID (e.g. signDate). Then, select <strong>Last modified date of the
+content</strong> under Date Type and enter the ID of the signature component
+(in this case ‘contractSign’) in the <strong>Input Component ID</strong> field.</p>
+</div>
+</div>
+<div class="section" id="label">
+<h3>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
+<p>Components Label This component is used for setting the form ID of a
+document.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default" id="id30">
+<a class="reference internal image-reference" href="../_images/label_property.png"><img alt="Setting Label Component Properties" src="../_images/label_property.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Setting Label Component Properties</span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>① ID</strong></p>
+<p>The form ID of the document is automatically generated and displayed. It
+can also be changed.</p>
+<p>The form ID defined here can be applied when editing the document.</p>
+</div>
+</div>
+<div class="section" id="upload-form-file">
+<h2>Upload Form File<a class="headerlink" href="#upload-form-file" title="Permalink to this headline">¶</a></h2>
+<p>Form files created using OZ in Office are uploaded in the following
+order:</p>
+<p>1. Click the <strong>Execute</strong> icon (<img alt="image25" src="../_images/excute_button.png" />) in the File group. The login
+page will be displayed as a pop-up window.</p>
+<div class="figure align-default" id="id31">
+<a class="reference internal image-reference" href="../_images/form_upload_login.png"><img alt="Login Page" src="../_images/form_upload_login.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Login Page</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
+</div>
+<p>2. After you log in, the document converted into a form will be
+displayed as a preview.</p>
+<div class="figure align-default" id="id32">
+<a class="reference internal image-reference" href="../_images/upload_preview.png"><img alt="Preview Form File" src="../_images/upload_preview.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Preview Form File</span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
+</div>
+<p>3. Click the <strong>Upload form file</strong> button or click the <strong>Upload</strong>
+(<img alt="image26" src="../_images/upload_button.png" />) icon in the ribbon menu. The <strong>Template list</strong> page with the
+<strong>Create template</strong> card will be displayed.</p>
+<div class="figure align-default" id="id33">
+<a class="reference internal image-reference" href="../_images/upload_list.png"><img alt="Template List Screen" src="../_images/upload_list.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Template List Screen</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
+</div>
+<p>4. Click the <strong>Create template</strong> card. The screen for configuring the
+template settings will be displayed. To create a template, click the
+<strong>Save</strong> button on the top right corner.</p>
+<div class="figure align-default" id="id34">
+<a class="reference internal image-reference" href="../_images/upload_save.png"><img alt="Create Template Screen" src="../_images/upload_save.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">Create Template Screen</span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="configuring-template-settings">
+<h2>Configuring Template Settings<a class="headerlink" href="#configuring-template-settings" title="Permalink to this headline">¶</a></h2>
+<p>After uploading a template, you can configure additional settings for
+documents created from the template such as template name, document
+number, and workflow.</p>
+<ol class="arabic simple">
+<li><p>Log in to eformsign.</p></li>
+<li><p>Go to the <strong>Manage templates</strong> menu.</p></li>
+<li><p>Click the Template settings icon (<img alt="image27" src="../_images/config-icon.PNG" />) of the desired template.</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>General:</strong> Sets the template name, abbreviation, document name,
+document number, etc.</p></li>
+<li><p><strong>Set permissions:</strong> Sets the permissions for who can create
+documents created from the template and who can open, void, or
+permanently remove documents created from the template.</p></li>
+<li><p><strong>Workflow:</strong> Sets the steps of the document workflow from <strong>Start</strong>
+to <strong>Complete</strong>.</p></li>
+<li><p><strong>Field:</strong> Sets the field default values, auto-filled values, etc.</p></li>
+<li><p><strong>Notification settings:</strong> Sets the notification settings for
+documents created from the template.</p></li>
+</ul>
+<p>4. After configuring all settings, click the <strong>Save</strong> button to save the
+settings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For a detailed explanation of templates, please refer to
+<a class="reference external" href="#template_fb">???</a>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="chapter3.html"
+       title="previous chapter">← Introduction to Web Form Designer</a>
+  </li>
+  <li class="next">
+    <a href="chapter5.html"
+       title="next chapter">Managing Templates in Web Form Designer →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Basic Info</title>
+    
+      <link rel="stylesheet" href="../_static/pygments.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+
+      
+      <script src="../_static/theme-vendors.js"></script>
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Introduction to Web Form Designer" href="chapter3.html" />
+  <link rel="prev" title="Overview" href="chapter1.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <img class="logo" src="../_static/forcs.png" alt="doit logo"/>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Overview</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Basic Info</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#dashboard" class="reference internal">Dashboard</a></li>
+                
+                  <li class="toctree-l2"><a href="#view-and-change-basic-information" class="reference internal">View and Change Basic Information</a></li>
+                
+                  <li class="toctree-l2"><a href="#permissions" class="reference internal">Permissions</a></li>
+                
+                  <li class="toctree-l2"><a href="#manage-groups-and-members" class="reference internal">Manage Groups and Members</a></li>
+                
+                  <li class="toctree-l2"><a href="#my-signature" class="reference internal">My Signature</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Introduction to Web Form Designer</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Form Builder</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Managing Templates in Web Form Designer</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Managing Templates in Form Builder</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Managing Documents</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Customizing eformsign</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Connecting with External Services</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+    <li>Basic Info</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="chapter1.html"
+       title="previous chapter">← Overview</a>
+  </li>
+  <li class="next">
+    <a href="chapter3.html"
+       title="next chapter">Introduction to Web Form Designer →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="basic-info">
+<h1>Basic Info<a class="headerlink" href="#basic-info" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dashboard">
+<h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="menu">
+<h3>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h3>
+<p>After logging into the eformsign dashboard Dashboard , click the menu
+icon (<img alt="image1" src="../_images/menu_icon.png" />) at the top left corner of the screen. The sidebar menu
+will be displayed as shown below.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each menu may appear differently depending on the permissions you
+have. The company administrator can access all the menus and have all
+the permissions.</p>
+</div>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/en-dashboard-side-menu.png"><img alt="eformsign Menus" src="../_images/en-dashboard-side-menu.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">eformsign Menus</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>The description of each menu is as follows:</p>
+<ul class="simple">
+<li><p><strong>New document:</strong> New document Shows the list of templates users can
+choose to start creating documents.</p></li>
+<li><p><strong>Documents:</strong> Documents This is is a cloud space for storing and
+viewing documents. It consists of the following three spaces
+according to the document status:</p>
+<ul>
+<li><p><strong>In progress:</strong> In progress Shows the list of documents you have
+created or signed/approved that are incomplete.</p></li>
+<li><p><strong>Action required:</strong> Action required Shows the list of documents
+you have saved as a draft, requested by other members for you to
+sign or approve, or sent to external recipients but have yet to be
+signed.</p></li>
+<li><p><strong>Completed:</strong> Completed Shows the list of all completed documents
+among the documents that you have created or participated in.</p></li>
+</ul>
+</li>
+<li><p><strong>Manage documents:</strong> Manage documents Only document managers can
+access this menu. Document managers can view all documents created
+from a template that they have permission to access. The company
+administrator can view and manage all documents.</p></li>
+<li><p><strong>My signature:</strong> My signature You can create and register your
+signature to be used when signing a document.</p></li>
+<li><p><strong>Manage templates:</strong> Manage templates Only template managers can
+access this menu. You can view the template list and configure the
+template settings.</p></li>
+<li><p><strong>Manage company:</strong> Manage company Only company managers can access
+this menu. You can view and edit company information.</p>
+<ul>
+<li><p><strong>Company profile:</strong> Company profile You can view and edit company
+information.</p></li>
+<li><p><strong>Manage groups:</strong> Manage groups You can create groups or edit
+group information.</p></li>
+<li><p><strong>Manage members:</strong> Manage members You can invite members or edit
+member information.</p></li>
+<li><p><strong>Manage custom fields:</strong> Manage custom fields You can add and
+configure custom fields such as company, group, and member
+information.</p></li>
+<li><p><strong>Notification template management:</strong> Notification template
+management You can view and edit email and SMS notification
+templates.</p></li>
+</ul>
+</li>
+<li><p><strong>Integration:</strong> Integration Only the company administrator can
+access this menu. You can connect eformsign with external services.</p>
+<ul>
+<li><p><strong>Cloud storage:</strong> Cloud storage You can connect your Dropbox,
+Google Drive, or Box accounts to store completed documents in
+external cloud storages.</p></li>
+<li><p><strong>Analytics &amp; reporting:</strong> Analytics &amp; reporting You can connect
+sheets in Google Sheets or Microsoft Office 365’s Excel with
+eformsign to store the data entered in eformsign documents to the
+sheets.</p></li>
+<li><p><strong>API / Webhook:</strong> API Webhook You can create, edit, or delete API
+and webhook keys to use the eformsign API.</p></li>
+</ul>
+</li>
+<li><p><strong>Billing:</strong> You can view your plan and payment history, change your
+plan, or change the payment method.</p></li>
+<li><p><strong>Usage status:</strong> You can monitor weekly, monthly, and annual service
+usage status.</p></li>
+<li><p><strong>Download eformsign Form Builder:</strong> Download Form Builder You can
+download the Form Builder executable file. By using the Form Builder
+add-in feature, you can create electronic forms using Microsoft
+Office files.</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3>Dashboard<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Dashboard The dashboard is the main page displayed when logging into
+eformsign. In the dashboard, you can view documents that are in
+progress, require your action, etc., and use shortcuts to go to the main
+menus including the <strong>New document</strong> page.</p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/en-dashboard-main.png"><img alt="eformsign Dashboard Screen" src="../_images/en-dashboard-main.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">eformsign Dashboard Screen</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<dl class="simple">
+<dt><strong>① Create new document</strong></dt><dd><p>New document Provides a shortcut to the <strong>New document</strong> page where
+you can create new documents from existing templates.</p>
+</dd>
+<dt><strong>② In progress</strong></dt><dd><p>In progress Provides a shortcut to the <strong>In progress</strong> page where you
+can view the number of documents that are in progress. Click the <strong>In
+progress</strong> box to go to the <strong>In progress</strong> page.</p>
+</dd>
+<dt><strong>③ Action required</strong></dt><dd><p>Action required Provides a shortcut to the <strong>Action required</strong> page
+where you can view the number of documents that require your action.
+Click the <strong>Action required</strong> box to go to the <strong>Action required</strong>
+page.</p>
+</dd>
+<dt><strong>④ Completed</strong></dt><dd><p>Completed Provides a shortcut to the <strong>Completed</strong> document page
+where you can view all completed documents.</p>
+</dd>
+<dt><strong>⑤ In progress</strong></dt><dd><p>Displays the list of the three most recent documents in progress and
+the number of documents in progress. You can click on the name of a
+document in the list to open the document. Also, you can click ‘More’
+to go to the <strong>In progress</strong> page.</p>
+</dd>
+<dt><strong>⑥ Action required</strong></dt><dd><p>Displays the list of the three most recent documents that require
+your action and the number of documents requiring your action. You
+can click on the name of a document in the list to open the document.
+Also, you can click ‘More’ to go to the <strong>Action required</strong> page.</p>
+</dd>
+<dt><strong>⑦ Completed</strong></dt><dd><p>Displays the list of the three most recent completed documents. You
+can click on the name of a document in the list to open the document.
+Also, you can click ‘More’ to go to the <strong>Completed</strong> document page.</p>
+</dd>
+<dt><strong>⑧ Favorites</strong></dt><dd><p>Favorites Displays the templates you added as your Favorites. If you
+click a template in the Favorites list, you can go to the page where
+you can create a new document using that template. You can add a
+template to your Favorites by clicking the Add icon (<img alt="image2" src="../_images/favorites-add.PNG" />). You
+can delete a template from the Favorites list by clicking the Edit
+icon (<img alt="image3" src="../_images/favorites-edit.PNG" />).</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Adding templates to Favorites!</strong></p>
+<p>You can add a template you use frequently to the Favorites list to
+create documents easily using that template. You can add your
+favorite ones on the dashboard.</p>
+<ol class="arabic">
+<li><p>Click the Add icon (<img alt="image4" src="../_images/favorites-add.PNG" />) in the Favorites list on the
+dashboard.</p></li>
+<li><p>The list of templates that are not added to your Favorites will be
+displayed in the pop-up window.</p>
+<p><a class="reference internal" href="../_images/en-dashboard-add-favorites.png"><img alt="image5" src="../_images/en-dashboard-add-favorites.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>Tick the check boxes of the templates you want to add to the
+Favorites.</p>
+<p><a class="reference internal" href="../_images/en-dashboard-add-favorites-select.png"><img alt="image6" src="../_images/en-dashboard-add-favorites-select.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>Click the <strong>Select</strong> button to save the templates as your
+Favorites.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="view-and-change-basic-information">
+<h2>View and Change Basic Information<a class="headerlink" href="#view-and-change-basic-information" title="Permalink to this headline">¶</a></h2>
+<p>My profile To view your personal information you entered when signing up
+for the eformsign service and company information, click the see more
+icon (<img alt="image7" src="../_images/menu-hamberger-icon.png" />) at the top right corner of the sidebar menu.</p>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/en-dashboard-side-menu-icon-drop-down.png"><img alt="View and Edit My Profile" src="../_images/en-dashboard-side-menu-icon-drop-down.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">View and Edit My Profile</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><strong>Change company:</strong> Change company If you are a member of multiple
+companies, click the <strong>Change company</strong> menu to view the list of your
+companies and select a company to switch to.</p></li>
+<li><p><strong>My profile:</strong> My profile You can view and edit your personal
+information you entered when signing up for the eformsign service.
+You can also view the information about the company you are a member
+of.</p></li>
+<li><p><strong>Logout:</strong> Logout You can log out of the eformsign service.</p></li>
+</ul>
+<div class="section" id="my-profile">
+<h3>My Profile<a class="headerlink" href="#my-profile" title="Permalink to this headline">¶</a></h3>
+<p><strong>My profile &gt; Personal</strong></p>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/en-myprofile-personal.png"><img alt="My Profile &gt; Personal" src="../_images/en-myprofile-personal.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">My Profile &gt; Personal</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<dl class="simple">
+<dt><strong>Account information</strong></dt><dd><p>You can view and edit the name, email or ID, password, and contact
+number of your eformsign account.</p>
+</dd>
+<dt><strong>Link social accounts</strong></dt><dd><p>You can link or unlink your Google and Facebook social accounts.</p>
+</dd>
+<dt><strong>Notification</strong></dt><dd><p>You can view whether you agreed to receive marketing emails. You can
+also change your selection.</p>
+</dd>
+<dt><strong>Delete the eformsign account</strong></dt><dd><p>You can delete your eformsign account by clicking the <strong>Delete the
+eformsign account</strong> button.</p>
+</dd>
+</dl>
+<p><strong>My profile &gt; Company</strong></p>
+<div class="figure align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/en-myprofile-company.png"><img alt="My Profile &gt; Company" src="../_images/en-myprofile-company.png" style="width: 730px;" /></a>
+<p class="caption"><span class="caption-text">My Profile &gt; Company</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<dl>
+<dt><strong>Basic information</strong></dt><dd><p>You can view basic information about your company including the
+company name, country, language, and contact number.</p>
+</dd>
+<dt><strong>Detailed information</strong></dt><dd><p>You can view detailed information about your company including the
+company address, company registration number, homepage URL, and
+company administrator’s email.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can only view company information on this page. If you want to
+edit the information, go to the <strong>Manage company &gt; Company
+profile</strong> menu. Only the company administrator or company managers
+can edit company information.</p>
+</div>
+</dd>
+<dt><strong>Withdraw from this company</strong></dt><dd><p>If you want to withdraw from the company, click the <strong>Withdraw from
+this company</strong> button. Then, the list of companies that you are a
+member of will be displayed and you can select a company that you
+want to withdraw from.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Even if a member withdraws from a company, the member can still
+use the eformsign account and join another company or create a new
+company.</p>
+<p>However, if the company administrator withdraws from the company,
+the company will also be deleted. If the administrator wants to
+withdraw from the company without deleting the company, then the
+administrator needs to delegate permission to another member, and
+then withdraw from the company.</p>
+</div>
+</dd>
+</dl>
+</div>
+<div class="section" id="edit-and-add-company-information">
+<h3>Edit and Add Company Information<a class="headerlink" href="#edit-and-add-company-information" title="Permalink to this headline">¶</a></h3>
+<p>The company information displayed in the <strong>My profile &gt; company</strong> menu
+can be edited in the <strong>Manage company &gt; Company profile</strong> menu. Company
+profile</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have either the company administrator or company manager
+permission to perform this action.</p>
+</div>
+<div class="figure align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/en-manage-company-profile.png"><img alt="Manage Company &gt; Company Profile" src="../_images/en-manage-company-profile.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Manage Company &gt; Company Profile</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Editing Company Profile</strong></p>
+<ol class="arabic simple">
+<li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Company
+profile</strong> menu.</p></li>
+<li><p>Edit the information you want to change in the <strong>Company profile &gt;
+Basic information</strong> tab.</p></li>
+<li><p>Save the edited information by clicking the <strong>Save</strong> button.</p></li>
+</ol>
+<div class="figure align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/en-manage-company-profile-edit.png"><img alt="Company Profile" src="../_images/en-manage-company-profile-edit.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">Company Profile</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="../_images/en-manage-company-profile-edit2.png"><img alt="image8" src="../_images/en-manage-company-profile-edit2.png" style="width: 700px;" /></a></p>
+</div>
+<div class="section" id="company-brand">
+<h3>Company Brand<a class="headerlink" href="#company-brand" title="Permalink to this headline">¶</a></h3>
+<p>Company brand You can replace the eformsign logo and symbol with your
+company logo and symbol by registering them in the <strong>Company profile &gt;
+Company brand</strong> tab.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>The difference between a logo and symbol</strong></p>
+<p>Both a logo and symbol are representative images of a company.
+Usually, a logo has a long horizontal format that includes its brand
+name and a symbol only has a square image.</p>
+<p>On eformsign, a 512 pixel X 128 pixel horizontal image size is
+recommended for logos, and a 120 pixel X 120 pixel square image size
+is recommended for symbols.</p>
+</div>
+<p><strong>Registering the Company Logo and Symbol</strong></p>
+<div class="figure align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/en-manage-company-brand.png"><img alt="Company Profile &gt; Brand image" src="../_images/en-manage-company-brand.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">Company Profile &gt; Brand image</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Company
+profile</strong> menu.</p></li>
+<li><p>Click the <strong>Company brand</strong> tab.</p></li>
+<li><p>Click the image in the <strong>Brand image &gt; Logo</strong> box.</p></li>
+<li><p>Select and upload a logo image file from your PC.</p>
+<ul class="simple">
+<li><p>Image size: A 512 pixel x 128 pixel image size recommended</p></li>
+<li><p>File size: Up to a maximum of 300 KB</p></li>
+<li><p>File format: PNG, JPG, JPEG, and GIF</p></li>
+</ul>
+<div class="figure align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/en-manage-company-brand-logo-popup.png"><img alt="Pop-up Screen for Image Upload" src="../_images/en-manage-company-brand-logo-popup.png" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">Pop-up Screen for Image Upload</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Apply your changes by clicking the <strong>Save</strong> button.</p></li>
+<li><p>Check whether the new logo was applied to the dashboard.</p>
+<div class="figure align-default" id="id11">
+<a class="reference internal image-reference" href="../_images/en-manage-company-brand-logo-changed.png"><img alt="Dashboard with the Logo Changed" src="../_images/en-manage-company-brand-logo-changed.png" style="width: 750px;" /></a>
+<p class="caption"><span class="caption-text">Dashboard with the Logo Changed</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="permissions">
+<h2>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h2>
+<p>eformsign provides the following five types of roles that can be granted
+to members based on the permissions they have.</p>
+<ul>
+<li><p><strong>Company administrator</strong></p>
+<p>Company administrator The company administrator is the representative
+of the company and has all permissions for using the eformsign
+service.</p>
+</li>
+<li><p><strong>Company manager</strong></p>
+<p>Company manager Company managers have permission to access the
+<strong>Manage company</strong> menu. Company managers can view and edit company,
+group, and member information and grant permissions to members.</p>
+</li>
+<li><p><strong>Template manager</strong></p>
+<p>Template manager Template managers have permission to access the
+<strong>Manage templates</strong> menu. Template managers can create new templates
+by using Form Builder or Web Form Designer, and can also edit,
+deploy, and delete templates.</p>
+</li>
+<li><p><strong>Document manager</strong></p>
+<p>Document managers have permission to access the <strong>Manage documents</strong>
+menu to view and download documents created from each template.
+Document manager Document managers can be selected for each separate
+template.</p>
+</li>
+<li><p><strong>Document creation</strong></p>
+<p>Template usage Template usage (document creation) permission can be
+granted to members for each template. Only members with the template
+usage permission can create documents from that template.</p>
+</li>
+</ul>
+<div class="section" id="company-administrator">
+<h3>Company Administrator<a class="headerlink" href="#company-administrator" title="Permalink to this headline">¶</a></h3>
+<p>Company administrator The user who created a company is the company
+administrator by default, and the company administrator is a super
+administrator having all the permissions to use the eformsign service.</p>
+<p>The company administrator</p>
+<ul class="simple">
+<li><p>Has access to all the menus.</p></li>
+<li><p>Can create, edit, delete, and manage templates.</p></li>
+<li><p>Can create, view, and manage all documents.</p></li>
+<li><p>Can delegate its role to another member when the company
+administrator needs to be changed.</p></li>
+</ul>
+<p>When the company administrator deletes her/his eformsign account, the
+company will also be deleted. If the administrator wants to delete only
+the account, then she/he can delegate the administrator permission to
+another member, and then delete the account. Delegating the Company
+Administrator Permission</p>
+<p><strong>Delegating the Company Administrator Permission</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have the company administrator permission to perform this
+action.</p>
+</div>
+<ol class="arabic">
+<li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Company
+profile</strong> menu.</p></li>
+<li><p>Click the <strong>Edit</strong> button in the <strong>Detailed information</strong> section,
+and then click the <strong>Delegate role</strong> button on the right side of the
+<strong>Administrator</strong> item.</p>
+<div class="figure align-default" id="id12">
+<a class="reference internal image-reference" href="../_images/en-manage-company-delegate-admin-role.png"><img alt="Delegate Company Administrator Role" src="../_images/en-manage-company-delegate-admin-role.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Delegate Company Administrator Role</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Select a member to delegate the company administrator role in the
+<strong>Delegate role</strong> pop-up window.</p>
+<div class="figure align-default" id="id13">
+<a class="reference internal image-reference" href="../_images/en-manage-company-delegate-admin-role-popup.png"><img alt="Delegate Role Pop-up" src="../_images/en-manage-company-delegate-admin-role-popup.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Delegate Role Pop-up</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Enter the password of the company administrator.</p></li>
+<li><p>Click the <strong>Save</strong> button to save the changes.</p></li>
+</ol>
+</div>
+<div class="section" id="company-manager">
+<h3>Company Manager<a class="headerlink" href="#company-manager" title="Permalink to this headline">¶</a></h3>
+<p>Company manager Company managers can access the <strong>Manage company</strong> menu
+and can view, edit, and delete information regarding the company and
+groups/members.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The company administrator or company managers can grant the company
+manager permission to members.</p>
+</div>
+<p><strong>Granting the Company Manager Permission</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have either the company administrator or template manager
+permission to perform this action.</p>
+</div>
+<ol class="arabic">
+<li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Manage
+members</strong> menu.</p></li>
+<li><p>Select the member in the member list you want to grant the
+permission.</p></li>
+<li><p>Tick the <strong>Manage company</strong> check box in the Permission item
+displayed at the bottom of the Member info tab located to the right
+of the member list.</p>
+<div class="figure align-default" id="id14">
+<a class="reference internal image-reference" href="../_images/en-manage-company-member-permission.png"><img alt="Company Manager" src="../_images/en-manage-company-member-permission.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Company Manager</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the <strong>Save</strong> button.</p></li>
+</ol>
+</div>
+<div class="section" id="template-manager-permission">
+<h3>Template Manager Permission<a class="headerlink" href="#template-manager-permission" title="Permalink to this headline">¶</a></h3>
+<p>Template manager permission Template managers can access the <strong>Manage
+template</strong> menu, and can create, edit, deploy, and delete templates.</p>
+<p>The template manager who created a template is the template owner of
+that template by default.</p>
+<p>However, if multiple template managers exist in a company, a template
+manager may not necessarily be the template owner of a template.</p>
+<p>If the template manager is not the template owner, the template manager
+can only view the template settings and duplicate the template.</p>
+<p><strong>Granting the Template Manager Permission</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have either the company administrator or template manager
+permission to perform this action.</p>
+</div>
+<ol class="arabic">
+<li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Manage
+members</strong> menu.</p></li>
+<li><p>Select the member in the member list you want to grant the
+permission.</p></li>
+<li><p>Tick the <strong>Manage company</strong> check box in the Permission item
+displayed at the bottom of the Member info tab to the right of the
+member list.</p>
+<div class="figure align-default" id="id15">
+<a class="reference internal image-reference" href="../_images/en-manage-company-member-permission-template.png"><img alt="Template Manager Permission" src="../_images/en-manage-company-member-permission-template.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Template Manager Permission</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the <strong>Save</strong> button.</p></li>
+</ol>
+</div>
+<div class="section" id="template-usage-document-creation-and-document-management-permissions">
+<h3>Template Usage (Document Creation) and Document Management Permissions<a class="headerlink" href="#template-usage-document-creation-and-document-management-permissions" title="Permalink to this headline">¶</a></h3>
+<p>Template usage Document management The template usage permission allows
+users to create documents from a template, and document management
+permission allows users to manage documents created from a template and
+their data.</p>
+<p>Members with the template usage permission for a template can create
+documents using that template in the <strong>New document</strong> page.</p>
+<p>Members with the document management permission for a template can view,
+delete, and download documents created from that template in the
+<strong>Manage documents</strong> page.</p>
+<p><strong>Granting Template Usage and Document Management Permissions</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have either the company administrator or template manager
+permission to perform this action.</p>
+</div>
+<ol class="arabic">
+<li><p>Click the sidebar menu icon, and go to the <strong>Manage templates</strong> menu.</p></li>
+<li><p>Click the <strong>Template settings</strong> (<img alt="image9" src="../_images/config-icon.PNG" />) icon.</p>
+<div class="figure align-default" id="id16">
+<a class="reference internal image-reference" href="../_images/en-manage-template-settings-icon.png"><img alt="Template Settings Icon" src="../_images/en-manage-template-settings-icon.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Template Settings Icon</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Go to the <strong>Set permissions</strong> tab.</p>
+<div class="figure align-default" id="id17">
+<a class="reference internal image-reference" href="../_images/en-template-setting-set-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en-template-setting-set-permissions.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Template Settings &gt; Set Permissions</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Select the groups or members you want to grant permission for
+template usage and document management.</p></li>
+<li><p>Click the <strong>Save</strong> button.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="manage-groups-and-members">
+<h2>Manage Groups and Members<a class="headerlink" href="#manage-groups-and-members" title="Permalink to this headline">¶</a></h2>
+<p>You can invite, delete, and edit members and create, add, and delete
+groups in the <strong>Manage company</strong> menu. Manage groups Manage members</p>
+<div class="figure align-default" id="id18">
+<a class="reference internal image-reference" href="../_images/en-side-menu-manage-group-members.png"><img alt="Manage Company &gt; Manage Groups/Members" src="../_images/en-side-menu-manage-group-members.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Manage Company &gt; Manage Groups/Members</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="manage-members">
+<h3>Manage Members<a class="headerlink" href="#manage-members" title="Permalink to this headline">¶</a></h3>
+<p>You can invite members to your company or manage invited members in the
+<strong>Manage members</strong> menu. Manage members</p>
+<div class="figure align-default" id="id19">
+<a class="reference internal image-reference" href="../_images/en-manage-members-page.png"><img alt="Manage Company &gt; Manage Members" src="../_images/en-manage-members-page.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Manage Company &gt; Manage Members</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+</div>
+<dl class="simple">
+<dt><strong>① Active</strong></dt><dd><p>Active members You can view the list of active members of the company
+and their information.</p>
+</dd>
+<dt><strong>② Inactive</strong></dt><dd><p>Inactive members You can view the list of inactive members in the
+company and their information.</p>
+</dd>
+<dt><strong>③ Invited</strong></dt><dd><p>Invited members You can view the list of members invited to the
+company and their information.</p>
+</dd>
+<dt><strong>④ Member list</strong></dt><dd><p>You can view, edit, or delete the information of a member by
+selecting a member in the member list and then going to the Member
+info tab on the right.</p>
+</dd>
+<dt><strong>⑤ Member info</strong></dt><dd><p>You can view the member information, change the member status, and
+grant permissions including <strong>Manage company</strong> and <strong>Manage
+templates</strong> to members.</p>
+</dd>
+<dt><strong>⑥ Field value settings</strong></dt><dd><p>You can set the field values that are related to members.</p>
+</dd>
+<dt><strong>⑦ Transfer documents</strong></dt><dd><p>Transfer documents If a member no longer uses the eformsign service,
+the documents of the member can be transferred to other members.</p>
+</dd>
+<dt><strong>⑧ Bulk-invite</strong></dt><dd><p>Bulk-invite You can invite multiple members at once.</p>
+</dd>
+<dt>⑨ Invite members</dt><dd><p>Invite members You can invite members via email or ID.</p>
+</dd>
+<dt>⑩ Delete members</dt><dd><p>When you click the <strong>Trash</strong> icon, a check box will be activated next
+to each member in the member list. Tick the members you want to
+delete and click the <strong>Delete</strong> button.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="manage-groups">
+<h3>Manage Groups<a class="headerlink" href="#manage-groups" title="Permalink to this headline">¶</a></h3>
+<p>You can create groups in the company and view, edit, or delete each
+group’s information.</p>
+<div class="figure align-default" id="id20">
+<a class="reference internal image-reference" href="../_images/en-manag-groups-page.png"><img alt="Manage Company &gt; Manage Groups" src="../_images/en-manag-groups-page.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Manage Company &gt; Manage Groups</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+<dl class="simple">
+<dt>① Group information</dt><dd><p>When you select a group in the list, you can view the name and
+description of the group on the right side. You can also edit the
+group information in the Group information tab.</p>
+</dd>
+<dt>② Member list</dt><dd><p>You can view the list of the members in the group and can add or
+remove members from the group.</p>
+</dd>
+<dt>③ Field value settings</dt><dd><p>You can set the field values that are related to the group.</p>
+</dd>
+<dt>④ Create a group</dt><dd><p>When you click the <strong>Create a group</strong> button, the Create a group
+pop-up window will be displayed. Create a group by entering the group
+name and description and adding members by searching.</p>
+</dd>
+<dt>⑤ Delete a group</dt><dd><p>When you click the <strong>Trash</strong> icon, a check box will be activated next
+to each group in the group list. Tick the groups you want to delete
+and click the <strong>Delete</strong> button.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="my-signature">
+<h2>My Signature<a class="headerlink" href="#my-signature" title="Permalink to this headline">¶</a></h2>
+<p>If you register your signature, initials, and stamp in the <strong>My
+signature</strong> menu, you can easily use them when signing documents. My
+signature</p>
+<p><strong>Registering Your Signature and Initials</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can register your signature and initials in <strong>browsers (PC and</strong>
+<strong>mobile)</strong> <strong>and apps (mobile).</strong></p>
+</div>
+<ol class="arabic">
+<li><p>Click the sidebar menu icon, and go to the <strong>My signature</strong> menu.</p>
+<div class="figure align-default" id="id21">
+<a class="reference internal image-reference" href="../_images/en-side-menu-my-signature.png"><img alt="My Signature Page" src="../_images/en-side-menu-my-signature.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">My Signature Page</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id22">
+<a class="reference internal image-reference" href="../_images/en-my-signature-main.png"><img alt="My Signature Page" src="../_images/en-my-signature-main.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">My Signature Page</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the <strong>OK</strong> button to add a new signature, initials, or stamp.</p>
+<div class="figure align-default" id="id23">
+<a class="reference internal image-reference" href="../_images/en-my-signature-register.png"><img alt="Register Signature" src="../_images/en-my-signature-register.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Register Signature</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</div>
+<ul>
+<li><p><strong>Draw</strong></p>
+<p>You can draw your signature on the screen.</p>
+</li>
+<li><p><strong>Text</strong></p>
+<p>Type your name, and then select a signature style.</p>
+</li>
+<li><p><strong>QR code</strong></p>
+<p>QR code If you scan the QR code with your smartphone camera, you
+can access the sign pad page. Draw your signature on the sign pad.</p>
+</li>
+<li><p><strong>Push notification</strong></p>
+<p>Push notification Select a mobile device you want to connect to
+and click the <strong>Send</strong> button. You can draw your signature using
+the eformsign app installed on the connected device.</p>
+</li>
+</ul>
+</li>
+<li><p>Click the <strong>OK</strong> button to save the signature.</p></li>
+<li><p>Click the <strong>Edit</strong> or <strong>Delete</strong> button to edit or delete the
+signature.</p></li>
+</ol>
+<p><strong>Registering Your Stamp</strong></p>
+<p>Register stamp Some documents may require a seal or stamp rather than a
+signature or initials. You can apply a stamp/seal image to documents
+after registering the image in the eformsign service.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A stamp/seal image needs to be prepared.</p>
+<ul class="simple">
+<li><p>Image type: PNG, JPG</p></li>
+<li><p>File size: Maximum of 300 KB</p></li>
+</ul>
+</div>
+<ol class="arabic">
+<li><p>Click the sidebar menu icon, and go to the <strong>My signature</strong> menu.</p></li>
+<li><p>Click the <strong>Register</strong> button in the Stamp section to add a new
+stamp.</p>
+<div class="figure align-default" id="id24">
+<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp.png"><img alt="Register Stamp" src="../_images/en-my-signature-register-stamp.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Register Stamp</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the image area. A pop-up window will be displayed where you can
+upload an image from your PC. Select the image that you want to
+register.</p>
+<div class="figure align-default" id="id25">
+<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp-popup.png"><img alt="My signature &gt; Register Stamp Pop-up" src="../_images/en-my-signature-register-stamp-popup.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">My signature &gt; Register Stamp Pop-up</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the <strong>OK</strong> button to save the stamp.</p></li>
+<li><p>Click the <strong>Edit</strong> or <strong>Delete</strong> button to edit or delete the
+registered stamp.</p></li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="chapter1.html"
+       title="previous chapter">← Overview</a>
+  </li>
+  <li class="next">
+    <a href="chapter3.html"
+       title="next chapter">Introduction to Web Form Designer →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>
