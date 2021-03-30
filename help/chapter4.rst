@@ -1,686 +1,606 @@
-.. _formbuilder:
+.. _webform:
 
-Introduction to Form Builder
-============================
+Introduction to Web Form Designer
+====================================
 
-Form Builder Overview
----------------------
+Web Form Designer Overview
+------------------------------
 
-Form Builder Also known as OZ in Office, Form Builder is a form editor
-which converts documents created using Microsoft Office into electronic
-documents containing components (fields). By using OZ in Office, you can
-easily convert existing Excel, Word, and PowerPoint forms such as
-contracts, applications, and agreements into electronic documents.
+Web Form Designer is a web form editor that allows you to create electronic documents by uploading document files to eformsign
+and adding component. You can upload PDF files in the **New from template** or the **New from my file** menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.
 
-Previously, converting Excel, Word, or PowerPoint documents into
-electronic documents required the use of an IDE (Integrated Development
-Environment) needing a high degree of programming knowledge. Now, with
-OZ in Office, anyone with the ability to use Microsoft Office can easily
-create electronic documents.
+.. note::
 
-OZ in Office, provided as a Microsoft Office add-in, is easy to use as
-it's displayed as a ribbon menu and contains various components
-including signature, check box, text box, camera, and voice.
+   Currently, only PDF files are supported, but other various file
+   formats such as Microsoft Office, JPG, PNG, etc. are planned to be
+   supported.
 
-The process of creating electronic documents using OZ in Office's
-components is as follows:
+.. note::
 
-.. figure:: resources/ozinoffice-flow_1.png
-   :alt: OZ in Office Usage Flow
-   :width: 750px
+   In addition to Web form designer, eformsign also provides an
+   Microsoft Office Add-in feature named **OZ in Office (Form builder)**
+   which allows you to create electronic documents directly in Microsoft
+   Office. To use Form builder, please install the Microsoft Office
+   add-in, and refer to `??? <#formbuilder>`__.
 
-   OZ in Office Usage Flow
+-  Uploading a PD file in the **New from my file** menu.
 
-Download Form Builder
-~~~~~~~~~~~~~~~~~~~~~
+1. Click the **New from my file** menu
 
-Download Form Builder 1. Login to eformsign and then click the menu icon
-(|image1|) on the top left corner of the dashboard screen to open the
-sidebar menu. Then, click the **Download eformsign form builder** button
-at the bottom.
+   |image1|
 
-.. figure:: resources/formbuilder_download.png
-   :alt: Location of the Download eformsign Form Builder Button
-   :width: 750px
+2. Drag and drop the file onto the screen or click the **Select a file**
+   button and select a file from your computer to upload.
 
-   Location of the Download eformsign Form Builder Button
+   |image2|
 
-2. The **Download eformsign form builder** page will be displayed, as
-shown below. Click the **Download form builder** button at the bottom of
-the page.
+3. Once the file is uploaded, the Web Form Designer screen will be
+   displayed. You can add components to the document here.
 
-.. figure:: resources/formbuilder_download_2.png
-   :alt: eformsign Form Builder Download Page
-   :width: 750px
+   |image3|
 
-   eformsign Form Builder Download Page
+Uploading a PDF file in the **Manage templates** menu.
 
-3. Select a location to save the Form Builder executable file and
-download it.
+1. Go to the **Manage templates** menu.
 
-Install Form Builder
-~~~~~~~~~~~~~~~~~~~~
+   .. figure:: resources/web-form_1.png
+      :alt: Web Form Designer Screen
+      :width: 700px
 
-1. Click the Form Builder executable file to run it.
 
-2. When the Wizard screen shown below is displayed, select the
-**Complete** option and then click the **Next** button.
 
-.. figure:: resources/formbuilder_wizard_1.png
-   :alt: Form Builder Installation Screen (1)
-   :width: 500px
+2. To upload a file, simply drag the file onto the **Manage templates** page or click the **Select a file** button and then upload the file.
 
-   Form Builder Installation Screen (1)
+   .. figure:: resources/web-form_2.png
+      :alt: Web Form Designer Screen
+      :width: 700px
 
-3. When the installation proceeds, the following screen is displayed.
 
-.. figure:: resources/formbuilder_wizard_2.png
-   :alt: Form Builder Installation Screen (2)
-   :width: 500px
+3. When a file is uploaded, the **Create template** page will be displayed as follows:
 
-   Form Builder Installation Screen (2)
+.. figure:: resources/web-form_3.png
+   :alt: Web Form Designer Screen
+   :width: 700px
 
-4. When the installation is completed, the following screen is
-displayed. Click the **Finish** button to close the installation screen.
 
-.. figure:: resources/formbuilder_wizard_3.png
-   :alt: Form Builder Installation Screen (3)
-   :width: 500px
+Web Form Designer Menu Layout
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Form Builder Installation Screen (3)
+Web form designer consists of a screen that displays the file, the left and right panels, and the top bar.
 
-5. Check whether Form Builder was installed properly by running MS
-Office (Word, Excel, PowerPoint). If **OZ in Word/Excel/PowerPoint** is
-displayed as below, then it was installed properly.
+.. figure:: resources/web-form_4a.png
+   :alt: Web Form Designer Menu Layout - Create from template
+   :width: 700px
 
-.. figure:: resources/formbuilder_word_4.png
-   :alt: OZ in Word Ribbon Menu
-   :width: 750px
 
-   OZ in Word Ribbon Menu
+.. figure:: resources/web-form_4b.png
+   :alt: Web Form Designer Menu Layout - Create from my file
+   :width: 700px
 
-Form Builder Menu Layout
-~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you run Microsoft Office Excel, Word, or PowerPoint after installing
-Form Builder, you can see that the **OZ in Excel, OZ in Word, or OZ in
-PowerPoint** tab is added to the OZ in Office ribbon menu.
+1. **Document display screen:** Displays the uploaded file.
 
-.. figure:: resources/ozinoffice.png
-   :alt: Microsoft Office OZ in Office Ribbon Menu
-   :width: 750px
+2. **Top bar:** In **Create from template**, there are two steps:
+   **Design form** and **Configure**. You can also go back to the
+   **Manage templates** page and preview the template with components added. In **Create from my file**, there are three steps: **Design form**, **Add recipients**, and **Options**. After designing a form,
+   you can create a document or save the form as a draft.
 
-   Microsoft Office OZ in Office Ribbon Menu
+   .. note::
 
-1. **File:** Allows to execute (preview) the document as an electronic
-   form, upload the document to eformsign as a template, or download an
-   electronic form from eformsign.
+      Click each step shown on the top bar displays the screen for each
+      step. You can set the workflow, permission, etc. Make sure to
+      configure the settings before you finish creating a document.
 
-2. **Property:** Sets the component properties including ID, and Items.
+3. **Component list:** There are 13 basic components including text,
+   multiline, signature, check, and radio. There are also two data
+   components which are document ID and document number. More components
+   including custom and shape components are planned to be added in the
+   future.
 
-3. **Input:** Adds components used in templates.
-
-4. **Info:** Adds the necessary components in order to have information
-   such as user and date to be automatically entered into templates.
-
-5. **Drawing:** Draws components in the location and size you want.
-   **Drawing** is supported only in Word and PowerPoint.
-
-6. **Deletion:** Deletes components after selecting components and then
-   clicking the **Delete** button.
-
-7. **Window:** Allows to open the **Properties** tab of the selected
-   component or display selected components in the **Selection** tab.
-
-8. **Help:** Checks the version of Form Builder and performs updates.
+4. **Properties:** Allows to set the properties of each component after
+   adding components such as Signature, Text, and Check by clicking and
+   locating them to the document display screen.
 
 Overview of Components
 ----------------------
 
 Components Components are used to create fields in electronic documents
-in which users can enter information. Many different components
-including signature, check, date, and text are provided in Form Builder,
-and each component can be configured in detail by using the **Component
-Properties** tab.
+that users can enter information. Many different components including
+Signature, Check, Date, and Text are provided, and each component can be
+configured in detail by using the **Properties** tab.
+
+.. figure:: resources/component_web_1.png
+   :alt: Adding a component in Web Form Designer
+   :width: 700px
 
 Component Types
 ~~~~~~~~~~~~~~~
 
 The components provided in eformsign are as follows:
 
-.. figure:: resources/components-in-word.png
-   :alt: Component Types
-   :width: 730px
+-  `Signature <#signature2>`__\ **:** Enters a signature.
 
-   Component Types
+-  `Text <#text2>`__\ **:** Enters short text (usually 1 to 2 words).
 
--  `Check <#check>`__\ **:** Components Check Ticks a check box.
+-  `Multiline <#text2>`__\ **:** Enters long text with multiple lines.
 
--  `Radio <#select>`__\ **:** Components Radio Selects an item among
-   multiple items (can also be set to select multiple items).
+-  `Label <#label2>`__\ **:** Sets the form ID.
 
--  `Text <#text>`__\ **:** Components Text Enters short text (usually 1
-   to 2 words).
+-  `Check <#check2>`__\ **:** Ticks a check box.
 
--  `Multiline <#text>`__\ **:** Components Multiline Enters long text
-   with multiple lines.
+-  `Radio <#select2>`__\ **:** Selects an item among multiple items (can also be set to select multiple items).
 
--  `Combo <#combo>`__\ **:** Components Combo Displays a drop-down menu
-   that allows you to select an item.
+-  `Combo <#combo2>`__\ **:** Displays a drop-down menu that allows you to select an item.
 
--  `Datetime <#date>`__\ **:** Components Datetime Enters a specific
-   date.
+-  `Toggle <#toggle2>`__\ **:** Switches to another value if two or more values are entered.
 
--  `Numeric <#numeric>`__\ **:** Components Numeric Enters a number.
+-  `Datetime <#date2>`__\ **:** Enters a specific date.
 
--  `Toggle <#toggle>`__\ **:** Components Toggle Switches to another
-   value if two or more values are entered.
+-  `Numeric stepper <#numeric2>`__\ **:** Enters a number.
 
--  `Signature <#signature>`__\ **:** Components Signature Enters a
-   signature.
+-  `Camera <#camera2>`__\ **:** Takes a photo using a camera or selects a photo from an album in devices with a built-in
+   camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).
 
--  `Camera <#camera>`__\ **:** Components Camera Takes a photo using a
-   camera or selects a photo from an album in devices with a built-in
-   camera (e.g. smartphone, tablet, etc.). Selects an image file in
-   devices without a camera (e.g. desktop PC).
+-  `Voice <#record2>`__\ **:** Records audio in devices with a voice recording function.
 
--  `Voice <#record>`__\ **:** Components Voice Records audio in devices
-   with a voice recording function.
+-  `Attachment <#attach2>`__\ **:** Attaches a file.
 
--  `Attachment <#attach>`__\ **:** Components Attachment Attaches a
-   file.
+   **Data components**
 
--  `User: <#user>`__ Components User Enters information of the document
-   user.
+-  `Document ID <#document2>`__\ **:** Enter the document ID in a document.
 
--  `Date <#usedate>`__\ **:** Components Date Enters the date in which
-   the document is created or modified.
+-  `Document number <#document2>`__\ **:** Enters the document number in a document.
 
--  `Document <#document>`__\ **:** Components Document Enters the
-   document number or ID in the document itself.
+Setting Properties for Each Component Type
+------------------------------------------
 
--  `Label <#label>`__\ **:** Components Label Sets the form ID.
+All components have common and unique properties. When you click the
+component added, the **Properties** tab where you can set and see
+detailed properties of each component will be displayed on the right
+side of the Web form designer screen. Common properties include ID and
+Tooltip Text, and the meaning of each property is as follows:
 
-Accessing Component Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  **ID:** Unique ID that identifies each component. When assigning who can fill out a component, you can use the component ID
+   to do so. You can also use the component ID to extract data in CSV format.
 
-Every component has its own detailed settings called **OZ Component
-Properties**. The properties of each component can be accessed by
-selecting a component and then clicking the property icon or the
-**Properties** menu.
+-  **Placeholder:** Text displayed as a help message before entering information.
 
-.. figure:: resources/checking-components-properties.png
-   :alt: Accessing Component Properties
-   :width: 730px
-
-   Accessing Component Properties
+-  **Tooltip Text:** In Windows, the text in the Tooltip Text box of a component is displayed in the form of a
+   speech bubble when hovering the mouse over the component. In mobile, the text is displayed on the quick type bar when clicking on the component.
 
 .. note::
 
-   All components must have an ID. An ID is automatically generated when
-   you create a component, but it is recommended to rename it to
-   something you can easily recognize. For example, you can rename the
-   ID of a component for entering John Doe, Jane Doe, etc. as 'name'. By
-   doing so, it is easier to identify components when deciding whether
-   to display a field to a specific user when you are configuring the
-   Field settings of a template.
+   For the Document component which is for providing information, Tooltip Text is not provided.
 
-How to Add Components
-~~~~~~~~~~~~~~~~~~~~~
+The description of each component is as follows.
 
-There are two different ways of adding components: adding components in
-Excel, and adding components in Word/PowerPoint. In Word or PowerPoint,
-you can add components in two different ways.
+.. _signature2:
 
-Adding Components in Excel
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Signature
+~~~~~~~~~
 
-1. Open Excel and go to the **OZ in Excel** ribbon menu.
+This component is used for signing a signature on a document.
 
-.. figure:: resources/ozinexcel_1.png
-   :alt: Adding Components in Excel (1)
-   :width: 730px
+Clicking the signature area displays the **Signature** pop-up which allows you to sign a signature by drawing, entering text, or using a previously registered signature.
 
-   Adding Components in Excel (1)
+|image4|
 
-2. Select the cell in which you want to add a component.
+**Component Properties**
 
-.. figure:: resources/ozinexcel_2.png
-   :alt: Adding Components in Excel (2)
-   :width: 730px
+.. figure:: resources/Signature-component-properties_web.png
+   :alt: Setting Signature Component Properties
+   :width: 250px
 
-   Adding Components in Excel (2)
 
-3. Click the component you want.
+**① ID**
 
-.. figure:: resources/ozinexcel_3.png
-   :alt: Adding Components in Excel (3)
-   :width: 730px
+Enters the ID of the signature component. For example, the ID of the component can be ‘signerSignature’ for contract signers.
 
-   Adding Components in Excel (3)
+**② Signature Type**
 
-4. Check that the component has been added by viewing the **OZ Component
-Properties** tab.
+Selects the signature type to be used when signing.
 
-Adding Components in Word or PowerPoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  **Enter Directly:** Clicking the signature area displays the **Signature** pop-up which allows you to sign by selecting one of the multiple signing methods which are **Draw**, **Text**, **Mobile**, **Stamp**, and **Registered signature**.
 
-**Method 1: Adding Components by Clicking a Component Type**
+-  **Registered Signature:** If the user has already registered a signature on eformsign, then clicking the signature area inserts the registered signature into the document.
 
-1. Open Word or PowerPoint and select the location in the document where
-you want to add the component.
+-  **Registered Initial:** If the user has already registered an initial on eformsign, then clicking the signature area inserts the registered initial into the document.
 
-.. figure:: resources/ozinword_1.png
-   :alt: Method 1: Adding Components by Clicking a Component Type in
-   Word or PowerPoint (1)
-   :width: 600px
-
-   Method 1: Adding Components by Clicking a Component Type in Word or
-   PowerPoint (1)
-
-2. Click the component type you want to add in the ribbon menu of **OZ
-in Word** or **OZ in PowerPoint**.
-
-.. figure:: resources/ozinword_2.png
-   :alt: Method 1: Adding Components by Clicking a Component Type in
-   Word or PowerPoint (2)
-   :width: 600px
-
-   Method 1: Adding Components by Clicking a Component Type in Word or
-   PowerPoint (2)
-
-3. Adjust the size of the component.
-
-.. figure:: resources/ozinword_3.png
-   :alt: Method 1: Adding Components by Clicking a Component Type in
-   Word or PowerPoint (3)
-   :width: 600px
-
-   Method 1: Adding Components by Clicking a Component Type in Word or
-   PowerPoint (3)
-
-**Method 2: Adding Components by Drawing a Component**
-
-1. Open Word or PowerPoint and go to the **OZ in Word/Powerpoint**
-ribbon menu.
-
-2. Click the **Drawing Component** icon and select the component type
-you want to add in the drop-down menu displayed.
-
-.. figure:: resources/ozinword_2_1.png
-   :alt: Method 2: Adding Components by Drawing a Component in Word or
-   PowerPoint (1)
-   :width: 600px
-
-   Method 2: Adding Components by Drawing a Component in Word or
-   PowerPoint (1)
-
-3. Add the component in the position and size you want.
-
-.. figure:: resources/ozinword_2_2.png
-   :alt: Method 2: Adding Components by Drawing a Component in Word or
-   PowerPoint (2)
-   :width: 600px
-
-   Method 2: Adding Components by Drawing a Component in Word or
-   PowerPoint (2)
-
-How to Delete Components
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Select the component you want to delete and then click the **Delete**
-icon (|image2|) in the **OZ in Office** menu. You can also select and
-delete multiple components.
-
-How to Use Each Component Type
-------------------------------
-
-eformsign provides various types of components such as check box, combo
-box, text, and signature through Microsoft Office’s **OZ in Office**
-ribbon menu.
-
-All components of **OZ in Office** have both common and unique
-properties. You can view both the common and unique properties of
-components in the **OZ Component Properties** tab. Common properties
-include ID and Tooltip Text, and the meaning of each property is as
-follows:
-
--  **ID:** Components ID Unique key for using an entered value in
-   eformsign.
-
--  **Tooltip Text:** Components Tooltip Text In Windows, the text in the
-   Tooltip Text box of a component is displayed in the form of a speech
-   bubble when hovering the mouse over the component. In mobile, the
-   text is displayed on the quick type bar when clicking on the
-   component.
+-  **Registered Stamp:** If the user has already registered a stamp on eformsign, then clicking the signature area inserts the registered stamp into the document.
 
 .. note::
 
-   To open the **OZ Component Properties** window, click on a component
-   and then click the **Properties** icon (|image3| ) in the **OZ in
-   Office** ribbon menu.
+   If there is a registered signature or initial, then it will be automatically entered in the signature area when a signature area is clicked. However, if there is no registered signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked.
 
 .. note::
 
-   The Tooltip Text feature is not provided for the Info group including
-   User, Date, Document, and Label component types.
+   In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** tab in the **Signature** pop-up, and then select a stamp image and click **OK**.
 
-The description of each component type provided in eformsign is as
-follows.
+**③ Signature Pen Thick**
+
+Sets the signature pen thickness.
+
+**④ Signature Pen Color**
+
+Sets the signature pen color.
+
+**⑤ Placeholder**
+
+Sets the help message displayed before signing.
+
+**⑥ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a component. On the eformsign app, it is displayed at the top center of the keypad.
+
+.. tip::
+
+   Automatically entering signer and signature date
+
+   Click the signature component and then click the icons shown to add the signature date and signer.
+
+   .. figure:: resources/Signature-component-properties_web_icon.png
+      :alt: Signature date and signer
+
+
+   **① Signature date:** Automatically enters the date signed. By clicking the Add date signed icon, you can set the date format in the
+   date signed component properties on the right.
+
+   .. figure:: resources/Signature-component-properties_web_date.png
+      :alt: Date signed
+      :width: 700px
+
+
+   **② Add signer:** Automatically enters the signer information. By
+   clicking the Add signer icon, you can specify the signer information
+   by ID, name, department, title/position, mobile, or phone.
+
+   .. figure:: resources/Signature-component-properties_web_signer.png
+      :alt: Add signer
+      :width: 200px
+
+
+   .. note::
+
+      You can add multiple signed dates and signers for a given
+      signature. You can use this when you need to enter the date signed
+      repeatedly in a given document such as a contract or enter
+      detailed information of a signer.
+
+.. _text2:
+
+Text and Multiline
+~~~~~~~~~~~~~~~~~~
+
+Both Text and Multiline components are used to create text fields. The Text component is suitable for short
+text with 1 to 2 words, and the Multiline component is suitable for long text with more than 1 line.
+
+**Component Properties**
+
+.. figure:: resources/wfd-text-component-properties.png
+   :alt: Setting Text and Multiline Component Properties
+   :width: 400px
+
+
+**① ID**
+
+Enters the ID of the Text/Multiline component. For example, the ID of the component in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.
+
+.. note::
+
+   All components must have an ID. An ID is automatically generated when you create a component, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a component for entering John Doe, Jane Doe, etc. as 'name'. By doing so, it is easier to identify components when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
+
+**②Default value**
+
+Sets the default text.
+
+.. note::
+
+   This option can be set only in the Text component. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.
+
+**③ Max length**
+
+Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters
+
+**④ Keyboard type**
+
+Selects the keyboard type to be used when entering text in the component. Keyboard Type can only be used in mobile devices such as
+smartphones and tablets.
+
+**④ Tooltip text**
+
+Displays the description in Tooltip Text when you hover the mouse over a component.
+
+**⑤ Placeholder**
+
+Displays a help message when no value is entered.
+
+**⑥ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a component.
+
+.. _label2:
+
+Label
+~~~~~
+
+This component is used for setting the form ID of a document.
+
+**Component Properties**
+
+.. figure:: resources/label_property_web.png
+   :alt: Setting Label Component Properties
+   :width: 250px
+
+   Setting Label Component Properties
+
+**① ID**
+
+The form ID of the document is automatically generated and displayed. It can also be changed.
+
+The form ID defined here can be applied when editing the document.
+
+**②Text**
+
+Text entered in the text box is displayed on the document.
+
+.. _check2:
 
 Check
 ~~~~~
 
-Components Check The **Check** component is used to check whether an
-item is checked or not. This component is similar to the **Radio**
-component, but it is used for checking the status of an item (whether it
-is checked or not) while the **Radio** component is used for checking
-which item among multiple items is checked.
+The Check component is used to check whether an item is checked or not. This component is similar to the Radio component, but
+the Check component is used for checking the status of an item (whether it is checked or not) while the Radio component is used for checking which item among multiple items is checked.
 
-|image4|
+.. tip::
 
-When data is downloaded in the CSV format, the **Check** component’s
-input value is displayed as follows:
+   **Difference between check and radio components**
+
+   You can select multiple items for check components, but not for radio components.
+
+When data is downloaded in the CSV format, the Check component’s input value is displayed as follows:
 
 -  When the item is checked: true
 
 -  When the item is not checked: false
 
-In Word and PowerPoint, the **Check** component is shown as a
-rectangular shape. Make sure to enter data inside the rectangular shape.
+In Word and PowerPoint, the Check component is shown as a rectangular shape. Make sure to enter data inside the rectangular shape.
 
 **Component Properties**
 
-.. figure:: resources/check-component-properties-1.png
+.. figure:: resources/check-component-properties-1_web.png
    :alt: Setting Check Component Properties
-   :width: 500px
-
-   Setting Check Component Properties
+   :width: 250px
 
 **① ID**
 
-Each Check component must be given a different ID. If multiple check
-components are given the same ID, then only the value of the last
-component is displayed.
+Each Check component must be given a different ID. If multiple check components are given the same ID, then only the value of the last component is displayed.
 
-**② Check Style**
+**② Items**
+
+You can enter the text to be displayed in the item. You can also add multiple check components so that multiple items can be selected.
+
+**③ Checked Style**
 
 You can specify the style of each component in **Component Properties**.
-The check box is set as the default style, and you can change it to
-another style (radio button or red circle).
+The check box is set as the default style, and you can change it to another style (radio button or red circle).
 
-The below example shows how check boxes are displayed according to the
-selected style.
+The below example shows how checks are displayed according to the selected style.
 
 |image5|
 
-.. _select:
+.. tip::
+
+   You can select the color and style by clicking the drop-down icon.
+   Once selected, the check style will be shown in the color and style you selected.
+
+   |image6|
+
+**④ Unchecked style**
+
+You can select the style of each component that is not selected. For unchecked style, shecks display square boxes, radio buttons display circles, and circles display nothing.
+
+**⑤ Tooltip text**
+
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
+
+.. _select2:
 
 Radio
 ~~~~~
 
-Components Radio The Radio component is used for checking which radio
-button is selected among multiple items. When data is downloaded in the
-CSV format, the selected item will be displayed.
-
-|image6|
-
-In Word and PowerPoint, the radio component is shown as a rectangular
-shape. Make sure to enter data inside the rectangular shape.
+The Radio component is used for checking which item is selected among multiple items. When data is downloaded in the CSV
+format, the selected item will be displayed. 
 
 **Component Properties**
 
-.. figure:: resources/Radio-component-properties.png
+.. figure:: resources/Radio-component-properties_web.png
    :alt: Setting Radio Component Properties
-   :width: 400px
+   :width: 250px
 
-   Setting Radio Component Properties
 
 **① ID**
 
-In **Component Properties**, make sure that all the selected radio
-buttons are assigned the same ID.
+In **Component Properties**, make sure that all the selected radio buttons are assigned the same ID.
 
-For example, if there are six choices available in a multiple-choice
-question, assign "question1" as the ID for all of them. In the example
-shown below, the IDs of all the items are set to the same "question 1".
+For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. In the example shown below, the IDs of all the items are set to the same "question 1".
 
-.. figure:: resources/radio-items-should-have-same-ID.png
+.. figure:: resources/radio-items-should-have-same-ID_web.png
    :alt: Example of Setting a Radio Component
    :width: 700px
 
-   Example of Setting a Radio Component
 
-**② Check Style**
 
-You can choose the style of the Radio component in **Component
-Properties**. The default style is the **Circle**, and you can change it
-to another style (check box and radio button).
+**② Items**
 
-**③ Multiselectable**
+Items with the same ID are shown in the item list of the component properties window and you can edit text easily.
 
-Checking the **Multi-selectable** option allows you to select multiple
-items. If you select more than one item, then when data is saved, each
-item is separated by a comma (,).
+**③ Selected style**
 
-**④ Uncheckable**
+You can specify the style of each component in **Component Properties**.
+The black circle set as the default style, and you can change it to another style in the dropdown menu.
 
-Checking the **Uncheckable** option allows you to deselect a selected
-item by clicking it again.
+.. tip::
+
+   You can select the color of each style by clicking the drop-down icon. Once selected, the circle will be in the color you selected.
+
+   |image7|
+
+**④ Unselected style**
+
+You can select the style of each component that is not selected.
 
 **⑤ Tooltip Text**
 
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
+
+.. _combo2:
 
 Combo
 ~~~~~
 
-Components Combo The Combo component is used when you need to select one
-of the multiple items.
+The Combo component is used when you need to select one of multiple items.
 
-|image7|
-
-If you click a combo component, a list of items is displayed as follows:
+If you click a Combo component, a list of items is displayed as follows:
 
 |image8|
 
 **Component Properties**
 
-.. figure:: resources/combo-component-properties.png
+.. figure:: resources/combo-component-properties_web.png
    :alt: Setting Combo Component Properties
-   :width: 400px
+   :width: 250px
 
-   Setting Combo Component Properties
+
 
 **① ID**
 
-Enters the ID of the Combo component. For example, the ID of the
-component for selecting the favorite color can be 'favoriteColor’.
+Enter the ID of the Combo component. For example, the ID of the component for selecting the favorite color can be ‘Favorite color’.
 
-**② Items**
+**② Item count**
 
-Enters the items you want. You can separate the items by pressing Enter.
+Enter the items you want. You can separate the items by pressing Enter.
+
+**③ Default item**
+
+Select the item set as default.
+
+**④ Placeholder**
+
+Text displayed as a help message before entering information.
 
 .. note::
 
-   If you want to display a message such as ‘Please select a color’ in a
-   combo box in a document for recipients to view, then enter the
-   message at the top of the list of items in the combo box and select
-   it before sending the document.
+   If you want to display a message such as ‘Select a color’ in a combo box, then enter ‘Select a color’ and set the default item as 'Select a color'.
 
-**③ Allow Empty Value**
+.. _toggle2:
 
-Checking the **Allow Empty Value** option allows you to deselect a
-selected item. You can initialize data when filling in a combo component
-in the following ways:
+Toggle
+~~~~~~
 
--  PC: Right-click on the component and select the **Initialize Input
-   Data** option in the pop-up menu.
+This component is used for indicating a specific status such as ON/OFF. If you use this component, then the input value is switched according to a defined order whenever the component is clicked.
 
--  Mobile: Click the Trash icon.
-
-**④ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
-
-.. _text:
-
-Text and Multiline
-~~~~~~~~~~~~~~~~~~
-
-Components Text Components Multiline Both Text and Multiline components
-are used to create text fields. The Text component is suitable for short
-text with 1 to 2 words, and the Multiline component is suitable for long
-text with more than 1 line.
+You can change the status to Good or Bad by clicking the components as follows:
 
 |image9|
 
 **Component Properties**
 
-.. figure:: resources/text-component-properties.png
-   :alt: Setting Text and Multiline Component Properties
-   :width: 400px
+.. figure:: resources/toggle-component-properties_web.png
+   :alt: Toggle Component Properties
+   :width: 250px
 
-   Setting Text and Multiline Component Properties
 
 **① ID**
 
-Enters the ID of the text/multiline component. For example, the ID of
-the component in which John Doe, Jane Doe, etc. are entered can be named
-‘personName’.
+Enters the ID of the Toggle component. For example, the ID of the component for the first inspection item can be named ‘APT inspection 1’.
 
-**② Max Length**
+**② Items**
 
-Sets the maximum length of characters (including space) that can be
-entered. By default, it is set to ‘0’, and in this case, there is no
-limit for the number of characters.
+Enters the list of items that will be toggled whenever the Toggle component is clicked. You can separate the items by pressing Enter.
 
-**③ Keyboard Type**
+**③ Default item**
 
-Selects the keyboard type to be used when entering text in the
-component. Keyboard Type can only be used in mobile devices such as
-smartphones and tablets.
+Select the item set as default.
 
-**④ Show Password Characters**
+**④ Tooltip Text**
 
-This option can be set only in the text component. By checking this
-option, the password is hidden with the password symbol (●) when
-entering text. The password is also hidden with the password symbol in
-PDFs, and can only be seen when downloaded in the CSV format.
+Displays the description in Tooltip Text when you hover the mouse over a component.
 
-**⑤ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
-
-.. _date:
+.. _date2:
 
 Datetime
 ~~~~~~~~
 
-Components Datetime This component is used for entering a date. Clicking
-the component displays a date selection window where you can select the
-date you want.
-
-|image10|
+This component is used for entering a date. Clicking the component displays a date selection window where you can select the date you want.
 
 **Component Properties**
 
-.. figure:: resources/datetime-component-properties_02.png
+.. figure:: resources/datetime-component-properties_02_web.png
    :alt: Setting Datetime Component Properties
-   :width: 400px
+   :width: 250px
 
-   Setting Datetime Component Properties
+
 
 **① ID**
 
-Enters the ID of the Datetime component. For example, the ID of the
-component for selecting the vacation start date can be named
-‘vacationStartDate’.
+Enters the ID of the Datetime component. For example, the ID of the component for selecting the vacation start date can be named ‘Vacation start date’.
 
-**② Format**
+**② Default value**
 
-Sets the format in which date is displayed. The default setting is
-date_yyyy-MM-dd.
+Sets the date to be displayed as default. If you check **Set today's date as default date**, then today's date is automatically entered when a document is opened.
+
+**③ Format**
+
+Sets the format in which date will be displayed. The default setting is date_yyyy-MM-dd.
 
 -  **yyyy:** Displays the year.
 
 -  **MM:** Displays the month. Must be in uppercase.
 
--  **dd:** Displays the days.
+-  **dd:** Displays the day.
 
-For example, if you want to display the date in the format of
-‘15-02-2020’, then enter **dd-MM-yyyy** in the Format field.
+For example, if you want to display the date in the format of ‘15-02-2020’, then enter **dd-MM-yyyy** in the Format field.
 
-**③ Minimum Date/Maximum Date**
+**④ Minimum Date/Maximum Date**
 
-Sets the range of dates that can be selected in the component by
-specifying the minimum and maximum dates.
+Sets the range of dates that can be selected in the component by specifying the minimum and maximum dates.
 
-**④ Display Today for Empty Value**
+**⑤ Placeholder**
 
-Checking this option automatically enters the date (the date in which
-the document is opened) when the document is opened. This option is
-checked by default when you add a **Datetime** component. You can change
-the date by clicking the component.
-
-**⑤ Allow Empty Value**
-
-Checking this option allows you to clear the number displayed on a
-Numeric component. In a Datetime component, once you select a date, you
-can change it to another date but cannot clear the date. However,
-checking this option allows you to clear the date displayed on the
-Datetime component. If no date is selected in the Datetime component but
-the **Display Today for Empty Value** option is checked, then the date
-component is automatically filled in with the date in which the document
-is opened.
-
--  PC: Right-click on the component to display the pop-up menu and then
-   select the **Initialize Input Data** menu.
-
--  Mobile: Click the Trash icon.
+Text displayed as a help message before entering information.
 
 **⑥ Tooltip Text**
 
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
-Numeric
-~~~~~~~
+.. _numeric2:
 
-Components Numeric This component is used for entering a number.
-Clicking the component displays two arrows on the right, and you can
-increase or decrease the number by clicking them. In PCs, you can
-directly enter the desired number into the component by using a
-keyboard. In smartphones and tablets, you can scroll through the list of
-numbers and select the one you want.
+Numeric stepper
+~~~~~~~~~~~~~~~~
 
-|image11|
+This component is used for entering a number.
+Clicking the component displays two arrows on the right, and you can increase or decrease the number by clicking them. In PCs, you can directly enter the desired number into the component by using a keyboard. In smartphones and tablets, you can scroll through the list of numbers and select the one you want.
 
 **Component Properties**
 
-.. figure:: resources/number-component-properties.png
+.. figure:: resources/number-component-properties_web.png
    :alt: Setting Numeric Component Properties
-   :width: 400px
+   :width: 250px
 
-   Setting Numeric Component Properties
 
 **① ID**
 
-Enters the ID of the numeric component. For example, the ID of the
-component for entering the number of people in a reservation can be
-named ‘peopleCount’.
+Enters the ID of the Numeric component. For example, the ID of the component for entering the number of people in a reservation can be named ‘peopleCount’.
 
-**② Unit of Change**
+**② Default value**
 
-Enters the unit of number that will increase/decrease the number
-whenever the up/down arrow icon is clicked. For example, if the ‘Unit of
-Change’ is set to 100, then when you click the up arrow icon (▲), the
-number is increased by 100 such as 200, 300, 400, and so on.
+Enters the default number to be displayed.
 
-**③ Minimum/Maximum Value**
+**③ Unit of Change**
+
+Enters the unit of number that will increase/decrease the number whenever the up/down arrow icon is clicked. For example, if the **Unit of Change** is set to 100, then when you click the up arrow icon (▲), the number is increased by 100 such as 200, 300, 400, and so on.
+
+**④ Minimum/Maximum Value**
 
 Sets the range of numbers that can be entered into the component by
 specifying the minimum and maximum values. For example, for the date of
@@ -691,271 +611,103 @@ Value will be automatically entered. For example, if the Maximum Value
 is set to 100 and you enter 101, then the number will automatically
 change to 100.
 
-**④ Allow Empty Value**
+**⑤ Placeholder**
 
-Checking the **Allow Empty Value** option allows you to clear the number
-displayed on the numeric component. After entering a number in a numeric
-component, you can change the number again, but cannot clear the number.
-However, by checking this option, you can clear the number displayed on
-the component as described below.
+Text displayed as a help message before entering information.
 
--  PC: Right-click on the component to display the pop-up menu and then
-   select the **Initialize Input Data** menu.
+**⑥ Tooltip Text**
 
--  Mobile: Click the Trash icon.
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
-**⑤ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
-
-Toggle
-~~~~~~
-
-Components Toggle This component is used for indicating a specific
-status such as ON/OFF. If you use this component, then the input value
-is switched according to a defined order whenever the component is
-clicked.
-
-|image12|
-
-You can change the status to **Good** or **Bad** by clicking the
-components as follows:
-
-|image13|
-
-**Component Properties**
-
-.. figure:: resources/toggle-component-properties.png
-   :alt: Toggle Component Properties
-   :width: 400px
-
-   Toggle Component Properties
-
-**① ID**
-
-Enters the ID of the toggle component. For example, the ID of the
-component for the first inspection item can be named ‘inspection1’.
-
-**② Items**
-
-Enters the list of items that will be toggled whenever the toggle
-component is clicked. You can separate each item by pressing Enter.
-
-**③ Allow Empty Value**
-
-Checking this option allows you to clear the item displayed on the
-toggle component. When you select a toggle component, you can toggle to
-another item but cannot clear the item displayed on the component.
-However, by checking this option, you can clear the item displayed on
-the component as described below:
-
--  PC: Right-click on the component to display the pop-up menu and then
-   select the **Initialize Input Data** menu.
-
--  Mobile: Click the Trash icon.
-
-**④ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
-
-Signature
-~~~~~~~~~
-
-Components Signature This component is used for signing a signature on a
-document.
-
-|image14|
-
-Clicking the signature area displays the **Signature** pop-up which
-allows you to sign a signature by drawing, entering text, or using a
-previously registered signature.
-
-|image15|
-
-**Component Properties**
-
-.. figure:: resources/Signature-component-properties.png
-   :alt: Setting Signature Component Properties
-   :width: 400px
-
-   Setting Signature Component Properties
-
-**① ID**
-
-Enters the ID of the signature component. For example, the ID of the
-component can be ‘signerSignature’ for contract signers.
-
-**② Signature Type**
-
-Selects the signature type to be used when signing.
-
--  **Enter Directly:** Clicking a signature area displays the
-   **Signature** pop-up which allows you to sign by selecting one of the
-   multiple signing methods which are **Draw**, **Text**, **Mobile**,
-   **Stamp**, and **Registered signature**.
-
--  **Registered Signature:** If the user has already registered a
-   signature on eformsign, then clicking a signature area inserts the
-   registered signature into the document.
-
--  **Registered Initials:** If the user has already registered an
-   initial on eformsign, then clicking a signature area inserts the
-   registered initial into the document.
-
-.. note::
-
-   If you have registered a signature or initial on eformsign, then when
-   you click on a signature component, the registered signature/initial
-   will be automatically entered into the component. However, if there
-   is no registered signature or initial, then a regular **Signature**
-   pop-up will be displayed when you click on a signature component.
-
-.. note::
-
-   In some cases, you may need to use a seal or stamp on a document
-   rather than your own signature. With eformsign, you can also use a
-   stamp image to stamp the signature on a document. To use a stamp
-   image when submitting a document, click the **Stamp** tab in the
-   **Signature** pop-up, and then select a stamp image and click **OK**.
-
-**③ Signature Pen Thick**
-
-Sets the signature pen thickness.
-
-**④ Signature Pen Color**
-
-Sets the signature pen color.
-
-**⑤ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
-
-.. note::
-
-   You can set the signature date to be automatically entered in
-   documents that require signature, such as electronic contracts and
-   electronic agreements.
-
-   1. Open the document file (Word, Excel, PowerPoint) to be converted
-   into an electronic form or create a new document.
-
-   2. Add a Signature component in the area of the document to be
-   signed.
-
-   3. Enter the ID of the Signature component in the **Component
-   Properties** tab. For example, the ID can be named ‘signature1’.
-
-   4. Add the Date (not to be confused with Datetime) component where
-   the signature date will be entered.
-
-   5. Open the **Component Properties** tab of the Date component.
-
-   6. Select the **Date Type** as **Last modified date of the content**.
-
-   7. Enter the ID of the Signature component in the Input Component ID
-   field on the bottom. In this case, it would be ‘signature1’.
-
-   ※ You can select the Format of date to be displayed on the Date
-   component by selecting the desired date format in the **Component
-   Properties** tab.
+.. _camera2:
 
 Camera
 ~~~~~~
 
-Components Camera This component is for uploading photos (taken with a
-device with a built-in camera such as smartphones and tablets) on a
-document. In PCs without a camera, clicking the component displays a
-window for selecting the desired image file.
+This component is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) to a document. In PCs without a camera, clicking the component displays a window for selecting the desired image file.
 
-|image16|
-
-If the size of the selected image is larger than the size of the text
-box, then it is resized to fit the component.
+If the size of the selected image is larger than the size of the component, then it is resized to fit the component.
 
 .. note::
 
-   For devices with a built-in camera, the camera feature will be
-   executed. For devices without a camera, a window for selecting an
-   image file will be displayed.
+   For the device with a built-in camera, camera feature will be executed, and for the devices with no camera, a window for selecting an image file will be displayed.
 
-|image17|
+|image10|
 
 **Component Properties**
 
-.. figure:: resources/Camera-component-properties-.png
+.. figure:: resources/Camera-component-properties_web.png
    :alt: Setting Camera Component Properties
-   :width: 400px
+   :width: 250px
 
-   Setting Camera Component Properties
+
 
 **① ID**
 
-Enters the ID of the Camera component. For example, the ID of the
-component that takes the photo of a driver’s license can be
+Enters the ID of the Camera component. For example, the ID of the component that takes the photo of a driver’s license can be
 ‘driverLicense’.
 
-**② Tooltip Text**
+**② Placeholder**
 
-Displays the description in the Tooltip Text when you hover the mouse
-over a component.
+Enters the text displayed before taking a photo.
 
-.. _record:
+**③ Tooltip Text**
+
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
+
+.. tip::
+
+   If you check the camera icon, the camera icon is shown on the camera
+   area.
+
+   |image11|
+
+.. _record2:
 
 Voice
 ~~~~~
 
-Components Voice This component is used for storing recorded voice. You
-can set the maximum recording time and you can also configure the
-settings to allow users to only listen to the voice recording.
+This component is used for storing recorded voice. You can set the maximum recording time and you can also configure the settings to allow users to only listen to the voice recording.
 
-When you add a Voice component in OZ in Office, you can record voice or
-play a voice recording as follows:
+When you add a Voice component, you can record voice or play a voice recording as follows:
 
-|image18|
+|image12|
 
 .. note::
 
-   If the recording time limit is set to 1 or higher, recording is
-   completed automatically at the time set (unit: seconds).
-
-   In the case of ActiveX viewer, the recording playback UI is supported
-   from Windows 8 and later.
-
-   In PCs, the Voice component works only when a voice recording device
-   is connected to a PC.
+   Voice recording is only available in the eformsign app.
 
 **Component Properties**
 
-.. figure:: resources/record_component.png
+.. figure:: resources/record_component_web.png
    :alt: Setting Voice Component Properties
-   :width: 400px
+   :width: 250px
 
-   Setting Voice Component Properties
 
 **① ID**
 
-Enter the ID of the Voice component. For example, the ID of the
-component that plays voice recordings can be named 'Record1'.
+Enter the ID of the voice component. For example, the ID of the component that plays voice recordings can be named 'Record1'.
 
-**② Tooltip Text**
+**② Placeholder**
 
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
+Enters the text shown before recording.
 
-.. _attach:
+**③ Tooltip text**
+
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
+
+.. tip::
+
+   If you check the voice icon, the mic icon will be displayed on the voice recording area.
+
+   |image13|
+
+.. _attach2:
 
 Attachment
 ~~~~~~~~~~
 
-Components Attachment This component is used for attaching a file to a
-document. When attaching a file to a document by using the Attachment
-component, the file will be attached at the very end of the document as
-a new page.
-
-|image19|
+This component is used for attaching a file to a document. When attaching a file to a document by using the Attachment component, the file will be attached at the very end of the document as a new page.
 
 The types and sizes of files that can be attached are as follows:
 
@@ -965,356 +717,104 @@ The types and sizes of files that can be attached are as follows:
 
 **Component Properties**
 
-.. figure:: resources/Attachment-component-properties.png
+.. figure:: resources/Attachment-component-properties_web.png
    :alt: Setting Attachment Component Properties
-   :width: 400px
+   :width: 250px
 
-   Setting Attachment Component Properties
 
-**① ID**
-
-Enters the ID of the Attachment component. For example, the ID of the
-component for attaching a resume can be named ‘myResume’.
-
-**② Tooltip Text**
-
-Displays the description Tooltip Text when you hover the mouse over a
-component.
-
-User
-~~~~
-
-Components User This component is used for entering the information of
-the user who created or modified a document. The user’s basic
-information such as name or contact information, or custom field
-information is automatically entered into the user component based on
-the settings.
-
-|image20|
-
-**Component Properties**
-
-.. figure:: resources/user-component-properties-.png
-   :alt: Setting User Component Properties
-   :width: 400px
-
-   Setting User Component Properties
 
 **① ID**
 
-Enters the ID of the user component. For example, the ID of the
-component that displays the name of the document creator can be named
-‘documentCreator’.
+Enters the ID of the Attachment component. For example, the ID of the component for attaching a resume can be named ‘myResume’.
 
-**② User Type**
+**② Placeholder**
 
--  **Document Creator:** Displays the information of the user who
-   created the document.
+Enters the text shown before attachment.
 
--  **Current User:** Displays the information of the user who has most
-   recently opened or modified the document.
+**③ Tooltip text**
 
--  **Last modified user of the content:** Displays the information of
-   the user who entered information in a specific component.
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
-If you select **Last modified user of the content**, then the **Input
-Component ID** field will be displayed. In this field, enter the ID of
-the component that will display the information when triggered.
+.. tip::
 
-|image21|
+   If you check the clip icon, the clip icon will be displayed on the voice recording area.
 
-.. note::
+   |image14|
 
-   You need to have either the company administrator or template manager
-   permission to perform this action.
+.. _document2:
 
-.. note::
+Document ID and Document number
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Data components are used for entering document-related information in the document itself. You can select either one of the document ID or document number.
 
-   To automatically fill in the signer’s name in the User component,
-   create a Signature component and then name the ID (for example,
-   signer1). Then, create the User component that will display the
-   signer’s name when triggered and name the ID (for example,
-   signer1name). Then, select **Last modified user of the content**
-   under User Type and enter the ID of the Signature component (in this
-   case, signer1) under **Input Component ID**.
+-  **Document ID:** A unique ID assigned to all documents in the system and is shown in 32 digit alphanumeric format. E.g. 0077af27a98846c8872f5333920679b7
 
-**③ User Field Name**
+-  **Document number:** Document number set in **Template settings > General**. For information about setting a document number, refer to `Generating and viewing a document number <chapter6.html#docnumber_wd>`__.
 
-This field allows to select the type of member information that will be
-displayed. You can select basic information in the **Manage member >
-Member info** menu of the member or information in a custom field.
+   .. note::
 
--  Basic member information types: Name, ID, Department, Position,
-   Mobile, and Telephone
-
-.. note::
-
-   You need to have the company administrator permission to change basic
-   member information.
-
-   To modify a member's basic information, login to eformsign and go to
-   the **Manage company > Manage members** menu. Select a member in the
-   member list and edit the information in the **Member info tab** on
-   the right. Then, click the **Save** button.
-
-Document
-~~~~~~~~
-
-Components Document This component is used for entering document-related
-information in the document itself. You can select either one of the
-document ID or document number.
-
-|image22|
-
-The document ID is a unique document ID assigned in the system, so it
-does not require separate settings. For settings related to document
-number, upload a template and then go to **Template settings >
-General**.
+      The document ID is a unique document ID assigned in the system, so it does not require separate settings.
 
 **Component Properties**
 
-.. figure:: resources/document-domponent-properties.png
+.. figure:: resources/document-domponent-properties_web.png
    :alt: Setting Document Component Properties
    :width: 400px
 
-   Setting Document Component Properties
 
 **① ID**
 
-Enters the ID of the document component. For example, the component ID
-can be ‘docNum’ for document number.
-
-**② Document info type**
-
-Selects the type of information that will be used.
-
--  **Document ID:** A unique ID containing 32 digits of alphanumeric
-   characters assigned to all documents in the system. E.g.
-   0077af27a98846c8872f5333920679b7.
-
--  **Document no.:** The document number set in **Template settings >
-   General.** For information on how to set a document number, go to
-   `??? <#docnumber_wd>`__.
-
-.. _usedate:
-
-Date
-~~~~
-
-Components Date This component is used for automatically entering the
-date in which a document is created, accessed, or modified into the
-document. You can automatically enter one of the following dates
-according to the date type selected: the date in which the document is
-created (Date created), the date in which the document is last accessed
-(Date accessed), or the date in which a specific component is filled in
-(Last modified date of the content).
-
-|image23|
-
-**Component Properties**
-
-.. figure:: resources/date-component-properties_.png
-   :alt: Setting Date Component Properties
-   :width: 400px
-
-   Setting Date Component Properties
-
-**① ID**
-
-Enters the ID of the Date component. For example, the ID of the
-component that displays the date in which the document is signed can be
-named ‘signed date’.
-
-**② Format**
-
-Sets the format in which the date will be displayed.
-
--  **yyyy:** Displays the year.
-
--  **MM:** Displays the month. Must be in uppercase.
-
--  **dd:** Displays the day.
-
-For example, if you want to display the date in the format of
-‘15-20-2020’, then enter dd-MM-yyyy in the Format field.
-
-**③ Date Type**
-
--  **Date created:** Displays the date in which the document is created.
-
--  **Date accessed:** Displays the most recent date in which the
-   document is modified or opened.
-
--  **Last modified date of the content:** Displays the date in which the
-   information of a specific component is filled in.
-
-If **Last modified date of the content** is selected, the **Input
-Component ID** field is displayed. In this field, enter the ID of the
-component that will display the information when triggered.
-
-|image24|
-
-.. note::
-
-   You need to have either the company administrator or template manager
-   permission to perform this action.
-
-.. note::
-
-   If you want the signature date of a signer to be displayed
-   automatically in a contract, first add a Signature component and then
-   name the ID (e.g. 'contractSign'). Then, add a Date component which
-   will display the date in which the signature is signed and name the
-   ID (e.g. signDate). Then, select **Last modified date of the
-   content** under Date Type and enter the ID of the signature component
-   (in this case ‘contractSign’) in the **Input Component ID** field.
-
-Label
-~~~~~
-
-Components Label This component is used for setting the form ID of a
-document.
-
-**Component Properties**
-
-.. figure:: resources/label_property.png
-   :alt: Setting Label Component Properties
-   :width: 400px
-
-   Setting Label Component Properties
-
-**① ID**
-
-The form ID of the document is automatically generated and displayed. It
-can also be changed.
-
-The form ID defined here can be applied when editing the document.
-
-Upload Form File
-----------------
-
-Form files created using OZ in Office are uploaded in the following
-order:
-
-1. Click the **Execute** icon (|image25|) in the File group. The login
-page will be displayed as a pop-up window.
-
-.. figure:: resources/form_upload_login.png
-   :alt: Login Page
-   :width: 730px
-
-   Login Page
-
-2. After you log in, the document converted into a form will be
-displayed as a preview.
-
-.. figure:: resources/upload_preview.png
-   :alt: Preview Form File
-   :width: 730px
-
-   Preview Form File
-
-3. Click the **Upload form file** button or click the **Upload**
-(|image26|) icon in the ribbon menu. The **Template list** page with the
-**Create template** card will be displayed.
-
-.. figure:: resources/upload_list.png
-   :alt: Template List Screen
-   :width: 730px
-
-   Template List Screen
-
-4. Click the **Create template** card. The screen for configuring the
-template settings will be displayed. To create a template, click the
-**Save** button on the top right corner.
-
-.. figure:: resources/upload_save.png
-   :alt: Create Template Screen
-   :width: 730px
-
-   Create Template Screen
+Enter the ID of the Document component. For example, the component ID can be ‘docNum’ for document number.
 
 Configuring Template Settings
 -----------------------------
 
-After uploading a template, you can configure additional settings for
-documents created from the template such as template name, document
-number, and workflow.
+After uploading a file and adding components with Web Form Designer, you can configure additional settings for documents that will be created from the template such as the document name, document number, and workflow.
 
-1. Log in to eformsign.
+In the **Design form** screen, click the **Next** button to go to the **Configure** screen. In the **Configure** screen, you can configure the five settings shown below.
 
-2. Go to the **Manage templates** menu.
+-  **General:** Sets the template name, abbreviation, document name, document number, etc.
 
-3. Click the Template settings icon (|image27|) of the desired template.
+-  **Set permissions:** Sets the permissions for who can create documents created from the template and who can open, void, or permanently remove documents created from the template.
 
--  **General:** Sets the template name, abbreviation, document name,
-   document number, etc.
-
--  **Set permissions:** Sets the permissions for who can create
-   documents created from the template and who can open, void, or
-   permanently remove documents created from the template.
-
--  **Workflow:** Sets the steps of the document workflow from **Start**
-   to **Complete**.
+-  **Workflow:** Sets the steps of the document workflow from **Start** to **Complete**.
 
 -  **Field:** Sets the field default values, auto-filled values, etc.
 
--  **Notification settings:** Sets the notification settings for
-   documents created from the template.
+-  **Set notifications:** Sets the notification settings for documents created from the template.
 
-4. After configuring all settings, click the **Save** button to save the
-settings.
+.. figure:: resources/component_web_2.png
+   :alt: The 5 Configuration Tabs in Template Settings
+   :width: 730px
+
+
+.. important::
+
+   In order to create documents from a template, you must save and deploy the template. If you save a template but not deploy it, then template does not appear in the **New from template** page of members with permission to use that template.
 
 .. note::
 
-   For a detailed explanation of templates, please refer to
-   `??? <#template_fb>`__.
+   For more information on templates, refer to `Template Web Form Designer <chapter6.html#template_wd>`__.
 
-.. |image1| image:: resources/menu_icon.png
-.. |image2| image:: resources/delete-icon.png
-.. |image3| image:: resources/property-icon.png
-.. |image4| image:: resources/form-builder-components_check.png
-   :width: 730px
-.. |image5| image:: resources/check-component-style-settings.png
-   :width: 600px
-.. |image6| image:: resources/form-builder-components.png
-   :width: 730px
-.. |image7| image:: resources/form-builder-components_Combo.png
-   :width: 730px
-.. |image8| image:: resources/combo-1.png
+.. |image1| image:: resources/myfile_create_document.png
+.. |image2| image:: resources/myfile_create_document2.png
    :width: 500px
-.. |image9| image:: resources/text-and-muliline-components.png
-   :width: 730px
-.. |image10| image:: resources/form-builder-components_datetime.png
-   :width: 730px
-.. |image11| image:: resources/form-builder-components_numeric.png
-   :width: 730px
-.. |image12| image:: resources/form-builder-components_toggle.png
-   :width: 730px
-.. |image13| image:: resources/toggle.png
+.. |image3| image:: resources/myfile_create_document3.png
+.. |image4| image:: resources/signature.png
+   :width: 450px
+.. |image5| image:: resources/check-component-style-settings.png
+.. |image6| image:: resources/check-component-properties-web-style.png
+.. |image7| image:: resources/Radio-component-properties_web-style.png
    :width: 400px
-.. |image14| image:: resources/form-builder-components_signature.png
-   :width: 730px
-.. |image15| image:: resources/signature.png
+.. |image8| image:: resources/combo-1.png
+   :width: 450px
+.. |image9| image:: resources/toggle.png
+   :width: 450px
+.. |image10| image:: resources/camera1.png
    :width: 400px
-.. |image16| image:: resources/form-builder-components_camera.png
-   :width: 730px
-.. |image17| image:: resources/camera1.png
+.. |image11| image:: resources/Camera-component-properties_icon.png
+.. |image12| image:: resources/record1.png
    :width: 350px
-.. |image18| image:: resources/record1.png
-   :width: 400px
-.. |image19| image:: resources/form-builder-components_attachment.png
-   :width: 730px
-.. |image20| image:: resources/form-builder-components_user.png
-   :width: 730px
-.. |image21| image:: resources/user-input-certain-component.png
-   :width: 400px
-.. |image22| image:: resources/document-component-in-list.png
-   :width: 730px
-.. |image23| image:: resources/form-builder-components_date.png
-   :width: 730px
-.. |image24| image:: resources/date-component-connecting-other-component.png
-   :width: 400px
-.. |image25| image:: resources/excute_button.png
-.. |image26| image:: resources/upload_button.png
-.. |image27| image:: resources/config-icon.PNG
+.. |image13| image:: resources/record_component_web_icon.png
+.. |image14| image:: resources/Attachment-component-properties_web_icon.png

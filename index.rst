@@ -8,7 +8,7 @@ eformsign User Guide
 
 .. toctree::
    :maxdepth: 2
-   :name: help/chapter1
+
 
    help/chapter1
    help/chapter2
@@ -18,6 +18,8 @@ eformsign User Guide
    help/chapter6
    help/chapter7
    help/chapter8
-   help/chapter9   
+   help/chapter9  
+   help/chapter10 
+ 
 
 

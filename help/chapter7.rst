@@ -1,557 +1,802 @@
-Managing Documents
-==================
+.. _template_fb:
 
-Documents
----------
+Template - Form Builder
+========================
 
-Documents Documents are stored in the following three menus according to
-the document status:
+About Templates
+----------------
 
--  **In progress:** Documents In progress View the list of documents you
-   have created or signed/approved that are incomplete.
+Form builder Templates Templates are **electronic documents** used for
+the eformsign service. They are e-documents converted from existing
+paper forms such as applications, contracts, and agreements. You can
+create and upload templates in the eformsign service with its Web form
+designer or Form builder. For more information about Web form designer,
+please refer to `Template_Web Form Designer <chapter6.html#template_wd>`__.
 
--  **Action required:** Documents Action required View the list of
-   documents you have saved as a draft, requested by other members for
-   you to sign or approve, or sent to external recipients but have yet
-   to be signed.
+Template Overview
+~~~~~~~~~~~~~~~~~~~
 
--  **Completed:** Documents Completed View the list of all completed
-   documents among the documents that you have created or participated
-   in.
+To create and send electronic documents via eformsign, you have to create a template first which can be converted into an e-document.
 
-By using these menus, you can easily view the status and history of each
-document, find the documents you want by filtering and searching, resend
-documents, void/reject documents that have yet to be completed in the
-workflow, and edit draft documents.
+**How to create a template with Form Builder**
 
-All documents and related activities are stored in the Documents menus,
-and you can view detailed information about the document status and
-history.
-
-Aside from the three document menus, there is another menu for managing
-documents.
-
--  **Manage documents:** Manage documents View and manage all documents
-   created from a template in which you have been given access
-   permission.
+To create a template with Form builder, you must first download eformsign Form builder.
 
 .. note::
 
-   The company administrator can view and manage all documents in the
-   company.
+   For more information about Form builder, please refer to `Form builder <chapter5.html#formbuilder>`__.
 
-.. figure:: resources/inbox_ex1.png
-   :alt: Location of the Documents Menus and the Manage Documents Menu
-   :width: 500px
+MS Office files such as Word, Excel, and PowerPoint can be uploaded as a template using eformsign Form builder.
 
-   Location of the Documents Menus and the Manage Documents Menu
+1. Open a Word, Excel, or PowerPoint file.
 
-The three Documents menus and the Manage documents menu are laid out
-almost the same.
+2. Go to the OZ in Word/Excel/PowerPoint menu in the file.
 
-.. note::
+3. Choose a location you want to add a component.
 
-   The layout of the Documents menus are very similar to each other, but
-   the documents that are displayed differ according to the document
-   status or granted permission to users.
+4. Select a component type.
 
-.. figure:: resources/inbox_layout.png
-   :alt: Documents Menus Layout
-   :width: 750px
+5. Adjust the size and position of the component.
 
-   Documents Menus Layout
+6. Click the **Execute** button to preview the component.
 
-Each Documents menu consists of the following five sections:
+7. Click the **Upload** button to upload the file as a template.
 
-1. **Menu and home icon, and document menu name**
+**Template settings**
 
-   You can go to another menu by clicking the menu icon (|image1|) or go
-   to the dashboard by clicking the home icon (|image2|). You can also
-   see the name of the documents menu you are currently viewing.
+You can set the details for the template.
 
-2. `Template category combo box, document status filter combo box, and
-   search box <#category>`__
+-  `General <#general_fb>`__
 
-   You can view documents by the selected template category and filter
-   documents by document status.
+   Set the template name, abbreviation, document name, document number, etc.
 
-   In addition to performing searches using keywords, you can also use
-   advanced methods such as searching by name + contents, document ID,
-   date, and many more.
+-  `Set permissions <#auth_fb>`__
 
-3. **Document list**
+   Grant members or groups the permission to use the template and to create documents from it and manage them.
 
-   Up to 20 documents are listed per page and you can view the documents
-   on other pages by clicking the page numbers at the bottom.
+-  `Workflow <#workflow_fb>`__
 
-   The information of each document such as the document status, name,
-   step, creator, created date, processed date, and document number is
-   provided in columns in the document list. You can also change the
-   column information displayed. Click the column icon (|image3|)
-   displayed at the top right corner of the page, and then check the
-   columns you want to display in the `column check
-   box <#document_column>`__.
+   Sets the workflow for the document from its creation to completion.
 
-   You can also perform actions on a document such as reviewing,
-   previewing, correcting, voiding, resending, and deleting a document.
+-  `Field <#field_fb>`__
 
-4. `Document status and history <#history>`__
+   Sets the default values and auto-filled values for fields.
 
-   You can check the documents status and history.
+-  `Notification settings <#noti_fb>`__
 
-   In the **Document status** tab, you can see what happens to a
-   document in each step of the workflow.
+   Sets the notification channels, recipients, and the content of the notification messages for notifying requests or changes in the status of documents created from the template.
 
-   In the **History** tab, you can see the activities of the document
-   creator and recipients from document creation to completion.
+Workflow Overview
+~~~~~~~~~~~~~~~~~
 
-5. `The column selection icon <#document_column>`__\ **,**\ `document
-   download <#document_download>`__\ **icon,
-   and**\ `delete <#document_delete>`__\ **icon**
+Workflow A workflow is a document process from its creation to completion.
 
-   Clicking the column selection icon (|image4|) displays the column
-   types which you can check to select which columns will be displayed
-   in the document list.
+The workflow for each template can be set by template managers by going to **Template settings** > **Workflow**.
 
-   Clicking the download icon (|image5|) allows to select the documents
-   in the list you want to download. You can select multiple documents
-   to download at once and choose the file type including the PDF of the
-   completed documents, audit certificate, and CSV of selected fields.
+By default, all workflows have **Start** and **Complete** steps. You can add as many **Approver**, **Internal recipient**, **and External recipient** steps as you want for each workflow.
 
-   Note that the delete icon (|image6|) is disabled in the three
-   document menus, but is enabled in the **Manage documents** menu.
+.. figure:: resources/en-workflow-steps.png
+   :alt: Workflow steps
 
-   .. note::
 
-      Documents can be deleted only in the **Manage documents** menu and
-      you can only delete documents in which you have document
-      management permission. The company administrator or the template
-      managers of a template can grant you document management
-      permission for all documents created from a template by going to
-      **Manage templates > Template settings > Set permissions >
-      Document management**. Document management permission can be set
-      for each template. Members with this permission can open, delete,
-      and download documents (PDF, CSV) created from this template in
-      the **Manage documents** menu.
+-  **Approver**
 
-.. _category:
+   Sending an e-document approval request to a member in your company.
 
-Template Category Combo Box, Document Status Filter Combo Box, and Search Box
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  **Internal recipient**
 
-The template category combo box, document status filter combo box, and
-search box are located at the top left side of the **Documents** menus
-and the **Manage documents** menu.
+   Sending an e-document to a member in your company to review and sign.
 
--  **'In progress', 'Action required', and 'Completed' menus**
+-  **External recipient**
 
-   In these menus, the template category combo box, document status
-   filter combo box, and search box are also located at the top left
-   side of the screen.
+   Sending an e-document to a user outside of your company to review and sign.
 
--  **'Manage documents'**
+   .. important::
 
-   In this menu, the template category combo box, document status filter
-   combo box, and search box are located at the top left side of the
-   screen. However, the document status filter combo box contains one
-   additional menu, 'Voided', compared to the three documents menus.
+      **What's the difference between an approval and internal recipient?**
 
-**Template category combo box Documents Template category combo box**
+      Both an approver and internal recipient can approve or reject a
+      requested document, but only the internal recipient can designate
+      the next recipient(s) in line in the workflow to process the
+      document.
 
-By using the template category combo box, you can display the list of
-documents by template category by selecting the desired template
-available in the **Manage templates** menu.
+      In other words, only internal recipients can designate downstream
+      recipients whether it be external recipients, internal recipients,
+      or approvers.
 
-Clicking the **X** icon of the template category combo displays the
-templates according to categories as shown below:
+      For example, if you want a recipient in a workflow to have the
+      ability to choose the recipients that come after her/him in the
+      workflow, then you specify her/him as an internal recipient. In
+      this case, when the internal recipient receives a document, then
+      she/he can choose the recipient(s) that come after her/him in the
+      workflow.
 
-.. figure:: resources/category_search.png
-   :alt: Template Category Combo Box
+Template Settings
+------------------
 
-   Template Category Combo Box
-
-**Document status filter combo box Documents Document status filter
-combo box**
-
-In addition to doing searches using keywords, you can also use advanced
-methods such as searching by name + contents, document ID, date, and
-filtering by document status.
-
-You can also search for field values in documents in detail by using a
-custom filter. As well, by using a custom filter, you can search for
-documents according to the range of numbers and dates.
-
-The following table describes the filters that can be used for
-performing searches. However, custom filters can only be used in the
-**Manage documents** and **Completed** menus.
-
-.. table:: List of Filter Types
-
-   =============== =============== =============== ================
-   In progress     Action required Completed       Manage documents
-   =============== =============== =============== ================
-   Name + contents Name + content  Name + content  Name + content
-   Name            Name            Name            Name
-   Contents        Contents        Contents        Contents
-   Document ID     Document ID     Document ID     Document ID
-   Document number Document number Document number Document number
-   Template name   Template name   Step            Step
-   Step            Step            Created by      Created by
-   Created by      Created by      Created on      Created on
-   Created on      Created on      Processed by    Processed by
-   Processed by    Requested by    Processed on    Processed on
-   Processed on    Requested on    Custom Filter   Custom Filter
-   \               Days passed                     
-   =============== =============== =============== ================
-
-**Using the custom filter Documents Using the custom filter**
-
-1. Select **Custom Filter** in the **Advanced** search combo box.
-
-.. figure:: resources/userdefined_search1.png
-   :alt: Custom filter
-   :width: 500px
-
-   Custom filter
-
-2. Select the field name, field type (keyword, range, or period), and
-search value.
-
-The default value of the field name is an empty value.
-
-Make sure to manually enter the display name of the field in the
-document you want to search for. You can view the display name of the
-field in the **Template settings > Field** setting menu.
+You can set detailed configurations for each template you create.
 
 .. note::
 
-   1. Documents may not be searched if you search for a document by
-   entering a field name that does not exist.
+   Only the **company administrator** or **template managers** can perform this action.
 
-   2. You cannot enter special characters in the field name (", ', ;, <,
-   >, \\).
+   This action can be performed in web browsers of computers and mobile devices, and also in mobile apps.
 
-   3. Empty spaces before and after the field name are all removed. E.g.
-   “ Time off ”  “Time off”
+**How to go to the template settings screen**
 
-   4. If you click on a filter you added, then the field name, field
-   type, and search value will be displayed. For example, if you have
-   previously added a filter with the field name of 'years worked',
-   field type of 'Range', and field search value of '5~10', then if you
-   click on the filter, then all its values will be displayed including
-   the field name (years worked), field type (Range), and search value
-   (5~10).
+1. In the sidebar menu, click the **Manage templates** menu.
 
-You can choose one of Keyword, Range, and Period for the field type.
-Keyword is set as the default.
+2. Click the name or settings icon (|image1|) of the desired template.
 
-Note that the input boxes displayed differ according to the field type
-selected.
+   |image2|
 
-========== =========== ===========
-Field type Input box 1 Input box 2
-========== =========== ===========
-Keyword    Text        
-Range      Min         Max
-Period     Start date  End date
-========== =========== ===========
+.. _general_fb:
 
--  **Keyword**
+General
+~~~~~~~~
 
-   Used for searching multiple values by using a comma (,) as the
-   delimiter. The default value is empty.
-
-   When used, it searches for the text entered. In other words, it
-   searches for documents that contain at least one of the multiple
-   search values entered. For example, in the case where the Field name
-   = fruit, Field type = keyword, search values = strawberries, apple,
-   then documents that contain at least one of 'strawberries' and
-   'apple' are searched.
-
--  **Range**
-
-   Used for searching values of range such as numbers or dates. E.g.
-   number: 100 ~ 200, period: 01/01/2019 ~ 06/30/2019
-
-   When used, it searches for values between the min and max. If you
-   only enter the min, then only the values larger than the min value
-   are searched while if you only enter the max, then only the values
-   smaller than the max are searched. E.g. salary: 1000 ~ , salary: ~
-   5000.
-
--  **Period**
-
-   Selects the period in the calendar displayed. The default value of
-   the period length is set to one week.
-
-   Searches for the date between the start and end date selected.
-
-3. Click the add search (|image7|) button to add the keyword entered.
-Documents are searched according to the conditions set.
-
-.. note::
-
-   1. You can add multiple custom filters, and can modify/delete the
-   custom filters you added.
-
-   2. You cannot add multiple custom filters with duplicate field names.
-
-   3. If you modify a predefined custom filter, then the field type and
-   search values are updated with the most recently entered values.
-
-**Displaying search keywords and modifying/deleting them**
-
-1. The search keyword is added in the form of **field name: value**.
-
--  Keyword: “employment type: permanent, contract”
-
--  Range: “years worked: 5~10”
-
--  Period “contractperiod_yymmdd: 2018-01-01~2018-12-31”
-
-2. Modify the custom filter by selecting a search keyword added. When
-modifying, the **Advanced** filter item is changed to **Customer
-filter**, and the selected filter's field name, field type, and search
-value are displayed.
-
-3. Added keywords can be deleted by clicking the **X** icon on the
-right.
-
-.. _additional_work:
-
-Actions that Can Be Performed in the Document List by Documents Menu
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Actions on documents that can be performed in the document list include
-preview, review, correct, void, resend, send final copy, edit, delete,
-remove, and download.
-
-**In progress**
-
-Can perform actions including preview, review, correct, void, resend,
-and download.
-
-**Action required**
-
-Can perform actions including preview, correct, void, review, resend,
-edit, and download.
-
-**Completed**
-
-Can perform actions including preview, void, send final copy, and
-download.
-
-**Manage documents**
-
-Can perform actions including preview, void, send final copy, remove,
-download, and delete. Note that documents can only be deleted in the
-**Manage documents** menu.
-
-.. _history:
-
-Document Status and History
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you select a document in the document list, you can view the status
-and history of that document on the right side of the screen.
-
-In the **Document status** tab, you can see when and what happens to a
-document in each step of the workflow. In the **History** tab, you can
-see the activities of the document creator and recipients from document
-creation to completion.
-
-.. figure:: resources/document_status.png
-   :alt: Document Status Tab
-   :width: 400px
-
-   Document Status Tab
-
-.. figure:: resources/document_history.png
-   :alt: History Tab
-   :width: 400px
-
-   History Tab
-
-.. _document_download:
-
-Document Download Documents Document download
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Documents created in eformsign can be safely stored for long periods of
-time.
-
-All documents are stored in a file format for long-term storage (PDF/A)
-and only members with the document management permission can open and
-delete them.
-
-1. Click the download icon (|image8|) on the right side of the document
-list.
-
-2. Select the document to be downloaded, and then click the **Download**
-button.
-
-.. figure:: resources/download_popup.png
-   :alt: Document Download Pop-up
-   :width: 400px
-
-   Document Download Pop-up
-
-.. note::
-
-   CSV files can also be downloaded in the **Download** pop-up where PDF
-   files can be downloaded. Select **CSV download** in the pop-up and
-   check the fields (columns) to be downloaded and then click the
-   **Download** button.
-
-.. _document_delete:
-
-Deleting Documents
-~~~~~~~~~~~~~~~~~~
-
-In eformsign, only members with document management permission can
-delete documents.
-
-1. Click the delete icon (|image9|) on the right side of the document
-list.
-
-2. Select the document and then click the **Delete** button.
-
-3. Click the **Yes** button in the Delete pop-up window to delete the
-document.
-
-.. _document_column:
-
-Document Menu Column Selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you click the column (|image10|) icon on the right side of the
-document list, you can select which column to be displayed on the list.
-
-.. figure:: resources/column_type.png
-   :alt: Document Column Selection Icon
-
-   Document Column Selection Icon
-
-Creating New Documents
-----------------------
-
-You can create new documents by using uploaded templates.
-
-.. note::
-
-   Members and groups can only create documents from templates in which
-   they are given template usage permission.
-
-**Creating a new document**
-
-1. Go to the **New document** menu.
-
-2. Click the create icon(|image11|) of the template you want to create a
-document from.
-
-.. figure:: resources/create_newdocument1.png
-   :alt: New Document List
+.. figure:: resources/en-manage-template-settings-fb.png
+   :alt: Template Settings > General
    :width: 700px
 
-   New Document List
 
-3. Create a document, and then click the **Complete** or **Request**
-button at the top right corner of the screen.
+**Configure basic settings for the template**
+   Set basic information about the template including the template name, category, validity period, etc.
+
+① Form file
+   The name of the form file which is uploaded to eformsign from Word, PowerPoint, or Excel using Form Builder. To change the form file name, you need to change the file name of the uploaded Word, PowerPoint, or Excel file and then update it.
+
+② Template name
+   The template name will be displayed in the **Manage templates** and **New document** pages.
+
+   The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.
+
+   .. figure:: resources/en-template-name.png
+      :alt: Template Name
+      :width: 250px
+
+
+③ Template abbreviation
+   A short name that briefly descries the template. It is recommended to use two or three words.
+
+   **Template abbreviation** can be used in the document number, document name, mail template, etc. by entering **$$**.
+
+   .. figure:: resources/en-manage-template-settings-document-naming-abb.png
+      :alt: Template Abbreviation
+
+
+④ Category
+   Category is used to sort templates by type. With the category name, you can filter templates in the **Manage templates** menu, and can filter documents in the **Documents** menus and the **Manage documents** menu. You can choose from an existing category or create a new category by entering a new name.
+
+   You can set multi-level categories with a separator ( **/** ). For example, if you set a category as **HR Team/Vacation**, the Vacation category in the HR category is created.
+
+⑤ Description
+   Enter additional comments about the template. This description is displayed under the template name in the New document page.
+
+⑥ Template validity period
+   Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
+
+   When **No expiry date** is checked, documents can be created without a time limit. **No expiry date** is unchecked and set the date, the document can only be created until the set date.
+
+**Document settings**
+   Configure additional settings including document naming rules for documents created from the template.
+
+⑦ Document naming rule
+   Sets the document name when creating the document from the template.
+   If a document naming rule is not set, the template name will be the document name.
+
+   You can add reserved words in the document name using **$$** and **{{**.
+
+⑧ Allow document name change
+   If **Allow document name change**\ is checked, the document creator can change the document name.
+
+⑨ Generate a document number
+   Templates Generate a document number If **Generate a document number** is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.
+
+   |image3|
+
+⑩ Skip pop-up window when sending documents
+   Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
+
+General > Setting the Document Naming Rule
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In **Template settings**, you can set the document naming rule for documents created from a template.
+
+You can make a piece of information entered into a document or document-related information to be automatically entered into the
+document name. If you set the document naming rule, then the document name is automatically entered based on the information of the document.
+As well, you can see this name in all document pages (In progress, Action required and Completed) and the **Manage document** page.
 
 .. note::
 
-   Different buttons are displayed at the top right corner of the screen
-   according to the workflow set in the template.
+   Only the **Company administrator** or **Template managers** can perform this action.
 
-Send in Bulk
-------------
-
-Documents Send in bulk You can send multiple documents at once by using
-the **Send in bulk** feature. Also, you can preview the documents before
-sending them to recipients.
-
-.. note::
-
-   This action requires either one of document management or company
-   administrator permission.
-
-**Send in bulk**
-
-1. Go to the **New document** menu.
-
-2. Click the send in bulk icon of the template you want to create
-documents from.
-
-.. figure:: resources/bulk-creation-icon.png
-   :alt: Send in bulk icon
-   :width: 300px
-
-   Send in bulk icon
-
-3. Enter the values in the columns displayed on the screen.
-
-.. figure:: resources/bulk_create.png
-   :alt: Send in Bulk Screen
+.. figure:: resources/en-manage-documents-document-list.png
+   :alt: Manage Documents > Documents List
    :width: 700px
 
-   Send in Bulk Screen
 
-.. note::
+**How to set the document naming rule**
 
-   Each column of the table contains all the fields of a document. The
-   IDs of components (which are fields in a template) are shown as the
-   name of each column. The last row of the first column (No.) indicates
-   the number of documents to be created.
+.. figure:: resources/en-document-naming-rule.png
+   :alt: Template Settings > Setting the Document Naming Rule
+   :width: 600px
 
-   Tables are filled in a similar way as in Excel. You can double-click
-   on each cell to enter value and right-click on the mouse to add or
-   delete columns. The value entered in a cell can be copied and pasted,
-   and dragged to another cell.
 
-4. Click the **Preview** button on the top right corner of the screen to
-view the documents you created and then click the **Create** button to
-send the documents.
+1. In the sidebar menu, click the **Manage templates** menu.
 
-.. note::
+2. Click on the settings icon (|image4|) of the desired template to go to the **Template settings** page.
 
-   If there is an external process step in a template, then the left
-   area of the table is highlighted in blue. This area is for entering
-   the external recipients’ names, emails, etc. Depending on the
-   external process settings, there can be phone numbers, verification
-   passwords, etc.
+3.  Enter the desired naming rule in the **Document naming rule** field in the **General** tab.
 
-   |image12|
+4. Click the **Save** button on the top right corner to save the changes.
+
+**How to use reserved words Templates Reserved word**
+
+.. figure:: resources/en-document-naming-rule-reserved.png
+   :alt: Setting Document Naming Rules Using Reserved Words
+
+
+**{{**
+   This symbol adds a piece of information in the document into the document name.
+
+   Enter **{{** in the Document naming rule field to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.
+
+**$$**
+   This symbol adds document-related information into the document name.
+
+   Enter **$$** in the Document naming rule field to display the drop-down menu and then select the desired information.
+
+   +-----------------------+-----------------------------------------------+
+   | Information types     | Description                                   |
+   +=======================+===============================================+
+   | Current_date          | The date in which the document is created     |
+   |                       | (e.g. Feb 20, 2020)                           |
+   +-----------------------+-----------------------------------------------+
+   | Current_time          | The time in which the document is created     |
+   |                       | (e.g. 02:59 pm)                               |
+   +-----------------------+-----------------------------------------------+
+   | Current_datetime      | The date and time in which the document is    |
+   |                       | created (e.g. Feb 20, 2020, 02:59 pm)         |
+   +-----------------------+-----------------------------------------------+
+   | Creator_ID            | The ID of the member who created the document |
+   +-----------------------+-----------------------------------------------+
+   | Creator_name          | The name of the member who created the        |
+   |                       | document                                      |
+   +-----------------------+-----------------------------------------------+
+   | Creator_dept          | The department of the member who created the  |
+   |                       | document                                      |
+   +-----------------------+-----------------------------------------------+
+   | Creator_company Name  | The name of the company in which the member   |
+   |                       | who created the document belongs to           |
+   +-----------------------+-----------------------------------------------+
+   | Template_name         | The template name entered in Template         |
+   |                       | settings > General                            |
+   +-----------------------+-----------------------------------------------+
+   | Template_abbreviation | The template abbreviation entered in Template |
+   |                       | settings > General                            |
+   +-----------------------+-----------------------------------------------+
+   | Company               | The company name entered in Manage company >  |
+   |                       | Company profile                               |
+   +-----------------------+-----------------------------------------------+
+   | Company_address       | The address entered in Manage company >       |
+   |                       | Company profile                               |
+   +-----------------------+-----------------------------------------------+
+   | Company_contact_no    | The contact information entered in Manage     |
+   |                       | company > Company profile                     |
+   +-----------------------+-----------------------------------------------+
+   | Company_              | The business registration number entered in   |
+   | registration_no       | Manage company > Company profile              |
+   +-----------------------+-----------------------------------------------+
+   | Company_homepage      | The homepage URL entered in Manage company >  |
+   |                       | Company profile                               |
+   +-----------------------+-----------------------------------------------+
 
 .. tip::
 
-   If there is a component that is not shown in the **Send in bulk**
-   screen, then the following must be checked.
+   Check the status of the **Allow document name change** field.
 
-   1. The components that cannot be entered in **Send in bulk**: camera,
-   voice, and grouped radio components cannot be used in Send in bulk.
+   Even if the document naming rule is set, if the **Allow document name change** option is checked, the document creator can arbitrarily
+   change the document name. If you do not want the document name to be changed, then make sure to uncheck the **Allow document name change**
+   option.
 
-   2. Check whether the components are allowed access in Template
-   settings: Only the components that are checked to be allowed access
-   in the **Manage items** tab of **Template settings(⚙) > Workflow**
-   are shown.
+.. figure:: resources/en-allow-document-name-change.png
+   :alt: Checking the Allow Document Name Change Option
 
-.. |image1| image:: resources/menu_icon_2.png
-   :width: 25px
-.. |image2| image:: resources/home_icon_2.png
-   :width: 25px
-.. |image3| image:: resources/column_icon.png
-   :width: 35px
-.. |image4| image:: resources/column_icon.png
-   :width: 35px
-.. |image5| image:: resources/download-icon.PNG
-   :width: 30px
-.. |image6| image:: resources/delete_icon1.png
-   :width: 30px
-.. |image7| image:: resources/searchplus.png
-.. |image8| image:: resources/download_icon.png
-.. |image9| image:: resources/delete_icon1.png
-.. |image10| image:: resources/column_icon.png
-   :width: 35px
-.. |image11| image:: resources/create-icon.PNG
-.. |image12| image:: resources/bulk-creation-table-blue-section.png
+
+.. _docnumber_fb:
+
+General > Generating and Viewing a Document Number
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can set a document number for documents created in eformsign. You can set it so that a document number is generated automatically for each
+template, and can select one of four document numbering formats. The document number can be generated in the document using the document
+component. You can also see a separate column in the document list and search documents by the document number.
+
+**Generating a document number Templates Generate a document number**
+
+.. note::
+
+   Only the **Company administrator** or **Template manager** can perform this action.
+
+.. figure:: resources/en-generate-document-number.png
+   :alt: Setting a Document Number
+   :width: 600px
+
+
+1. In the sidebar menu, click the **Manage templates** menu.
+
+2. Click on the settings icon (|image5|) of the desired template to go to the **Template settings** page.
+
+3. Tick the **Generate a document number** checkbox in the **General** page.
+
+   -  **Selecting a document numbering rule**
+
+   .. figure:: resources/en-generate-document-number-select.png
+      :alt: Selecting a Document Numbering Rule
+
+
+
+   **▪ Serial number**
+      Generated in the format of the document creation order
+
+      E.g. 1, 2, 3...
+
+   **▪ Year_serial number**
+      Generated in the format of the document creation year + document
+      creation order
+
+      E.g. 2020_1, 2020_2...
+
+   **▪ Template_serial number**
+      Generated in the format of the template abbreviation + document creation order
+
+      E.g. Application 1, Application 2...
+
+   **▪ Template_year_serial number**
+      Generated in the format of the template abbreviation + document creation year + document creation order
+
+      E.g. Application 2020_1, Application 2020_2...
+
+   -  **Choosing when to numbered a document**
+
+   ▪ **Start**
+      A number is generated when a document is created.
+
+   ▪ **Complete**
+      A number is generated when a document has been completed after going through all the steps in the workflow.
+
+4. Click the **Save** button at the top right corner of the page to apply your changes.
+
+**Viewing a document number**
+
+A document number can be viewed directly on a document using the document component and can also be viewed in the document list.
+
+-  **Viewing a document number directly on a document**
+
+   You can generate a document number directly on a document by using the document component in Form builder.
+
+   1. Open a file in Word, Excel, or PowerPoint.
+
+   2. Add the document component in the location where the document number will be displayed.
+
+   3. Click the **Upload** button to upload the file on eformsign.
+
+   4. In **Template settings > General,** tick the **Generate a document number** checkbox.
+
+   5. Select a document numbering rule.
+
+   6. Click the **Save** button to save the settings.
+
+-  **Viewing a document number in the document list**
+
+   .. figure:: resources/en-completed-document-box-docno.png
+      :alt: Completed - Document List
+      :width: 700px
+
+
+   .. figure:: resources/en-completed-document-list-docno-column.png
+      :alt: Completed - Document List - Document Number
+      :width: 700px
+
+
+   A document number can be viewed in the Documents menus (In progress, Action required, and Completed), and the Manage documents menu
+   (requires document management permission).
+
+   1. In the sidebar, click the **Completed** or **Manage documents** menu.
+
+   2. Click the column settings icon at the top right corner of the page.
+
+   3. Check **Document number** in the column list.
+
+      |image6|
+
+   4. Check that **the document number** column is added.
+
+-  **Searching for a document using a document number**
+
+   |image7|
+
+   You can search a document by its document number via advanced search.
+
+   1. Go to the **Completed** or **Manage documents** page.
+
+   2. Click the **Advanced** button at the top right corner of the page.
+
+   3. Select **Document number** among the search conditions.
+
+   4. Type in the word or number to be searched.
+
+   5. View the search results.
+
+.. _auth_fb:
+
+Set Permissions
+~~~~~~~~~~~~~~~
+
+You can set the permissions for the template usage and document management.
+
+.. figure:: resources/en-template-settings-permissions-fb.png
+   :alt: Template Settings > Set Permissions
+   :width: 700px
+
+
+**Template usage**
+
+This permission is needed to create documents from the template, and you can select **Allow all** or **Group or member** to
+allow all the members or some members in the company to create documents from the template.
+
+**Document management**
+
+You can select groups or members to open documents created from the template, void completed documents, or remove documents
+permanently. You can grant permission for all or some of the three options described below.
+
+-  **Open all documents** (default): Default permission granted to a document manager and gives the permission to open all documents to
+   authorized groups or members.
+
+-  **Void completed documents** (optional): Permission for voiding completed documents when requested by the document creator.
+
+-  **Remove documents** (optional): Permission to permanently remove documents from the system.
+
+.. _workflow_fb:
+
+Workflow Settings
+~~~~~~~~~~~~~~~~~
+
+You can create or modify the workflow of the template by clicking the **Workflow** tab in the **Template settings** page.
+
+.. figure:: resources/en-template-settings-workflow-fb.png
+   :alt: Template Settings > Workflow
+   :width: 700px
+
+
+**Adding steps to the workflow**
+
+1. Go to the **Workflow** configuration page by clicking the **Workflow** tab.
+
+2. Click the add button (|image8|) which is in between the **Start** and **Complete** steps.
+
+3. Select the type of recipient which you want to add.
+
+   |image9|
+
+4. When selected, a step is added to the workflow.
+
+   .. tip::
+
+      You can add as many steps as you want. You can adjust the order of steps by clicking the arrow next to a workflow step.
+
+      To delete a step, click **X** on the right side of the step button.
+
+   |image10|
+
+**Configuring the details of each workflow step**
+
+You can click a step to set the details such as **Properties** and **Manage items** for each workflow step.
+
+-  In **Properties**, you can configure the details of the step including the step name and recipients.
+
+-  In **Manage items**, you can set the fields in which the recipient has access to or is required to fill in.
+
+   |image11|
+
+**Start: Step for creating a document**
+   |image12|
+
+   -  **Step name**: Change the name of the step. The default name is 'Start'.
+
+   -  **Limit the number of documents**: Set the maximum number of documents that can be created from the template.
+
+   -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via
+      URL without the need to login to the eformsign service.
+
+   -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining
+      whether a document is duplicated or not.
+
+**Approver: Step for requesting a document for approval**
+   |image13|
+
+   -  **Display name**: Set the text to be displayed in the text box when requesting a document for approval. If you do not enter it,
+      the default text will appear as shown below.
+
+      |image14|
+
+**Internal recipient (member): Step for requesting a document to be reviewed and signed by internal members of your company**
+   |image15|
+
+   -  **Recipient**: Select the member that will receive the document in this step.
+
+      -  **Handler of a previous step**: Select an internal recipient that will receive the document. You can choose an internal
+         recipient from one of the previous internal recipient steps in the workflow or the document creator in the Start step.
+
+      -  **Group and member**: Select the groups or members in your company that will receive the document. You can select multiple groups or members.
+
+**External recipient: Step for requesting a document to be reviewed and signed by external users (recipients who are not members of your company)**
+   |image16|
+
+   -  **Document expiration**: Set the time period in which documents can be sent to external users using this URL.
+
+   -  **Automatically adds contacts**: When sending documents to an external recipient, this option allows the name and contact of the
+      external recipient to be added automatically based on the information the external recipient enters into the document.
+
+   -  **Set password**: Set a verification password that external recipients must enter when viewing the document. The password can
+      be the recipient name, a value entered directly by the sender, or a field in the document.
+
+   -  **Password hint**: Set the help message that will be displayed when an external recipient enters a password to view the document.
+
+      |image17|
+
+   -  **Require mobile verification to review documents:** Require external recipients to verify identity using mobile to open the
+      document. This feature will incur an extra charge.
+
+      .. note::
+
+         The **Require mobile verification to review documents** feature is available in Korea only.
+
+   -  **Hide sheets or sections:** You can choose which sheets/sections of the documents are shown to external recipients in the case of
+      Excel documents with two or more sheets and Word documents with two or more sections.
+
+      .. tip::
+
+         Hiding sheets or sections of a document with multiple sheets or sections
+
+         When there are multiple sheets or sections in an uploaded document, the **Hide sheets or sections** option can be shown
+         in the external recipient step of the workflow. You can choose which sheets/sections can be seen by or hidden to the external
+         recipient. You can also choose the person in charge of the step before the external step to choose which sheets/sections can be
+         shown to the external recipient.
+
+         |image18|
+
+**Complete: Step in which a document is finally completed Workflow Complete**
+   |image19|
+
+   -  **Backup completed documents in external cloud storages**: Allow the document to be stored in external cloud storages connected to
+      eformsign by the administrator or company managers.
+
+   -  **Timestamp the document when completed**: Allow the completed document to be timestamped which proves that the document remains
+      unchanged since that time. This feature will incur an extra charge.
+
+.. _field_fb:
+
+Field
+~~~~~
+
+In the **Field** menu, you can set the default values or auto-fill values for fields in the template, and adjust the order of the fields.
+
+.. figure:: resources/en-template-settings-field-fb.png
+   :alt: Template Settings > Field
+   :width: 700px
+
+
+You can set the default value of a field to be the value saved in company/group/member information in **Manage custom fields**. You can
+also choose it to be the value entered recently or a value entered manually.
+
+**How to configure auto-fill**
+
+You can save information that are frequently entered into a document so that they can be used for auto-filling later.
+
+For example, you can pre-save information about your company or group (such as department name, leader, and representative number) and
+information about the document creator (including name and contact details). You can add items for related fields and set the default
+values in **Manage company > Manage custom fields**.
+
+1. In the **Manage custom fields** screen\ **,** add a field.
+
+2. Go to the **Manage templates** menu.
+
+3. Click the **Template settings** icon.
+
+4. Go to the **Field** menu.
+
+5. Enter the default value for the field that you want to be auto-filled.
+
+6. After completing all the settings, click the **Save** button.
+
+.. _noti_fb:
+
+Notification Settings
+~~~~~~~~~~~~~~~~~~~~~
+
+You can select the method to send request or status notification message to recipients, view and edit the messages for documents created from the template.
+
+**Notification methods**
+
+Select the methods for sending notification messages to internal and external recipients. You can select either email\ **,** SMS, or both.
+
+.. note::
+
+   **SMS** can only be selected by a company subscribed a paid plan.
+   Extra charges will apply.
+
+When SMS is selected, **Send via SMS**\ and **Send via SMS if failed to send via KakaoTalk** are enabled.
+
+-  **Send SMS**: Send notifications to recipients via SMS.
+
+-  **Send via KakaoTalk and if fails, send via SMS**: Send notifications via KakaoTalk for recipients who use KakaoTalk and via SMS for recipients who do not use KakaoTalk.
+
+.. figure:: resources/en-template-settings-notification-fb.png
+   :alt: Notification Methods
+   :width: 500px
+
+
+**Edit notification messages**
+
+You can view and edit notification messages to be sent to recipients when sending documents created from the template. You can find the
+default notification messages in the **Manage company > Notification template management** page and can edit them by clicking the **Edit** button.
+
+.. note::
+
+   SMS templates can only be edited by companies subscribed a paid plan.
+
+|image20|
+
+|image21|
+
+-  **When sending for review and sign > Internal**: You can edit the notification messages to be sent to internal recipients when sending
+   a document to be reviewed and signed.
+
+-  **When sending for review and sign > External**: You can edit notification messages to be sent to external recipients when sending
+   a document to be reviewed and signed.
+
+-  **When sending for approval**: You can edit the notification messages to be sent to approvers when sending an approval request.
+
+-  **When rejecting documents**: You can edit the notification messages to be sent to document senders when a document is rejected by
+   approvers, internal recipients, or external recipients.
+
+**Document status notifications**
+
+You can select who will receive status notifications for documents created from the template. You can also preview the following
+notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the
+notification messages for completed documents.
+
+.. note::
+
+   For notifications sent when documents are rejected, voided, or corrected, only email templates are provided and they are not sent
+   via SMS. Also, SMS templates for document completion notifications (internal/external) can only be edited by companies subscribed a paid plan.
+
+|image22|
+
+.. note::
+
+   When the **Document creator** option is checked but the **Step handler** option is unchecked, a status notification is sent to the
+   person who originally created the document.
+
+   When the **Document creator** option is unchecked but the **Step handler** option is checked, status notifications are sent to people
+   who have processed the document before the current step, except the document creator.
+
+   When the **Document creator** and **Step handler** options are both checked, status notifications are sent to both the document creator
+   and the people who have processed the document before the current step.
+
+   When the **Document creator** and **Step handler** options are both unchecked, no notifications will be sent for that status.
+
+-  **When documents are approved**: When the document is approved by an approver, a notification will be sent stating that the document has
+   been approved.
+
+-  **When documents are reviewed and signed**: When the document is reviewed and signed by internal or external recipients, a
+   notification will be sent stating that the document has been reviewed and signed.
+
+-  **When documents are rejected**: When the document is rejected by an approver, internal or external recipients, a notification will be
+   sent stating that the document has been rejected.
+
+-  **Document void notification**: When a request for voiding a document is approved, a notification will be sent stating that the document
+   has been voided.
+
+-  **When documents are corrected**: When the document is corrected by a document creator, a notification will be sent stating that the
+   document has been corrected.
+
+-  **When documents are completed > Internal**: When the document is completed, a notification will be sent to the document creator,
+   approvers, and internal recipients stating that the document has been completed.
+
+-  **When documents are completed > External**: When the document is completed, a notification will be sent to external recipients stating
+   that the document has been completed.
+
+   .. note::
+
+      When the **Document creator** option for **When the document is completed > External** is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.
+
+Menus for Each Template
+-----------------------
+
+Go to the **Manage templates** page, click the menu icon (|image23|) right next to the template name to see the menus that can be set for each template.
+
+|image24|
+
+-  **Duplicate**: Duplicates the template. The template's file and detailed settings for the template will be duplicated. You will have
+   a chance to change and save the detailed settings before the template is duplicated.
+
+-  **Delete**: Deletes the template. Once a template is deleted, you can no longer create documents from that template.
+
+-  **Download file**: Click **Download file** to download a form in the format is was uploaded (e.g. Word, Excel, etc.).
+
+-  **Deactivate**: When a template is deactivated, it will not be shown in the **New document** page for other members.
+
+-  **Change owner**: You can change the owner of the template. By default, the person who created the template is automatically assigned as the template owner. If you want to make changes later, you can change the owner to another member by clicking this menu. The new template owner can be selected among members who have permission to manage templates.
+
+   |image25| 
+
+-  **Document Manager:** You can select the members or groups that can manage documents created from the template. You can also select document managers in **Template settings > Set permissions.**
+
+   |image26|
+
+Search Templates
+----------------
+
+In the **Manage templates** page, you can lookup and search templates by template category.
+
+|image27|
+
+**① Lookup Templates**
+   Click the box **(1)** to lookup templates by template status and category. Click **X** to return to view all categories.
+
+   By default, templates are saved in the Sample category. You can create categories in **Template settings > General.**
+
+**② Search templates**
+   You can search templates by entering keywords for the template name and category name.
+
+**③ Sort**
+   You can select the template sorting order in ascending or descending by template name or category.
+
+.. |image1| image:: resources/config-icon.PNG
+.. |image2| image:: resources/en-manage-template-settings-.png
+   :width: 700px
+.. |image3| image:: resources/en-generate-document-no.png
+.. |image4| image:: resources/config-icon.PNG
+.. |image5| image:: resources/config-icon.PNG
+.. |image6| image:: resources/en-document-number-list.png
+.. |image7| image:: resources/en-manage-template-search-advanced.png
+   :width: 600px
+.. |image8| image:: resources/workflow-addstep-plus-button.png
+.. |image9| image:: resources/en-template-settings-workflow-add-step-fb.png
+   :width: 700px
+.. |image10| image:: resources/en-template-settings-workflow-order-fb.png
+   :width: 500px
+.. |image11| image:: resources/en-template-settings-workflow-item-fb.png
+   :width: 700px
+.. |image12| image:: resources/en-template-settings-workflow-start-fb.png
+   :width: 700px
+.. |image13| image:: resources/en-template-settings-workflow-approver-fb.png
+   :width: 700px
+.. |image14| image:: resources/en-template-settings-approver-display-name.png
+   :width: 250px
+.. |image15| image:: resources/en-template-settings-workflow-internal-fb.png
+   :width: 700px
+.. |image16| image:: resources/en-template-settings-workflow-external-fb.png
+   :width: 700px
+.. |image17| image:: resources/workflow-step-external-recipient-property-pw.png
+   :width: 400px
+.. |image18| image:: resources/template-fb-setting-workflow-outsider-1.png
+   :width: 700px
+.. |image19| image:: resources/en-template-settings-workflow-complete-fb.png
+   :width: 700px
+.. |image20| image:: resources/en-template-settings-edit-notification-messages.png
+   :width: 400px
+.. |image21| image:: resources/en-template-settings-edit-notification-messages-popup-fb.png
+   :width: 700px
+.. |image22| image:: resources/en-template-settings-notification-status.png
+   :width: 500px
+.. |image23| image:: resources/template-hamburgericon.png
+.. |image24| image:: resources/en-manage-template-menu-icon.png
+   :width: 700px
+.. |image25| image:: resources/en-manage-template-menu-icon-change-owner.png
+.. |image26| image:: resources/en-manage-template-menu-icon-document-manager.png
+.. |image27| image:: resources/en-manage-template-search.png
    :width: 700px
