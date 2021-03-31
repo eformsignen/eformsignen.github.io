@@ -32,10 +32,10 @@ components is as follows:
 
 
 
-Downloading Installing Form Builder
+Downloading and Installing Form Builder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Download Form Builder 1. Login to eformsign and then click the menu icon
+1. Login to eformsign and then click the menu icon
 (|image1|) on the top left corner of the dashboard screen to open the
 sidebar menu. Then, click the **Download eformsign form builder** button
 at the bottom.
@@ -74,8 +74,7 @@ option and then click the **Next** button.
 
 
 
-5. When the installation is completed, the following screen is
-displayed. Click the **Finish** button to close the installation screen.
+5. Click the **Finish** button to close the installation screen.
 
 .. figure:: resources/formbuilder_wizard_3.png
    :alt: Form Builder Installation Screen (3)
@@ -234,7 +233,7 @@ Adding Components in Word or PowerPoint
 
 
 
-2.Click the component type you want to add in the ribbon menu of **OZ in Word** or **OZ in PowerPoint**.
+2. Click the component type you want to add in the ribbon menu of **OZ in Word** or **OZ in PowerPoint**.
 
 .. figure:: resources/ozinword_2.png
    :alt: Method 1: Adding Components by Clicking a Component Type in Word or PowerPoint (2)

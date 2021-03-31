@@ -27,7 +27,7 @@ eformsign.
    are shown only to members who are given template usage permission for
    a given template.
 
-   You can create a template using Web From Designer or Form Builder.
+   You can create a template using Web Form Designer or Form Builder.
    For more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__ and
    `Tempate Form builder <chapter7.html#template_fb>`__.
 
@@ -60,7 +60,7 @@ You can upload a PDF file you want and then add fields (components) onto the doc
 
       You can add participants by clicking **Add new participant** and up to 30 can be added. Note that you can change, add, or delete participant information in the **Add recipient** step after the **Design form** step.
 
-4. Add the components each participants will fill in and then set component properties on the right.
+4. Add the components each participant will fill in and then set component properties on the right.
 
    |image4|
 
@@ -114,8 +114,7 @@ You can upload a PDF file you want and then add fields (components) onto the doc
       A document is created once you click **Start now**, and it counts
       as a created document.
 
-8. If you click the **Send** button after reviewing/filling in the
-   document, then the document is sent to recipients.
+8. If you click the **Send** button after reviewing/filling in the document, then the document is sent to recipients.
 
    |image11|
 
@@ -169,8 +168,8 @@ frequently used forms and saving them as templates by adding workflows
 and other details.
 
 Templates can be created by using Web Form Designer or Form Builder. For
-more information, refer to `Web Form Designer <#template_wd>`__\ and
-`Form Builder <#template_fb>`__.
+more information, refer to `Creating templates from Web Form Designer <#template_wd>`__\  and
+`Creating templates from Form Builder <#template_fb>`__.
 
 .. note::
 

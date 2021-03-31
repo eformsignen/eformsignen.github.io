@@ -6,7 +6,7 @@ Creating templates using Web Form Designer
 About Templates
 ------------------
 
-Web form designer Templates Templates are **electronic documents** used for the eformsign service. They are e-documents converted from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its Web form designer or Form builder. For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
+Templates are **electronic documents** used for the eformsign service. They are e-documents converted from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its Web form designer or Form builder. For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
 
 Template Overview
 ~~~~~~~~~~~~~~~~~~~
@@ -143,7 +143,7 @@ General
 ① Template name
    The template name will be displayed in the **Manage templates** and **New document** pages.
 
-   The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name
+   The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.
 
    .. figure:: resources/en-template-name.png
       :alt: Template Name

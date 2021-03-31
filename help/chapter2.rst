@@ -60,11 +60,11 @@ The description of each menu is as follows:
    signature to be used when signing a document.
 
 -  **Manage templates:** Only template managers can
-   access this menu.You can view the template list and configure the
+   access this menu. You can view the template list and configure the
    template settings.
 
 -  **Manage company:** Only company managers can access
-   this menu.You can view and edit company information.
+   this menu. You can view and edit company information.
 
    -  **Company profile:** You can view and edit company
       information
@@ -114,18 +114,13 @@ The description of each menu is as follows:
 -  **Usage status:** You can monitor weekly, monthly, and annual service
    usage status.
 
--  **Download eformsign Form Builder:** DYou can
-   download the Form Builder executable file. By using the Form Builder
-   add-in feature, you can create electronic forms using Microsoft
-   Office files.
+-  **Download eformsign Form Builder:** You can download the Form Builder executable file. By using the Form Builder
+   add-in feature, you can create electronic forms using Microsoft Office files.
 
 Dashboard
 ~~~~~~~~~~~
 
-Dashboard The dashboard is the main page displayed when logging into
-eformsign. In the dashboard, you can view documents that are in
-progress, require your action, etc., and use shortcuts to go to the main
-menus including **New document**.
+The dashboard is the main page displayed when logging into eformsign. In the dashboard, you can view documents that are in progress, require your action, etc., and use shortcuts to go to the main menus including **New document**.
 
 .. figure:: resources/en-dashboard-main.png
    :alt: eformsign Dashboard Screen
@@ -136,11 +131,10 @@ menus including **New document**.
    Displays the **New from template** page where you can create new documents from saved templates.
 
 **② New from my file**
-   New from my file Displays the **New from my file** page where you can create new documents by upload your files from your computer.
+   Displays the **New from my file** page where you can create new documents by upload your files from your computer.
 
 **⑧ Favorites**
-   Displays the templates you added as your Favorites. If you click a template in the Favorites list, you can go to the page where
-   you can create a new document using that template. You can add a template to your Favorites by clicking the Add icon (|image2|). You can delete a template from the Favorites list by clicking the Edit icon (|image3|).
+   Displays the templates you added as your Favorites. If you click a template in the Favorites list, you can go to the page where you can create a new document using that template. You can add a template to your Favorites by clicking the Add icon (|image2|). You can delete a template from the Favorites list by clicking the Edit icon (|image3|).
 
 .. tip::
 
@@ -156,7 +150,7 @@ menus including **New document**.
 
       |image5|
 
-   4. Tick the checkboxes of the templates you want to add to the Favorites
+   4. The templates will be added to the Favorites.
 
 **④ Action required**
    Shows the number of documents that require action and goes to the **Action required** page when clicked.
@@ -171,8 +165,7 @@ menus including **New document**.
    Displays the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, the **Drafts** page is displayed.
 
 **⑧ Action required**
-   Displays the list of the three most recent documents that require your action and the number of documents requiring your
-   action.You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button to go to the **Action required** page.
+   Displays the list of the three most recent documents that require your action and the number of documents requiring your action. You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button to go to the **Action required** page.
 
 **⑨ Saved draft**
    Shows the number of documents saved in **Drafts** and the three most
@@ -182,7 +175,7 @@ menus including **New document**.
 
 **⑩ In progress**
    Displays the list of the three most recent documents in progress and
-   the number of documents in progress.You can click on the name of a
+   the number of documents in progress. You can click on the name of a
    document in the list to open the document. Also, you can click the
    more **(+)** button to go to the **In progress** page.
 
@@ -199,8 +192,7 @@ for the eformsign service and the company information, click the see
 more icon (|image6|) at the top right corner of the sidebar menu.
 
 .. figure:: resources/en-dashboard-side-menu-icon.png
-   :alt: Location of the Menu Icon for Accessing Personal and Company
-   Info
+   :alt: Location of the Menu Icon for Accessing Personal and Company Info
    :width: 600px
 
 
@@ -403,8 +395,7 @@ The company administrator
 When the company administrator deletes her/his eformsign account, the
 company will also be deleted. If the administrator wants to delete only
 the account, then she/he can delegate the administrator permission to
-another member, and then delete the account. Delegating the Company
-Administrator Permission
+another member, and then delete the account.
 
 **Delegating the Company Administrator Permission**
 
@@ -528,7 +519,8 @@ Members with the document management permission for a template can view, delete,
 Manage Groups and Members
 ----------------------------
 
-You can invite, delete, and edit members and create, add, and delete groups in the **Manage company** menu. Manage groups Manage members
+You can invite, delete, and edit members and create, add, and delete groups in the **Manage company** menu.
+
 
 .. figure:: resources/en-side-menu-manage-group-members.png
    :alt: Manage Company > Manage Groups/Members

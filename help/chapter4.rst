@@ -21,9 +21,9 @@ and adding components. You can upload PDF files in the **New from template** or 
    Microsoft Office Add-in feature named **OZ in Office (Form builder)**
    which allows you to create electronic documents directly in Microsoft
    Office. To use Form builder, please install the Microsoft Office
-   add-in, and refer to `??? <#formbuilder>`__.
+   add-in, and refer to `Form Builder <chapter5.html#formbuilder>`__.
 
--  Uploading a PD file in the **New from my file** menu.
+-  Uploading a PDF file in the **New from my file** menu.
 
 1. Click the **New from my file** menu.
 
@@ -104,7 +104,7 @@ Web form designer consists of a screen that displays the file, the left and righ
 Overview of Components
 ----------------------
 
-Components Components are used to create fields in electronic documents
+Components are used to create fields in electronic documents
 that users can enter information. Many different components including
 Signature, Check, Date, and Text are provided, and each component can be
 configured in detail by using the **Properties** tab.
@@ -398,7 +398,7 @@ The below example shows how checks are displayed according to the selected style
 
 **④ Unchecked style**
 
-You can select the style of each component that is not selected. For unchecked style, shecks display square boxes, radio buttons display circles, and circles display nothing.
+You can select the style of each component that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.
 
 **⑤ Tooltip text**
 

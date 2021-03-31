@@ -30,7 +30,7 @@ fields, fields in documents such as company information, group and
 member information, recent input value, and date can be automatically
 filled in. Furthermore, eformsign allows users to easily manage
 companies' members and their permissions, configure detailed
-notifications settings for documents, and manage and utilize data
+notification settings for documents, and manage and utilize data
 entered in documents by extracting input data.
 
 .. figure:: resources/main_feature.png
@@ -133,13 +133,12 @@ using eformsign.
 
    A document can be an electronic document you create and send
    for signature by using a template or an electronic document you
-   create and end by upload your file. A document can be create and sent
+   create and send by upload your file. A document can be created and sent
    for signature by using either one of the **New from my file** menu or
    the **New from template** menu. Any document created like this counts
    as a document created in eformsign.
 
--  This is a cloud space for storing and viewing
-   documents. It consists of the following three menus according to the
+-  This is a cloud space for storing and viewing documents. It consists of the following three menus according to the
    document status:
 
    -  **Action required:** Shows the list of documents
@@ -166,7 +165,7 @@ using eformsign.
 
    -  **Approver:** Step in which an approver can approve the document sent by the document creator.
 
-   -  **Internal recipient:** Step in which an internal recipient, a member of the company, can review and sign the document sent by the document creator.
+   -  **Internal recipient:** Step in which an internal recipient (a member of the company) can review and sign the document sent by the document creator.
 
    -  **External recipient:** Step in which a user who is not a member of the company can review and sign the document sent by the document creator (or the internal recipient).
 
@@ -261,7 +260,7 @@ uploading it on eformsign.
    You can create a template by creating or opening a
    document file in Microsoft Office (Word, Excel, and PowerPoint), and
    then using the ribbon menu (named OZ in Office) to add the components
-   you want such as text, signature, and date onto the document.Then,
+   you want such as text, signature, and date onto the document. Then,
    you can upload the template you created onto eformsign by clicking
    the Upload button in the ribbon menu.
 
