@@ -1,7 +1,7 @@
-Overview
-============
+Introduction to eformsign
+=============================
 
-Product Introduction
+Overview
 ------------------------
 
 eformsign is an electronic document solution that allows anyone to
@@ -219,7 +219,7 @@ create and send a document by adding components such as text, signature,
 and date. You can easily and freely send a document by uploading a file,
 without the need to create a template. Just simply add components to the
 uploaded document, set the workflow in the **Add recipients** step, and
-then press the **Start Now button** to send.
+then press the **Start Now** button to send.
 
 Also, before sending a document to recipients, you can temporarily save
 it as a draft and then send it later.

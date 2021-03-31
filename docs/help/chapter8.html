@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Customizing eformsign</title>
+      <title>Document Menus</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
@@ -15,6 +15,7 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
@@ -22,8 +23,8 @@
     
   <link rel="index" title="Index" href="../genindex.html" />
   <link rel="search" title="Search" href="../search.html" />
-  <link rel="next" title="Connecting with External Services" href="chapter9.html" />
-  <link rel="prev" title="Managing Documents" href="chapter7.html" /> 
+  <link rel="next" title="Customization" href="chapter9.html" />
+  <link rel="prev" title="Creating templates using Form Builder" href="chapter7.html" /> 
   </head>
 
   <body>
@@ -69,11 +70,11 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign-user-guide">eformsign user guide</a></span>
       </p>
       <ul class="current">
         
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Overview</a>
+          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Introduction to eformsign</a>
 
             
           </li>
@@ -85,51 +86,57 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Introduction to Web Form Designer</a>
+          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Creating documents</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Form Builder</a>
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Web Form Designer</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Managing Templates in Web Form Designer</a>
+          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Introduction to Form Builder</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Managing Templates in Form Builder</a>
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Creating templates using Web Form Designer</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Managing Documents</a>
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Creating templates using Form Builder</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Customizing eformsign</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Document Menus</a>
 
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#manage-custom-fields-manage-custom-fields" class="reference internal">Manage Custom Fields Manage custom fields</a></li>
+                  <li class="toctree-l2"><a href="#documents" class="reference internal">Documents</a></li>
                 
-                  <li class="toctree-l2"><a href="#notification-template-management" class="reference internal">Notification Template Management</a></li>
+                  <li class="toctree-l2"><a href="#drafts" class="reference internal">Drafts</a></li>
                 
               </ul>
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Connecting with External Services</a>
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Customization</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">Connecting with External Services</a>
 
             
           </li>
@@ -147,18 +154,18 @@
   <ul class="breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>Customizing eformsign</li>
+    <li>Document Menus</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
     <a href="chapter7.html"
-       title="previous chapter">← Managing Documents</a>
+       title="previous chapter">← Creating templates using Form Builder</a>
   </li>
   <li class="next">
     <a href="chapter9.html"
-       title="next chapter">Connecting with External Services →</a>
+       title="next chapter">Customization →</a>
   </li>
 </ul>
   
@@ -166,142 +173,359 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="customizing-eformsign">
-<h1>Customizing eformsign<a class="headerlink" href="#customizing-eformsign" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="manage-custom-fields-manage-custom-fields">
-<h2>Manage Custom Fields Manage custom fields<a class="headerlink" href="#manage-custom-fields-manage-custom-fields" title="Permalink to this headline">¶</a></h2>
-<p>You can add and edit fields for companies, groups, and members in the
-<strong>Manage company &gt; Manage custom fields</strong> menu.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>By using custom fields, you can set frequently used companies,
-groups, and member information (e.g., company phone number, address,
-company representative name, etc.) to be added automatically in
-documents. After adding custom fields in the <strong>Manage custom fields</strong>
-menu, go to the <strong>Template settings &gt; Field settings</strong> menu to set
-which information is to be entered automatically in the documents.</p>
+  <div class="section" id="document-menus">
+<h1>Document Menus<a class="headerlink" href="#document-menus" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="documents">
+<h2>Documents<a class="headerlink" href="#documents" title="Permalink to this headline">¶</a></h2>
+<p>Documents are stored in the following three menus according to the document status:</p>
+<ul class="simple">
+<li><p><strong>In progress:</strong> View the list of documents you have created or signed/approved that are incomplete.</p></li>
+<li><p><strong>Action required:</strong> View the list of documents you have saved as a draft, requested by other members for
+you to sign or approve, or sent to external recipients but have yet to be signed.</p></li>
+<li><p><strong>Completed:</strong> View the list of completed documents among the documents created by you.</p></li>
+</ul>
+<p>By using these menus, you can easily view the status and history of each document, find the documents you want by filtering and searching, resend
+documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents.</p>
+<p>All documents and related activities are stored in the Documents menus, and you can view detailed information about the document status and
+history.</p>
+<p>Aside from the three document menus, there is another menu for managing documents.</p>
+<ul class="simple">
+<li><p><strong>Manage documents:</strong> View and manage all documents created from a template in which you have been given access permission.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The company administrator can view and manage all documents in the company.</p>
 </div>
-<div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/Customfield.PNG"><img alt="Manage company &gt; Manage custom fields" src="../_images/Customfield.PNG" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Manage company &gt; Manage custom fields</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/inbox_ex1.png"><img alt="Location of the Documents Menus and the Manage Documents Menu" src="../_images/inbox_ex1.png" style="width: 700px;" /></a>
 </div>
-<dl class="simple">
-<dt>① Manage custom fields &gt; Company</dt><dd><p>You can add fields related to the company such as the company
-representative name, company phone number, stamp and seal, and then
-set the values.</p>
-</dd>
-<dt>② Manage custom fields &gt; Group</dt><dd><p>You can add fields related to groups such as the department name and
-manager, and then set the values.</p>
-</dd>
-<dt>③ Manage custom fields &gt; Member</dt><dd><p>You can add fields related to members such as the job title, email
-address and phone number, and then set the values.</p>
-</dd>
-<dt>④ Add field</dt><dd><p>If you click the <strong>Add field</strong> button, the <strong>Add custom field</strong>
-pop-up window will be displayed where you can add a new field. Enter
-the field name, field type (select from text or image), and field
-value, and then click the <strong>OK</strong> button to add the field to the
-custom field list.</p>
-</dd>
-</dl>
-<div class="figure align-default" id="id2">
-<img alt="Manage company &gt; Manage custom fields" src="../_images/customfield-addfield.PNG" />
-<p class="caption"><span class="caption-text">Manage company &gt; Manage custom fields</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p>The three Documents menus and the Manage documents menu are laid out almost the same.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The layout of the Documents menus are very similar to each other, but the documents that are displayed differ according to the document
+status or granted permission to users.</p>
 </div>
-<dl>
-<dt>⑤ Field list</dt><dd><p>The custom field list shows the field names and the field values that
-you added. You can also delete the fields and edit the field values.</p>
-<p>To delete a field, click the icon (<img alt="Manage company &gt; Manage custom fields" src="../_images/customfield-list-delete.png" />) located to the left of the field list.</p>
-</dd>
-<dt>⑥ Edit field</dt><dd><p>If you select a field to edit and then click the edit icon, the
-<strong>Edit custom field</strong> pop-up window will be displayed where you can
-edit the field name, field type, and field value.</p>
-<p>You can also change the field order. Select a field in which you want
-to change the order, and then click the arrow (<img alt="image1" src="../_images/customfield-list-order.PNG" />) button.</p>
-<div class="figure align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/customfield-edit.PNG"><img alt="Manage company &gt; Manage custom fields" src="../_images/customfield-edit.PNG" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Manage company &gt; Manage custom fields</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/inbox_layout.png"><img alt="Documents Menus Layout" src="../_images/inbox_layout.png" style="width: 750px;" /></a>
 </div>
-</dd>
-<dt>⑦ Save</dt><dd><p>After editing the custom field, click the <strong>Save</strong> button to save
-your changes.</p>
-</dd>
-</dl>
+<p>Each documents menu consists of the following five sections:</p>
+<ol class="arabic">
+<li><p><strong>Menu and home icon, and document menu name</strong></p>
+<p>You can go to another menu by clicking the menu icon (<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image1" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>) or go to the dashboard by clicking the home icon (<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image2" src="../_images/home_icon_2.png" style="width: 25px;" /></a>). You can also
+see the name of the documents menu you are currently viewing.</p>
+</li>
+<li><p>Template category combo box, document status filter combo box, and <a class="reference external" href="#category">search box</a></p>
+<p>You can view documents by the selected template category and filter documents by document status.</p>
+<p>In addition to performing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and many more.</p>
+</li>
+<li><p><strong>Document list and</strong><a class="reference external" href="#additional_work">actions</a></p>
+<p>Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.</p>
+<p>The information of each document such as the document status, name, step, creator, created date, processed date, and document number is
+provided in columns in the document list. You can also change the column information displayed. Click the column icon (<a class="reference internal" href="../_images/column_icon.png"><img alt="image3" src="../_images/column_icon.png" style="width: 35px;" /></a>)
+displayed at the top right corner of the page, and then check the columns you want to display in the <a class="reference external" href="#document_column">column check box</a>.</p>
+<p>You can also perform actions on a document such as reviewing, previewing, correcting, voiding, resending, and deleting a document.</p>
+</li>
+<li><p><a class="reference external" href="#history">Document status and history</a></p>
+<p>You can check the documents status and history.</p>
+<p>In the <strong>Document status</strong> tab, you can see what happens to a document in each step of the workflow.</p>
+<p>In the <strong>History</strong> tab, you can see the activities of the document creator and recipients from document creation to completion.</p>
+</li>
+<li><p><a class="reference external" href="#document_column">The column selection icon</a>, <a class="reference external" href="#document_download">document download icon</a>, <a class="reference external" href="#document_delete">delete icon</a></p>
+<p>Clicking the column selection icon (<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>) displays the column types which you can check to select which columns will be displayed in the document list.</p>
+<p>Clicking the download icon (<a class="reference internal" href="../_images/download-icon.PNG"><img alt="image5" src="../_images/download-icon.PNG" style="width: 30px;" /></a>) allows to select the documents in the list you want to download. You can select multiple documents
+to download at once and choose the file type including the PDF of the completed documents, audit certificate, and CSV of selected fields.</p>
+<p>Note that the delete icon (<a class="reference internal" href="../_images/delete_icon1.png"><img alt="image6" src="../_images/delete_icon1.png" style="width: 30px;" /></a>) is disabled in the three document menus, but is enabled in the <strong>Manage documents</strong> menu.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Documents can be deleted only in the <strong>Manage documents</strong> menu and you can only delete documents in which you have document management permission. The company administrator or the template managers of a template can grant you document management
+permission for all documents created from a template in <strong>Manage templates &gt; Template settings &gt; Set permissions &gt; Document management</strong> and selecting the groups/members you want to grant permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the <strong>Manage documents</strong> menu.</p>
 </div>
-<div class="section" id="notification-template-management">
-<h2>Notification Template Management<a class="headerlink" href="#notification-template-management" title="Permalink to this headline">¶</a></h2>
-<p>Notification template management You can customize the email and SMS
-notification messages to best suit the needs of your company.</p>
-<p>Notification templates can be edited in the <strong>Manage company &gt;
-Notification template management</strong> menu or in the <strong>Manage templates &gt;
-Template settings &gt; Notification settings</strong> menu.</p>
-<div class="figure align-default" id="id4">
-<a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="Manage company &gt; Notification template management" src="../_images/notification-template-manage.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Manage company &gt; Notification template management</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</li>
+</ol>
+<div class="section" id="template-category-combo-box-document-status-filter-combo-box-and-search-box">
+<span id="category"></span><h3>Template Category Combo Box, Document Status Filter Combo Box, and Search Box<a class="headerlink" href="#template-category-combo-box-document-status-filter-combo-box-and-search-box" title="Permalink to this headline">¶</a></h3>
+<p>The template category combo box, document status filter combo box, and search box are located at the top left side of the <strong>Documents</strong> menus and the <strong>Manage documents</strong> menu.</p>
+<ul>
+<li><p><strong>‘In progress’, ‘Action required’, and ‘Completed’ menus</strong></p>
+<p>In these menus, the template category combo box, document status
+filter combo box, and search box are also located at the top left
+side of the screen.</p>
+</li>
+<li><p><strong>‘Manage documents’</strong></p>
+<p>In this menu, the template category combo box, document status filter
+combo box, and search box are located at the top left side of the
+screen. However, the document status filter combo box contains one
+additional menu, ‘Voided’, compared to the three documents menus.</p>
+</li>
+</ul>
+<p><strong>Template category combo box</strong></p>
+<p>By using the template category combo box, you can display the list of
+documents by template category by selecting the desired template
+available in the <strong>Manage templates</strong> menu.</p>
+<p>Clicking the <strong>X</strong> icon of the template category combo displays the
+templates according to categories as shown below:</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/category_search.png"><img alt="Template category combo box" src="../_images/category_search.png" style="width: 500px;" /></a>
 </div>
-<p>Default templates are shown in the <strong>Manage company &gt; Notification
-template management</strong> menu. You can change the contents of the default
-templates and add new notification templates.</p>
-<p><strong>Basic template types (select from Mail or SMS)</strong></p>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-text">Template Types and Status</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<p><strong>Searching by document status</strong></p>
+<p>You can search for documents by document status in each document menu.</p>
+<ul class="simple">
+<li><p><strong>Action required</strong></p></li>
+</ul>
+<p><a class="reference internal" href="../_images/actionrequiredbox-status-search.png"><img alt="image7" src="../_images/actionrequiredbox-status-search.png" style="width: 700px;" /></a></p>
+<ul class="simple">
+<li><p><strong>In progress</strong></p></li>
+</ul>
+<p><a class="reference internal" href="../_images/inprocessbox-status-search.png"><img alt="image8" src="../_images/inprocessbox-status-search.png" style="width: 700px;" /></a></p>
+<ul class="simple">
+<li><p><strong>Completed</strong></p></li>
+</ul>
+<p><a class="reference internal" href="../_images/completedbox-status-search.png"><img alt="image9" src="../_images/completedbox-status-search.png" style="width: 700px;" /></a></p>
+<ul class="simple">
+<li><p><strong>Manage documents</strong></p></li>
+</ul>
+<p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image10" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
+<p><strong>Document status filter combo box</strong></p>
+<p>In addition to doing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and filtering by document status.</p>
+<p>You can also search for field values in documents in detail by using a custom filter. As well, by using a custom filter, you can search for documents according to the range of numbers and dates.</p>
+<p>The following table describes the filters that can be used for performing searches. However, custom filters can only be used in the <strong>Manage documents</strong> and <strong>Completed</strong> menus.</p>
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 29%" />
-<col style="width: 71%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 26%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Type</p></th>
-<th class="head"><p>Status</p></th>
+<tr class="row-odd"><th class="head"><p>Action required</p></th>
+<th class="head"><p>Action required</p></th>
+<th class="head"><p>Completed</p></th>
+<th class="head"><p>Manage documents</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Notification
-messages</p></td>
-<td><p>Request approval, Acceptance request, External
-user processing request, Reject approval,
-Document void requested, and Document void
-request rejected</p></td>
+<tr class="row-even"><td><p>Name + contents</p></td>
+<td><p>Name + contents</p></td>
+<td><p>Name + contents</p></td>
+<td><p>Name + contents</p></td>
 </tr>
-<tr class="row-odd"><td><p>Document status
-notifications</p></td>
-<td><p>Approval, Acceptance approval, Approve decline
-request, External user complete document,
-Complete document, Correct document, Void
-document, Deletion notification, Document
-transfer completion, and Complete document
-(Send as PDF)</p></td>
+<tr class="row-odd"><td><p>Name</p></td>
+<td><p>Name</p></td>
+<td><p>Name</p></td>
+<td><p>Name</p></td>
 </tr>
-<tr class="row-even"><td><p>Member</p></td>
-<td><p>Invite a member, Accept the member invitation,
-Refuse the member invitation, and Withdraw from
-company</p></td>
+<tr class="row-even"><td><p>Contents</p></td>
+<td><p>Contents</p></td>
+<td><p>Contents</p></td>
+<td><p>Contents</p></td>
 </tr>
-<tr class="row-odd"><td><p>Header and footer</p></td>
+<tr class="row-odd"><td><p>Document ID</p></td>
+<td><p>Document ID</p></td>
+<td><p>Document ID</p></td>
+<td><p>Document ID</p></td>
+</tr>
+<tr class="row-even"><td><p>Document number</p></td>
+<td><p>Document number</p></td>
+<td><p>Document number</p></td>
+<td><p>Document number</p></td>
+</tr>
+<tr class="row-odd"><td><p>Template name</p></td>
+<td><p>Template name</p></td>
+<td><p>Step</p></td>
+<td><p>Step</p></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>Step</p></td>
+<td><p>Created by</p></td>
+<td><p>Created by</p></td>
+</tr>
+<tr class="row-odd"><td><p>Created by</p></td>
+<td><p>Created by</p></td>
+<td><p>Created on</p></td>
+<td><p>Created on</p></td>
+</tr>
+<tr class="row-even"><td><p>Created on</p></td>
+<td><p>Created on</p></td>
+<td><p>Processed by</p></td>
+<td><p>Processed by</p></td>
+</tr>
+<tr class="row-odd"><td><p>Requested by</p></td>
+<td><p>Processed by</p></td>
+<td><p>Processed on</p></td>
+<td><p>Processed on</p></td>
+</tr>
+<tr class="row-even"><td><p>Requested on</p></td>
+<td><p>Processed on</p></td>
+<td><p>Step status</p></td>
+<td><p>Custom filter</p></td>
+</tr>
+<tr class="row-odd"><td><p>Days passed</p></td>
+<td></td>
+<td><p>Custom filter</p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The header is set with the eformsign logo by default. If you upload
-your company’s logo in the <strong>Manage company &gt; Company profile &gt;
-Company brand</strong> tab menu, the logo is applied to the email templates.</p>
+<p><strong>Using the custom filter</strong></p>
+<ol class="arabic simple">
+<li><p>Select <strong>Custom Filter</strong> in the <strong>Advanced</strong> search combo box.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/userdefined_search1.png"><img alt="Custom filter" src="../_images/userdefined_search1.png" style="width: 500px;" /></a>
 </div>
-<p><strong>How to add a new notification template</strong></p>
-<p>In addition to the default templates, you can add a new notification
-template.</p>
-<ol class="arabic">
-<li><p>In the sidebar menu, click the <strong>Manage company &gt; Manage Notification
-Templates</strong> menu.</p></li>
-<li><p>Click the <strong>Add notification template</strong> button located at the top
-right corner of the <strong>Notification template management</strong> screen.</p></li>
-<li><p>Select the appropriate <strong>Type</strong> and <strong>Status</strong>.</p>
-<p><a class="reference internal" href="../_images/notification-template-new.PNG"><img alt="image2" src="../_images/notification-template-new.PNG" style="width: 700px;" /></a></p>
+<ol class="arabic simple" start="2">
+<li><p>Select the field name, field type (keyword, range, or period), and search value.</p></li>
+</ol>
+<p>The default value of the field name is an empty value.</p>
+<p>Make sure to manually enter the Display name of the field in the document you want to search for. You can view the Display name for fields in the <strong>Template settings &gt; Field</strong> setting menu.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>Documents may not be searched if you search for a document by entering the display name of the field that does not exist.</p></li>
+<li><p>You cannot enter special characters in the display name (“, ‘, ;, &lt;, &gt;, \).</p></li>
+<li><p>Empty spaces before and after the display name are all removed. E.g. “ Time off ”  “Time off”</p></li>
+</ol>
+<p>4. When adding or editing a search value, if you enter a duplicate value in the custom filter, then the previously entered field type
+and field search value will be displayed. For example, when adding a custom filter again while ‘years worked: 5~10’ was entered in the
+custom filter, if you enter ‘years worked’ in the field name, then the previous value such as Range for Type, 5 for Min value, and 10 for Max value are displayed.</p>
+</div>
+<p>You can choose one of Keyword, Range, and Period for the field type.
+Keyword is the default.</p>
+<p>Note that the input boxes displayed differ according to the field type selected.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 34%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field type</p></th>
+<th class="head"><p>Input box 1</p></th>
+<th class="head"><p>Input box 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Keyword</p></td>
+<td><p>Text</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Range</p></td>
+<td><p>Min</p></td>
+<td><p>Max</p></td>
+</tr>
+<tr class="row-even"><td><p>Period</p></td>
+<td><p>Start date</p></td>
+<td><p>End date</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Keyword</strong></p>
+<p>Used for searching multiple values by a comma (,) which is used as the delimeter. The default value is empty.</p>
+<p>When used, it searches for the text entered. In other words, it searches for documents that contain at least one of the multiple
+values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberries, apple → searches for documents that contain at least one of ‘strawberries’ and/or ‘ apple’.</p>
 </li>
-<li><p>Select the <strong>Channel</strong> (select either Mail or SMS) and enter the
-<strong>Notification template name</strong>.</p></li>
-<li><p>Select the <strong>Header</strong> and <strong>Footer</strong>.</p></li>
-<li><p>Write a new notification message.</p></li>
-<li><p>Click the <strong>Save</strong> button to add it as a notification template.</p></li>
+<li><p><strong>Range</strong></p>
+<p>Used for searching values of range such as numbers or dates. E.g. number: 100 ~ 200, period: 01/01/2019 ~ 06/30/2019</p>
+<p>When used, it searches for values between the min and max. If you only enter the min, then only the values larger than the min value are searched, while if you only enter the max then only the values smaller than the max are searched. E.g. salary: 1000 ~ , salary: ~ 5000</p>
+</li>
+<li><p><strong>Period</strong></p>
+<p>Selects the period in the calendar displayed. The default value of the period length is set to one week.</p>
+<p>Searches for the date between the start and end date selected.</p>
+</li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Click the add search (<img alt="image11" src="../_images/searchplus.png" />) button to add the keyword entered and documents are searched according to the conditions set.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>You can add multiple custom filters, and can modify/delete the custom filters you added.</p></li>
+<li><p>You cannot add multiple custom filters with duplicate field names.</p></li>
+<li><p>If you modify a predefined custom filter, then the field type and search values are updated with the most recently entered values.</p></li>
+</ol>
+</div>
+<p><strong>Displaying search keywords and modifying/deleting them</strong></p>
+<ol class="arabic simple">
+<li><p>The search keyword is added in the form of <strong>field name: value</strong>.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Keyword: “employment type: permanent, contract”</p></li>
+<li><p>Range: “years worked: 5~10”</p></li>
+<li><p>Period “contractperiod_yymmdd: 2018-01-01~2018-12-31”</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Modify the custom filter by selecting a search keyword added. When modifying, the <strong>Advanced</strong> filter item is changed to <strong>Customer filter</strong>, and the selected filter’s field name, field type, and search value are displayed.</p></li>
+<li><p>Added keywords can be deleted by clicking the <strong>X</strong> icon on the right.</p></li>
+</ol>
+</div>
+<div class="section" id="actions-that-can-be-performed-in-the-document-list-by-documents-menu">
+<span id="additional-work"></span><h3>Actions that Can Be Performed in the Document List by Documents Menu<a class="headerlink" href="#actions-that-can-be-performed-in-the-document-list-by-documents-menu" title="Permalink to this headline">¶</a></h3>
+<p>Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, and download.</p>
+<p><strong>In progress</strong></p>
+<p>Can perform actions including preview, correct, void, send final copy, and download.</p>
+<p><strong>Action required</strong></p>
+<p>Can perform actions including preview, correct, void, review, resend, and download.</p>
+<p><strong>Completed</strong></p>
+<p>Can perform actions including preview, void, send final copy, and download.</p>
+<p><strong>Manage documents</strong></p>
+<p>Can perform actions including preview, void, send final copy, remove, download, and delete. Documents can only be deleted in the <strong>Manage documents</strong> menu.</p>
+</div>
+<div class="section" id="document-status-and-history">
+<span id="history"></span><h3>Document Status and History<a class="headerlink" href="#document-status-and-history" title="Permalink to this headline">¶</a></h3>
+<p>If you select a document in the document list, you can view the status and history of that document on the right side of the screen.</p>
+<p>In the <strong>Document status</strong> tab, you can see when and what happens to a document in each step of the workflow. In the <strong>History</strong> tab, you can see the activities of the document creator and recipients from document creation to completion.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/document_status.png"><img alt="Document status tab" src="../_images/document_status.png" style="width: 300px;" /></a>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/document_history.png"><img alt="History tab" src="../_images/document_history.png" style="width: 300px;" /></a>
+</div>
+</div>
+<div class="section" id="document-download">
+<span id="id1"></span><h3>Document Download<a class="headerlink" href="#document-download" title="Permalink to this headline">¶</a></h3>
+<p>Documents created in eformsign can be safely stored for long periods of time.</p>
+<p>All documents are stored in a file format for long-term storage (PDF/A) and only members with document management permission can open and delete them.</p>
+<ol class="arabic simple">
+<li><p>Click the download icon (<img alt="image12" src="../_images/download_icon.png" />) on the right side of the document list.</p></li>
+<li><p>Select the document to be downloaded, and then click the <strong>Download</strong> button.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/download_popup.png"><img alt="Document download pop-up" src="../_images/download_popup.png" style="width: 400px;" /></a>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>CSV files can also be downloaded in the <strong>Download</strong> pop-up where PDF files can be downloaded. Select <strong>CSV download</strong> in the pop-up and check the fields (columns) to be downloaded and then click the <strong>Download</strong> button.</p>
+</div>
+</div>
+<div class="section" id="deleting-documents">
+<span id="document-delete"></span><h3>Deleting Documents<a class="headerlink" href="#deleting-documents" title="Permalink to this headline">¶</a></h3>
+<p>In eformsign, only members with document management permission can delete documents.</p>
+<ol class="arabic simple">
+<li><p>Click the delete icon (<img alt="image13" src="../_images/delete_icon1.png" />) on the right side of the document list.</p></li>
+<li><p>Select the document and then click the <strong>Delete</strong> button.</p></li>
+<li><p>Click the <strong>Yes</strong> button in the Delete pop-up window to delete the document.</p></li>
+</ol>
+</div>
+<div class="section" id="document-menu-column-selection">
+<span id="document-column"></span><h3>Document Menu Column Selection<a class="headerlink" href="#document-menu-column-selection" title="Permalink to this headline">¶</a></h3>
+<p>If you click the column (<a class="reference internal" href="../_images/column_icon.png"><img alt="image14" src="../_images/column_icon.png" style="width: 35px;" /></a>) icon on the right side of the document list, you can select which column to be displayed on the list.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/column_type.png"><img alt="Document column selection icon" src="../_images/column_type.png" style="width: 400px;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="drafts">
+<span id="id2"></span><h2>Drafts<a class="headerlink" href="#drafts" title="Permalink to this headline">¶</a></h2>
+<p>The Drafts menu stores the documents in the <strong>New from my file</strong> step that have been saved by clicking <strong>Save as a draft</strong> before sending the document. You can open the files stored in the <strong>Drafts</strong> menu anytime and proceed or delete.</p>
+<ol class="arabic">
+<li><p>Click <strong>Drafts</strong> in the sidebar menu to go to the Drafts page.</p>
+<p><a class="reference internal" href="../_images/draftbox-menu.png"><img alt="image15" src="../_images/draftbox-menu.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>Select a document you want and click the <strong>Continue</strong> button next to it.</p>
+<p><a class="reference internal" href="../_images/draftbox-documentlist.png"><img alt="image16" src="../_images/draftbox-documentlist.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>Edit the document in the <strong>Create from my file</strong> screen and send it.</p></li>
 </ol>
 </div>
 </div>
@@ -312,16 +536,16 @@ right corner of the <strong>Notification template management</strong> screen.</p
             <div class="inner"><ul class="page-nav">
   <li class="prev">
     <a href="chapter7.html"
-       title="previous chapter">← Managing Documents</a>
+       title="previous chapter">← Creating templates using Form Builder</a>
   </li>
   <li class="next">
     <a href="chapter9.html"
-       title="next chapter">Connecting with External Services →</a>
+       title="next chapter">Customization →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

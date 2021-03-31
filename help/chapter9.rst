@@ -1,7 +1,7 @@
-Customizing eformsign
+Customization
 ========================
 
-Manage Custom Fields Manage custom fields
+Manage Custom Fields
 ---------------------------------------------
 
 You can add and edit fields for companies, groups, and members in the **Manage company > Manage custom fields** menu.
@@ -59,7 +59,7 @@ Default templates are shown in the **Manage company > Notification template mana
 
 **Basic template types (select from Mail or SMS)**
 
-.. table:: Template Types and Status
+.. table::
 
    +--------------------+-------------------------------------------------+
    | Type               | Status                                          |

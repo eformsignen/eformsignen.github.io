@@ -1,12 +1,12 @@
 .. _template_wd:
 
-Templates - Web Form Designer
-================================
+Creating templates using Web Form Designer
+===============================================
 
 About Templates
 ------------------
 
-Web form designer Templates Templates are **electronic documents** used for the eformsign service. They are e-documents converted from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its Web form designer or Form builder. For more information about Form builder, refer to `Template_Form builder <chapter7.html#template_fb>`__.
+Web form designer Templates Templates are **electronic documents** used for the eformsign service. They are e-documents converted from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its Web form designer or Form builder. For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
 
 Template Overview
 ~~~~~~~~~~~~~~~~~~~
@@ -85,7 +85,7 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
 
 .. figure:: resources/en-workflow-steps.png
    :alt: Workflow Steps
-
+   :width: 400px
 
 
 -  **Approver**
@@ -318,7 +318,7 @@ document number can be generated in the document using the document
 component. You can also see a separate column in the document list and
 search documents by the document number.
 
-**Generating a document number Templates Generate a document number**
+**Generating a document number**
 
 .. note::
 
@@ -594,11 +594,7 @@ You can set the default value of a field to be the value saved in company/group/
 
 You can save information that are frequently entered into a document so that they can be used for auto-filling later.
 
-For example, you can pre-save information about your company or group
-(such as department name, leader, and representative number) and
-information about the document creator (including name and contact
-details). You can add items for related fields and set the default
-values in **Manage company > Manage custom fields**.
+For example, you can pre-save information about your company or group (such as department name, leader, and representative number) and information about the document creator (including name and contact details). You can add items for related fields and set the default values in **Manage company > Manage custom fields**.
 
 1. In the **Manage custom fields** screen\ **,** add a field.
 
@@ -670,10 +666,8 @@ You can view and edit notification messages to be sent to recipients when sendin
 
 **Document status notifications**
 
-You can select who will receive status notifications for documents
-created from the template. You can also preview the following
-notification message types: approved, reviewed and signed, rejected,
-voided, and corrected. As well, you can edit and preview the
+You can select who will receive status notifications for documents created from the template. You can also preview the following
+notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the
 notification messages for completed documents.
 
 .. note::
@@ -822,13 +816,13 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image15| image:: resources/en-template-settings-workflow-approver.png
    :width: 700px
 .. |image16| image:: resources/en-template-settings-approver-display-name.png
-   :width: 250px
+   :width: 350px
 .. |image17| image:: resources/en-template-settings-workflow-internal.png
    :width: 700px
 .. |image18| image:: resources/en-template-settings-workflow-external.png
    :width: 700px
 .. |image19| image:: resources/workflow-step-external-recipient-property-pw.png
-   :width: 400px
+   :width: 500px
 .. |image20| image:: resources/en-template-settings-workflow-complete.png
    :width: 700px
 .. |image21| image:: resources/en-template-settings-edit-notification-messages.png

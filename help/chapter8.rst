@@ -1,5 +1,5 @@
-Documents
-===========
+Document Menus
+==================
 
 Documents
 ------------
@@ -29,7 +29,7 @@ Aside from the three document menus, there is another menu for managing document
 
 .. figure:: resources/inbox_ex1.png
    :alt: Location of the Documents Menus and the Manage Documents Menu
-   :width: 500px
+   :width: 700px
 
 
 The three Documents menus and the Manage documents menu are laid out almost the same.
@@ -87,8 +87,7 @@ Each documents menu consists of the following five sections:
    .. note::
 
       Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document management permission. The company administrator or the template managers of a template can grant you document management
-      permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant
-      permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
+      permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
 
 .. _category:
 
@@ -110,7 +109,7 @@ The template category combo box, document status filter combo box, and search bo
    screen. However, the document status filter combo box contains one
    additional menu, 'Voided', compared to the three documents menus.
 
-**Template category combo box Documents Template category combo box**
+**Template category combo box**
 
 By using the template category combo box, you can display the list of
 documents by template category by selecting the desired template
@@ -121,6 +120,7 @@ templates according to categories as shown below:
 
 .. figure:: resources/category_search.png
    :alt: Template category combo box
+   :width: 500px
 
 
 **Searching by document status**
@@ -143,7 +143,7 @@ You can search for documents by document status in each document menu.
 
 |image10|
 
-**Document status filter combo box Documents Document status filter combo box**
+**Document status filter combo box**
 
 In addition to doing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and filtering by document status.
 
@@ -151,7 +151,7 @@ You can also search for field values in documents in detail by using a custom fi
 
 The following table describes the filters that can be used for performing searches. However, custom filters can only be used in the **Manage documents** and **Completed** menus.
 
-.. table:: List of filter types
+.. table:: 
 
    =============== =============== =============== ================
    Action required Action required Completed       Manage documents
@@ -170,7 +170,7 @@ The following table describes the filters that can be used for performing search
    Days passed                     Custom filter   
    =============== =============== =============== ================
 
-**Using the custom filter Documents Using the custom filter**
+**Using the custom filter**
 
 1. Select **Custom Filter** in the **Advanced** search combo box.
 
@@ -221,8 +221,7 @@ Period     Start date  End date
 
    Used for searching values of range such as numbers or dates. E.g. number: 100 ~ 200, period: 01/01/2019 ~ 06/30/2019
 
-   When used, it searches for values between the min and max. If you only enter the min, then only the values larger than the min value are searched, while if you only enter the max then only the values
-   smaller than the max are searched. E.g. salary: 1000 ~ , salary: ~ 5000
+   When used, it searches for values between the min and max. If you only enter the min, then only the values larger than the min value are searched, while if you only enter the max then only the values smaller than the max are searched. E.g. salary: 1000 ~ , salary: ~ 5000
 
 -  **Period**
 
@@ -288,17 +287,17 @@ In the **Document status** tab, you can see when and what happens to a document 
 
 .. figure:: resources/document_status.png
    :alt: Document status tab
-   :width: 400px
+   :width: 300px
 
 
 .. figure:: resources/document_history.png
    :alt: History tab
-   :width: 400px
+   :width: 300px
 
 
 .. _document_download:
 
-Document Download Documents Document download
+Document Download
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Documents created in eformsign can be safely stored for long periods of time.
@@ -317,8 +316,7 @@ All documents are stored in a file format for long-term storage (PDF/A) and only
 
 .. note::
 
-   CSV files can also be downloaded in the **Download** pop-up where PDF files can be downloaded. Select **CSV download** in the pop-up and check the fields (columns) to be downloaded and then click the
-   **Download** button.
+   CSV files can also be downloaded in the **Download** pop-up where PDF files can be downloaded. Select **CSV download** in the pop-up and check the fields (columns) to be downloaded and then click the **Download** button.
 
 .. _document_delete:
 
@@ -342,6 +340,7 @@ If you click the column (|image14|) icon on the right side of the document list,
 
 .. figure:: resources/column_type.png
    :alt: Document column selection icon
+   :width: 400px
 
 
 

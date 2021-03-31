@@ -3,7 +3,7 @@
 Introduction to Form Builder
 ===============================
 
-Form Builder Overview
+Overview
 -------------------------
 
 Form Builder Also known as OZ in Office, Form builder is a form editor
@@ -160,7 +160,7 @@ The components provided in eformsign are as follows:
 
 -  `Attachment <#attach>`__\ **:** Attaches a file.
 
--  `User <#user>`__\ **:**Enters information of the document user.
+-  `User <#user>`__\ **:** Enters information of the document user.
 
 -  `Date <#usedate>`__\ **:** Enters the date in which the document is created or modified.
 
@@ -229,8 +229,7 @@ Adding Components in Word or PowerPoint
 1. Open Word or PowerPoint and select the location in the document where you want to add the component.
 
 .. figure:: resources/ozinword_1.png
-   :alt: Method 1: Adding Components by Clicking a Component Type in
-   Word or PowerPoint (1)
+   :alt: Method 1: Adding Components by Clicking a Component Type in Word or PowerPoint (1)
    :width: 700px
 
 
@@ -238,16 +237,14 @@ Adding Components in Word or PowerPoint
 2.Click the component type you want to add in the ribbon menu of **OZ in Word** or **OZ in PowerPoint**.
 
 .. figure:: resources/ozinword_2.png
-   :alt: Method 1: Adding Components by Clicking a Component Type in
-   Word or PowerPoint (2)
+   :alt: Method 1: Adding Components by Clicking a Component Type in Word or PowerPoint (2)
    :width: 700px
 
 
 3. Adjust the size of the component.
 
 .. figure:: resources/ozinword_3.png
-   :alt: Method 1: Adding Components by Clicking a Component Type in
-   Word or PowerPoint (2)
+   :alt: Method 1: Adding Components by Clicking a Component Type in Word or PowerPoint (2)
    :width: 700px
 
 
@@ -259,8 +256,7 @@ Adding Components in Word or PowerPoint
 2. Click the **Drawing Component** icon and select the component type you want to add in the drop-down menu displayed.
 
 .. figure:: resources/ozinword_2_1.png
-   :alt: Method 2: Adding Components by Drawing a Component in Word or
-   PowerPoint (1)
+   :alt: Method 2: Adding Components by Drawing a Component in Word or PowerPoint (1)
    :width: 700px
 
 
@@ -268,8 +264,7 @@ Adding Components in Word or PowerPoint
 3. Add the component in the position and size you want.
 
 .. figure:: resources/ozinword_2_2.png
-   :alt: Method 2: Adding Components by Drawing a Component in Word or
-   PowerPoint (2)
+   :alt: Method 2: Adding Components by Drawing a Component in Word or PowerPoint (2)
    :width: 700px
 
 
@@ -667,7 +662,7 @@ Selects the signature type to be used when signing.
 -  **Registered Initials:** If the user has already registered an initial on eformsign, then clicking the signature area inserts the
    registered initial into the document.
 
--  **Registered stamp:** If the user has already registered an stamp on eformsign, then clicking the signature area inserts the registered
+-  **Registered Stamp:** If the user has already registered an stamp on eformsign, then clicking the signature area inserts the registered
    stamp into the document.
 
 .. note::
@@ -1030,7 +1025,7 @@ After uploading a template, you can configure additional settings for documents 
 
 .. note::
 
-   For a detailed explanation of templates, please refer to `Template_Form Builder <chpater7.html#template_fb>`__.
+   For a detailed explanation of templates, please refer to `Creating templates using Form Builder <chpater7.html#template_fb>`__.
 
 .. |image1| image:: resources/menu_icon.png
 .. |image2| image:: resources/delete_icon1.png

@@ -3,11 +3,11 @@
 Introduction to Web Form Designer
 ====================================
 
-Web Form Designer Overview
-------------------------------
+Overview
+-------------------
 
 Web Form Designer is a web form editor that allows you to create electronic documents by uploading document files to eformsign
-and adding component. You can upload PDF files in the **New from template** or the **New from my file** menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.
+and adding components. You can upload PDF files in the **New from template** or the **New from my file** menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.
 
 .. note::
 
@@ -25,7 +25,7 @@ and adding component. You can upload PDF files in the **New from template** or t
 
 -  Uploading a PD file in the **New from my file** menu.
 
-1. Click the **New from my file** menu
+1. Click the **New from my file** menu.
 
    |image1|
 
@@ -87,7 +87,7 @@ Web form designer consists of a screen that displays the file, the left and righ
 
    .. note::
 
-      Click each step shown on the top bar displays the screen for each
+      Clicking each step shown on the top bar displays the screen for each
       step. You can set the workflow, permission, etc. Make sure to
       configure the settings before you finish creating a document.
 
@@ -147,7 +147,7 @@ The components provided in eformsign are as follows:
 
    **Data components**
 
--  `Document ID <#document2>`__\ **:** Enter the document ID in a document.
+-  `Document ID <#document2>`__\ **:** Enters the document ID in a document.
 
 -  `Document number <#document2>`__\ **:** Enters the document number in a document.
 
@@ -234,12 +234,13 @@ Displays the description in Tooltip Text when you hover the mouse over a compone
 
 .. tip::
 
-   Automatically entering signer and signature date
+   **Automatically entering signer and signature date**
 
    Click the signature component and then click the icons shown to add the signature date and signer.
 
    .. figure:: resources/Signature-component-properties_web_icon.png
       :alt: Signature date and signer
+      :width: 200px
 
 
    **① Signature date:** Automatically enters the date signed. By clicking the Add date signed icon, you can set the date format in the
@@ -256,7 +257,7 @@ Displays the description in Tooltip Text when you hover the mouse over a compone
 
    .. figure:: resources/Signature-component-properties_web_signer.png
       :alt: Add signer
-      :width: 200px
+      :width: 100px
 
 
    .. note::
@@ -795,7 +796,7 @@ In the **Design form** screen, click the **Next** button to go to the **Configur
 
 .. note::
 
-   For more information on templates, refer to `Template Web Form Designer <chapter6.html#template_wd>`__.
+   For more information on templates, refer to `Creating templates using Web Form Designer <chapter6.html#template_wd>`__.
 
 .. |image1| image:: resources/myfile_create_document.png
 .. |image2| image:: resources/myfile_create_document2.png
@@ -805,8 +806,9 @@ In the **Design form** screen, click the **Next** button to go to the **Configur
    :width: 450px
 .. |image5| image:: resources/check-component-style-settings.png
 .. |image6| image:: resources/check-component-properties-web-style.png
+   :width: 300px
 .. |image7| image:: resources/Radio-component-properties_web-style.png
-   :width: 400px
+   :width: 300px
 .. |image8| image:: resources/combo-1.png
    :width: 450px
 .. |image9| image:: resources/toggle.png

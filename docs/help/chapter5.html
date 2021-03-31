@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Managing Templates in Web Form Designer</title>
+      <title>Introduction to Form Builder</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
@@ -15,6 +15,7 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
@@ -22,8 +23,8 @@
     
   <link rel="index" title="Index" href="../genindex.html" />
   <link rel="search" title="Search" href="../search.html" />
-  <link rel="next" title="Managing Templates in Form Builder" href="chapter6.html" />
-  <link rel="prev" title="Introduction to Form Builder" href="chapter4.html" /> 
+  <link rel="next" title="Creating templates using Web Form Designer" href="chapter6.html" />
+  <link rel="prev" title="Introduction to Web Form Designer" href="chapter4.html" /> 
   </head>
 
   <body>
@@ -69,11 +70,11 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign-user-guide">eformsign user guide</a></span>
       </p>
       <ul class="current">
         
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Overview</a>
+          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Introduction to eformsign</a>
 
             
           </li>
@@ -85,55 +86,63 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Introduction to Web Form Designer</a>
+          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Creating documents</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Form Builder</a>
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Web Form Designer</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Managing Templates in Web Form Designer</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Introduction to Form Builder</a>
 
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#about-templates" class="reference internal">About Templates</a></li>
+                  <li class="toctree-l2"><a href="#overview" class="reference internal">Overview</a></li>
                 
-                  <li class="toctree-l2"><a href="#template-settings" class="reference internal">Template Settings</a></li>
+                  <li class="toctree-l2"><a href="#overview-of-components" class="reference internal">Overview of Components</a></li>
                 
-                  <li class="toctree-l2"><a href="#menus-for-each-template" class="reference internal">Menus for Each Template</a></li>
+                  <li class="toctree-l2"><a href="#how-to-use-each-component-type" class="reference internal">How to Use Each Component Type</a></li>
                 
-                  <li class="toctree-l2"><a href="#search-templates" class="reference internal">Search Templates</a></li>
+                  <li class="toctree-l2"><a href="#upload-form-file" class="reference internal">Upload Form File</a></li>
+                
+                  <li class="toctree-l2"><a href="#configuring-template-settings" class="reference internal">Configuring Template Settings</a></li>
                 
               </ul>
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Managing Templates in Form Builder</a>
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Creating templates using Web Form Designer</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Managing Documents</a>
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Creating templates using Form Builder</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Customizing eformsign</a>
+          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Document Menus</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Connecting with External Services</a>
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Customization</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">Connecting with External Services</a>
 
             
           </li>
@@ -151,18 +160,18 @@
   <ul class="breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>Managing Templates in Web Form Designer</li>
+    <li>Introduction to Form Builder</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
     <a href="chapter4.html"
-       title="previous chapter">← Introduction to Form Builder</a>
+       title="previous chapter">← Introduction to Web Form Designer</a>
   </li>
   <li class="next">
     <a href="chapter6.html"
-       title="next chapter">Managing Templates in Form Builder →</a>
+       title="next chapter">Creating templates using Web Form Designer →</a>
   </li>
 </ul>
   
@@ -170,815 +179,694 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="managing-templates-in-web-form-designer">
-<span id="template-wd"></span><h1>Managing Templates in Web Form Designer<a class="headerlink" href="#managing-templates-in-web-form-designer" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="about-templates">
-<h2>About Templates<a class="headerlink" href="#about-templates" title="Permalink to this headline">¶</a></h2>
-<p>Web Form Designer Templates Templates are <strong>electronic documents</strong> used
-for the eformsign service. They are e-documents converted from existing
-paper forms such as applications, contracts, and agreements. You can
-create and upload templates in the eformsign service with its Web Form
-Designer or Form Builder. For more information about Form Builder, refer
-to <a class="reference external" href="#template_fb">???</a>.</p>
-<div class="section" id="template-overview">
-<h3>Template Overview<a class="headerlink" href="#template-overview" title="Permalink to this headline">¶</a></h3>
-<p>To create and send electronic documents via eformsign, you have to first
-create a template, which can later be converted into an e-document.</p>
-<p><strong>How to create a template with Web Form Designer</strong></p>
-<p>You can easily create a template by uploading a file online.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For more information about Web Form Designer, please refer to
-<a class="reference external" href="#webform">???</a>.</p>
+  <div class="section" id="introduction-to-form-builder">
+<span id="formbuilder"></span><h1>Introduction to Form Builder<a class="headerlink" href="#introduction-to-form-builder" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Form Builder Also known as OZ in Office, Form builder is a form editor
+which converts a document created using Microsoft Office into an
+electronic document containing components (fields). By using OZ in
+Office, you can easily convert existing Excel, Word, and PowerPoint
+forms such as contracts, applications, and agreements into electronic
+documents.</p>
+<p>Previously, converting Excel, Word, or PowerPoint documents into
+electronic documents required the use of an IDE (Integrated Development
+Environment) needing a high degree of programming knowledge for use.
+Now, with OZ in Office, anyone with the ability to use Microsoft Office
+can easily create electronic documents.</p>
+<p>OZ in Office, provided as a Microsoft Office add-in, is easy to use as
+it is displayed as a ribbon menu and contains various components
+including signature, check box, text box, camera, and voice.</p>
+<p>The process of creating electronic documents using OZ in Office’s
+components is as follows:</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinoffice-flow_1.png"><img alt="OZ in Office Usage Flow" src="../_images/ozinoffice-flow_1.png" style="width: 750px;" /></a>
 </div>
-<p>Convert the file you want into a PDF file and upload it to eformsign Web
-Form Designer.</p>
-<ol class="arabic">
-<li><p>Drag and drop the PDF file that you want to create as a template, or
-click the <strong>Select a file</strong> button to select the file from your
-computer and upload it.</p>
-<div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/managetemplate-upload-en.png"><img alt="Manage Templates &gt; Uploading a File (1)" src="../_images/managetemplate-upload-en.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Manage Templates &gt; Uploading a File (1)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="section" id="downloading-installing-form-builder">
+<h3>Downloading Installing Form Builder<a class="headerlink" href="#downloading-installing-form-builder" title="Permalink to this headline">¶</a></h3>
+<p>Download Form Builder 1. Login to eformsign and then click the menu icon
+(<img alt="image1" src="../_images/menu_icon.png" />) on the top left corner of the dashboard screen to open the
+sidebar menu. Then, click the <strong>Download eformsign form builder</strong> button
+at the bottom.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/formbuilder_download.png"><img alt="Location of the Download eformsign form builder button" src="../_images/formbuilder_download.png" style="width: 750px;" /></a>
 </div>
-<div class="figure align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/en-managetemplate-upload-popup.png"><img alt="Manage Templates &gt; Uploading a File (2)" src="../_images/en-managetemplate-upload-popup.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Manage Templates &gt; Uploading a File (2)</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p>2. The <strong>Download eformsign form builder</strong> page will be displayed, as
+shown below. Click the <strong>Download form builder</strong> button at the bottom of
+the page.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/formbuilder_download_2.png"><img alt="eformsign Form Builder Download Page" src="../_images/formbuilder_download_2.png" style="width: 750px;" /></a>
 </div>
-</li>
-<li><p>Select a component that you want to add and drag it onto the uploaded
-file.</p>
-<div class="figure align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/en-template-settings-wfdesign.png"><img alt="Dragging a Component" src="../_images/en-template-settings-wfdesign.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Dragging a Component</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p>3. After clicking the form builder executable file you downloaded, the
+following installation screen will be displayed. Select the <strong>Complete</strong>
+option and then click the <strong>Next</strong> button.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/formbuilder_wizard_1.png"><img alt="Form Builder Installation Screen (1)" src="../_images/formbuilder_wizard_1.png" style="width: 500px;" /></a>
 </div>
-</li>
-<li><p>Adjust the size and position of the component.</p></li>
-<li><p>Set the details in the <strong>Properties</strong> tab after clicking the
-component.</p></li>
-<li><p>View the document by clicking the <strong>Preview</strong> button.</p></li>
-<li><p>Click the <strong>Next</strong> button after you finish designing the form. The
-<strong>Create template</strong> page will be displayed.</p></li>
+<ol class="arabic simple" start="4">
+<li><p>When the installation proceeds, the following screen is displayed.</p></li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you open an existing template, the Save button and Template
-settings page will be displayed instead of the Next button and the
-Create template page, respectively.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/formbuilder_wizard_2.png"><img alt="Form Builder Installation Screen (2)" src="../_images/formbuilder_wizard_2.png" style="width: 500px;" /></a>
 </div>
-<p><strong>Template settings</strong></p>
-<p>You can set the details for the template.</p>
-<ul>
-<li><p><strong>General</strong></p>
-<p>Set the template name, abbreviation, document name, document number,
-etc.</p>
-</li>
-<li><p><strong>Set permissions</strong></p>
-<p>Grant members or groups the permission to use the template and to
-create documents from it and manage them.</p>
-</li>
-<li><p><strong>Workflow</strong></p>
-<p>Sets the workflow for the document from its creation to completion.</p>
-</li>
-<li><p><strong>Field</strong></p>
-<p>Sets the default values and auto-filled values for fields.</p>
-</li>
-<li><p><strong>Notification settings</strong></p>
-<p>Sets the notification channels, recipients, and the content of the
-notification messages for notifying requests or changes in the status
-of documents created from the template.</p>
-</li>
+<p>5. When the installation is completed, the following screen is
+displayed. Click the <strong>Finish</strong> button to close the installation screen.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/formbuilder_wizard_3.png"><img alt="Form Builder Installation Screen (3)" src="../_images/formbuilder_wizard_3.png" style="width: 500px;" /></a>
+</div>
+<p>6. Check whether Form builder was installed properly by running MS
+Office (Word, Excel, PowerPoint). If <strong>OZ in Word/Excel/PowerPoint</strong> is
+displayed as below, then it was installed properly.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/components-in-word.png"><img alt="OZ in Word Ribbon Menu" src="../_images/components-in-word.png" style="width: 750px;" /></a>
+</div>
+</div>
+<div class="section" id="form-builder-menu-layout">
+<h3>Form Builder Menu Layout<a class="headerlink" href="#form-builder-menu-layout" title="Permalink to this headline">¶</a></h3>
+<p>If you run Microsoft Office Excel, Word, or PowerPoint after installing Form builder, you can see that the <strong>OZ in Excel, OZ in Word, or OZ in PowerPoint</strong> tab is added to the OZ in Office ribbon menu.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinoffice.png"><img alt="Microsoft Office OZ in Office Ribbon Menu" src="../_images/ozinoffice.png" style="width: 750px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><p><strong>File:</strong> Allows to execute (preview) the document as an electronic form, upload the document to eformsign as a template, or download an electronic form from eformsign.</p></li>
+<li><p><strong>Property:</strong> Sets the component properties including ID, and Items.</p></li>
+<li><p><strong>Input:</strong> Adds components used in templates.</p></li>
+<li><p><strong>Info:</strong> Adds the necessary components in order to have information such as user and date to be automatically entered into templates.</p></li>
+<li><p><strong>Drawing:</strong> Draws components in the location and size you want. <strong>Drawing</strong> is supported only in Word and PowerPoint.</p></li>
+<li><p><strong>Deletion:</strong> Deletes components after selecting components and then clicking the <strong>Delete</strong> button.</p></li>
+<li><p><strong>Window:</strong> Allows to open the <strong>Properties</strong> tab of the selected component or display selected components in the <strong>Selection</strong> tab.</p></li>
+<li><p><strong>Help:</strong> Checks the version of Form builder and performs updates.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="overview-of-components">
+<h2>Overview of Components<a class="headerlink" href="#overview-of-components" title="Permalink to this headline">¶</a></h2>
+<p>Components are used to create fields in electronic documents that users can enter information. Many different components including signature, check, date, and text are provided in Form builder, and each component can be configured in detail by using the <strong>Component Properties</strong> tab.</p>
+<div class="section" id="component-types">
+<h3>Component Types<a class="headerlink" href="#component-types" title="Permalink to this headline">¶</a></h3>
+<p>The components provided in eformsign are as follows:</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/components-in-word.png"><img alt="Component Types" src="../_images/components-in-word.png" style="width: 730px;" /></a>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="#check">Check</a><strong>:</strong> Ticks a check box.</p></li>
+<li><p><a class="reference external" href="#select">Radio</a><strong>:</strong> Selects an item among multiple items (can also be set to select multiple items).</p></li>
+<li><p><a class="reference external" href="#text">Text</a><strong>:</strong> Enters short text (usually 1 to 2 words).</p></li>
+<li><p><a class="reference external" href="#text">Multiline</a><strong>:</strong> Enters long text with multiple lines.</p></li>
+<li><p><a class="reference external" href="#combo">Combo</a><strong>:</strong> Displays a drop-down menu that allows you to select an item.</p></li>
+<li><p><a class="reference external" href="#date">Datetime</a><strong>:</strong> Enters a specific date.</p></li>
+<li><p><a class="reference external" href="#numeric">Numeric</a><strong>:</strong> Enters a number.</p></li>
+<li><p><a class="reference external" href="#toggle">Toggle</a><strong>:</strong> Switches to another value if two or more values are entered.</p></li>
+<li><p><a class="reference external" href="#signature">Signature</a><strong>:</strong> Enters a signature.</p></li>
+<li><p><a class="reference external" href="#camera">Camera</a><strong>:</strong> Takes a photo using a camera or selects a photo from an album in devices with a built-in camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).</p></li>
+<li><p><a class="reference external" href="#record">Voice</a><strong>:</strong> Records audio in devices with a voice recording function.</p></li>
+<li><p><a class="reference external" href="#attach">Attachment</a><strong>:</strong> Attaches a file.</p></li>
+<li><p><a class="reference external" href="#user">User</a><strong>:</strong> Enters information of the document user.</p></li>
+<li><p><a class="reference external" href="#usedate">Date</a><strong>:</strong> Enters the date in which the document is created or modified.</p></li>
+<li><p><a class="reference external" href="#document">Document</a><strong>:</strong> Enters the document number or ID in the document itself.</p></li>
+<li><p><a class="reference external" href="#label">Label</a><strong>:</strong> Sets the form ID.</p></li>
 </ul>
 </div>
-<div class="section" id="workflow-overview">
-<h3>Workflow Overview<a class="headerlink" href="#workflow-overview" title="Permalink to this headline">¶</a></h3>
-<p>Workflow A workflow is a process from the creation to the completion of
-a document.</p>
-<p>The workflow for each template can be set by template managers by going
-to <strong>Template settings</strong> &gt; <strong>Workflow</strong>.</p>
-<p>By default, all workflows have <strong>Start</strong> and <strong>Complete</strong> steps. You can
-add as many <strong>Approver</strong>, <strong>Internal recipient</strong>, <strong>and External
-recipient</strong> steps as you want for each workflow.</p>
-<div class="figure align-default" id="id4">
-<img alt="Workflow Steps" src="../_images/en-workflow-steps.png" />
-<p class="caption"><span class="caption-text">Workflow Steps</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<div class="section" id="accessing-component-properties">
+<h3>Accessing Component Properties<a class="headerlink" href="#accessing-component-properties" title="Permalink to this headline">¶</a></h3>
+<p>Every component has its own detailed settings called <strong>OZ Component Properties</strong>. The properties of each component can be accessed by
+selecting a component and then clicking the property icon or the <strong>Properties</strong> menu.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/checking-components-properties.png"><img alt="Accessing Component Properties" src="../_images/checking-components-properties.png" style="width: 730px;" /></a>
 </div>
-<ul>
-<li><p><strong>Approver</strong></p>
-<p>Sending an e-document approval request to a member of your company.</p>
-</li>
-<li><p><strong>Internal recipient</strong></p>
-<p>Sending an e-document to a member in your company to review and sign.</p>
-</li>
-<li><p><strong>External recipient</strong></p>
-<p>Sending an e-document to a user outside of your company to review and
-sign.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All components must have an ID. An ID is automatically generated when you create a component, but it is recommended to rename it to
+something you can easily recognize. For example, you can rename the ID of a component for entering John Doe, Jane Doe, etc. as ‘name’. By
+doing so, it is easier to identify components when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.</p>
+</div>
+</div>
+<div class="section" id="how-to-add-components">
+<h3>How to Add Components<a class="headerlink" href="#how-to-add-components" title="Permalink to this headline">¶</a></h3>
+<p>There are two different ways of adding components: adding components in Excel, and adding components in Word/PowerPoint. In Word or PowerPoint, you can add components in two different ways.</p>
+<div class="section" id="adding-components-in-excel">
+<h4>Adding Components in Excel<a class="headerlink" href="#adding-components-in-excel" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Open Excel and go to the <strong>OZ in Excel</strong> ribbon menu.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinexcel_1.png"><img alt="Adding Components in Excel (1)" src="../_images/ozinexcel_1.png" style="width: 730px;" /></a>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Select the cell in which you want to add a component.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinexcel_2.png"><img alt="Adding Components in Excel (2)" src="../_images/ozinexcel_2.png" style="width: 730px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Click the component you want.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinexcel_3.png"><img alt="Adding Components in Excel (3)" src="../_images/ozinexcel_3.png" style="width: 730px;" /></a>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Check that the component has been added by viewing the <strong>OZ Component Properties</strong> tab.</p></li>
+</ol>
+</div>
+<div class="section" id="adding-components-in-word-or-powerpoint">
+<h4>Adding Components in Word or PowerPoint<a class="headerlink" href="#adding-components-in-word-or-powerpoint" title="Permalink to this headline">¶</a></h4>
+<p><strong>Method 1: Adding Components by Clicking a Component Type</strong></p>
+<ol class="arabic simple">
+<li><p>Open Word or PowerPoint and select the location in the document where you want to add the component.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinword_1.png"><img alt="Method 1: Adding Components by Clicking a Component Type in Word or PowerPoint (1)" src="../_images/ozinword_1.png" style="width: 700px;" /></a>
+</div>
+<p>2.Click the component type you want to add in the ribbon menu of <strong>OZ in Word</strong> or <strong>OZ in PowerPoint</strong>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinword_2.png"><img alt="Method 1: Adding Components by Clicking a Component Type in Word or PowerPoint (2)" src="../_images/ozinword_2.png" style="width: 700px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Adjust the size of the component.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinword_3.png"><img alt="Method 1: Adding Components by Clicking a Component Type in Word or PowerPoint (2)" src="../_images/ozinword_3.png" style="width: 700px;" /></a>
+</div>
+<p><strong>Method 2: Adding Components by Drawing a Component</strong></p>
+<ol class="arabic simple">
+<li><p>Open Word or PowerPoint and go to the <strong>OZ in Word/Powerpoint</strong> ribbon menu.</p></li>
+<li><p>Click the <strong>Drawing Component</strong> icon and select the component type you want to add in the drop-down menu displayed.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinword_2_1.png"><img alt="Method 2: Adding Components by Drawing a Component in Word or PowerPoint (1)" src="../_images/ozinword_2_1.png" style="width: 700px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Add the component in the position and size you want.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/ozinword_2_2.png"><img alt="Method 2: Adding Components by Drawing a Component in Word or PowerPoint (2)" src="../_images/ozinword_2_2.png" style="width: 700px;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-delete-components">
+<h3>How to Delete Components<a class="headerlink" href="#how-to-delete-components" title="Permalink to this headline">¶</a></h3>
+<p>Select the component you want to delete and then click the <strong>Delete</strong> icon (<img alt="image2" src="../_images/delete_icon1.png" />) in the <strong>OZ in Office</strong> menu. You can also select and delete multiple components.</p>
+</div>
+</div>
+<div class="section" id="how-to-use-each-component-type">
+<h2>How to Use Each Component Type<a class="headerlink" href="#how-to-use-each-component-type" title="Permalink to this headline">¶</a></h2>
+<p>eformsign provides various types of components such as check box, combo box, text, and signature through Microsoft Office’s <strong>OZ in Office</strong> ribbon menu.</p>
+<p>All components of <strong>OZ in Office</strong> have both common and unique properties. You can view both the common and unique properties of components in the <strong>OZ Component Properties</strong> tab. Common properties
+include ID and Tooltip Text, and the meaning of each property is as follows:</p>
+<ul class="simple">
+<li><p><strong>ID:</strong> Unique ID that identifies each component. You can use the component ID to set a field to be required or
+inaccessible when setting fields in the workflow and to download data in CSV format.</p></li>
+<li><p><strong>Tooltip Text:</strong> In Windows, the text in the Tooltip Text box of a component is displayed in the form of a speech bubble when hovering the mouse over the component. In mobile, the text is displayed on the quick type bar when clicking on the component.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To open the <strong>OZ Component Properties</strong> window, click on a component and then click the <strong>Properties</strong> icon (<img alt="image3" src="../_images/property-icon.png" /> ) in the <strong>OZ in Office</strong> ribbon menu.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Tooltip Text feature is not provided for the Info group including User, Date, Document, and Label component types.</p>
+</div>
+<p>The description of each component type provided in eformsign is as follows.</p>
+<div class="section" id="check">
+<h3>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>Check</strong> component is used to check whether an item is checked or not. This component is similar to the <strong>Radio</strong> component, but it is used for checking the status of an item (whether it
+is checked or not) while the <strong>Radio</strong> component is used for checking which item among multiple items is checked.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_check.png"><img alt="image4" src="../_images/form-builder-components_check.png" style="width: 730px;" /></a></p>
+<p>When data is downloaded in the CSV format, the <strong>Check</strong> component’s input value is displayed as follows:</p>
+<ul class="simple">
+<li><p>When the item is checked: true</p></li>
+<li><p>When the item is not checked: false</p></li>
+</ul>
+<p>In Word and PowerPoint, the <strong>Check</strong> component is shown as a rectangular shape. Make sure to enter data inside the rectangular shape.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/check-component-properties-1.png"><img alt="Setting Check Component Properties" src="../_images/check-component-properties-1.png" style="width: 500px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Each Check component must be given a different ID. If multiple check components are given the same ID, then only the value of the last component is displayed.</p>
+<p><strong>② Check Style</strong></p>
+<p>You can specify the style of each component in <strong>Component Properties</strong>.
+The check box is set as the default style, and you can change it to another style (radio button or red circle).</p>
+<p>The below example shows how check boxes are displayed according to the selected style.</p>
+<p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image5" src="../_images/check-component-style-settings.png" style="width: 600px;" /></a></p>
+</div>
+<div class="section" id="radio">
+<span id="select"></span><h3>Radio<a class="headerlink" href="#radio" title="Permalink to this headline">¶</a></h3>
+<p>The Radio component is used for checking which radio button is selected among multiple items. When data is downloaded in the CSV format, the selected item will be displayed.</p>
+<p><a class="reference internal" href="../_images/form-builder-components.png"><img alt="image6" src="../_images/form-builder-components.png" style="width: 730px;" /></a></p>
+<p>In Word and PowerPoint, the radio component is shown as a rectangular shape. Make sure to enter data inside the rectangular shape.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/Radio-component-properties.png"><img alt="Setting Radio Component Properties" src="../_images/Radio-component-properties.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>In <strong>Component Properties</strong>, make sure that all the selected radio buttons are assigned the same ID.</p>
+<p>For example, if there are six choices available in a multiple choice question, assign “question1” as the ID for all of them. In the example shown below, the IDs of all the items are set to the same “question 1”.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID.png"><img alt="Example of Setting a Radio Component" src="../_images/radio-items-should-have-same-ID.png" style="width: 700px;" /></a>
+</div>
+<p><strong>② Check Style</strong></p>
+<p>You can choose the style of the Radio component in <strong>Component Properties</strong>. The default style is the <strong>Circle</strong>, and you can change it to another style (check box and radio button).</p>
+<p><strong>③ Multiselectable</strong></p>
+<p>Checking the <strong>Multi-selectable</strong> option allows you to select multiple items. If you select more than one item, then when data is saved, each
+item is separated with a comma (,).</p>
+<p><strong>④ Uncheckable</strong></p>
+<p>Checking the <strong>Uncheckable</strong> option allows you to deselect a selected item by clicking it again.</p>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="combo">
+<h3>Combo<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h3>
+<p>The Combo component is used when you need to select one of multiple items.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_Combo.png"><img alt="image7" src="../_images/form-builder-components_Combo.png" style="width: 730px;" /></a></p>
+<p>If you click a combo component, a list of items is displayed as follows:</p>
+<p><a class="reference internal" href="../_images/combo-1.png"><img alt="image8" src="../_images/combo-1.png" style="width: 500px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/combo-component-properties.png"><img alt="Setting Combo Component Properties" src="../_images/combo-component-properties.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Combo component. For example, the ID of the component for selecting the favorite color can be ‘favoriteColor’.</p>
+<p><strong>② Items</strong></p>
+<p>Enters the items you want. You can separate the items by pressing Enter.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to display a message such as ‘Please select a color’ in a combo box in a document for recipients to view, then enter the
+message at the top of the list of items in the combo box and select it before sending the document.</p>
+</div>
+<p><strong>③ Allow Empty Value</strong></p>
+<p>Checking the <strong>Allow Empty Value</strong> option allows you to deselect a selected item. Empty Value can be allowed in the following ways:</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component and select the <strong>Allow Empty Value</strong> option in the pop-up menu.</p></li>
+<li><p>Mobile: Click the Trash can icon.</p></li>
+</ul>
+<p><strong>④ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="text-and-multiline">
+<span id="text"></span><h3>Text and Multiline<a class="headerlink" href="#text-and-multiline" title="Permalink to this headline">¶</a></h3>
+<p>Both Text and Multiline components are used to create text fields. The Text component is suitable for short text with 1 to 2 words, and the Multiline component is suitable for long text with more than 1 line.</p>
+<p><a class="reference internal" href="../_images/text-and-muliline-components.png"><img alt="image9" src="../_images/text-and-muliline-components.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/text-component-properties.png"><img alt="Setting Text and Multiline Component Properties" src="../_images/text-component-properties.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the text/multiline component. For example, the ID of the component in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.</p>
+<p><strong>② Max Length</strong></p>
+<p>Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters.</p>
+<p><strong>③ Keyboard Type</strong></p>
+<p>Selects the keyboard type to be used when entering text in the component. Keyboard Type can only be used in mobile devices such as smartphones and tablets.</p>
+<p><strong>④ Show Password Characters</strong></p>
+<p>This option can be set only in the text component. By checking this
+option, the password is hidden with the password symbol (●) when
+entering text. The password is also hidden with the password symbol in
+PDFs, and can only be seen when downloaded in the CSV format.</p>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a
+component.</p>
+</div>
+<div class="section" id="datetime">
+<span id="date"></span><h3>Datetime<a class="headerlink" href="#datetime" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for entering a date. Clicking the component displays a date selection window where you can select the date you want.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_datetime.png"><img alt="image10" src="../_images/form-builder-components_datetime.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/datetime-component-properties_02.png"><img alt="Setting Datetime Component Properties" src="../_images/datetime-component-properties_02.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Datetime component. For example, the ID of the component for selecting the vacation start date can be named ‘vacationStartDate’.</p>
+<p><strong>② Format</strong></p>
+<p>Sets the format in which date is displayed. The default setting is date_yyyy-MM-dd.</p>
+<ul class="simple">
+<li><p><strong>yyyy:</strong> Displays the year.</p></li>
+<li><p><strong>MM:</strong> Displays the month. Must be in uppercase.</p></li>
+<li><p><strong>dd:</strong> Displays the days.</p></li>
+</ul>
+<p>For example, if you want to display the date in the format of ‘15-02-2020’, then enter <strong>dd-MM-yyyy</strong> in the Format field.</p>
+<p><strong>③ Minimum Date/Maximum Date</strong></p>
+<p>Sets the range of dates that can be selected in the component by specifying the minimum and maximum dates.</p>
+<p><strong>④ Display Today for Empty Value</strong></p>
+<p>Checking this option automatically enters the date (the date in which the document is opened) when the document is opened. This option is
+checked by default when you add a <strong>Datetime</strong> component. You can change the date by clicking the component.</p>
+<p><strong>⑤ Allow Empty Value</strong></p>
+<p>Checking this option allows you to clear the number displayed on a Numeric component. In a Datetime component, once you select a date, you
+can change it to another date but cannot clear the date. However, checking this option allows you to clear the date displayed on the
+Datetime component. If no date is selected in the Datetime component but the <strong>Display Today for Empty Value</strong> option is checked, then the date
+component is automatically filled in with the date in which the document is opened.</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component to display the pop-up menu and then select the <strong>Initialize Input Data</strong> menu.</p></li>
+<li><p>Mobile: Click the Trash icon.</p></li>
+</ul>
+<p><strong>⑥ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="numeric">
+<h3>Numeric<a class="headerlink" href="#numeric" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for entering a number.
+Clicking the component displays two arrows on the right, and you can
+increase or decrease the number by clicking them. In PCs, you can
+directly enter the desired number into the component by using a
+keyboard. In smartphones and tablets, you can scroll through the list of
+numbers and select the one you want.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_numeric.png"><img alt="image11" src="../_images/form-builder-components_numeric.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/number-component-properties.png"><img alt="Setting Numeric Component Properties" src="../_images/number-component-properties.png" style="width: 300px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the numeric component. For example, the ID of the
+component for entering the number of people in a reservation can be
+named ‘peopleCount’.</p>
+<p><strong>② Unit of Change</strong></p>
+<p>Enters the unit of number that will increase/decrease the number
+whenever the up/down arrow icon is clicked. For example, if the ‘Unit of
+Change’ is set to 100, then when you click the up arrow icon (▲), the
+number is increased by 100 such as 200, 300, 400, and so on.</p>
+<p><strong>③ Minimum/Maximum Value</strong></p>
+<p>Sets the range of numbers that can be entered into the component by
+specifying the minimum and maximum values. For example, for the date of
+birth, setting the Minimum Value to 1900, Maximum Value to the current
+year, and the Unit of Change to 1. Also, if you enter a value that is
+lower/higher than the Minimum/Maximum Value, then the Minimum/Maximum
+Value will be automatically entered. For example, if the Maximum Value
+is set to 100 and you enter 101, then the number will automatically
+change to 100.</p>
+<p><strong>④ Allow Empty Value</strong></p>
+<p>Checking the <strong>Allow Empty Value</strong> option allows you to clear the number
+displayed on the numeric component. After entering a number in a numeric
+component, you can change the number again, but cannot clear the number.
+However, by checking this option, you can clear the number displayed on
+the component as described below.</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component to display the pop-up menu and then select the <strong>Initialize Input Data</strong> menu.</p></li>
+<li><p>Mobile: Click the Trash icon.</p></li>
+</ul>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="toggle">
+<h3>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for indicating a specific status such as ON/OFF. If you use this component, then the input value
+is switched according to a defined order whenever the component is clicked.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_toggle.png"><img alt="image12" src="../_images/form-builder-components_toggle.png" style="width: 730px;" /></a></p>
+<p>You can change the status to <strong>Good</strong> or <strong>Bad</strong> by clicking the components as follows:</p>
+<p><a class="reference internal" href="../_images/toggle.png"><img alt="image13" src="../_images/toggle.png" style="width: 400px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/toggle-component-properties.png"><img alt="Toggle Component Properties" src="../_images/toggle-component-properties.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the toggle component. For example, the ID of the component for the first inspection item can be named ‘inspection1’.</p>
+<p><strong>② Items</strong></p>
+<p>Enters the list of items that will be toggled whenever the toggle component is clicked. You can separate each item by pressing Enter.</p>
+<p><strong>③ Allow Empty Value</strong></p>
+<p>Checking this option allows you to clear the item displayed on the toggle component. When you select a toggle component, you can toggle to
+another item but cannot clear the item displayed on the component.
+However, by checking this option, you can clear the item displayed on the component as described below:</p>
+<ul class="simple">
+<li><p>PC: Right-click on the component to display the pop-up menu and then select the <strong>Initialize Input Data</strong> menu.</p></li>
+<li><p>Mobile: Click the Trash icon.</p></li>
+</ul>
+<p><strong>④ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="signature">
+<h3>Signature<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for signing a signature on a document.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_signature.png"><img alt="image14" src="../_images/form-builder-components_signature.png" style="width: 730px;" /></a></p>
+<p>Clicking the signature area displays the <strong>Signature</strong> pop-up which allows you to sign a signature by drawing, entering text, or using a
+previously registered signature.</p>
+<p><a class="reference internal" href="../_images/signature.png"><img alt="image15" src="../_images/signature.png" style="width: 400px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/Signature-component-properties.png"><img alt="Setting Signature Component Properties" src="../_images/Signature-component-properties.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the signature component. For example, the ID of the component can be ‘signerSignature’ for contract signers.</p>
+<p><strong>② Signature Type</strong></p>
+<p>Selects the signature type to be used when signing.</p>
+<ul class="simple">
+<li><p><strong>Enter Directly:</strong> Clicking the signature area displays the <strong>Signature</strong> pop-up which allows you to sign by selecting one of the
+multiple signing methods which are <strong>Draw</strong>, <strong>Text</strong>, <strong>Mobile</strong>, <strong>Stamp</strong>, and <strong>Registered signature</strong>.</p></li>
+<li><p><strong>Registered Signature:</strong> If the user has already registered a signature on eformsign, then clicking the signature area inserts the
+registered signature into the document.</p></li>
+<li><p><strong>Registered Initials:</strong> If the user has already registered an initial on eformsign, then clicking the signature area inserts the
+registered initial into the document.</p></li>
+<li><p><strong>Registered Stamp:</strong> If the user has already registered an stamp on eformsign, then clicking the signature area inserts the registered
+stamp into the document.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there is a registered signature or initial, then it will be automatically entered in the signature area when a signature area is
+clicked. However, if there is no registered signature or initial, then a regular <strong>Signature</strong> pop-up will be displayed when a signature area is clicked.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a
+stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the <strong>Stamp</strong> tab in the <strong>Signature</strong> pop-up, and then select a stamp image and click <strong>OK</strong>.</p>
+</div>
+<p><strong>③ Signature Pen Thick</strong></p>
+<p>Sets the signature pen thickness.</p>
+<p><strong>④ Signature Pen Color</strong></p>
+<p>Sets the signature pen color.</p>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can set the signature date to be automatically entered in documents that require signature, such as electronic contracts and electronic agreements.</p>
+<ol class="arabic simple">
+<li><p>Open the document file (Word, Excel, PowerPoint) to be converted into an electronic form or create a new document.</p></li>
+<li><p>Add a Signature component in the area of the document to be signed.</p></li>
+<li><p>Enter the ID of the Signature component in the <strong>Component Properties</strong> tab. For example, the ID can be named ‘signature1’.</p></li>
+<li><p>Add the Date (not to be confused with Datetime) component where the signature date will be entered.</p></li>
+<li><p>Open the <strong>Component Properties</strong> tab of the Date component.</p></li>
+<li><p>Select the <strong>Date Type</strong> as <strong>Last modified date of the content</strong>.</p></li>
+<li><p>Enter the ID of the Signature component in the Input Component ID field on the bottom. In this case, it would be ‘signature1’.</p></li>
+</ol>
+<p>※ You can select the Format of date to be displayed on the Date component by selecting the desired date format in the <strong>Component Properties</strong> tab.</p>
+</div>
+</div>
+<div class="section" id="camera">
+<h3>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h3>
+<p>This component is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) on a
+document. In PCs without a camera, clicking the component displays a window for selecting a desired image file.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_camera.png"><img alt="image16" src="../_images/form-builder-components_camera.png" style="width: 730px;" /></a></p>
+<p>If the size of the selected image is larger than the size of the text box, then it is resized to fit the component.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the device with a built-in camera, camera feature will be executed, and for the devices with no camera, a window for selecting an image file will be displayed.</p>
+</div>
+<p><a class="reference internal" href="../_images/camera1.png"><img alt="image17" src="../_images/camera1.png" style="width: 350px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/Camera-component-properties-.png"><img alt="Setting Camera Component Properties" src="../_images/Camera-component-properties-.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Camera component. For example, the ID of the component that takes the photo of a driver’s license can be ‘driverLicense’.</p>
+<p><strong>② Tooltip Text</strong></p>
+<p>Displays the description in the Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="voice">
+<span id="record"></span><h3>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for storing recorded voice. You can set the maximum recording time and you can also configure the
+settings to allow users to only listen to the voice recording.</p>
+<p>When you add a Voice component in OZ in Office, you can record voice or play a voice recording as follows:</p>
+<p><a class="reference internal" href="../_images/record1.png"><img alt="image18" src="../_images/record1.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the recording time limit is set to 1 or higher, recording is completed automatically at the time set (unit: seconds).</p>
+<p>In the case of ActiveX viewer, the recording playback UI is supported from Windows 8 and later.</p>
+<p>In PCs, the Voice component works only when a voice recording device is connected to a PC.</p>
+</div>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/record_component.png"><img alt="Setting Voice Component Properties" src="../_images/record_component.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enter the ID of the Voice component. For example, the ID of the component that plays voice recordings can be named ‘Record1’.</p>
+<p><strong>② Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="attachment">
+<span id="attach"></span><h3>Attachment<a class="headerlink" href="#attachment" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for attaching a file to a document. When attaching a file to a document by using the Attachment
+component, the file will be attached at the very end of the document as a new page.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_attachment.png"><img alt="image19" src="../_images/form-builder-components_attachment.png" style="width: 730px;" /></a></p>
+<p>The types and sizes of files that can be attached are as follows:</p>
+<ul class="simple">
+<li><p>File type: PDF, JPG, PNG, and GIF</p></li>
+<li><p>File size: Up to 5MB</p></li>
+</ul>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/Attachment-component-properties.png"><img alt="Setting Attachment Component Properties" src="../_images/Attachment-component-properties.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Attachment component. For example, the ID of the component for attaching a resume can be named ‘myResume’.</p>
+<p><strong>② Tooltip Text</strong></p>
+<p>Displays the description Tooltip Text when you hover the mouse over a component.</p>
+</div>
+<div class="section" id="user">
+<h3>User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for entering the information of the user who created or modified a document. The user’s basic
+information such as name or contact information, or custom field information is automatically entered into the user component based on the settings.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_user.png"><img alt="image20" src="../_images/form-builder-components_user.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/user-component-properties-.png"><img alt="Setting User Component Properties" src="../_images/user-component-properties-.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the user component. For example, the ID of the component that displays the name of the document creator can be named ‘documentCreator’.</p>
+<p><strong>② User Type</strong></p>
+<ul class="simple">
+<li><p><strong>Document Creator:</strong> Displays the information of the user who created the document.</p></li>
+<li><p><strong>Current User:</strong> Displays the information of the user who has most recently opened or modified the document.</p></li>
+<li><p><strong>Last modified user of the content:</strong> Displays the information of the user who entered information in a specific component.</p></li>
+</ul>
+<p>If you select <strong>Last modified user of the content</strong>, then the <strong>Input Component ID</strong> field will be displayed. In this field, enter the ID of the component that will display the information when triggered.</p>
+<p><a class="reference internal" href="../_images/user-input-certain-component.png"><img alt="image21" src="../_images/user-input-certain-component.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have company administrator or template manager permission to perform this action.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To automatically fill in the signer’s name in the User component, create a Signature component and then name the ID (for example,
+signer1). Then, create the User component that will display the signer’s name when triggered and name the ID (for example,
+signer1name). Then, select <strong>Last modified user of the content</strong> under User Type and enter the ID of the Signature component (in this case, signer1) under <strong>Input Component ID</strong>.</p>
+</div>
+<p><strong>③ User Field Name</strong></p>
+<p>This field allows to select the type of member information that will be displayed. You can select basic information in the <strong>Manage member &gt; Member info</strong> menu of the member or information in a custom field.</p>
+<ul class="simple">
+<li><p>Basic member information types: Name, ID, Department, Position,
+Mobile, and Telephone</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have company administrator permission to change basic member information.</p>
+<p>To modify a member’s basic information, login to eformsign and go to the <strong>Manage company &gt; Manage members</strong> menu. Select a member in the member list and edit the information in the <strong>Member info tab</strong> on the right. Then, click the <strong>Save</strong> button.</p>
+</div>
+</div>
+<div class="section" id="usedate">
+<span id="id1"></span><h3>Date<a class="headerlink" href="#usedate" title="Permalink to this headline">¶</a></h3>
+<p>This component is used to automatically enter the date in which a document is created or modified. The date in which the document is created, the date in which the document is accessed, or the date in which the content of a component is last modified is automatically entered, according to the date type selected.</p>
+<p><a class="reference internal" href="../_images/form-builder-components_date.png"><img alt="image22" src="../_images/form-builder-components_date.png" style="width: 730px;" /></a></p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/date-component-properties_.png"><img alt="Setting Date Component Properties" src="../_images/date-component-properties_.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the Date component. For example, the ID of the component that displays the date in which the document is signed can be named ‘signed date’.</p>
+<p><strong>② Format</strong></p>
+<p>Sets the format in which date will be displayed.</p>
+<ul class="simple">
+<li><p><strong>yyyy:</strong> Displays the year.</p></li>
+<li><p><strong>MM:</strong> Displays the month. Must be in uppercase.</p></li>
+<li><p><strong>dd:</strong> Displays the day.</p></li>
+</ul>
+<p>For example, if you want to display the date in the format of ‘15-20-2020’, then enter dd-MM-yyyy in the Format field.</p>
+<p><strong>③ Date Type</strong></p>
+<ul class="simple">
+<li><p><strong>Date created:</strong> Displays the date in which the document is created.</p></li>
+<li><p><strong>Date accessed:</strong> Displays the most recent date in which the document is modified or opened.</p></li>
+<li><p><strong>Last modified date of the content:</strong> Displays the date in which the information of a specific component is filled in.</p></li>
+</ul>
+<p>If <strong>Last modified date of the content</strong> is selected, the <strong>Input Component ID</strong> field is displayed. In this field, enter the ID of the component that will display the information when triggered.</p>
+<p><a class="reference internal" href="../_images/date-component-connecting-other-component.png"><img alt="image23" src="../_images/date-component-connecting-other-component.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to have company administrator or template manager permission to perform this action.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want the signature date of a signer to be displayed automatically in a contract, first add a Signature component and then name the ID (e.g. ‘contractSign’). Then, add a Date component which will display the signature date when the signature is signed and name the ID (e.g. signDate). Then, select <strong>Last modified date of the content</strong> under Date Type and enter the ID of the signature component (in this case ‘contractSign’) in the <strong>Input Component ID</strong> field.</p>
+</div>
+</div>
+<div class="section" id="document">
+<h3>Document<a class="headerlink" href="#document" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for entering document-related information in the document itself. You can select either one of the document ID or document number.</p>
+<p><a class="reference internal" href="../_images/document-component-in-list.png"><img alt="image24" src="../_images/document-component-in-list.png" style="width: 730px;" /></a></p>
+<p>The document ID is a unique document ID assigned in the system, so it does not require separate settings. For settings related to document number, upload a template and then go to <strong>Template settings &gt; General</strong>.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/document-domponent-properties.png"><img alt="Setting Document Component Properties" src="../_images/document-domponent-properties.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the document component. For example, the component ID can be ‘docNum’ for document number.</p>
+<p><strong>② Document info type</strong></p>
+<p>Selects the type of information that will be used.</p>
+<ul class="simple">
+<li><p><strong>Document ID:</strong> A unique ID containing 32 digits of alphanumeric characters assigned to all documents in the system. E.g. 0077af27a98846c8872f5333920679b7.</p></li>
+<li><p><strong>Document no.:</strong> The document number set in <strong>Template settings &gt; General.</strong> For information on how to set a document number, go to <a class="reference external" href="chapter6.html#docnumber_wd">Generating and viewing a document number</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="label">
+<h3>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
+<p>This component is used for setting the form ID of a document.</p>
+<p><strong>Component Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/label_property.png"><img alt="Setting Label Component Properties" src="../_images/label_property.png" style="width: 400px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Sets the label component ID.</p>
+</div>
+</div>
+<div class="section" id="upload-form-file">
+<h2>Upload Form File<a class="headerlink" href="#upload-form-file" title="Permalink to this headline">¶</a></h2>
+<p>Form files created using OZ in Office are uploaded in the following order:</p>
+<ol class="arabic simple">
+<li><p>Click the <strong>Execute</strong> icon (<img alt="image25" src="../_images/excute_button.png" />) in the File group. The login page will be displayed as a pop-up window.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/form_upload_login.png"><img alt="Login Page" src="../_images/form_upload_login.png" style="width: 730px;" /></a>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>After you log in, the document converted to a form will be displayed as a preview.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/upload_preview.png"><img alt="Preview Form File" src="../_images/upload_preview.png" style="width: 730px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Click the <strong>Upload form file</strong> button or click the <strong>Upload</strong> (<img alt="image26" src="../_images/upload_button.png" />) icon in the ribbon menu. The <strong>Template list</strong> page with the <strong>Create template</strong> card will be displayed.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/upload_list.png"><img alt="Template List Screen" src="../_images/upload_list.png" style="width: 730px;" /></a>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Click the <strong>Create template</strong> card. The screen for configuring the template settings will be displayed. Click the settings tabs on the left to configure the settings for the template and then click the Save button on the top right corner to save and create a template.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/upload_save.png"><img alt="Create Template Screen" src="../_images/upload_save.png" style="width: 730px;" /></a>
+</div>
+</div>
+<div class="section" id="configuring-template-settings">
+<h2>Configuring Template Settings<a class="headerlink" href="#configuring-template-settings" title="Permalink to this headline">¶</a></h2>
+<p>After uploading a template, you can configure additional settings for documents created from the template such as the template name, document number, and workflow.</p>
+<ol class="arabic simple">
+<li><p>Login to eformsign.</p></li>
+<li><p>Go to the <strong>Manage templates</strong> menu.</p></li>
+<li><p>Click the Template settings icon (<img alt="image27" src="../_images/config-icon.PNG" />) of the desired template.</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>General:</strong> Sets the template name, abbreviation, document name, document number, etc.</p></li>
+<li><p><strong>Set permissions:</strong> Sets the permissions for who can create documents created from the template and who can open, void, or
+permanently remove documents created from the template.</p></li>
+<li><p><strong>Workflow:</strong> Sets the steps of the document workflow from <strong>Start</strong> to <strong>Complete</strong>.</p></li>
+<li><p><strong>Field:</strong> Sets the field default values, auto-filled values, etc.</p></li>
+<li><p><strong>Notification settings:</strong> Sets the notification settings for documents created from the template.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>After configuring all settings, click the <strong>Save</strong> button to save the settings.</p></li>
+</ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>What’s the difference between an approval and an internal
-recipient?</strong></p>
-<p>Both an approver and internal recipient can approve or reject a
-requested document, but only the internal recipient can designate
-the next recipient(s) in line in the workflow to process the
-document.</p>
-<p>In other words, only internal recipients can designate downstream
-recipients whether it be external recipients, internal recipients,
-or approvers.</p>
-<p>For example, if you want a recipient in a workflow to have the
-ability to choose the recipients that come after her/him in the
-workflow, then you specify her/him as an internal recipient. In
-this case, when the internal recipient receives a document, then
-she/he can choose the recipient(s) that come after her/him in the
-workflow.</p>
+<p>In order to create documents from a template, you need to first save and deploy the template first. If you save the template but don’t deploy it, then the template will not be shown in the <strong>New from template</strong> page of the members with template usage permission.</p>
 </div>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="template-settings">
-<h2>Template Settings<a class="headerlink" href="#template-settings" title="Permalink to this headline">¶</a></h2>
-<p>You can set detailed configurations for each template you create.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only the <strong>company administrator</strong> or <strong>template manager</strong> can
-perform this action.</p>
-<p>This action can be performed in web browsers of computers and mobile
-devices, and also in mobile apps.</p>
+<p>For a detailed explanation of templates, please refer to <a class="reference external" href="chpater7.html#template_fb">Creating templates using Form Builder</a>.</p>
 </div>
-<div class="section" id="general">
-<h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
-<div class="figure align-default" id="id5">
-<a class="reference internal image-reference" href="../_images/en-create-template.png"><img alt="Template Settings &gt; General" src="../_images/en-create-template.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Template Settings &gt; General</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
-<dl>
-<dt>Configure basic settings for the template</dt><dd><p>Set basic information about the template including the template name,
-category, validity period, etc.</p>
-</dd>
-<dt>① Template name</dt><dd><p>The template name will be displayed in the <strong>Manage templates</strong> and
-<strong>New document</strong> pages.</p>
-<p>The recommended length of the template name is about 11 characters,
-including spaces. If the name is longer than 11 characters, you can
-see the full name by hovering the mouse over the name.</p>
-<div class="figure align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/en-template-name.png"><img alt="Template Name" src="../_images/en-template-name.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Template Name</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-</dd>
-<dt>② Template abbreviation</dt><dd><p>A short name that briefly describes the template. It is recommended
-to use two or three words.</p>
-<p><strong>Template abbreviation</strong> can be used in the document number,
-document name, mail template, etc. by entering <strong>$$</strong>.</p>
-<div class="figure align-default" id="id7">
-<img alt="Template Abbreviation" src="../_images/en-template-name-abb.png" />
-<p class="caption"><span class="caption-text">Template Abbreviation</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
-</dd>
-<dt>③ Category</dt><dd><p>Category is used to sort templates by type. With the category name,
-you can filter templates in the <strong>Manage templates</strong> menu, and can
-filter documents in the <strong>Documents</strong> menus and the <strong>Manage
-documents</strong> menu. You can choose from an existing category or create
-a new category by entering a new name.</p>
-<p>You can set multi-level categories with a separator ( <strong>/</strong> ). For
-example, if you set a category as <strong>HR Team/Vacation</strong>, the Vacation
-category in the HR category is created.</p>
-</dd>
-<dt>④ Description</dt><dd><p>Enter additional comments about the template. This description is
-displayed under the template name in the New document page.</p>
-</dd>
-<dt>⑤ Template validity period</dt><dd><p>Sets the time period in which documents can be created from this
-template. By default, the start date is set to the uploaded date and
-you can change the date.</p>
-<p>If the <strong>No expiry date</strong> option is checked, documents can be created
-without a time limit. If it’s unchecked, documents can be created
-only until the date set.</p>
-</dd>
-<dt>Document settings</dt><dd><p>Configure additional settings including document naming rules for
-documents created from the template.</p>
-</dd>
-<dt>⑥ Document naming rule</dt><dd><p>Sets the document name when creating a document from the template. If
-the document naming rule is not set, the template name will be the
-document name.</p>
-<p>You can add reserved words in the document name using <strong>$$</strong> and
-<strong>{{</strong>.</p>
-</dd>
-<dt>⑦ Allow document name change</dt><dd><p>If <strong>Allow document name change</strong> is checked, the document creator
-can change the document name.</p>
-</dd>
-<dt>⑧ Generate a document number</dt><dd><p>Templates Generate a document number If <strong>Generate a document
-number</strong> is checked, documents are automatically numbered. You can
-select the document number format and the workflow step in which
-document numbers are generated.</p>
-<p><img alt="image1" src="../_images/en-generate-document-no.png" /></p>
-</dd>
-<dt>⑨ Skip pop-up window when sending documents</dt><dd><p>Use it when many documents are created and submitted. If this option
-is unchecked, a pop-up window for entering a message will appear when
-sending a document. When <strong>Skip pop-up window when sending
-documents</strong> is checked, the pop-up window does not appear and the
-page proceeds to the next step.</p>
-</dd>
-</dl>
-</div>
-<div class="section" id="general-setting-the-document-naming-rule">
-<h3>General &gt; Setting the Document Naming Rule<a class="headerlink" href="#general-setting-the-document-naming-rule" title="Permalink to this headline">¶</a></h3>
-<p>In <strong>Template settings</strong>, you can set the document naming rule for
-documents created from a template. Templates Document naming rules</p>
-<p>You can make a piece of information entered into a document or
-document-related information to be automatically entered into the
-document name. If you set the document naming rule, then the document
-name is automatically entered based on the information of the document.
-As well, you can see this name on all document pages (In progress,
-Action required and Completed) and the <strong>Manage document</strong> page.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only the <strong>Company administrator</strong> or <strong>Template managers</strong> can
-perform this action.</p>
-</div>
-<div class="figure align-default" id="id8">
-<a class="reference internal image-reference" href="../_images/en-manage-documents-document-list.png"><img alt="Manage Documents &gt; Documents List" src="../_images/en-manage-documents-document-list.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Manage Documents &gt; Documents List</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>How to set the document naming rule</strong></p>
-<div class="figure align-default" id="id9">
-<a class="reference internal image-reference" href="../_images/en-document-naming-rule.png"><img alt="Template Settings &gt; Setting the Document Naming Rule" src="../_images/en-document-naming-rule.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Template Settings &gt; Setting the Document Naming Rule</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
-</div>
-<ol class="arabic simple">
-<li><p>In the sidebar menu, click the <strong>Manage templates</strong> menu.</p></li>
-<li><p>Click on the settings icon (<img alt="image2" src="../_images/config-icon.PNG" />) of the desired template to go
-to the <strong>Template settings</strong> page.</p></li>
-<li><p>Enter the desired naming rule in the <strong>Document naming rule</strong> field</p></li>
-</ol>
-<blockquote>
-<div><p>in the <strong>General</strong> tab.</p>
-</div></blockquote>
-<ol class="arabic simple" start="4">
-<li><p>Click the <strong>Save</strong> button on the top right corner to save the
-changes.</p></li>
-</ol>
-<p><strong>How to use reserved words Templates Reserved words</strong></p>
-<div class="figure align-default" id="id10">
-<img alt="Setting Document Naming Rules Using Reserved Words" src="../_images/en-document-naming-rule-reserved.png" />
-<p class="caption"><span class="caption-text">Setting Document Naming Rules Using Reserved Words</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
-</div>
-<dl>
-<dt><strong>{{</strong></dt><dd><p>This symbol adds a piece of information in the document into the
-document name.</p>
-<p>Enter <strong>{{</strong> in the Document naming rule field to display the list of
-Component IDs and then select the desired component ID. The
-information in that particular component will be added to the
-document name.</p>
-</dd>
-<dt><strong>$$</strong></dt><dd><p>This symbol adds document-related information into the document name.</p>
-<p>Enter <strong>$$</strong> in the Document naming rule field to display the
-drop-down menu and then select the desired information.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 68%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Information types</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Current_date</p></td>
-<td><p>The date in which the document is created
-(e.g. Feb 20, 2020)</p></td>
-</tr>
-<tr class="row-odd"><td><p>Current_time</p></td>
-<td><p>The time in which the document is created
-(e.g. 02:59 pm)</p></td>
-</tr>
-<tr class="row-even"><td><p>Current_datetime</p></td>
-<td><p>The date and time in which the document is
-created (e.g. Feb 20, 2020, 02:59 pm)</p></td>
-</tr>
-<tr class="row-odd"><td><p>Creator_ID</p></td>
-<td><p>The ID of the member who created the document</p></td>
-</tr>
-<tr class="row-even"><td><p>Creator_name</p></td>
-<td><p>The name of the member who created the
-document</p></td>
-</tr>
-<tr class="row-odd"><td><p>Creator_dept</p></td>
-<td><p>The department of the member who created the
-document</p></td>
-</tr>
-<tr class="row-even"><td><p>Creator_company Name</p></td>
-<td><p>The name of the company in which the member
-who created the document belongs to</p></td>
-</tr>
-<tr class="row-odd"><td><p>Template_name</p></td>
-<td><p>The template name entered in Template
-settings &gt; General</p></td>
-</tr>
-<tr class="row-even"><td><p>T
-emplate_abbreviation</p></td>
-<td><p>The template abbreviation entered in Template
-settings &gt; General</p></td>
-</tr>
-<tr class="row-odd"><td><p>Company</p></td>
-<td><p>The company name entered in Manage company &gt;
-Company profile</p></td>
-</tr>
-<tr class="row-even"><td><p>Company_address</p></td>
-<td><p>The address entered in Manage company &gt;
-Company profile</p></td>
-</tr>
-<tr class="row-odd"><td><p>Company_contact_no</p></td>
-<td><p>The contact information entered in Manage
-company &gt; Company profile</p></td>
-</tr>
-<tr class="row-even"><td><p>Com
-pany_registration_no</p></td>
-<td><p>The business registration number entered in
-Manage company &gt; Company profile</p></td>
-</tr>
-<tr class="row-odd"><td><p>Company_homepage</p></td>
-<td><p>The homepage URL entered in Manage company &gt;
-Company profile</p></td>
-</tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Check the status of the <strong>Allow document name change</strong> field.</p>
-<p>Even if the document naming rule is set, if the <strong>Allow document name
-change</strong> option is checked, the document creator can arbitrarily
-change the document name. If you do not want the document name to be
-changed, then make sure to uncheck the <strong>Allow document name change</strong>
-option.</p>
-</div>
-<div class="figure align-default" id="id11">
-<img alt="Checking the Allow Document Name Change Option" src="../_images/en-allow-document-name-change.png" />
-<p class="caption"><span class="caption-text">Checking the Allow Document Name Change Option</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="general-generating-and-viewing-a-document-number">
-<span id="docnumber-wd"></span><h3>General &gt; Generating and Viewing a Document Number<a class="headerlink" href="#general-generating-and-viewing-a-document-number" title="Permalink to this headline">¶</a></h3>
-<p>You can set a document number for documents created in eformsign. You
-can set it so that a document number is generated automatically for each
-template, and can select one of four document numbering formats. The
-document number can be generated in the document using the document
-component. You can also see a separate column in the document list and
-search documents by the document number.</p>
-<p><strong>Generating a document number Templates Generate a document number</strong></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only the <strong>Company administrator</strong> or <strong>Template managers</strong> can
-perform this action.</p>
-</div>
-<div class="figure align-default" id="id12">
-<a class="reference internal image-reference" href="../_images/en-generate-document-number.png"><img alt="Setting a Document Number" src="../_images/en-generate-document-number.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Setting a Document Number</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
-</div>
-<ol class="arabic">
-<li><p>In the sidebar menu, click the <strong>Manage templates</strong> menu.</p></li>
-<li><p>Click on the settings icon (<img alt="image3" src="../_images/config-icon.PNG" />) of the desired template to go
-to the <strong>Template settings</strong> page.</p></li>
-<li><p>Tick the <strong>Generate a document number</strong> check box in the <strong>General</strong>
-page.</p>
-<ul class="simple">
-<li><p><strong>Selecting a document numbering rule</strong></p></li>
-</ul>
-<div class="figure align-default" id="id13">
-<img alt="Selecting a Document Numbering Rule" src="../_images/en-generate-document-number-select.png" />
-<p class="caption"><span class="caption-text">Selecting a Document Numbering Rule</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
-</div>
-<dl>
-<dt><strong>▪ Serial number</strong></dt><dd><p>Generated in the format of the document creation order</p>
-<p>E.g. 1, 2, 3…</p>
-</dd>
-<dt><strong>▪ Year_serial number</strong></dt><dd><p>Generated in the format of the document creation year + document
-creation order</p>
-<p>E.g. 2020_1, 2020_2…</p>
-</dd>
-<dt><strong>▪ Template_serial number</strong></dt><dd><p>Generated in the format of the template abbreviation + document
-creation order</p>
-<p>E.g. Application 1, Application 2…</p>
-</dd>
-<dt><strong>▪ Template_year_serial number</strong></dt><dd><p>Generated in the format of the template abbreviation + document
-creation year + document creation order</p>
-<p>E.g. Application 2020_1, Application 2020_2…</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p><strong>Choosing when to number a document</strong></p></li>
-</ul>
-<dl class="simple">
-<dt>▪ <strong>Start</strong></dt><dd><p>A number is generated when a document is created.</p>
-</dd>
-<dt>▪ <strong>Complete</strong></dt><dd><p>A number is generated when a document is completed after going
-through all the steps in the workflow.</p>
-</dd>
-</dl>
-</li>
-<li><p>Click the <strong>Save</strong> button at the top right corner of the page to
-apply your changes.</p></li>
-</ol>
-<p><strong>Viewing a document number</strong></p>
-<p>A document number can be viewed directly on a document using the
-document component and can also be viewed in the document list.</p>
-<ul>
-<li><p><strong>Viewing a document number directly on a document</strong></p>
-<p>You can generate a document number directly on a document by using
-the document component.</p>
-<ol class="arabic">
-<li><p>Upload a PDF file on Web Form Designer.</p></li>
-<li><p>Add the document component in the location where the document
-number will be displayed.</p>
-<p><a class="reference internal" href="../_images/en-document-number-component.png"><img alt="image4" src="../_images/en-document-number-component.png" style="width: 750px;" /></a></p>
-</li>
-<li><p>Click the <strong>Next</strong> button to go to the <strong>Template settings.</strong></p></li>
-<li><p>In <strong>Template settings &gt; General,</strong> tick the <strong>Generate a document
-number</strong> check box.</p></li>
-<li><p>Select a document numbering rule.</p></li>
-<li><p>Click the <strong>Save</strong> button to save the settings.</p></li>
-</ol>
-</li>
-<li><p><strong>Viewing a document number in the Completed and Manage documents
-pages</strong></p>
-<div class="figure align-default" id="id14">
-<a class="reference internal image-reference" href="../_images/en-completed-document-box-docno.png"><img alt="Completed - Document List" src="../_images/en-completed-document-box-docno.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Completed - Document List</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id15">
-<a class="reference internal image-reference" href="../_images/en-completed-document-list-docno-column.png"><img alt="Completed - Document List - Document Number" src="../_images/en-completed-document-list-docno-column.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Completed - Document List - Document Number</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
-</div>
-<p>A document number can be viewed in the Documents menus (In progress,
-Action required, and Completed), and the Manage documents menu
-(requires document management permission).</p>
-<ol class="arabic">
-<li><p>In the sidebar, click the <strong>Completed</strong> or <strong>Manage documents</strong>
-menu.</p></li>
-<li><p>Click the column settings icon at the top right corner of the
-page.</p></li>
-<li><p>Check <strong>Document number</strong> in the column list.</p>
-<p><img alt="image5" src="../_images/en-document-number-list.png" /></p>
-</li>
-<li><p>Check that <strong>the document number</strong> column is added.</p></li>
-</ol>
-</li>
-<li><p><strong>Searching for a document using a document number</strong></p>
-<p><a class="reference internal" href="../_images/en-manage-template-search-advanced.png"><img alt="image6" src="../_images/en-manage-template-search-advanced.png" style="width: 700px;" /></a></p>
-<p>You can search a document by its document number via advanced search.</p>
-<ol class="arabic simple">
-<li><p>Go to the <strong>Completed</strong> or <strong>Manage documents</strong> page.</p></li>
-<li><p>Click the <strong>Advanced</strong> button at the top right corner of the page.</p></li>
-<li><p>Select <strong>Document number</strong> among the search conditions.</p></li>
-<li><p>Type in the document number of the document you want to search
-for.</p></li>
-<li><p>View the search results.</p></li>
-</ol>
-</li>
-</ul>
-</div>
-<div class="section" id="set-permissions">
-<h3>Set Permissions<a class="headerlink" href="#set-permissions" title="Permalink to this headline">¶</a></h3>
-<p>You can set the permissions for template usage and document management.</p>
-<div class="figure align-default" id="id16">
-<a class="reference internal image-reference" href="../_images/en-template-settings-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en-template-settings-permissions.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Template Settings &gt; Set Permissions</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>Template usage</strong></p>
-<p>Template usage This permission is needed to create documents from the
-template, and you can select <strong>Allow all</strong> or <strong>Group or member</strong> to
-allow all the members or some members in the company to create documents
-from the template.</p>
-<p><strong>Document management</strong></p>
-<p>Document management You can select groups or members to open documents
-created from the template, void completed documents, or remove documents
-permanently. You can grant permission for all or some of the three
-options described below.</p>
-<ul class="simple">
-<li><p><strong>Open all documents</strong> (default): Default permission granted to a
-document manager and gives the permission to open all documents to
-authorized groups or members.</p></li>
-<li><p><strong>Void completed documents</strong> (optional): Permission for voiding
-completed documents when requested by the document creator.</p></li>
-<li><p><strong>Remove documents</strong> (optional): Permission to permanently remove
-documents from the system.</p></li>
-</ul>
-</div>
-<div class="section" id="workflow-settings">
-<h3>Workflow Settings<a class="headerlink" href="#workflow-settings" title="Permalink to this headline">¶</a></h3>
-<p>You can create or modify the workflow of the template by clicking the
-<strong>Workflow</strong> tab in the <strong>Template setting</strong>s page. Workflow</p>
-<div class="figure align-default" id="id17">
-<a class="reference internal image-reference" href="../_images/en-template-settings-workflow.png"><img alt="Template Settings &gt; Workflow" src="../_images/en-template-settings-workflow.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">Template Settings &gt; Workflow</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>Adding steps to the workflow</strong></p>
-<ol class="arabic">
-<li><p>Go to the <strong>Workflow</strong> configuration page by clicking the
-<strong>Workflow</strong> tab.</p></li>
-<li><p>Click the add button (<img alt="image7" src="../_images/workflow-addstep-plus-button.png" />) which is in between the <strong>Start</strong> and
-<strong>Complete</strong> steps.</p></li>
-<li><p>Select the type of recipient you want to add.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-workflow-add-step.png"><img alt="image8" src="../_images/en-template-settings-workflow-add-step.png" style="width: 700px;" /></a></p>
-</li>
-<li><p>When selected, a step is added to the workflow.</p></li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can add as many steps as you want. You can adjust the order of
-steps by clicking the arrow next to a workflow step.</p>
-<p>To delete a step, click <strong>X</strong> on the right side of the step button.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-workflow-order.png"><img alt="image9" src="../_images/en-template-settings-workflow-order.png" style="width: 500px;" /></a></p>
-</div>
-<p><strong>Configuring the details of each workflow step</strong></p>
-<p>You can click a step to set details such as <strong>Properties</strong> and <strong>Manage
-items</strong> for each workflow step.</p>
-<ul>
-<li><p>In <strong>Properties</strong>, you configure the details of the step including
-the step name and recipients.</p></li>
-<li><p>In <strong>Manage items</strong>, you can set the fields in which the recipient
-has access to or is required to fill in.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-workflow-item.png"><img alt="image10" src="../_images/en-template-settings-workflow-item.png" style="width: 700px;" /></a></p>
-</li>
-</ul>
-<dl>
-<dt><strong>Start: Step for creating a document Workflow Start</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-start.png"><img alt="image11" src="../_images/en-template-settings-workflow-start.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>Step name</strong>: Change the name of the step. The default name is
-‘Start’.</p></li>
-<li><p><strong>Limit the number of documents</strong>: Set the maximum number of
-documents that can be created from the template.</p></li>
-<li><p><strong>Create documents from URL</strong>: Create a public link for external
-recipients (non-members) to review and sign documents directly via
-URL without the need to login to the eformsign service.</p></li>
-<li><p><strong>Do not allow duplicate documents</strong>: Prevent the creation of
-duplicate documents and allows to select a field for determining
-whether a document is duplicated or not.</p></li>
-</ul>
-</dd>
-<dt><strong>Approver: Step for requesting a document for approval Workflow Approver</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-approver.png"><img alt="image12" src="../_images/en-template-settings-workflow-approver.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>Display name</strong>: Set the text to be displayed in the text box
-when requesting a document for approval. If you do not enter it,
-the default text will appear as shown below.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-approver-display-name.png"><img alt="image13" src="../_images/en-template-settings-approver-display-name.png" style="width: 250px;" /></a></p>
-</li>
-</ul>
-</dd>
-<dt><strong>Internal recipient (member): Step for requesting a document to be reviewed and signed by internal members of your company Workflow Internal recipient (member)</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-internal.png"><img alt="image14" src="../_images/en-template-settings-workflow-internal.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>Recipient</strong>: Select the member that will receive the document in
-this step.</p>
-<ul>
-<li><p><strong>Handler of a previous step</strong>: Select an internal recipient
-that will receive the document. You can choose an internal
-recipient from one of the previous internal recipient steps in
-the workflow or the document creator in the Start step.</p></li>
-<li><p><strong>Group and member</strong>: Select the groups or members in your
-company that will receive the document. You can select multiple
-groups or members.</p></li>
-</ul>
-</li>
-</ul>
-</dd>
-<dt><strong>External recipient: Step for requesting a document to be reviewed and signed by external users (recipients who are not members of your company) Workflow External recipients</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-external.png"><img alt="image15" src="../_images/en-template-settings-workflow-external.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>Document expiration</strong>: Set the time period in which documents
-can be sent to external users using this URL.</p></li>
-<li><p><strong>Automatically adds contacts</strong>: When sending documents to an
-external recipient, this option allows the name and contact of the
-external recipient to be added automatically based on the
-information the external recipient enters into the document.</p></li>
-<li><p><strong>Set password</strong>: Set a verification password that external
-recipients must enter when viewing the document. The password can
-be the recipient name, a value entered directly by the sender, or
-a field in the document.</p></li>
-<li><p><strong>Password hint</strong>: Set the help message that will be displayed
-when an external recipient enters the password to view the
-document.</p></li>
-<li><p><strong>Require mobile verification to review documents:</strong> Require
-external recipients to verify identity using mobile to open the
-document. This feature will incur an extra charge.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The <strong>Require mobile verification to review documents</strong> feature
-is available in Korea only.</p>
-</div>
-</li>
-</ul>
-</dd>
-<dt><strong>Complete: Step in which a document is finally completed Workflow Complete</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-complete.png"><img alt="image16" src="../_images/en-template-settings-workflow-complete.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>Backup completed documents in external cloud storages</strong>: Allow
-the document to be stored in external cloud storages connected to
-eformsign by the administrator or company managers.</p></li>
-<li><p><strong>Timestamp the document when completed</strong>: Allow the completed
-document to be timestamped which proves that the document remains
-unchanged since that time. This feature will incur an extra
-charge.</p></li>
-</ul>
-</dd>
-</dl>
-</div>
-<div class="section" id="field">
-<h3>Field<a class="headerlink" href="#field" title="Permalink to this headline">¶</a></h3>
-<p><strong>Template Field</strong> In the <strong>Field</strong> menu, you can set the default values
-or auto-fill values for fields in the template, and adjust the order of
-the fields.</p>
-<div class="figure align-default" id="id18">
-<a class="reference internal image-reference" href="../_images/en-template-settings-field.png"><img alt="Template Settings &gt; Field" src="../_images/en-template-settings-field.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">Template Settings &gt; Field</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
-</div>
-<p>You can set the default value of a field to be the value saved in
-company/group/member information in <strong>Manage custom fields</strong>. You can
-also choose it to be the value entered recently or a value entered
-manually.</p>
-<p><strong>How to configure auto-fill</strong></p>
-<p>You can save information that are frequently entered into a document so
-that they can be used for auto-filling later.</p>
-<p>For example, you can pre-save information about your company or group
-(such as department name, leader, and representative number) and
-information about the document creator (including name and contact
-details). You can add items for related fields and set the default
-values in <strong>Manage company &gt; Manage custom fields</strong>.</p>
-<ol class="arabic simple">
-<li><p>In the <strong>Manage custom fields</strong> screen<strong>,</strong> add a field.</p></li>
-<li><p>Go to the <strong>Manage templates</strong> menu.</p></li>
-<li><p>Click the <strong>Template settings</strong> icon.</p></li>
-<li><p>Go to the <strong>Field</strong> menu.</p></li>
-<li><p>Enter the default value for the field that you want to be
-auto-filled.</p></li>
-<li><p>After completing all the settings, click the <strong>Save</strong> button.</p></li>
-</ol>
-</div>
-<div class="section" id="notification-settings">
-<h3>Notification Settings<a class="headerlink" href="#notification-settings" title="Permalink to this headline">¶</a></h3>
-<p>Template Notification settings You can select the method for receiving
-notifications of documents created from a template, select who will
-receive notifications, and select who will receive notifications about
-document status.</p>
-<p><strong>Notification methods</strong></p>
-<p>Select the methods for sending notification messages to internal and
-external recipients. You can select either email<strong>,</strong> SMS, or both.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>SMS</strong> can only be selected by a company subscribed to a paid plan.
-Extra charges will apply.</p>
-</div>
-<p>When SMS is selected, <strong>Send via SMS</strong> and <strong>Send via SMS if failed to
-send via KakaoTalk</strong> are enabled.</p>
-<ul class="simple">
-<li><p><strong>Send SMS</strong>: Send notifications to recipients via SMS.</p></li>
-<li><p><strong>Send via KakaoTalk and if fails, send via SMS</strong>: Send notifications
-via KakaoTalk for recipients who use KakaoTalk and via SMS for
-recipients who do not use KakaoTalk.</p></li>
-</ul>
-<div class="figure align-default" id="id19">
-<a class="reference internal image-reference" href="../_images/en-template-settings-notification.png"><img alt="Notification Methods" src="../_images/en-template-settings-notification.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">Notification Methods</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>Edit notification messages</strong></p>
-<p>You can view and edit notification messages to be sent to recipients
-when sending documents created from the template. You can find the
-default notification messages in the <strong>Manage company &gt; Notification
-template management</strong> page and can edit them by clicking the <strong>Edit</strong>
-button.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>SMS templates can only be edited by companies subscribed to a paid
-plan.</p>
-</div>
-<p><a class="reference internal" href="../_images/en-template-settings-edit-notification-messages.png"><img alt="image17" src="../_images/en-template-settings-edit-notification-messages.png" style="width: 400px;" /></a></p>
-<p><a class="reference internal" href="../_images/en-template-settings-edit-notification-messages-popup.png"><img alt="image18" src="../_images/en-template-settings-edit-notification-messages-popup.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>When sending for review and sign &gt; Internal</strong>: You can edit the
-notification messages to be sent to internal recipients when sending
-a document to be reviewed and signed.</p></li>
-<li><p><strong>When sending for review and sign &gt; External</strong>: You can edit
-notification messages to be sent to external recipients when sending
-a document to be reviewed and signed.</p></li>
-<li><p><strong>When sending for approval</strong>: You can edit the notification messages
-to be sent to approvers when sending an approval request.</p></li>
-<li><p><strong>When rejecting documents</strong>: You can edit the notification messages
-to be sent to document senders when a document is rejected by
-approvers, internal recipients, or external recipients.</p></li>
-</ul>
-<p><strong>Document status notifications</strong></p>
-<p>You can select who will receive status notifications for documents
-created from the template. You can also preview the following
-notification message types: approved, reviewed and signed, rejected,
-voided, and corrected. As well, you can edit and preview the
-notification messages for completed documents.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For notifications sent when documents are rejected, voided, or
-corrected, only email templates are provided and they are not sent
-via SMS. Also, SMS templates for document completion notifications
-(internal/external) can only be edited by companies subscribed to a
-paid plan.</p>
-</div>
-<p><a class="reference internal" href="../_images/en-template-settings-notification-status.png"><img alt="image19" src="../_images/en-template-settings-notification-status.png" style="width: 500px;" /></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When the <strong>Document creator</strong> option is checked but the <strong>Step
-handler</strong> option is unchecked, a status notification is sent to the
-person who originally created the document.</p>
-<p>When the <strong>Document creator</strong> option is unchecked but the <strong>Step
-handler</strong> option is checked, status notifications are sent to people
-who have processed the document before the current step, except the
-document creator.</p>
-<p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both
-checked, status notifications are sent to both the document creator
-and the people who have processed the document before the current
-step.</p>
-<p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both
-unchecked, no notifications will be sent for that status.</p>
-</div>
-<ul>
-<li><p><strong>When documents are approved</strong>: When the document is approved by an
-approver, a notification will be sent stating that the document has
-been approved.</p></li>
-<li><p><strong>When documents are reviewed and signed</strong>: When the document is
-reviewed and signed by internal or external recipients, a
-notification will be sent stating that the document has been reviewed
-and signed.</p></li>
-<li><p><strong>When documents are rejected</strong>: When the document is rejected by an
-approver, internal recipient, or external recipient, a notification
-will be sent stating that the document has been rejected.</p></li>
-<li><p><strong>Document void notification</strong>: When a request for voiding a document
-is approved, a notification will be sent stating that the document
-has been voided.</p></li>
-<li><p><strong>When documents are corrected</strong>: When the document is corrected by a
-document creator, a notification will be sent stating that the
-document has been corrected.</p></li>
-<li><p><strong>When documents are completed &gt; Internal</strong>: When the document is
-completed, a notification will be sent to the document creator,
-approvers, and internal recipients stating that the document has been
-completed.</p></li>
-<li><p><strong>When documents are completed &gt; External</strong>: When the document is
-completed, a notification will be sent to external recipients stating
-that the document has been completed.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When the <strong>Document creator</strong> option for <strong>When the document is
-completed &gt; External</strong> is checked and an external recipient
-creates and submits a document via a URL, the external recipient
-must enter his/her email in which a notification will be sent to
-when the document is completed.</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="menus-for-each-template">
-<h2>Menus for Each Template<a class="headerlink" href="#menus-for-each-template" title="Permalink to this headline">¶</a></h2>
-<p>Go to the <strong>Manage templates</strong> page, click the menu icon (<img alt="image20" src="../_images/template-hamburgericon.png" />)
-right next to the template name to see the menus that can be set for
-each template.</p>
-<p><a class="reference internal" href="../_images/en-manage-template-menu-icon-wd.png"><img alt="image21" src="../_images/en-manage-template-menu-icon-wd.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>Duplicate</strong>: Duplicates the template. The template’s file and
-detailed settings for the template will be duplicated. You will have
-a chance to change and save the detailed settings before the template
-is duplicated.</p></li>
-<li><p><strong>Delete</strong>: Deletes the template. Once a template is deleted, you can
-no longer create documents from that template.</p></li>
-<li><p><strong>Deactivate</strong>: When a template is deactivated, it will not be shown
-in the <strong>New document</strong> page for other members.</p></li>
-<li><p><strong>Change owner</strong>: You can change the owner of the template. By
-default, the person who created the template is automatically
-assigned as the template owner. If you want to make changes later,
-you can change the owner to another member by clicking this menu. The
-new template owner can be selected among members who have permission
-to manage templates.</p>
-<p><img alt="image22" src="../_images/en-manage-template-menu-icon-change-owner.png" /></p>
-</li>
-<li><p><strong>Document Manager:</strong> You can select the members or groups that can
-manage documents created from the template. You can also select
-document managers in <strong>Template settings &gt; Set permissions.</strong></p>
-<p><img alt="image23" src="../_images/en-manage-template-menu-icon-document-manager.png" /></p>
-</li>
-</ul>
-</div>
-<div class="section" id="search-templates">
-<h2>Search Templates<a class="headerlink" href="#search-templates" title="Permalink to this headline">¶</a></h2>
-<p>In the <strong>Manage templates</strong> page, you can lookup and search templates by
-template category.</p>
-<p><a class="reference internal" href="../_images/en-manage-template-search.png"><img alt="image24" src="../_images/en-manage-template-search.png" style="width: 700px;" /></a></p>
-<dl>
-<dt>① <strong>Lookup Templates</strong></dt><dd><p>Click the box <strong>(1)</strong> to lookup templates by template status and
-category. Click <strong>X</strong> to return to view all categories.</p>
-<p>By default, templates are saved in the Sample category. You can
-create categories in <strong>Template settings &gt; General.</strong></p>
-</dd>
-<dt><strong>② Search templates</strong></dt><dd><p>You can search templates by entering keywords for the template name
-and category name.</p>
-</dd>
-<dt>③ <strong>Sort</strong></dt><dd><p>You can select the template sorting order in ascending or descending
-by template name or category.</p>
-</dd>
-</dl>
 </div>
 </div>
 
@@ -988,16 +876,16 @@ by template name or category.</p>
             <div class="inner"><ul class="page-nav">
   <li class="prev">
     <a href="chapter4.html"
-       title="previous chapter">← Introduction to Form Builder</a>
+       title="previous chapter">← Introduction to Web Form Designer</a>
   </li>
   <li class="next">
     <a href="chapter6.html"
-       title="next chapter">Managing Templates in Form Builder →</a>
+       title="next chapter">Creating templates using Web Form Designer →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

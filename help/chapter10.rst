@@ -41,8 +41,7 @@ eformsign can automatically save completed documents in external cloud storage s
 7. In the **Properties** tab of the **Complete** step, tick the **Backup completed documents in external cloud storages** checkbox. You can check whether the cloud storages set in the **Cloud storage** menu are connected. When a document is completed, it will be automatically saved in the connected cloud storage as well as in eformsign.
 
 .. figure:: resources/connect_5.png
-   :alt: The Backup Completed Documents in External Cloud Storages
-   Checkbox
+   :alt: The Backup Completed Documents in External Cloud Storages Checkbox
    :width: 750px
 
 

@@ -1,17 +1,13 @@
 .. _template_fb:
 
-Template - Form Builder
-========================
+Creating templates using Form Builder
+==========================================
 
 About Templates
 ----------------
 
-Form builder Templates Templates are **electronic documents** used for
-the eformsign service. They are e-documents converted from existing
-paper forms such as applications, contracts, and agreements. You can
-create and upload templates in the eformsign service with its Web form
-designer or Form builder. For more information about Web form designer,
-please refer to `Template_Web Form Designer <chapter6.html#template_wd>`__.
+Templates are **electronic documents** used for the eformsign service. They are e-documents converted from existing
+paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its Web form designer or Form builder. For more information about Web form designer, please refer to `Creating templates using Web Form Designer <chapter6.html#template_wd>`__.
 
 Template Overview
 ~~~~~~~~~~~~~~~~~~~
@@ -69,7 +65,7 @@ You can set the details for the template.
 Workflow Overview
 ~~~~~~~~~~~~~~~~~
 
-Workflow A workflow is a document process from its creation to completion.
+A workflow is a document process from its creation to completion.
 
 The workflow for each template can be set by template managers by going to **Template settings** > **Workflow**.
 
@@ -77,6 +73,7 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
 
 .. figure:: resources/en-workflow-steps.png
    :alt: Workflow steps
+   :width: 400px
 
 
 -  **Approver**
@@ -191,7 +188,7 @@ General
    If **Allow document name change**\ is checked, the document creator can change the document name.
 
 ⑨ Generate a document number
-   Templates Generate a document number If **Generate a document number** is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.
+   If **Generate a document number** is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.
 
    |image3|
 
@@ -203,8 +200,7 @@ General > Setting the Document Naming Rule
 
 In **Template settings**, you can set the document naming rule for documents created from a template.
 
-You can make a piece of information entered into a document or document-related information to be automatically entered into the
-document name. If you set the document naming rule, then the document name is automatically entered based on the information of the document.
+You can make a piece of information entered into a document or document-related information to be automatically entered into the document name. If you set the document naming rule, then the document name is automatically entered based on the information of the document.
 As well, you can see this name in all document pages (In progress, Action required and Completed) and the **Manage document** page.
 
 .. note::
@@ -227,11 +223,11 @@ As well, you can see this name in all document pages (In progress, Action requir
 
 2. Click on the settings icon (|image4|) of the desired template to go to the **Template settings** page.
 
-3.  Enter the desired naming rule in the **Document naming rule** field in the **General** tab.
+3. Enter the desired naming rule in the **Document naming rule** field in the **General** tab.
 
 4. Click the **Save** button on the top right corner to save the changes.
 
-**How to use reserved words Templates Reserved word**
+**How to use reserved words**
 
 .. figure:: resources/en-document-naming-rule-reserved.png
    :alt: Setting Document Naming Rules Using Reserved Words
@@ -296,9 +292,7 @@ As well, you can see this name in all document pages (In progress, Action requir
 
    Check the status of the **Allow document name change** field.
 
-   Even if the document naming rule is set, if the **Allow document name change** option is checked, the document creator can arbitrarily
-   change the document name. If you do not want the document name to be changed, then make sure to uncheck the **Allow document name change**
-   option.
+   Even if the document naming rule is set, if the **Allow document name change** option is checked, the document creator can arbitrarily change the document name. If you do not want the document name to be changed, then make sure to uncheck the **Allow document name change** option.
 
 .. figure:: resources/en-allow-document-name-change.png
    :alt: Checking the Allow Document Name Change Option
@@ -309,9 +303,7 @@ As well, you can see this name in all document pages (In progress, Action requir
 General > Generating and Viewing a Document Number
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can set a document number for documents created in eformsign. You can set it so that a document number is generated automatically for each
-template, and can select one of four document numbering formats. The document number can be generated in the document using the document
-component. You can also see a separate column in the document list and search documents by the document number.
+You can set a document number for documents created in eformsign. You can set it so that a document number is generated automatically for each template, and can select one of four document numbering formats. The document number can be generated in the document using the document component. You can also see a separate column in the document list and search documents by the document number.
 
 **Generating a document number Templates Generate a document number**
 
@@ -343,8 +335,7 @@ component. You can also see a separate column in the document list and search do
       E.g. 1, 2, 3...
 
    **▪ Year_serial number**
-      Generated in the format of the document creation year + document
-      creation order
+      Generated in the format of the document creation year + document creation order
 
       E.g. 2020_1, 2020_2...
 
@@ -400,8 +391,7 @@ A document number can be viewed directly on a document using the document compon
       :width: 700px
 
 
-   A document number can be viewed in the Documents menus (In progress, Action required, and Completed), and the Manage documents menu
-   (requires document management permission).
+   A document number can be viewed in the Documents menus (In progress, Action required, and Completed), and the Manage documents menu (requires document management permission).
 
    1. In the sidebar, click the **Completed** or **Manage documents** menu.
 
@@ -443,16 +433,13 @@ You can set the permissions for the template usage and document management.
 
 **Template usage**
 
-This permission is needed to create documents from the template, and you can select **Allow all** or **Group or member** to
-allow all the members or some members in the company to create documents from the template.
+This permission is needed to create documents from the template, and you can select **Allow all** or **Group or member** to allow all the members or some members in the company to create documents from the template.
 
 **Document management**
 
-You can select groups or members to open documents created from the template, void completed documents, or remove documents
-permanently. You can grant permission for all or some of the three options described below.
+You can select groups or members to open documents created from the template, void completed documents, or remove documents permanently. You can grant permission for all or some of the three options described below.
 
--  **Open all documents** (default): Default permission granted to a document manager and gives the permission to open all documents to
-   authorized groups or members.
+-  **Open all documents** (default): Default permission granted to a document manager and gives the permission to open all documents to authorized groups or members.
 
 -  **Void completed documents** (optional): Permission for voiding completed documents when requested by the document creator.
 
@@ -507,17 +494,14 @@ You can click a step to set the details such as **Properties** and **Manage item
 
    -  **Limit the number of documents**: Set the maximum number of documents that can be created from the template.
 
-   -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via
-      URL without the need to login to the eformsign service.
+   -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.
 
-   -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining
-      whether a document is duplicated or not.
+   -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
 
 **Approver: Step for requesting a document for approval**
    |image13|
 
-   -  **Display name**: Set the text to be displayed in the text box when requesting a document for approval. If you do not enter it,
-      the default text will appear as shown below.
+   -  **Display name**: Set the text to be displayed in the text box when requesting a document for approval. If you do not enter it, the default text will appear as shown below.
 
       |image14|
 
@@ -526,8 +510,7 @@ You can click a step to set the details such as **Properties** and **Manage item
 
    -  **Recipient**: Select the member that will receive the document in this step.
 
-      -  **Handler of a previous step**: Select an internal recipient that will receive the document. You can choose an internal
-         recipient from one of the previous internal recipient steps in the workflow or the document creator in the Start step.
+      -  **Handler of a previous step**: Select an internal recipient that will receive the document. You can choose an internal recipient from one of the previous internal recipient steps in the workflow or the document creator in the Start step.
 
       -  **Group and member**: Select the groups or members in your company that will receive the document. You can select multiple groups or members.
 
@@ -536,45 +519,36 @@ You can click a step to set the details such as **Properties** and **Manage item
 
    -  **Document expiration**: Set the time period in which documents can be sent to external users using this URL.
 
-   -  **Automatically adds contacts**: When sending documents to an external recipient, this option allows the name and contact of the
-      external recipient to be added automatically based on the information the external recipient enters into the document.
+   -  **Automatically adds contacts**: When sending documents to an external recipient, this option allows the name and contact of the external recipient to be added automatically based on the information the external recipient enters into the document.
 
-   -  **Set password**: Set a verification password that external recipients must enter when viewing the document. The password can
-      be the recipient name, a value entered directly by the sender, or a field in the document.
+   -  **Set password**: Set a verification password that external recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
 
    -  **Password hint**: Set the help message that will be displayed when an external recipient enters a password to view the document.
 
       |image17|
 
-   -  **Require mobile verification to review documents:** Require external recipients to verify identity using mobile to open the
-      document. This feature will incur an extra charge.
+   -  **Require mobile verification to review documents:** Require external recipients to verify identity using mobile to open the document. This feature will incur an extra charge.
 
       .. note::
 
          The **Require mobile verification to review documents** feature is available in Korea only.
 
-   -  **Hide sheets or sections:** You can choose which sheets/sections of the documents are shown to external recipients in the case of
-      Excel documents with two or more sheets and Word documents with two or more sections.
+   -  **Hide sheets or sections:** You can choose which sheets/sections of the documents are shown to external recipients in the case of Excel documents with two or more sheets and Word documents with two or more sections.
 
       .. tip::
 
          Hiding sheets or sections of a document with multiple sheets or sections
 
-         When there are multiple sheets or sections in an uploaded document, the **Hide sheets or sections** option can be shown
-         in the external recipient step of the workflow. You can choose which sheets/sections can be seen by or hidden to the external
-         recipient. You can also choose the person in charge of the step before the external step to choose which sheets/sections can be
-         shown to the external recipient.
+         When there are multiple sheets or sections in an uploaded document, the **Hide sheets or sections** option can be shown in the external recipient step of the workflow. You can choose which sheets/sections can be seen by or hidden to the external recipient. You can also choose the person in charge of the step before the external step to choose which sheets/sections can be shown to the external recipient.
 
          |image18|
 
-**Complete: Step in which a document is finally completed Workflow Complete**
+**Complete: Step in which a document is finally completed**
    |image19|
 
-   -  **Backup completed documents in external cloud storages**: Allow the document to be stored in external cloud storages connected to
-      eformsign by the administrator or company managers.
+   -  **Backup completed documents in external cloud storages**: Allow the document to be stored in external cloud storages connected to eformsign by the administrator or company managers.
 
-   -  **Timestamp the document when completed**: Allow the completed document to be timestamped which proves that the document remains
-      unchanged since that time. This feature will incur an extra charge.
+   -  **Timestamp the document when completed**: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.
 
 .. _field_fb:
 
@@ -588,16 +562,13 @@ In the **Field** menu, you can set the default values or auto-fill values for fi
    :width: 700px
 
 
-You can set the default value of a field to be the value saved in company/group/member information in **Manage custom fields**. You can
-also choose it to be the value entered recently or a value entered manually.
+You can set the default value of a field to be the value saved in company/group/member information in **Manage custom fields**. You can also choose it to be the value entered recently or a value entered manually.
 
 **How to configure auto-fill**
 
 You can save information that are frequently entered into a document so that they can be used for auto-filling later.
 
-For example, you can pre-save information about your company or group (such as department name, leader, and representative number) and
-information about the document creator (including name and contact details). You can add items for related fields and set the default
-values in **Manage company > Manage custom fields**.
+For example, you can pre-save information about your company or group (such as department name, leader, and representative number) and information about the document creator (including name and contact details). You can add items for related fields and set the default values in **Manage company > Manage custom fields**.
 
 1. In the **Manage custom fields** screen\ **,** add a field.
 
@@ -640,8 +611,7 @@ When SMS is selected, **Send via SMS**\ and **Send via SMS if failed to send via
 
 **Edit notification messages**
 
-You can view and edit notification messages to be sent to recipients when sending documents created from the template. You can find the
-default notification messages in the **Manage company > Notification template management** page and can edit them by clicking the **Edit** button.
+You can view and edit notification messages to be sent to recipients when sending documents created from the template. You can find the default notification messages in the **Manage company > Notification template management** page and can edit them by clicking the **Edit** button.
 
 .. note::
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Introduction to Web Form Designer</title>
+      <title>Creating documents</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
@@ -15,6 +15,7 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
@@ -22,7 +23,7 @@
     
   <link rel="index" title="Index" href="../genindex.html" />
   <link rel="search" title="Search" href="../search.html" />
-  <link rel="next" title="Introduction to Form Builder" href="chapter4.html" />
+  <link rel="next" title="Introduction to Web Form Designer" href="chapter4.html" />
   <link rel="prev" title="Basic Info" href="chapter2.html" /> 
   </head>
 
@@ -69,11 +70,11 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign-user-guide">eformsign user guide</a></span>
       </p>
       <ul class="current">
         
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Overview</a>
+          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Introduction to eformsign</a>
 
             
           </li>
@@ -85,55 +86,59 @@
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Introduction to Web Form Designer</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Creating documents</a>
 
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#web-form-designer-overview" class="reference internal">Web Form Designer Overview</a></li>
+                  <li class="toctree-l2"><a href="#overview" class="reference internal">Overview</a></li>
                 
-                  <li class="toctree-l2"><a href="#overview-of-components" class="reference internal">Overview of Components</a></li>
+                  <li class="toctree-l2"><a href="#new-from-my-file" class="reference internal">New from my file</a></li>
                 
-                  <li class="toctree-l2"><a href="#setting-properties-for-each-component-type" class="reference internal">Setting Properties for Each Component Type</a></li>
-                
-                  <li class="toctree-l2"><a href="#configuring-template-settings" class="reference internal">Configuring Template Settings</a></li>
+                  <li class="toctree-l2"><a href="#new-from-template" class="reference internal">New from template</a></li>
                 
               </ul>
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Form Builder</a>
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Web Form Designer</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Managing Templates in Web Form Designer</a>
+          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Introduction to Form Builder</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Managing Templates in Form Builder</a>
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Creating templates using Web Form Designer</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Managing Documents</a>
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Creating templates using Form Builder</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Customizing eformsign</a>
+          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Document Menus</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Connecting with External Services</a>
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Customization</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">Connecting with External Services</a>
 
             
           </li>
@@ -151,7 +156,7 @@
   <ul class="breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>Introduction to Web Form Designer</li>
+    <li>Creating documents</li>
   </ul>
   
 
@@ -162,7 +167,7 @@
   </li>
   <li class="next">
     <a href="chapter4.html"
-       title="next chapter">Introduction to Form Builder →</a>
+       title="next chapter">Introduction to Web Form Designer →</a>
   </li>
 </ul>
   
@@ -170,579 +175,241 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="introduction-to-web-form-designer">
-<span id="webform"></span><h1>Introduction to Web Form Designer<a class="headerlink" href="#introduction-to-web-form-designer" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="web-form-designer-overview">
-<h2>Web Form Designer Overview<a class="headerlink" href="#web-form-designer-overview" title="Permalink to this headline">¶</a></h2>
-<p>Web Form Designer You can easily create a template using Web Form
-Designer by uploading a PDF file to eformsign in the <strong>Manage
-templates</strong> page. After uploading a file, simply click and locate the
-basic components available in the left tree menu of Web Form Designer
-and set the properties of each component. This is all you need to do to
-create a template.</p>
+  <div class="section" id="creating-documents">
+<span id="createnew"></span><h1>Creating documents<a class="headerlink" href="#creating-documents" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Anyone can use eformsign to easily convert existing documents into
+electronic documents and then send them for signature. In eformsign,
+there are two ways to create and send documents. You can upload a file
+from your PC to eformsign, or use a existing template saved in
+eformsign.</p>
+<ul class="simple">
+<li><p><strong>New from my file</strong>: You can upload your PDF file to create an
+electronic document and then send it to participants.</p></li>
+<li><p><strong>New from template</strong>: You can use a template uploaded to eformsign
+to create documents. When you click this menu, templates created by
+the company administrator or members with template management
+permissions are displayed on the screen.</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently, only PDF files are supported, but other various file
-formats such as Microsoft Office, JPG, PNG, etc. are planned to be
-supported.</p>
+<p>Templates can be created only by the company administrator or members
+with template management permission, and the templates on the screen
+are shown only to members who are given template usage permission for
+a given template.</p>
+<p>You can create a template using Web From Designer or Form Builder.
+For more information, refer to <a class="reference external" href="chapter6.html#template_wd">Template Web Form Designer</a> and
+<a class="reference external" href="chapter7.html#template_fb">Tempate Form builder</a>.</p>
 </div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>When creating a document with <strong>New from my file</strong>, you cannot save it as a template. For documents you plan on using frequently, it is recommended to register it as a template.</p>
+</div>
+</div>
+<div class="section" id="new-from-my-file">
+<h2>New from my file<a class="headerlink" href="#new-from-my-file" title="Permalink to this headline">¶</a></h2>
+<p>You can upload a PDF file you want and then add fields (components) onto the document. Then, you can specify the participants that will fill in each component and enter the information of the document participants and reviewers, and then send the document.</p>
+<ol class="arabic">
+<li><p>Go to the <strong>New from my file</strong> menu.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-menu.png"><img alt="image1" src="../_images/newfrommyfile-menu.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>Upload the PDF document file you want.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-uploadfile.png"><img alt="image2" src="../_images/newfrommyfile-uploadfile.png" style="width: 700px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In addition to Web Form Designer, eformsign also provides a Microsoft
-Office Add-in feature named <strong>OZ in Office (Form Builder)</strong> which
-allows you to create electronic documents directly in Microsoft
-Office. To use Form Builder, please install the Microsoft Office
-add-in, and refer to <a class="reference external" href="#formbuilder">???</a>.</p>
+<p>Only PDF files can be uploaded so far. Other file formats are planned to be supported in the future.</p>
 </div>
-<p>1. To create a template, go to the <strong>Manage templates</strong> page by clicking
-the <strong>Manage templates</strong> menu in the sidebar.</p>
-<div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/web-form_1.png"><img alt="Web Form Designer Screen" src="../_images/web-form_1.png" style="width: 730px;" /></a>
-<p class="caption"><span class="caption-text">Web Form Designer Screen</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</li>
+<li><p>Add the <strong>document participants</strong> that will be participating in document creation and select their roles.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-participants-popup.png"><img alt="image3" src="../_images/newfrommyfile-participants-popup.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can add participants by clicking <strong>Add new participant</strong> and up to 30 can be added. Note that you can change, add, or delete participant information in the <strong>Add recipient</strong> step after the <strong>Design form</strong> step.</p>
 </div>
-<p>2. To upload a file, simply drag the file onto the <strong>Manage templates</strong>
-page or click the <strong>Select a file</strong> button and then upload the file.</p>
-<div class="figure align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/web-form_2.png"><img alt="Web Form Designer Screen" src="../_images/web-form_2.png" style="width: 730px;" /></a>
-<p class="caption"><span class="caption-text">Web Form Designer Screen</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</li>
+<li><p>Add the components each participants will fill in and then set component properties on the right.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-formdesign.png"><img alt="image4" src="../_images/newfrommyfile-formdesign.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>In the Add recipients step, you can add contact information such as email and phone number and set <strong>Recipient options</strong> for each participant.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-recipients.png"><img alt="image5" src="../_images/newfrommyfile-recipients.png" style="width: 700px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are two recipient types: reviewer and participant. The
+participants added in the Design form step are shown in the Add
+recipients step. You can enter the contact information of each
+recipient such as email. In the Add recipient screen, you can
+delete/add participants and reviewers and set detailed options for
+each recipient.</p>
 </div>
-<p>3. When a file is uploaded, the <strong>Create template</strong> page will be
-displayed as follows:</p>
-<div class="figure align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/web-form_3.png"><img alt="Web Form Designer Screen" src="../_images/web-form_3.png" style="width: 730px;" /></a>
-<p class="caption"><span class="caption-text">Web Form Designer Screen</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>The difference between participants and reviewers</strong></p>
+<p>Participants can fill in components such as signature and text on
+each document, but reviewers cannot fill in components and can
+only approve documents after reviewing them.</p>
+<p>However, if you set a component’s <strong>Who can fill this out</strong> option to ‘anyone’, even reviewers can fill out the component.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-recipients-type.png"><img alt="image6" src="../_images/newfrommyfile-recipients-type.png" style="width: 400px;" /></a></p>
 </div>
-<div class="section" id="web-form-designer-menu-layout">
-<h3>Web Form Designer Menu Layout<a class="headerlink" href="#web-form-designer-menu-layout" title="Permalink to this headline">¶</a></h3>
-<p>Web Form Designer consists of a screen that displays the file, the left
-and right panels, and the top bar.</p>
-<div class="figure align-default" id="id4">
-<a class="reference internal image-reference" href="../_images/web-form_4.png"><img alt="Web Form Designer Menu Layout" src="../_images/web-form_4.png" style="width: 730px;" /></a>
-<p class="caption"><span class="caption-text">Web Form Designer Menu Layout</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</li>
+<li><p>Click the <strong>Options</strong> step to change the document title and select whether to timestamp the document when completed.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-option.png"><img alt="image7" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The above three steps are the steps you need to go through before
+creating a document. If you save the document as a draft before
+clicking the <strong>Start now</strong> button, the document is saved in
+<a class="reference external" href="chapter8.html#drafts">Drafts</a>, and the saved file can be opened again so
+that you can begin creating a document. To save a document as a
+draft, click the (<a class="reference internal" href="../_images/menu_icon_3.png"><img alt="image8" src="../_images/menu_icon_3.png" style="width: 20px;" /></a>) icon at the top right corner and then
+click <strong>Save as a draft</strong>.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-saveasdrafts.png"><img alt="image9" src="../_images/newfrommyfile-saveasdrafts.png" style="width: 200px;" /></a></p>
 </div>
-<ol class="arabic simple">
-<li><p><strong>Document display screen:</strong> Displays the uploaded file.</p></li>
-<li><p><strong>Top bar:</strong> Displays the <strong>Design form</strong> step and the <strong>Configure</strong>
-step, and allows you to preview the template with components added.
-It also allows you to go back to the <strong>Manage templates</strong> page where
-you can see the list of templates.</p></li>
-<li><p><strong>Basic components list:</strong> Provides 14 basic components including
-Text, Multiline, Signature, Check, and Radio components. Also, new
-components including custom and shape components are planned to be
-added.</p></li>
-<li><p><strong>Properties:</strong> Allows to set the properties of each component after
-adding components such as Signature, Text, and Check by clicking and
-locating them to the document display screen.</p></li>
+</li>
+<li><p>When you are done with all the settings, click <strong>Start now</strong>.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-startfromnow.png"><img alt="image10" src="../_images/newfrommyfile-startfromnow.png" style="width: 700px;" /></a></p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>A document is created once you click <strong>Start now</strong>, and it counts
+as a created document.</p>
+</div>
+</li>
+<li><p>If you click the <strong>Send</strong> button after reviewing/filling in the
+document, then the document is sent to recipients.</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-startfromnow-send.png"><img alt="image11" src="../_images/newfrommyfile-startfromnow-send.png" style="width: 700px;" /></a></p>
+</li>
 </ol>
+<p><strong>Add recipients &gt; Recipient options</strong></p>
+<p>In the <strong>Design form</strong> step or the <strong>Add recipients</strong> step, you can add participants who will receive the document.</p>
+<p>In the <strong>Add recipients</strong> step, you can set detailed settings for each participant. Additionally, you can add or remove participants as well as adding reviewers who will review the document.</p>
+<p>You have to add the name of each participant and reviewer, and their email/ID. If a participant is a member of your company, you can select the member in the drop-down menu and import their member information stored in eformsign.</p>
+<p>The detail settings in <strong>Recipient options</strong> is displayed differently depending on whether the participant or reviewer is a member of your company or is an external recipient.</p>
+<ul>
+<li><p><strong>When the recipient is a member</strong></p>
+<p>The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>When the mobile number option is selected, then the document will be sent via SMS and additional charges will occur.</p>
 </div>
+<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 400px;" /></a></p>
+</li>
+<li><p><strong>When the recipient is an external recipient</strong></p>
+<p>If the information you enter is not the same as the member information, then the recipient is recognized as an external
+recipient. This requires the below information to be filled in.</p>
+<ul>
+<li><p><strong>Email/Mobile:</strong> You can select one of email and mobile, or both. If you select mobile, then you must enter the mobile number of the recipient.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>If you select mobile, then the document is sent via SMS and additional charges will apply per SMS.</p>
 </div>
-<div class="section" id="overview-of-components">
-<h2>Overview of Components<a class="headerlink" href="#overview-of-components" title="Permalink to this headline">¶</a></h2>
-<p>Components Components are used to create fields in electronic documents
-that users can enter information. Many different components including
-Signature, Check, Date, and Text are provided, and each component can be
-configured in detail by using the <strong>Properties</strong> tab.</p>
-<div class="figure align-default" id="id5">
-<a class="reference internal image-reference" href="../_images/component_web_1.png"><img alt="Adding a component in Web Form Designer" src="../_images/component_web_1.png" style="width: 730px;" /></a>
-<p class="caption"><span class="caption-text">Adding a component in Web Form Designer</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
-<div class="section" id="component-types">
-<h3>Component Types<a class="headerlink" href="#component-types" title="Permalink to this headline">¶</a></h3>
-<p>The components provided in eformsign are as follows:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="#text2">Text</a><strong>:</strong> Components Text Enters short text (usually 1
-to 2 words).</p></li>
-<li><p><a class="reference external" href="#text2">Multiline</a><strong>:</strong> Components Multiline Enters long text
-with multiple lines.</p></li>
-<li><p><a class="reference external" href="#signature2">Signature</a><strong>:</strong> Components Signature Enters a
-signature.</p></li>
-<li><p><a class="reference external" href="#check2">Check</a><strong>:</strong> Components Check Ticks a check box.</p></li>
-<li><p><a class="reference external" href="#select2">Radio</a><strong>:</strong> Components Radio Selects an item among
-multiple items (can also be set to select multiple items).</p></li>
-<li><p><a class="reference external" href="#label2">Label</a><strong>:</strong> Components Label Sets the form ID.</p></li>
-<li><p><a class="reference external" href="#combo2">Combo</a><strong>:</strong> Components Combo Displays a drop-down menu
-that allows you to select an item.</p></li>
-<li><p><a class="reference external" href="#date2">Datetime</a><strong>:</strong> Components Datetime Enters a specific
-date.</p></li>
-<li><p><a class="reference external" href="#numeric2">Numeric</a><strong>:</strong> Components number Enters a number.</p></li>
-<li><p><a class="reference external" href="#toggle2">Toggle</a><strong>:</strong> Components Toggle Switches to another
-value if two or more values are entered.</p></li>
-<li><p><a class="reference external" href="#camera2">Camera</a><strong>:</strong> Components Camera Takes a photo using a
-camera or selects a photo from an album in devices with a built-in
-camera (e.g. smartphone, tablet, etc.). Selects an image file in
-devices without a camera (e.g. desktop PC).</p></li>
-<li><p><a class="reference external" href="#record2">Voice</a><strong>:</strong> Components Voice Records audio in devices
-with a voice recording function.</p></li>
-<li><p><a class="reference external" href="#attach2">Attachment</a><strong>:</strong> Components Attachment Attaches a
-file.</p></li>
-<li><p><a class="reference external" href="#document2">Document</a><strong>:</strong> Components Document Enters the
-document number or ID in the document itself.</p></li>
+</li>
+<li><p><strong>Document expiration:</strong> You can set the expiration period in which the external recipient can open and submit the document.</p></li>
+<li><p><strong>Set password:</strong> If you tick the Set password tick box, you can set the password required for the external password to open the document. For the password hint, you can set it to something the recipient will be able tell.</p></li>
+<li><p><strong>Require mobile verification to review documents:</strong> You can require mobile verification in order for the external recipient to open and fill-in the document. Extra charges apply.</p></li>
+<li><p><strong>Require mobile verification to view completed documents:</strong> You can require mobile verification in order for the external
+recipient to open the completed document. Extra charges apply.</p></li>
+</ul>
+<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-external.png"><img alt="image13" src="../_images/newformmyfile-recipientoption-external.png" style="width: 400px;" /></a></p>
+</li>
 </ul>
 </div>
-</div>
-<div class="section" id="setting-properties-for-each-component-type">
-<h2>Setting Properties for Each Component Type<a class="headerlink" href="#setting-properties-for-each-component-type" title="Permalink to this headline">¶</a></h2>
-<p>All components have common and unique properties. When you click the
-component added, the <strong>Properties</strong> tab where you can set and see
-detailed properties of each component will be displayed on the right
-side of the Web Form Designer screen. Common properties include ID and
-Tooltip Text, and the meaning of each property is as follows:</p>
-<ul class="simple">
-<li><p><strong>ID:</strong> Components ID Unique key for using an entered value in
-eformsign.</p></li>
-<li><p><strong>Tooltip Text:</strong> Components Tooltip Text: In Windows, the text in
-the Tooltip Text box of a component is displayed in the form of a
-speech bubble when hovering the mouse over the component. In mobile,
-the text is displayed on the quick type bar when clicking on the
-component.</p></li>
-</ul>
+<div class="section" id="new-from-template">
+<h2>New from template<a class="headerlink" href="#new-from-template" title="Permalink to this headline">¶</a></h2>
+<p>You can create and send documents whenever necessary by uploading
+frequently used forms and saving them as templates by adding workflows
+and other details.</p>
+<p>Templates can be created by using Web Form Designer or Form Builder. For
+more information, refer to <a class="reference external" href="#template_wd">Web Form Designer</a>and
+<a class="reference external" href="#template_fb">Form Builder</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For the Document component which is for providing information,
-Tooltip Text is not provided.</p>
+<p>A document can only be created by members or groups that have been
+granted template usage permission (allows to create documents from
+the template) for a template by a member with template management
+permission for that template.</p>
+<p>A template is shown in the <strong>Manage templates</strong> page only to
+member/groups that have been granted template usage permission for
+that template.</p>
 </div>
-<p>The description of each component is as follows.</p>
-<div class="section" id="text-and-multiline">
-<span id="text2"></span><h3>Text and Multiline<a class="headerlink" href="#text-and-multiline" title="Permalink to this headline">¶</a></h3>
-<p>Components Text Components Multiline Both Text and Multiline components
-are used to create text fields. The Text component is suitable for short
-text with 1 to 2 words, and the Multiline component is suitable for long
-text with more than 1 line.</p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/wfd-text-component-properties.png"><img alt="Setting Text and Multiline Component Properties" src="../_images/wfd-text-component-properties.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Text and Multiline Component Properties</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enters the ID of the Text/Multiline component. For example, the ID of
-the component in which John Doe, Jane Doe, etc. are entered can be named
-‘personName’</p>
+<ol class="arabic">
+<li><p>Click and go to <strong>New from template</strong> in the dashboard or the sidebar menu.</p>
+<p><a class="reference internal" href="../_images/menu-startfromtemplate.png"><img alt="image14" src="../_images/menu-startfromtemplate.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>Click the create icon(<img alt="image15" src="../_images/create-icon.PNG" />) of the template you want to create a document from.</p>
+<p><a class="reference internal" href="../_images/startfromtemplate-create.png"><img alt="image16" src="../_images/startfromtemplate-create.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>If you create a document and then click the <strong>Complete</strong> or
+<strong>Request</strong> button on the top right corner, the document will proceed
+to the next step in the workflow. If you want to temporarily save the
+document as a draft before proceeding to the next step, click the
+<strong>Save as draft</strong> button to save.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>All components must have an ID. An ID is automatically generated when
-you create a component, but it is recommended to rename it to
-something you can easily recognize. For example, you can rename the
-ID of a component for entering John Doe, Jane Doe, etc. as ‘name’. By
-doing so, it is easier to identify components when deciding whether
-to display a field to a specific user when you are configuring the
-Field settings of a template.</p>
+<p>The button may be displayed as <strong>Complete</strong> or <strong>Request</strong>,
+depending on the workflow set for the template.</p>
 </div>
-<p><strong>② Max Length</strong></p>
-<p>Sets the maximum length of characters (including space) that can be
-entered. The default value is set to ‘0’, and in this case, there is no
-limit for the number of characters.</p>
-<p><strong>③ Keyboard Type</strong></p>
-<p>Selects the keyboard type to be used when entering text in the
-component. Keyboard Type can only be used in mobile devices such as
-smartphones and tablets.</p>
-<p><strong>④ Show Password Characters</strong></p>
-<p>This option can be set only in the Text component. By checking this
-option, the password is hidden with the password symbol (●) when
-entering text. The password is also hidden with the password symbol in
-PDFs, and can only be seen when downloaded in the CSV format.</p>
-<p><strong>④ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Documents saved when clicking the <strong>Save as draft</strong> when creating
+documents from templates can be found in the <strong>Action required</strong> page, not the <strong>Drafts</strong> page.</p>
+<p>To continue to create a document saved as a draft, click the <strong>Edit</strong> button in the <strong>Action required</strong> page.</p>
 </div>
-<div class="section" id="signature">
-<span id="signature2"></span><h3>Signature<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h3>
-<p>Components Signature This component is used for signing a signature on a
-document.</p>
-<p>Clicking the signature area displays the <strong>Signature</strong> pop-up which
-allows you to sign a signature by drawing, entering text, or using a
-previously registered signature.</p>
-<p><a class="reference internal" href="../_images/signature.png"><img alt="image1" src="../_images/signature.png" style="width: 450px;" /></a></p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id7">
-<a class="reference internal image-reference" href="../_images/Signature-component-properties_web.png"><img alt="Setting Signature Component Properties" src="../_images/Signature-component-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Signature Component Properties</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enters the ID of the signature component. For example, the ID of the
-component can be ‘signerSignature’ for contract signers.</p>
-<p><strong>② Signature Type</strong></p>
-<p>Selects the signature type to be used when signing.</p>
-<ul class="simple">
-<li><p><strong>Enter Directly:</strong> Clicking a signature area displays the
-<strong>Signature</strong> pop-up which allows you to sign by selecting one of the
-multiple signing methods which are <strong>Draw</strong>, <strong>Text</strong>, <strong>Mobile</strong>,
-<strong>Stamp</strong>, and <strong>Registered signature</strong>.</p></li>
-<li><p><strong>Registered Signature:</strong> If the user has already registered a
-signature on eformsign, then clicking a signature area inserts the
-registered signature into the document.</p></li>
-<li><p><strong>Registered Initials:</strong> If the user has already registered an
-initial on eformsign, then clicking a signature area inserts the
-registered initial into the document.</p></li>
-</ul>
+</li>
+</ol>
+<div class="section" id="send-in-bulk">
+<h3>Send in bulk<a class="headerlink" href="#send-in-bulk" title="Permalink to this headline">¶</a></h3>
+<p>When creating a document from a template, you can use the <strong>Send in bulk</strong> feature to send a document to multiple recipients at once.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you have registered a signature or initial on eformsign, then when
-you click on a signature component, the registered signature/initial
-will be automatically entered into the component. However, if there
-is no registered signature or initial, then a regular <strong>Signature</strong>
-pop-up will be displayed when you click on a signature component.</p>
+<p>This feature requires either the company administrator or template usage permission.</p>
+</div>
+<p><strong>Send in bulk</strong></p>
+<ol class="arabic simple">
+<li><p>Go to <strong>New document &gt; New from template</strong>.</p></li>
+</ol>
+<p>2. Click the Send in bulk icon of the template you want to create a
+document from.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulk-creation-icon.png"><img alt="Send in bulk icon" src="../_images/bulk-creation-icon.png" style="width: 300px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Enter the values in the columns displayed on the screen.</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="Send in bulk screen" src="../_images/bulk_create.png" style="width: 800px;" /></a>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In some cases, you may need to use a seal or stamp on a document
-rather than your own signature. With eformsign, you can also use a
-stamp image to stamp the signature on a document. To use a stamp
-image when submitting a document, click the <strong>Stamp</strong> tab in the
-<strong>Signature</strong> pop-up, and then select a stamp image and click <strong>OK</strong>.</p>
+<p>Each column of the table contains all the fields of a document. The
+IDs of components (which are fields in a template) are shown as the
+name of each column. The last row of the first column (No.) indicates
+the number of documents to be created.</p>
+<p>Tables are filled in a similar way as in Excel. You can double-click
+on each cell to enter a value and right-click on the mouse to add or
+delete columns. The value entered in a cell can be copied and pasted,
+and dragged to another cell.</p>
 </div>
-<p><strong>③ Signature Pen Thick</strong></p>
-<p>Sets the signature pen thickness.</p>
-<p><strong>④ Signature Pen Color</strong></p>
-<p>Sets the signature pen color.</p>
-<p><strong>⑤ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
-</div>
-<div class="section" id="check">
-<span id="check2"></span><h3>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h3>
-<p>Components Check The Check component is used to check whether an item is
-checked or not. This component is similar to the Radio component, but
-the Check component is used for checking the status of an item (whether
-it is checked or not) while the Radio component is used for checking
-which item among multiple items is checked.</p>
-<p>When data is downloaded in the CSV format, the Check component’s input
-value is displayed as follows:</p>
-<ul class="simple">
-<li><p>When the item is checked: true</p></li>
-<li><p>When the item is not checked: false</p></li>
-</ul>
-<p>In Word and PowerPoint, the Check component is shown as a rectangular
-shape. Make sure to enter data inside the rectangular shape.</p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id8">
-<a class="reference internal image-reference" href="../_images/check-component-properties-1_web.png"><img alt="Setting Check Component Properties" src="../_images/check-component-properties-1_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Check Component Properties</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Each Check component must be given a different ID. If multiple check
-components are given the same ID, then only the value of the last
-component is displayed.</p>
-<p><strong>② Check Style</strong></p>
-<p>You can specify the style of each component in <strong>Component Properties</strong>.
-The check box is set as the default style, and you can change it to
-another style (radio button or red circle).</p>
-<p>The below example shows how check boxes are displayed according to the
-selected style.</p>
-<p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image2" src="../_images/check-component-style-settings.png" style="width: 550px;" /></a></p>
-</div>
-<div class="section" id="radio">
-<span id="select2"></span><h3>Radio<a class="headerlink" href="#radio" title="Permalink to this headline">¶</a></h3>
-<p>Components Radio The Radio component is used for checking which item is
-selected among multiple items. When data is downloaded in the CSV
-format, the selected item will be displayed.</p>
-<p>In Word and PowerPoint, the Radio component is shown as a rectangular
-shape. Make sure to enter data inside the rectangular shape.</p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id9">
-<a class="reference internal image-reference" href="../_images/Radio-component-properties_web.png"><img alt="Setting Radio Component Properties" src="../_images/Radio-component-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Radio Component Properties</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>In <strong>Component Properties</strong>, make sure that all the selected radio
-buttons are assigned the same ID.</p>
-<p>For example, if there are six choices available in a multiple-choice
-question, assign ‘question1’ as the ID for all of them. In the example
-shown below, the IDs of all the items are set to the same “question 1”.</p>
-<div class="figure align-default" id="id10">
-<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID_web.png"><img alt="Example of Setting a Radio Component" src="../_images/radio-items-should-have-same-ID_web.png" style="width: 730px;" /></a>
-<p class="caption"><span class="caption-text">Example of Setting a Radio Component</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>② Check Style</strong></p>
-<p>You can choose the style of the Radio component in <strong>Component
-Properties</strong>. The default style is the Circle, and you can change it to
-another style (check box and radio button).</p>
-<p><strong>③ Multiselectable</strong></p>
-<p>Checking the <strong>Multi-selectable</strong> option allows you to select multiple
-items. If you select more than one item, then when data is saved, each
-item is separated with a comma (,).</p>
-<p><strong>④ Uncheckable</strong></p>
-<p>Checking the <strong>Uncheckable</strong> option allows you to deselect a selected
-item by clicking it again.</p>
-<p><strong>⑤ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
-</div>
-<div class="section" id="label">
-<span id="label2"></span><h3>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
-<p>Components Label This component is used for setting the form ID of a
-document.</p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id11">
-<a class="reference internal image-reference" href="../_images/label_property_web.png"><img alt="Setting Label Component Properties" src="../_images/label_property_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Label Component Properties</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>The form ID of the document is automatically generated and displayed. It
-can also be changed.</p>
-<p>The form ID defined here can be applied when editing the document.</p>
-</div>
-<div class="section" id="combo">
-<span id="combo2"></span><h3>Combo<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h3>
-<p>Components Combo The Combo component is used when you need to select one
-of the multiple items.</p>
-<p>If you click a Combo component, a list of items is displayed as follows:</p>
-<p><a class="reference internal" href="../_images/combo-1.png"><img alt="image3" src="../_images/combo-1.png" style="width: 450px;" /></a></p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id12">
-<a class="reference internal image-reference" href="../_images/combo-component-properties_web.png"><img alt="Setting Combo Component Properties" src="../_images/combo-component-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Combo Component Properties</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enter the ID of the Combo component. For example, the ID of the
-component for selecting the favorite color can be ‘Favorite color’.</p>
-<p><strong>② Items</strong></p>
-<p>Enter the items you want. You can separate the items by pressing Enter.</p>
+<p>4. Click the <strong>Preview</strong> button on the top right corner of the screen to
+view the documents you created and then click the <strong>Create</strong> button to
+send the documents.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you want to display a message such as ‘Please select a color’ in a
-combo box in a document for recipients to view, then enter the
-message at the top of the list of items in the combo box and select
-it before sending the document.</p>
+<p>If there is an external process step in a template, then the left
+area of the table is highlighted in blue. This area is for entering
+the external recipients’ names, emails, etc. Depending on the
+external process settings, there can be phone numbers, verification
+passwords, etc.</p>
+<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
 </div>
-<p><strong>③ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If there is a component that is not shown in the <strong>Send in bulk</strong> screen, then the following must be checked.</p>
+<ol class="arabic simple">
+<li><p>The components that cannot be entered in <strong>Send in bulk</strong>: camera, voice, and grouped radio components cannot be used in Send in bulk.</p></li>
+</ol>
+<p>2. Check whether the components are allowed access in Template settings. Only the components that are checked to be allowed access in <strong>Manage templates &gt; Template settings (⚙) &gt; Workflow settings</strong>
+are shown.</p>
 </div>
-<div class="section" id="datetime">
-<span id="date2"></span><h3>Datetime<a class="headerlink" href="#datetime" title="Permalink to this headline">¶</a></h3>
-<p>Components Datetime This component is used for entering a date. Clicking
-the component displays a date selection window where you can select the
-date you want.</p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id13">
-<a class="reference internal image-reference" href="../_images/datetime-component-properties_02_web.png"><img alt="Setting Datetime Component Properties" src="../_images/datetime-component-properties_02_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Datetime Component Properties</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enters the ID of the Datetime component. For example, the ID of the
-component for selecting the vacation start date can be named ‘Vacation
-start date’.</p>
-<p><strong>② Format</strong></p>
-<p>Sets the format in which date will be displayed. The default setting is
-date_yyyy-MM-dd.</p>
-<ul class="simple">
-<li><p><strong>yyyy:</strong> Displays the year.</p></li>
-<li><p><strong>MM:</strong> Displays the month. Must be in uppercase.</p></li>
-<li><p><strong>dd:</strong> Displays the day.</p></li>
-</ul>
-<p>For example, if you want to display the date in the format of
-‘15-02-2020’, then enter <strong>dd-MM-yyyy</strong> in the Format field.</p>
-<p><strong>③ Minimum Date/Maximum Date</strong></p>
-<p>Sets the range of dates that can be selected in the component by
-specifying the minimum and maximum dates.</p>
-<p><strong>④ Display Today for Empty Value</strong></p>
-<p>Checking this option automatically enters the date (the date in which
-the document is opened) when the document is opened. This option is
-checked by default when you add a Datetime component. You can change the
-date by clicking the component.</p>
-<p><strong>⑤ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
-</div>
-<div class="section" id="numeric">
-<span id="numeric2"></span><h3>Numeric<a class="headerlink" href="#numeric" title="Permalink to this headline">¶</a></h3>
-<p>Components Numeric This component is used for entering a number.
-Clicking the component displays two arrows on the right, and you can
-increase or decrease the number by clicking them. In PCs, you can
-directly enter the desired number into the component by using a
-keyboard. In smartphones and tablets, you can scroll through the list of
-numbers and select the one you want.</p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id14">
-<a class="reference internal image-reference" href="../_images/number-component-properties_web.png"><img alt="Setting Numeric Component Properties" src="../_images/number-component-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Numeric Component Properties</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enters the ID of the Numeric component. For example, the ID of the
-component for entering the number of people in a reservation can be
-named ‘peopleCount’.</p>
-<p><strong>② Unit of Change</strong></p>
-<p>Enters the unit of number that will increase/decrease the number
-whenever the up/down arrow icon is clicked. For example, if the <strong>Unit
-of Change</strong> is set to 100, then when you click the up arrow icon (▲),
-the number is increased by 100 such as 200, 300, 400, and so on.</p>
-<p><strong>③ Minimum/Maximum Value</strong></p>
-<p>Sets the range of numbers that can be entered into the component by
-specifying the minimum and maximum values. For example, for the date of
-birth, setting the Minimum Value to 1900, Maximum Value to the current
-year, and the Unit of Change to 1. Also, if you enter a value that is
-lower/higher than the Minimum/Maximum Value, then the Minimum/Maximum
-Value will be automatically entered. For example, if the Maximum Value
-is set to 100 and you enter 101, then the number will automatically
-change to 100.</p>
-<p><strong>③ Tooltip Text</strong></p>
-<p>Displays the description in the Tooltip Text when you hover the mouse
-over a component.</p>
-</div>
-<div class="section" id="toggle">
-<span id="toggle2"></span><h3>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h3>
-<p>Components Toggle This component is used for indicating a specific
-status such as ON/OFF. If you use this component, then the input value
-is switched according to a defined order whenever the component is
-clicked.</p>
-<p>You can change the status to Good or Bad by clicking the components as
-follows:</p>
-<p><a class="reference internal" href="../_images/toggle.png"><img alt="image4" src="../_images/toggle.png" style="width: 450px;" /></a></p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id15">
-<a class="reference internal image-reference" href="../_images/toggle-component-properties_web.png"><img alt="Toggle Component Properties" src="../_images/toggle-component-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Toggle Component Properties</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enters the ID of the Toggle component. For example, the ID of the
-component for the first inspection item can be named ‘APT inspection 1’.</p>
-<p><strong>② Items</strong></p>
-<p>Enters the list of items that will be toggled whenever the Toggle
-component is clicked. You can separate the items by pressing Enter.</p>
-<p><strong>③ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
-</div>
-<div class="section" id="camera">
-<span id="camera2"></span><h3>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h3>
-<p>Components Camera This component is for uploading photos (taken with a
-device with a built-in camera such as smartphones and tablets) to a
-document. In PCs without a camera, clicking the component displays a
-window for selecting the desired image file.</p>
-<p>If the size of the selected image is larger than the size of the
-component, then it is resized to fit the component.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For devices with a built-in camera, the camera feature will be
-executed. For devices without a camera, a window for selecting an
-image file will be displayed.</p>
-</div>
-<p><a class="reference internal" href="../_images/camera1.png"><img alt="image5" src="../_images/camera1.png" style="width: 400px;" /></a></p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id16">
-<a class="reference internal image-reference" href="../_images/Camera-component-properties_web.png"><img alt="Setting Camera Component Properties" src="../_images/Camera-component-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Camera Component Properties</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enters the ID of the Camera component. For example, the ID of the
-component that takes the photo of a driver’s license can be
-‘driverLicense’.</p>
-<p><strong>② Tooltip Text</strong></p>
-<p>Displays the description in the Tooltip Text when you hover the mouse
-over a component.</p>
-</div>
-<div class="section" id="voice">
-<span id="record2"></span><h3>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">¶</a></h3>
-<p>Components Voice This component is used for storing recorded voice. You
-can set the maximum recording time and you can also configure the
-settings to allow users to only listen to the voice recording.</p>
-<p>When you add a Voice component, you can record voice or play a voice
-recording as follows:</p>
-<p><a class="reference internal" href="../_images/record1.png"><img alt="image6" src="../_images/record1.png" style="width: 350px;" /></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If the recording time limit is set to 1 or more, the recording is
-completed automatically at the time set (unit: seconds).</p>
-<p>In the case of ActiveX viewer, the recording playback UI is supported
-from Windows 8 and later.</p>
-<p>In PCs, the Voice component works only when a voice recording device
-is connected to a PC.</p>
-</div>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id17">
-<a class="reference internal image-reference" href="../_images/record_component_web.png"><img alt="Setting Voice Component Properties" src="../_images/record_component_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Voice Component Properties</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enter the ID of the voice component. For example, the ID of the
-component that plays voice recordings can be named ‘Record1’.</p>
-<p><strong>② Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
-</div>
-<div class="section" id="attachment">
-<span id="attach2"></span><h3>Attachment<a class="headerlink" href="#attachment" title="Permalink to this headline">¶</a></h3>
-<p>Components Attachment This component is used for attaching a file to a
-document. When attaching a file to a document by using the Attachment
-component, the file will be attached at the very end of the document as
-a new page.</p>
-<p>The types and sizes of files that can be attached are as follows:</p>
-<ul class="simple">
-<li><p>File type: PDF, JPG, PNG, and GIF</p></li>
-<li><p>File size: Up to 5MB</p></li>
-</ul>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id18">
-<a class="reference internal image-reference" href="../_images/Attachment-component-properties_web.png"><img alt="Setting Attachment Component Properties" src="../_images/Attachment-component-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Attachment Component Properties</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enters the ID of the Attachment component. For example, the ID of the
-component for attaching a resume can be named ‘myResume’.</p>
-<p><strong>② Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-component.</p>
-</div>
-<div class="section" id="document">
-<span id="document2"></span><h3>Document<a class="headerlink" href="#document" title="Permalink to this headline">¶</a></h3>
-<p>Components Document This component is used for entering document-related
-information in the document itself. You can select either one of the
-document ID or document number.</p>
-<p>The document ID is a unique document ID assigned in the system, so it
-does not require separate settings. For settings related to document
-number, upload a template and then go to <strong>Template settings &gt;
-General</strong>.</p>
-<p><strong>Component Properties</strong></p>
-<div class="figure align-default" id="id19">
-<a class="reference internal image-reference" href="../_images/document-domponent-properties_web.png"><img alt="Setting Document Component Properties" src="../_images/document-domponent-properties_web.png" style="width: 250px;" /></a>
-<p class="caption"><span class="caption-text">Setting Document Component Properties</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
-</div>
-<p><strong>① ID</strong></p>
-<p>Enter the ID of the Document component. For example, the component ID
-can be ‘docNum’ for document number.</p>
-<p><strong>② Document info type</strong></p>
-<p>Select the type of information that will be used.</p>
-<ul class="simple">
-<li><p><strong>Document ID:</strong> A unique ID containing 32 digits of alphanumeric
-characters assigned to all documents in the system. E.g.
-0077af27a98846c8872f5333920679b7</p></li>
-<li><p><strong>Document no.:</strong> The document number set in <strong>Template Settings &gt;
-General.</strong> For information on how to set a document number, please
-refer to <a class="reference external" href="#docnumber_wd">???</a>.</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="configuring-template-settings">
-<h2>Configuring Template Settings<a class="headerlink" href="#configuring-template-settings" title="Permalink to this headline">¶</a></h2>
-<p>After uploading a file and adding components with Web Form Designer, you
-can configure additional settings for documents that will be created
-from the template such as the document name, document number, and
-workflow.</p>
-<p>In the <strong>Design form</strong> screen, click the <strong>Next</strong> button to go to the
-<strong>Configure</strong> screen. In the <strong>Configure</strong> screen, you can configure the
-five settings shown below.</p>
-<ul class="simple">
-<li><p><strong>General:</strong> Sets the template name, abbreviation, document name,
-document number, etc.</p></li>
-<li><p><strong>Set permissions:</strong> Sets the permissions for who can create
-documents created from the template and who can open, void, or
-permanently remove documents created from the template.</p></li>
-<li><p><strong>Workflow:</strong> Sets the steps of the document workflow from <strong>Start</strong>
-to <strong>Complete</strong>.</p></li>
-<li><p><strong>Field:</strong> Sets the field default values, auto-filled values, etc.</p></li>
-<li><p><strong>Set notifications:</strong> Sets the notification settings for documents
-created from the template.</p></li>
-</ul>
-<div class="figure align-default" id="id20">
-<a class="reference internal image-reference" href="../_images/component_web_2.png"><img alt="The 5 Configuration Tabs in Template Settings" src="../_images/component_web_2.png" style="width: 730px;" /></a>
-<p class="caption"><span class="caption-text">The 5 Configuration Tabs in Template Settings</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
-</div>
-<p>After configuring all settings, click the <strong>Save</strong> button to save the
-settings.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For a detailed explanation of templates, please refer to Chapter 5.
-<a class="reference external" href="#template_wd">???</a></p>
 </div>
 </div>
 </div>
@@ -757,12 +424,12 @@ settings.</p>
   </li>
   <li class="next">
     <a href="chapter4.html"
-       title="next chapter">Introduction to Form Builder →</a>
+       title="next chapter">Introduction to Web Form Designer →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

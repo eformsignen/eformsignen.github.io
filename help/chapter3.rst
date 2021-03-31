@@ -244,7 +244,7 @@ document from.
    name of each column. The last row of the first column (No.) indicates
    the number of documents to be created.
 
-   Tables are filled in a similar way as in Excel.You can double-click
+   Tables are filled in a similar way as in Excel. You can double-click
    on each cell to enter a value and right-click on the mouse to add or
    delete columns. The value entered in a cell can be copied and pasted,
    and dragged to another cell.
