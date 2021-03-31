@@ -1,161 +1,119 @@
-Connecting with External Services
-=================================
+Customization
+========================
 
-How to Connect with External Cloud Storages
--------------------------------------------
+Manage Custom Fields
+---------------------------------------------
 
-Cloud storage eformsign can automatically save completed documents in
-external cloud storage services. Currently, Dropbox, Google Drive,
-OneDrive, and box are supported.
+You can add and edit fields for companies, groups, and members in the **Manage company > Manage custom fields** menu.
 
-.. note::
+.. tip::
 
-   Only the company administrator can connect eformsign with external
-   cloud storages.
+   By using custom fields, you can set frequently used companies, groups, and member information (e.g., company phone number, address,
+   company representative name, etc.) to be added automatically in documents. After adding custom fields in the **Manage custom fields**
+   menu, go to the **Template settings > Field settings** menu to set which information is to be entered automatically in the documents.
 
-1. Go to the **Integration > Cloud storage** menu.
+|image1|
 
-.. figure:: resources/connect_1.png
-   :alt: Cloud Storage Screen
-   :width: 750px
+① Manage custom fields > Company
+   You can add fields related to the company such as the company representative name, company phone number, stamp and seal, and then set the values.
 
-   Cloud Storage Screen
+② Manage custom fields > Group
+   You can add fields related to groups such as the department name and manager, and then set the values.
 
-2. Select the cloud storage where you want to save completed documents,
-and then click the **Connect** button to log in.
+③ Manage custom fields > Member
+   You can add fields related to members such as the job title, email address and phone number, and then set the values.
 
-3. After logging in, the **Disconnect** button and the **Storage path
-settings** button will be displayed. If you need to save the storage
-path, click the **Storage path settings** button.
+④ Add field
+   If you click the **Add field** button, the **Add custom field** pop-up window will be displayed where you can add a new field. Enter the field name, field type (select from text or image), and field value, and then click the **OK** button to add the field to the custom field list.
 
-.. figure:: resources/connect_2.png
-   :alt: Connecting and Disconnecting File Storage Accounts
-   :width: 750px
+|image2|
 
-   Connecting and Disconnecting File Storage Accounts
+⑤ Field list
+   The custom field list shows the field names and the field values that you added. You can also delete the fields and edit the field values.
 
-.. note::
+   To delete a field, click the icon (|image3|) located to the left of the field list.
 
-   The **Storage path settings** pop-up window is displayed as follows:
+⑥ Edit field
+   If you select a field to edit and then click the edit icon, the **Edit custom field** pop-up window will be displayed where you can edit the field name, field type, and field value.
 
-   |image1|
+   You can also change the field order. Select a field in which you want to change the order, and then click the arrow (|image4|) button.
 
-   The default path is the subfolder named after your company name,
-   which is located under the eformsign folder. You can also click the
-   **New folder** button to create a new folder and change the storage
-   path.
+   |image5|
 
-4. Go to the **Manage templates** menu.
+⑦ Save
+   After editing the custom field, click the **Save** button to save your changes.
 
-5. Click the template you want to save the documents (created from the
-template) to the cloud storages, and then go to the **Template
-settings** screen.
+Notification Template Management
+--------------------------------
 
-6. Go to the **Workflow** menu.
+You can customize the email and SMS notification messages to best suit the needs of your company.
 
-.. figure:: resources/connect_4.png
-   :alt: Setting the Complete Step of the Workflow
-   :width: 750px
+Notification templates can be edited in the **Manage company > Notification template management** menu or in the **Manage templates > Template settings > Notification settings** menu.
 
-   Setting the Complete Step of the Workflow
+.. figure:: resources/notification-template-manage.png
+   :alt: Manage company > Notification template management
+   :width: 700px
 
-7. In the **Properties** tab of the **Complete** step, tick the **Backup
-completed documents in external cloud storages** check box. You can
-check whether the cloud storages set in the **Cloud storage** menu are
-connected. When a document is completed, it will be automatically saved
-in the connected cloud storage as well as in eformsign.
 
-.. figure:: resources/connect_5.png
-   :alt: The Backup Completed Documents in External Cloud Storages Check
-   Box
-   :width: 750px
+Default templates are shown in the **Manage company > Notification template management** menu. You can change the contents of the default templates and add new notification templates.
 
-   The Backup Completed Documents in External Cloud Storages Check Box
+**Basic template types (select from Mail or SMS)**
 
-Analytics and Reporting
------------------------
+.. table::
 
-Analytics and reporting If you find it cumbersome and repetitive to
-download a CSV file every time a new document is added, using this
-feature is recommended. You can set the entered data to be automatically
-saved in a sheet in Google Sheets and Excel of Microsoft Office 365.
+   +--------------------+-------------------------------------------------+
+   | Type               | Status                                          |
+   +====================+=================================================+
+   | Notification       | Request approval, Acceptance request, External  |
+   | messages           | user processing request, Reject approval,       |
+   |                    | Document void requested, and Document void      |
+   |                    | request rejected                                |
+   +--------------------+-------------------------------------------------+
+   | Document status    | Approval, Acceptance approval, Approve decline  |
+   | notifications      | request, External user complete document,       |
+   |                    | Complete document, Correct document, Void       |
+   |                    | document, Deletion notification, Document       |
+   |                    | transfer completion, and Complete document      |
+   |                    | (Send as PDF)                                   |
+   +--------------------+-------------------------------------------------+
+   | Member             | Invite a member, Accept the member invitation,  |
+   |                    | Refuse the member invitation, and Withdraw from |
+   |                    | company                                         |
+   +--------------------+-------------------------------------------------+
+   | Header and footer  |                                                 |
+   +--------------------+-------------------------------------------------+
 
-.. note::
+.. tip::
 
-   **Analytics and reporting** can be set only by the company
-   administrator.
+   The header is set with the eformsign logo by default. If you upload your company's logo in the **Manage company > Company profile >**
+   `Company brand <#brand>`__ tab menu, the logo is applied to the email templates.
 
-.. figure:: resources/analytic_1.png
-   :alt: Analytics and Reporting Menu Screen (1)
-   :width: 750px
+**How to add a new notification template**
 
-   Analytics and Reporting Menu Screen (1)
+In addition to the default templates, you can add a new notification template.
 
-1. Go to the **Integration > Analytics and reporting** menu.
+1. In the sidebar menu, click the **Manage company > Manage Notification Templates** menu.
 
-2. Select either Google Sheets or Microsoft Office 365, and then click
-the **Connect account** button to log in.
+2. Click the **Add notification template** button located at the top right corner of the **Notification template management** screen.
 
-.. figure:: resources/analytic_2.png
-   :alt: Analytics and Reporting Menu Screen (2)
-   :width: 750px
+3. Select the appropriate **Type** and **Status**.
 
-   Analytics and Reporting Menu Screen (2)
+   |image6|
 
-3. Click the **Manage data connections** button.
+4. Select the **Channel** (select either Mail or SMS) and enter the **Notification template name**.
 
-.. figure:: resources/analytic_3.png
-   :alt: Manage Data Connections Screen (1)
-   :width: 750px
+5. Select the **Header** and **Footer**.
 
-   Manage Data Connections Screen (1)
+6. Write a new notification message.
 
-4. Click the **Add data connection** button in the center of the screen
-or at the top right corner of the screen.
+7. Click the **Save** button to add it as a notification template.
 
-.. figure:: resources/analytic_4.png
-   :alt: Manage Data Connections Screen (2)
-   :width: 750px
-
-   Manage Data Connections Screen (2)
-
-5. Set items such as the Connection name, Data connection sheet, When to
-send data, and Templates, and then click the **Save** button.
-
-.. figure:: resources/analytic_5.png
-   :alt: Manage Data Connections Screen (3)
-   :width: 600px
-
-   Manage Data Connections Screen (3)
-
-.. figure:: resources/analytic_6.png
-   :alt: Manage Data Connections Screen (4)
-   :width: 750px
-
-   Manage Data Connections Screen (4)
-
-.. note::
-
-   A data connection sheet corresponds to the URL of a sheet in Google
-   Sheets.
-
-6. Data connection sheets are displayed in the **Manage data
-connections** screen.
-
-.. figure:: resources/analytic_7.png
-   :alt: Manage Data Connections Screen (5)
-   :width: 750px
-
-   Manage Data Connections Screen (5)
-
-7. If you select a connected sheet, you can see the columns in which
-field data will be automatically imported from eformsign.
-
-.. figure:: resources/analytic_8.png
-   :alt: Manage Data Connections Screen (6)
-   :width: 750px
-
-   Manage Data Connections Screen (6)
-
-.. |image1| image:: resources/connect_3.png
-   :width: 450px
+.. |image1| image:: resources/Customfield.png
+   :width: 700px
+.. |image2| image:: resources/customfield-addfield.PNG
+.. |image3| image:: resources/customfield-list-delete.png
+.. |image4| image:: resources/customfield-list-order.PNG
+.. |image5| image:: resources/customfield-edit.PNG
+   :width: 700px
+.. |image6| image:: resources/notification-template-new.PNG
+   :width: 700px
