@@ -200,6 +200,9 @@ General
 ⑨ Skip pop-up window when sending documents
    Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
 
+
+.. _document_naming:
+
 General > Setting the Document Naming Rule
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
