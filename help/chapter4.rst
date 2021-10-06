@@ -7,23 +7,18 @@ Overview
 -------------------
 
 Web Form Designer is a web form editor that allows you to create electronic documents by uploading document files to eformsign
-and adding components. You can upload PDF files in the **New from template** or the **New from my file** menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.
+and adding components. You can upload files in the **New from template** or the **New from my file** menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.
+
 
 .. note::
 
-   Currently, only PDF files are supported, but other various file
-   formats such as Microsoft Office, JPG, PNG, etc. are planned to be
-   supported.
-
-.. note::
-
-   In addition to Web form designer, eformsign also provides an
+   In addition to Web Form Designer, eformsign also provides a
    Microsoft Office Add-in feature named **OZ in Office (Form builder)**
    which allows you to create electronic documents directly in Microsoft
    Office. To use Form builder, please install the Microsoft Office
    add-in, and refer to `Form Builder <chapter5.html#formbuilder>`__.
 
--  Uploading a PDF file in the **New from my file** menu.
+-  Uploading a file in the **New from my file** menu.
 
 1. Click the **New from my file** menu.
 
@@ -66,7 +61,7 @@ Uploading a PDF file in the **Manage templates** menu.
 Web Form Designer Menu Layout
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Web form designer consists of a screen that displays the file, the left and right panels, and the top bar.
+Web Form Designer consists of a screen that displays the file, the left and right panels, and the top bar.
 
 .. figure:: resources/web-form_4a.png
    :alt: Web Form Designer Menu Layout - Create from template
@@ -91,7 +86,7 @@ Web form designer consists of a screen that displays the file, the left and righ
       step. You can set the workflow, permission, etc. Make sure to
       configure the settings before you finish creating a document.
 
-3. **Component list:** There are 13 basic components including text,
+3. **Component list:** There are 14 basic components including text,
    multiline, signature, check, and radio. There are also two data
    components which are document ID and document number. More components
    including custom and shape components are planned to be added in the
@@ -118,7 +113,9 @@ Component Types
 
 The components provided in eformsign are as follows:
 
--  `Signature <#signature2>`__\ **:** Enters a signature.
+-  `Signature <#signature2>`__\ **:** Inserts a signature.
+
+-  `Company stamp <#companystamp2>`__\ **:** Inserts a company stamp.
 
 -  `Text <#text2>`__\ **:** Enters short text (usually 1 to 2 words).
 
@@ -154,14 +151,11 @@ The components provided in eformsign are as follows:
 Setting Properties for Each Component Type
 ------------------------------------------
 
-All components have common and unique properties. When you click the
-component added, the **Properties** tab where you can set and see
-detailed properties of each component will be displayed on the right
-side of the Web form designer screen. Common properties include ID and
+All components have common and unique properties. When you click a
+component added, the detailed properties of that component will be displayed on the right and you can set the properties. Common properties include ID and
 Tooltip Text, and the meaning of each property is as follows:
 
--  **ID:** Unique ID that identifies each component. When assigning who can fill out a component, you can use the component ID
-   to do so. You can also use the component ID to extract data in CSV format.
+-  **ID:** Unique ID that identifies each component. When assigning who can fill out a component, you can use the component ID to do so. You can also use the component ID to extract data in CSV format.
 
 -  **Placeholder:** Text displayed as a help message before entering information.
 
@@ -196,39 +190,44 @@ Clicking the signature area displays the **Signature** pop-up which allows you t
 
 Enters the ID of the signature component. For example, the ID of the component can be ‘signerSignature’ for contract signers.
 
-**② Signature Type**
+**② Who can fill this out**
 
-Selects the signature type to be used when signing.
+Selects who is allowed or required to fill out the component.
 
--  **Enter Directly:** Clicking the signature area displays the **Signature** pop-up which allows you to sign by selecting one of the multiple signing methods which are **Draw**, **Text**, **Mobile**, **Stamp**, and **Registered signature**.
+**③ Available signature Type**
 
--  **Registered Signature:** If the user has already registered a signature on eformsign, then clicking the signature area inserts the registered signature into the document.
+Selects the signature type to be used when signing. Clicking the signature area displays the **Signature** pop-up which allows you to sign by selecting one of the multiple signing methods which are **Draw**, **Text**, **Mobile**, and **eformsign App**.
 
--  **Registered Initial:** If the user has already registered an initial on eformsign, then clicking the signature area inserts the registered initial into the document.
+-  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
 
--  **Registered Stamp:** If the user has already registered a stamp on eformsign, then clicking the signature area inserts the registered stamp into the document.
+-  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
+
+-  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
+
+**④ Signing method** If you check the Disable auto-fill check box, it preventns the signature field from being automatically filled when clicked/touched.
+
 
 .. note::
 
-   If there is a registered signature or initial, then it will be automatically entered in the signature area when a signature area is clicked. However, if there is no registered signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked.
+   If there is an added signature or initial, then it will be automatically entered in the signature area when a signature area is clicked. However, if there is no added signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked.
 
 .. note::
 
    In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** tab in the **Signature** pop-up, and then select a stamp image and click **OK**.
 
-**③ Signature Pen Thick**
+**④ Signature Pen Thick**
 
 Sets the signature pen thickness.
 
-**④ Signature Pen Color**
+**⑤ Signature Pen Color**
 
 Sets the signature pen color.
 
-**⑤ Placeholder**
+**⑥ Placeholder**
 
 Sets the help message displayed before signing.
 
-**⑥ Tooltip Text**
+**⑦ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a component. On the eformsign app, it is displayed at the top center of the keypad.
 
@@ -269,6 +268,48 @@ Displays the description in Tooltip Text when you hover the mouse over a compone
 
 .. _text2:
 
+Company stamp
+~~~~~~~~~~~~~~~~~~
+
+The company stamp component is used for applying a company stamp onto a document.
+If you add a company stamp component, documents that require a company stamp will show a company stamp pop-up as shown below and you’ll be able to select and apply company stamps that you have permission to access.
+
+**Component Properties**
+
+.. figure:: resources/wfd-text-component-properties.png
+   :alt: Setting Text and Multiline Component Properties
+   :width: 400px
+
+
+**① ID**
+
+EEnter the ID of the Company stamp component. For example, the ID of the component for applying a company stamp can be named ‘companystamp’.
+
+.. note::
+
+   All components must have an ID. An ID is automatically generated when you create a component, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a component for entering John Doe, Jane Doe, etc. as 'name'. By doing so, it is easier to identify components when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
+
+**② Who can fill this out**
+
+Sets whether the recipient is required or allowed to fill in this component.
+
+
+**③ Placeholder**
+
+Sets the help message displayed.
+
+.. tip::
+
+   If you check the Show icon check box, the company stamp icon is shown on the camera
+   area.
+
+   |image|
+
+**④ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a component. 
+
+
 Text and Multiline
 ~~~~~~~~~~~~~~~~~~
 
@@ -290,7 +331,12 @@ Enters the ID of the Text/Multiline component. For example, the ID of the compon
 
    All components must have an ID. An ID is automatically generated when you create a component, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a component for entering John Doe, Jane Doe, etc. as 'name'. By doing so, it is easier to identify components when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
 
-**②Default value**
+**② Who can fill this out**
+
+Selects who is allowed or required to fill out the component.
+
+
+**③Default value**
 
 Sets the default text.
 
@@ -298,24 +344,20 @@ Sets the default text.
 
    This option can be set only in the Text component. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.
 
-**③ Max length**
+**④ Max length**
 
 Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters
 
-**④ Keyboard type**
+**⑤ Keypad type on mobile devices**
 
 Selects the keyboard type to be used when entering text in the component. Keyboard Type can only be used in mobile devices such as
 smartphones and tablets.
 
-**④ Tooltip text**
-
-Displays the description in Tooltip Text when you hover the mouse over a component.
-
-**⑤ Placeholder**
+**⑥ Placeholder**
 
 Displays a help message when no value is entered.
 
-**⑥ Tooltip Text**
+**⑦ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
@@ -364,7 +406,7 @@ When data is downloaded in the CSV format, the Check component’s input value i
 
 -  When the item is not checked: false
 
-In Word and PowerPoint, the Check component is shown as a rectangular shape. Make sure to enter data inside the rectangular shape.
+In Word and PowerPoint, the Check component is shown in a rectangular shape. Make sure to enter data inside the rectangular shape.
 
 **Component Properties**
 
@@ -376,11 +418,14 @@ In Word and PowerPoint, the Check component is shown as a rectangular shape. Mak
 
 Each Check component must be given a different ID. If multiple check components are given the same ID, then only the value of the last component is displayed.
 
-**② Items**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③ Items**
 
 You can enter the text to be displayed in the item. You can also add multiple check components so that multiple items can be selected.
 
-**③ Checked Style**
+**④ Checked Style**
 
 You can specify the style of each component in **Component Properties**.
 The check box is set as the default style, and you can change it to another style (radio button or red circle).
@@ -396,11 +441,11 @@ The below example shows how checks are displayed according to the selected style
 
    |image6|
 
-**④ Unchecked style**
+**⑤ Unchecked style**
 
 You can select the style of each component that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.
 
-**⑤ Tooltip text**
+**⑥ Tooltip text**
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -429,13 +474,14 @@ For example, if there are six choices available in a multiple choice question, a
    :alt: Example of Setting a Radio Component
    :width: 700px
 
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
 
-
-**② Items**
+**③ Items**
 
 Items with the same ID are shown in the item list of the component properties window and you can edit text easily.
 
-**③ Selected style**
+**④ Selected style**
 
 You can specify the style of each component in **Component Properties**.
 The black circle set as the default style, and you can change it to another style in the dropdown menu.
@@ -446,11 +492,11 @@ The black circle set as the default style, and you can change it to another styl
 
    |image7|
 
-**④ Unselected style**
+**⑤ Unselected style**
 
 You can select the style of each component that is not selected.
 
-**⑤ Tooltip Text**
+**⑥ Tooltip Text**
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -477,17 +523,24 @@ If you click a Combo component, a list of items is displayed as follows:
 
 Enter the ID of the Combo component. For example, the ID of the component for selecting the favorite color can be ‘Favorite color’.
 
-**② Item count**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③ Item count**
 
 Enter the items you want. You can separate the items by pressing Enter.
 
-**③ Default item**
+**④ Default item**
 
 Select the item set as default.
 
-**④ Placeholder**
+**⑤ Placeholder**
 
 Text displayed as a help message before entering information.
+
+**⑥ Tooltip Text**
+
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
 .. note::
 
@@ -515,15 +568,18 @@ You can change the status to Good or Bad by clicking the components as follows:
 
 Enters the ID of the Toggle component. For example, the ID of the component for the first inspection item can be named ‘APT inspection 1’.
 
-**② Items**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③ Items**
 
 Enters the list of items that will be toggled whenever the Toggle component is clicked. You can separate the items by pressing Enter.
 
-**③ Default item**
+**④ Default item**
 
 Select the item set as default.
 
-**④ Tooltip Text**
+**⑤ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
@@ -546,11 +602,14 @@ This component is used for entering a date. Clicking the component displays a da
 
 Enters the ID of the Datetime component. For example, the ID of the component for selecting the vacation start date can be named ‘Vacation start date’.
 
-**② Default value**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③ Default value**
 
 Sets the date to be displayed as default. If you check **Set today's date as default date**, then today's date is automatically entered when a document is opened.
 
-**③ Format**
+**④ Format**
 
 Sets the format in which date will be displayed. The default setting is date_yyyy-MM-dd.
 
@@ -562,15 +621,15 @@ Sets the format in which date will be displayed. The default setting is date_yyy
 
 For example, if you want to display the date in the format of ‘15-02-2020’, then enter **dd-MM-yyyy** in the Format field.
 
-**④ Minimum Date/Maximum Date**
+**⑤ Minimum Date/Maximum Date**
 
 Sets the range of dates that can be selected in the component by specifying the minimum and maximum dates.
 
-**⑤ Placeholder**
+**⑥ Placeholder**
 
 Text displayed as a help message before entering information.
 
-**⑥ Tooltip Text**
+**⑦ Tooltip Text**
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -593,15 +652,18 @@ Clicking the component displays two arrows on the right, and you can increase or
 
 Enters the ID of the Numeric component. For example, the ID of the component for entering the number of people in a reservation can be named ‘peopleCount’.
 
-**② Default value**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③ Default value**
 
 Enters the default number to be displayed.
 
-**③ Unit of Change**
+**④ Unit of Change**
 
 Enters the unit of number that will increase/decrease the number whenever the up/down arrow icon is clicked. For example, if the **Unit of Change** is set to 100, then when you click the up arrow icon (▲), the number is increased by 100 such as 200, 300, 400, and so on.
 
-**④ Minimum/Maximum Value**
+**⑤ Minimum/Maximum Value**
 
 Sets the range of numbers that can be entered into the component by
 specifying the minimum and maximum values. For example, for the date of
@@ -612,11 +674,11 @@ Value will be automatically entered. For example, if the Maximum Value
 is set to 100 and you enter 101, then the number will automatically
 change to 100.
 
-**⑤ Placeholder**
+**⑥ Placeholder**
 
 Text displayed as a help message before entering information.
 
-**⑥ Tooltip Text**
+**⑦ Tooltip Text**
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -648,20 +710,24 @@ If the size of the selected image is larger than the size of the component, then
 Enters the ID of the Camera component. For example, the ID of the component that takes the photo of a driver’s license can be
 ‘driverLicense’.
 
-**② Placeholder**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③ Placeholder**
 
 Enters the text displayed before taking a photo.
 
-**③ Tooltip Text**
-
-If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
-
 .. tip::
 
-   If you check the camera icon, the camera icon is shown on the camera
+   If you check the Show icon check box, the camera icon is shown on the camera
    area.
 
    |image11|
+
+**④ Tooltip Text**
+
+If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
+
 
 .. _record2:
 
@@ -689,19 +755,23 @@ When you add a Voice component, you can record voice or play a voice recording a
 
 Enter the ID of the voice component. For example, the ID of the component that plays voice recordings can be named 'Record1'.
 
-**② Placeholder**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③ Placeholder**
 
 Enters the text shown before recording.
 
-**③ Tooltip text**
+.. tip::
+
+   If you check the Show icon check box, the mic icon will be displayed on the voice recording area.
+
+   |image13|
+
+**④ Tooltip text**
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
-.. tip::
-
-   If you check the voice icon, the mic icon will be displayed on the voice recording area.
-
-   |image13|
 
 .. _attach2:
 
@@ -728,19 +798,23 @@ The types and sizes of files that can be attached are as follows:
 
 Enters the ID of the Attachment component. For example, the ID of the component for attaching a resume can be named ‘myResume’.
 
-**② Placeholder**
+**② Who can fill this out**
+Selects who is allowed or required to fill out the component.
+
+**③  Placeholder**
 
 Enters the text shown before attachment.
 
-**③ Tooltip text**
+.. tip::
+
+   If you check the Shown icon check box, the clip icon will be displayed on the attachement area.
+
+   |image14|
+
+**④ Tooltip text**
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
-.. tip::
-
-   If you check the clip icon, the clip icon will be displayed on the voice recording area.
-
-   |image14|
 
 .. _document2:
 
@@ -783,7 +857,7 @@ In the **Design form** screen, click the **Next** button to go to the **Configur
 
 -  **Field:** Sets the field default values, auto-filled values, etc.
 
--  **Set notifications:** Sets the notification settings for documents created from the template.
+-  **Notification settings:** Sets the notification settings for documents created from the template.
 
 .. figure:: resources/component_web_2.png
    :alt: The 5 Configuration Tabs in Template Settings

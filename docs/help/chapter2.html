@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>Basic Info</title>
     
-      <link rel="stylesheet" href="../_static/pygments.css">
-      <link rel="stylesheet" href="../_static/theme.css">
-      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
+          <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/theme.css " type="text/css" />
       
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-
       <!-- sphinx script_files -->
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
 
       
-      <script src="../_static/theme-vendors.js"></script>
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="../_static/theme-vendors.js"></script> -->
       <script src="../_static/theme.js" defer></script>
     
   <link rel="index" title="Index" href="../genindex.html" />
@@ -28,10 +26,11 @@
   </head>
 
   <body>
-    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
   <router-link to="../index.html" class="home-link">
     
-      <img class="logo" src="../_static/forcs.png" alt="doit logo"/>
+      <img class="logo" src="../_static/forcs.png" alt="logo"/>
     
   </router-link>
 
@@ -74,13 +73,19 @@
       </p>
       <ul class="current">
         
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Introduction to eformsign</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter1.html" class="reference internal ">Introduction to eformsign</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Basic Info</a>
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Basic Info</a>
+            
 
             
               <ul>
@@ -95,54 +100,80 @@
                 
                   <li class="toctree-l2"><a href="#my-signature" class="reference internal">My Signature</a></li>
                 
+                  <li class="toctree-l2"><a href="#manage-company-stamp" class="reference internal">Manage company stamp</a></li>
+                
               </ul>
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Creating documents</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter3.html" class="reference internal ">Creating documents</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Web Form Designer</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter4.html" class="reference internal ">Introduction to Web Form Designer</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Introduction to Form Builder</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter5.html" class="reference internal ">Introduction to Form Builder</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Creating templates using Web Form Designer</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter6.html" class="reference internal ">Creating templates using Web Form Designer</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Creating templates using Form Builder</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter7.html" class="reference internal ">Creating templates using Form Builder</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Document Menus</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter8.html" class="reference internal ">Document Menus</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Customization</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter9.html" class="reference internal ">Customization</a>
+            
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">Connecting with External Services</a>
+          <li class="toctree-l1 ">
+            
+              <a href="chapter10.html" class="reference internal ">Connecting with External Services</a>
+            
 
             
           </li>
@@ -177,7 +208,7 @@
   
 </div>
 <hr>
-          <div class="content" role="main">
+          <div class="content" role="main" v-pre>
             
   <div class="section" id="basic-info">
 <h1>Basic Info<a class="headerlink" href="#basic-info" title="Permalink to this headline">¶</a></h1>
@@ -185,7 +216,7 @@
 <h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="menu">
 <h3>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h3>
-<p>After logging into the eformsign dashboard , click the menu
+<p>After logging into the eformsign dashboard, click the menu
 icon (<img alt="image1" src="../_images/menu_icon.png" />) at the top left corner of the screen. The sidebar menu
 will be displayed as shown below.</p>
 <div class="admonition note">
@@ -204,7 +235,7 @@ create a document by uploading a file from your computer or selecting
 a template uploaded to eformsign.</p>
 <ul>
 <li><p><strong>New from my file:</strong> You create a document even when there is no
-template. Simply upload a file (PDF) from your computer and then
+template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then
 upload it to eformsign. Then, add components onto the document and
 send it to recipients for signature.</p></li>
 <li><p><strong>New from template:</strong> Views the list of templates in which you
@@ -242,13 +273,14 @@ information</p></li>
 group information.</p></li>
 <li><p><strong>Manage members:</strong> You can invite members or edit
 member information.</p></li>
+<li><p><strong>Manage company stamp</strong> You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.</p></li>
+<li><p><strong>Signature settings:</strong> Select the signature types that can be
+used when signing directly on documents.</p></li>
+<li><p><strong>Notification template management:</strong> You can view and edit email and SMS notification
+templates.</p></li>
 <li><p><strong>Manage custom fields:</strong> You can add and
 configure custom fields such as company, group, and member
 information.</p></li>
-<li><p><strong>Notification template management:</strong> You can view and edit email and SMS notification
-templates.</p></li>
-<li><p><strong>Signature settings:</strong> Select the signature types that can be
-used when signing directly on documents.</p></li>
 </ul>
 </li>
 <li><p><strong>Integration:</strong> Only the company administrator can
@@ -309,29 +341,28 @@ add-in feature, you can create electronic forms using Microsoft Office files.</p
 </ol>
 </div>
 <dl class="simple">
-<dt><strong>④ Action required</strong></dt><dd><p>Shows the number of documents that require action and goes to the <strong>Action required</strong> page when clicked.</p>
+<dt><strong>④ Action required</strong></dt><dd><p>Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When it clicked the <strong>Action required</strong> is displayed.</p>
 </dd>
-<dt><strong>⑤ In progress</strong></dt><dd><p>Shows the number of documents that are in progress, and goes to the <strong>In progress</strong> page when clicked.</p>
+<dt><strong>⑤ In progress</strong></dt><dd><p>Shows the number of documents that are in progress. When clicked, the <strong>In progress</strong> page is displayed.</p>
 </dd>
-<dt><strong>⑥ Completed</strong></dt><dd><p>Goes to the <strong>Completed</strong> page when clicked.</p>
+<dt><strong>⑥ Completed</strong></dt><dd><p>Shows the number of all the completed documents you created or participatedin. When clicked, the <strong>Completed</strong> page is displayed.</p>
 </dd>
-<dt><strong>⑦ Drafts</strong></dt><dd><p>Displays the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, the <strong>Drafts</strong> page is displayed.</p>
+<dt><strong>⑦ Drafts</strong></dt><dd><p>Shows the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, the <strong>Drafts</strong> page is displayed.</p>
 </dd>
-<dt><strong>⑧ Action required</strong></dt><dd><p>Displays the list of the three most recent documents that require your action and the number of documents requiring your action. You can click on the name of a document in the list to open the document. Also, you can click the more <strong>(+)</strong> button to go to the <strong>Action required</strong> page.</p>
+<dt><strong>⑧ Action required</strong></dt><dd><p>Shows the list of the three most recent documents that require your action and the number of documents requiring your action. You can click on the name of a document in the list to open the document. Also, you can click the more <strong>(+)</strong> button in the dashboard next to <strong>Action required</strong> to go to the <strong>Action required</strong> page.</p>
 </dd>
 <dt><strong>⑨ Saved draft</strong></dt><dd><p>Shows the number of documents saved in <strong>Drafts</strong> and the three most
 recent ones. You can click on a document name in the list to go to
-the document and can click the more <strong>(+)</strong> button to go to the
+the document and can click the more <strong>(+)</strong> button in the dashboard next to <strong>Saved draft</strong> to go to the
 <strong>Drafts</strong> page.</p>
 </dd>
-<dt><strong>⑩ In progress</strong></dt><dd><p>Displays the list of the three most recent documents in progress and
-the number of documents in progress. You can click on the name of a
+<dt><strong>⑩ In progress</strong></dt><dd><p>Shows the number of documents in progress. You can click on the name of a
 document in the list to open the document. Also, you can click the
-more <strong>(+)</strong> button to go to the <strong>In progress</strong> page.</p>
+more <strong>(+)</strong> button in the dashboard next to <strong>In progress</strong> to go to the <strong>In progress</strong> page.</p>
 </dd>
-<dt><strong>⑪ Completed</strong></dt><dd><p>Displays the list of the three most recently completed documents. You
+<dt><strong>⑪ Completed</strong></dt><dd><p>Shows the list of the three most recently completed documents. You
 can click on a document name to open the document. Also, you can
-click the more <strong>(+)</strong> button to go to the <strong>Completed</strong> page.</p>
+click the more <strong>(+)</strong> button in the dashboard next to <strong>Completed</strong> to go to the <strong>Completed</strong> page.</p>
 </dd>
 </dl>
 </div>
@@ -460,34 +491,29 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </div>
 <div class="section" id="permissions">
 <h2>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h2>
-<p>eformsign provides the following five types of roles that can be granted
-to members based on the permissions they have.</p>
+<p>Permissions can be granted to each member. In eformsign, there are many different permissions. The company admin has access to all.</p>
 <ul>
 <li><p><strong>Company administrator</strong></p>
-<p>The company administrator is the representative of the company and has all permissions for using the eformsign
-service.</p>
+<p>The company administrator is the representative of the company and has access to all menus. The company administrator can open, create, and manage all documents, as well as having the ability to transfer the company administrator role to another member.</p>
 </li>
 <li><p><strong>Company manager</strong></p>
-<p>Company managers have the permission to access the <strong>Manage company</strong> menu. Company managers can view and edit company,
-group, and member information and grant permissions to members.</p>
+<p>Company managers have the ability to access the <strong>Manage company</strong> menu. Company managers can view and edit company, group, and member information and grant permissions to members as well as having the ability to edit messages in eformsign email and SMS notification templates.</p>
 </li>
 <li><p><strong>Template manager</strong></p>
-<p>Template managers have the permission to access the <strong>Manage template</strong> menu. Template managers can create new templates
-by using Form Builder or Web Form Designer, and can also edit, deploy, and delete templates.</p>
+<p>Template managers have the permission to access the <strong>Manage template</strong> menu. Template managers can create new templates by using Form Builder or Web Form Designer, and can also edit, deploy, and delete templates.</p>
 </li>
-<li><p><strong>Template usage</strong></p>
-<p>Template usage permission allows to create documents from a template. You can grant <strong>template usage permission (document
-creation permission)</strong> for each template. When the permission for a template is granted to a member, the member can create documents in the <strong>New from template</strong> page.</p>
+<li><p><strong>Document creator</strong></p>
+<p>Document creators can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the <strong>New from template</strong> page.</p>
+<p><strong>Template editor</strong></p>
+<p>A template editor of a template can edit the template. You can grant this permission for each template.</p>
 </li>
 <li><p><strong>Document manager</strong></p>
-<p>Document managers have the permission to access the <strong>Manage document</strong> menu to view and download documents created from each
-template. Document managers can be selected for each separate template.</p>
+<p>Document managers can manage documents created from a template. If a member is assigned as a document manager of a template, then the member can open, delete, download (in PDF &amp; CSV) documents created from that template in the <strong>Manage documents</strong> page.</p>
 </li>
 </ul>
 <div class="section" id="company-administrator">
 <h3>Company Administrator<a class="headerlink" href="#company-administrator" title="Permalink to this headline">¶</a></h3>
-<p>The user who created a company is the company administrator by default, and the company administrator is a super
-administrator having all the permissions to use the eformsign service.</p>
+<p>The user who created a company is the company administrator by default, and the company administrator is the super administrator having all the permissions to use the eformsign service.</p>
 <p>The company administrator</p>
 <ul class="simple">
 <li><p>Has access to all the menus.</p></li>
@@ -496,7 +522,7 @@ administrator having all the permissions to use the eformsign service.</p>
 <li><p>Can delegate its role to another member when the company administrator needs to be changed.</p></li>
 </ul>
 <p>When the company administrator deletes her/his eformsign account, the
-company will also be deleted. If the administrator wants to delete only
+company is also be deleted. If the administrator wants to delete only
 the account, then she/he can delegate the administrator permission to
 another member, and then delete the account.</p>
 <p><strong>Delegating the Company Administrator Permission</strong></p>
@@ -540,8 +566,8 @@ groups/members. The company administrator or company managers can grant the comp
 <li><p>Click the <strong>Save</strong> button.</p></li>
 </ol>
 </div>
-<div class="section" id="template-manager-permission">
-<h3>Template Manager Permission<a class="headerlink" href="#template-manager-permission" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="template-manager">
+<h3>Template Manager<a class="headerlink" href="#template-manager" title="Permalink to this headline">¶</a></h3>
 <p>Template managers can access the <strong>Manage template</strong> menu, and can create, edit, deploy, and delete templates.</p>
 <p>The template manager who created a template is the template owner of
 that template by default. However, if multiple template managers exist
@@ -557,7 +583,7 @@ can only view the template settings and duplicate the template.</p>
 <ol class="arabic">
 <li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Manage members</strong> menu.</p></li>
 <li><p>Select the member in the member list you want to grant the permission.</p></li>
-<li><p>Tick the <strong>Manage company</strong> checkbox in the Permission item displayed at the bottom of the Member info tab to the right of the member list.</p>
+<li><p>Tick the <strong>Manage templates</strong> checkbox in the Permission item displayed at the bottom of the Member info tab to the right of the member list.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-manage-company-member-permission-template.png"><img alt="Template Manager Permission" src="../_images/en-manage-company-member-permission-template.png" style="width: 700px;" /></a>
 </div>
@@ -565,13 +591,13 @@ can only view the template settings and duplicate the template.</p>
 <li><p>Click the <strong>Save</strong> button.</p></li>
 </ol>
 </div>
-<div class="section" id="template-usage-document-creation-and-document-management-permissions">
-<h3>Template Usage (Document Creation) and Document Management Permissions<a class="headerlink" href="#template-usage-document-creation-and-document-management-permissions" title="Permalink to this headline">¶</a></h3>
-<p>The template usage permission allows users to create documents from a template, and document management
-permission allows users to manage documents created from a template and their data.</p>
-<p>Members with the template usage permission for a template can create documents using that template in the <strong>New document</strong> page.</p>
-<p>Members with the document management permission for a template can view, delete, and download documents created from that template in the <strong>Manage documents</strong> page.</p>
-<p><strong>Granting Template Usage and Document Management Permissions</strong></p>
+<div class="section" id="document-creator-template-editor-and-document-manager">
+<h3>Document Creator, Template Editor, and Document Manager<a class="headerlink" href="#document-creator-template-editor-and-document-manager" title="Permalink to this headline">¶</a></h3>
+<p>A document creator can create documents from a template, template editor can edit documents from a template, and document manager can manage documents created from a template and its data.</p>
+<p>A document creator for a template can create documents using that template in the <strong>New document</strong> page.</p>
+<p>A template editor for a template can edit that template in the <strong>Manage templates</strong> page.</p>
+<p>A document manager of a template can view, delete, and download documents created from that template in the <strong>Manage documents</strong> page.</p>
+<p><strong>Granting Document Creator, Template Editor, and Document Manager Permissions</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You need to have either the company administrator or template manager permission to perform this action.</p>
@@ -588,7 +614,7 @@ permission allows users to manage documents created from a template and their da
 <a class="reference internal image-reference" href="../_images/en-template-setting-set-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en-template-setting-set-permissions.png" style="width: 700px;" /></a>
 </div>
 </li>
-<li><p>Select the groups or members you want to grant permission for template usage and document management.</p></li>
+<li><p>Select the groups or members you want to grant permission for the document creator (called <strong>Template usage</strong> here), template editor (called <strong>Template editing</strong> here), and document manager (called <strong>Document management</strong> here). Note that you can only select members as template editors.</p></li>
 <li><p>Click the <strong>Save</strong> button.</p></li>
 </ol>
 </div>
@@ -688,8 +714,8 @@ info tab on the right.</p>
 <li><p>Click the <strong>OK</strong> button to save the signature.</p></li>
 <li><p>Click the <strong>Edit</strong> or <strong>Delete</strong> button to edit or delete the signature.</p></li>
 </ol>
-<p><strong>Registering Your Stamp</strong></p>
-<p>Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after registering the image in the eformsign service.</p>
+<p><strong>Adding Your Stamp</strong></p>
+<p>Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after adding the image in the eformsign service.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A stamp/seal image needs to be prepared.</p>
@@ -713,10 +739,108 @@ info tab on the right.</p>
 <li><p>Click the <strong>OK</strong> button to save the stamp.</p></li>
 <li><p>Click the <strong>Edit</strong> or <strong>Delete</strong> button to edit or delete the registered stamp.</p></li>
 </ol>
+<div class="section" id="life-sized-stamp-scanning">
+<span id="scanstamp"></span><h3><strong>Life-sized stamp scanning</strong><a class="headerlink" href="#life-sized-stamp-scanning" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can select the signature type that can be attached on an electronic document.</p>
-<p><strong>Go to Manage company</strong> <strong>&gt; Signature settings</strong> to allow or limit the signature types (draw, text, and stamp) to be displayed on documents’ signature fields.</p>
+<p>To scan a stamp, you must have a stamp ready to scan and download and print out the <strong>Scannable paper for stamps</strong> from eformsign.</p>
+</div>
+<ul class="simple">
+<li><p><strong>Scanning a stamp on a PC</strong></p></li>
+</ul>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Go to the <strong>My signature</strong> page -&gt; click the <strong>Register</strong> button under <strong>Stamp</strong>-&gt; click the <strong>Scan stamp</strong> tab on the pop-up displayed.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup.png"><img alt="Register button" src="../_images/signature-stamp-scan-popup.png" style="width: 300px;" /></a>
+</div>
+</li>
+<li><p>Download and print out <strong>Scannable paper for stamps</strong>.</p></li>
+<li><p>Apply the stamp in the center of the scan area in <strong>Scannable paper for stamp</strong>.</p></li>
+<li><p>Use the mobile device’s camera app to recognize the QR code. Once recognized, the <strong>Scan stamp</strong> screen will be displayed.</p></li>
+<li><p>In the <strong>Scan stamp</strong>screen, scan the scan area in which the stamp is applied.</p></li>
+<li><p>Check whether the stamp is properly recognized and touch the <strong>Send</strong> button to add the stamp on eformsign.</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Scanning a stamp on a mobile device</strong></p></li>
+</ul>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Go to the <strong>My signature</strong> age -&gt; touch the <strong>Register</strong> button under <strong>Stamp</strong>-&gt; touch the <strong>Scan stamp</strong> tab on the pop-up displayed.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup-mobile.png"><img alt="Scan stamp pop-up" src="../_images/signature-stamp-scan-popup-mobile.png" style="width: 300px;" /></a>
+</div>
+</li>
+<li><p>Download and print out <strong>Scannable paper for stamps</strong>.</p></li>
+<li><p>Apply the stamp in the center of the scan area in <strong>Scannable paper for stamp</strong>.</p></li>
+<li><p>Touch the <strong>Scan</strong> button.</p></li>
+<li><p>Allow camera access in the camera screen.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/stamp-scan-mobile-camera.png"><img alt="Allow camera access" src="../_images/stamp-scan-mobile-camera.png" style="width: 300px;" /></a>
+</div>
+</li>
+<li><p>In the <strong>Scan stamp</strong>  screen, scan the scan area in which the stamp is applied.</p></li>
+<li><p>Check whether the stamp is properly recognized and touch the <strong>OK</strong> button to add the stamp on eformsign.</p></li>
+</ol>
+</div>
+<div class="section" id="precautions-to-take-when-scanning-life-sized-stamps">
+<span id="caution-scanstamp"></span><h3><strong>Precautions to take when scanning life-sized stamps</strong><a class="headerlink" href="#precautions-to-take-when-scanning-life-sized-stamps" title="Permalink to this headline">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Depending on the device and environment, the stamp may have difficulties in being recognized. In this case, you can take a photo and upload it instead.</strong></p>
+<p><strong>Tip 1. If the Open with screen is displayed instead of the stamp scanning screen</strong></p>
+<p>In some Android devices, touching the <strong>Scan</strong> button may display the <strong>Open with</strong> screen (which allows you to select apps such as camera and gallery) instead of the stamp scanning screen. In this case, you can scan life-sized stamps by taking a photo and uploading it as follows.</p>
+<p>① Select <strong>Camera</strong> in the <strong>Open with</strong> screen.</p>
+<p>② In the camera screen, take a photo making sure that the stamp scanning area is clearly shown.</p>
+<p>③ A stamp will be automatically recognized from the photo.</p>
+<p><strong>Tip 2. If it says that the stamp was not recognized</strong></p>
+<p>Stamps may not be recognized in the camera screen of some mobile browsers due to their low resolution. In this case, you can scan life-sized stamps by taking a photo and uploading it as follows.</p>
+<ol class="arabic simple">
+<li><p>Open the mobile device’s default camera app.</p></li>
+<li><p>Take a photo making sure that the stamp scanning area is clearly shown.</p></li>
+<li><p>Go back to the stamp screen.</p></li>
+<li><p>Touch the <strong>Upload photo</strong> button.</p></li>
+<li><p>Select the Gallery app (if needed).</p></li>
+<li><p>Select the photo you took.</p></li>
+<li><p>When you upload the photo, the stamp will be automatically recognized.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="manage-company-stamp">
+<h2>Manage company stamp<a class="headerlink" href="#manage-company-stamp" title="Permalink to this headline">¶</a></h2>
+<p>You can add and manage company stamps as well as grant stamp use permissions and view stamp use history in the <strong>Manage company stamp</strong> menu.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only the company administrator and company managers have access to the Manage company stamp menu.</p>
+</div>
+<div class="section" id="company-stamp-tab">
+<h3><strong>Company stamp tab</strong><a class="headerlink" href="#company-stamp-tab" title="Permalink to this headline">¶</a></h3>
+<p>In this tab, you can add company stamps by uploading an image or scanning a real life-sized stamps as well as granting stamp use permission to members/groups. Once a company stamp is added, you can edit and delete it, and even view the history of all changes made to the stamp</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/menu-company-stamp.png"><img alt="Manage company stamp screen" src="../_images/menu-company-stamp.png" style="width: 700px;" /></a>
+</div>
+<p>To add a company stamp, click the  <strong>Add company stamp</strong> button and upload an image or scan a stamp and also set the stamp name and give permission to groups and members to use the stamp.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/company-stamp-register.png"><img alt="Add company stamp pop up" src="../_images/company-stamp-register.png" style="width: 400px;" /></a>
+</div>
+<ul class="simple">
+<li><p><strong>Stamp name</strong>: Enters the name of the stamp.</p></li>
+<li><p><strong>Description</strong>: Enters the description of the stamp.</p></li>
+<li><p><strong>Stamp image</strong>: You can add a stamp image by uploading a stamp image using the <strong>Upload image</strong> button or the scanning a stamp using the <strong>Scan stamp</strong> button.</p></li>
+<li><p><strong>Permission to use</strong>: You can grant permission to use stamp to all or specific members/groups.</p></li>
+</ul>
+<p>You can see the history of updates and deletions, and modifications made to a stamp. The following shows the stamp history shown when you click the <strong>History</strong> button.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/company-stamp-register-history.png"><img alt="Stamp history screen" src="../_images/company-stamp-register-history.png" style="width: 700px;" /></a>
+</div>
+</div>
+<div class="section" id="stamp-history-tab">
+<h3><strong>Stamp history tab</strong><a class="headerlink" href="#stamp-history-tab" title="Permalink to this headline">¶</a></h3>
+<p>In this tab, you can view the history of all the stamps used. You can view information including each of the stamps that were used, the members that used each stamp, the date each stamp was used, etc. You can also download the stamp history in CSV format.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/company-stamp-history.png"><img alt="Stamp history tab" src="../_images/company-stamp-history.png" style="width: 700px;" /></a>
+</div>
 </div>
 </div>
 </div>
@@ -736,12 +860,12 @@ info tab on the right.</p>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
 </div>
             </div>
           </div>
       </page>
-    </div>
+    </div></div>
     
     
   </body>

@@ -7,7 +7,7 @@ Overview
 eformsign is an electronic document solution that allows anyone to
 easily create electronic documents from paper documents and utilize
 various data stored in electronic documents. You can easily create
-electronic documents by uploading your PDF files onto eformsign and
+electronic documents by uploading your files onto eformsign and
 converting the files to electronic forms via eformsign's Web Form
 Designer feature. You can also use eformsign's Microsoft Office add-in
 to create electronic forms from documents created using Microsoft Office
@@ -38,50 +38,33 @@ entered in documents by extracting input data.
    :width: 700px
 
 
-The eformsign solution also provides a digital signature feature which
+The eformsign solution also provides an electronic signature feature which
 allows you to sign e-signatures on electronic documents.
 
-A digital signature is a signature in electronic form that replaces the
+An electronic signature is a signature in electronic form that replaces the
 traditional wet-ink signature. Just as when signing a signature on
 paper, you need to prove that the signer is you and this is done by
 going through an identity verification step. Personal information such
 as email, social security number, password, phone number, certificate,
 etc. can be used to verify identity.
 
-Digital signatures have become legally binding in phases in the vast
-majority of countries around the world. eformsign’s e-signatures are
-legally binding for individual-individual and corporation-individual
-matters. As well, it provides various additional features for
-non-repudiation.
+Electronic signatures have become legally binding in phases in the vast majority of countries around the world. eformsign's e-signature is legally-binding for individual-to-individual and corporation-to-individual contracts. As well, it provides various additional features for non-repudiation.
 
 .. note::
 
-   The following describes the legal effect of digital signatures of
+   The following describes the legal effect of electronic signatures signatures of
    some regions.
 
-   -  South Korea: Digital signatures based on PKI standards have a
-      strong legal status, and their legality is not discriminated
-      against the wet-ink signatures. According to Section 3.3 of the
-      Digital Signature Act, a digital signature other than a certified
-      digital signature shall have such an effect of a signature,
-      signature and seal, or name and seal, as is agreed between the
-      parties concerned.
+   -  USA: Through the Uniform Electronic Transactions Act (UETA) enacted in 1999 and the Electronic Signature in Global and National Commerce Act (ESIGN) enacted in 2000, electronic signatures that meet specific requirements are recognized to have the same legal effect as wet signatures. There are four main requirements that must be met in order for an electronic signature to be legally binding: the intention of signing (signer certification), the intention and consent, the record of the signing process, and the preservation of the signature. Currently, 48 states in the United States have adopted electronic signature acts, and as a result, electronic signatures are recognized as having the same legal effect as handwritten signatures in almost all transactions.
 
-   -  USA: Under the "technologically neutral" principle, any preference
-      to more sophisticated or more secure technologies such as PKI is
-      not given. There are many cases of increasing the reliability of
-      digital signatures through identity verification or authentication
-      services.
+   -  EU: In accordance with eIDAS (Electronic Identification and Trust Services) regulations, all types of electronic signatures are recognized as legally effective and binding. They are categorized into Qualified Electronic Signatures (QES), Advanced Electronic Signatures (AdES), and general Electronic signatures, and their legal status is applied accordingly, corresponding to the characteristics of each type of document.
 
-   -  EU: Digital signatures are categorized into Qualified Electronic
-      Signatures (QES), Advanced Electronic Signatures (AdES), and
-      general Electronic signatures, and their legal status is applied
-      accordingly, corresponding to the characteristics of each type of
-      document.
+   -  Korea: According to the Digital Signature Act, the legality of an electronic document or signature is not denied because it is in an electronic format. As well, the monopolistic status of the certificate authority has been abolished and the same legal effect is given to a variety of commercial electronic signature services. In addition, the monopoly status of accredited certificates has been abolished and the same legal effect is given to a variety of private digital signature services.
 
-   -  Japan: With the existence of a Specified Authentication Services,
-      a stronger legal effect is given to the digital signature
-      authorized by the secretary of the state.
+   -  Japan: The legal effect of electronic signatures is recognized in accordance with laws on electronic signature and certification services.
+
+[Disclaimer]
+Information related to the legal effect of electronic contracts and electronic signatures provided by eformsign is for general information purposes only. All information is used at your own risk and is not a substitute for professional legal advice. For legal advice and defense, please consult a qualified attorney in your area. Since eformsign cannot guarantee that all legal information of electronic contracts by country/region/technology provided by eformsign is up-to-date or accurate, eformsign makes no warranty, express or implied, as to the completeness of the legal information.
 
 Basic Terms
 ---------------
@@ -95,7 +78,7 @@ using eformsign.
    creating electronic forms by uploading existing document files onto
    eformsign. You can create templates by adding components such as
    signature, text box, and check box to documents such as agreements,
-   applications, and contracts in the PDF format. You can then create
+   applications, and contracts. You can then create
    documents from templates and send them to recipients to be reviewed
    and signed.
 
@@ -126,15 +109,15 @@ using eformsign.
    Templates This is an electronic form that serves as a starting point
    for a new document. With a template, you can create many documents
    from it. You can create templates by converting existing Microsoft
-   Office files using Form builder or by uploading PDF files directly
+   Office files using Form builder or by uploading files directly
    onto eformsign.
 
 -  **Document**
 
    A document can be an electronic document you create and send
-   for signature by using a template or an electronic document you
-   create and send by upload your file. A document can be created and sent
-   for signature by using either one of the **New from my file** menu or
+   for a signature by using a template or an electronic document you
+   create and send by uploading your file. A document can be created and sent
+   for a signature by using either one of the **New from my file** menu or
    the **New from template** menu. Any document created like this counts
    as a document created in eformsign.
 
@@ -163,11 +146,10 @@ using eformsign.
    default steps, **Start – Complete**, and can add
    three more types of steps as shown below:
 
-   -  **Approver:** Step in which an approver can approve the document sent by the document creator.
+   -  **Participant:** The step for requesting a person to fill out and sign a document.
 
-   -  **Internal recipient:** Step in which an internal recipient (a member of the company) can review and sign the document sent by the document creator.
 
-   -  **External recipient:** Step in which a user who is not a member of the company can review and sign the document sent by the document creator (or the internal recipient).
+   -  **Reviewer:** The step for requesting a person to review a document. A reviewer cannot fill in fields and can only approve or reject documents.
 
    .. figure:: resources/workflow_new.png
       :alt: Workflow Steps
@@ -187,7 +169,7 @@ using eformsign.
 
    With this permission, a member can access the **Manage templates**
    menu and can manage templates. Managing templates includes creating,
-   deploying, editing, and deleting the eformsign templates.
+   deploying, editing, and deleting eformsign templates.
 
 -  **Document Management Permission**
 
@@ -200,25 +182,18 @@ using eformsign.
 eformsign Usage Flow
 ------------------------
 
-To use eformsign, you can either upload a PDF file onto eformsign and
+To use eformsign, you can either upload a file onto eformsign and
 create an electronic form online, or create a form using Microsoft Word,
 Excel, or PowerPoint and then upload it to eformsign.
 
-.. note::
-
-   Currently, the method of uploading files and creating forms online
-   only supports PDF files. Microsoft Office files, and image files such
-   as JPG and PNG are planned to be supported in the near future.
 
 New from my file
 ~~~~~~~~~~~~~~~~~~~~
 
-You can upload a PDF file onto eformsign and then
+You can upload a file onto eformsign and then
 create and send a document by adding components such as text, signature,
 and date. You can easily and freely send a document by uploading a file,
-without the need to create a template. Just simply add components to the
-uploaded document, set the workflow in the **Add recipients** step, and
-then press the **Start Now** button to send.
+without the need to create a template. Just simply add the participants who can fill in the document and add components to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options ste**p**, and then press the **Start Now** button to send.
 
 Also, before sending a document to recipients, you can temporarily save
 it as a draft and then send it later.
@@ -239,15 +214,7 @@ uploading it on eformsign.
 1. **Using Web Form Designer**
 
    You can create a template by uploading a document
-   file (in the PDF format) on eformsign and then adding the components
-   you want such as text, signature, and date onto the document.
-
-   After adding components in the uploaded document, configure the
-   template settings, workflow, notification settings and deploy the
-   template.
-
-   You can then go to the **New document** menu to create a document from a
-   template you deployed and send it to recipients
+   file (PDF, Word, Excel, PowerPoint, or image files) on eformsign and then adding the participants who can fill in the document and adding components to the uploaded document in the **Design form** step. Then, configure settings including General, Set permissions, Workflow, Field, and Notification settings in the **Configure step**. Then, you can save and deploy the template for use. Finally, you can go to **New from template**, select a template you want to create a document from, and then send the document to recipients.
 
    .. figure:: resources/use_flow.png
       :alt: Usage Flow of eformsign Using Web Form Designer
@@ -264,11 +231,10 @@ uploading it on eformsign.
    you can upload the template you created onto eformsign by clicking
    the Upload button in the ribbon menu.
 
-   After uploading the template, set the template settings, workflow,
-   notification settings, etc. and deploy the template.
+   After uploading the template, set General, Set permissions, Workflow, Field, and Notification settings, and then save and deploy the template.
 
-   You can then go to the New document menu to create a document from a
-   deployed template and send it to recipients
+   You can then go to **New from template** to create a document from a
+   deployed template and send it to recipients.
 
 .. figure:: resources/use_flow2.png
    :alt: Usage Flow of eformsign Using Form Builder

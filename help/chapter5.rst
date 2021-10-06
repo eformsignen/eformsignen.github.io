@@ -147,7 +147,7 @@ The components provided in eformsign are as follows:
 
 -  `Datetime <#date>`__\ **:** Enters a specific date.
 
--  `Numeric <#numeric>`__\ **:** Enters a number.
+-  `Numeric stepper <#numericstepper>`__\ **:** Enters a number.
 
 -  `Toggle <#toggle>`__\ **:** Switches to another value if two or more values are entered.
 
@@ -509,7 +509,7 @@ checked by default when you add a **Datetime** component. You can change the dat
 
 **⑤ Allow Empty Value**
 
-Checking this option allows you to clear the number displayed on a Numeric component. In a Datetime component, once you select a date, you
+Checking this option allows you to clear the number displayed on a Numeric stepper component. In a Datetime component, once you select a date, you
 can change it to another date but cannot clear the date. However, checking this option allows you to clear the date displayed on the
 Datetime component. If no date is selected in the Datetime component but the **Display Today for Empty Value** option is checked, then the date
 component is automatically filled in with the date in which the document is opened.
@@ -522,7 +522,7 @@ component is automatically filled in with the date in which the document is open
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
-Numeric
+Numeric stepper
 ~~~~~~~
 
 This component is used for entering a number.
@@ -537,14 +537,14 @@ numbers and select the one you want.
 **Component Properties**
 
 .. figure:: resources/number-component-properties.png
-   :alt: Setting Numeric Component Properties
+   :alt: Setting Numeric stepper Component Properties
    :width: 300px
 
 
 
 **① ID**
 
-Enters the ID of the numeric component. For example, the ID of the
+Enters the ID of the numeric stepper component. For example, the ID of the
 component for entering the number of people in a reservation can be
 named ‘peopleCount’.
 
@@ -569,7 +569,7 @@ change to 100.
 **④ Allow Empty Value**
 
 Checking the **Allow Empty Value** option allows you to clear the number
-displayed on the numeric component. After entering a number in a numeric
+displayed on the numeric stepper component. After entering a number in a numeric stepper
 component, you can change the number again, but cannot clear the number.
 However, by checking this option, you can clear the number displayed on
 the component as described below.
@@ -652,22 +652,18 @@ Enters the ID of the signature component. For example, the ID of the component c
 
 Selects the signature type to be used when signing.
 
--  **Enter Directly:** Clicking the signature area displays the **Signature** pop-up which allows you to sign by selecting one of the
-   multiple signing methods which are **Draw**, **Text**, **Mobile**, **Stamp**, and **Registered signature**.
+-  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
 
--  **Registered Signature:** If the user has already registered a signature on eformsign, then clicking the signature area inserts the
-   registered signature into the document.
+-  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
 
--  **Registered Initials:** If the user has already registered an initial on eformsign, then clicking the signature area inserts the
-   registered initial into the document.
+-  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
 
--  **Registered Stamp:** If the user has already registered an stamp on eformsign, then clicking the signature area inserts the registered
-   stamp into the document.
+-  **Signing method:** If you check the Direct signing only check box, it preventns the signature field from being automatically filled when clicked/touched.
 
 .. note::
 
-   If there is a registered signature or initial, then it will be automatically entered in the signature area when a signature area is
-   clicked. However, if there is no registered signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked.
+   If there is a signature or initial added on eformsign, then it will be automatically entered in the signature area when a signature area is
+   clicked. However, if there is no added signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked.
 
 .. note::
 
