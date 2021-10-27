@@ -7,7 +7,7 @@ Dashboard
 Menu
 ~~~~~~~
 
-After logging into the eformsign dashboard , click the menu
+After logging into the eformsign dashboard, click the menu
 icon (|image1|) at the top left corner of the screen. The sidebar menu
 will be displayed as shown below.
 
@@ -29,7 +29,7 @@ The description of each menu is as follows:
    a template uploaded to eformsign.
 
    -  **New from my file:** You create a document even when there is no
-      template. Simply upload a file (PDF) from your computer and then
+      template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then
       upload it to eformsign. Then, add components onto the document and
       send it to recipients for signature.
 
@@ -60,11 +60,11 @@ The description of each menu is as follows:
    signature to be used when signing a document.
 
 -  **Manage templates:** Only template managers can
-   access this menu.You can view the template list and configure the
+   access this menu. You can view the template list and configure the
    template settings.
 
 -  **Manage company:** Only company managers can access
-   this menu.You can view and edit company information.
+   this menu. You can view and edit company information.
 
    -  **Company profile:** You can view and edit company
       information
@@ -75,15 +75,17 @@ The description of each menu is as follows:
    -  **Manage members:** You can invite members or edit
       member information.
 
-   -  **Manage custom fields:** You can add and
-      configure custom fields such as company, group, and member
-      information.
+   -  **Manage company stamp** You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.
+
+   -  **Signature settings:** Select the signature types that can be
+      used when signing directly on documents.
 
    -  **Notification template management:** You can view and edit email and SMS notification
       templates.
 
-   -  **Signature settings:** Select the signature types that can be
-      used when signing directly on documents.
+   -  **Manage custom fields:** You can add and
+      configure custom fields such as company, group, and member
+      information.
 
 -  **Integration:** Only the company administrator can
    access this menu.You can connect eformsign with external services.
@@ -114,18 +116,13 @@ The description of each menu is as follows:
 -  **Usage status:** You can monitor weekly, monthly, and annual service
    usage status.
 
--  **Download eformsign Form Builder:** DYou can
-   download the Form Builder executable file. By using the Form Builder
-   add-in feature, you can create electronic forms using Microsoft
-   Office files.
+-  **Download eformsign Form Builder:** You can download the Form Builder executable file. By using the Form Builder
+   add-in feature, you can create electronic forms using Microsoft Office files.
 
 Dashboard
 ~~~~~~~~~~~
 
-Dashboard The dashboard is the main page displayed when logging into
-eformsign. In the dashboard, you can view documents that are in
-progress, require your action, etc., and use shortcuts to go to the main
-menus including **New document**.
+The dashboard is the main page displayed when logging into eformsign. In the dashboard, you can view documents that are in progress, require your action, etc., and use shortcuts to go to the main menus including **New document**.
 
 .. figure:: resources/en-dashboard-main.png
    :alt: eformsign Dashboard Screen
@@ -136,11 +133,10 @@ menus including **New document**.
    Displays the **New from template** page where you can create new documents from saved templates.
 
 **② New from my file**
-   New from my file Displays the **New from my file** page where you can create new documents by upload your files from your computer.
+   Displays the **New from my file** page where you can create new documents by upload your files from your computer.
 
 **⑧ Favorites**
-   Displays the templates you added as your Favorites. If you click a template in the Favorites list, you can go to the page where
-   you can create a new document using that template. You can add a template to your Favorites by clicking the Add icon (|image2|). You can delete a template from the Favorites list by clicking the Edit icon (|image3|).
+   Displays the templates you added as your Favorites. If you click a template in the Favorites list, you can go to the page where you can create a new document using that template. You can add a template to your Favorites by clicking the Add icon (|image2|). You can delete a template from the Favorites list by clicking the Edit icon (|image3|).
 
 .. tip::
 
@@ -156,40 +152,38 @@ menus including **New document**.
 
       |image5|
 
-   4. Tick the checkboxes of the templates you want to add to the Favorites
+   4. The templates will be added to the Favorites.
 
 **④ Action required**
-   Shows the number of documents that require action and goes to the **Action required** page when clicked.
+   Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When it clicked the **Action required** is displayed.
 
 **⑤ In progress**
-   Shows the number of documents that are in progress, and goes to the **In progress** page when clicked.
+   Shows the number of documents that are in progress. When clicked, the **In progress** page is displayed.
 
 **⑥ Completed**
-   Goes to the **Completed** page when clicked.
+   Shows the number of all the completed documents you created or participatedin. When clicked, the **Completed** page is displayed.
 
 **⑦ Drafts**
-   Displays the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, the **Drafts** page is displayed.
+   Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, the **Drafts** page is displayed.
 
 **⑧ Action required**
-   Displays the list of the three most recent documents that require your action and the number of documents requiring your
-   action.You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button to go to the **Action required** page.
+   Shows the list of the three most recent documents that require your action and the number of documents requiring your action. You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button in the dashboard next to **Action required** to go to the **Action required** page.
 
 **⑨ Saved draft**
    Shows the number of documents saved in **Drafts** and the three most
    recent ones. You can click on a document name in the list to go to
-   the document and can click the more **(+)** button to go to the
+   the document and can click the more **(+)** button in the dashboard next to **Saved draft** to go to the
    **Drafts** page.
 
 **⑩ In progress**
-   Displays the list of the three most recent documents in progress and
-   the number of documents in progress.You can click on the name of a
+   Shows the number of documents in progress. You can click on the name of a
    document in the list to open the document. Also, you can click the
-   more **(+)** button to go to the **In progress** page.
+   more **(+)** button in the dashboard next to **In progress** to go to the **In progress** page.
 
 **⑪ Completed**
-   Displays the list of the three most recently completed documents. You
+   Shows the list of the three most recently completed documents. You
    can click on a document name to open the document. Also, you can
-   click the more **(+)** button to go to the **Completed** page.
+   click the more **(+)** button in the dashboard next to **Completed** to go to the **Completed** page.
 
 View and Change Basic Information
 ---------------------------------
@@ -199,8 +193,7 @@ for the eformsign service and the company information, click the see
 more icon (|image6|) at the top right corner of the sidebar menu.
 
 .. figure:: resources/en-dashboard-side-menu-icon.png
-   :alt: Location of the Menu Icon for Accessing Personal and Company
-   Info
+   :alt: Location of the Menu Icon for Accessing Personal and Company Info
    :width: 600px
 
 
@@ -356,39 +349,37 @@ You can replace the eformsign logo and symbol with your company logo and symbol 
 Permissions
 -----------
 
-eformsign provides the following five types of roles that can be granted
-to members based on the permissions they have.
+Permissions can be granted to each member. In eformsign, there are many different permissions. The company admin has access to all.
 
 -  **Company administrator**
 
-   The company administrator is the representative of the company and has all permissions for using the eformsign
-   service.
+   The company administrator is the representative of the company and has access to all menus. The company administrator can open, create, and manage all documents, as well as having the ability to transfer the company administrator role to another member.
 
 -  **Company manager**
 
-   Company managers have the permission to access the **Manage company** menu. Company managers can view and edit company,
-   group, and member information and grant permissions to members.
+   Company managers have the ability to access the **Manage company** menu. Company managers can view and edit company, group, and member information and grant permissions to members as well as having the ability to edit messages in eformsign email and SMS notification templates.
 
 -  **Template manager**
 
-   Template managers have the permission to access the **Manage template** menu. Template managers can create new templates
-   by using Form Builder or Web Form Designer, and can also edit, deploy, and delete templates.
+   Template managers have the permission to access the **Manage template** menu. Template managers can create new templates by using Form Builder or Web Form Designer, and can also edit, deploy, and delete templates.
 
--  **Template usage**
 
-   Template usage permission allows to create documents from a template. You can grant **template usage permission (document
-   creation permission)** for each template. When the permission for a template is granted to a member, the member can create documents in the **New from template** page.
+-  **Document creator**
+
+   Document creators can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the **New from template** page.
+
+   **Template editor**
+
+   A template editor of a template can edit the template. You can grant this permission for each template.
 
 -  **Document manager**
 
-   Document managers have the permission to access the **Manage document** menu to view and download documents created from each
-   template. Document managers can be selected for each separate template.
+   Document managers can manage documents created from a template. If a member is assigned as a document manager of a template, then the member can open, delete, download (in PDF & CSV) documents created from that template in the **Manage documents** page.
 
 Company Administrator
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The user who created a company is the company administrator by default, and the company administrator is a super
-administrator having all the permissions to use the eformsign service.
+The user who created a company is the company administrator by default, and the company administrator is the super administrator having all the permissions to use the eformsign service.
 
 The company administrator
 
@@ -401,10 +392,9 @@ The company administrator
 -  Can delegate its role to another member when the company administrator needs to be changed.
 
 When the company administrator deletes her/his eformsign account, the
-company will also be deleted. If the administrator wants to delete only
+company is also be deleted. If the administrator wants to delete only
 the account, then she/he can delegate the administrator permission to
-another member, and then delete the account. Delegating the Company
-Administrator Permission
+another member, and then delete the account.
 
 **Delegating the Company Administrator Permission**
 
@@ -457,7 +447,7 @@ groups/members. The company administrator or company managers can grant the comp
 
 4. Click the **Save** button.
 
-Template Manager Permission
+Template Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Template managers can access the **Manage template** menu, and can create, edit, deploy, and delete templates.
@@ -480,7 +470,7 @@ can only view the template settings and duplicate the template.
 
 2. Select the member in the member list you want to grant the permission.
 
-3. Tick the **Manage company** checkbox in the Permission item displayed at the bottom of the Member info tab to the right of the member list.
+3. Tick the **Manage templates** checkbox in the Permission item displayed at the bottom of the Member info tab to the right of the member list.
 
    .. figure:: resources/en-manage-company-member-permission-template.png
       :alt: Template Manager Permission
@@ -489,17 +479,20 @@ can only view the template settings and duplicate the template.
 
 4. Click the **Save** button.
 
-Template Usage (Document Creation) and Document Management Permissions
+Document Creator, Template Editor, and Document Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The template usage permission allows users to create documents from a template, and document management
-permission allows users to manage documents created from a template and their data.
+A document creator can create documents from a template, template editor can edit documents from a template, and document manager can manage documents created from a template and its data.
 
-Members with the template usage permission for a template can create documents using that template in the **New document** page.
+A document creator for a template can create documents using that template in the **New document** page.
 
-Members with the document management permission for a template can view, delete, and download documents created from that template in the **Manage documents** page.
+A template editor for a template can edit that template in the **Manage templates** page.
 
-**Granting Template Usage and Document Management Permissions**
+A document manager of a template can view, delete, and download documents created from that template in the **Manage documents** page.
+
+
+
+**Granting Document Creator, Template Editor, and Document Manager Permissions**
 
 .. note::
 
@@ -521,14 +514,15 @@ Members with the document management permission for a template can view, delete,
       :width: 700px
 
 
-4. Select the groups or members you want to grant permission for template usage and document management.
+4. Select the groups or members you want to grant permission for the document creator (called **Template usage** here), template editor (called **Template editing** here), and document manager (called **Document management** here). Note that you can only select members as template editors.
 
 5. Click the **Save** button.
 
 Manage Groups and Members
 ----------------------------
 
-You can invite, delete, and edit members and create, add, and delete groups in the **Manage company** menu. Manage groups Manage members
+You can invite, delete, and edit members and create, add, and delete groups in the **Manage company** menu.
+
 
 .. figure:: resources/en-side-menu-manage-group-members.png
    :alt: Manage Company > Manage Groups/Members
@@ -651,9 +645,9 @@ If you register your signature, initial, and stamp in the **My signature** menu,
 
 4. Click the **Edit** or **Delete** button to edit or delete the signature.
 
-**Registering Your Stamp**
+**Adding Your Stamp**
 
-Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after registering the image in the eformsign service.
+Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after adding the image in the eformsign service.
 
 .. note::
 
@@ -683,11 +677,160 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 
 5. Click the **Edit** or **Delete** button to edit or delete the registered stamp.
 
+
+
+.. _scanstamp:
+
+**Life-sized stamp scanning**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. note::
 
-   You can select the signature type that can be attached on an electronic document.
+   To scan a stamp, you must have a stamp ready to scan and download and print out the **Scannable paper for stamps** from eformsign. 
 
-   **Go to Manage company** **> Signature settings** to allow or limit the signature types (draw, text, and stamp) to be displayed on documents' signature fields.
+
+- **Scanning a stamp on a PC**
+
+++++++++++++++++++++++++++++++++++
+
+
+1. Go to the **My signature**\  page -> click the **Register**\  button under **Stamp**\ -> click the **Scan stamp** tab on the pop-up displayed.
+
+   .. figure:: resources/signature-stamp-scan-popup.png
+      :alt: Register button
+      :width: 300px
+
+2. Download and print out **Scannable paper for stamps**\. 
+
+3. Apply the stamp in the center of the scan area in **Scannable paper for stamp**\.
+
+4. Use the mobile device's camera app to recognize the QR code. Once recognized, the **Scan stamp**\  screen will be displayed.
+
+5. In the **Scan stamp**\ screen, scan the scan area in which the stamp is applied.
+
+6. Check whether the stamp is properly recognized and touch the **Send**\  button to add the stamp on eformsign.
+
+
+- **Scanning a stamp on a mobile device**
+
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. Go to the **My signature**\  age -> touch the **Register**\  button under **Stamp**\ -> touch the **Scan stamp** tab on the pop-up displayed.
+
+   .. figure:: resources/signature-stamp-scan-popup-mobile.png
+      :alt: Scan stamp pop-up
+      :width: 300px
+
+2. Download and print out **Scannable paper for stamps**\. 
+
+3. Apply the stamp in the center of the scan area in **Scannable paper for stamp**\.
+
+4. Touch the **Scan** button.
+
+5. Allow camera access in the camera screen.
+
+   .. figure:: resources/stamp-scan-mobile-camera.png
+      :alt: Allow camera access
+      :width: 300px
+
+
+6. In the **Scan stamp**\   screen, scan the scan area in which the stamp is applied.
+
+
+7. Check whether the stamp is properly recognized and touch the **OK**\  button to add the stamp on eformsign.
+
+
+
+.. _caution_scanstamp:
+
+**Precautions to take when scanning life-sized stamps**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. tip::
+
+   **Depending on the device and environment, the stamp may have difficulties in being recognized. In this case, you can take a photo and upload it instead.**
+
+   **Tip 1. If the Open with screen is displayed instead of the stamp scanning screen**
+   
+   In some Android devices, touching the **Scan**\  button may display the **Open with**\  screen (which allows you to select apps such as camera and gallery) instead of the stamp scanning screen. In this case, you can scan life-sized stamps by taking a photo and uploading it as follows.
+
+   ① Select **Camera**\  in the **Open with**\  screen.
+
+   ② In the camera screen, take a photo making sure that the stamp scanning area is clearly shown.
+
+   ③ A stamp will be automatically recognized from the photo.
+
+   **Tip 2. If it says that the stamp was not recognized**
+
+   Stamps may not be recognized in the camera screen of some mobile browsers due to their low resolution. In this case, you can scan life-sized stamps by taking a photo and uploading it as follows.
+
+   1. Open the mobile device's default camera app.
+   2. Take a photo making sure that the stamp scanning area is clearly shown.
+   3. Go back to the stamp screen.
+   4. Touch the **Upload photo** button.
+   5. Select the Gallery app (if needed).
+   6. Select the photo you took.
+   7. When you upload the photo, the stamp will be automatically recognized.
+
+
+Manage company stamp
+-----------------------
+
+
+
+You can add and manage company stamps as well as grant stamp use permissions and view stamp use history in the **Manage company stamp** menu.
+
+.. note::
+
+   Only the company administrator and company managers have access to the Manage company stamp menu. 
+
+
+**Company stamp tab**
+~~~~~~~~~~~~~~~~~~~~~~
+
+In this tab, you can add company stamps by uploading an image or scanning a real life-sized stamps as well as granting stamp use permission to members/groups. Once a company stamp is added, you can edit and delete it, and even view the history of all changes made to the stamp
+
+
+.. figure:: resources/menu-company-stamp.png
+   :alt: Manage company stamp screen
+   :width: 700px
+
+
+To add a company stamp, click the  **Add company stamp** button and upload an image or scan a stamp and also set the stamp name and give permission to groups and members to use the stamp.
+
+.. figure:: resources/company-stamp-register.png
+   :alt: Add company stamp pop up
+   :width: 400px
+
+
+
+- **Stamp name**: Enters the name of the stamp.
+
+- **Description**: Enters the description of the stamp.
+
+- **Stamp image**\: You can add a stamp image by uploading a stamp image using the **Upload image**\  button or the scanning a stamp using the **Scan stamp**\  button.
+
+- **Permission to use**: You can grant permission to use stamp to all or specific members/groups.
+
+
+You can see the history of updates and deletions, and modifications made to a stamp. The following shows the stamp history shown when you click the **History**\  button.
+
+.. figure:: resources/company-stamp-register-history.png
+   :alt: Stamp history screen
+   :width: 700px
+
+
+**Stamp history tab**
+~~~~~~~~~~~~~~~~~~~~~~
+
+In this tab, you can view the history of all the stamps used. You can view information including each of the stamps that were used, the members that used each stamp, the date each stamp was used, etc. You can also download the stamp history in CSV format.
+
+.. figure:: resources/company-stamp-history.png
+   :alt: Stamp history tab
+   :width: 700px
+
+
+
 
 .. |image1| image:: resources/menu_icon.png
 .. |image2| image:: resources/favorites-add.PNG

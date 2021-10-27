@@ -533,15 +533,22 @@ You can click a step to set the details such as **Properties** and **Manage item
 
          The **Require mobile verification to review documents** feature is available in Korea only.
 
-   -  **Hide sheets or sections:** You can choose which sheets/sections of the documents are shown to external recipients in the case of Excel documents with two or more sheets and Word documents with two or more sections.
 
-      .. tip::
+.. _hide:
 
-         Hiding sheets or sections of a document with multiple sheets or sections
+**Hide sheets or sections** 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-         When there are multiple sheets or sections in an uploaded document, the **Hide sheets or sections** option can be shown in the external recipient step of the workflow. You can choose which sheets/sections can be seen by or hidden to the external recipient. You can also choose the person in charge of the step before the external step to choose which sheets/sections can be shown to the external recipient.
+You can choose which sheets/sections of the documents are shown to external recipients in the case of Excel documents with two or more sheets and Word documents with two or more sections.
 
-         |image18|
+.. tip::
+
+   Hiding sheets or sections of a document with multiple sheets or sections
+
+   When there are multiple sheets or sections in an uploaded document, the **Hide sheets or sections** option can be shown in the external recipient step of the workflow. You can choose which sheets/sections can be seen by or hidden to the external recipient. You can also choose the person in charge of the step before the external step to choose which sheets/sections can be shown to the external recipient.
+
+   |image18|
+
 
 **Complete: Step in which a document is finally completed**
    |image19|

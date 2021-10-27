@@ -1,179 +1,175 @@
-<!DOCTYPE html>
-<html  lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Creating documents</title>
-    
-      <link rel="stylesheet" href="../_static/pygments.css">
-      <link rel="stylesheet" href="../_static/theme.css">
-      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
-      
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
 
-      <!-- sphinx script_files -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating documents &mdash; eformsign User Guide 2021.03.31 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-
-      
-      <script src="../_static/theme-vendors.js"></script>
-      <script src="../_static/theme.js" defer></script>
     
-  <link rel="index" title="Index" href="../genindex.html" />
-  <link rel="search" title="Search" href="../search.html" />
-  <link rel="next" title="Introduction to Web Form Designer" href="chapter4.html" />
-  <link rel="prev" title="Basic Info" href="chapter2.html" /> 
-  </head>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  <body>
-    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
-  <router-link to="../index.html" class="home-link">
     
-      <img class="logo" src="../_static/forcs.png" alt="doit logo"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction to Web Form Designer" href="chapter4.html" />
+    <link rel="prev" title="Basic Info" href="chapter2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
     
-  </router-link>
-
-  <div class="links">
-    <navlinks class="can-hide">
-
-
-
-    </navlinks>
-  </div>
-</navbar>
-
-      
-      <div class="sidebar-mask" @click="toggleSidebar(false)">
-      </div>
-        <sidebar @toggle-sidebar="toggleSidebar">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
-          <navlinks>
+
+          
+            <a href="../index.html">
+          
+
+          
             
+            <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
+          
+          </a>
 
-
-
+          
             
-          </navlinks><div id="searchbox" class="searchbox" role="search">
-  <div class="caption"><span class="caption-text">Quick search</span>
-    <div class="searchformwrapper">
-      <form class="search" action="../search.html" method="get">
-        <input type="text" name="q" />
-        <input type="submit" value="Search" />
-        <input type="hidden" name="check_keywords" value="yes" />
-        <input type="hidden" name="area" value="default" />
-      </form>
-    </div>
-  </div>
-</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
-  
-    <div class="sidebar-group">
-      <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign-user-guide">eformsign user guide</a></span>
-      </p>
-      <ul class="current">
-        
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Introduction to eformsign</a>
-
             
-          </li>
+          
 
-        
-          <li class="toctree-l1 "><a href="chapter2.html" class="reference internal ">Basic Info</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Creating documents</a>
-
-            
-              <ul>
-                
-                  <li class="toctree-l2"><a href="#overview" class="reference internal">Overview</a></li>
-                
-                  <li class="toctree-l2"><a href="#new-from-my-file" class="reference internal">New from my file</a></li>
-                
-                  <li class="toctree-l2"><a href="#new-from-template" class="reference internal">New from template</a></li>
-                
-              </ul>
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Web Form Designer</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">Introduction to Form Builder</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Creating templates using Web Form Designer</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Creating templates using Form Builder</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Document Menus</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Customization</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">Connecting with External Services</a>
-
-            
-          </li>
-
-        
-      </ul>
-    </div>
-  
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-        </sidebar>
 
-      <page>
-          <div class="body-header" role="navigation" aria-label="navigation">
-  
-  <ul class="breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-    
-    <li>Creating documents</li>
-  </ul>
-  
+          
+        </div>
 
-  <ul class="page-nav">
-  <li class="prev">
-    <a href="chapter2.html"
-       title="previous chapter">← Basic Info</a>
-  </li>
-  <li class="next">
-    <a href="chapter4.html"
-       title="next chapter">Introduction to Web Form Designer →</a>
-  </li>
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Creating documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-from-my-file">New from my file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-from-template">New from template</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#send-in-bulk">Send in bulk</a></li>
 </ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Introduction to Form Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Creating templates using Web Form Designer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">eformsign User Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Creating documents</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/help/chapter3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
   
+  <hr/>
 </div>
-<hr>
-          <div class="content" role="main">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="creating-documents">
 <span id="createnew"></span><h1>Creating documents<a class="headerlink" href="#creating-documents" title="Permalink to this headline">¶</a></h1>
@@ -182,10 +178,10 @@
 <p>Anyone can use eformsign to easily convert existing documents into
 electronic documents and then send them for signature. In eformsign,
 there are two ways to create and send documents. You can upload a file
-from your PC to eformsign, or use a existing template saved in
+from your PC to eformsign, or use an existing template saved in
 eformsign.</p>
 <ul class="simple">
-<li><p><strong>New from my file</strong>: You can upload your PDF file to create an
+<li><p><strong>New from my file</strong>: You can upload your file to create an
 electronic document and then send it to participants.</p></li>
 <li><p><strong>New from template</strong>: You can use a template uploaded to eformsign
 to create documents. When you click this menu, templates created by
@@ -195,7 +191,7 @@ permissions are displayed on the screen.</p></li>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Templates can be created only by the company administrator or members
-with template management permission, and the templates on the screen
+with the template management permission, and the templates on the screen
 are shown only to members who are given template usage permission for
 a given template.</p>
 <p>You can create a template using Web Form Designer or Form Builder.
@@ -204,22 +200,18 @@ For more information, refer to <a class="reference external" href="chapter6.html
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>When creating a document with <strong>New from my file</strong>, you cannot save it as a template. For documents you plan on using frequently, it is recommended to register it as a template.</p>
+<p>When creating a document with <strong>New from my file</strong>, you cannot save it as a template. For documents you plan on using frequently, it is recommended to create a template first.</p>
 </div>
 </div>
 <div class="section" id="new-from-my-file">
 <h2>New from my file<a class="headerlink" href="#new-from-my-file" title="Permalink to this headline">¶</a></h2>
-<p>You can upload a PDF file you want and then add fields (components) onto the document. Then, you can specify the participants that will fill in each component and enter the information of the document participants and reviewers, and then send the document.</p>
+<p>You can upload a file you want and then add fields (components) onto the document. Then, you can specify the participants that will fill in each component and enter the information of the document participants and reviewers, and then send the document.</p>
 <ol class="arabic">
 <li><p>Go to the <strong>New from my file</strong> menu.</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-menu.png"><img alt="image1" src="../_images/newfrommyfile-menu.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>Upload the PDF document file you want.</p>
+<li><p>Upload the document file you want.</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-uploadfile.png"><img alt="image2" src="../_images/newfrommyfile-uploadfile.png" style="width: 700px;" /></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only PDF files can be uploaded so far. Other file formats are planned to be supported in the future.</p>
-</div>
 </li>
 <li><p>Add the <strong>document participants</strong> that will be participating in document creation and select their roles.</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-participants-popup.png"><img alt="image3" src="../_images/newfrommyfile-participants-popup.png" style="width: 400px;" /></a></p>
@@ -248,7 +240,6 @@ each recipient.</p>
 <p>Participants can fill in components such as signature and text on
 each document, but reviewers cannot fill in components and can
 only approve documents after reviewing them.</p>
-<p>However, if you set a component’s <strong>Who can fill this out</strong> option to ‘anyone’, even reviewers can fill out the component.</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-recipients-type.png"><img alt="image6" src="../_images/newfrommyfile-recipients-type.png" style="width: 400px;" /></a></p>
 </div>
 </li>
@@ -282,7 +273,7 @@ as a created document.</p>
 <p>In the <strong>Design form</strong> step or the <strong>Add recipients</strong> step, you can add participants who will receive the document.</p>
 <p>In the <strong>Add recipients</strong> step, you can set detailed settings for each participant. Additionally, you can add or remove participants as well as adding reviewers who will review the document.</p>
 <p>You have to add the name of each participant and reviewer, and their email/ID. If a participant is a member of your company, you can select the member in the drop-down menu and import their member information stored in eformsign.</p>
-<p>The detail settings in <strong>Recipient options</strong> is displayed differently depending on whether the participant or reviewer is a member of your company or is an external recipient.</p>
+<p>The detail settings in <strong>Recipient options</strong> is displayed differently depending on whether the participant or reviewer is a member of your company or is a non-member.</p>
 <ul>
 <li><p><strong>When the recipient is a member</strong></p>
 <p>The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.</p>
@@ -292,9 +283,8 @@ as a created document.</p>
 </div>
 <p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 400px;" /></a></p>
 </li>
-<li><p><strong>When the recipient is an external recipient</strong></p>
-<p>If the information you enter is not the same as the member information, then the recipient is recognized as an external
-recipient. This requires the below information to be filled in.</p>
+<li><p><strong>When the recipient is a non-member</strong></p>
+<p>If the information you enter is not the same as the member information, then the recipient is recognized as a non-member. This requires the below information to be filled in.</p>
 <ul>
 <li><p><strong>Email/Mobile:</strong> You can select one of email and mobile, or both. If you select mobile, then you must enter the mobile number of the recipient.</p>
 <div class="admonition caution">
@@ -302,11 +292,10 @@ recipient. This requires the below information to be filled in.</p>
 <p>If you select mobile, then the document is sent via SMS and additional charges will apply per SMS.</p>
 </div>
 </li>
-<li><p><strong>Document expiration:</strong> You can set the expiration period in which the external recipient can open and submit the document.</p></li>
-<li><p><strong>Set password:</strong> If you tick the Set password tick box, you can set the password required for the external password to open the document. For the password hint, you can set it to something the recipient will be able tell.</p></li>
-<li><p><strong>Require mobile verification to review documents:</strong> You can require mobile verification in order for the external recipient to open and fill-in the document. Extra charges apply.</p></li>
-<li><p><strong>Require mobile verification to view completed documents:</strong> You can require mobile verification in order for the external
-recipient to open the completed document. Extra charges apply.</p></li>
+<li><p><strong>Document expiration:</strong> You can set the expiration period in which the non-member can open and submit the document.</p></li>
+<li><p><strong>Set password:</strong> If you tick the Set password tick box, you can set the password required for the non-member recipient to open the document. For the password hint, you can set it to something the recipient will be able tell.</p></li>
+<li><p><strong>Require mobile verification to review documents:</strong> You can require mobile verification in order for the non-member recipient to open and fill-in the document. Extra charges apply.</p></li>
+<li><p><strong>Require mobile verification to view completed documents:</strong> You can require mobile verification in order for the non-member recipient to open the completed document. Extra charges apply.</p></li>
 </ul>
 <p><a class="reference internal" href="../_images/newformmyfile-recipientoption-external.png"><img alt="image13" src="../_images/newformmyfile-recipientoption-external.png" style="width: 400px;" /></a></p>
 </li>
@@ -372,6 +361,12 @@ document from.</p>
 <a class="reference internal image-reference" href="../_images/bulk-creation-icon.png"><img alt="Send in bulk icon" src="../_images/bulk-creation-icon.png" style="width: 300px;" /></a>
 </div>
 <ol class="arabic simple" start="3">
+<li><p>Select whether to enter data either by manually (Enter manually) or by uploading an Excel file (Upload file).</p></li>
+</ol>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="Send in bulk screen" src="../_images/bulk_create.png" style="width: 800px;" /></a>
+</div>
+<ol class="arabic simple" start="4">
 <li><p>Enter the values in the columns displayed on the screen.</p></li>
 </ol>
 <div class="figure align-default">
@@ -387,17 +382,20 @@ the number of documents to be created.</p>
 on each cell to enter a value and right-click on the mouse to add or
 delete columns. The value entered in a cell can be copied and pasted,
 and dragged to another cell.</p>
+<p>When entering data by uploading an Excel file, you must first download the Excel file for data entry shown on the screen, then enter data into the fields in the file, and then finally upload the file.</p>
 </div>
 <p>4. Click the <strong>Preview</strong> button on the top right corner of the screen to
-view the documents you created and then click the <strong>Create</strong> button to
-send the documents.</p>
+view the documents you created. To send the document right away, click the <strong>Send now</strong> button. To send the documents at a schedule time and date, click the <strong>Schedule send</strong> button.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If there is an external process step in a template, then the left
-area of the table is highlighted in blue. This area is for entering
-the external recipients’ names, emails, etc. Depending on the
-external process settings, there can be phone numbers, verification
+<p>If there is an non-member participant step in a template, then the left
+area of the table is highlighted in blue. This area is for entering non-member recipients’ names, emails, etc. Depending on the
+non-member participant step settings, there can be phone numbers, verification
 passwords, etc.</p>
+<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
+<p>Right before sending documents in bulk, eformsign will automatically check to see if there are any errors in the document. Documents with an error will not be sent and only normal documents will be sent.</p>
+<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
+<p>When bulk sending documents at a scheduled time, the scheduled time must be at least 10 minutes from the current time.</p>
 <p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
 </div>
 <div class="admonition tip">
@@ -408,33 +406,67 @@ passwords, etc.</p>
 </ol>
 <p>2. Check whether the components are allowed access in Template settings. Only the components that are checked to be allowed access in <strong>Manage templates &gt; Template settings (⚙) &gt; Workflow settings</strong>
 are shown.</p>
+<p>You can delete rows by right-clicking on your mouse and selecting the desired option in the pop-up window.</p>
+<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
 </div>
 </div>
 </div>
 </div>
 
 
+           </div>
+           
           </div>
-          <div class="page-nav">
-            <div class="inner"><ul class="page-nav">
-  <li class="prev">
-    <a href="chapter2.html"
-       title="previous chapter">← Basic Info</a>
-  </li>
-  <li class="next">
-    <a href="chapter4.html"
-       title="next chapter">Introduction to Web Form Designer →</a>
-  </li>
-</ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
-    <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
-</div>
-            </div>
-          </div>
-      </page>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chapter4.html" class="btn btn-neutral float-right" title="Introduction to Web Form Designer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chapter2.html" class="btn btn-neutral float-left" title="Basic Info" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, FORCS CO., LTD. All rights reserved.
+
+    </p>
+  </div>
     
     
-  </body>
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>
