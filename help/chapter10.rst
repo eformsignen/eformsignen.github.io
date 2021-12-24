@@ -1,6 +1,9 @@
+=====================================
 Connecting with External Services
 =====================================
 
+
+---------------------------------------------
 How to Connect with External Cloud Storages
 ---------------------------------------------
 
@@ -33,11 +36,6 @@ eformsign can automatically save completed documents in external cloud storage s
 
 6. Go to the **Workflow** menu.
 
-.. figure:: resources/connect_4.png
-   :alt: Setting the Complete Step of the Workflow
-   :width: 750px
-
-
 7. In the **Properties** tab of the **Complete** step, tick the **Backup completed documents in external cloud storages** checkbox. You can check whether the cloud storages set in the **Cloud storage** menu are connected. When a document is completed, it will be automatically saved in the connected cloud storage as well as in eformsign.
 
 .. figure:: resources/connect_5.png
@@ -45,6 +43,8 @@ eformsign can automatically save completed documents in external cloud storage s
    :width: 750px
 
 
+
+--------------------------
 Analytics and Reporting
 --------------------------
 
