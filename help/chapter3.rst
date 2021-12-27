@@ -44,7 +44,7 @@ You can upload a file you want and then add fields (components) onto the documen
 
    |image1|
 
-2. Upload the document file you want.
+2. Upload the document file you want. The supported file types are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff with a maximum size of 9MB.
 
    |image2|
 
@@ -125,13 +125,23 @@ The detail settings in **Recipient options** is displayed differently depending 
 
 -  **When the recipient is a member**
 
-   The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.
+   **Set document password:** The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.
 
    .. caution::
 
       When the mobile number option is selected, then the document will be sent via SMS and additional charges will occur.
 
+
+   -  **Notification:** **Edit notification message**\ allows you to edit the email or SMS notification message sent to recipients.      
+
+   -  **Document expiration:** Allows to set the period in which recipients can open and submit documents.
+
+      .. tip::
+
+         Setting the valid period to 0 days 0 hours disables the document expiration period.
+
    |image12|
+
 
 -  **When the recipient is a non-member**
 
@@ -145,13 +155,18 @@ The detail settings in **Recipient options** is displayed differently depending 
 
    -  **Document expiration:** You can set the expiration period in which the non-member can open and submit the document.
 
-   -  **Set password:** If you tick the Set password tick box, you can set the password required for the non-member recipient to open the document. For the password hint, you can set it to something the recipient will be able tell.
+   -  **Require document password:** If you tick the Set password tick box, you can set the password required for the non-member recipient to open the document. For the password hint, you can set it to something the recipient will be able tell.
 
-   -  **Require mobile verification to review documents:** You can require mobile verification in order for the non-member recipient to open and fill-in the document. Extra charges apply.
+   -  **Require email verification:** You can require mobile verification in order for the non-member recipient to open and fill-in the document. Extra charges apply.
 
-   -  **Require mobile verification to view completed documents:** You can require mobile verification in order for the non-member recipient to open the completed document. Extra charges apply.
+**Options**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In the Options step, you can set the document title, set and edit document notification settings, and choose whether to timestamp the document.
 
-   |image13|
+.. figure:: resources/wfd-option.png
+   :alt: Options page
+   :width: 700px
+
 
 New from template
 -----------------
@@ -201,8 +216,9 @@ more information, refer to `Creating templates from Web Form Designer <#template
 
       To continue to create a document saved as a draft, click the **Edit** button in the **Action required** page.
 
+
 Send in bulk
-~~~~~~~~~~~~
+-----------------------------------------
 
 When creating a document from a template, you can use the **Send in bulk** feature to send a document to multiple recipients at once.
 
@@ -219,40 +235,50 @@ document from.
 
 .. figure:: resources/bulk-creation-icon.png
    :alt: Send in bulk icon
-   :width: 300px
+   :width: 1000px
 
 3. Select whether to enter data either by manually (Enter manually) or by uploading an Excel file (Upload file).
 
 .. figure:: resources/bulk_create.png
    :alt: Send in bulk screen
-   :width: 800px   
-
-
-4. Enter the values in the columns displayed on the screen.
-
-.. figure:: resources/bulk_create.png
-   :alt: Send in bulk screen
    :width: 800px
 
+.. tip::
 
-.. note::
+**How do enter data when sending documents in bulk**
 
-   Each column of the table contains all the fields of a document. The
-   IDs of components (which are fields in a template) are shown as the
-   name of each column. The last row of the first column (No.) indicates
-   the number of documents to be created.
+**Method 1. Enter manually: max 200 documents (rows)**
 
-   Tables are filled in a similar way as in Excel. You can double-click
-   on each cell to enter a value and right-click on the mouse to add or
-   delete columns. The value entered in a cell can be copied and pasted,
-   and dragged to another cell.
+   Select**Enter manually**\ to display the table in which you can enter data directly. Each column of the table contains all the fields of a document. The IDs of components (which are fields in a template) are shown as the name of each column. The last row of the first column (No.) indicates the number of documents to be created..
+
+   Tables are filled in a similar way as in Excel. You can double-click on each cell to enter a value and right-click on the mouse to add or delete columns. The value entered in a cell can be copied and pasted, and dragged to another cell.
 
    When entering data by uploading an Excel file, you must first download the Excel file for data entry shown on the screen, then enter data into the fields in the file, and then finally upload the file.
+
+   .. figure:: resources/bulksend-edit.png
+      :alt: Send in bulk enter manually option 
+      :width: 700px
+
+**Method 2. Upload file: max 1000 documents (rows)**
+
+   Select **Upload file**\ and download the Excel file for data entry. Once the file is downloaded, enter the neccessary data into the file and upload it.
+
+   .. figure:: resources/bulksend-fileupload.png
+      :alt: Send in bulk upload file option
+      :width: 1000px
 
 
 
 4. Click the **Preview** button on the top right corner of the screen to
-view the documents you created. To send the document right away, click the **Send now** button. To send the documents at a schedule time and date, click the **Schedule send** button.
+view the documents you created. 
+
+
+5. To send the document right away, click the **Send now** button. To send the documents at a schedule time and date, click the **Schedule send** button.
+
+   .. figure:: resources/bulksend-sending.png
+      :alt: send in bulk
+      :width: 700px
+
 
 .. note::
 
@@ -284,7 +310,6 @@ view the documents you created. To send the document right away, click the **Sen
 
    |image17|
 
-
 .. |image1| image:: resources/newfrommyfile-menu.png
    :width: 700px
 .. |image2| image:: resources/newfrommyfile-uploadfile.png
@@ -294,11 +319,11 @@ view the documents you created. To send the document right away, click the **Sen
 .. |image4| image:: resources/newfrommyfile-formdesign.png
    :width: 700px
 .. |image5| image:: resources/newfrommyfile-recipients.png
-   :width: 700px
+   :width: 800px
 .. |image6| image:: resources/newfrommyfile-recipients-type.png
    :width: 400px
 .. |image7| image:: resources/newfrommyfile-option.png
-   :width: 700px
+   :width: 1100px
 .. |image8| image:: resources/menu_icon_3.png
    :width: 20px
 .. |image9| image:: resources/newfrommyfile-saveasdrafts.png
@@ -308,7 +333,7 @@ view the documents you created. To send the document right away, click the **Sen
 .. |image11| image:: resources/newfrommyfile-startfromnow-send.png
    :width: 700px
 .. |image12| image:: resources/newformmyfile-recipientoption-member.png
-   :width: 400px
+   :width: 1200px
 .. |image13| image:: resources/newformmyfile-recipientoption-external.png
    :width: 400px
 .. |image14| image:: resources/menu-startfromtemplate.png

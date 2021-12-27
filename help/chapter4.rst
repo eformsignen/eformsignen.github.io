@@ -12,6 +12,10 @@ and adding components. You can upload files in the **New from template** or the 
 
 .. note::
 
+   File formats that can be uploaded are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff. The maximum file size supported is 9MB.
+
+.. note::
+
    In addition to Web Form Designer, eformsign also provides a
    Microsoft Office Add-in feature named **OZ in Office (Form builder)**
    which allows you to create electronic documents directly in Microsoft
@@ -119,6 +123,8 @@ The components provided in eformsign are as follows:
 
 -  `Text <#text2>`__\ **:** Enters short text (usually 1 to 2 words).
 
+-  `Handwriting <#handwriting2>`__\ **:** Allows to trace text shown on the background.
+
 -  `Multiline <#text2>`__\ **:** Enters long text with multiple lines.
 
 -  `Label <#label2>`__\ **:** Sets the form ID.
@@ -157,6 +163,12 @@ Tooltip Text, and the meaning of each property is as follows:
 
 -  **ID:** Unique ID that identifies each component. When assigning who can fill out a component, you can use the component ID to do so. You can also use the component ID to extract data in CSV format.
 
+-  **Who can fill this out:** Sets which participants are allowed and/or required to fill in the component. All the participants added for this document are shown, and you can check or uncheck the Allowed and Required check boxes for each one. When a documents is sent, components that are checked as Allowed are highlighted in yellow, and components that are check as Required are highlighted in red.
+
+   - **Allowed:** Allows the participant to fill in the component.
+   - **Required:** Requires the participant to fill in the component.
+
+
 -  **Placeholder:** Text displayed as a help message before entering information.
 
 -  **Tooltip Text:** In Windows, the text in the Tooltip Text box of a component is displayed in the form of a
@@ -190,30 +202,24 @@ Clicking the signature area displays the **Signature** pop-up which allows you t
 
 Enters the ID of the signature component. For example, the ID of the component can be ‘signerSignature’ for contract signers.
 
-**② Who can fill this out**
 
-Selects who is allowed or required to fill out the component.
+**② Available signature Type**
 
-**③ Available signature Type**
+Selects the signature type to be used when signing.
 
-Selects the signature type to be used when signing. Clicking the signature area displays the **Signature** pop-up which allows you to sign by selecting one of the multiple signing methods which are **Draw**, **Text**, **Mobile**, and **eformsign App**.
+-  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area or the Signature button inserts the added signature onto the document. If not, then the user manually creates a signature.
 
--  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
+-  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area or the Initials button inserts the added initial onto the document. If not, then the user manually creates an initial.
 
--  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
+-  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area or the Stamp button inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
 
--  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
-
-**④ Signing method** If you check the Disable auto-fill check box, it preventns the signature field from being automatically filled when clicked/touched.
 
 
 .. note::
 
-   If there is an added signature or initial, then it will be automatically entered in the signature area when a signature area is clicked. However, if there is no added signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked.
+   In some cases, you may need to use a stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** button after clicking on a signature area, and then select a stamp image and click **OK**.
 
-.. note::
-
-   In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** tab in the **Signature** pop-up, and then select a stamp image and click **OK**.
+**③ Signing method** If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.
 
 **④ Signature Pen Thick**
 

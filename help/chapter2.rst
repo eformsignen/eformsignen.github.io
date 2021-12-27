@@ -51,6 +51,8 @@ The description of each menu is as follows:
    -  **Completed:** Shows the list of all the completed
       documents you have created or participated in.
 
+   -  **Bulk send:** Shows the list of all the document you have sent in bulk.
+
 -  **Manage documents:** Only document managers can
    access this menu. Document managers can view all documents created
    from a template that they have permission to access.The company
@@ -194,7 +196,7 @@ more icon (|image6|) at the top right corner of the sidebar menu.
 
 .. figure:: resources/en-dashboard-side-menu-icon.png
    :alt: Location of the Menu Icon for Accessing Personal and Company Info
-   :width: 600px
+   :width: 1500px
 
 
 If you click the (|image7|) icon in the sidebar, the following menu is
@@ -202,7 +204,7 @@ displayed.
 
 .. figure:: resources/en-dashboard-side-menu-icon-drop-down.png
    :alt: View and Edit My Profile
-   :width: 600px
+   :width: 1500px
 
 
 -  **Change company:** If you are a member of multiple companies, click the **Change company** menu to view the list of your
@@ -700,7 +702,11 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
       :alt: Register button
       :width: 300px
 
-2. Download and print out **Scannable paper for stamps**\. 
+2. Download and print out **Scannable paper for stamps**\.
+
+   .. figure:: resources/signature-stamp-scan-paper.png
+      :alt: Scannable paper for stamps
+      :width: 400px 
 
 3. Apply the stamp in the center of the scan area in **Scannable paper for stamp**\.
 

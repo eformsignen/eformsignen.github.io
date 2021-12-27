@@ -133,6 +133,8 @@ using eformsign.
    -  **Completed:** Shows the list of all the completed
       documents you have created or participated in.
 
+   -  **Bulk send:** Shows the list of all the document you have sent in bulk.
+
 -  **Drafts**
 
    Shows the list of documents saved as draft when creating a
@@ -160,18 +162,26 @@ using eformsign.
 
    The representative of a company and has full permission to use eformsign.
 
--  **Company Management Permission**
+-  **Company manager**
 
    Members with company management permission can access company
    management menus, and can manage the company, groups, and members.
 
--  **Template Management Permission**
+-  **Template manager**
 
    With this permission, a member can access the **Manage templates**
    menu and can manage templates. Managing templates includes creating,
    deploying, editing, and deleting eformsign templates.
 
--  **Document Management Permission**
+   -**Document creator**
+
+   With this permission, a member can can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the New from template page.
+
+   -**Template editor**
+
+   With this permission, a member who is a template editor of a template can edit the template. You can grant this permission for each template.
+
+-  **Document manager**
 
    With this permission, a member can access the **Manage documents**
    menu to view the documents created from each template, approve
