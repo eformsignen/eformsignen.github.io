@@ -1,183 +1,205 @@
-<!DOCTYPE html>
-<html  lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Introduction to Form Builder</title>
-    
-      <link rel="stylesheet" href="../_static/pygments.css">
-      <link rel="stylesheet" href="../_static/theme.css">
-      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
-      
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
 
-      <!-- sphinx script_files -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction to Form Builder &mdash; eformsign User Guide 2021.03.31 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-
-      
-      <script src="../_static/theme-vendors.js"></script>
-      <script src="../_static/theme.js" defer></script>
     
-  <link rel="index" title="Index" href="../genindex.html" />
-  <link rel="search" title="Search" href="../search.html" />
-  <link rel="next" title="Creating templates using Web Form Designer" href="chapter6.html" />
-  <link rel="prev" title="Introduction to Web Form Designer" href="chapter4.html" /> 
-  </head>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  <body>
-    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
-  <router-link to="../index.html" class="home-link">
     
-      <img class="logo" src="../_static/forcs.png" alt="doit logo"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Creating templates using Web Form Designer" href="chapter6.html" />
+    <link rel="prev" title="Introduction to Web Form Designer" href="chapter4.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
     
-  </router-link>
-
-  <div class="links">
-    <navlinks class="can-hide">
-
-
-
-    </navlinks>
-  </div>
-</navbar>
-
-      
-      <div class="sidebar-mask" @click="toggleSidebar(false)">
-      </div>
-        <sidebar @toggle-sidebar="toggleSidebar">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
-          <navlinks>
+
+          
+            <a href="../index.html">
+          
+
+          
             
+            <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
+          
+          </a>
 
-
-
+          
             
-          </navlinks><div id="searchbox" class="searchbox" role="search">
-  <div class="caption"><span class="caption-text">Quick search</span>
-    <div class="searchformwrapper">
-      <form class="search" action="../search.html" method="get">
-        <input type="text" name="q" />
-        <input type="submit" value="Search" />
-        <input type="hidden" name="check_keywords" value="yes" />
-        <input type="hidden" name="area" value="default" />
-      </form>
-    </div>
-  </div>
-</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
-  
-    <div class="sidebar-group">
-      <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign-user-guide">eformsign user guide</a></span>
-      </p>
-      <ul class="current">
-        
-          <li class="toctree-l1 "><a href="chapter1.html" class="reference internal ">Introduction to eformsign</a>
-
             
-          </li>
+          
 
-        
-          <li class="toctree-l1 "><a href="chapter2.html" class="reference internal ">Basic Info</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Creating documents</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Introduction to Web Form Designer</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Introduction to Form Builder</a>
-
-            
-              <ul>
-                
-                  <li class="toctree-l2"><a href="#overview" class="reference internal">Overview</a></li>
-                
-                  <li class="toctree-l2"><a href="#overview-of-components" class="reference internal">Overview of Components</a></li>
-                
-                  <li class="toctree-l2"><a href="#how-to-use-each-component-type" class="reference internal">How to Use Each Component Type</a></li>
-                
-                  <li class="toctree-l2"><a href="#upload-form-file" class="reference internal">Upload Form File</a></li>
-                
-                  <li class="toctree-l2"><a href="#configuring-template-settings" class="reference internal">Configuring Template Settings</a></li>
-                
-              </ul>
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">Creating templates using Web Form Designer</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">Creating templates using Form Builder</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">Document Menus</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">Customization</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">Connecting with External Services</a>
-
-            
-          </li>
-
-        
-      </ul>
-    </div>
-  
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-        </sidebar>
 
-      <page>
-          <div class="body-header" role="navigation" aria-label="navigation">
-  
-  <ul class="breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-    
-    <li>Introduction to Form Builder</li>
-  </ul>
-  
+          
+        </div>
 
-  <ul class="page-nav">
-  <li class="prev">
-    <a href="chapter4.html"
-       title="previous chapter">← Introduction to Web Form Designer</a>
-  </li>
-  <li class="next">
-    <a href="chapter6.html"
-       title="next chapter">Creating templates using Web Form Designer →</a>
-  </li>
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to Form Builder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-and-installing-form-builder">Downloading and Installing Form Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#form-builder-menu-layout">Form Builder Menu Layout</a></li>
 </ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overview-of-components">Overview of Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#component-types">Component Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#accessing-component-properties">Accessing Component Properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-add-components">How to Add Components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#adding-components-in-excel">Adding Components in Excel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-components-in-word-or-powerpoint">Adding Components in Word or PowerPoint</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-delete-components">How to Delete Components</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-each-component-type">How to Use Each Component Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#check">Check</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#radio">Radio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#combo">Combo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#text-and-multiline">Text and Multiline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datetime">Datetime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#numeric-stepper">Numeric stepper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toggle">Toggle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#signature">Signature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera">Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#voice">Voice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#attachment">Attachment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usedate">Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#document">Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#label">Label</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-form-file">Upload Form File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-template-settings">Configuring Template Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Creating templates using Web Form Designer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">eformsign User Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introduction to Form Builder</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/help/chapter5.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
   
+  <hr/>
 </div>
-<hr>
-          <div class="content" role="main">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="introduction-to-form-builder">
 <span id="formbuilder"></span><h1>Introduction to Form Builder<a class="headerlink" href="#introduction-to-form-builder" title="Permalink to this headline">¶</a></h1>
@@ -276,7 +298,7 @@ displayed as below, then it was installed properly.</p>
 <li><p><a class="reference external" href="#text">Multiline</a><strong>:</strong> Enters long text with multiple lines.</p></li>
 <li><p><a class="reference external" href="#combo">Combo</a><strong>:</strong> Displays a drop-down menu that allows you to select an item.</p></li>
 <li><p><a class="reference external" href="#date">Datetime</a><strong>:</strong> Enters a specific date.</p></li>
-<li><p><a class="reference external" href="#numeric">Numeric</a><strong>:</strong> Enters a number.</p></li>
+<li><p><a class="reference external" href="#numericstepper">Numeric stepper</a><strong>:</strong> Enters a number.</p></li>
 <li><p><a class="reference external" href="#toggle">Toggle</a><strong>:</strong> Switches to another value if two or more values are entered.</p></li>
 <li><p><a class="reference external" href="#signature">Signature</a><strong>:</strong> Enters a signature.</p></li>
 <li><p><a class="reference external" href="#camera">Camera</a><strong>:</strong> Takes a photo using a camera or selects a photo from an album in devices with a built-in camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).</p></li>
@@ -513,7 +535,7 @@ component.</p>
 <p>Checking this option automatically enters the date (the date in which the document is opened) when the document is opened. This option is
 checked by default when you add a <strong>Datetime</strong> component. You can change the date by clicking the component.</p>
 <p><strong>⑤ Allow Empty Value</strong></p>
-<p>Checking this option allows you to clear the number displayed on a Numeric component. In a Datetime component, once you select a date, you
+<p>Checking this option allows you to clear the number displayed on a Numeric stepper component. In a Datetime component, once you select a date, you
 can change it to another date but cannot clear the date. However, checking this option allows you to clear the date displayed on the
 Datetime component. If no date is selected in the Datetime component but the <strong>Display Today for Empty Value</strong> option is checked, then the date
 component is automatically filled in with the date in which the document is opened.</p>
@@ -524,8 +546,8 @@ component is automatically filled in with the date in which the document is open
 <p><strong>⑥ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
 </div>
-<div class="section" id="numeric">
-<h3>Numeric<a class="headerlink" href="#numeric" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="numeric-stepper">
+<h3>Numeric stepper<a class="headerlink" href="#numeric-stepper" title="Permalink to this headline">¶</a></h3>
 <p>This component is used for entering a number.
 Clicking the component displays two arrows on the right, and you can
 increase or decrease the number by clicking them. In PCs, you can
@@ -535,10 +557,10 @@ numbers and select the one you want.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_numeric.png"><img alt="image11" src="../_images/form-builder-components_numeric.png" style="width: 730px;" /></a></p>
 <p><strong>Component Properties</strong></p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/number-component-properties.png"><img alt="Setting Numeric Component Properties" src="../_images/number-component-properties.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/number-component-properties.png"><img alt="Setting Numeric stepper Component Properties" src="../_images/number-component-properties.png" style="width: 300px;" /></a>
 </div>
 <p><strong>① ID</strong></p>
-<p>Enters the ID of the numeric component. For example, the ID of the
+<p>Enters the ID of the numeric stepper component. For example, the ID of the
 component for entering the number of people in a reservation can be
 named ‘peopleCount’.</p>
 <p><strong>② Unit of Change</strong></p>
@@ -557,7 +579,7 @@ is set to 100 and you enter 101, then the number will automatically
 change to 100.</p>
 <p><strong>④ Allow Empty Value</strong></p>
 <p>Checking the <strong>Allow Empty Value</strong> option allows you to clear the number
-displayed on the numeric component. After entering a number in a numeric
+displayed on the numeric stepper component. After entering a number in a numeric stepper
 component, you can change the number again, but cannot clear the number.
 However, by checking this option, you can clear the number displayed on
 the component as described below.</p>
@@ -610,19 +632,15 @@ previously registered signature.</p>
 <p><strong>② Signature Type</strong></p>
 <p>Selects the signature type to be used when signing.</p>
 <ul class="simple">
-<li><p><strong>Enter Directly:</strong> Clicking the signature area displays the <strong>Signature</strong> pop-up which allows you to sign by selecting one of the
-multiple signing methods which are <strong>Draw</strong>, <strong>Text</strong>, <strong>Mobile</strong>, <strong>Stamp</strong>, and <strong>Registered signature</strong>.</p></li>
-<li><p><strong>Registered Signature:</strong> If the user has already registered a signature on eformsign, then clicking the signature area inserts the
-registered signature into the document.</p></li>
-<li><p><strong>Registered Initials:</strong> If the user has already registered an initial on eformsign, then clicking the signature area inserts the
-registered initial into the document.</p></li>
-<li><p><strong>Registered Stamp:</strong> If the user has already registered an stamp on eformsign, then clicking the signature area inserts the registered
-stamp into the document.</p></li>
+<li><p><strong>Signature:</strong> If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.</p></li>
+<li><p><strong>Initial:</strong> If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.</p></li>
+<li><p><strong>Stamp:</strong> If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.</p></li>
+<li><p><strong>Signing method:</strong> If you check the Direct signing only check box, it preventns the signature field from being automatically filled when clicked/touched.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If there is a registered signature or initial, then it will be automatically entered in the signature area when a signature area is
-clicked. However, if there is no registered signature or initial, then a regular <strong>Signature</strong> pop-up will be displayed when a signature area is clicked.</p>
+<p>If there is a signature or initial added on eformsign, then it will be automatically entered in the signature area when a signature area is
+clicked. However, if there is no added signature or initial, then a regular <strong>Signature</strong> pop-up will be displayed when a signature area is clicked.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -874,27 +892,59 @@ permanently remove documents created from the template.</p></li>
 </div>
 
 
+           </div>
+           
           </div>
-          <div class="page-nav">
-            <div class="inner"><ul class="page-nav">
-  <li class="prev">
-    <a href="chapter4.html"
-       title="previous chapter">← Introduction to Web Form Designer</a>
-  </li>
-  <li class="next">
-    <a href="chapter6.html"
-       title="next chapter">Creating templates using Web Form Designer →</a>
-  </li>
-</ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
-    <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
-</div>
-            </div>
-          </div>
-      </page>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chapter6.html" class="btn btn-neutral float-right" title="Creating templates using Web Form Designer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chapter4.html" class="btn btn-neutral float-left" title="Introduction to Web Form Designer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, FORCS CO., LTD. All rights reserved.
+
+    </p>
+  </div>
     
     
-  </body>
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>

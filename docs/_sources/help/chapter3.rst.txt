@@ -9,10 +9,10 @@ Overview
 Anyone can use eformsign to easily convert existing documents into
 electronic documents and then send them for signature. In eformsign,
 there are two ways to create and send documents. You can upload a file
-from your PC to eformsign, or use a existing template saved in
+from your PC to eformsign, or use an existing template saved in
 eformsign.
 
--  **New from my file**: You can upload your PDF file to create an
+-  **New from my file**: You can upload your file to create an
    electronic document and then send it to participants.
 
 -  **New from template**: You can use a template uploaded to eformsign
@@ -23,34 +23,31 @@ eformsign.
 .. note::
 
    Templates can be created only by the company administrator or members
-   with template management permission, and the templates on the screen
+   with the template management permission, and the templates on the screen
    are shown only to members who are given template usage permission for
    a given template.
 
-   You can create a template using Web From Designer or Form Builder.
+   You can create a template using Web Form Designer or Form Builder.
    For more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__ and
    `Tempate Form builder <chapter7.html#template_fb>`__.
 
 .. important::
 
-   When creating a document with **New from my file**, you cannot save it as a template. For documents you plan on using frequently, it is recommended to register it as a template.
+   When creating a document with **New from my file**, you cannot save it as a template. For documents you plan on using frequently, it is recommended to create a template first.
 
 New from my file
 -------------------
 
-You can upload a PDF file you want and then add fields (components) onto the document. Then, you can specify the participants that will fill in each component and enter the information of the document participants and reviewers, and then send the document.
+You can upload a file you want and then add fields (components) onto the document. Then, you can specify the participants that will fill in each component and enter the information of the document participants and reviewers, and then send the document.
 
 1. Go to the **New from my file** menu.
 
    |image1|
 
-2. Upload the PDF document file you want.
+2. Upload the document file you want.
 
    |image2|
 
-   .. note::
-
-      Only PDF files can be uploaded so far. Other file formats are planned to be supported in the future.
 
 3. Add the **document participants** that will be participating in document creation and select their roles.
 
@@ -60,7 +57,7 @@ You can upload a PDF file you want and then add fields (components) onto the doc
 
       You can add participants by clicking **Add new participant** and up to 30 can be added. Note that you can change, add, or delete participant information in the **Add recipient** step after the **Design form** step.
 
-4. Add the components each participants will fill in and then set component properties on the right.
+4. Add the components each participant will fill in and then set component properties on the right.
 
    |image4|
 
@@ -84,8 +81,6 @@ You can upload a PDF file you want and then add fields (components) onto the doc
       Participants can fill in components such as signature and text on
       each document, but reviewers cannot fill in components and can
       only approve documents after reviewing them.
-
-      However, if you set a component's **Who can fill this out** option to 'anyone', even reviewers can fill out the component.
 
       |image6|
 
@@ -114,8 +109,7 @@ You can upload a PDF file you want and then add fields (components) onto the doc
       A document is created once you click **Start now**, and it counts
       as a created document.
 
-8. If you click the **Send** button after reviewing/filling in the
-   document, then the document is sent to recipients.
+8. If you click the **Send** button after reviewing/filling in the document, then the document is sent to recipients.
 
    |image11|
 
@@ -127,7 +121,7 @@ In the **Add recipients** step, you can set detailed settings for each participa
 
 You have to add the name of each participant and reviewer, and their email/ID. If a participant is a member of your company, you can select the member in the drop-down menu and import their member information stored in eformsign.
 
-The detail settings in **Recipient options** is displayed differently depending on whether the participant or reviewer is a member of your company or is an external recipient.
+The detail settings in **Recipient options** is displayed differently depending on whether the participant or reviewer is a member of your company or is a non-member.
 
 -  **When the recipient is a member**
 
@@ -139,10 +133,9 @@ The detail settings in **Recipient options** is displayed differently depending 
 
    |image12|
 
--  **When the recipient is an external recipient**
+-  **When the recipient is a non-member**
 
-   If the information you enter is not the same as the member information, then the recipient is recognized as an external
-   recipient. This requires the below information to be filled in.
+   If the information you enter is not the same as the member information, then the recipient is recognized as a non-member. This requires the below information to be filled in.
 
    -  **Email/Mobile:** You can select one of email and mobile, or both. If you select mobile, then you must enter the mobile number of the recipient.
 
@@ -150,14 +143,13 @@ The detail settings in **Recipient options** is displayed differently depending 
 
          If you select mobile, then the document is sent via SMS and additional charges will apply per SMS.
 
-   -  **Document expiration:** You can set the expiration period in which the external recipient can open and submit the document.
+   -  **Document expiration:** You can set the expiration period in which the non-member can open and submit the document.
 
-   -  **Set password:** If you tick the Set password tick box, you can set the password required for the external password to open the document. For the password hint, you can set it to something the recipient will be able tell.
+   -  **Set password:** If you tick the Set password tick box, you can set the password required for the non-member recipient to open the document. For the password hint, you can set it to something the recipient will be able tell.
 
-   -  **Require mobile verification to review documents:** You can require mobile verification in order for the external recipient to open and fill-in the document. Extra charges apply.
+   -  **Require mobile verification to review documents:** You can require mobile verification in order for the non-member recipient to open and fill-in the document. Extra charges apply.
 
-   -  **Require mobile verification to view completed documents:** You can require mobile verification in order for the external
-      recipient to open the completed document. Extra charges apply.
+   -  **Require mobile verification to view completed documents:** You can require mobile verification in order for the non-member recipient to open the completed document. Extra charges apply.
 
    |image13|
 
@@ -169,8 +161,8 @@ frequently used forms and saving them as templates by adding workflows
 and other details.
 
 Templates can be created by using Web Form Designer or Form Builder. For
-more information, refer to `Web Form Designer <#template_wd>`__\ and
-`Form Builder <#template_fb>`__.
+more information, refer to `Creating templates from Web Form Designer <#template_wd>`__\  and
+`Creating templates from Form Builder <#template_fb>`__.
 
 .. note::
 
@@ -229,8 +221,14 @@ document from.
    :alt: Send in bulk icon
    :width: 300px
 
+3. Select whether to enter data either by manually (Enter manually) or by uploading an Excel file (Upload file).
 
-3. Enter the values in the columns displayed on the screen.
+.. figure:: resources/bulk_create.png
+   :alt: Send in bulk screen
+   :width: 800px   
+
+
+4. Enter the values in the columns displayed on the screen.
 
 .. figure:: resources/bulk_create.png
    :alt: Send in bulk screen
@@ -249,17 +247,27 @@ document from.
    delete columns. The value entered in a cell can be copied and pasted,
    and dragged to another cell.
 
+   When entering data by uploading an Excel file, you must first download the Excel file for data entry shown on the screen, then enter data into the fields in the file, and then finally upload the file.
+
+
+
 4. Click the **Preview** button on the top right corner of the screen to
-view the documents you created and then click the **Create** button to
-send the documents.
+view the documents you created. To send the document right away, click the **Send now** button. To send the documents at a schedule time and date, click the **Schedule send** button.
 
 .. note::
 
-   If there is an external process step in a template, then the left
-   area of the table is highlighted in blue. This area is for entering
-   the external recipients’ names, emails, etc. Depending on the
-   external process settings, there can be phone numbers, verification
+   If there is an non-member participant step in a template, then the left
+   area of the table is highlighted in blue. This area is for entering non-member recipients’ names, emails, etc. Depending on the
+   non-member participant step settings, there can be phone numbers, verification
    passwords, etc.
+
+   |image17|
+
+   Right before sending documents in bulk, eformsign will automatically check to see if there are any errors in the document. Documents with an error will not be sent and only normal documents will be sent.
+
+   |image17|
+
+   When bulk sending documents at a scheduled time, the scheduled time must be at least 10 minutes from the current time.
 
    |image17|
 
@@ -271,6 +279,11 @@ send the documents.
 
    2. Check whether the components are allowed access in Template settings. Only the components that are checked to be allowed access in **Manage templates > Template settings (⚙) > Workflow settings**
    are shown.
+
+   You can delete rows by right-clicking on your mouse and selecting the desired option in the pop-up window.
+
+   |image17|
+
 
 .. |image1| image:: resources/newfrommyfile-menu.png
    :width: 700px
