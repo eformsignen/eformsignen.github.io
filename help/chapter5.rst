@@ -134,6 +134,8 @@ The components provided in eformsign are as follows:
    :alt: Component Types
    :width: 730px
 
+Basic Components
+--------------------------
 
 -  `Check <#check>`__\ **:** Ticks a check box.
 
@@ -141,7 +143,11 @@ The components provided in eformsign are as follows:
 
 -  `Text <#text>`__\ **:** Enters short text (usually 1 to 2 words).
 
+-  `Handwriting <#handwriting>`__\ **:** Allows to trace text shown on the background.
+
 -  `Multiline <#text>`__\ **:** Enters long text with multiple lines.
+
+-  `Label <#label>`__\ **:** Sets the form ID.
 
 -  `Combo <#combo>`__\ **:** Displays a drop-down menu that allows you to select an item.
 
@@ -159,13 +165,16 @@ The components provided in eformsign are as follows:
 
 -  `Attachment <#attach>`__\ **:** Attaches a file.
 
+
+Data Components
+--------------------------
+
 -  `User <#user>`__\ **:** Enters information of the document user.
 
 -  `Date <#usedate>`__\ **:** Enters the date in which the document is created or modified.
 
 -  `Document <#document>`__\ **:** Enters the document number or ID in the document itself.
 
--  `Label <#label>`__\ **:** Sets the form ID.
 
 Accessing Component Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -466,6 +475,62 @@ Displays the description in Tooltip Text when you hover the mouse over a
 component.
 
 .. _date:
+
+
+손글씨
+--------------------
+
+손글씨 컴포넌트는 미리 입력된 텍스트를 직접 따라쓰도록 해야할 때 사용합니다. 
+
+문서 바탕에 표시될 텍스트를 입력하고 문서 수신자는 해당 텍스트를 자필로 따라쓰기 할 수 있습니다. 
+
+.. figure:: resources/handwriting-component-fb.png
+   :alt: 손글씨 컴포넌트
+
+
+.. figure:: resources/handwriting-component-example.png
+   :alt: 손글씨 컴포넌트 예시
+
+**컴포넌트 속성**
+
+.. figure:: resources/handwriting-component-properties_web.pnghandwriting-component-properties_fb.png
+   :alt: 손글씨 컴포넌트 속성 설정하기
+
+
+**① ID**
+
+손글씨 컴포넌트의 ID를 입력합니다. 
+
+
+**② 펜 두께**
+
+따라쓰기 할 때 표시되는 선의 두께를 설정합니다.
+
+**③ 펜 색**
+
+따라쓰기 할 때 표시되는 선의 색를 설정합니다.
+
+**④ 따라쓰기 텍스트 유지**
+
+손글씨 컴포넌트에 입력한 텍스트가 표시되도록 설정합니다.
+
+
+Label
+~~~~~
+
+This component is used for setting the form ID of a document.
+
+**Component Properties**
+
+.. figure:: resources/label_property.png
+   :alt: Setting Label Component Properties
+   :width: 400px
+
+
+
+**① ID**
+
+Sets the label component ID.
 
 Datetime
 ~~~~~~~~
@@ -936,22 +1001,7 @@ Selects the type of information that will be used.
 
 -  **Document no.:** The document number set in **Template settings > General.** For information on how to set a document number, go to `Generating and viewing a document number <chapter6.html#docnumber_wd>`__.
 
-Label
-~~~~~
 
-This component is used for setting the form ID of a document.
-
-**Component Properties**
-
-.. figure:: resources/label_property.png
-   :alt: Setting Label Component Properties
-   :width: 400px
-
-
-
-**① ID**
-
-Sets the label component ID.
 
 Upload Form File
 ----------------
