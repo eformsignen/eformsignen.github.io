@@ -66,7 +66,7 @@ Each documents menu consists of the following five sections:
 
    In addition to performing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and many more.
 
-3. **Document list and**\ `actions <#additional_work>`__
+3. **Document list and**\  `actions <#additional_work>`__
 
    Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.
 
@@ -389,33 +389,36 @@ The Drafts menu stores the documents in the **New from my file** step that have 
 Bulk send document box
 -------------------------
 
-In the **Bulk send document box**, you can see all the documents sent in bulk. You can check the status of the documents sent in bulk, change scheduled sending, void, or resend bulk-sent documents.
+In the **Bulk send document box**, you can see all the documents sent in bulk. You can check the status of documents sent in bulk, cancel or change the date & time of scheduled sends, or resend bulk-sent documents.
 
 .. figure:: resources/bulksend-documents.png
-   :alt: 일괄 작성 문서함
+   :alt: Bulk send document box
 
 
 
-In the list of the bulk send documents, click **Detail view** to see the detailed information of the documents such as response status, step where documents being sent, and etc.
+In the list of bulk sent documents, click **Detail view** to see the detailed information of the documents such as response status, the step in the workflow of the sent document, etc.
 
-- Check response status of bulk-sent documents 
-- Resend in bulk or individually, void, download PDF or/and CSV files
-- View step, document status and history of each document
+- Check the response status of bulk-sent documents 
+- Resend documents in bulk or individually
+- Void documents
+- Download PDF or/and CSV files
+- View the current document step, document status, and history of each document
 
 
 .. figure:: resources/bulksend-documents-detail.png
-   :alt: 일괄 작성 문서함-상세보기
+   :alt: Bulk send-detail view
 
 .. tip::
 
-   When you are resending documents in bulk, you can not change the recipients' contact information. The documents will be sent to the contact information that you entered previously.
+   When you are resending documents in bulk, you cannot change the recipients' contact information. The documents will be sent to the contact information that you entered previously.
    It you want to change the contact information, resend documents seperately. 
 
 
-For documents scheduled for sent later, you can change or cancel the set schedule.
+For documents scheduled to be sent later, you can change or cancel the scheduled send.
 
 .. figure:: resources/bulksend-schedule-change.png
-   :alt: 일괄 작성 문서함-예약 변경
+   :alt: Bulk send document box-change schedule
+   :width: 500px
 
 
 .. note::
@@ -452,6 +455,6 @@ For documents scheduled for sent later, you can change or cancel the set schedul
 .. |image14| image:: resources/column_icon.png
    :width: 35px
 .. |image15| image:: resources/draftbox-menu.png
-   :width: 700px
+   :width: 400px
 .. |image16| image:: resources/draftbox-documentlist.png
    :width: 700px

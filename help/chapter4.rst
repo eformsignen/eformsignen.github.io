@@ -67,22 +67,13 @@ Web Form Designer Menu Layout
 
 Web Form Designer consists of a screen that displays the file, the left and right panels, and the top bar.
 
-.. figure:: resources/web-form_4a.png
-   :alt: Web Form Designer Menu Layout - Create from template
-   :width: 700px
-
 
 .. figure:: resources/web-form_4b.png
    :alt: Web Form Designer Menu Layout - Create from my file
    :width: 700px
 
 
-1. **Document display screen:** Displays the uploaded file.
-
-2. **Top bar:** In **Create from template**, there are two steps:
-   **Design form** and **Configure**. You can also go back to the
-   **Manage templates** page and preview the template with components added. In **Create from my file**, there are three steps: **Design form**, **Add recipients**, and **Options**. After designing a form,
-   you can create a document or save the form as a draft.
+1. **Top bar:** In **Create from template**\, there are two steps: **Design form**\ and **Configure**\. You can also go back to the Manage templates page and preview the template with components added. In **Create from my file**\, there are three steps: **Design form**\**, **Add recipients**\, and **Options**\. After designing a form, you can create a document or save the form as a draft.
 
    .. note::
 
@@ -90,13 +81,19 @@ Web Form Designer consists of a screen that displays the file, the left and righ
       step. You can set the workflow, permission, etc. Make sure to
       configure the settings before you finish creating a document.
 
-3. **Component list:** There are 14 basic components including text,
+2. **Document display screen:** Displays the uploaded file.
+
+
+3. **Participants:** Select the participants of the document and then drag and drop the components to be filled in by each participant. You can add new participants by clicking the **Add new participant**\**. There can be up to 30 participants for each document.
+
+
+4. **Component list:** There are 14 basic components including text,
    multiline, signature, check, and radio. There are also two data
    components which are document ID and document number. More components
    including custom and shape components are planned to be added in the
    future.
 
-4. **Properties:** Allows to set the properties of each component after
+5. **Properties:** Allows to set the properties of each component after
    adding components such as Signature, Text, and Check by clicking and
    locating them to the document display screen.
 
@@ -219,7 +216,13 @@ Selects the signature type to be used when signing.
 
    In some cases, you may need to use a stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** button after clicking on a signature area, and then select a stamp image and click **OK**.
 
-**③ Signing method** If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.
+   .. figure:: resources/select-signature-type.png
+      :alt: Select signature type
+      :width: 300px
+
+**③ Signing method**
+
+If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.
 
 **④ Signature Pen Thick**
 
@@ -282,18 +285,15 @@ If you add a company stamp component, documents that require a company stamp wil
 
 **Component Properties**
 
-.. figure:: resources/wfd-text-component-properties.png
+.. figure:: resources/companystamp-component-properties_web.png
    :alt: Setting Text and Multiline Component Properties
-   :width: 400px
+   :width: 250px
 
 
 **① ID**
 
-EEnter the ID of the Company stamp component. For example, the ID of the component for applying a company stamp can be named ‘companystamp’.
+Enter the ID of the Company stamp component. For example, the ID of the component for applying a company stamp can be named ‘companystamp’.
 
-.. note::
-
-   All components must have an ID. An ID is automatically generated when you create a component, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a component for entering John Doe, Jane Doe, etc. as 'name'. By doing so, it is easier to identify components when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
 
 **② Who can fill this out**
 
@@ -304,12 +304,6 @@ Sets whether the recipient is required or allowed to fill in this component.
 
 Sets the help message displayed.
 
-.. tip::
-
-   If you check the Show icon check box, the company stamp icon is shown on the camera
-   area.
-
-   |image|
 
 **④ Tooltip Text**
 
@@ -366,6 +360,43 @@ Displays a help message when no value is entered.
 **⑦ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
+
+
+.. _handwriting2:
+
+Handwriting
+--------------------
+
+The handwriting component is used to trace a pre-written tex. 
+
+You can type in the text to be displayed on a document in which recipients can trace.
+
+.. figure:: resources/handwriting-component-example.png
+   :alt: Example of the handwriting component   
+
+
+**Component propertites**
+
+.. figure:: resources/handwriting-component-properties_web.png
+   :alt: Configuring handwriting component properties
+   :width: 250px
+
+
+**① ID**
+
+Enters the ID of the handwriting component.
+
+**② Pen Thickness**
+
+Sets the pen thickness.
+
+**③ Pen Color**
+
+Sets the pen color.
+
+**④ Show Word Tracing**
+
+Allows you to type in the text that will be displayed on the handwriting component.
 
 .. _label2:
 

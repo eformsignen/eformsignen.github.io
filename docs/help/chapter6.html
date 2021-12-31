@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Creating templates using Web Form Designer &mdash; eformsign User Guide 2021.03.31 documentation</title>
   
@@ -13,12 +13,17 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   
+
   
+  
+
   
 
   
@@ -28,10 +33,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -95,22 +100,32 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter5.html">Introduction to Form Builder</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Creating templates using Web Form Designer</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#about-templates">About Templates</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#template-overview">Template Overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#workflow-overview">Workflow Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-create-a-template-with-web-form-designer"><strong>How to create a template with Web Form Designer</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#workflow-overview">Workflow Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#template-settings">Template Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#general">General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#general-setting-the-document-naming-rule">General &gt; Setting the Document Naming Rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configure-basic-settings-for-the-template"><strong>Configure basic settings for the template</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-settings"><strong>Document settings</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#general-setting-the-document-naming-rule">General &gt; Setting the Document Naming Rule</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#general-generating-and-viewing-a-document-number">General &gt; Generating and Viewing a Document Number</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#set-permissions">Set Permissions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#workflow-settings">Workflow Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#field">Field</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#notification-settings">Notification Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workflow-settings">Workflow Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#adding-steps-to-the-workflow"><strong>Adding steps to the workflow</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuring-the-details-of-each-workflow-step"><strong>Configuring the details of each workflow step</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#menus-for-each-template">Menus for Each Template</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#search-templates">Search Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#field">Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notification-settings">Notification Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#menus-for-each-template">Menus for Each Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#search-templates">Search Templates</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder</a></li>
@@ -157,6 +172,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -168,7 +185,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="../_sources/help/chapter6.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -186,24 +203,40 @@
 <span id="template-wd"></span><h1>Creating templates using Web Form Designer<a class="headerlink" href="#creating-templates-using-web-form-designer" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="about-templates">
 <h2>About Templates<a class="headerlink" href="#about-templates" title="Permalink to this headline">¶</a></h2>
-<p>Templates are <strong>electronic documents</strong> used for the eformsign service. They are e-documents converted from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its Web form designer or Form builder. For more information about Form builder, refer to <a class="reference external" href="chapter7.html#template_fb">Creating templates using Form Builder</a>.</p>
-<div class="section" id="template-overview">
-<h3>Template Overview<a class="headerlink" href="#template-overview" title="Permalink to this headline">¶</a></h3>
-<p>To create and send electronic documents via eformsign, you have to first create a template, which can later be converted into an e-document.</p>
-<p><strong>How to create a template with Web Form Designer</strong></p>
-<p>You can easily create a template by uploading a file online.</p>
+<p>Templates are <strong>electronic documents</strong> used for the eformsign service. They are e-documents transformed from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its <strong>Web form designer</strong> or <strong>Form builder</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Using Templates is useful for documents that need to be sent often or regularly. If a tempate is registered once, you don’t have to upload a document file whenever you need to send a document. You can just easily create and sent documents using the template.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more information about Form builder, refer to <a class="reference external" href="chapter7.html#template_fb">Creating templates using Form Builder</a>.</p>
+</div>
+<p>To create and send electronic documents via eformsign, you have to first create a template, which can later be transformed into an e-document.</p>
+<div class="section" id="how-to-create-a-template-with-web-form-designer">
+<h3><strong>How to create a template with Web Form Designer</strong><a class="headerlink" href="#how-to-create-a-template-with-web-form-designer" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more information about Web form designer, please refer to <a class="reference external" href="chapter4.html#webform">Web Form Designer</a>.</p>
 </div>
-<p>Convert the file you want into a PDF file and upload it to eformsign Web form designer.</p>
+<p>You can easily create a template by uploading a file online.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The file formats supported: pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, tiff</p>
+<p>File size: up to 9MB</p>
+</div>
 <ol class="arabic">
-<li><p>Drag and drop the PDF file that you want to create as a template, or click the <strong>Select a file</strong> button to select the file from your computer and upload it.</p>
+<li><p>Drag and drop the file that you want to create as a template, or click the <strong>Select a file</strong> button to select the file from your computer and upload it.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/managetemplate-upload-en.png"><img alt="Manage Templates &gt; Uploading a File (1)" src="../_images/managetemplate-upload-en.png" style="width: 700px;" /></a>
 </div>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/en-managetemplate-upload-popup.png"><img alt="Manage Templates &gt; Uploading a File (2)" src="../_images/en-managetemplate-upload-popup.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-managetemplate-upload-popup.png"><img alt="Manage Templates &gt; Uploading a File (2)" src="../_images/en-managetemplate-upload-popup.png" style="width: 500px;" /></a>
+</div>
+</li>
+<li><p>Add participants and set the role for each participant.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/en-template-settings-wfdesign0.png"><img alt="Dragging a Component" src="../_images/en-template-settings-wfdesign0.png" style="width: 500px;" /></a>
 </div>
 </li>
 <li><p>Select a component that you want to add and drag it onto the uploaded file.</p>
@@ -220,10 +253,10 @@
 <p>You can set the details for the template.</p>
 <ul>
 <li><p><a class="reference external" href="#general_wd">General</a></p>
-<p>Set the template name, abbreviation, document name, document number, etc.</p>
+<p>Sets the template name, abbreviation, document name, document number, etc.</p>
 </li>
 <li><p><a class="reference external" href="#auth_wd">Set permissions</a></p>
-<p>Grant members or groups the permission to use the template and to create documents from it and manage them.</p>
+<p>Grants members or groups the permission to use and edit the template and to create documents from it and manage them.</p>
 </li>
 <li><p><a class="reference external" href="#workflow_wd">Workflow</a></p>
 <p>Sets the workflow for the document from its creation to completion.</p>
@@ -232,44 +265,34 @@
 <p>Sets the default values and auto-filled values for fields.</p>
 </li>
 <li><p><a class="reference external" href="#noti_wd">Notification settings</a></p>
-<p>Sets the notification channels, recipients, and the content of the notification messages for notifying requests or changes in the status of documents created from the template.</p>
+<p>Sets the recipients, and the content of the notification messages for notifying changes in the status of documents created from the template.</p>
 </li>
 </ul>
 </div>
+</div>
 <div class="section" id="workflow-overview">
-<h3>Workflow Overview<a class="headerlink" href="#workflow-overview" title="Permalink to this headline">¶</a></h3>
-<p>A workflow is a document process from its creation to completion.</p>
-<p>The workflow for each template can be set by template managers by going to <strong>Template settings</strong> &gt; <strong>Workflow</strong>.</p>
-<p>By default, all workflows have <strong>Start</strong> and <strong>Complete</strong> steps. You can add as many <strong>Approver</strong>, <strong>Internal recipient</strong>, and <strong>External recipient</strong> steps as you want for each workflow.</p>
+<span id="workflow"></span><h2>Workflow Overview<a class="headerlink" href="#workflow-overview" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>workflow</strong> is a document process from its creation to completion.</p>
+<p>The workflow for each template can be set by template managers in <strong>Template settings</strong> &gt; <strong>Workflow</strong>.</p>
+<p>By default, all workflows have <strong>Start</strong> and <strong>Complete</strong> steps. You can add as many <strong>Reviewer</strong>, and <strong>Participant</strong> steps as you want for each workflow.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-workflow-steps.png"><img alt="Workflow Steps" src="../_images/en-workflow-steps.png" style="width: 400px;" /></a>
 </div>
 <ul>
-<li><p><strong>Approver</strong></p>
-<p>Sending an e-document approval request to a member in your company.</p>
+<li><p><strong>Reviewer</strong></p>
+<p>Approves or rejects documents.</p>
 </li>
-<li><p><strong>Internal recipient</strong></p>
-<p>Sending an e-document to a member in your company to review and sign.</p>
-</li>
-<li><p><strong>External recipient</strong></p>
-<p>Sending an e-document to a user outside of your company to review and sign.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>What’s the difference between an approval and internal recipient?</strong></p>
-<p>Both an approver and internal recipient can approve or reject a requested document, but only the internal recipient can designate the next recipient(s) in line in the workflow to process the document.</p>
-<p>In other words, only internal recipients can designate downstream recipients whether it be external recipients, internal recipients, or approvers.</p>
-<p>For example, if you want a recipient in a workflow to have the ability to choose the recipients that come after her/him in the workflow, then you specify her/him as an internal recipient. In this case, when the internal recipient receives a document, then she/he can choose the recipient(s) that come after her/him in the workflow.</p>
-</div>
+<li><p><strong>Participant</strong></p>
+<p>Signs and fills in documents.</p>
 </li>
 </ul>
 </div>
-</div>
 <div class="section" id="template-settings">
-<h2>Template Settings<a class="headerlink" href="#template-settings" title="Permalink to this headline">¶</a></h2>
+<span id="template-setting"></span><h2>Template Settings<a class="headerlink" href="#template-settings" title="Permalink to this headline">¶</a></h2>
 <p>You can set detailed configurations for each template you create.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only the <strong>company administrator</strong> or <strong>template manager</strong> can perform this action.</p>
+<p>Only the <strong>Company administrator</strong> or <strong>Template manager</strong> can perform this action.</p>
 <p>This action can be performed in web browsers of computers and mobile devices, and also in mobile apps.</p>
 </div>
 <ol class="arabic">
@@ -283,84 +306,77 @@
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-create-template.png"><img alt="Template Settings &gt; General" src="../_images/en-create-template.png" style="width: 600px;" /></a>
 </div>
+<div class="section" id="configure-basic-settings-for-the-template">
+<h4><strong>Configure basic settings for the template</strong><a class="headerlink" href="#configure-basic-settings-for-the-template" title="Permalink to this headline">¶</a></h4>
+<p>Set basic information about the template including the template name, category, validity period, etc.</p>
 <dl>
-<dt><strong>Configure basic settings for the template</strong></dt><dd><p>Set basic information about the template including the template name, category, validity period, etc.</p>
-</dd>
-<dt>① Template name</dt><dd><p>The template name will be displayed in the <strong>Manage templates</strong> and <strong>New document</strong> pages.</p>
+<dt><strong>① Template name</strong></dt><dd><p>The template name will be displayed in the <strong>Manage templates</strong> and <strong>New from template</strong> pages.</p>
 <p>The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-template-name.png"><img alt="Template Name" src="../_images/en-template-name.png" style="width: 250px;" /></a>
 </div>
 </dd>
-<dt>② Template abbreviation</dt><dd><p>A short name that briefly descries the template. It is recommended to use two or three words.</p>
-<p><strong>Template abbreviation</strong> can be used in the document number, document name, mail template, etc. by entering <strong>$$</strong>.</p>
-<div class="figure align-default">
-<img alt="Template Abbreviation" src="../_images/en-template-name-abb.png" />
-</div>
+<dt><strong>② Template abbreviation</strong></dt><dd><p>A short name that briefly descries the template. It is recommended to use two or three words.</p>
+<p><strong>Template abbreviation</strong> can be used in the document number, document name, mail template, etc.</p>
 </dd>
-<dt>③ Category</dt><dd><p>Category is used to sort templates by type. With the category name, you can filter templates in the <strong>Manage templates</strong> menu, and can filter documents in the <strong>Documents</strong> menus and the <strong>Manage documents</strong> menu. You can choose from an existing category or create a new category by entering a new name.</p>
+<dt><strong>③ Category</strong></dt><dd><p>Category is used to sort templates by type. With the category name, you can filter templates in the <strong>Manage templates</strong> menu, and can filter documents in the <strong>Documents</strong> menus and the <strong>Manage documents</strong> menu. You can choose from an existing category or create a new category by entering a new name.</p>
 <p>You can set multi-level categories with a separator ( <strong>/</strong> ). For example, if you set a category as <strong>HR Team/Vacation</strong>, the Vacation category in the HR category is created.</p>
 </dd>
-<dt>④ Description</dt><dd><p>Enter additional comments about the template. This description is displayed under the template name in the New document page.</p>
+<dt><strong>④ Description</strong></dt><dd><p>Enter additional comments about the template. This description is displayed under the template name in <strong>New from template.</strong></p>
 </dd>
-<dt>⑤ Template validity period</dt><dd><p>Sets the time period in which documents can be created from this
-template. By default, the start date is set to the uploaded date and
-you can change the date.</p>
-<p>When <strong>No expiry date</strong> is checked, documents can be created without
-a time limit. <strong>No expiry date</strong> is unchecked and set the date, the
-document can only be created until the set date.</p>
-</dd>
-<dt><strong>Document settings</strong></dt><dd><p>Configure additional settings including document naming rules for
-documents created from the template.</p>
-</dd>
-<dt>⑥ Document naming rule</dt><dd><p>Sets the document name when creating the document from the template.
-If a document naming rule is not set, the template name will be the
-document name.</p>
-<p>You can add reserved words in the document name using <strong>$$</strong> and
-<strong>{{</strong>.</p>
-</dd>
-<dt>⑦ Allow document name change</dt><dd><p>If <strong>Allow document name change</strong> is checked, the document creator
-can change the document name.</p>
-</dd>
-<dt>⑧ Generate a document number</dt><dd><p>If <strong>Generate a document number</strong> is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.</p>
-<p><img alt="image3" src="../_images/en-generate-document-no.png" /></p>
-</dd>
-<dt>⑨ Skip pop-up window when sending documents</dt><dd><p>Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When <strong>Skip pop-up window when sending documents</strong> is checked, the pop-up window does not appear and the page proceeds to the next step.</p>
+<dt><strong>⑤ Template validity period</strong></dt><dd><p>Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.</p>
+<p>If you check <strong>No expiry date</strong>, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="general-setting-the-document-naming-rule">
-<span id="document-naming"></span><h3>General &gt; Setting the Document Naming Rule<a class="headerlink" href="#general-setting-the-document-naming-rule" title="Permalink to this headline">¶</a></h3>
-<p>In <strong>Template settings</strong>, you can set the document naming rule for documents created from a template.</p>
-<p>You can make a piece of information entered into a document or document-related information to be automatically entered into the
-document name. If you set the document naming rule, then the document name is automatically entered based on the information of the document. As well, you can see this name in all document pages (In progress, Action required and Completed) and the <strong>Manage document</strong> page.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only the <strong>Company administrator</strong> or <strong>Template managers</strong> can perform this action.</p>
+<div class="section" id="document-settings">
+<h4><strong>Document settings</strong><a class="headerlink" href="#document-settings" title="Permalink to this headline">¶</a></h4>
+<p>Configure additional settings including document naming rules for documents created from the template.</p>
+<dl>
+<dt><strong>⑥ Document naming rule</strong></dt><dd><p>Sets the document name when creating the document from the template. If a document naming rule is not set, the template name will be the document name.</p>
+</dd>
+<dt><strong>⑦ Allow document name change</strong></dt><dd><p>If <strong>Allow document name change</strong> is checked, the document creator can change the document name.</p>
+</dd>
+<dt><strong>⑧ Generate a document number</strong></dt><dd><p>If <strong>Generate a document number</strong> is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.</p>
+<p><img alt="image3" src="../_images/en-generate-document-no.png" /></p>
+</dd>
+<dt><strong>⑨ Skip pop-up window when sending documents</strong></dt><dd><p>Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When <strong>Skip pop-up window when sending documents</strong> is checked, the pop-up window does not appear and the page proceeds to the next step.</p>
+</dd>
+</dl>
+<hr class="docutils" />
 </div>
+<div class="section" id="general-setting-the-document-naming-rule">
+<span id="document-naming"></span><h4>General &gt; Setting the Document Naming Rule<a class="headerlink" href="#general-setting-the-document-naming-rule" title="Permalink to this headline">¶</a></h4>
+<p>In <strong>Template settings</strong>, you can set the document naming rule for documents created from a template.</p>
+<div class="section" id="document-naming-rule">
+<h5><strong>Document naming rule</strong><a class="headerlink" href="#document-naming-rule" title="Permalink to this headline">¶</a></h5>
+<p>You can make a piece of information entered into a document or document-related information to be automatically entered into the document name. If you set the document naming rule, then the document name is automatically entered based on the information of the document. As well, you can see this name in all document pages (In progress, Action required and Completed) and the <strong>Manage document</strong> page.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-manage-documents-document-list.png"><img alt="Manage Documents &gt; Documents List" src="../_images/en-manage-documents-document-list.png" style="width: 700px;" /></a>
 </div>
-<p><strong>How to set the document naming rule</strong></p>
+<div class="section" id="how-to-set-the-document-naming-rule">
+<h6><strong>How to set the document naming rule</strong><a class="headerlink" href="#how-to-set-the-document-naming-rule" title="Permalink to this headline">¶</a></h6>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-document-naming-rule.png"><img alt="Template Settings &gt; Setting the Document Naming Rule" src="../_images/en-document-naming-rule.png" style="width: 600px;" /></a>
 </div>
 <ol class="arabic simple">
 <li><p>In the sidebar menu, click the <strong>Manage templates</strong> menu.</p></li>
 <li><p>Click on the settings icon (<img alt="image4" src="../_images/config-icon.PNG" />) of the desired template to go to the <strong>Template settings</strong> page.</p></li>
-<li><p>Enter the desired naming rule in the <strong>Document naming rule</strong> field in the <strong>General</strong> tab.</p></li>
+<li><p>Set the desired naming rule in the <strong>Document naming rule</strong> section in the <strong>General</strong> tab by adding reserved words.</p></li>
 <li><p>Click the <strong>Save</strong> button on the top right corner to save the changes.</p></li>
 </ol>
-<p><strong>How to use reserved words Templates Reserved words</strong></p>
+</div>
+<div class="section" id="how-to-use-reserved-words">
+<span id="reserved-words"></span><h6><strong>How to use reserved words</strong><a class="headerlink" href="#how-to-use-reserved-words" title="Permalink to this headline">¶</a></h6>
 <div class="figure align-default">
 <img alt="Setting Document Naming Rules Using Reserved Words" src="../_images/en-document-naming-rule-reserved.png" />
 </div>
-<dl>
-<dt><strong>{{</strong></dt><dd><p>This symbol adds a piece of information in the document into the document name.</p>
-<p>Enter <strong>{{</strong> in the Document naming rule field to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.</p>
-</dd>
-<dt><strong>$$</strong></dt><dd><p>This symbol adds document-related information into the document name.</p>
-<p>Enter <strong>$$</strong> in the Document naming rule field to display the drop-down menu and then select the desired information.</p>
+<ul>
+<li><p><strong>Component ID</strong>: Adds a piece of information in the document into the document name.</p>
+<p>Click the <strong>Add reserved word</strong> button, and click <strong>Component ID</strong> to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.</p>
+</li>
+<li><p><strong>General info</strong>: Adds document-related information into the document name.</p>
+<p>Click <strong>General info</strong> to display the list of information type and then select the desired information. Information types are as follows.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -430,8 +446,8 @@ Company profile</p></td>
 </tr>
 </tbody>
 </table>
-</dd>
-</dl>
+</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Check the status of the <strong>Allow document name change</strong> field.</p>
@@ -439,6 +455,9 @@ Company profile</p></td>
 </div>
 <div class="figure align-default">
 <img alt="Checking the Allow Document Name Change Option" src="../_images/en-allow-document-name-change.png" />
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="general-generating-and-viewing-a-document-number">
@@ -449,11 +468,6 @@ template, and can select one of four document numbering formats. The
 document number can be generated in the document using the document
 component. You can also see a separate column in the document list and
 search documents by the document number.</p>
-<p><strong>Generating a document number</strong></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only the <strong>Company administrator</strong> or <strong>Template managers</strong> can perform this action.</p>
-</div>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-generate-document-number.png"><img alt="Setting a Document Number" src="../_images/en-generate-document-number.png" style="width: 600px;" /></a>
 </div>
@@ -493,17 +507,16 @@ search documents by the document number.</p>
 </li>
 <li><p>Click the <strong>Save</strong> button at the top right corner of the page to apply your changes.</p></li>
 </ol>
-<p><strong>Viewing a document number</strong></p>
 <p>A document number can be viewed directly on a document using the document component and can also be viewed in the document list.</p>
 <ul>
 <li><p><strong>Viewing a document number directly on a document</strong></p>
-<p>You can generate a document number directly on a document by using the document component.</p>
+<p>You can generate a document number directly on a document by using the document number component.</p>
 <ol class="arabic">
-<li><p>Upload a PDF file on Web form designer.</p></li>
+<li><p>Upload a file on Web form designer.</p></li>
 <li><p>Add the document component in the location where the document number will be displayed.</p>
 <p><a class="reference internal" href="../_images/en-document-number-component.png"><img alt="image6" src="../_images/en-document-number-component.png" style="width: 750px;" /></a></p>
 </li>
-<li><p>Click the <strong>Next</strong> button to go to the <strong>Template settings.</strong></p></li>
+<li><p>Click the <strong>Next</strong> button to go to <strong>Template settings.</strong></p></li>
 <li><p>In <strong>Template settings &gt; General,</strong> tick the <strong>Generate a document number</strong> checkbox.</p></li>
 <li><p>Select a document numbering rule.</p></li>
 <li><p>Click the <strong>Save</strong> button to save the settings.</p></li>
@@ -523,7 +536,7 @@ search documents by the document number.</p>
 <li><p>Check <strong>Document number</strong> in the column list.</p>
 <p><img alt="image7" src="../_images/en-document-number-list.png" /></p>
 </li>
-<li><p>Check that <strong>the document number</strong> column is added.</p></li>
+<li><p>Check that the <strong>Document number</strong> column is added.</p></li>
 </ol>
 </li>
 <li><p><strong>Searching for a document using a document number</strong></p>
@@ -541,30 +554,30 @@ search documents by the document number.</p>
 </div>
 <div class="section" id="set-permissions">
 <span id="auth-wd"></span><h3>Set Permissions<a class="headerlink" href="#set-permissions" title="Permalink to this headline">¶</a></h3>
-<p>You can set the permissions for template usage and document management.</p>
+<p>You can set the permissions for template usage, template editing, and document management.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-template-settings-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en-template-settings-permissions.png" style="width: 700px;" /></a>
 </div>
 <p><strong>Template usage</strong></p>
 <p>This permission is needed to create documents from the template, and you can select <strong>Allow all</strong> or <strong>Group or member</strong> to allow all the members or some members in the company to create documents from the template.</p>
+<p><strong>Template editing</strong></p>
+<p>This permission is needed to edit the template, and you can select <strong>Members</strong> to allow editing the template.</p>
 <p><strong>Document management</strong></p>
-<p>You can select groups or members to open documents created from the template, void completed documents, or remove documents
-permanently. You can grant permission for all or some of the three options described below.</p>
-<ul>
+<p>You can select groups or members to open documents created from the template, void completed documents, or remove documents permanently. You can grant permission for all or some of the three options described below.</p>
+<ul class="simple">
 <li><p><strong>Open all documents</strong> (default): Default permission granted to a document manager and gives the permission to open all documents to authorized groups or members.</p></li>
-<li><p><strong>Void completed documents</strong> (optional): Permission for voiding completed documents when requested by the document creator.</p></li>
-<li><p><strong>Remove documents</strong> (optional): Permission to permanently remove documents from the system.</p>
-<p><a class="reference internal" href="../_images/template-setting-auth-doc-new.PNG"><img alt="image9" src="../_images/template-setting-auth-doc-new.PNG" style="width: 700px;" /></a></p>
-</li>
+<li><p><strong>Void documents</strong> (optional): Permission for voiding completed documents when requested by the document creator.</p></li>
+<li><p><strong>Remove documents</strong> (optional): Permission to permanently remove documents from the system.</p></li>
 </ul>
 </div>
 <div class="section" id="workflow-settings">
 <span id="workflow-wd"></span><h3>Workflow Settings<a class="headerlink" href="#workflow-settings" title="Permalink to this headline">¶</a></h3>
-<p>You can create or modify the workflow of the template by clicking the <strong>Workflow</strong> tab in the <strong>Template settings</strong>page.</p>
+<p>You can create or modify the workflow of the template by clicking the <strong>Workflow</strong> tab in the <strong>Template settings</strong> page.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-template-settings-workflow.png"><img alt="Template Settings &gt; Workflow" src="../_images/en-template-settings-workflow.png" style="width: 500px;" /></a>
 </div>
-<p><strong>Adding steps to the workflow</strong></p>
+<div class="section" id="adding-steps-to-the-workflow">
+<h4><strong>Adding steps to the workflow</strong><a class="headerlink" href="#adding-steps-to-the-workflow" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
 <li><p>Go to the <strong>Workflow</strong> configuration page by clicking the <strong>Workflow</strong> tab.</p></li>
 <li><p>Click the add button (<img alt="image10" src="../_images/workflow-addstep-plus-button.png" />) which is in between the <strong>Start</strong> and <strong>Complete</strong> steps.</p></li>
@@ -575,96 +588,104 @@ permanently. You can grant permission for all or some of the three options descr
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can add as many steps as you want. You can adjust the order of steps by clicking the arrow next to a workflow step.</p>
-<p>To delete a step, click <strong>X</strong> on the right side of the step button.</p>
+<p>Participants can be added only in the <strong>Design form</strong> step. Up to 30 participants can be added. In the workflow, you can add as many steps as you want.
+You can adjust the order of steps by clicking and dragging a workflow step.
+To delete a step, click <strong>-</strong> on the right side of the step button.</p>
 <p><a class="reference internal" href="../_images/en-template-settings-workflow-order.png"><img alt="image12" src="../_images/en-template-settings-workflow-order.png" style="width: 500px;" /></a></p>
 </div>
-<p><strong>Configuring the details of each workflow step</strong></p>
-<p>You can click a step to set the details such as <strong>Properties</strong> and <strong>Manage items</strong> for each workflow step.</p>
-<ul>
-<li><p>In <strong>Properties</strong>, you configure the details of the step including the step name and recipients.</p></li>
-<li><p>In <strong>Manage items</strong>, you can set the fields in which the recipient has access to or is required to fill in.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-workflow-item.png"><img alt="image13" src="../_images/en-template-settings-workflow-item.png" style="width: 700px;" /></a></p>
-</li>
-</ul>
-<dl>
-<dt><strong>Start: Step for creating a document</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-start.png"><img alt="image14" src="../_images/en-template-settings-workflow-start.png" style="width: 700px;" /></a></p>
+</div>
+<div class="section" id="configuring-the-details-of-each-workflow-step">
+<h4><strong>Configuring the details of each workflow step</strong><a class="headerlink" href="#configuring-the-details-of-each-workflow-step" title="Permalink to this headline">¶</a></h4>
+<p>You can click a step to set the details such as <strong>Properties</strong> for each workflow step.</p>
+<p><strong>Start: Step for creating a document</strong></p>
+<hr class="docutils" />
+<blockquote>
+<div><p><a class="reference internal" href="../_images/en-template-settings-workflow-start.png"><img alt="image14" src="../_images/en-template-settings-workflow-start.png" style="width: 700px;" /></a></p>
 <ul class="simple">
-<li><p><strong>Step name</strong>: Change the name of the step. The default name is ‘Start’.</p></li>
 <li><p><strong>Limit the number of documents</strong>: Set the maximum number of documents that can be created from the template.</p></li>
 <li><p><strong>Create documents from URL</strong>: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.</p></li>
+<li><p><strong>Approved domain IP</strong>: Set to allow creating documents only form approved domains or IPs.</p></li>
 <li><p><strong>Do not allow duplicate documents</strong>: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.</p></li>
 </ul>
-</dd>
-<dt><strong>Approver: Step for requesting a document for approval</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-approver.png"><img alt="image15" src="../_images/en-template-settings-workflow-approver.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>Display name</strong>: Set the text to be displayed in the text box when requesting a document for approval. If you do not enter it, the default text will appear as shown below.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-approver-display-name.png"><img alt="image16" src="../_images/en-template-settings-approver-display-name.png" style="width: 350px;" /></a></p>
-</li>
-</ul>
-</dd>
-<dt><strong>Internal recipient (member): Step for requesting a document to be reviewed and signed by internal members of your company</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-internal.png"><img alt="image17" src="../_images/en-template-settings-workflow-internal.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>Recipient</strong>: Select the member that will receive the document in this step.</p>
-<ul>
-<li><p><strong>Handler of a previous step</strong>: Select an internal recipient
-that will receive the document. You can choose an internal
-recipient from one of the previous internal recipient steps in
-the workflow or the document creator in the Start step.</p></li>
-<li><p><strong>Group and member</strong>: Select the groups or members in your
-company that will receive the document. You can select multiple
-groups or members.</p></li>
-</ul>
-</li>
-</ul>
-</dd>
-<dt><strong>External recipient: Step for requesting a document to be reviewed and signed by external users (recipients who are not members of your company)</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-external.png"><img alt="image18" src="../_images/en-template-settings-workflow-external.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>Document expiration</strong>: Set the time period in which documents
-can be sent to external users using this URL.</p></li>
-<li><p><strong>Automatically adds contacts</strong>: When sending documents to an
-external recipient, this option allows the name and contact of the
-external recipient to be added automatically based on the
-information the external recipient enters into the document.</p></li>
-<li><p><strong>Set password</strong>: Set a verification password that external
-recipients must enter when viewing the document. The password can
-be the recipient name, a value entered directly by the sender, or
-a field in the document.</p></li>
-<li><p><strong>Password hint</strong>: Set the help message that will be displayed
-when an external recipient enters a password to view the document.</p>
-<p><a class="reference internal" href="../_images/workflow-step-external-recipient-property-pw.png"><img alt="image19" src="../_images/workflow-step-external-recipient-property-pw.png" style="width: 500px;" /></a></p>
-</li>
-<li><p><strong>Require mobile verification to review documents:</strong> Require
-external recipients to verify identity using mobile to open the
-document. This feature will incur an extra charge.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The <strong>Require mobile verification to review documents</strong> feature is available in Korea only.</p>
+</div></blockquote>
+<p><strong>Participant: Step for recipient who is participating in a document such as signing, or filling in the document</strong></p>
+<hr class="docutils" />
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/workflow-participant-properties0.png"><img alt="Workflow &gt; Participant step properties" src="../_images/workflow-participant-properties0.png" style="width: 700px;" /></a>
 </div>
+<ul class="simple">
+<li><p><strong>Notification</strong>: Select how recipients can receive notifications and edit the content.</p>
+<ul>
+<li><p>By default, notifications are sent by email. You can also select SMS to send notifications via SMS messages.</p></li>
+<li><p><strong>Edit notification message:</strong> You can edit the notification message for each step.</p></li>
+</ul>
+</li>
+<li><p><strong>Document expiration</strong>: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.</p></li>
+<li><p><strong>Automatically adds contacts</strong>: When sending documents to a recipient, this option allows the name and contact of the recipient to be added automatically based on the information the recipient enters into the document.</p></li>
+<li><p><strong>Set document password</strong>: Set to require recipients to verify their identity when opening the document.</p>
+<ul>
+<li><p><strong>Require document password</strong>: Set a verification password that recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.</p></li>
+<li><p><strong>Require email verification</strong>: Require recipients to verify their identity using email. A 6-digit code will be sent to recipients’ email and the recipients must enter the code in the identity verification window.</p></li>
+</ul>
 </li>
 </ul>
-</dd>
-<dt><strong>Complete: Step in which a document is finally completed</strong></dt><dd><p><a class="reference internal" href="../_images/en-template-settings-workflow-complete.png"><img alt="image20" src="../_images/en-template-settings-workflow-complete.png" style="width: 700px;" /></a></p>
+<p><strong>Participant/Reviewer - Select recipient</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/workflow-participant-selected.png"><img alt="Workflow &gt; Selecting a recipient" src="../_images/workflow-participant-selected.png" style="width: 700px;" /></a>
+</div>
+<p>You can select the recipient of the step in advance.</p>
 <ul class="simple">
+<li><p><strong>Group or member</strong>: Select the groups or members who will sign and review the document. You can select multiple groups or members, but only one person among the selected can sign and review the document.</p></li>
+<li><p><strong>Handler of a previous step</strong>: Select the person of a previous step including the Start step to sign and review the document.</p></li>
+</ul>
+<p><strong>Reviewer: Step for reviewing the document</strong></p>
+<hr class="docutils" />
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/workflow-participant-properties.png"><img alt="Workflow &gt; Participant step properties" src="../_images/workflow-participant-properties.png" style="width: 700px;" /></a>
+</div>
+<ul class="simple">
+<li><p><strong>Step name</strong>: Change the name of the step. The default name is ‘Reviewer no.’.</p></li>
+<li><p><strong>Notification</strong>: Select how recipients can receive notifications and edit the content.</p>
+<ul>
+<li><p>By default, nofitications are sent by email. You can also select SMS to send notifications via SMS messages.</p></li>
+<li><p><strong>Edit notification message:</strong> You can edit the notification message for each step.</p></li>
+</ul>
+</li>
+<li><p><strong>Document expiration</strong>: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.</p></li>
+<li><p><strong>Automatically adds contacts</strong>: When sending documents to a recipient, this option allows the name and contact of the recipient to be added automatically based on the information the recipient enters into the document.</p></li>
+<li><p><strong>Set document password</strong>: Set to require recipients to verify their identity when opening the document.</p>
+<ul>
+<li><p><strong>Require document password</strong>: Set a verification password in which recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.</p></li>
+<li><p><strong>Require email verification</strong>: Require recipients to verify their identity using email. A 6-digit code will be sent to recipients’ email and the recipients must enter the code in the identity verification window.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Complete: Step in which a document is finally completed</strong></p>
+<hr class="docutils" />
+<blockquote>
+<div><p><a class="reference internal" href="../_images/en-template-settings-workflow-complete.png"><img alt="image20" src="../_images/en-template-settings-workflow-complete.png" style="width: 700px;" /></a></p>
+<ul class="simple">
+<li><p><strong>Step name</strong>: Change the name of the step. The default name is ‘Complete’.</p></li>
 <li><p><strong>Backup completed documents in external cloud storages</strong>: Allow the document to be stored in external cloud storages connected to eformsign by the administrator or company managers.</p></li>
 <li><p><strong>Timestamp the document when completed</strong>: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
+</div>
 </div>
 <div class="section" id="field">
 <span id="field-wd"></span><h3>Field<a class="headerlink" href="#field" title="Permalink to this headline">¶</a></h3>
-<p>In the <strong>Field</strong> menu, you can set the default values or auto-fill values for fields in the template, and adjust the order of
-the fields.</p>
+<p>In the <strong>Field</strong> menu, you can set the default values or auto-fill values for fields in the template, and adjust the order of the fields.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-template-settings-field.png"><img alt="Template Settings &gt; Field" src="../_images/en-template-settings-field.png" style="width: 700px;" /></a>
 </div>
 <p>You can set the default value of a field to be the value saved in company/group/member information in <strong>Manage custom fields</strong>. You can also choose it to be the value entered recently or a value entered manually.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p><strong>How to configure auto-fill</strong></p>
 <p>You can save information that are frequently entered into a document so that they can be used for auto-filling later.</p>
 <p>For example, you can pre-save information about your company or group (such as department name, leader, and representative number) and information about the document creator (including name and contact details). You can add items for related fields and set the default values in <strong>Manage company &gt; Manage custom fields</strong>.</p>
 <ol class="arabic simple">
-<li><p>In the <strong>Manage custom fields</strong> screen<strong>,</strong> add a field.</p></li>
+<li><p>In the <strong>Manage custom fields</strong> screen, add a field.</p></li>
 <li><p>Go to the <strong>Manage templates</strong> menu.</p></li>
 <li><p>Click the <strong>Template settings</strong> icon.</p></li>
 <li><p>Go to the <strong>Field</strong> menu.</p></li>
@@ -672,107 +693,40 @@ the fields.</p>
 <li><p>After completing all the settings, click the <strong>Save</strong> button.</p></li>
 </ol>
 </div>
+</div>
 <div class="section" id="notification-settings">
 <span id="noti-wd"></span><h3>Notification Settings<a class="headerlink" href="#notification-settings" title="Permalink to this headline">¶</a></h3>
-<p>You can select the method to send request or status notification message to recipients, view and edit the messages
-for documents created from the template.</p>
-<p><strong>Notification methods</strong></p>
-<p>Select the methods for sending notification messages to internal and external recipients. You can select either email<strong>,</strong> SMS, or both.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>SMS</strong> can only be selected by a company subscribed a paid plan.
-Extra charges will apply.</p>
-</div>
-<p>When SMS is selected, <strong>Send via SMS</strong> and <strong>Send via SMS if failed to send via KakaoTalk</strong> are enabled.</p>
-<ul class="simple">
-<li><p><strong>Send SMS</strong>: Send notifications to recipients via SMS.</p></li>
-<li><p><strong>Send via KakaoTalk and if fails, send via SMS</strong>: Send notifications via KakaoTalk for recipients who use KakaoTalk and via SMS for recipients who do not use KakaoTalk.</p></li>
-</ul>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/en-template-settings-notification.png"><img alt="Notification Methods" src="../_images/en-template-settings-notification.png" style="width: 500px;" /></a>
-</div>
-<p><strong>Edit notification messages</strong></p>
-<p>You can view and edit notification messages to be sent to recipients when sending documents created from the template. You can find the default notification messages in the <strong>Manage company &gt; Notification template management</strong> page and can edit them by clicking the <strong>Edit</strong> button.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>SMS templates can only be edited by companies subscribed a paid plan.</p>
-</div>
-<p><a class="reference internal" href="../_images/en-template-settings-edit-notification-messages.png"><img alt="image21" src="../_images/en-template-settings-edit-notification-messages.png" style="width: 400px;" /></a></p>
-<p><a class="reference internal" href="../_images/en-template-settings-edit-notification-messages-popup.png"><img alt="image22" src="../_images/en-template-settings-edit-notification-messages-popup.png" style="width: 700px;" /></a></p>
-<ul class="simple">
-<li><p><strong>When sending for review and sign &gt; Internal</strong>: You can edit the
-notification messages to be sent to internal recipients when sending
-a document to be reviewed and signed.</p></li>
-<li><p><strong>When sending for review and sign &gt; External</strong>: You can edit
-notification messages to be sent to external recipients when sending
-a document to be reviewed and signed.</p></li>
-<li><p><strong>When sending for approval</strong>: You can edit the notification messages
-to be sent to approvers when sending an approval request.</p></li>
-<li><p><strong>When rejecting documents</strong>: You can edit the notification messages
-to be sent to document senders when a document is rejected by
-approvers, internal recipients, or external recipients.</p></li>
-</ul>
+<p>You can select the recipients of status notification messages, and view and edit the messages for documents created from the template.</p>
 <p><strong>Document status notifications</strong></p>
-<p>You can select who will receive status notifications for documents created from the template. You can also preview the following
-notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the
-notification messages for completed documents.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For notifications sent when documents are rejected, voided, or corrected, only email templates are provided and they are not sent via SMS. Also, SMS templates for document completion notifications (internal/external) can only be edited by companies subscribed a paid plan.</p>
+<p>You can select who will receive status notifications for documents created from the template. You can also preview the following notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the notification messages for completed documents.</p>
+<div class="figure align-default">
+<img alt="Notification settings" src="../_images/template-setting-notification-channel.png" />
 </div>
-<p><a class="reference internal" href="../_images/en-template-settings-notification-status.png"><img alt="image23" src="../_images/en-template-settings-notification-status.png" style="width: 500px;" /></a></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/template-setting-notification-editl.png"><img alt="Notification template editing" src="../_images/template-setting-notification-editl.png" style="width: 400px;" /></a>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When the <strong>Document creator</strong> option is checked but the <strong>Step
-handler</strong> option is unchecked, a status notification is sent to the
-person who originally created the document.</p>
-<p>When the <strong>Document creator</strong> option is unchecked but the <strong>Step
-handler</strong> option is checked, status notifications are sent to people
-who have processed the document before the current step, except the
-document creator.</p>
-<p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both
-checked, status notifications are sent to both the document creator
-and the people who have processed the document before the current
-step.</p>
-<p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both
-unchecked, no notifications will be sent for that status.</p>
+<p>When the <strong>Document creator</strong> option is checked but the <strong>Step handler</strong> option is unchecked, a status notification is sent to the person who originally created the document.</p>
+<p>When the <strong>Document creator</strong> option is unchecked but the <strong>Step handler</strong> option is checked, status notifications are sent to people who have processed the document before the current step, except the document creator.</p>
+<p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both checked, status notifications are sent to both the document creator and the people who have processed the document before the current step.</p>
+<p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both unchecked, no notifications will be sent for that status.</p>
 </div>
 <ul>
-<li><p><strong>When documents are approved</strong>: When the document is approved by an
-approver, a notification will be sent stating that the document has
-been approved.</p></li>
-<li><p><strong>When documents are reviewed and signed</strong>: When the document is
-reviewed and signed by internal or external recipients, a
-notification will be sent stating that the document has been reviewed
-and signed.</p></li>
-<li><p><strong>When documents are rejected</strong>: When the document is rejected by an
-approver, internal or external recipients, a notification will be
-sent stating that the document has been rejected.</p></li>
-<li><p><strong>Document void notification</strong>: When a request for voiding a document
-is approved, a notification will be sent stating that the document
-has been voided.</p></li>
-<li><p><strong>When documents are corrected</strong>: When the document is corrected by a
-document creator, a notification will be sent stating that the
-document has been corrected.</p></li>
-<li><p><strong>When documents are completed &gt; Internal</strong>: When the document is
-completed, a notification will be sent to the document creator,
-approvers, and internal recipients stating that the document has been
-completed.</p></li>
-<li><p><strong>When documents are completed &gt; External</strong>: When the document is
-completed, a notification will be sent to external recipients stating
-that the document has been completed.</p>
+<li><p><strong>When documents are reviewed and signed</strong>: When the document is reviewed and signed by recipients, a notification will be sent stating that the document has been reviewed and signed.</p></li>
+<li><p><strong>When documents are rejected</strong>: When the document is rejected by a reviewer, member or external recipients, a notification will be sent stating that the document has been rejected.</p></li>
+<li><p><strong>Document void notification</strong>: When a request for voiding a document is approved, a notification will be sent stating that the document has been voided.</p></li>
+<li><p><strong>When documents are corrected</strong>: When the document is corrected by a document creator, a notification will be sent stating that the document has been corrected.</p></li>
+<li><p><strong>When documents are completed</strong>: When the document is completed, a notification will be sent to the document creator, reviewers, and recipients stating that the document has been completed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When the <strong>Document creator</strong> option for <strong>When the document is completed &gt; External</strong> is checked and an external recipient
-creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.</p>
+<p>When the <strong>Document creator</strong> option for <strong>When the document is completed</strong> is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.</p>
 </div>
 </li>
 </ul>
-</div>
-</div>
 <div class="section" id="menus-for-each-template">
-<h2>Menus for Each Template<a class="headerlink" href="#menus-for-each-template" title="Permalink to this headline">¶</a></h2>
-<p>Go to the <strong>Manage templates</strong> page, click the menu icon (<img alt="image24" src="../_images/template-hamburgericon.png" />) right next to the template name to see the menus that can be set for each template.</p>
+<h4>Menus for Each Template<a class="headerlink" href="#menus-for-each-template" title="Permalink to this headline">¶</a></h4>
+<p>Go to the <strong>Manage templates</strong> page, click the menu icon (<a class="reference internal" href="../_images/template-hamburgericon.png"><img alt="image24" src="../_images/template-hamburgericon.png" style="width: 10px;" /></a>) right next to the template name to see the menus that can be set for each template.</p>
 <p><a class="reference internal" href="../_images/en-manage-template-menu-icon-wd.png"><img alt="image25" src="../_images/en-manage-template-menu-icon-wd.png" style="width: 700px;" /></a></p>
 <ul>
 <li><p><strong>Duplicate</strong>: Duplicates the template. The template’s file and
@@ -782,7 +736,7 @@ is duplicated.</p></li>
 <li><p><strong>Delete</strong>: Deletes the template. Once a template is deleted, you can
 no longer create documents from that template.</p></li>
 <li><p><strong>Deactivate</strong>: When a template is deactivated, it will not be shown
-in the <strong>New document</strong> page for other members.</p></li>
+in the <strong>New from template</strong> page for other members.</p></li>
 <li><p><strong>Change owner</strong>: You can change the owner of the template. By
 default, the person who created the template is automatically
 assigned as the template owner. If you want to make changes later,
@@ -808,7 +762,7 @@ applied to all documents created afterwards.</p>
 </ul>
 </div>
 <div class="section" id="search-templates">
-<h2>Search Templates<a class="headerlink" href="#search-templates" title="Permalink to this headline">¶</a></h2>
+<h4>Search Templates<a class="headerlink" href="#search-templates" title="Permalink to this headline">¶</a></h4>
 <p>In the <strong>Manage templates</strong> page, you can lookup and search templates by template category.</p>
 <p><a class="reference internal" href="../_images/en-manage-template-search.png"><img alt="image29" src="../_images/en-manage-template-search.png" style="width: 700px;" /></a></p>
 <dl>
@@ -822,43 +776,37 @@ applied to all documents created afterwards.</p>
 </dl>
 </div>
 </div>
+</div>
+</div>
 
 
            </div>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="chapter7.html" class="btn btn-neutral float-right" title="Creating templates using Form Builder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="chapter5.html" class="btn btn-neutral float-left" title="Introduction to Form Builder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="chapter7.html" class="btn btn-neutral float-right" title="Creating templates using Form Builder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chapter5.html" class="btn btn-neutral float-left" title="Introduction to Form Builder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2021, FORCS CO., LTD. All rights reserved.
+        &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Introduction to Web Form Designer &mdash; eformsign User Guide 2021.03.31 documentation</title>
   
@@ -13,12 +13,17 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   
+
   
+  
+
   
 
   
@@ -28,10 +33,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -104,6 +109,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#signature">Signature</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#company-stamp">Company stamp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#text-and-multiline">Text and Multiline</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#handwriting">Handwriting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#label">Label</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#check">Check</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#radio">Radio</a></li>
@@ -166,6 +174,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -177,7 +187,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="../_sources/help/chapter4.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -197,6 +207,10 @@
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>Web Form Designer is a web form editor that allows you to create electronic documents by uploading document files to eformsign
 and adding components. You can upload files in the <strong>New from template</strong> or the <strong>New from my file</strong> menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>File formats that can be uploaded are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff. The maximum file size supported is 9MB.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In addition to Web Form Designer, eformsign also provides a
@@ -242,17 +256,10 @@ displayed. You can add components to the document here.</p>
 <h3>Web Form Designer Menu Layout<a class="headerlink" href="#web-form-designer-menu-layout" title="Permalink to this headline">¶</a></h3>
 <p>Web Form Designer consists of a screen that displays the file, the left and right panels, and the top bar.</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/web-form_4a.png"><img alt="Web Form Designer Menu Layout - Create from template" src="../_images/web-form_4a.png" style="width: 700px;" /></a>
-</div>
-<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/web-form_4b.png"><img alt="Web Form Designer Menu Layout - Create from my file" src="../_images/web-form_4b.png" style="width: 700px;" /></a>
 </div>
 <ol class="arabic">
-<li><p><strong>Document display screen:</strong> Displays the uploaded file.</p></li>
-<li><p><strong>Top bar:</strong> In <strong>Create from template</strong>, there are two steps:
-<strong>Design form</strong> and <strong>Configure</strong>. You can also go back to the
-<strong>Manage templates</strong> page and preview the template with components added. In <strong>Create from my file</strong>, there are three steps: <strong>Design form</strong>, <strong>Add recipients</strong>, and <strong>Options</strong>. After designing a form,
-you can create a document or save the form as a draft.</p>
+<li><p><strong>Top bar:</strong> In <strong>Create from template</strong>, there are two steps: <strong>Design form</strong>and <strong>Configure</strong>. You can also go back to the Manage templates page and preview the template with components added. In <strong>Create from my file</strong>, there are three steps: <strong>Design form</strong>**, <strong>Add recipients</strong>, and <strong>Options</strong>. After designing a form, you can create a document or save the form as a draft.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Clicking each step shown on the top bar displays the screen for each
@@ -260,6 +267,8 @@ step. You can set the workflow, permission, etc. Make sure to
 configure the settings before you finish creating a document.</p>
 </div>
 </li>
+<li><p><strong>Document display screen:</strong> Displays the uploaded file.</p></li>
+<li><p><strong>Participants:</strong> Select the participants of the document and then drag and drop the components to be filled in by each participant. You can add new participants by clicking the <strong>Add new participant</strong>**. There can be up to 30 participants for each document.</p></li>
 <li><p><strong>Component list:</strong> There are 14 basic components including text,
 multiline, signature, check, and radio. There are also two data
 components which are document ID and document number. More components
@@ -287,6 +296,7 @@ configured in detail by using the <strong>Properties</strong> tab.</p>
 <li><p><a class="reference external" href="#signature2">Signature</a><strong>:</strong> Inserts a signature.</p></li>
 <li><p><a class="reference external" href="#companystamp2">Company stamp</a><strong>:</strong> Inserts a company stamp.</p></li>
 <li><p><a class="reference external" href="#text2">Text</a><strong>:</strong> Enters short text (usually 1 to 2 words).</p></li>
+<li><p><a class="reference external" href="#handwriting2">Handwriting</a><strong>:</strong> Allows to trace text shown on the background.</p></li>
 <li><p><a class="reference external" href="#text2">Multiline</a><strong>:</strong> Enters long text with multiple lines.</p></li>
 <li><p><a class="reference external" href="#label2">Label</a><strong>:</strong> Sets the form ID.</p></li>
 <li><p><a class="reference external" href="#check2">Check</a><strong>:</strong> Ticks a check box.</p></li>
@@ -313,6 +323,12 @@ component added, the detailed properties of that component will be displayed on 
 Tooltip Text, and the meaning of each property is as follows:</p>
 <ul class="simple">
 <li><p><strong>ID:</strong> Unique ID that identifies each component. When assigning who can fill out a component, you can use the component ID to do so. You can also use the component ID to extract data in CSV format.</p></li>
+<li><p><strong>Who can fill this out:</strong> Sets which participants are allowed and/or required to fill in the component. All the participants added for this document are shown, and you can check or uncheck the Allowed and Required check boxes for each one. When a documents is sent, components that are checked as Allowed are highlighted in yellow, and components that are check as Required are highlighted in red.</p>
+<ul>
+<li><p><strong>Allowed:</strong> Allows the participant to fill in the component.</p></li>
+<li><p><strong>Required:</strong> Requires the participant to fill in the component.</p></li>
+</ul>
+</li>
 <li><p><strong>Placeholder:</strong> Text displayed as a help message before entering information.</p></li>
 <li><p><strong>Tooltip Text:</strong> In Windows, the text in the Tooltip Text box of a component is displayed in the form of a
 speech bubble when hovering the mouse over the component. In mobile, the text is displayed on the quick type bar when clicking on the component.</p></li>
@@ -333,24 +349,22 @@ speech bubble when hovering the mouse over the component. In mobile, the text is
 </div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the signature component. For example, the ID of the component can be ‘signerSignature’ for contract signers.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the component.</p>
-<p><strong>③ Available signature Type</strong></p>
-<p>Selects the signature type to be used when signing. Clicking the signature area displays the <strong>Signature</strong> pop-up which allows you to sign by selecting one of the multiple signing methods which are <strong>Draw</strong>, <strong>Text</strong>, <strong>Mobile</strong>, and <strong>eformsign App</strong>.</p>
+<p><strong>② Available signature Type</strong></p>
+<p>Selects the signature type to be used when signing.</p>
 <ul class="simple">
-<li><p><strong>Signature:</strong> If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.</p></li>
-<li><p><strong>Initial:</strong> If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.</p></li>
-<li><p><strong>Stamp:</strong> If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.</p></li>
+<li><p><strong>Signature:</strong> If the user already has a signature added on eformsign, then clicking the signature area or the Signature button inserts the added signature onto the document. If not, then the user manually creates a signature.</p></li>
+<li><p><strong>Initial:</strong> If the user already has an initial added on eformsign, then clicking the signature area or the Initials button inserts the added initial onto the document. If not, then the user manually creates an initial.</p></li>
+<li><p><strong>Stamp:</strong> If the user already has a company stamp added on eformsign, then clicking the signature area or the Stamp button inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.</p></li>
 </ul>
-<p><strong>④ Signing method</strong> If you check the Disable auto-fill check box, it preventns the signature field from being automatically filled when clicked/touched.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If there is an added signature or initial, then it will be automatically entered in the signature area when a signature area is clicked. However, if there is no added signature or initial, then a regular <strong>Signature</strong> pop-up will be displayed when a signature area is clicked.</p>
+<p>In some cases, you may need to use a stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the <strong>Stamp</strong> button after clicking on a signature area, and then select a stamp image and click <strong>OK</strong>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/select-signature-type.png"><img alt="Select signature type" src="../_images/select-signature-type.png" style="width: 300px;" /></a>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the <strong>Stamp</strong> tab in the <strong>Signature</strong> pop-up, and then select a stamp image and click <strong>OK</strong>.</p>
 </div>
+<p><strong>③ Signing method</strong></p>
+<p>If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.</p>
 <p><strong>④ Signature Pen Thick</strong></p>
 <p>Sets the signature pen thickness.</p>
 <p><strong>⑤ Signature Pen Color</strong></p>
@@ -392,24 +406,14 @@ detailed information of a signer.</p>
 If you add a company stamp component, documents that require a company stamp will show a company stamp pop-up as shown below and you’ll be able to select and apply company stamps that you have permission to access.</p>
 <p><strong>Component Properties</strong></p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/wfd-text-component-properties.png"><img alt="Setting Text and Multiline Component Properties" src="../_images/wfd-text-component-properties.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/companystamp-component-properties_web.png"><img alt="Setting Text and Multiline Component Properties" src="../_images/companystamp-component-properties_web.png" style="width: 250px;" /></a>
 </div>
 <p><strong>① ID</strong></p>
-<p>EEnter the ID of the Company stamp component. For example, the ID of the component for applying a company stamp can be named ‘companystamp’.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All components must have an ID. An ID is automatically generated when you create a component, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a component for entering John Doe, Jane Doe, etc. as ‘name’. By doing so, it is easier to identify components when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.</p>
-</div>
+<p>Enter the ID of the Company stamp component. For example, the ID of the component for applying a company stamp can be named ‘companystamp’.</p>
 <p><strong>② Who can fill this out</strong></p>
 <p>Sets whether the recipient is required or allowed to fill in this component.</p>
 <p><strong>③ Placeholder</strong></p>
 <p>Sets the help message displayed.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you check the Show icon check box, the company stamp icon is shown on the camera
-area.</p>
-<p><a href="#id2"><span class="problematic" id="id3">|image|</span></a></p>
-</div>
 <p><strong>④ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
 </div>
@@ -445,6 +449,26 @@ smartphones and tablets.</p>
 <p><strong>⑦ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
 </div>
+</div>
+<div class="section" id="handwriting">
+<span id="handwriting2"></span><h2>Handwriting<a class="headerlink" href="#handwriting" title="Permalink to this headline">¶</a></h2>
+<p>The handwriting component is used to trace a pre-written tex.</p>
+<p>You can type in the text to be displayed on a document in which recipients can trace.</p>
+<div class="figure align-default">
+<img alt="Example of the handwriting component" src="../_images/handwriting-component-example.png" />
+</div>
+<p><strong>Component propertites</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/handwriting-component-properties_web.png"><img alt="Configuring handwriting component properties" src="../_images/handwriting-component-properties_web.png" style="width: 250px;" /></a>
+</div>
+<p><strong>① ID</strong></p>
+<p>Enters the ID of the handwriting component.</p>
+<p><strong>② Pen Thickness</strong></p>
+<p>Sets the pen thickness.</p>
+<p><strong>③ Pen Color</strong></p>
+<p>Sets the pen color.</p>
+<p><strong>④ Show Word Tracing</strong></p>
+<p>Allows you to type in the text that will be displayed on the handwriting component.</p>
 <div class="section" id="label">
 <span id="label2"></span><h3>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
 <p>This component is used for setting the form ID of a document.</p>
@@ -767,37 +791,29 @@ Selects who is allowed or required to fill out the component.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="chapter5.html" class="btn btn-neutral float-right" title="Introduction to Form Builder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="chapter3.html" class="btn btn-neutral float-left" title="Creating documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="chapter5.html" class="btn btn-neutral float-right" title="Introduction to Form Builder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chapter3.html" class="btn btn-neutral float-left" title="Creating documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2021, FORCS CO., LTD. All rights reserved.
+        &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

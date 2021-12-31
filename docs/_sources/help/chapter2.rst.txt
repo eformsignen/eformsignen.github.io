@@ -51,6 +51,8 @@ The description of each menu is as follows:
    -  **Completed:** Shows the list of all the completed
       documents you have created or participated in.
 
+   -  **Bulk send:** Shows the list of all the document you have sent in bulk.
+
 -  **Manage documents:** Only document managers can
    access this menu. Document managers can view all documents created
    from a template that they have permission to access.The company
@@ -194,7 +196,7 @@ more icon (|image6|) at the top right corner of the sidebar menu.
 
 .. figure:: resources/en-dashboard-side-menu-icon.png
    :alt: Location of the Menu Icon for Accessing Personal and Company Info
-   :width: 600px
+   :width: 1500px
 
 
 If you click the (|image7|) icon in the sidebar, the following menu is
@@ -202,7 +204,7 @@ displayed.
 
 .. figure:: resources/en-dashboard-side-menu-icon-drop-down.png
    :alt: View and Edit My Profile
-   :width: 600px
+   :width: 1500px
 
 
 -  **Change company:** If you are a member of multiple companies, click the **Change company** menu to view the list of your
@@ -219,7 +221,7 @@ My Profile
 
 .. figure:: resources/en-myprofile-personal.png
    :alt: My Profile > Personal
-   :width: 700px
+   :width: 500px
 
 
 **Account information**
@@ -238,7 +240,7 @@ My Profile
 
 .. figure:: resources/en-myprofile-company.png
    :alt: My Profile > Company
-   :width: 700px
+   :width: 500px
 
 
 **Basic information**
@@ -285,7 +287,7 @@ The company information displayed in the **My profile > company** menu can be ed
 
    .. figure:: resources/en-manage-company-profile-edit.png
       :alt: Company Profile
-      :width: 700px
+      :width: 1000px
 
 
 2. Edit the information you want to change in the **Company profile > Basic information** tab.
@@ -408,7 +410,7 @@ another member, and then delete the account.
 
    .. figure:: resources/en-manage-company-delegate-admin-role.png
       :alt: Delegate Company Administrator Role
-      :width: 700px
+      :width: 2000px
 
 
 3. Select a member to delegate the company administrator role in the **Delegate role** pop-up window.
@@ -645,9 +647,26 @@ If you register your signature, initial, and stamp in the **My signature** menu,
 
 4. Click the **Edit** or **Delete** button to edit or delete the signature.
 
-**Adding Your Stamp**
+.. tip::
+
+   You can select the signature types that can be used when signing on documents.
+
+   Go to **Manage company** > **Signature settings** to select the signature types (Draw, Text) that can be used when signing on documents.
+
+   .. figure:: resources/signature-method.png
+      :alt: Signature type settings
+      :width: 400px
+
+
+.. _registerstamp:
+
+**Adding your stamp**
+-----------------------------
 
 Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after adding the image in the eformsign service.
+
+**Stamp image uploading**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -670,7 +689,7 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 
    .. figure:: resources/en-my-signature-register-stamp-popup.png
       :alt: My signature > Register Stamp Pop-up
-      :width: 700px
+      :width: 500px
 
 
 4. Click the **OK** button to save the stamp.
@@ -682,7 +701,7 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 .. _scanstamp:
 
 **Life-sized stamp scanning**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -700,7 +719,11 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
       :alt: Register button
       :width: 300px
 
-2. Download and print out **Scannable paper for stamps**\. 
+2. Download and print out **Scannable paper for stamps**\.
+
+   .. figure:: resources/signature-stamp-scan-paper.png
+      :alt: Scannable paper for stamps
+      :width: 400px 
 
 3. Apply the stamp in the center of the scan area in **Scannable paper for stamp**\.
 

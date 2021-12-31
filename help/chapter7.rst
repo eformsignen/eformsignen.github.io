@@ -8,7 +8,7 @@ Creating templates using Form Builder
 About Templates
 ----------------
 
-Templates are **electronic documents** used for the eformsign service. They are e-documents converted from existing
+Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing
 paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
 
 
@@ -23,7 +23,7 @@ paper forms such as applications, contracts, and agreements. You can create and 
 
 
 
-To create and send electronic documents via eformsign, you have to create a template first which can be converted into an e-document.
+To create and send electronic documents via eformsign, you have to create a template first which can be transformed into an e-document.
 
 **How to create a template with Form Builder**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,12 +50,10 @@ MS Office files such as Word, Excel, and PowerPoint can be uploaded as a templat
 
 7. Click the **Upload** button to upload the file as a template.
 
-.. figure:: resources/formbuilder-execute.png
-   :alt: Formbuilder menu
-
 8. Click **Create template** and set details for the template.
 
-
+.. figure:: resources/formbuilder-execute.png
+   :alt: Formbuilder menu
 
 
 
@@ -180,7 +178,7 @@ Set basic information about the template including the template name, category, 
 **⑥ Template validity period**
    Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
 
-   When **No expiry date** is checked, documents can be created without a time limit. **No expiry date** is unchecked and set the date, the document can only be created until the set date.
+   When **No expiry date** is checked, documents can be created without a time limit. If you check **No expiry date**, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.
 
 **Document settings**
 ----------------------------------
@@ -188,13 +186,10 @@ Set basic information about the template including the template name, category, 
 Configure additional settings including document naming rules for documents created from the template.
 
 **⑦ Document naming rule**
-   Sets the document name when creating the document from the template.
-   If a document naming rule is not set, the template name will be the document name.
-
-   You can add reserved words in the document name using **$$** and **{{**.
+   Sets the document name when creating the document from the template. If a document naming rule is not set, the template name will be the document name.
 
 **⑧ Allow document name change**
-   If **Allow document name change**\ is checked, the document creator can change the document name.
+   If **Allow document name change** is checked, the document creator can change the document name.
 
 **⑨ Generate a document number**
    If **Generate a document number** is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.
@@ -259,12 +254,12 @@ As well, you can see this name in all document pages (In progress, Action requir
 
 -  **Component ID**\ : Adds a piece of information in the document into the document name.
 
-   Click the **Add reserved word** button, and click **Component ID**\ to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.
+   Click the **Add reserved word** button, and click **Component ID**\  to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.
 
 
 -  **General info**\ : Adds document-related information into the document name.
 
-   Click **General info**\ to display the list of information type and then select the desired information. Information types are as follows.
+   Click **General info**\  to display the list of information type and then select the desired information. Information types are as follows.
 
    +-----------------------+-----------------------------------------------+
    | Information types     | Description                                   |
@@ -494,14 +489,12 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
    |image9|
 
-4. When selected, a step is added to the workflow.
 
    .. tip::
 
       You can add as many steps as you want. You can adjust the order of steps by clicking and dragging a workflow step.
       To delete a step, click **-** on the right side of the step button.
 
-   |image10|
 
 
 
@@ -542,7 +535,7 @@ You can click a step to set the details such as **Properties** and **Manage item
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. figure:: resources/workflow-participant-properties.png
-   :alt: 워크플로우 설정 > 참여자 단계 속성
+   :alt: Workflow > Participant step properties
    :width: 700px
 
 -  **Step name**: Change the name of the step. The default name is 'Start'.
@@ -563,13 +556,13 @@ You can click a step to set the details such as **Properties** and **Manage item
 
    - **Verification method**\: Set a verification password that recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
       
-   - **Email verification**\: Require recipients to verify identity using email. The 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
+   - **Email verification**\: Require recipients to verify identity using email. A 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
 
 
 **Recipient - Select recipient**
 
 .. figure:: resources/workflow-participant-selected.png
-   :alt: 워크플로우 설정 > 참여자 수신자 지정
+   :alt: Workflow > Selecting a recipient
    :width: 700px
 
 You can select the recipient of the step in advance.
@@ -658,18 +651,13 @@ for documents created from the template.
 You can select who will receive status notifications for documents created from the template. You can also preview the following notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the notification messages for completed documents.
 
 .. figure:: resources/template-setting-notification-channel.png
-   :alt: 알림 채널 설정
+   :alt: Notification settings
 
 .. figure:: resources/template-setting-notification-editl.png
-   :alt: 알림 내용 편집
+   :alt: Notification template editing
    :width: 400px
 
 
-.. note::
-
-   For notifications sent when documents are rejected, voided, or corrected, only email templates are provided and they are not sent via SMS. Also, SMS templates for document completion notifications can only be edited by companies subscribed a paid plan.
-
-|image22|
 
 .. note::
 
@@ -741,6 +729,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
    You can select the template sorting order in ascending or descending by template name or category.
 
 .. |image1| image:: resources/config-icon.PNG
+   :width: 25px
 .. |image2| image:: resources/en-manage-template-settings-.png
    :width: 700px
 .. |image3| image:: resources/en-generate-document-no.png
@@ -780,7 +769,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
    :width: 500px
 .. |image23| image:: resources/template-hamburgericon.png
 .. |image24| image:: resources/en-manage-template-menu-icon.png
-   :width: 700px
+   :width: 5px
 .. |image25| image:: resources/en-manage-template-menu-icon-change-owner.png
 .. |image26| image:: resources/en-manage-template-menu-icon-document-manager.png
 .. |image27| image:: resources/en-manage-template-search.png

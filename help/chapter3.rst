@@ -235,7 +235,7 @@ document from.
 
 .. figure:: resources/bulk-creation-icon.png
    :alt: Send in bulk icon
-   :width: 1000px
+   :width: 250px
 
 3. Select whether to enter data either by manually (Enter manually) or by uploading an Excel file (Upload file).
 
@@ -245,9 +245,9 @@ document from.
 
 .. tip::
 
-**How do enter data when sending documents in bulk**
+   **How to enter data when sending documents in bulk**
 
-**Method 1. Enter manually: max 200 documents (rows)**
+   **Method 1. Enter manually: max 200 documents (rows)**
 
    Select**Enter manually**\ to display the table in which you can enter data directly. Each column of the table contains all the fields of a document. The IDs of components (which are fields in a template) are shown as the name of each column. The last row of the first column (No.) indicates the number of documents to be created..
 
@@ -259,19 +259,18 @@ document from.
       :alt: Send in bulk enter manually option 
       :width: 700px
 
-**Method 2. Upload file: max 1000 documents (rows)**
+   **Method 2. Upload file: max 1000 documents (rows)**
 
    Select **Upload file**\ and download the Excel file for data entry. Once the file is downloaded, enter the neccessary data into the file and upload it.
 
    .. figure:: resources/bulksend-fileupload.png
       :alt: Send in bulk upload file option
-      :width: 1000px
+      :width: 500px
 
 
 
 4. Click the **Preview** button on the top right corner of the screen to
 view the documents you created. 
-
 
 5. To send the document right away, click the **Send now** button. To send the documents at a schedule time and date, click the **Schedule send** button.
 
@@ -287,15 +286,10 @@ view the documents you created.
    non-member participant step settings, there can be phone numbers, verification
    passwords, etc.
 
-   |image17|
-
    Right before sending documents in bulk, eformsign will automatically check to see if there are any errors in the document. Documents with an error will not be sent and only normal documents will be sent.
-
-   |image17|
 
    When bulk sending documents at a scheduled time, the scheduled time must be at least 10 minutes from the current time.
 
-   |image17|
 
 .. tip::
 
@@ -308,7 +302,6 @@ view the documents you created.
 
    You can delete rows by right-clicking on your mouse and selecting the desired option in the pop-up window.
 
-   |image17|
 
 .. |image1| image:: resources/newfrommyfile-menu.png
    :width: 700px
@@ -339,6 +332,7 @@ view the documents you created.
 .. |image14| image:: resources/menu-startfromtemplate.png
    :width: 700px
 .. |image15| image:: resources/create-icon.PNG
+   :width: 30px
 .. |image16| image:: resources/startfromtemplate-create.png
    :width: 700px
 .. |image17| image:: resources/bulk-creation-table-blue-section.png

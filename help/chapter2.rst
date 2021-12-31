@@ -221,7 +221,7 @@ My Profile
 
 .. figure:: resources/en-myprofile-personal.png
    :alt: My Profile > Personal
-   :width: 700px
+   :width: 500px
 
 
 **Account information**
@@ -240,7 +240,7 @@ My Profile
 
 .. figure:: resources/en-myprofile-company.png
    :alt: My Profile > Company
-   :width: 700px
+   :width: 500px
 
 
 **Basic information**
@@ -287,7 +287,7 @@ The company information displayed in the **My profile > company** menu can be ed
 
    .. figure:: resources/en-manage-company-profile-edit.png
       :alt: Company Profile
-      :width: 700px
+      :width: 1000px
 
 
 2. Edit the information you want to change in the **Company profile > Basic information** tab.
@@ -410,7 +410,7 @@ another member, and then delete the account.
 
    .. figure:: resources/en-manage-company-delegate-admin-role.png
       :alt: Delegate Company Administrator Role
-      :width: 700px
+      :width: 2000px
 
 
 3. Select a member to delegate the company administrator role in the **Delegate role** pop-up window.
@@ -647,9 +647,26 @@ If you register your signature, initial, and stamp in the **My signature** menu,
 
 4. Click the **Edit** or **Delete** button to edit or delete the signature.
 
-**Adding Your Stamp**
+.. tip::
+
+   You can select the signature types that can be used when signing on documents.
+
+   Go to **Manage company** > **Signature settings** to select the signature types (Draw, Text) that can be used when signing on documents.
+
+   .. figure:: resources/signature-method.png
+      :alt: Signature type settings
+      :width: 400px
+
+
+.. _registerstamp:
+
+**Adding your stamp**
+-----------------------------
 
 Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after adding the image in the eformsign service.
+
+**Stamp image uploading**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -672,7 +689,7 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 
    .. figure:: resources/en-my-signature-register-stamp-popup.png
       :alt: My signature > Register Stamp Pop-up
-      :width: 700px
+      :width: 500px
 
 
 4. Click the **OK** button to save the stamp.
@@ -684,7 +701,7 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 .. _scanstamp:
 
 **Life-sized stamp scanning**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 

@@ -1,20 +1,29 @@
+.. _documents:
+
+==================
 Document Menus
 ==================
 
+------------
 Documents
 ------------
 
 Documents are stored in the following three menus according to the document status:
 
+.. note::
+
+   For information on documents sent in bulk, go to `Bulk send <#bulksend-documents>`__.
+
+
+
+
 -  **In progress:** View the list of documents you have created or signed/approved that are incomplete.
 
--  **Action required:** View the list of documents you have saved as a draft, requested by other members for
-   you to sign or approve, or sent to external recipients but have yet to be signed.
+-  **Action required:** View the list of documents you have saved as a draft, requested by other members for you to sign or approve, or sent to external recipients but have yet to be signed.
 
 -  **Completed:** View the list of completed documents among the documents created by you.
 
-By using these menus, you can easily view the status and history of each document, find the documents you want by filtering and searching, resend
-documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents.
+By using these menus, you can easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents.
 
 All documents and related activities are stored in the Documents menus, and you can view detailed information about the document status and
 history.
@@ -32,24 +41,24 @@ Aside from the three document menus, there is another menu for managing document
    :width: 700px
 
 
-The three Documents menus and the Manage documents menu are laid out almost the same.
 
 .. note::
 
-   The layout of the Documents menus are very similar to each other, but the documents that are displayed differ according to the document
-   status or granted permission to users.
+   The layout of the Documents menus are very similar to each other, but the documents that are displayed differ according to the document status or granted permission to users.
 
 .. figure:: resources/inbox_layout.png
    :alt: Documents Menus Layout
    :width: 750px
 
+---------------
+Documents menu
+---------------
 
 Each documents menu consists of the following five sections:
 
 1. **Menu and home icon, and document menu name**
 
-   You can go to another menu by clicking the menu icon (|image1|) or go to the dashboard by clicking the home icon (|image2|). You can also
-   see the name of the documents menu you are currently viewing.
+   You can go to another menu by clicking the menu icon (|image1|) or go to the dashboard by clicking the home icon (|image2|). You can also see the name of the documents menu you are currently viewing.
 
 2. Template category combo box, document status filter combo box, and `search box <#category>`__
 
@@ -57,7 +66,7 @@ Each documents menu consists of the following five sections:
 
    In addition to performing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and many more.
 
-3. **Document list and**\ `actions <#additional_work>`__
+3. **Document list and**\  `actions <#additional_work>`__
 
    Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.
 
@@ -86,8 +95,9 @@ Each documents menu consists of the following five sections:
 
    .. note::
 
-      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document management permission. The company administrator or the template managers of a template can grant you document management
-      permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
+      **How to delete documents**
+
+      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document management permission. The company administrator or the template managers of a template can grant you document management permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
 
 .. _category:
 
@@ -102,7 +112,7 @@ The template category combo box, document status filter combo box, and search bo
    filter combo box, and search box are also located at the top left
    side of the screen.
 
--  **'Manage documents'**
+-  **Manage documents**
 
    In this menu, the template category combo box, document status filter
    combo box, and search box are located at the top left side of the
@@ -124,6 +134,7 @@ templates according to categories as shown below:
 
 
 **Searching by document status**
+------------------------------------------
 
 You can search for documents by document status in each document menu.
 
@@ -143,7 +154,10 @@ You can search for documents by document status in each document menu.
 
 |image10|
 
+
+
 **Document status filter combo box**
+----------------------------------------------
 
 In addition to doing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and filtering by document status.
 
@@ -153,9 +167,9 @@ The following table describes the filters that can be used for performing search
 
 .. table:: 
 
-   =============== =============== =============== ================
-   Action required Action required Completed       Manage documents
-   =============== =============== =============== ================
+   =============== =============== =============== ====================
+   Action required  In progress      Completed      Manage documents
+   =============== =============== =============== ====================
    Name + contents Name + contents Name + contents Name + contents
    Name            Name            Name            Name
    Contents        Contents        Contents        Contents
@@ -166,11 +180,12 @@ The following table describes the filters that can be used for performing search
    Created by      Created by      Created on      Created on
    Created on      Created on      Processed by    Processed by
    Requested by    Processed by    Processed on    Processed on
-   Requested on    Processed on    Step status     Custom filter
-   Days passed                     Custom filter   
-   =============== =============== =============== ================
+   Requested on    Processed on    Custom filter   Custom filter
+                   Days passed                      
+   =============== =============== =============== ====================
 
 **Using the custom filter**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Select **Custom Filter** in the **Advanced** search combo box.
 
@@ -240,6 +255,7 @@ Period     Start date  End date
    3. If you modify a predefined custom filter, then the field type and search values are updated with the most recently entered values.
 
 **Displaying search keywords and modifying/deleting them**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. The search keyword is added in the form of **field name: value**.
 
@@ -256,30 +272,30 @@ Period     Start date  End date
 .. _additional_work:
 
 Actions that Can Be Performed in the Document List by Documents Menu
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, and download.
 
-**In progress**
+- **In progress**
 
-Can perform actions including preview, correct, void, send final copy, and download.
+Can perform actions including preview, correct, void, review, resend, schedule send final copy, and download.
 
-**Action required**
+- **Action required**
 
-Can perform actions including preview, correct, void, review, resend, and download.
+Can perform actions including preview, correct, void, review, edit, resend, schedule send final copy and download.
 
-**Completed**
+- **Completed**
 
 Can perform actions including preview, void, send final copy, and download.
 
-**Manage documents**
+- **Manage documents**
 
 Can perform actions including preview, void, send final copy, remove, download, and delete. Documents can only be deleted in the **Manage documents** menu.
 
 .. _history:
 
 Document Status and History
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you select a document in the document list, you can view the status and history of that document on the right side of the screen.
 
@@ -313,7 +329,6 @@ All documents are stored in a file format for long-term storage (PDF/A) and only
    :width: 400px
 
 
-
 .. note::
 
    CSV files can also be downloaded in the **Download** pop-up where PDF files can be downloaded. Select **CSV download** in the pop-up and check the fields (columns) to be downloaded and then click the **Download** button.
@@ -321,7 +336,7 @@ All documents are stored in a file format for long-term storage (PDF/A) and only
 .. _document_delete:
 
 Deleting Documents
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 In eformsign, only members with document management permission can delete documents.
 
@@ -334,7 +349,7 @@ In eformsign, only members with document management permission can delete docume
 .. _document_column:
 
 Document Menu Column Selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you click the column (|image14|) icon on the right side of the document list, you can select which column to be displayed on the list.
 
@@ -346,8 +361,9 @@ If you click the column (|image14|) icon on the right side of the document list,
 
 .. _drafts:
 
+---------
 Drafts
-------
+---------
 
 The Drafts menu stores the documents in the **New from my file** step that have been saved by clicking **Save as a draft** before sending the document. You can open the files stored in the **Drafts** menu anytime and proceed or delete.
 
@@ -360,6 +376,58 @@ The Drafts menu stores the documents in the **New from my file** step that have 
    |image16|
 
 3. Edit the document in the **Create from my file** screen and send it.
+
+
+.. note::
+
+   For more information about creating a new document from my file, please refer to `New from my file <chapter3.html#id2>`__.
+
+
+
+.. _bulksend_documents:
+-------------------------
+Bulk send document box
+-------------------------
+
+In the **Bulk send document box**, you can see all the documents sent in bulk. You can check the status of documents sent in bulk, cancel or change the date & time of scheduled sends, or resend bulk-sent documents.
+
+.. figure:: resources/bulksend-documents.png
+   :alt: Bulk send document box
+
+
+
+In the list of bulk sent documents, click **Detail view** to see the detailed information of the documents such as response status, the step in the workflow of the sent document, etc.
+
+- Check the response status of bulk-sent documents 
+- Resend documents in bulk or individually
+- Void documents
+- Download PDF or/and CSV files
+- View the current document step, document status, and history of each document
+
+
+.. figure:: resources/bulksend-documents-detail.png
+   :alt: Bulk send-detail view
+
+.. tip::
+
+   When you are resending documents in bulk, you cannot change the recipients' contact information. The documents will be sent to the contact information that you entered previously.
+   It you want to change the contact information, resend documents seperately. 
+
+
+For documents scheduled to be sent later, you can change or cancel the scheduled send.
+
+.. figure:: resources/bulksend-schedule-change.png
+   :alt: Bulk send document box-change schedule
+   :width: 500px
+
+
+.. note::
+
+   For more information about sending documents in bulk, please refer to `Send in bulk <chapter3.html#bulksend>`__.
+
+
+
+
 
 .. |image1| image:: resources/menu_icon_2.png
    :width: 25px
@@ -387,6 +455,6 @@ The Drafts menu stores the documents in the **New from my file** step that have 
 .. |image14| image:: resources/column_icon.png
    :width: 35px
 .. |image15| image:: resources/draftbox-menu.png
-   :width: 700px
+   :width: 400px
 .. |image16| image:: resources/draftbox-documentlist.png
    :width: 700px

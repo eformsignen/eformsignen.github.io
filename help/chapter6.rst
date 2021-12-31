@@ -8,12 +8,12 @@ Creating templates using Web Form Designer
 About Templates
 ------------------
 
-Templates are **electronic documents** used for the eformsign service. They are e-documents converted from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
+Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
 
 
 .. tip::
 
-   Using Templates is useful for documents that need to be sent often or regularly. If the tempate is registered once, you don't have to upload the document file whenever you need to sent the document. You can just easily create and sent documents using the template. 
+   Using Templates is useful for documents that need to be sent often or regularly. If a tempate is registered once, you don't have to upload a document file whenever you need to send a document. You can just easily create and sent documents using the template. 
 
 
 .. note::
@@ -21,7 +21,7 @@ Templates are **electronic documents** used for the eformsign service. They are 
    For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
 
 
-To create and send electronic documents via eformsign, you have to first create a template, which can later be converted into an e-document.
+To create and send electronic documents via eformsign, you have to first create a template, which can later be transformed into an e-document.
 
 **How to create a template with Web Form Designer**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,7 +37,8 @@ You can easily create a template by uploading a file online.
 .. note::
 
    The file formats supported: pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, tiff
-   The file size: up to 9MB
+
+   File size: up to 9MB
 
 
 1. Drag and drop the file that you want to create as a template, or click the **Select a file** button to select the file from your computer and upload it.
@@ -49,13 +50,13 @@ You can easily create a template by uploading a file online.
 
    .. figure:: resources/en-managetemplate-upload-popup.png
       :alt: Manage Templates > Uploading a File (2)
-      :width: 700px
+      :width: 500px
 
 2. Add participants and set the role for each participant.
 
-   .. figure:: resources/en-template-settings-wfdesign.png
+   .. figure:: resources/en-template-settings-wfdesign0.png
       :alt: Dragging a Component
-      :width: 700px
+      :width: 500px
 
 
 3. Select a component that you want to add and drag it onto the uploaded file.
@@ -81,11 +82,11 @@ You can set the details for the template.
 
 -  `General <#general_wd>`__
 
-   Set the template name, abbreviation, document name, document number, etc.
+   Sets the template name, abbreviation, document name, document number, etc.
 
 -  `Set permissions <#auth_wd>`__
 
-   Grant members or groups the permission to use and edit the template and to create documents from it and manage them.
+   Grants members or groups the permission to use and edit the template and to create documents from it and manage them.
 
 -  `Workflow <#workflow_wd>`__
 
@@ -178,9 +179,6 @@ Set basic information about the template including the template name, category, 
 
    **Template abbreviation** can be used in the document number, document name, mail template, etc.
 
-   .. figure:: resources/en-template-name-abb.png
-      :alt: Template Abbreviation
-
 
 **③ Category**
    Category is used to sort templates by type. With the category name, you can filter templates in the **Manage templates** menu, and can filter documents in the **Documents** menus and the **Manage documents** menu. You can choose from an existing category or create a new category by entering a new name.
@@ -188,12 +186,14 @@ Set basic information about the template including the template name, category, 
    You can set multi-level categories with a separator ( **/** ). For example, if you set a category as **HR Team/Vacation**, the Vacation category in the HR category is created.
 
 **④ Description**
-   Enter additional comments about the template. This description is displayed under the template name in the **New from template.**
+   Enter additional comments about the template. This description is displayed under the template name in **New from template.**
 
 **⑤ Template validity period**
    Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
 
-   When **No expiry date** is checked, documents can be created without a time limit. **No expiry date** is unchecked and set the date, the document can only be created until the set date.
+   If you check **No expiry date**, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.
+
+
 
 **Document settings**
 -------------------------------------
@@ -250,13 +250,13 @@ You can make a piece of information entered into a document or document-related 
 
 2. Click on the settings icon (|image4|) of the desired template to go to the **Template settings** page.
 
-3. Set the desired naming rule in the **Document naming rule** field in the **General** tab by adding reserved words.
+3. Set the desired naming rule in the **Document naming rule** section in the **General** tab by adding reserved words.
 
 4. Click the **Save** button on the top right corner to save the changes.
 
 .. _reserved_words:
 
-**How to use reserved words Templates**
+**How to use reserved words**
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -266,12 +266,12 @@ You can make a piece of information entered into a document or document-related 
 
 -  **Component ID**\ : Adds a piece of information in the document into the document name.
 
-   Click the **Add reserved word** button, and click **Component ID**\ to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.
+   Click the **Add reserved word** button, and click **Component ID**\  to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.
 
 
 -  **General info**\ : Adds document-related information into the document name.
 
-   Click **General info**\ to display the list of information type and then select the desired information. Information types are as follows.
+   Click **General info**\  to display the list of information type and then select the desired information. Information types are as follows.
 
 
    +-----------------------+-----------------------------------------------+
@@ -409,7 +409,7 @@ A document number can be viewed directly on a document using the document compon
 
       |image6|
 
-   3. Click the **Next** button to go to the **Template settings.**
+   3. Click the **Next** button to go to **Template settings.**
 
    4. In **Template settings > General,** tick the **Generate a document number** checkbox.
 
@@ -488,14 +488,13 @@ You can select groups or members to open documents created from the template, vo
 
 -  **Remove documents** (optional): Permission to permanently remove documents from the system.
 
-   |image9|
 
 .. _workflow_wd:
 
 Workflow Settings
 ~~~~~~~~~~~~~~~~~~~~~
 
-You can create or modify the workflow of the template by clicking the **Workflow** tab in the **Template settings**\ page.
+You can create or modify the workflow of the template by clicking the **Workflow** tab in the **Template settings**\  page.
 
 .. figure:: resources/en-template-settings-workflow.png
    :alt: Template Settings > Workflow
@@ -518,7 +517,7 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
 .. tip::
 
-   Participants can be added only in the **Design form** step. Participants can be added up to 30 participants. For Workflow, you can add as many steps as you want. 
+   Participants can be added only in the **Design form** step. Up to 30 participants can be added. In the workflow, you can add as many steps as you want. 
    You can adjust the order of steps by clicking and dragging a workflow step.
    To delete a step, click **-** on the right side of the step button.
 
@@ -553,15 +552,15 @@ You can click a step to set the details such as **Properties** for each workflow
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. figure:: resources/workflow-participant-properties.png
-   :alt: 워크플로우 설정 > 참여자 단계 속성
+.. figure:: resources/workflow-participant-properties0.png
+   :alt: Workflow > Participant step properties
    :width: 700px
 
--  **Notification**\: Select how recipients can receive notification and edit their content. 
+-  **Notification**\: Select how recipients can receive notifications and edit the content. 
 
-   - **Select notification method:** By default, nofitications are sent by email. You can also select SMS to send notification via SMS message.
+   - By default, notifications are sent by email. You can also select SMS to send notifications via SMS messages.
 
-   - **Edit notification message:** You can edit notification message for each step.  
+   - **Edit notification message:** You can edit the notification message for each step.  
 
 -  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
    
@@ -571,9 +570,9 @@ You can click a step to set the details such as **Properties** for each workflow
 
 -  **Set document password**\: Set to require recipients to verify their identity when opening the document.   
 
-   - **Verification method**\: Set a verification password that recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
+   - **Require document password**\: Set a verification password that recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
       
-   - **Email verification**\: Require recipients to verify identity using email. The 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
+   - **Require email verification**\: Require recipients to verify their identity using email. A 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
       
 
 
@@ -581,14 +580,14 @@ You can click a step to set the details such as **Properties** for each workflow
 **Participant/Reviewer - Select recipient**
 
 .. figure:: resources/workflow-participant-selected.png
-   :alt: 워크플로우 설정 > 참여자 수신자 지정
+   :alt: Workflow > Selecting a recipient
    :width: 700px
 
 You can select the recipient of the step in advance.
 
 -  **Group or member**: Select the groups or members who will sign and review the document. You can select multiple groups or members, but only one person among the selected can sign and review the document.
 
--  **Handler of a previous step**: Select the recipient of the previous step including the Start step to sign and review the document. You can select the step.
+-  **Handler of a previous step**: Select the person of a previous step including the Start step to sign and review the document.
 
 
 
@@ -597,16 +596,16 @@ You can select the recipient of the step in advance.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. figure:: resources/workflow-participant-properties.png
-   :alt: 워크플로우 설정 > 참여자 단계 속성
+   :alt: Workflow > Participant step properties
    :width: 700px
 
 -  **Step name**\: Change the name of the step. The default name is ‘Reviewer no.’.
 
--  **Notification**\: Select how recipients can receive notification and edit their content. 
+-  **Notification**\: Select how recipients can receive notifications and edit the content. 
 
-   - **Select notification method:** By default, nofitications are sent by email. You can also select SMS to send notification via SMS message.
+   - By default, nofitications are sent by email. You can also select SMS to send notifications via SMS messages.
 
-   - **Edit notification message:** You can edit notification message for each step.  
+   - **Edit notification message:** You can edit the notification message for each step.  
 
 -  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
    
@@ -615,9 +614,9 @@ You can select the recipient of the step in advance.
 
 -  **Set document password**\: Set to require recipients to verify their identity when opening the document.   
 
-   - **Verification method**\: Set a verification password that recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
+   - **Require document password**\: Set a verification password in which recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
       
-   - **Email verification**\: Require recipients to verify identity using email. The 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
+   - **Require email verification**\: Require recipients to verify their identity using email. A 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
 
 
 
@@ -675,8 +674,7 @@ You can set the default value of a field to be the value saved in company/group/
 Notification Settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can select recipients of status notification message, view and edit the messages
-for documents created from the template.
+You can select the recipients of status notification messages, and view and edit the messages for documents created from the template.
 
 
 **Document status notifications**
@@ -684,18 +682,13 @@ for documents created from the template.
 You can select who will receive status notifications for documents created from the template. You can also preview the following notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the notification messages for completed documents.
 
 .. figure:: resources/template-setting-notification-channel.png
-   :alt: 알림 채널 설정
+   :alt: Notification settings
 
 .. figure:: resources/template-setting-notification-editl.png
-   :alt: 알림 내용 편집
+   :alt: Notification template editing
    :width: 400px
 
 
-.. note::
-
-   For notifications sent when documents are rejected, voided, or corrected, only email templates are provided and they are not sent via SMS. Also, SMS templates for document completion notifications can only be edited by companies subscribed a paid plan.
-
-|image23|
 
 .. note::
 
@@ -826,6 +819,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image23| image:: resources/en-template-settings-notification-status.png
    :width: 500px
 .. |image24| image:: resources/template-hamburgericon.png
+   :width: 10px
 .. |image25| image:: resources/en-manage-template-menu-icon-wd.png
    :width: 700px
 .. |image26| image:: resources/en-manage-template-menu-icon-change-owner.png

@@ -57,9 +57,12 @@ Electronic signatures have become legally binding in phases in the vast majority
 
    -  USA: Through the Uniform Electronic Transactions Act (UETA) enacted in 1999 and the Electronic Signature in Global and National Commerce Act (ESIGN) enacted in 2000, electronic signatures that meet specific requirements are recognized to have the same legal effect as wet signatures. There are four main requirements that must be met in order for an electronic signature to be legally binding: the intention of signing (signer certification), the intention and consent, the record of the signing process, and the preservation of the signature. Currently, 48 states in the United States have adopted electronic signature acts, and as a result, electronic signatures are recognized as having the same legal effect as handwritten signatures in almost all transactions.
 
+
    -  EU: In accordance with eIDAS (Electronic Identification and Trust Services) regulations, all types of electronic signatures are recognized as legally effective and binding. They are categorized into Qualified Electronic Signatures (QES), Advanced Electronic Signatures (AdES), and general Electronic signatures, and their legal status is applied accordingly, corresponding to the characteristics of each type of document.
 
+
    -  Korea: According to the Digital Signature Act, the legality of an electronic document or signature is not denied because it is in an electronic format. As well, the monopolistic status of the certificate authority has been abolished and the same legal effect is given to a variety of commercial electronic signature services. In addition, the monopoly status of accredited certificates has been abolished and the same legal effect is given to a variety of private digital signature services.
+
 
    -  Japan: The legal effect of electronic signatures is recognized in accordance with laws on electronic signature and certification services.
 
@@ -173,11 +176,11 @@ using eformsign.
    menu and can manage templates. Managing templates includes creating,
    deploying, editing, and deleting eformsign templates.
 
-   -**Document creator**
+-  **Document creator**
 
    With this permission, a member can can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the New from template page.
 
-   -**Template editor**
+-  **Template editor**
 
    With this permission, a member who is a template editor of a template can edit the template. You can grant this permission for each template.
 
@@ -330,11 +333,6 @@ through multiple departments in an organization as well as forwarding
 the document to the correct department. You can also send the copy of a
 completed document to the parties involved immediately after the
 document is completed.
-
-.. figure:: resources/workflow_ex1.png
-   :alt: Example Workflow of an Application Form
-   :width: 400px
-
 
 The e-application process using eformsign is as follows:
 

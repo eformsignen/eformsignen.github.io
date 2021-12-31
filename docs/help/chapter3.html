@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Creating documents &mdash; eformsign User Guide 2021.03.31 documentation</title>
   
@@ -13,12 +13,17 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 
   
   
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   
+
   
+  
+
   
 
   
@@ -28,10 +33,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -92,11 +97,12 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Creating documents</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-from-my-file">New from my file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-from-template">New from template</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#send-in-bulk">Send in bulk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-from-my-file">New from my file</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#options"><strong>Options</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#new-from-template">New from template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#send-in-bulk">Send in bulk</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
@@ -146,6 +152,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -157,7 +165,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="../_sources/help/chapter3.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -210,7 +218,7 @@ For more information, refer to <a class="reference external" href="chapter6.html
 <li><p>Go to the <strong>New from my file</strong> menu.</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-menu.png"><img alt="image1" src="../_images/newfrommyfile-menu.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>Upload the document file you want.</p>
+<li><p>Upload the document file you want. The supported file types are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff with a maximum size of 9MB.</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-uploadfile.png"><img alt="image2" src="../_images/newfrommyfile-uploadfile.png" style="width: 700px;" /></a></p>
 </li>
 <li><p>Add the <strong>document participants</strong> that will be participating in document creation and select their roles.</p>
@@ -224,7 +232,7 @@ For more information, refer to <a class="reference external" href="chapter6.html
 <p><a class="reference internal" href="../_images/newfrommyfile-formdesign.png"><img alt="image4" src="../_images/newfrommyfile-formdesign.png" style="width: 700px;" /></a></p>
 </li>
 <li><p>In the Add recipients step, you can add contact information such as email and phone number and set <strong>Recipient options</strong> for each participant.</p>
-<p><a class="reference internal" href="../_images/newfrommyfile-recipients.png"><img alt="image5" src="../_images/newfrommyfile-recipients.png" style="width: 700px;" /></a></p>
+<p><a class="reference internal" href="../_images/newfrommyfile-recipients.png"><img alt="image5" src="../_images/newfrommyfile-recipients.png" style="width: 800px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There are two recipient types: reviewer and participant. The
@@ -244,7 +252,7 @@ only approve documents after reviewing them.</p>
 </div>
 </li>
 <li><p>Click the <strong>Options</strong> step to change the document title and select whether to timestamp the document when completed.</p>
-<p><a class="reference internal" href="../_images/newfrommyfile-option.png"><img alt="image7" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a></p>
+<p><a class="reference internal" href="../_images/newfrommyfile-option.png"><img alt="image7" src="../_images/newfrommyfile-option.png" style="width: 1100px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The above three steps are the steps you need to go through before
@@ -276,12 +284,21 @@ as a created document.</p>
 <p>The detail settings in <strong>Recipient options</strong> is displayed differently depending on whether the participant or reviewer is a member of your company or is a non-member.</p>
 <ul>
 <li><p><strong>When the recipient is a member</strong></p>
-<p>The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.</p>
+<p><strong>Set document password:</strong> The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.</p>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>When the mobile number option is selected, then the document will be sent via SMS and additional charges will occur.</p>
 </div>
-<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 400px;" /></a></p>
+<ul>
+<li><p><strong>Notification:</strong> <strong>Edit notification message</strong>allows you to edit the email or SMS notification message sent to recipients.</p></li>
+<li><p><strong>Document expiration:</strong> Allows to set the period in which recipients can open and submit documents.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Setting the valid period to 0 days 0 hours disables the document expiration period.</p>
+</div>
+</li>
+</ul>
+<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 1200px;" /></a></p>
 </li>
 <li><p><strong>When the recipient is a non-member</strong></p>
 <p>If the information you enter is not the same as the member information, then the recipient is recognized as a non-member. This requires the below information to be filled in.</p>
@@ -293,13 +310,18 @@ as a created document.</p>
 </div>
 </li>
 <li><p><strong>Document expiration:</strong> You can set the expiration period in which the non-member can open and submit the document.</p></li>
-<li><p><strong>Set password:</strong> If you tick the Set password tick box, you can set the password required for the non-member recipient to open the document. For the password hint, you can set it to something the recipient will be able tell.</p></li>
-<li><p><strong>Require mobile verification to review documents:</strong> You can require mobile verification in order for the non-member recipient to open and fill-in the document. Extra charges apply.</p></li>
-<li><p><strong>Require mobile verification to view completed documents:</strong> You can require mobile verification in order for the non-member recipient to open the completed document. Extra charges apply.</p></li>
+<li><p><strong>Require document password:</strong> If you tick the Set password tick box, you can set the password required for the non-member recipient to open the document. For the password hint, you can set it to something the recipient will be able tell.</p></li>
+<li><p><strong>Require email verification:</strong> You can require mobile verification in order for the non-member recipient to open and fill-in the document. Extra charges apply.</p></li>
 </ul>
-<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-external.png"><img alt="image13" src="../_images/newformmyfile-recipientoption-external.png" style="width: 400px;" /></a></p>
 </li>
 </ul>
+<div class="section" id="options">
+<h3><strong>Options</strong><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h3>
+<p>In the Options step, you can set the document title, set and edit document notification settings, and choose whether to timestamp the document.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/wfd-option.png"><img alt="Options page" src="../_images/wfd-option.png" style="width: 700px;" /></a>
+</div>
+</div>
 </div>
 <div class="section" id="new-from-template">
 <h2>New from template<a class="headerlink" href="#new-from-template" title="Permalink to this headline">¶</a></h2>
@@ -323,7 +345,7 @@ that template.</p>
 <li><p>Click and go to <strong>New from template</strong> in the dashboard or the sidebar menu.</p>
 <p><a class="reference internal" href="../_images/menu-startfromtemplate.png"><img alt="image14" src="../_images/menu-startfromtemplate.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>Click the create icon(<img alt="image15" src="../_images/create-icon.PNG" />) of the template you want to create a document from.</p>
+<li><p>Click the create icon(<a class="reference internal" href="../_images/create-icon.PNG"><img alt="image15" src="../_images/create-icon.PNG" style="width: 30px;" /></a>) of the template you want to create a document from.</p>
 <p><a class="reference internal" href="../_images/startfromtemplate-create.png"><img alt="image16" src="../_images/startfromtemplate-create.png" style="width: 700px;" /></a></p>
 </li>
 <li><p>If you create a document and then click the <strong>Complete</strong> or
@@ -344,8 +366,9 @@ documents from templates can be found in the <strong>Action required</strong> pa
 </div>
 </li>
 </ol>
+</div>
 <div class="section" id="send-in-bulk">
-<h3>Send in bulk<a class="headerlink" href="#send-in-bulk" title="Permalink to this headline">¶</a></h3>
+<h2>Send in bulk<a class="headerlink" href="#send-in-bulk" title="Permalink to this headline">¶</a></h2>
 <p>When creating a document from a template, you can use the <strong>Send in bulk</strong> feature to send a document to multiple recipients at once.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -358,7 +381,7 @@ documents from templates can be found in the <strong>Action required</strong> pa
 <p>2. Click the Send in bulk icon of the template you want to create a
 document from.</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/bulk-creation-icon.png"><img alt="Send in bulk icon" src="../_images/bulk-creation-icon.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulk-creation-icon.png"><img alt="Send in bulk icon" src="../_images/bulk-creation-icon.png" style="width: 250px;" /></a>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Select whether to enter data either by manually (Enter manually) or by uploading an Excel file (Upload file).</p></li>
@@ -366,37 +389,39 @@ document from.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="Send in bulk screen" src="../_images/bulk_create.png" style="width: 800px;" /></a>
 </div>
-<ol class="arabic simple" start="4">
-<li><p>Enter the values in the columns displayed on the screen.</p></li>
-</ol>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="Send in bulk screen" src="../_images/bulk_create.png" style="width: 800px;" /></a>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Each column of the table contains all the fields of a document. The
-IDs of components (which are fields in a template) are shown as the
-name of each column. The last row of the first column (No.) indicates
-the number of documents to be created.</p>
-<p>Tables are filled in a similar way as in Excel. You can double-click
-on each cell to enter a value and right-click on the mouse to add or
-delete columns. The value entered in a cell can be copied and pasted,
-and dragged to another cell.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>How to enter data when sending documents in bulk</strong></p>
+<p><strong>Method 1. Enter manually: max 200 documents (rows)</strong></p>
+<p>Select**Enter manually**to display the table in which you can enter data directly. Each column of the table contains all the fields of a document. The IDs of components (which are fields in a template) are shown as the name of each column. The last row of the first column (No.) indicates the number of documents to be created..</p>
+<p>Tables are filled in a similar way as in Excel. You can double-click on each cell to enter a value and right-click on the mouse to add or delete columns. The value entered in a cell can be copied and pasted, and dragged to another cell.</p>
 <p>When entering data by uploading an Excel file, you must first download the Excel file for data entry shown on the screen, then enter data into the fields in the file, and then finally upload the file.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-edit.png"><img alt="Send in bulk enter manually option" src="../_images/bulksend-edit.png" style="width: 700px;" /></a>
+</div>
+<p><strong>Method 2. Upload file: max 1000 documents (rows)</strong></p>
+<p>Select <strong>Upload file</strong>and download the Excel file for data entry. Once the file is downloaded, enter the neccessary data into the file and upload it.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-fileupload.png"><img alt="Send in bulk upload file option" src="../_images/bulksend-fileupload.png" style="width: 500px;" /></a>
+</div>
 </div>
 <p>4. Click the <strong>Preview</strong> button on the top right corner of the screen to
-view the documents you created. To send the document right away, click the <strong>Send now</strong> button. To send the documents at a schedule time and date, click the <strong>Schedule send</strong> button.</p>
+view the documents you created.</p>
+<ol class="arabic" start="5">
+<li><p>To send the document right away, click the <strong>Send now</strong> button. To send the documents at a schedule time and date, click the <strong>Schedule send</strong> button.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-sending.png"><img alt="send in bulk" src="../_images/bulksend-sending.png" style="width: 700px;" /></a>
+</div>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If there is an non-member participant step in a template, then the left
 area of the table is highlighted in blue. This area is for entering non-member recipients’ names, emails, etc. Depending on the
 non-member participant step settings, there can be phone numbers, verification
 passwords, etc.</p>
-<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
 <p>Right before sending documents in bulk, eformsign will automatically check to see if there are any errors in the document. Documents with an error will not be sent and only normal documents will be sent.</p>
-<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
 <p>When bulk sending documents at a scheduled time, the scheduled time must be at least 10 minutes from the current time.</p>
-<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -407,8 +432,6 @@ passwords, etc.</p>
 <p>2. Check whether the components are allowed access in Template settings. Only the components that are checked to be allowed access in <strong>Manage templates &gt; Template settings (⚙) &gt; Workflow settings</strong>
 are shown.</p>
 <p>You can delete rows by right-clicking on your mouse and selecting the desired option in the pop-up window.</p>
-<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
-</div>
 </div>
 </div>
 </div>
@@ -418,37 +441,29 @@ are shown.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="chapter4.html" class="btn btn-neutral float-right" title="Introduction to Web Form Designer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="chapter2.html" class="btn btn-neutral float-left" title="Basic Info" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="chapter4.html" class="btn btn-neutral float-right" title="Introduction to Web Form Designer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chapter2.html" class="btn btn-neutral float-left" title="Basic Info" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2021, FORCS CO., LTD. All rights reserved.
+        &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

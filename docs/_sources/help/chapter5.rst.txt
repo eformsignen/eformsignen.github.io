@@ -134,6 +134,8 @@ The components provided in eformsign are as follows:
    :alt: Component Types
    :width: 730px
 
+Basic Components
+--------------------------
 
 -  `Check <#check>`__\ **:** Ticks a check box.
 
@@ -141,7 +143,11 @@ The components provided in eformsign are as follows:
 
 -  `Text <#text>`__\ **:** Enters short text (usually 1 to 2 words).
 
+-  `Handwriting <#handwriting>`__\ **:** Allows to trace text shown on the background.
+
 -  `Multiline <#text>`__\ **:** Enters long text with multiple lines.
+
+-  `Label <#label>`__\ **:** Sets the form ID.
 
 -  `Combo <#combo>`__\ **:** Displays a drop-down menu that allows you to select an item.
 
@@ -159,13 +165,16 @@ The components provided in eformsign are as follows:
 
 -  `Attachment <#attach>`__\ **:** Attaches a file.
 
+
+Data Components
+--------------------------
+
 -  `User <#user>`__\ **:** Enters information of the document user.
 
 -  `Date <#usedate>`__\ **:** Enters the date in which the document is created or modified.
 
 -  `Document <#document>`__\ **:** Enters the document number or ID in the document itself.
 
--  `Label <#label>`__\ **:** Sets the form ID.
 
 Accessing Component Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -295,6 +304,176 @@ include ID and Tooltip Text, and the meaning of each property is as follows:
 
 The description of each component type provided in eformsign is as follows.
 
+
+Signature
+~~~~~~~~~
+
+This component is used for signing a signature on a document.
+
+|image14|
+
+Clicking the signature area displays the **Signature** pop-up which allows you to sign a signature by drawing, entering text, or using a
+previously registered signature.
+
+|image15|
+
+**Component Properties**
+
+.. figure:: resources/Signature-component-properties.png
+   :alt: Setting Signature Component Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the signature component. For example, the ID of the component can be ‘signerSignature’ for contract signers.
+
+**② Signature Type**
+
+Selects the signature type to be used when signing.
+
+-  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
+
+-  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
+
+-  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
+
+
+.. note::
+
+   If there is a signature or initial added on eformsign, then it will be automatically entered in the signature area when a signature area is
+   clicked. However, if there is no added signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked. If more than one signature type is selected, then the buttons for each signature type will be shown as below.
+
+   .. figure:: resources/select-signature-type.png
+      :alt: Signature type selection
+      :width: 200px
+
+.. Tip::
+
+   In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a
+   stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** tab in the **Signature** pop-up, and then select a stamp image and click **OK**.
+
+**③ Signing method:**
+
+If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.
+
+**④ Signature Pen Thick**
+
+Sets the signature pen thickness.
+
+**⑤ Signature Pen Color**
+
+Sets the signature pen color.
+
+.. Tip::
+
+   You can set the signature date to be automatically entered in documents that require signature, such as electronic contracts and electronic agreements.
+
+   1. Open the document file (Word, Excel, PowerPoint) to be converted into an electronic form or create a new document.
+
+   2. Add a Signature component in the area of the document to be signed.
+
+   3. Enter the ID of the Signature component in the **Component Properties** tab. For example, the ID can be named ‘employeeSignature’.
+
+   4. Add the Date (not to be confused with Datetime) component where the signature date will be entered.
+
+   5. Open the **Component Properties** tab of the Date component.
+
+   6. Select the **Date Type** as **Last modified date of the content**.
+
+   7. Enter the ID of the Signature component in the Input Component ID field on the bottom. In this case, it would be ‘employeeSignature’.
+
+   .. figure:: resources/date-component-properties.png
+      :alt: Date component properties
+      :width: 500px
+
+   ※ You can select the format of date to be displayed on the Date component by selecting the desired date format in the **Component Properties** tab.
+
+
+.. _text:
+
+Text and Multiline
+~~~~~~~~~~~~~~~~~~
+
+Both Text and Multiline components are used to create text fields. The Text component is suitable for short text with 1 to 2 words, and the Multiline component is suitable for long text with more than 1 line.
+
+|image9|
+
+**Component Properties**
+
+.. figure:: resources/text-component-properties.png
+   :alt: Setting Text and Multiline Component Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the text/multiline component. For example, the ID of the component in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.
+
+**② Max Length**
+
+Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters.
+
+**③ Keyboard Type**
+
+Selects the keyboard type to be used when entering text in the component. Keyboard Type can only be used in mobile devices such as smartphones and tablets.
+
+**④ Show Password Characters**
+
+This option can be set only in the text component. By checking this
+option, the password is hidden with the password symbol (●) when
+entering text. The password is also hidden with the password symbol in
+PDFs, and can only be seen when downloaded in the CSV format.
+
+**⑤ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a
+component.
+
+.. _date:
+
+
+Handwriting
+--------------------
+
+The handwriting component is used to trace a pre-written text.
+
+You can type in the text to be displayed on a document in which recipients can trace.
+
+.. figure:: resources/handwriting-component-fb.png
+   :alt: Handwriting component
+
+
+.. figure:: resources/handwriting-component-example.png
+   :alt: Handwriting component example
+
+**Component propertites**
+
+.. figure:: resources/handwriting-component-properties_web.pnghandwriting-component-properties_fb.png
+   :alt: Setting handwriting component properties
+
+
+**① ID**
+
+Enters the ID of the handwriting component.
+
+
+**② Pen Thickness**
+
+Sets the pen thickness.
+
+**③ Pen Color**
+
+Sets the pen color.
+
+**④ Show Word Tracing**
+
+Allows you to type in the text that will be displayed on the handwriting component.
+
+
+
 Check
 ~~~~~
 
@@ -315,7 +494,7 @@ In Word and PowerPoint, the **Check** component is shown as a rectangular shape.
 
 .. figure:: resources/check-component-properties-1.png
    :alt: Setting Check Component Properties
-   :width: 500px
+   :width: 250px
 
 
 
@@ -347,7 +526,7 @@ In Word and PowerPoint, the radio component is shown as a rectangular shape. Mak
 
 .. figure:: resources/Radio-component-properties.png
    :alt: Setting Radio Component Properties
-   :width: 400px
+   :width: 250px
 
 
 
@@ -395,7 +574,7 @@ If you click a combo component, a list of items is displayed as follows:
 
 .. figure:: resources/combo-component-properties.png
    :alt: Setting Combo Component Properties
-   :width: 400px
+   :width: 250px
 
 
 
@@ -424,48 +603,24 @@ Checking the **Allow Empty Value** option allows you to deselect a selected item
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
-.. _text:
 
-Text and Multiline
-~~~~~~~~~~~~~~~~~~
 
-Both Text and Multiline components are used to create text fields. The Text component is suitable for short text with 1 to 2 words, and the Multiline component is suitable for long text with more than 1 line.
+Label
+~~~~~
 
-|image9|
+This component is used for setting the form ID of a document.
 
 **Component Properties**
 
-.. figure:: resources/text-component-properties.png
-   :alt: Setting Text and Multiline Component Properties
-   :width: 400px
+.. figure:: resources/label_property.png
+   :alt: Setting Label Component Properties
+   :width: 250px
 
 
 
 **① ID**
 
-Enters the ID of the text/multiline component. For example, the ID of the component in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.
-
-**② Max Length**
-
-Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters.
-
-**③ Keyboard Type**
-
-Selects the keyboard type to be used when entering text in the component. Keyboard Type can only be used in mobile devices such as smartphones and tablets.
-
-**④ Show Password Characters**
-
-This option can be set only in the text component. By checking this
-option, the password is hidden with the password symbol (●) when
-entering text. The password is also hidden with the password symbol in
-PDFs, and can only be seen when downloaded in the CSV format.
-
-**⑤ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a
-component.
-
-.. _date:
+Sets the label component ID.
 
 Datetime
 ~~~~~~~~
@@ -478,7 +633,7 @@ This component is used for entering a date. Clicking the component displays a da
 
 .. figure:: resources/datetime-component-properties_02.png
    :alt: Setting Datetime Component Properties
-   :width: 400px
+   :width: 250px
 
 
 
@@ -538,7 +693,7 @@ numbers and select the one you want.
 
 .. figure:: resources/number-component-properties.png
    :alt: Setting Numeric stepper Component Properties
-   :width: 300px
+   :width: 250px
 
 
 
@@ -598,7 +753,7 @@ You can change the status to **Good** or **Bad** by clicking the components as f
 
 .. figure:: resources/toggle-component-properties.png
    :alt: Toggle Component Properties
-   :width: 400px
+   :width: 250px
 
 
 
@@ -624,83 +779,7 @@ However, by checking this option, you can clear the item displayed on the compon
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
-Signature
-~~~~~~~~~
 
-This component is used for signing a signature on a document.
-
-|image14|
-
-Clicking the signature area displays the **Signature** pop-up which allows you to sign a signature by drawing, entering text, or using a
-previously registered signature.
-
-|image15|
-
-**Component Properties**
-
-.. figure:: resources/Signature-component-properties.png
-   :alt: Setting Signature Component Properties
-   :width: 400px
-
-
-
-**① ID**
-
-Enters the ID of the signature component. For example, the ID of the component can be ‘signerSignature’ for contract signers.
-
-**② Signature Type**
-
-Selects the signature type to be used when signing.
-
--  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
-
--  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
-
--  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
-
--  **Signing method:** If you check the Direct signing only check box, it preventns the signature field from being automatically filled when clicked/touched.
-
-.. note::
-
-   If there is a signature or initial added on eformsign, then it will be automatically entered in the signature area when a signature area is
-   clicked. However, if there is no added signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked.
-
-.. note::
-
-   In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a
-   stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** tab in the **Signature** pop-up, and then select a stamp image and click **OK**.
-
-**③ Signature Pen Thick**
-
-Sets the signature pen thickness.
-
-**④ Signature Pen Color**
-
-Sets the signature pen color.
-
-**⑤ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a component.
-
-.. note::
-
-   You can set the signature date to be automatically entered in documents that require signature, such as electronic contracts and electronic agreements.
-
-   1. Open the document file (Word, Excel, PowerPoint) to be converted into an electronic form or create a new document.
-
-   2. Add a Signature component in the area of the document to be signed.
-
-   3. Enter the ID of the Signature component in the **Component Properties** tab. For example, the ID can be named ‘signature1’.
-
-   4. Add the Date (not to be confused with Datetime) component where the signature date will be entered.
-
-   5. Open the **Component Properties** tab of the Date component.
-
-   6. Select the **Date Type** as **Last modified date of the content**.
-
-   7. Enter the ID of the Signature component in the Input Component ID field on the bottom. In this case, it would be ‘signature1’.
-
-   ※ You can select the Format of date to be displayed on the Date component by selecting the desired date format in the **Component Properties** tab.
 
 Camera
 ~~~~~~
@@ -722,7 +801,7 @@ If the size of the selected image is larger than the size of the text box, then 
 
 .. figure:: resources/Camera-component-properties-.png
    :alt: Setting Camera Component Properties
-   :width: 400px
+   :width: 250px
 
 
 
@@ -758,7 +837,7 @@ When you add a Voice component in OZ in Office, you can record voice or play a v
 
 .. figure:: resources/record_component.png
    :alt: Setting Voice Component Properties
-   :width: 400px
+   :width: 250px
 
 
 **① ID**
@@ -789,7 +868,7 @@ The types and sizes of files that can be attached are as follows:
 
 .. figure:: resources/Attachment-component-properties.png
    :alt: Setting Attachment Component Properties
-   :width: 400px
+   :width: 250px
 
 
 
@@ -813,7 +892,7 @@ information such as name or contact information, or custom field information is 
 
 .. figure:: resources/user-component-properties-.png
    :alt: Setting User Component Properties
-   :width: 400px
+   :width: 250px
 
 
 
@@ -869,7 +948,7 @@ This component is used to automatically enter the date in which a document is cr
 
 .. figure:: resources/date-component-properties_.png
    :alt: Setting Date Component Properties
-   :width: 400px
+   :width: 250px
 
 
 **① ID**
@@ -921,7 +1000,7 @@ The document ID is a unique document ID assigned in the system, so it does not r
 
 .. figure:: resources/document-domponent-properties.png
    :alt: Setting Document Component Properties
-   :width: 400px
+   :width: 250px
 
 
 **① ID**
@@ -936,22 +1015,7 @@ Selects the type of information that will be used.
 
 -  **Document no.:** The document number set in **Template settings > General.** For information on how to set a document number, go to `Generating and viewing a document number <chapter6.html#docnumber_wd>`__.
 
-Label
-~~~~~
 
-This component is used for setting the form ID of a document.
-
-**Component Properties**
-
-.. figure:: resources/label_property.png
-   :alt: Setting Label Component Properties
-   :width: 400px
-
-
-
-**① ID**
-
-Sets the label component ID.
 
 Upload Form File
 ----------------
@@ -1060,11 +1124,11 @@ After uploading a template, you can configure additional settings for documents 
 .. |image20| image:: resources/form-builder-components_user.png
    :width: 730px
 .. |image21| image:: resources/user-input-certain-component.png
-   :width: 400px
+   :width: 250px
 .. |image22| image:: resources/form-builder-components_date.png
    :width: 730px
 .. |image23| image:: resources/date-component-connecting-other-component.png
-   :width: 400px
+   :width: 250px
 .. |image24| image:: resources/document-component-in-list.png
    :width: 730px
 .. |image25| image:: resources/excute_button.png
