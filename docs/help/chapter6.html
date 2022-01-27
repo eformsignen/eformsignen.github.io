@@ -109,9 +109,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#configure-basic-settings-for-the-template"><strong>Configure basic settings for the template</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#document-settings"><strong>Document settings</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#general-setting-the-document-naming-rule">General &gt; Setting the Document Naming Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#general-generating-and-viewing-a-document-number">General &gt; Generating and Viewing a Document Number</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#general-generating-and-viewing-a-document-number">General &gt; Generating and Viewing a Document Number</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#set-permissions">Set Permissions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#workflow-settings">Workflow Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#adding-steps-to-the-workflow"><strong>Adding steps to the workflow</strong></a></li>
@@ -119,13 +119,11 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#field">Field</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#notification-settings">Notification Settings</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#menus-for-each-template">Menus for Each Template</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#search-templates">Search Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notification-settings">Notification Settings</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#menus-for-each-template">Menus for Each Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-templates">Search Templates</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder</a></li>
@@ -343,7 +341,6 @@
 <dt><strong>⑨ Skip pop-up window when sending documents</strong></dt><dd><p>Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When <strong>Skip pop-up window when sending documents</strong> is checked, the pop-up window does not appear and the page proceeds to the next step.</p>
 </dd>
 </dl>
-<hr class="docutils" />
 </div>
 <div class="section" id="general-setting-the-document-naming-rule">
 <span id="document-naming"></span><h4>General &gt; Setting the Document Naming Rule<a class="headerlink" href="#general-setting-the-document-naming-rule" title="Permalink to this headline">¶</a></h4>
@@ -459,15 +456,16 @@ Company profile</p></td>
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="general-generating-and-viewing-a-document-number">
-<span id="docnumber-wd"></span><h3>General &gt; Generating and Viewing a Document Number<a class="headerlink" href="#general-generating-and-viewing-a-document-number" title="Permalink to this headline">¶</a></h3>
+<span id="docnumber-wd"></span><h4>General &gt; Generating and Viewing a Document Number<a class="headerlink" href="#general-generating-and-viewing-a-document-number" title="Permalink to this headline">¶</a></h4>
 <p>You can set a document number for documents created in eformsign. You
 can set it so that a document number is generated automatically for each
 template, and can select one of four document numbering formats. The
 document number can be generated in the document using the document
 component. You can also see a separate column in the document list and
 search documents by the document number.</p>
+<div class="section" id="generating-a-document-number">
+<h5><strong>Generating a document number</strong><a class="headerlink" href="#generating-a-document-number" title="Permalink to this headline">¶</a></h5>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-generate-document-number.png"><img alt="Setting a Document Number" src="../_images/en-generate-document-number.png" style="width: 600px;" /></a>
 </div>
@@ -507,6 +505,9 @@ search documents by the document number.</p>
 </li>
 <li><p>Click the <strong>Save</strong> button at the top right corner of the page to apply your changes.</p></li>
 </ol>
+</div>
+<div class="section" id="viewing-a-document-number">
+<h5><strong>Viewing a document number</strong><a class="headerlink" href="#viewing-a-document-number" title="Permalink to this headline">¶</a></h5>
 <p>A document number can be viewed directly on a document using the document component and can also be viewed in the document list.</p>
 <ul>
 <li><p><strong>Viewing a document number directly on a document</strong></p>
@@ -551,6 +552,8 @@ search documents by the document number.</p>
 </ol>
 </li>
 </ul>
+</div>
+</div>
 </div>
 <div class="section" id="set-permissions">
 <span id="auth-wd"></span><h3>Set Permissions<a class="headerlink" href="#set-permissions" title="Permalink to this headline">¶</a></h3>
@@ -608,7 +611,7 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <li><p><strong>Do not allow duplicate documents</strong>: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.</p></li>
 </ul>
 </div></blockquote>
-<p><strong>Participant: Step for recipient who is participating in a document such as signing, or filling in the document</strong></p>
+<p><strong>Participant: Step for signing or filling in a document</strong></p>
 <hr class="docutils" />
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow-participant-properties0.png"><img alt="Workflow &gt; Participant step properties" src="../_images/workflow-participant-properties0.png" style="width: 700px;" /></a>
@@ -638,7 +641,7 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <li><p><strong>Group or member</strong>: Select the groups or members who will sign and review the document. You can select multiple groups or members, but only one person among the selected can sign and review the document.</p></li>
 <li><p><strong>Handler of a previous step</strong>: Select the person of a previous step including the Start step to sign and review the document.</p></li>
 </ul>
-<p><strong>Reviewer: Step for reviewing the document</strong></p>
+<p><strong>Reviewer: Step for reviewing a document</strong></p>
 <hr class="docutils" />
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow-participant-properties.png"><img alt="Workflow &gt; Participant step properties" src="../_images/workflow-participant-properties.png" style="width: 700px;" /></a>
@@ -724,8 +727,10 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 </div>
 </li>
 </ul>
+</div>
+</div>
 <div class="section" id="menus-for-each-template">
-<h4>Menus for Each Template<a class="headerlink" href="#menus-for-each-template" title="Permalink to this headline">¶</a></h4>
+<h2>Menus for Each Template<a class="headerlink" href="#menus-for-each-template" title="Permalink to this headline">¶</a></h2>
 <p>Go to the <strong>Manage templates</strong> page, click the menu icon (<a class="reference internal" href="../_images/template-hamburgericon.png"><img alt="image24" src="../_images/template-hamburgericon.png" style="width: 10px;" /></a>) right next to the template name to see the menus that can be set for each template.</p>
 <p><a class="reference internal" href="../_images/en-manage-template-menu-icon-wd.png"><img alt="image25" src="../_images/en-manage-template-menu-icon-wd.png" style="width: 700px;" /></a></p>
 <ul>
@@ -762,7 +767,7 @@ applied to all documents created afterwards.</p>
 </ul>
 </div>
 <div class="section" id="search-templates">
-<h4>Search Templates<a class="headerlink" href="#search-templates" title="Permalink to this headline">¶</a></h4>
+<h2>Search Templates<a class="headerlink" href="#search-templates" title="Permalink to this headline">¶</a></h2>
 <p>In the <strong>Manage templates</strong> page, you can lookup and search templates by template category.</p>
 <p><a class="reference internal" href="../_images/en-manage-template-search.png"><img alt="image29" src="../_images/en-manage-template-search.png" style="width: 700px;" /></a></p>
 <dl>
@@ -774,8 +779,6 @@ applied to all documents created afterwards.</p>
 <dt><strong>③ Sort</strong></dt><dd><p>You can select the template sorting order in ascending or descending by template name or category.</p>
 </dd>
 </dl>
-</div>
-</div>
 </div>
 </div>
 

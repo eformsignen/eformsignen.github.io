@@ -215,9 +215,6 @@ Configure additional settings including document naming rules for documents crea
    Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
 
 
--------------------
-
-
 
 .. _document_naming:
 
@@ -333,7 +330,7 @@ You can make a piece of information entered into a document or document-related 
 .. _docnumber_wd:
 
 General > Generating and Viewing a Document Number
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------
 
 You can set a document number for documents created in eformsign. You
 can set it so that a document number is generated automatically for each
@@ -548,9 +545,9 @@ You can click a step to set the details such as **Properties** for each workflow
 
 
 
-**Participant: Step for recipient who is participating in a document such as signing, or filling in the document**
+**Participant: Step for signing or filling in a document**
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. figure:: resources/workflow-participant-properties0.png
    :alt: Workflow > Participant step properties
@@ -591,7 +588,7 @@ You can select the recipient of the step in advance.
 
 
 
-**Reviewer: Step for reviewing the document**
+**Reviewer: Step for reviewing a document**
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -717,6 +714,7 @@ You can select who will receive status notifications for documents created from 
 
       When the **Document creator** option for **When the document is completed** is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.
 
+---------------------------
 Menus for Each Template
 ---------------------------
 
@@ -760,6 +758,7 @@ Go to the **Manage templates** page, click the menu icon (|image24|) right next 
 
    |image28|
 
+-------------------
 Search Templates
 -------------------
 

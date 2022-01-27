@@ -1,13 +1,12 @@
 .. _formbuilder:
 
+===============================
 Introduction to Form Builder
 ===============================
 
-Overview
--------------------------
 
-Form Builder Also known as OZ in Office, Form builder is a form editor
-which converts a document created using Microsoft Office into an
+Form Builder, also known as OZ in Office, is a form editor
+that converts a document created using Microsoft Office into an
 electronic document containing components (fields). By using OZ in
 Office, you can easily convert existing Excel, Word, and PowerPoint
 forms such as contracts, applications, and agreements into electronic
@@ -31,9 +30,9 @@ components is as follows:
    :width: 750px
 
 
-
+--------------------------------------------------
 Downloading and Installing Form Builder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------
 
 1. Login to eformsign and then click the menu icon
 (|image1|) on the top left corner of the dashboard screen to open the
@@ -91,9 +90,9 @@ displayed as below, then it was installed properly.
    :width: 750px
 
 
-
+-------------------------
 Form Builder Menu Layout
-~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 If you run Microsoft Office Excel, Word, or PowerPoint after installing Form builder, you can see that the **OZ in Excel, OZ in Word, or OZ in PowerPoint** tab is added to the OZ in Office ribbon menu.
 
@@ -119,14 +118,14 @@ If you run Microsoft Office Excel, Word, or PowerPoint after installing Form bui
 
 8. **Help:** Checks the version of Form builder and performs updates.
 
-
+-------------------------
 Overview of Components
 -------------------------
 
 Components are used to create fields in electronic documents that users can enter information. Many different components including signature, check, date, and text are provided in Form builder, and each component can be configured in detail by using the **Component Properties** tab.
 
 Component Types
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 The components provided in eformsign are as follows:
 
@@ -194,43 +193,10 @@ selecting a component and then clicking the property icon or the **Properties** 
    something you can easily recognize. For example, you can rename the ID of a component for entering John Doe, Jane Doe, etc. as 'name'. By
    doing so, it is easier to identify components when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
 
-How to Add Components
-~~~~~~~~~~~~~~~~~~~~~
-
-There are two different ways of adding components: adding components in Excel, and adding components in Word/PowerPoint. In Word or PowerPoint, you can add components in two different ways.
-
-Adding Components in Excel
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. Open Excel and go to the **OZ in Excel** ribbon menu.
-
-.. figure:: resources/ozinexcel_1.png
-   :alt: Adding Components in Excel (1)
-   :width: 730px
 
 
-
-2. Select the cell in which you want to add a component.
-
-.. figure:: resources/ozinexcel_2.png
-   :alt: Adding Components in Excel (2)
-   :width: 730px
-
-
-
-3. Click the component you want.
-
-.. figure:: resources/ozinexcel_3.png
-   :alt: Adding Components in Excel (3)
-   :width: 730px
-
-
-
-4. Check that the component has been added by viewing the **OZ Component Properties** tab.
-
-
-Adding Components in Word or PowerPoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding components
+~~~~~~~~~~~~~~~~~~~~~~
 
 **Method 1: Adding Components by Clicking a Component Type**
 
@@ -276,13 +242,13 @@ Adding Components in Word or PowerPoint
    :width: 700px
 
 
-How to Delete Components
-~~~~~~~~~~~~~~~~~~~~~~~~
+Deleting components
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Select the component you want to delete and then click the **Delete** icon (|image2|) in the **OZ in Office** menu. You can also select and delete multiple components.
 
 How to Use Each Component Type
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 eformsign provides various types of components such as check box, combo box, text, and signature through Microsoft Office’s **OZ in Office** ribbon menu.
 
@@ -305,8 +271,9 @@ include ID and Tooltip Text, and the meaning of each property is as follows:
 The description of each component type provided in eformsign is as follows.
 
 
+.. _signature:
 Signature
-~~~~~~~~~
+--------------------
 
 This component is used for signing a signature on a document.
 
@@ -394,7 +361,7 @@ Sets the signature pen color.
 .. _text:
 
 Text and Multiline
-~~~~~~~~~~~~~~~~~~
+--------------------
 
 Both Text and Multiline components are used to create text fields. The Text component is suitable for short text with 1 to 2 words, and the Multiline component is suitable for long text with more than 1 line.
 
@@ -432,7 +399,8 @@ PDFs, and can only be seen when downloaded in the CSV format.
 Displays the description in Tooltip Text when you hover the mouse over a
 component.
 
-.. _date:
+
+.. _handwriting:
 
 
 Handwriting
@@ -474,8 +442,30 @@ Allows you to type in the text that will be displayed on the handwriting compone
 
 
 
+.. _label:
+
+Label
+--------------------
+
+This component is used for setting the form ID of a document.
+
+**Component Properties**
+
+.. figure:: resources/label_property.png
+   :alt: Setting Label Component Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Sets the label component ID.
+
+
+.. _check:
+
 Check
-~~~~~
+--------------------
 
 The **Check** component is used to check whether an item is checked or not. This component is similar to the **Radio** component, but it is used for checking the status of an item (whether it
 is checked or not) while the **Radio** component is used for checking which item among multiple items is checked.
@@ -514,7 +504,7 @@ The below example shows how check boxes are displayed according to the selected 
 .. _select:
 
 Radio
-~~~~~
+--------------------
 
 The Radio component is used for checking which radio button is selected among multiple items. When data is downloaded in the CSV format, the selected item will be displayed.
 
@@ -559,8 +549,11 @@ Checking the **Uncheckable** option allows you to deselect a selected item by cl
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
+
+.. _combo:
+
 Combo
-~~~~~
+--------------------
 
 The Combo component is used when you need to select one of multiple items.
 
@@ -604,26 +597,55 @@ Checking the **Allow Empty Value** option allows you to deselect a selected item
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
 
+.. _toggle:
 
-Label
-~~~~~
+Toggle
+--------------------
 
-This component is used for setting the form ID of a document.
+This component is used for indicating a specific status such as ON/OFF. If you use this component, then the input value
+is switched according to a defined order whenever the component is clicked.
+
+|image12|
+
+You can change the status to **Good** or **Bad** by clicking the components as follows:
+
+|image13|
 
 **Component Properties**
 
-.. figure:: resources/label_property.png
-   :alt: Setting Label Component Properties
+.. figure:: resources/toggle-component-properties.png
+   :alt: Toggle Component Properties
    :width: 250px
 
 
 
 **① ID**
 
-Sets the label component ID.
+Enters the ID of the toggle component. For example, the ID of the component for the first inspection item can be named ‘inspection1’.
+
+**② Items**
+
+Enters the list of items that will be toggled whenever the toggle component is clicked. You can separate each item by pressing Enter.
+
+**③ Allow Empty Value**
+
+Checking this option allows you to clear the item displayed on the toggle component. When you select a toggle component, you can toggle to
+another item but cannot clear the item displayed on the component.
+However, by checking this option, you can clear the item displayed on the component as described below:
+
+-  PC: Right-click on the component to display the pop-up menu and then select the **Initialize Input Data** menu.
+
+-  Mobile: Click the Trash icon.
+
+**④ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a component.
+
+
+.. _date:
 
 Datetime
-~~~~~~~~
+--------------------
 
 This component is used for entering a date. Clicking the component displays a date selection window where you can select the date you want.
 
@@ -677,8 +699,10 @@ component is automatically filled in with the date in which the document is open
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
+.. _numeric:
+
 Numeric stepper
-~~~~~~~
+--------------------
 
 This component is used for entering a number.
 Clicking the component displays two arrows on the right, and you can
@@ -737,52 +761,13 @@ the component as described below.
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
-Toggle
-~~~~~~
-
-This component is used for indicating a specific status such as ON/OFF. If you use this component, then the input value
-is switched according to a defined order whenever the component is clicked.
-
-|image12|
-
-You can change the status to **Good** or **Bad** by clicking the components as follows:
-
-|image13|
-
-**Component Properties**
-
-.. figure:: resources/toggle-component-properties.png
-   :alt: Toggle Component Properties
-   :width: 250px
 
 
 
-**① ID**
-
-Enters the ID of the toggle component. For example, the ID of the component for the first inspection item can be named ‘inspection1’.
-
-**② Items**
-
-Enters the list of items that will be toggled whenever the toggle component is clicked. You can separate each item by pressing Enter.
-
-**③ Allow Empty Value**
-
-Checking this option allows you to clear the item displayed on the toggle component. When you select a toggle component, you can toggle to
-another item but cannot clear the item displayed on the component.
-However, by checking this option, you can clear the item displayed on the component as described below:
-
--  PC: Right-click on the component to display the pop-up menu and then select the **Initialize Input Data** menu.
-
--  Mobile: Click the Trash icon.
-
-**④ Tooltip Text**
-
-Displays the description in Tooltip Text when you hover the mouse over a component.
-
-
+.. _camera:
 
 Camera
-~~~~~~
+--------------------
 
 This component is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) on a
 document. In PCs without a camera, clicking the component displays a window for selecting a desired image file.
@@ -816,7 +801,7 @@ Displays the description in the Tooltip Text when you hover the mouse over a com
 .. _record:
 
 Voice
-~~~~~
+--------------------
 
 This component is used for storing recorded voice. You can set the maximum recording time and you can also configure the
 settings to allow users to only listen to the voice recording.
@@ -851,7 +836,7 @@ Displays the description in Tooltip Text when you hover the mouse over a compone
 .. _attach:
 
 Attachment
-~~~~~~~~~~
+--------------------
 
 This component is used for attaching a file to a document. When attaching a file to a document by using the Attachment
 component, the file will be attached at the very end of the document as a new page.
@@ -880,8 +865,11 @@ Enters the ID of the Attachment component. For example, the ID of the component 
 
 Displays the description Tooltip Text when you hover the mouse over a component.
 
+
+.. _user:
+
 User
-~~~~
+--------------------
 
 This component is used for entering the information of the user who created or modified a document. The user’s basic
 information such as name or contact information, or custom field information is automatically entered into the user component based on the settings.
@@ -938,7 +926,7 @@ This field allows to select the type of member information that will be displaye
 .. _usedate:
 
 Date
-~~~~
+--------------------
 
 This component is used to automatically enter the date in which a document is created or modified. The date in which the document is created, the date in which the document is accessed, or the date in which the content of a component is last modified is automatically entered, according to the date type selected.
 
@@ -987,8 +975,10 @@ If **Last modified date of the content** is selected, the **Input Component ID**
 
    If you want the signature date of a signer to be displayed automatically in a contract, first add a Signature component and then name the ID (e.g. 'contractSign'). Then, add a Date component which will display the signature date when the signature is signed and name the ID (e.g. signDate). Then, select **Last modified date of the content** under Date Type and enter the ID of the signature component (in this case ‘contractSign’) in the **Input Component ID** field.
 
+.. _document:   
+
 Document
-~~~~~~~~
+--------------------
 
 This component is used for entering document-related information in the document itself. You can select either one of the document ID or document number.
 
@@ -1015,10 +1005,11 @@ Selects the type of information that will be used.
 
 -  **Document no.:** The document number set in **Template settings > General.** For information on how to set a document number, go to `Generating and viewing a document number <chapter6.html#docnumber_wd>`__.
 
+.. _upload_form_file:
 
-
+---------------------------
 Upload Form File
-----------------
+---------------------------
 
 Form files created using OZ in Office are uploaded in the following order:
 
@@ -1053,9 +1044,9 @@ Form files created using OZ in Office are uploaded in the following order:
    :width: 730px
 
 
-
+--------------------------------
 Configuring Template Settings
------------------------------
+--------------------------------
 
 After uploading a template, you can configure additional settings for documents created from the template such as the template name, document number, and workflow.
 

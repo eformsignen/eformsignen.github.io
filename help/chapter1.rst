@@ -2,7 +2,6 @@ Introduction to eformsign
 =============================
 
 Overview
-------------------------
 
 eformsign is an electronic document solution that allows anyone to
 easily create electronic documents from paper documents and utilize
@@ -255,7 +254,7 @@ uploading it on eformsign.
 
 
 Minimum System Requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 The minimum system requirements for Form builder and eformsign are as
 follows:
@@ -282,7 +281,7 @@ follows:
       to use eformsign.
 
 Use Cases
----------
+------------
 
 eformsign can be used for many different cases, including creating
 contract, agreement, and application forms. All documents are encrypted
@@ -290,7 +289,7 @@ contract, agreement, and application forms. All documents are encrypted
 international standard for long-term storage of documents.
 
 Contract Forms
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 Electronic documents can be used to sign various types of contracts
 including employment contracts, purchase/rental contracts, maintenance
@@ -307,7 +306,7 @@ The e-contract process using eformsign is as follows:
 
 
 Agreement Forms
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 Electronic documents can be used to sign various types of agreements
 including privacy policy and consent forms, medical informed consent
@@ -323,7 +322,7 @@ The e-agreement process using eformsign is as follows:
 
 
 Application Forms
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 Electronic documents can be used to sign various types of applications
 including application forms for registrations, quotations, medical

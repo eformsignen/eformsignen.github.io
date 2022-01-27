@@ -1,6 +1,10 @@
+=============
 Basic Info
 =============
 
+
+
+------------
 Dashboard
 ------------
 
@@ -121,6 +125,7 @@ The description of each menu is as follows:
 -  **Download eformsign Form Builder:** You can download the Form Builder executable file. By using the Form Builder
    add-in feature, you can create electronic forms using Microsoft Office files.
 
+   
 Dashboard
 ~~~~~~~~~~~
 
@@ -187,8 +192,9 @@ The dashboard is the main page displayed when logging into eformsign. In the das
    can click on a document name to open the document. Also, you can
    click the more **(+)** button in the dashboard next to **Completed** to go to the **Completed** page.
 
+---------------------------------------
 View and Change Basic Information
----------------------------------
+---------------------------------------
 
 To view your personal information you entered when signing up
 for the eformsign service and the company information, click the see
@@ -215,7 +221,7 @@ displayed.
 -  **Logout:** You can log out of the eformsign service.
 
 My Profile
-~~~~~~~~~~
+~~~~~~~~~~~~~
 
 **My profile > Personal**
 
@@ -268,7 +274,7 @@ My Profile
       However, if the company administrator withdraws from the company, the company will also be deleted. If the administrator wants to withdraw from the company without deleting the company, then the administrator needs to delegate permission to another member, and then withdraw from the company. You can delegate the company administrator permission in **Manage company > Company profile > Basic information**.
 
 Edit and Add Company Information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The company information displayed in the **My profile > company** menu can be edited in the **Manage company > Company profile** menu.
 
@@ -299,7 +305,7 @@ The company information displayed in the **My profile > company** menu can be ed
 .. _brand:
 
 Company Brand
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 You can replace the eformsign logo and symbol with your company logo and symbol by registering them in the **Company profile >Company brand** tab.
 
@@ -347,9 +353,11 @@ You can replace the eformsign logo and symbol with your company logo and symbol 
       :alt: Dashboard with the Logo Changed
       :width: 700px
 
+.. _permissions:
 
+---------------
 Permissions
------------
+---------------
 
 Permissions can be granted to each member. In eformsign, there are many different permissions. The company admin has access to all.
 
@@ -425,7 +433,7 @@ another member, and then delete the account.
 5. Click the **Save** button to save the changes.
 
 Company Manager
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 Company managers can access the **Manage company** menu and can view, edit, and delete information regarding the company and
 groups/members. The company administrator or company managers can grant the company manager permission to members.
@@ -481,6 +489,8 @@ can only view the template settings and duplicate the template.
 
 4. Click the **Save** button.
 
+.. _permissionsfortemplate:
+
 Document Creator, Template Editor, and Document Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -520,6 +530,7 @@ A document manager of a template can view, delete, and download documents create
 
 5. Click the **Save** button.
 
+----------------------------
 Manage Groups and Members
 ----------------------------
 
@@ -597,12 +608,19 @@ You can create groups in the company and view, edit, or delete each group's info
 **⑤ Delete a group**
    When you click the **Trash** icon, a checkbox will be activated next to each group in the group list. Tick the groups you want to delete and click the **Delete** button.
 
+.. _mysignature:
+
+---------------
 My Signature
 ---------------
 
 If you register your signature, initial, and stamp in the **My signature** menu, you can easily use them when signing documents.
 
+
+.. _registersignature:
+
 **Registering Your Signature and Initial**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -661,12 +679,12 @@ If you register your signature, initial, and stamp in the **My signature** menu,
 .. _registerstamp:
 
 **Adding your stamp**
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after adding the image in the eformsign service.
 
 **Stamp image uploading**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 .. note::
 
@@ -701,7 +719,7 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 .. _scanstamp:
 
 **Life-sized stamp scanning**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 .. note::
 
@@ -767,7 +785,7 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 .. _caution_scanstamp:
 
 **Precautions to take when scanning life-sized stamps**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tip::
 
@@ -796,6 +814,10 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
    7. When you upload the photo, the stamp will be automatically recognized.
 
 
+.. _company_stamp:
+
+
+-----------------------
 Manage company stamp
 -----------------------
 

@@ -97,32 +97,36 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to Web Form Designer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#web-form-designer-menu-layout">Web Form Designer Menu Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-uploading">File Uploading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#uploading-a-file-in-the-new-from-my-file-menu">Uploading a file in the <strong>New from my file</strong> menu.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uploading-a-file-in-the-manage-templates-menu">Uploading a file in the <strong>Manage templates</strong> menu.</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#web-form-designer-menu-layout">Web Form Designer Menu Layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview-of-components">Overview of Components</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#component-types">Component Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#component-types">Component Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#basic-components"><strong>Basic components</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-components"><strong>Data components</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#setting-properties-for-each-component-type">Setting Properties for Each Component Type</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#signature">Signature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#company-stamp">Company stamp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#text-and-multiline">Text and Multiline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-properties-for-each-component-type">Setting Properties for Each Component Type</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#signature">Signature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#company-stamp">Company stamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#text-and-multiline">Text and Multiline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#handwriting">Handwriting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#label">Label</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#check">Check</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#radio">Radio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combo">Combo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#toggle">Toggle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#datetime">Datetime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#numeric-stepper">Numeric stepper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#camera">Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#voice">Voice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attachment">Attachment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-id-and-document-number">Document ID and Document number</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#handwriting">Handwriting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#label">Label</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#check">Check</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#radio">Radio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#combo">Combo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#toggle">Toggle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#datetime">Datetime</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#numeric-stepper">Numeric stepper</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#camera">Camera</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#voice">Voice</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#attachment">Attachment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#document-id-and-document-number">Document ID and Document number</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#configuring-template-settings">Configuring Template Settings</a></li>
@@ -203,8 +207,6 @@
             
   <div class="section" id="introduction-to-web-form-designer">
 <span id="webform"></span><h1>Introduction to Web Form Designer<a class="headerlink" href="#introduction-to-web-form-designer" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>Web Form Designer is a web form editor that allows you to create electronic documents by uploading document files to eformsign
 and adding components. You can upload files in the <strong>New from template</strong> or the <strong>New from my file</strong> menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.</p>
 <div class="admonition note">
@@ -219,9 +221,10 @@ which allows you to create electronic documents directly in Microsoft
 Office. To use Form builder, please install the Microsoft Office
 add-in, and refer to <a class="reference external" href="chapter5.html#formbuilder">Form Builder</a>.</p>
 </div>
-<ul class="simple">
-<li><p>Uploading a file in the <strong>New from my file</strong> menu.</p></li>
-</ul>
+<div class="section" id="file-uploading">
+<h2>File Uploading<a class="headerlink" href="#file-uploading" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uploading-a-file-in-the-new-from-my-file-menu">
+<h3>Uploading a file in the <strong>New from my file</strong> menu.<a class="headerlink" href="#uploading-a-file-in-the-new-from-my-file-menu" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p>Click the <strong>New from my file</strong> menu.</p>
 <p><img alt="image1" src="../_images/myfile_create_document.png" /></p>
@@ -235,7 +238,9 @@ displayed. You can add components to the document here.</p>
 <p><img alt="image3" src="../_images/myfile_create_document3.png" /></p>
 </li>
 </ol>
-<p>Uploading a PDF file in the <strong>Manage templates</strong> menu.</p>
+</div>
+<div class="section" id="uploading-a-file-in-the-manage-templates-menu">
+<h3>Uploading a file in the <strong>Manage templates</strong> menu.<a class="headerlink" href="#uploading-a-file-in-the-manage-templates-menu" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p>Go to the <strong>Manage templates</strong> menu.</p>
 <div class="figure align-default">
@@ -252,8 +257,10 @@ displayed. You can add components to the document here.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/web-form_3.png"><img alt="Web Form Designer Screen" src="../_images/web-form_3.png" style="width: 700px;" /></a>
 </div>
+</div>
+</div>
 <div class="section" id="web-form-designer-menu-layout">
-<h3>Web Form Designer Menu Layout<a class="headerlink" href="#web-form-designer-menu-layout" title="Permalink to this headline">¶</a></h3>
+<span id="webformdesigner-menus"></span><h2>Web Form Designer Menu Layout<a class="headerlink" href="#web-form-designer-menu-layout" title="Permalink to this headline">¶</a></h2>
 <p>Web Form Designer consists of a screen that displays the file, the left and right panels, and the top bar.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/web-form_4b.png"><img alt="Web Form Designer Menu Layout - Create from my file" src="../_images/web-form_4b.png" style="width: 700px;" /></a>
@@ -279,9 +286,8 @@ adding components such as Signature, Text, and Check by clicking and
 locating them to the document display screen.</p></li>
 </ol>
 </div>
-</div>
 <div class="section" id="overview-of-components">
-<h2>Overview of Components<a class="headerlink" href="#overview-of-components" title="Permalink to this headline">¶</a></h2>
+<span id="components"></span><h2>Overview of Components<a class="headerlink" href="#overview-of-components" title="Permalink to this headline">¶</a></h2>
 <p>Components are used to create fields in electronic documents
 that users can enter information. Many different components including
 Signature, Check, Date, and Text are provided, and each component can be
@@ -292,7 +298,9 @@ configured in detail by using the <strong>Properties</strong> tab.</p>
 <div class="section" id="component-types">
 <h3>Component Types<a class="headerlink" href="#component-types" title="Permalink to this headline">¶</a></h3>
 <p>The components provided in eformsign are as follows:</p>
-<ul>
+<div class="section" id="basic-components">
+<h4><strong>Basic components</strong><a class="headerlink" href="#basic-components" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
 <li><p><a class="reference external" href="#signature2">Signature</a><strong>:</strong> Inserts a signature.</p></li>
 <li><p><a class="reference external" href="#companystamp2">Company stamp</a><strong>:</strong> Inserts a company stamp.</p></li>
 <li><p><a class="reference external" href="#text2">Text</a><strong>:</strong> Enters short text (usually 1 to 2 words).</p></li>
@@ -308,16 +316,19 @@ configured in detail by using the <strong>Properties</strong> tab.</p>
 <li><p><a class="reference external" href="#camera2">Camera</a><strong>:</strong> Takes a photo using a camera or selects a photo from an album in devices with a built-in
 camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).</p></li>
 <li><p><a class="reference external" href="#record2">Voice</a><strong>:</strong> Records audio in devices with a voice recording function.</p></li>
-<li><p><a class="reference external" href="#attach2">Attachment</a><strong>:</strong> Attaches a file.</p>
-<p><strong>Data components</strong></p>
-</li>
+<li><p><a class="reference external" href="#attach2">Attachment</a><strong>:</strong> Attaches a file.</p></li>
+</ul>
+</div>
+<div class="section" id="data-components">
+<h4><strong>Data components</strong><a class="headerlink" href="#data-components" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
 <li><p><a class="reference external" href="#document2">Document ID</a><strong>:</strong> Enters the document ID in a document.</p></li>
 <li><p><a class="reference external" href="#document2">Document number</a><strong>:</strong> Enters the document number in a document.</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="setting-properties-for-each-component-type">
-<h2>Setting Properties for Each Component Type<a class="headerlink" href="#setting-properties-for-each-component-type" title="Permalink to this headline">¶</a></h2>
+<h3>Setting Properties for Each Component Type<a class="headerlink" href="#setting-properties-for-each-component-type" title="Permalink to this headline">¶</a></h3>
 <p>All components have common and unique properties. When you click a
 component added, the detailed properties of that component will be displayed on the right and you can set the properties. Common properties include ID and
 Tooltip Text, and the meaning of each property is as follows:</p>
@@ -339,7 +350,7 @@ speech bubble when hovering the mouse over the component. In mobile, the text is
 </div>
 <p>The description of each component is as follows.</p>
 <div class="section" id="signature">
-<span id="signature2"></span><h3>Signature<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h3>
+<span id="signature2"></span><h4>Signature<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h4>
 <p>This component is used for signing a signature on a document.</p>
 <p>Clicking the signature area displays the <strong>Signature</strong> pop-up which allows you to sign a signature by drawing, entering text, or using a previously registered signature.</p>
 <p><a class="reference internal" href="../_images/signature.png"><img alt="image4" src="../_images/signature.png" style="width: 450px;" /></a></p>
@@ -401,7 +412,7 @@ detailed information of a signer.</p>
 </div>
 </div>
 <div class="section" id="company-stamp">
-<span id="text2"></span><h3>Company stamp<a class="headerlink" href="#company-stamp" title="Permalink to this headline">¶</a></h3>
+<span id="company-stamp2"></span><h4>Company stamp<a class="headerlink" href="#company-stamp" title="Permalink to this headline">¶</a></h4>
 <p>The company stamp component is used for applying a company stamp onto a document.
 If you add a company stamp component, documents that require a company stamp will show a company stamp pop-up as shown below and you’ll be able to select and apply company stamps that you have permission to access.</p>
 <p><strong>Component Properties</strong></p>
@@ -418,7 +429,7 @@ If you add a company stamp component, documents that require a company stamp wil
 <p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
 </div>
 <div class="section" id="text-and-multiline">
-<h3>Text and Multiline<a class="headerlink" href="#text-and-multiline" title="Permalink to this headline">¶</a></h3>
+<span id="text2"></span><h4>Text and Multiline<a class="headerlink" href="#text-and-multiline" title="Permalink to this headline">¶</a></h4>
 <p>Both Text and Multiline components are used to create text fields. The Text component is suitable for short
 text with 1 to 2 words, and the Multiline component is suitable for long text with more than 1 line.</p>
 <p><strong>Component Properties</strong></p>
@@ -449,9 +460,8 @@ smartphones and tablets.</p>
 <p><strong>⑦ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
 </div>
-</div>
 <div class="section" id="handwriting">
-<span id="handwriting2"></span><h2>Handwriting<a class="headerlink" href="#handwriting" title="Permalink to this headline">¶</a></h2>
+<span id="handwriting2"></span><h4>Handwriting<a class="headerlink" href="#handwriting" title="Permalink to this headline">¶</a></h4>
 <p>The handwriting component is used to trace a pre-written tex.</p>
 <p>You can type in the text to be displayed on a document in which recipients can trace.</p>
 <div class="figure align-default">
@@ -469,8 +479,9 @@ smartphones and tablets.</p>
 <p>Sets the pen color.</p>
 <p><strong>④ Show Word Tracing</strong></p>
 <p>Allows you to type in the text that will be displayed on the handwriting component.</p>
+</div>
 <div class="section" id="label">
-<span id="label2"></span><h3>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
+<span id="label2"></span><h4>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h4>
 <p>This component is used for setting the form ID of a document.</p>
 <p><strong>Component Properties</strong></p>
 <div class="figure align-default" id="id1">
@@ -484,7 +495,7 @@ smartphones and tablets.</p>
 <p>Text entered in the text box is displayed on the document.</p>
 </div>
 <div class="section" id="check">
-<span id="check2"></span><h3>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h3>
+<span id="check2"></span><h4>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h4>
 <p>The Check component is used to check whether an item is checked or not. This component is similar to the Radio component, but
 the Check component is used for checking the status of an item (whether it is checked or not) while the Radio component is used for checking which item among multiple items is checked.</p>
 <div class="admonition tip">
@@ -525,7 +536,7 @@ Once selected, the check style will be shown in the color and style you selected
 <p>If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="radio">
-<span id="select2"></span><h3>Radio<a class="headerlink" href="#radio" title="Permalink to this headline">¶</a></h3>
+<span id="select2"></span><h4>Radio<a class="headerlink" href="#radio" title="Permalink to this headline">¶</a></h4>
 <p>The Radio component is used for checking which item is selected among multiple items. When data is downloaded in the CSV
 format, the selected item will be displayed.</p>
 <p><strong>Component Properties</strong></p>
@@ -556,7 +567,7 @@ The black circle set as the default style, and you can change it to another styl
 <p>If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="combo">
-<span id="combo2"></span><h3>Combo<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h3>
+<span id="combo2"></span><h4>Combo<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h4>
 <p>The Combo component is used when you need to select one of multiple items.</p>
 <p>If you click a Combo component, a list of items is displayed as follows:</p>
 <p><a class="reference internal" href="../_images/combo-1.png"><img alt="image8" src="../_images/combo-1.png" style="width: 450px;" /></a></p>
@@ -582,7 +593,7 @@ Selects who is allowed or required to fill out the component.</p>
 </div>
 </div>
 <div class="section" id="toggle">
-<span id="toggle2"></span><h3>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h3>
+<span id="toggle2"></span><h4>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h4>
 <p>This component is used for indicating a specific status such as ON/OFF. If you use this component, then the input value is switched according to a defined order whenever the component is clicked.</p>
 <p>You can change the status to Good or Bad by clicking the components as follows:</p>
 <p><a class="reference internal" href="../_images/toggle.png"><img alt="image9" src="../_images/toggle.png" style="width: 450px;" /></a></p>
@@ -602,7 +613,7 @@ Selects who is allowed or required to fill out the component.</p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a component.</p>
 </div>
 <div class="section" id="datetime">
-<span id="date2"></span><h3>Datetime<a class="headerlink" href="#datetime" title="Permalink to this headline">¶</a></h3>
+<span id="date2"></span><h4>Datetime<a class="headerlink" href="#datetime" title="Permalink to this headline">¶</a></h4>
 <p>This component is used for entering a date. Clicking the component displays a date selection window where you can select the date you want.</p>
 <p><strong>Component Properties</strong></p>
 <div class="figure align-default">
@@ -630,7 +641,7 @@ Selects who is allowed or required to fill out the component.</p>
 <p>If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="numeric-stepper">
-<span id="numeric2"></span><h3>Numeric stepper<a class="headerlink" href="#numeric-stepper" title="Permalink to this headline">¶</a></h3>
+<span id="numeric2"></span><h4>Numeric stepper<a class="headerlink" href="#numeric-stepper" title="Permalink to this headline">¶</a></h4>
 <p>This component is used for entering a number.
 Clicking the component displays two arrows on the right, and you can increase or decrease the number by clicking them. In PCs, you can directly enter the desired number into the component by using a keyboard. In smartphones and tablets, you can scroll through the list of numbers and select the one you want.</p>
 <p><strong>Component Properties</strong></p>
@@ -660,7 +671,7 @@ change to 100.</p>
 <p>If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="camera">
-<span id="camera2"></span><h3>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h3>
+<span id="camera2"></span><h4>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h4>
 <p>This component is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) to a document. In PCs without a camera, clicking the component displays a window for selecting the desired image file.</p>
 <p>If the size of the selected image is larger than the size of the component, then it is resized to fit the component.</p>
 <div class="admonition note">
@@ -689,7 +700,7 @@ area.</p>
 <p>If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="voice">
-<span id="record2"></span><h3>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">¶</a></h3>
+<span id="record2"></span><h4>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">¶</a></h4>
 <p>This component is used for storing recorded voice. You can set the maximum recording time and you can also configure the settings to allow users to only listen to the voice recording.</p>
 <p>When you add a Voice component, you can record voice or play a voice recording as follows:</p>
 <p><a class="reference internal" href="../_images/record1.png"><img alt="image12" src="../_images/record1.png" style="width: 350px;" /></a></p>
@@ -716,7 +727,7 @@ Selects who is allowed or required to fill out the component.</p>
 <p>If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="attachment">
-<span id="attach2"></span><h3>Attachment<a class="headerlink" href="#attachment" title="Permalink to this headline">¶</a></h3>
+<span id="attach2"></span><h4>Attachment<a class="headerlink" href="#attachment" title="Permalink to this headline">¶</a></h4>
 <p>This component is used for attaching a file to a document. When attaching a file to a document by using the Attachment component, the file will be attached at the very end of the document as a new page.</p>
 <p>The types and sizes of files that can be attached are as follows:</p>
 <ul class="simple">
@@ -742,7 +753,7 @@ Selects who is allowed or required to fill out the component.</p>
 <p>If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="document-id-and-document-number">
-<span id="document2"></span><h3>Document ID and Document number<a class="headerlink" href="#document-id-and-document-number" title="Permalink to this headline">¶</a></h3>
+<span id="document2"></span><h4>Document ID and Document number<a class="headerlink" href="#document-id-and-document-number" title="Permalink to this headline">¶</a></h4>
 <p>Data components are used for entering document-related information in the document itself. You can select either one of the document ID or document number.</p>
 <ul>
 <li><p><strong>Document ID:</strong> A unique ID assigned to all documents in the system and is shown in 32 digit alphanumeric format. E.g. 0077af27a98846c8872f5333920679b7</p></li>
@@ -759,6 +770,7 @@ Selects who is allowed or required to fill out the component.</p>
 </div>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the Document component. For example, the component ID can be ‘docNum’ for document number.</p>
+</div>
 </div>
 </div>
 <div class="section" id="configuring-template-settings">

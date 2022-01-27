@@ -1,10 +1,9 @@
 .. _webform:
 
+====================================
 Introduction to Web Form Designer
 ====================================
 
-Overview
--------------------
 
 Web Form Designer is a web form editor that allows you to create electronic documents by uploading document files to eformsign
 and adding components. You can upload files in the **New from template** or the **New from my file** menus to create documents using Web Form Designer. After uploading a file, simply click and add the components available in the left tree menu of Web form designer and set the properties of each component. This is all you need to do to create documents with an ease.
@@ -22,7 +21,12 @@ and adding components. You can upload files in the **New from template** or the 
    Office. To use Form builder, please install the Microsoft Office
    add-in, and refer to `Form Builder <chapter5.html#formbuilder>`__.
 
--  Uploading a file in the **New from my file** menu.
+--------------------
+File Uploading
+--------------------
+
+Uploading a file in the **New from my file** menu.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Click the **New from my file** menu.
 
@@ -38,7 +42,8 @@ and adding components. You can upload files in the **New from template** or the 
 
    |image3|
 
-Uploading a PDF file in the **Manage templates** menu.
+Uploading a file in the **Manage templates** menu.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Go to the **Manage templates** menu.
 
@@ -61,9 +66,11 @@ Uploading a PDF file in the **Manage templates** menu.
    :alt: Web Form Designer Screen
    :width: 700px
 
+.. _webformdesigner_menus:
 
+-------------------------------
 Web Form Designer Menu Layout
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 Web Form Designer consists of a screen that displays the file, the left and right panels, and the top bar.
 
@@ -97,8 +104,12 @@ Web Form Designer consists of a screen that displays the file, the left and righ
    adding components such as Signature, Text, and Check by clicking and
    locating them to the document display screen.
 
+
+.. _components:
+
+----------------------------
 Overview of Components
-----------------------
+----------------------------
 
 Components are used to create fields in electronic documents
 that users can enter information. Many different components including
@@ -110,9 +121,13 @@ configured in detail by using the **Properties** tab.
    :width: 700px
 
 Component Types
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 The components provided in eformsign are as follows:
+
+
+**Basic components**
+--------------------------
 
 -  `Signature <#signature2>`__\ **:** Inserts a signature.
 
@@ -145,14 +160,15 @@ The components provided in eformsign are as follows:
 
 -  `Attachment <#attach2>`__\ **:** Attaches a file.
 
-   **Data components**
+**Data components**
+------------------------
 
 -  `Document ID <#document2>`__\ **:** Enters the document ID in a document.
 
 -  `Document number <#document2>`__\ **:** Enters the document number in a document.
 
 Setting Properties for Each Component Type
-------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 All components have common and unique properties. When you click a
 component added, the detailed properties of that component will be displayed on the right and you can set the properties. Common properties include ID and
@@ -180,7 +196,7 @@ The description of each component is as follows.
 .. _signature2:
 
 Signature
-~~~~~~~~~
+--------------------
 
 This component is used for signing a signature on a document.
 
@@ -275,10 +291,10 @@ Displays the description in Tooltip Text when you hover the mouse over a compone
       repeatedly in a given document such as a contract or enter
       detailed information of a signer.
 
-.. _text2:
+.. _company stamp2:
 
 Company stamp
-~~~~~~~~~~~~~~~~~~
+--------------------
 
 The company stamp component is used for applying a company stamp onto a document.
 If you add a company stamp component, documents that require a company stamp will show a company stamp pop-up as shown below and you’ll be able to select and apply company stamps that you have permission to access.
@@ -310,8 +326,10 @@ Sets the help message displayed.
 Displays the description in Tooltip Text when you hover the mouse over a component. 
 
 
+.. _text2:
+
 Text and Multiline
-~~~~~~~~~~~~~~~~~~
+--------------------
 
 Both Text and Multiline components are used to create text fields. The Text component is suitable for short
 text with 1 to 2 words, and the Multiline component is suitable for long text with more than 1 line.
@@ -401,7 +419,7 @@ Allows you to type in the text that will be displayed on the handwriting compone
 .. _label2:
 
 Label
-~~~~~
+--------------------
 
 This component is used for setting the form ID of a document.
 
@@ -426,7 +444,7 @@ Text entered in the text box is displayed on the document.
 .. _check2:
 
 Check
-~~~~~
+--------------------
 
 The Check component is used to check whether an item is checked or not. This component is similar to the Radio component, but
 the Check component is used for checking the status of an item (whether it is checked or not) while the Radio component is used for checking which item among multiple items is checked.
@@ -489,7 +507,7 @@ If you hover mouse over a component, the description you entered in the tooltip 
 .. _select2:
 
 Radio
-~~~~~
+--------------------
 
 The Radio component is used for checking which item is selected among multiple items. When data is downloaded in the CSV
 format, the selected item will be displayed. 
@@ -540,7 +558,7 @@ If you hover mouse over a component, the description you entered in the tooltip 
 .. _combo2:
 
 Combo
-~~~~~
+--------------------
 
 The Combo component is used when you need to select one of multiple items.
 
@@ -583,10 +601,11 @@ If you hover mouse over a component, the description you entered in the tooltip 
 
    If you want to display a message such as ‘Select a color’ in a combo box, then enter ‘Select a color’ and set the default item as 'Select a color'.
 
+
 .. _toggle2:
 
 Toggle
-~~~~~~
+--------------------
 
 This component is used for indicating a specific status such as ON/OFF. If you use this component, then the input value is switched according to a defined order whenever the component is clicked.
 
@@ -620,10 +639,11 @@ Select the item set as default.
 
 Displays the description in Tooltip Text when you hover the mouse over a component.
 
+
 .. _date2:
 
 Datetime
-~~~~~~~~
+--------------------
 
 This component is used for entering a date. Clicking the component displays a date selection window where you can select the date you want.
 
@@ -670,10 +690,11 @@ Text displayed as a help message before entering information.
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
+
 .. _numeric2:
 
 Numeric stepper
-~~~~~~~~~~~~~~~~
+--------------------
 
 This component is used for entering a number.
 Clicking the component displays two arrows on the right, and you can increase or decrease the number by clicking them. In PCs, you can directly enter the desired number into the component by using a keyboard. In smartphones and tablets, you can scroll through the list of numbers and select the one you want.
@@ -719,10 +740,11 @@ Text displayed as a help message before entering information.
 
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
+
 .. _camera2:
 
 Camera
-~~~~~~
+--------------------
 
 This component is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) to a document. In PCs without a camera, clicking the component displays a window for selecting the desired image file.
 
@@ -766,10 +788,11 @@ Enters the text displayed before taking a photo.
 If you hover mouse over a component, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
 
+
 .. _record2:
 
 Voice
-~~~~~
+--------------------
 
 This component is used for storing recorded voice. You can set the maximum recording time and you can also configure the settings to allow users to only listen to the voice recording.
 
@@ -813,7 +836,7 @@ If you hover mouse over a component, the description you entered in the tooltip 
 .. _attach2:
 
 Attachment
-~~~~~~~~~~
+--------------------
 
 This component is used for attaching a file to a document. When attaching a file to a document by using the Attachment component, the file will be attached at the very end of the document as a new page.
 
@@ -856,7 +879,7 @@ If you hover mouse over a component, the description you entered in the tooltip 
 .. _document2:
 
 Document ID and Document number
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
  
 Data components are used for entering document-related information in the document itself. You can select either one of the document ID or document number.
 
@@ -879,8 +902,9 @@ Data components are used for entering document-related information in the docume
 
 Enter the ID of the Document component. For example, the component ID can be ‘docNum’ for document number.
 
+-----------------------------------------
 Configuring Template Settings
------------------------------
+-----------------------------------------
 
 After uploading a file and adding components with Web Form Designer, you can configure additional settings for documents that will be created from the template such as the document name, document number, and workflow.
 

@@ -201,13 +201,11 @@ Configure additional settings including document naming rules for documents crea
 
 
 
--------------------
-
 
 .. _document_naming:
 
 General > Setting the Document Naming Rule
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------
 
 In **Template settings**, you can set the document naming rule for documents created from a template.
 
@@ -224,8 +222,7 @@ As well, you can see this name in all document pages (In progress, Action requir
 
 
 **How to set the document naming rule**
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: resources/en-document-naming-rule.png
    :alt: Template Settings > Setting the Document Naming Rule
@@ -245,7 +242,7 @@ As well, you can see this name in all document pages (In progress, Action requir
 .. _reserved_words:
 
 **How to use reserved words Templates**
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 .. figure:: resources/en-document-naming-rule-reserved.png
@@ -319,7 +316,7 @@ As well, you can see this name in all document pages (In progress, Action requir
 .. _docnumber_fb:
 
 General > Generating and Viewing a Document Number
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------
 
 You can set a document number for documents created in eformsign. You can set it so that a document number is generated automatically for each template, and can select one of four document numbering formats. The document number can be generated in the document using the document component. You can also see a separate column in the document list and search documents by the document number.
 
@@ -382,6 +379,8 @@ A document number can be viewed directly on a document using the document compon
 
 -  **Viewing a document number directly on a document**
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
    You can generate a document number directly on a document by using the document component in Form builder.
 
    1. Open a file in Word, Excel, or PowerPoint.
@@ -397,6 +396,8 @@ A document number can be viewed directly on a document using the document compon
    6. Click the **Save** button to save the settings.
 
 -  **Viewing a document number in the document list**
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
    .. figure:: resources/en-completed-document-box-docno.png
       :alt: Completed - Document List
@@ -421,6 +422,8 @@ A document number can be viewed directly on a document using the document compon
    4. Check that **the document number** column is added.
 
 -  **Searching for a document using a document number**
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
    |image7|
 
@@ -469,7 +472,7 @@ You can select groups or members to open documents created from the template, vo
 .. _workflow_fb:
 
 Workflow Settings
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create or modify the workflow of the template by clicking the **Workflow** tab in the **Template settings** page.
 
@@ -530,9 +533,9 @@ You can click a step to set the details such as **Properties** and **Manage item
 
 
 
-**Recipient: Step for participating in a document such as signing, or filling in the document**
+**Recipient: Step for signing or filling in a document**
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. figure:: resources/workflow-participant-properties.png
    :alt: Workflow > Participant step properties
@@ -591,7 +594,6 @@ You can choose which sheets/sections of the documents are shown to external reci
 
 
 **Complete: Step in which a document is finally completed**
-
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
    |image19|
@@ -686,8 +688,9 @@ You can select who will receive status notifications for documents created from 
 
       When the **Document creator** option for **When the document is completed** is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.
 
+---------------------------
 Menus for Each Template
------------------------
+---------------------------
 
 Go to the **Manage templates** page, click the menu icon (|image23|) right next to the template name to see the menus that can be set for each template.
 
@@ -710,6 +713,7 @@ Go to the **Manage templates** page, click the menu icon (|image23|) right next 
 
    |image26|
 
+---------------------
 Search Templates
 ---------------------
 

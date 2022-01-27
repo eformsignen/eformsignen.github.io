@@ -3,8 +3,6 @@
 Creating documents
 ==================
 
-Overview
---------
 
 Anyone can use eformsign to easily convert existing documents into
 electronic documents and then send them for signature. In eformsign,
@@ -114,6 +112,7 @@ You can upload a file you want and then add fields (components) onto the documen
    |image11|
 
 **Add recipients > Recipient options**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the **Design form** step or the **Add recipients** step, you can add participants who will receive the document.
 
