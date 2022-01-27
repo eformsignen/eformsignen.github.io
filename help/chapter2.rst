@@ -221,7 +221,7 @@ displayed.
 -  **Logout:** You can log out of the eformsign service.
 
 My Profile
-~~~~~~~~~~~~~
+~~~~~~~~~~~~
 
 **My profile > Personal**
 

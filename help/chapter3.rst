@@ -217,7 +217,7 @@ more information, refer to `Creating templates from Web Form Designer <#template
 
 
 Send in bulk
------------------------------------------
+----------------------------------------
 
 When creating a document from a template, you can use the **Send in bulk** feature to send a document to multiple recipients at once.
 
