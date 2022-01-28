@@ -192,7 +192,7 @@ using eformsign.
    set for each separate template.
 
 eformsign Usage Flow
-------------------------
+-----------------------
 
 To use eformsign, you can either upload a file onto eformsign and
 create an electronic form online, or create a form using Microsoft Word,
