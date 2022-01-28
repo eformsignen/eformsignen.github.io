@@ -205,7 +205,7 @@ New from my file
 You can upload a file onto eformsign and then
 create and send a document by adding components such as text, signature,
 and date. You can easily and freely send a document by uploading a file,
-without the need to create a template. Just simply add the participants who can fill in the document and add components to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options ste**p**, and then press the **Start Now** button to send.
+without the need to create a template. Just simply add the participants who can fill in the document and add components to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options step**, and then press the **Start Now** button to send.
 
 Also, before sending a document to recipients, you can temporarily save
 it as a draft and then send it later.
