@@ -10,12 +10,6 @@ Documents
 
 Documents are stored in the following three menus according to the document status:
 
-.. note::
-
-   For information on documents sent in bulk, go to `Bulk send <#bulksend-documents>`__.
-
-
-
 
 -  **In progress:** View the list of documents you have created or signed/approved that are incomplete.
 
@@ -36,7 +30,7 @@ Aside from the three document menus, there is another menu for managing document
 
    The company administrator can view and manage all documents in the company.
 
-.. figure:: resources/inbox_ex1.png
+.. figure:: resources/en_inbox_ex1.png
    :alt: Location of the Documents Menus and the Manage Documents Menu
    :width: 700px
 
@@ -60,23 +54,23 @@ Each documents menu consists of the following five sections:
 
    You can go to another menu by clicking the menu icon (|image1|) or go to the dashboard by clicking the home icon (|image2|). You can also see the name of the documents menu you are currently viewing.
 
-2. Template category combo box, document status filter combo box, and `search box <#category>`__
+2. **Template category combo box, document status filter combo box, and search box** 
 
    You can view documents by the selected template category and filter documents by document status.
 
    In addition to performing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and many more.
 
-3. **Document list and**\  `actions <#additional_work>`__
+3. **Document list and actions** 
 
    Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.
 
    The information of each document such as the document status, name, step, creator, created date, processed date, and document number is
    provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image3|)
-   displayed at the top right corner of the page, and then check the columns you want to display in the `column check box <#document_column>`__.
+   displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
 
    You can also perform actions on a document such as reviewing, previewing, correcting, voiding, resending, and deleting a document.
 
-4. `Document status and history <#history>`__
+4. **Document status and history**
 
    You can check the documents status and history.
 
@@ -84,7 +78,7 @@ Each documents menu consists of the following five sections:
 
    In the **History** tab, you can see the activities of the document creator and recipients from document creation to completion.
 
-5. `The column selection icon <#document_column>`__\ , \ `document download icon <#document_download>`__\ , \ `delete icon <#document_delete>`__\
+5. **The column selection icon, document download icon, and delete icon** 
 
    Clicking the column selection icon (|image4|) displays the column types which you can check to select which columns will be displayed in the document list.
 
@@ -365,7 +359,7 @@ If you click the column (|image14|) icon on the right side of the document list,
 Drafts
 ---------
 
-The Drafts menu stores the documents in the **New from my file** step that have been saved by clicking **Save as a draft** before sending the document. You can open the files stored in the **Drafts** menu anytime and proceed or delete.
+The Drafts inbox stores the documents in the **New from my file** step that have been saved by clicking **Save as a draft** before sending the document. You can open the files stored in the **Drafts** menu anytime and proceed or delete.
 
 1. Click **Drafts** in the sidebar menu to go to the Drafts page.
 
@@ -386,10 +380,10 @@ The Drafts menu stores the documents in the **New from my file** step that have 
 
 .. _bulksend_documents:
 -------------------------
-Bulk send document box
+Bulk send
 -------------------------
 
-In the **Bulk send document box**, you can see all the documents sent in bulk. You can check the status of documents sent in bulk, cancel or change the date & time of scheduled sends, or resend bulk-sent documents.
+In the **Bulk send** inbox, you can see all the documents sent in bulk. You can check the status of documents sent in bulk, cancel or change the date & time of scheduled sends, or resend bulk-sent documents.
 
 .. figure:: resources/bulksend-documents.png
    :alt: Bulk send document box
@@ -426,6 +420,86 @@ For documents scheduled to be sent later, you can change or cancel the scheduled
    For more information about sending documents in bulk, please refer to `Send in bulk <chapter3.html#bulksend>`__.
 
 
+--------------------------------------------------
+
+
+.. _shared_documents:
+
+-------------------------
+Shared
+-------------------------
+
+In the **Shared** inbox, you can share your documents with other members by creating shared folders and also access the documents other members shared with you.
+
+
+.. figure:: resources/en-shared-documents-inbox.png
+   :alt: Shared inbox
+
+A member can create a shared folder and choose the members and groups that can access the folder.
+
+If you have a document you want to added a shared folder, you can go to the Action required, In progress, or Completed inbox and add the document to a shared folder.
+
+**Creating a shared folder**
+
+1. Click **Shared** in the sidebar menu.
+2. Click the **Add shared folder** button to create a shared folder.
+3. Enter the folder name and description in the pop-up window displayed and select the members/groups you want to grant access permission.
+
+.. figure:: resources/en-create-shared-document-inbox.png
+   :alt: Creating a shared folder
+
+4. Click the see more (⋯) button next to the shared folder you created to configure its settings.
+
+.. figure:: resources/en-shared-document-inbox-settings.png
+   :alt: Shared folder settings
+
+- **General settings:** Sets the folder name, description, and access permission.
+
+- **Set auto-sharing rule:** Sets the rules for auto-sharing documents in the shared folder.
+    If you select the document type and words included in the document title, documents will be automatically shared in the shared folder according to the rule.
+
+    For example, if you add the word "contract" in **Words included in the document title** and select documents created without a template in **Document type**, documents containing the word "contract" in the document title that were created without a template are shared in the shared folder.
+
+
+- **Change owner:** Changes the owner of the shared folder.
+
+   .. note::
+
+      ❗A member who creates a shared folder automatically becomes the owner of the shared folder.
+
+- **Delete:** Deletes a shared folder. If a shared folder is deleted, all documents shared in the shared folder are unshared.
+
+.. tip::
+
+   **Tip. How to set the auto-sharing rule.**
+
+   1. Click the see more (⋯) button next to the desired shared folder and click the **Set auto-sharing rule** option.
+
+   2. Set the rule for auto-sharing documents in the pop-up displayed. Adding words under **Words included in the document title** automatically adds the documents containing the words in the document title. Selecting a template under **Document type** automatically adds the documents created from the template in the shared folder.
+
+   - **Words included in the document title:** If you add a word, documents containing that word in the document title are automatically shared in the shared document. You can add multiple words, and if a document contains any one of the words, it is shared in the shared folder.
+
+   - **Document type:** If you select a template in the template list, when a document containing any of the words in **Words included in the document title** is created from that template, the document is automatically shared in the shared folder. If you select "Documents created without a template" in the template list, when a document containing any of the words in **Words included in the document title** is created from **New from my file**, the document is automatically shared in the shared folder.
+
+
+      .. figure:: resources/en-shared-rule-setting.png
+         :alt: Auto-sharing rule
+         :width: 300px
+
+
+
+
+**Adding a document in a shared folder**
+
+1. Go to a document inbox (Action required, In progress, or Completed).
+2. Click "Shared" under a document name to add a document to a shared folder of your choice.
+
+   .. figure:: resources/en-share-document.png
+      :alt: Sharing documents
+
+.. tip::
+
+   To share multiple documents at the same time, click the share icon at the top right corner of the screen. Then, select the documents you want to share and click the **Share** button at the top of the screen.
 
 
 
@@ -454,7 +528,7 @@ For documents scheduled to be sent later, you can change or cancel the scheduled
 .. |image13| image:: resources/delete_icon1.png
 .. |image14| image:: resources/column_icon.png
    :width: 35px
-.. |image15| image:: resources/draftbox-menu.png
-   :width: 400px
+.. |image15| image:: resources/en-draftbox-menu.png
+   :width: 700px
 .. |image16| image:: resources/draftbox-documentlist.png
    :width: 700px

@@ -13,7 +13,9 @@ Templates are **electronic documents** used for the eformsign service. They are 
 
 .. tip::
 
-   Using Templates is useful for documents that need to be sent often or regularly. If a tempate is registered once, you don't have to upload a document file whenever you need to send a document. You can just easily create and sent documents using the template. 
+  **❗Why use templates?**
+
+   Using templates is useful for documents that need to be sent often or regularly. If a tempate is registered once, you don't have to upload a document file whenever you need to send a document. You can just easily create and sent documents using the template. 
 
 
 .. note::
@@ -21,7 +23,6 @@ Templates are **electronic documents** used for the eformsign service. They are 
    For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
 
 
-To create and send electronic documents via eformsign, you have to first create a template, which can later be transformed into an e-document.
 
 **How to create a template with Web Form Designer**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -41,7 +42,7 @@ You can easily create a template by uploading a file online.
    File size: up to 9MB
 
 
-1. Drag and drop the file that you want to create as a template, or click the **Select a file** button to select the file from your computer and upload it.
+1. Drag and drop the file that you want to create as a template, or click the **Select a file** button to select a file from your computer and upload it.
 
    .. figure:: resources/managetemplate-upload-en.png
       :alt: Manage Templates > Uploading a File (1)
@@ -55,20 +56,20 @@ You can easily create a template by uploading a file online.
 2. Add participants and set the role for each participant.
 
    .. figure:: resources/en-template-settings-wfdesign0.png
-      :alt: Dragging a Component
+      :alt: Dragging a field
       :width: 500px
 
 
-3. Select a component that you want to add and drag it onto the uploaded file.
+3. Select a field that you want to add and drag it onto the uploaded file.
 
-   .. figure:: resources/en-template-settings-wfdesign.png
-      :alt: Dragging a Component
+   .. figure:: resources/en-template-settings-wfddesign.png
+      :alt: Dragging a field
       :width: 700px
 
 
-4. Adjust the size and position of the component.
+4. Adjust the size and position of the field.
 
-5. Set the details in the **Properties** tab after clicking the component.
+5. Set the details in the **Properties** tab after clicking the field.
 
 6. View the document by clicking the **Preview** button.
 
@@ -80,23 +81,23 @@ You can easily create a template by uploading a file online.
 
 You can set the details for the template.
 
--  `General <#general_wd>`__
+-  **General**
 
    Sets the template name, abbreviation, document name, document number, etc.
 
--  `Set permissions <#auth_wd>`__
+-  **Set permissions**
 
    Grants members or groups the permission to use and edit the template and to create documents from it and manage them.
 
--  `Workflow <#workflow_wd>`__
+-  **Workflow**
 
    Sets the workflow for the document from its creation to completion.
 
--  `Field <#field_wd>`__
+-  **Field**
 
    Sets the default values and auto-filled values for fields.
 
--  `Notification settings <#noti_wd>`__
+-  **Notification settings**
 
    Sets the recipients, and the content of the notification messages for notifying changes in the status of documents created from the template.
 
@@ -124,7 +125,7 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
 
 -  **Participant**
 
-   Signs and fills in documents.
+   Signs and fills out documents.
 
 
 
@@ -263,7 +264,7 @@ You can make a piece of information entered into a document or document-related 
 
 -  **Component ID**\ : Adds a piece of information in the document into the document name.
 
-   Click the **Add reserved word** button, and click **Component ID**\  to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.
+   Click the **Add reserved word** button, and click **Component ID**\  to display the list of field IDs and then select the desired field ID. The information in that particular field will be added to the document name.
 
 
 -  **General info**\ : Adds document-related information into the document name.
@@ -336,7 +337,7 @@ You can set a document number for documents created in eformsign. You
 can set it so that a document number is generated automatically for each
 template, and can select one of four document numbering formats. The
 document number can be generated in the document using the document
-component. You can also see a separate column in the document list and
+field. You can also see a separate column in the document list and
 search documents by the document number.
 
 **Generating a document number**
@@ -394,15 +395,15 @@ search documents by the document number.
 **Viewing a document number**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A document number can be viewed directly on a document using the document component and can also be viewed in the document list.
+A document number can be viewed directly on a document using the document field and can also be viewed in the document list.
 
 -  **Viewing a document number directly on a document**
 
-   You can generate a document number directly on a document by using the document number component.
+   You can generate a document number directly on a document by using the document number field.
 
    1. Upload a file on Web form designer.
 
-   2. Add the document component in the location where the document number will be displayed.
+   2. Add the document field in the location where the document number will be displayed.
 
       |image6|
 
@@ -461,7 +462,7 @@ Set Permissions
 
 You can set the permissions for template usage, template editing, and document management.
 
-.. figure:: resources/en-template-settings-permissions.png
+.. figure:: resources/en_template-settings-permissions.png
    :alt: Template Settings > Set Permissions
    :width: 700px
 
@@ -510,6 +511,14 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
    |image11|
 
+
+.. tip::
+
+   **❗The difference between a participant and reviewer**
+
+   Participants can fill in the fields in the document while reviewers can only approve or reject the document.
+
+
 4. When selected, a step is added to the workflow.
 
 .. tip::
@@ -544,39 +553,77 @@ You can click a step to set the details such as **Properties** for each workflow
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
 
 
+.. tip::
 
-**Participant: Step for signing or filling in a document**
+   **How to generate QR code when using the 'Create documents from URL' option**
+
+   When creating a signing link by using the 'Create document form URL' option, you can generate a QR code instead of a signing link.  You can upload the QR code image on a website or share it with others so the people can create and submit documents by scanning the image using the camera on a mobile device.
+
+   Select the **Create documents from URL** option in the Start step of the workflow and click the
+   **Generate QR code** button to download the image file.
+
+   
+   .. figure:: resources/en-workflow-step-start-QRcode.png
+      :alt: Workflow > Generate QR code
+      :width: 400px
+
+
+
+**Participant: Recipient who can sign or fill out a document**
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. figure:: resources/workflow-participant-properties0.png
+.. figure:: resources/en-workflow-participant-properties.png
    :alt: Workflow > Participant step properties
    :width: 700px
 
--  **Notification**\: Select how recipients can receive notifications and edit the content. 
+-  **Notification**\: Select how recipients can receive notifications and edit their content. 
 
-   - By default, notifications are sent by email. You can also select SMS to send notifications via SMS messages.
+   - By default, notifications are sent by email. You can also select SMS to send notifications via text messages.
 
    - **Edit notification message:** You can edit the notification message for each step.  
 
 -  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
    
 
--  **Automatically adds contacts**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be added automatically based on the information the recipient enters into the document.
+-  **Automatically fills in the recipient's contact info**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be filled in automatically based on the information the recipient enters into the document.
 
 
--  **Set document password**\: Set to require recipients to verify their identity when opening the document.   
+-  **Identify verification**\: Require non-member recipients to verify their identity when opening the document.   
 
-   - **Require document password**\: Set a verification password that recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
+   - **Require document password**\: Set a verification password that recipients must enter before opening the document. The password can be the recipient name, a value entered directly by the sender, or the value of a field in the document.
+
+               .. figure:: resources/en-doc-require-doc-password-setting.png
+               :alt: Require document password
+               :width: 400px    
       
-   - **Require email verification**\: Require recipients to verify their identity using email. A 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
+   - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window.
       
+-  **Hide files or sheets:** Allows you to choose which files/sheets in the document are hidden from the recipient, if the form consists of two or more files. This option cannot be applied to company members.
 
+
+.. note::
+
+   **Selecting participants/reviewers in a workflow step**
+
+   For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.
+
+   .. figure:: resources/en-workflow-participant-selected.png
+      :alt: Workflow > Recipients
+      :width: 700px   
+
+   -  **Sender can add/skip recipient**: Allows the sender to enter the contact information of the recipients before sending the document. If the sender does not enter the contact information, this step is skipped.
+
+   -  **Sender needs to add recipient**: Requires the sender to enter the contact information of recipients before sending the documents. If the sender does not enter the contact information, the document is not sent.
+
+   -  **Group or member**: Allows you to pre-select recipients. You can only select groups or members in your company.
+
+   -  **Recipient of a previous step**: Allows you to select the person of a previous step including the Start step.
 
 
 **Participant/Reviewer - Select recipient**
 
-.. figure:: resources/workflow-participant-selected.png
+.. figure:: resources/en-workflow-participants-selected.png
    :alt: Workflow > Selecting a recipient
    :width: 700px
 
@@ -588,35 +635,55 @@ You can select the recipient of the step in advance.
 
 
 
-**Reviewer: Step for reviewing a document**
+**Reviewer: Recipient who can only approve or reject a document**
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. figure:: resources/workflow-participant-properties.png
-   :alt: Workflow > Participant step properties
+.. figure:: resources/en-workflow-reviewer-properties.png
+   :alt: Workflow > Reviewer
    :width: 700px
 
--  **Step name**\: Change the name of the step. The default name is ‘Reviewer no.’.
+-  **Step name**\: Sets the step name.
 
--  **Notification**\: Select how recipients can receive notifications and edit the content. 
+-  **Notification**\: Selects how recipients can recive notification messages and edit their content.
 
-   - By default, nofitications are sent by email. You can also select SMS to send notifications via SMS messages.
+   - Edit notification message: Edits the notification messages sent to recipients for each step.
 
-   - **Edit notification message:** You can edit the notification message for each step.  
+-  **Document expiration**\: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).
 
--  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
+.. _hide:
+
+**How to hide files in a document**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. tip::
+
    
--  **Automatically adds contacts**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be added automatically based on the information the recipient enters into the document.
+   **Using the 'Hide files or sheets option'**
 
+   If you add multiple files to a document, you can hide certain files from recipients in a workflow step. If you upload multiple files to a document, then the **Hide files or sheets** option appears in the **Properties** tab of workflow steps in **Template settings** where you can choose to hide or show each file.
+   
 
--  **Set document password**\: Set to require recipients to verify their identity when opening the document.   
+   ❗Note that the 'Hide files or sheets' option is only available when sending a document to non-member recipients.
 
-   - **Require document password**\: Set a verification password in which recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
-      
-   - **Require email verification**\: Require recipients to verify their identity using email. A 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
+   **Instructions**
 
+   1. Go to **Sidebar menu  Manage templates**.
+   2. Click the **Settings icon (⚙)**\ of the desired template.
+   3. Go to **Configure > Workflow**.
+   4. Select the desired **recipient** step. 
+   5. Select the **Hide files or sheets** option in **Properties** on the right. 
+   6. For each file or Excel sheet, select one of the options below.
 
+      - **Required:** The file or sheet is shown to the recipient.
 
+      - **Optional:** The document creator can choose whether to show or hide the file or sheet to the recipient.
+
+      - **Hide:** The file or sheet is hidden from the recipient.
+
+   .. figure:: resources/en-hide-setting.png
+      :alt: Hide files or sheets
+      :width: 500px
 
 
 **Complete: Step in which a document is finally completed**
@@ -742,11 +809,6 @@ Go to the **Manage templates** page, click the menu icon (|image24|) right next 
 
    |image26|
 
--  **Document Manager:** You can select the members or groups that can
-   manage documents created from the template. You can also select
-   document managers in **Template settings > Set permissions.**
-
-   |image27|
 
 -  **Reset document numbering rule**: You can reset the starting serial
    number of the document number. The new starting serial number will be
@@ -791,9 +853,9 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image9| image:: resources/template-setting-auth-doc-new.PNG
    :width: 700px
 .. |image10| image:: resources/workflow-addstep-plus-button.png
-.. |image11| image:: resources/en-template-settings-workflow-add-step.png
+.. |image11| image:: resources/en-template-settings-workflow-added-step.png
    :width: 700px
-.. |image12| image:: resources/en-template-settings-workflow-order.png
+.. |image12| image:: resources/en-template-settings-workflow-order-new.png
    :width: 500px
 .. |image13| image:: resources/en-template-settings-workflow-item.png
    :width: 700px
@@ -809,7 +871,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
    :width: 700px
 .. |image19| image:: resources/workflow-step-external-recipient-property-pw.png
    :width: 500px
-.. |image20| image:: resources/en-template-settings-workflow-complete.png
+.. |image20| image:: resources/en-template-settings-workflow-completed.png
    :width: 700px
 .. |image21| image:: resources/en-template-settings-edit-notification-messages.png
    :width: 400px

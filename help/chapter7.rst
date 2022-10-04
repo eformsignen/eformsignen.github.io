@@ -19,7 +19,7 @@ paper forms such as applications, contracts, and agreements. You can create and 
 
 .. note::
 
-   For more information about Web form designer, please refer to `Creating templates using Web Form Designer <chapter6.html#template_wd>`__.
+   For information about setting and managing templates with Web form designer, please refer to `Creating templates using Web Form Designer <chapter6.html#template_wd>`__.
 
 
 
@@ -40,19 +40,19 @@ MS Office files such as Word, Excel, and PowerPoint can be uploaded as a templat
 
 2. Go to the **OZ in Word/Excel/PowerPoint** menu in the file.
 
-3. Choose a location you want to add a component.
+3. Choose a location you want to add a field.
 
-4. Select a component type.
+4. Select a field type.
 
-5. Adjust the size and position of the component.
+5. Adjust the size and position of the field.
 
-6. Click the **Execute** button to preview the component.
+6. Click the **Execute** button to preview the field.
 
 7. Click the **Upload** button to upload the file as a template.
 
 8. Click **Create template** and set details for the template.
 
-.. figure:: resources/formbuilder-execute.png
+.. figure:: resources/en-formbuilder-execute.png
    :alt: Formbuilder menu
 
 
@@ -61,23 +61,23 @@ MS Office files such as Word, Excel, and PowerPoint can be uploaded as a templat
 
 You can set the details for the template.
 
--  `General <#general_fb>`__
+-  **General**
 
    Set the template name, abbreviation, document name, document number, etc.
 
--  `Set permissions <#auth_fb>`__
+-  **Set permissions**
 
    Grant members or groups the permission to use and edit the template and to create documents from it and manage them.
 
--  `Workflow <#workflow_fb>`__
+-  **Workflow**
 
    Sets the workflow for the document from its creation to completion.
 
--  `Field <#field_fb>`__
+-  **Field**
 
    Sets the default values and auto-filled values for fields.
 
--  `Notification settings <#noti_fb>`__
+-  **Notification settings**
 
    Sets the recipients, and the content of the notification messages for notifying changes in the status of documents created from the template.
 
@@ -251,7 +251,7 @@ As well, you can see this name in all document pages (In progress, Action requir
 
 -  **Component ID**\ : Adds a piece of information in the document into the document name.
 
-   Click the **Add reserved word** button, and click **Component ID**\  to display the list of Component IDs and then select the desired component ID. The information in that particular component will be added to the document name.
+   Click the **Add reserved word** button, and click **Component ID**\  to display the list of field IDs and then select the desired field ID. The information in that particular field will be added to the document name.
 
 
 -  **General info**\ : Adds document-related information into the document name.
@@ -318,7 +318,7 @@ As well, you can see this name in all document pages (In progress, Action requir
 General > Generating and Viewing a Document Number
 ----------------------------------------------------------
 
-You can set a document number for documents created in eformsign. You can set it so that a document number is generated automatically for each template, and can select one of four document numbering formats. The document number can be generated in the document using the document component. You can also see a separate column in the document list and search documents by the document number.
+You can set a document number for documents created in eformsign. You can set it so that a document number is generated automatically for each template, and can select one of four document numbering formats. The document number can be generated in the document using the document field. You can also see a separate column in the document list and search documents by the document number.
 
 **Generating a document number**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -375,17 +375,17 @@ You can set a document number for documents created in eformsign. You can set it
 **Viewing a document number**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A document number can be viewed directly on a document using the document component and can also be viewed in the document list.
+A document number can be viewed directly on a document using the document field and can also be viewed in the document list.
 
 -  **Viewing a document number directly on a document**
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-   You can generate a document number directly on a document by using the document component in Form builder.
+   You can generate a document number directly on a document by using the document field in Form builder.
 
    1. Open a file in Word, Excel, or PowerPoint.
 
-   2. Add the document component in the location where the document number will be displayed.
+   2. Add the document field in the location where the document number will be displayed.
 
    3. Click the **Upload** button to upload the file on eformsign.
 
@@ -446,7 +446,7 @@ Set Permissions
 
 You can set the permissions for the template usage, template editing and document management.
 
-.. figure:: resources/en-template-settings-permissions-fb.png
+.. figure:: resources/en_template-setting-set-permissions.png
    :alt: Template Settings > Set Permissions
    :width: 700px
 
@@ -532,65 +532,110 @@ You can click a step to set the details such as **Properties** and **Manage item
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
 
 
+.. tip::
 
-**Recipient: Step for signing or filling in a document**
+   **How to generate QR code when using the 'Create documents from URL' option**
+
+   When creating a signing link by using the 'Create document form URL' option, you can generate a QR code instead of a signing link.  You can upload the QR code image on a website or share it with others so the people can create and submit documents by scanning the image using the camera on a mobile device.
+
+   Select the **Create documents from URL** option in the Start step of the workflow and click the
+   **Generate QR code** button to download the image file.
+
+   
+   .. figure:: resources/en-workflow-step-start-QRcode.png
+      :alt: Workflow > Generate QR code
+      :width: 400px
+
+
+
+**Recipient: Step for signing or filling out a document**
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. figure:: resources/workflow-participant-properties.png
+.. figure:: resources/en-workflow-participants-properties.png
    :alt: Workflow > Participant step properties
    :width: 700px
 
 -  **Step name**: Change the name of the step. The default name is 'Start'.
 
--  **Notification**\: Select how recipients can receive notification and edit their content. 
+-  **Notification**\: Select how recipients can receive notifications and edit their content. 
 
-   - **Select notification method:** By default, nofitications are sent by email. You can also select SMS to send notification via SMS message.
+   - By default, notifications are sent by email. You can also select SMS to send notifications via text messages.
 
-   - **Edit notification message:** You can edit notification message for each step.  
+   - **Edit notification message:** You can edit the notification message for each step.  
 
 -  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
    
 
--  **Automatically adds contacts**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be added automatically based on the information the recipient enters into the document.
+-  **Automatically fills in the recipient's contact info**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be filled in automatically based on the information the recipient enters into the document.
 
 
--  **Set document password**\: Set to require recipients to verify their identity when opening the document.   
+-  **Identify verification**\: Require non-member recipients to verify their identity when opening the document.   
 
-   - **Verification method**\: Set a verification password that recipients must enter when viewing the document. The password can be the recipient name, a value entered directly by the sender, or a field in the document.
+   - **Require document password**\: Set a verification password that recipients must enter before opening the document. The password can be the recipient name, a value entered directly by the sender, or the value of a field in the document.
+
+            .. figure:: resources/en-doc-require-doc-password-setting.png
+               :alt: Require document password
+               :width: 400px    
       
-   - **Email verification**\: Require recipients to verify identity using email. A 6-digit code will be sent to recipients' email and the recipients must enter the code in the identity verification window.
+   - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window.
+      
+-  **Hide files or sheets:** Allows you to choose which files/sheets in the document are hidden from the recipient, if the form consists of two or more files. This option cannot be applied to company members.
 
 
-**Recipient - Select recipient**
+.. note::
 
-.. figure:: resources/workflow-participant-selected.png
-   :alt: Workflow > Selecting a recipient
-   :width: 700px
+   **Selecting participants/reviewers in a workflow step**
 
-You can select the recipient of the step in advance.
+   For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.
 
--  **Group or member**: Select the groups or members who will sign and review the document. You can select multiple groups or members, but only one person among the selected can sign and review the document.
+   .. figure:: resources/en-workflow-participant-selected.png
+      :alt: Workflow > Recipients
+      :width: 700px   
 
--  **Handler of a previous step**: Select the recipient of the previous step including the Start step to sign and review the document. You can select the step.
+   -  **Sender can add/skip recipient**: Allows the sender to enter the contact information of the recipients before sending the document. If the sender does not enter the contact information, this step is skipped.
 
+   -  **Sender needs to add recipient**: Requires the sender to enter the contact information of recipients before sending the documents. If the sender does not enter the contact information, the document is not sent.
+
+   -  **Group or member**: Allows you to pre-select recipients. You can only select groups or members in your company.
+
+   -  **Recipient of a previous step**: Allows you to select the person of a previous step including the Start step.
 
 
 
 .. _hide:
 
-**Hide sheets or sections** 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can choose which sheets/sections of the documents are shown to external recipients in the case of Excel documents with two or more sheets and Word documents with two or more sections.
+**How to hide files in a document**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tip::
 
-   Hiding sheets or sections of a document with multiple sheets or sections
+   
+   **Using the 'Hide files or sheets option'**
 
-   When there are multiple sheets or sections in an uploaded document, the **Hide sheets or sections** option can be shown in the external recipient step of the workflow. You can choose which sheets/sections can be seen by or hidden to the external recipient. You can also choose the person in charge of the step before the external step to choose which sheets/sections can be shown to the external recipient.
+   If you add multiple files to a document, you can hide certain files from recipients in a workflow step. If you upload multiple files to a document, then the **Hide files or sheets** option appears in the **Properties** tab of workflow steps in **Template settings** where you can choose to hide or show each file.
+   
 
-   |image18|
+   ❗Note that the 'Hide files or sheets' option is only available when sending a document to non-member recipients.
+
+   **Instructions**
+
+   1. Go to **Sidebar menu  Manage templates**.
+   2. Click the **Settings icon (⚙)**\ of the desired template.
+   3. Go to **Configure > Workflow**.
+   4. Select the desired **recipient** step. 
+   5. Select the **Hide files or sheets** option in **Properties** on the right. 
+   6. For each file or Excel sheet, select one of the options below.
+
+      - **Required:** The file or sheet is shown to the recipient.
+
+      - **Optional:** The document creator can choose whether to show or hide the file or sheet to the recipient.
+
+      - **Hide:** The file or sheet is hidden from the recipient.
+
+   .. figure:: resources/en-hide-setting.png
+      :alt: Hide files or sheets
+      :width: 500px
 
 
 **Complete: Step in which a document is finally completed**
@@ -709,9 +754,7 @@ Go to the **Manage templates** page, click the menu icon (|image23|) right next 
 
    |image25| 
 
--  **Document Manager:** You can select the members or groups that can manage documents created from the template. You can also select document managers in **Template settings > Set permissions.**
 
-   |image26|
 
 ---------------------
 Search Templates
@@ -743,13 +786,13 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image7| image:: resources/en-manage-template-search-advanced.png
    :width: 600px
 .. |image8| image:: resources/workflow-addstep-plus-button.png
-.. |image9| image:: resources/en-template-settings-workflow-add-step-fb.png
+.. |image9| image:: resources/en-template-settings-workflow-add-steps-fb.png
    :width: 700px
 .. |image10| image:: resources/en-template-settings-workflow-order-fb.png
    :width: 500px
-.. |image11| image:: resources/en-template-settings-workflow-item-fb.png
+.. |image11| image:: resources/en-template-settings-workflows-item-fb.png
    :width: 700px
-.. |image12| image:: resources/en-template-settings-workflow-start-fb.png
+.. |image12| image:: resources/en-template-settings-workflow-started-fb.png
    :width: 700px
 .. |image13| image:: resources/en-template-settings-workflow-approver-fb.png
    :width: 700px
@@ -763,7 +806,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
    :width: 400px
 .. |image18| image:: resources/template-fb-setting-workflow-outsider-1.png
    :width: 700px
-.. |image19| image:: resources/en-template-settings-workflow-complete-fb.png
+.. |image19| image:: resources/en-template-settings-workflow-completed-fb.png
    :width: 700px
 .. |image20| image:: resources/en-template-settings-edit-notification-messages.png
    :width: 400px

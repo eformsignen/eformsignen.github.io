@@ -21,7 +21,7 @@ will be displayed as shown below.
    have. The company administrator can access all the menus and have all
    the permissions.
 
-.. figure:: resources/en-dashboard-side-menu.png
+.. figure:: resources/en_dashboard-side-menu.png
    :alt: eformsign Menus
    :width: 700px
 
@@ -32,9 +32,9 @@ The description of each menu is as follows:
    create a document by uploading a file from your computer or selecting
    a template uploaded to eformsign.
 
-   -  **New from my file:** You create a document even when there is no
+   -  **New from my file:** Allows you to create a document even when there is no
       template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then
-      upload it to eformsign. Then, add components onto the document and
+      upload it to eformsign. Then, add fields onto the document and
       send it to recipients for signature.
 
    -  **New from template:** Views the list of templates in which you
@@ -56,6 +56,8 @@ The description of each menu is as follows:
       documents you have created or participated in.
 
    -  **Bulk send:** Shows the list of all the document you have sent in bulk.
+
+-  **Shared**: Allows you to share your documents with others and view documents others members shared with you.
 
 -  **Manage documents:** Only document managers can
    access this menu. Document managers can view all documents created
@@ -80,6 +82,8 @@ The description of each menu is as follows:
 
    -  **Manage members:** You can invite members or edit
       member information.
+
+   -  **Manage permissions:** Allows the company administrator to assign members as company managers, template managers, and document managers, as well as manage their permissions.
 
    -  **Manage company stamp** You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.
 
@@ -111,10 +115,12 @@ The description of each menu is as follows:
 -  **Billing:** You can view your plan and payment history, change your
    plan, or change the payment method.
 
-   -  **Change plan:** You can change the plan you are using.
+   -  **Plan:** You can change the plan you are using.
 
    -  **Real-time billing:** You can view your usage and billing status
       in real-time.
+
+   -  **Payment history:** You can view your payment history for the past 1 year.
 
    -  **Payment method settings:** You can add the credit card
       information for payment.
@@ -122,8 +128,7 @@ The description of each menu is as follows:
 -  **Usage status:** You can monitor weekly, monthly, and annual service
    usage status.
 
--  **Download eformsign Form Builder:** You can download the Form Builder executable file. By using the Form Builder
-   add-in feature, you can create electronic forms using Microsoft Office files.
+-  **Download form builder for MS Office:** You can download the eformsign form builder Microsoft Office add-in, which allows you to create electronic forms using Microsoft Office programs.
 
    
 Dashboard
@@ -200,7 +205,7 @@ To view your personal information you entered when signing up
 for the eformsign service and the company information, click the see
 more icon (|image6|) at the top right corner of the sidebar menu.
 
-.. figure:: resources/en-dashboard-side-menu-icon.png
+.. figure:: resources/en_dashboard-side-menu-icon.png
    :alt: Location of the Menu Icon for Accessing Personal and Company Info
    :width: 1500px
 
@@ -208,7 +213,7 @@ more icon (|image6|) at the top right corner of the sidebar menu.
 If you click the (|image7|) icon in the sidebar, the following menu is
 displayed.
 
-.. figure:: resources/en-dashboard-side-menu-icon-drop-down.png
+.. figure:: resources/en_dashboard-side-menu-icon-drop-down.png
    :alt: View and Edit My Profile
    :width: 1500px
 
@@ -282,7 +287,7 @@ The company information displayed in the **My profile > company** menu can be ed
 
    You need to have either the company administrator or company manager permission to perform this action.
 
-.. figure:: resources/en-manage-company-profile.png
+.. figure:: resources/en_manage-company-profile.png
    :alt: Manage Company > Company profile
    :width: 700px
 
@@ -307,7 +312,7 @@ The company information displayed in the **My profile > company** menu can be ed
 Company Brand
 ~~~~~~~~~~~~~~~~~
 
-You can replace the eformsign logo and symbol with your company logo and symbol by registering them in the **Company profile >Company brand** tab.
+You can replace the eformsign logo and symbol with your company logo and symbol by registering them in the **Company profile > Company brand** tab.
 
 .. note::
 
@@ -340,10 +345,6 @@ You can replace the eformsign logo and symbol with your company logo and symbol 
 
    -  File format: PNG, JPG, JPEG, and GIF
 
-   .. figure:: resources/en-manage-company-brand-logo-popup.png
-      :alt: Pop-up Screen for Image Upload
-      :width: 650px
-
 
 5. Apply your changes by clicking the **Save** button.
 
@@ -373,18 +374,21 @@ Permissions can be granted to each member. In eformsign, there are many differen
 
    Template managers have the permission to access the **Manage template** menu. Template managers can create new templates by using Form Builder or Web Form Designer, and can also edit, deploy, and delete templates.
 
-
--  **Document creator**
-
-   Document creators can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the **New from template** page.
-
-   **Template editor**
-
-   A template editor of a template can edit the template. You can grant this permission for each template.
-
 -  **Document manager**
 
-   Document managers can manage documents created from a template. If a member is assigned as a document manager of a template, then the member can open, delete, download (in PDF & CSV) documents created from that template in the **Manage documents** page.
+   Document managers have permission to access the **Manage documents** menu. They can manage documents created from templates they have access to. If a member is assigned as a document manager of a template, then the member can open, delete, download documents created from that template.
+
+   .. note::
+
+      Manager permission can be granted only by the company administrator in the **Manage company > Manage permissions** menu.
+
+-  **Template user**
+
+   Template users can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the **New from template** page.
+
+-  **Template editor**
+
+   Template editors can edit templates they have permission in.
 
 Company Administrator
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -398,6 +402,8 @@ The company administrator
 -  Can create, edit, delete, and manage templates.
 
 -  Can create, view, and manage all documents.
+
+-  Can grant permissions to each member.
 
 -  Can delegate its role to another member when the company administrator needs to be changed.
 
@@ -435,14 +441,12 @@ another member, and then delete the account.
 Company Manager
 ~~~~~~~~~~~~~~~~~~~
 
-Company managers can access the **Manage company** menu and can view, edit, and delete information regarding the company and
-groups/members. The company administrator or company managers can grant the company manager permission to members.
+Company managers can access the **Manage company** menu and can view, edit, and delete information regarding the company and groups/members.
 
-**Granting the Company Manager Permission**
+The company manager permission can be granted in the **Manage members** or the **Manage permissions** menu.
 
-.. note::
+**Granting the Company Manager Permission in the Manage company > Manage members menu**
 
-   You need to have either the company administrator or template manager permission to perform this action.
 
 1. Click the sidebar menu icon, and go to the **Manage company > Manage members** menu.
 
@@ -450,31 +454,53 @@ groups/members. The company administrator or company managers can grant the comp
 
 3. Tick the **Manage company** checkbox in the Permission item displayed at the bottom of the Member info tab located to the right of the member list.
 
-   .. figure:: resources/en-manage-company-member-permission.png
-      :alt: Company Manager
+   .. figure:: resources/en_manage-company-member-permission.png
+      :alt: Company Manager Permission
       :width: 700px
 
 
 4. Click the **Save** button.
+
+
+**Granting the Company Manager Permission in the Manage company > Manage permissions menu**
+
+
+1. Click the sidebar menu icon, and go to the **Manage company > Manage permissions** menu.
+
+2. Select the **Add a company manager** button at the top right corner of the screen.
+
+   .. figure:: resources/en-company-manager-permission.png
+      :alt: Add Company Manager
+      :width: 700px
+
+3. Select the member you want to grant the company manager permission.
+
+   .. figure:: resources/en-company-manager-popup.png
+      :alt: Company Manager Pop-up
+      :width: 400px
+
+3. Click the **Confirm** button to grant the member the company manager permission.
+
+.. note::
+
+   To remove the company manager permission from a member, click the trash icon at the top right corner of the screen and select the member you want and then click the **Remove** button.
+
 
 Template Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Template managers can access the **Manage template** menu, and can create, edit, deploy, and delete templates.
 
-The template manager who created a template is the template owner of
-that template by default. However, if multiple template managers exist
-in a company, a template manager may not necessarily be the template
-owner of a template.
-
-If the template manager is not the template owner, the template manager
-can only view the template settings and duplicate the template.
-
-**Granting the Template Manager Permission**
-
 .. note::
 
-   You need to have either the company administrator or template manager permission to perform this action.
+   The template manager who created a template is the template owner of that template by default. However, if multiple template managers exist in a company, a template manager may not necessarily be the template owner of a template.
+
+   If the template manager is not the template owner, the template manager can only view the template settings and duplicate the template.
+
+The template manager permission can be granted in the **Manage members** menu or the **Manager permissions** menu.
+
+**Granting the Template Manager Permission in the Manage company > Manage members menu**
+
 
 1. Click the sidebar menu icon, and go to the **Manage company > Manage members** menu.
 
@@ -482,8 +508,8 @@ can only view the template settings and duplicate the template.
 
 3. Tick the **Manage templates** checkbox in the Permission item displayed at the bottom of the Member info tab to the right of the member list.
 
-   .. figure:: resources/en-manage-company-member-permission-template.png
-      :alt: Template Manager Permission
+   .. figure:: resources/en_granted-template-manager-permission.png
+      :alt: Company Manager Permission
       :width: 700px
 
 
@@ -491,24 +517,137 @@ can only view the template settings and duplicate the template.
 
 .. _permissionsfortemplate:
 
-Document Creator, Template Editor, and Document Manager
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A document creator can create documents from a template, template editor can edit documents from a template, and document manager can manage documents created from a template and its data.
-
-A document creator for a template can create documents using that template in the **New document** page.
-
-A template editor for a template can edit that template in the **Manage templates** page.
-
-A document manager of a template can view, delete, and download documents created from that template in the **Manage documents** page.
+**Granting the Template Manager Permission in the Manage company > Manage permissions menu**
 
 
+1. Click the sidebar menu icon, and go to the **Manage company > Manage permissions** menu.
 
-**Granting Document Creator, Template Editor, and Document Manager Permissions**
+2. Click **Template manager** on the left side of the screen.
+
+3. Click the **Add a template manager** button at the top right corner of the screen.
+
+   .. figure:: resources/en_granting-template-manager-permission.png
+      :alt: Template Manager Permission
+      :width: 700px
+
+
+4. Select the member you want to grant the template manager permission.
+
+   .. figure:: resources/en-add-template-manager-popup.png
+      :alt: Add Template Manager
+      :width: 400px
+
+4. Click the **Confirm** button to grant the member the template manager permission.
+
 
 .. note::
 
-   You need to have either the company administrator or template manager permission to perform this action.
+   **Viewing the number of templates owned by each template manager**
+
+   You can view the number of templates owned by each template manager in the template manager screen, and can view the list of all templates each template manager owns by clicking the **Settings** button next to each template manager.
+
+   .. figure:: resources/en-template-manager-settings.png
+      :alt: Template Manager Settings
+      :width: 500px
+
+   In the **Template manager settings** pop-up, you can view the list of all the templates owned by the template manager. To change the owner of a template, hover the mouse over the desired template, and then click the **Change owner** button that will be displayed. Then, select the new template owner in the **Change owner** pop-up and click the **Change** button.
+
+
+
+Document Manager
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Document managers can access the **Manage documents** menu, and can open, download, void, and remove documents created from templates that they have been granted permission to access.
+
+
+**Granting the Document Manager Permission**
+
+1. Go to **Manage company** > **Manage permissions** in the sidebar menu.
+2. Click **Document manager**.
+3. Click the **Add a document manager** button on the top right corner of the screen.
+
+   .. figure:: resources/en-add-document-manager.png
+      :alt: Add Document Manager Popup
+      :width: 700px
+
+4. Select the member you want to grant the document manager permission.
+
+   .. figure:: resources/en-add-document-manager-popup.png
+      :alt: Add Document Manager Popup
+      :width: 400px
+
+5. Click the **Confirm** button to add the member as a document manager.
+
+   .. figure:: resources/en-add-document-manager-added.png
+      :alt: Document manager added
+      :width: 700px
+ 
+
+6. Click the **Settings** button to the right of the document manager to configure the settings.
+
+   .. figure:: resources/en_adding-document-manager_settings.png
+      :alt: Add document manager settings
+      :width: 700px
+
+Set the permissions and the scope of the permissions to be granted to the document manager.
+
+   - **Filter documents:**  A condition that filters the documents the document manager can manage by document creator and document type
+     For example, if you select a member named John Doe under document creator and All documents under Document type, then the document manager has the permission to manage all the documents created by John Doe.
+
+      - **Document creator** 
+         A condition that filters documents by document creators. You can select all members, groups, or individual members.
+
+      - **Document type**
+         Filter documents by document type as follows.
+
+         - **All documents:** All documents created by the document creators selected above.
+
+         - **All documents created from a template:** All documents created by the document creators selected above that are created from a template.
+
+         - **All documents created without a template:** All documents created by the document creators selected above that are created using **New from my file**.
+         
+         - **Template list:** All documents created by the document creators selected above from the selected templates that are created from the selected templates.
+
+   - **Give permissions:** Check the permissions you want to give to the document manager for the filtered documents.
+
+      -  **Open and download:** The default permission granted to the document manager. The document manager can open and download all documents filtered using **Document creator** and **Document type** conditions.
+
+      -  **Void:** Permission to void completed documents created by a selected document creator, if the document creator requested the document to be voided.
+
+      -  **Remove:** Permission to permanently remove documents from eformsign.
+  
+   .. tip::
+
+      You can click the below **+ Add a document permission** button to add more document conditions.
+
+         .. figure:: resources/en-add-document-permission.png
+            :alt: Add a document permission
+            :width: 400px
+
+
+
+
+Permissions for each template
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can grant two types permissions for each template: **Template usage** for using the template to create documents and **Template editing** for editing the template.
+
+A member who has been granted the **Template usage** permission for a template can create new documents from that template by clicking **New from template**.
+
+A member who has been granted the **Template editing** permission for a template can edit that template.
+
+
+.. Caution::
+
+   The template editing permission can be granted only to template managers.
+
+
+**Granting Permissions**
+
+.. note::
+
+   You need to have either the **Company administrator** or **Template manager** permission to perform this action.
 
 1. Click the sidebar menu icon, and go to the **Manage templates** menu.
 
@@ -521,12 +660,12 @@ A document manager of a template can view, delete, and download documents create
 
 3. Go to the **Set permissions** tab.
 
-   .. figure:: resources/en-template-setting-set-permissions.png
+   .. figure:: resources/en_template-setting-set-permissions.png
       :alt: Template Settings > Set Permissions
       :width: 700px
 
 
-4. Select the groups or members you want to grant permission for the document creator (called **Template usage** here), template editor (called **Template editing** here), and document manager (called **Document management** here). Note that you can only select members as template editors.
+4. Select the groups or members you want to grant the **Template usage** permission and the **Template usage** permission. Note that you can only select members (not groups) as template editors.
 
 5. Click the **Save** button.
 
@@ -537,7 +676,7 @@ Manage Groups and Members
 You can invite, delete, and edit members and create, add, and delete groups in the **Manage company** menu.
 
 
-.. figure:: resources/en-side-menu-manage-group-members.png
+.. figure:: resources/en_side-menu-manage-group-members.png
    :alt: Manage Company > Manage Groups/Members
    :width: 700px
 
@@ -571,17 +710,31 @@ You can invite members to your company or manage invited members in the **Manage
 **⑥ Field value settings**
    You can set the field values that are related to members.
 
-**⑦ Transfer documents**
-   If a member no longer uses the eformsign service, the documents of the member can be transferred to other members.
+**⑦ Transfer shared folder**
+   You can transfer a shared folder owned by a member to another member. If a member owns multiple shared folders, then the member can bulk transfer all of them or only some of them.
 
-**⑧ Bulk-invite**
+**⑧ Transfer documents**
+   Sometimes you may have to transfer a member's documents to another member due to reasons such as a member leaving the company or transferring to another department. You can use this feature to transfer documents in all status (excluding draft) from the source member to the target member, with the status of transferred documents remaining the same after the transfer.
+
+**⑨ Bulk invite**
    You can invite multiple members at once.
 
-⑨ Invite members
+**⑩ Invite members**
    You can invite members via email or ID.
 
-⑩ Delete members
-   When you click the **Trash** icon, a checkbox will be activated next to each member in the member list. Tick the members you want to delete and click the **Delete** button.
+   .. important::
+
+      Member invitation links sent via email or SMS are valid for 7 days.
+      If an invited person does not accept the invitation within 7 days, then you must reinvite the person. 
+
+**⑪ Download member list**
+   Download the list of members that belong to the company in CVS format.
+
+**⑫ Delete**
+   When you click the Trash icon, a checkbox will be activated next to each member in the member list. Tick the members you want to delete and click the Delete button.@@
+
+
+
 
 Manage Groups
 ~~~~~~~~~~~~~~~
@@ -628,7 +781,7 @@ If you register your signature, initial, and stamp in the **My signature** menu,
 
 1. Click the sidebar menu icon, and go to the **My signature** menu.
 
-   .. figure:: resources/en-side-menu-my-signature.png
+   .. figure:: resources/en_side-menu-my-signature.png
       :alt: My Signature Page
       :width: 700px
 
@@ -836,7 +989,7 @@ You can add and manage company stamps as well as grant stamp use permissions and
 In this tab, you can add company stamps by uploading an image or scanning a real life-sized stamps as well as granting stamp use permission to members/groups. Once a company stamp is added, you can edit and delete it, and even view the history of all changes made to the stamp
 
 
-.. figure:: resources/menu-company-stamp.png
+.. figure:: resources/menu_company-stamp.png
    :alt: Manage company stamp screen
    :width: 700px
 

@@ -1,7 +1,7 @@
 Introduction to eformsign
 =============================
 
-Overview
+**Overview**
 
 eformsign is an electronic document solution that allows anyone to
 easily create electronic documents from paper documents and utilize
@@ -78,7 +78,7 @@ using eformsign.
 
    Web form designer is a tool for quickly and easily
    creating electronic forms by uploading existing document files onto
-   eformsign. You can create templates by adding components such as
+   eformsign. You can create templates by adding fields such as
    signature, text box, and check box to documents such as agreements,
    applications, and contracts. You can then create
    documents from templates and send them to recipients to be reviewed
@@ -88,7 +88,7 @@ using eformsign.
 
    Form builder is a tool used to create electronic forms
    by converting Microsoft Office files such as applications, contracts,
-   and agreements into electronic forms that contain components such as
+   and agreements into electronic forms that contain fields such as
    signature and text box. Form builder also uploads the converted
    electronic forms onto eformsign. Form builder is an Microsoft Office
    add-in, and it is shown as a ribbon menu which is called **OZ in Office**.
@@ -123,8 +123,9 @@ using eformsign.
    the **New from template** menu. Any document created like this counts
    as a document created in eformsign.
 
--  This is a cloud space for storing and viewing documents. It consists of the following three menus according to the
-   document status:
+-  **Documents**
+
+   This is a cloud space for storing and viewing documents. It consists of the following menus according to the document status:
 
    -  **Action required:** Shows the list of documents
       that you need to sign, approve, or send.
@@ -155,14 +156,14 @@ using eformsign.
 
    -  **Reviewer:** The step for requesting a person to review a document. A reviewer cannot fill in fields and can only approve or reject documents.
 
-   .. figure:: resources/workflow_new.png
+   .. figure:: resources/en_workflow_new.png
       :alt: Workflow Steps
       :width: 400px
 
 
 -  **Company Administrator**
 
-   The representative of a company and has full permission to use eformsign.
+   The representative of a company with full permission to use eformsign.
 
 -  **Company manager**
 
@@ -175,21 +176,20 @@ using eformsign.
    menu and can manage templates. Managing templates includes creating,
    deploying, editing, and deleting eformsign templates.
 
--  **Document creator**
+-  **Document manager**
 
-   With this permission, a member can can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the New from template page.
+   With this permission, a member can open, download, void, and remove documents created from the templates the member has access to. Note that the document management permission can be
+   set for each template.
+
+-  **Template user**
+
+   With this permission, a member can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the New from template page.
 
 -  **Template editor**
 
    With this permission, a member who is a template editor of a template can edit the template. You can grant this permission for each template.
 
--  **Document manager**
 
-   With this permission, a member can access the **Manage documents**
-   menu to view the documents created from each template, approve
-   documents requested to be voided, or permanently remove documents
-   from the system. Note that the document management permission can be
-   set for each separate template.
 
 eformsign Usage Flow
 -----------------------
@@ -203,9 +203,9 @@ New from my file
 ~~~~~~~~~~~~~~~~~~~~
 
 You can upload a file onto eformsign and then
-create and send a document by adding components such as text, signature,
+create and send a document by adding fields such as text, signature,
 and date. You can easily and freely send a document by uploading a file,
-without the need to create a template. Just simply add the participants who can fill in the document and add components to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options step**, and then press the **Start Now** button to send.
+without the need to create a template. Just simply add the participants who can fill in the document and add fields to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options step**, and then press the **Start Now** button to send.
 
 Also, before sending a document to recipients, you can temporarily save
 it as a draft and then send it later.
@@ -226,7 +226,7 @@ uploading it on eformsign.
 1. **Using Web Form Designer**
 
    You can create a template by uploading a document
-   file (PDF, Word, Excel, PowerPoint, or image files) on eformsign and then adding the participants who can fill in the document and adding components to the uploaded document in the **Design form** step. Then, configure settings including General, Set permissions, Workflow, Field, and Notification settings in the **Configure step**. Then, you can save and deploy the template for use. Finally, you can go to **New from template**, select a template you want to create a document from, and then send the document to recipients.
+   file (PDF, Word, Excel, PowerPoint, or image files) on eformsign and then adding the participants who can fill in the document and adding fields to the uploaded document in the **Design form** step. Then, configure settings including General, Set permissions, Workflow, Field, and Notification settings in the **Configure step**. Then, you can save and deploy the template for use. Finally, you can go to **New from template**, select a template you want to create a document from, and then send the document to recipients.
 
    .. figure:: resources/use_flow.png
       :alt: Usage Flow of eformsign Using Web Form Designer
@@ -238,7 +238,7 @@ uploading it on eformsign.
 
    You can create a template by creating or opening a
    document file in Microsoft Office (Word, Excel, and PowerPoint), and
-   then using the ribbon menu (named OZ in Office) to add the components
+   then using the ribbon menu (named OZ in Office) to add the fields
    you want such as text, signature, and date onto the document. Then,
    you can upload the template you created onto eformsign by clicking
    the Upload button in the ribbon menu.
