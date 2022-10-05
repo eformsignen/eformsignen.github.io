@@ -316,7 +316,7 @@ Displays the description in Tooltip Text when you hover the mouse over a field. 
       repeatedly in a given document such as a contract or enter
       detailed information of a signer.
 
-.. _company stamp2:
+.. _companystamp2:
 
 Company stamp
 --------------------
@@ -961,11 +961,11 @@ Data fields are used for entering document-related information in the document i
 
 -  **Document ID:** A unique ID assigned to all documents in the system and is shown in 32 digit alphanumeric format. E.g. 0077af27a98846c8872f5333920679b7
 
--  **Document number:** Document number set in **Template settings > General**. For information about setting a document number, refer to `Generating and viewing a document number <chapter6.html#docnumber_wd>`__.
+-  **Document number:** The document number set in **Template settings > General**.
 
    .. note::
 
-      The document ID is a unique document ID assigned in the system, so it does not require separate settings.
+      The document ID is a unique ID assigned in the system, so it does not require separate settings.
 
 **Field Properties**
 

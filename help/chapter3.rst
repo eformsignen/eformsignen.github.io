@@ -223,9 +223,10 @@ The detail settings in **Recipient options** is displayed differently depending 
          1. Add files by clicking the **Add file** button. 
          2. Go to the **Workflow** page (the **Add recipients page** in **New from my file**) and select a recipient step.
          3. On the right, check the **Hide files or sheets** option.
-         4. Select either Required or Hide for each file/
+         4. Select either Required or Hide for each file.
 
             **- Required:** Makes this file visible to the recipient of the workflow step.
+            
             **- Hide:** Hides this file from the recipient of the workflow step. 
 
          .. figure:: resources/en-hide-files.png
@@ -251,8 +252,8 @@ frequently used forms and saving them as templates by adding workflows
 and other details.
 
 Templates can be created by using Web Form Designer or Form Builder. For
-more information, refer to `Creating templates from Web Form Designer <#template_wd>`__\  and
-`Creating templates from Form Builder <#template_fb>`__.
+more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__\  and
+`Tempate Form builder <chapter7.html#template_fb>`__.
 
 .. note::
 

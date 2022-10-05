@@ -58,7 +58,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#adding-fields">Adding fields</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#deleting-fields">Deleting fields</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#how-to-use-each-field-type">How to Use Each Field Type</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">Signature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#signature">Signature</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#company-stamp">Company stamp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#text-and-multiline">Text and Multiline</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#handwriting">Handwriting</a></li>
@@ -214,7 +214,7 @@ displayed as below, then it was installed properly.</p>
 <li><p><a class="reference external" href="#label">Label</a><strong>:</strong> Sets the form ID.</p></li>
 <li><p><a class="reference external" href="#combo">Combo</a><strong>:</strong> Displays a drop-down menu that allows you to select an item.</p></li>
 <li><p><a class="reference external" href="#date">Datetime</a><strong>:</strong> Enters a specific date.</p></li>
-<li><p><a class="reference external" href="#numericstepper">Numeric stepper</a><strong>:</strong> Enters a number.</p></li>
+<li><p><a class="reference external" href="#numeric">Numeric stepper</a><strong>:</strong> Enters a number.</p></li>
 <li><p><a class="reference external" href="#toggle">Toggle</a><strong>:</strong> Switches to another value if two or more values are entered.</p></li>
 <li><p><a class="reference external" href="#signature">Signature</a><strong>:</strong> Enters a signature.</p></li>
 <li><p><a class="reference external" href="#companystamp">Company stamp</a><strong>:</strong> Inserts a company stamp.</p></li>
@@ -305,8 +305,8 @@ inaccessible when setting fields in the workflow and to download data in CSV for
 <p>The Tooltip Text feature is not provided for the Info group including User, Date, Document, and Label field types.</p>
 </div>
 <p>The description of each field type provided in eformsign is as follows.</p>
-<section id="id1">
-<h4>Signature<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h4>
+<section id="signature">
+<span id="id1"></span><h4>Signature<a class="headerlink" href="#signature" title="Permalink to this heading"></a></h4>
 <p>This field is used for signing a signature on a document.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_signature.png"><img alt="image14" src="../_images/form-builder-components_signature.png" style="width: 730px;" /></a></p>
 <p>Clicking the signature area displays the <strong>Signature</strong> pop-up which allows you to sign a signature by drawing, entering text, or using a
@@ -363,7 +363,7 @@ stamp image to stamp the signature on a document. To use a stamp image when subm
 </div>
 </section>
 <section id="company-stamp">
-<span id="id2"></span><h4>Company stamp<a class="headerlink" href="#company-stamp" title="Permalink to this heading"></a></h4>
+<span id="companystamp"></span><h4>Company stamp<a class="headerlink" href="#company-stamp" title="Permalink to this heading"></a></h4>
 <p>The company stamp field is used for inserting a company stamp that is added to eformsign onto a document. Company stamps can be added in the <strong>Manage company &gt; Manage company stamp</strong> menu and they can only be used by members who have been granted permission to use them. Also, the history of company stamp usage is recorded in the <strong>Manage company stamp</strong> menu.</p>
 <figure class="align-default">
 <img alt="Company stamp" src="../_images/en-form-builder-components_companystamp.png" />
@@ -396,7 +396,7 @@ PDFs, and can only be seen when downloaded in the CSV format.</p>
 field.</p>
 </section>
 <section id="handwriting">
-<span id="id3"></span><h4>Handwriting<a class="headerlink" href="#handwriting" title="Permalink to this heading"></a></h4>
+<span id="id2"></span><h4>Handwriting<a class="headerlink" href="#handwriting" title="Permalink to this heading"></a></h4>
 <p>The handwriting field is used to trace a pre-written text.</p>
 <p>You can type in the text to be displayed on a document in which recipients can trace.</p>
 <figure class="align-default">
@@ -419,7 +419,7 @@ field.</p>
 <p>Allows you to type in the text that will be displayed on the handwriting field.</p>
 </section>
 <section id="number">
-<span id="id4"></span><h4>Number<a class="headerlink" href="#number" title="Permalink to this heading"></a></h4>
+<span id="id3"></span><h4>Number<a class="headerlink" href="#number" title="Permalink to this heading"></a></h4>
 <p>Enters a number.</p>
 <figure class="align-default">
 <img alt="Number field" src="../_images/en_number-component-fb.png" />
@@ -447,7 +447,7 @@ field.</p>
 <p>Sets the prefix/suffix required for a number to be entered automatically. For example, if you need to enter “10,000 dollars in total,” set the prefix to “total” and the suffix to “dollars”.</p>
 </section>
 <section id="label">
-<span id="id5"></span><h4>Label<a class="headerlink" href="#label" title="Permalink to this heading"></a></h4>
+<span id="id4"></span><h4>Label<a class="headerlink" href="#label" title="Permalink to this heading"></a></h4>
 <p>This field is used for setting the form ID of a document.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
@@ -457,7 +457,7 @@ field.</p>
 <p>Sets the label field ID.</p>
 </section>
 <section id="check">
-<span id="id6"></span><h4>Check<a class="headerlink" href="#check" title="Permalink to this heading"></a></h4>
+<span id="id5"></span><h4>Check<a class="headerlink" href="#check" title="Permalink to this heading"></a></h4>
 <p>The <strong>Check</strong> field is used to check whether an item is checked or not. This field is similar to the <strong>Radio</strong> field, but it is used for checking the status of an item (whether it
 is checked or not) while the <strong>Radio</strong> field is used for checking which item among multiple items is checked.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_check.png"><img alt="image4" src="../_images/form-builder-components_check.png" style="width: 730px;" /></a></p>
@@ -505,7 +505,7 @@ item is separated with a comma (,).</p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="combo">
-<span id="id7"></span><h4>Combo<a class="headerlink" href="#combo" title="Permalink to this heading"></a></h4>
+<span id="id6"></span><h4>Combo<a class="headerlink" href="#combo" title="Permalink to this heading"></a></h4>
 <p>The Combo field is used when you need to select one of multiple items.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_Combo.png"><img alt="image7" src="../_images/form-builder-components_Combo.png" style="width: 730px;" /></a></p>
 <p>If you click a combo field, a list of items is displayed as follows:</p>
@@ -533,7 +533,7 @@ message at the top of the list of items in the combo box and select it before se
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="toggle">
-<span id="id8"></span><h4>Toggle<a class="headerlink" href="#toggle" title="Permalink to this heading"></a></h4>
+<span id="id7"></span><h4>Toggle<a class="headerlink" href="#toggle" title="Permalink to this heading"></a></h4>
 <p>This field is used for indicating a specific status such as ON/OFF. If you use this field, then the input value
 is switched according to a defined order whenever the field is clicked.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_toggle.png"><img alt="image12" src="../_images/form-builder-components_toggle.png" style="width: 730px;" /></a></p>
@@ -638,7 +638,7 @@ the field as described below.</p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="camera">
-<span id="id9"></span><h4>Camera<a class="headerlink" href="#camera" title="Permalink to this heading"></a></h4>
+<span id="id8"></span><h4>Camera<a class="headerlink" href="#camera" title="Permalink to this heading"></a></h4>
 <p>This field is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) on a
 document. In PCs without a camera, clicking the field displays a window for selecting a desired image file.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_camera.png"><img alt="image16" src="../_images/form-builder-components_camera.png" style="width: 730px;" /></a></p>
@@ -698,7 +698,7 @@ field, the file will be attached at the very end of the document as a new page.<
 <p>Displays the description Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="user">
-<span id="id10"></span><h4>User<a class="headerlink" href="#user" title="Permalink to this heading"></a></h4>
+<span id="id9"></span><h4>User<a class="headerlink" href="#user" title="Permalink to this heading"></a></h4>
 <p>This field is used for entering the information of the user who created or modified a document. The user’s basic
 information such as name or contact information, or custom field information is automatically entered into the user field based on the settings.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_user.png"><img alt="image20" src="../_images/form-builder-components_user.png" style="width: 730px;" /></a></p>
@@ -739,7 +739,7 @@ Mobile, and Telephone</p></li>
 </div>
 </section>
 <section id="usedate">
-<span id="id11"></span><h4>Date<a class="headerlink" href="#usedate" title="Permalink to this heading"></a></h4>
+<span id="id10"></span><h4>Date<a class="headerlink" href="#usedate" title="Permalink to this heading"></a></h4>
 <p>This field is used to automatically enter the date in which a document is created or modified. The date in which the document is created, the date in which the document is accessed, or the date in which the content of a field is last modified is automatically entered, according to the date type selected.</p>
 <p><a class="reference internal" href="../_images/form-builder-components_date.png"><img alt="image22" src="../_images/form-builder-components_date.png" style="width: 730px;" /></a></p>
 <p><strong>Field Properties</strong></p>
@@ -774,7 +774,7 @@ Mobile, and Telephone</p></li>
 </div>
 </section>
 <section id="document">
-<span id="id12"></span><h4>Document<a class="headerlink" href="#document" title="Permalink to this heading"></a></h4>
+<span id="id11"></span><h4>Document<a class="headerlink" href="#document" title="Permalink to this heading"></a></h4>
 <p>This field is used for entering document-related information in the document itself. You can select either one of the document ID or document number.</p>
 <p><a class="reference internal" href="../_images/document-component-in-list.png"><img alt="image24" src="../_images/document-component-in-list.png" style="width: 730px;" /></a></p>
 <p>The document ID is a unique document ID assigned in the system, so it does not require separate settings. For settings related to document number, upload a template and then go to <strong>Template settings &gt; General</strong>.</p>
@@ -794,7 +794,7 @@ Mobile, and Telephone</p></li>
 </section>
 </section>
 <section id="upload-form-file">
-<span id="id13"></span><h2>Upload Form File<a class="headerlink" href="#upload-form-file" title="Permalink to this heading"></a></h2>
+<span id="id12"></span><h2>Upload Form File<a class="headerlink" href="#upload-form-file" title="Permalink to this heading"></a></h2>
 <p>Form files created using OZ in Office are uploaded in the following order:</p>
 <ol class="arabic simple">
 <li><p>Click the <strong>Execute</strong> icon (<img alt="image25" src="../_images/excute_button.png" />) in the File group. The login page will be displayed as a pop-up window.</p></li>
@@ -846,7 +846,7 @@ permanently remove documents created from the template.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For a detailed explanation of templates, please refer to <a class="reference external" href="chpater7.html#template_fb">Creating templates using Form Builder</a>.</p>
+<p>For a detailed explanation of templates, please refer to <a class="reference external" href="chapter7.html#template_fb">Creating templates using Form Builder</a>.</p>
 </div>
 </section>
 </section>

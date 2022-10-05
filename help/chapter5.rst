@@ -154,13 +154,13 @@ Basic Fields
 
 -  `Datetime <#date>`__\ **:** Enters a specific date.
 
--  `Numeric stepper <#numericstepper>`__\ **:** Enters a number.
+-  `Numeric stepper <#numeric>`__\ **:** Enters a number.
 
 -  `Toggle <#toggle>`__\ **:** Switches to another value if two or more values are entered.
 
 -  `Signature <#signature>`__\ **:** Enters a signature.
 
--  `Company stamp <#company stamp>`__\ **:** Inserts a company stamp.
+-  `Company stamp <#companystamp>`__\ **:** Inserts a company stamp.
 
 -  `Camera <#camera>`__\ **:** Takes a photo using a camera or selects a photo from an album in devices with a built-in camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).
 
@@ -276,6 +276,7 @@ The description of each field type provided in eformsign is as follows.
 
 
 .. _signature:
+
 Signature
 --------------------
 
@@ -362,7 +363,7 @@ Sets the signature pen color.
    ※ You can select the format of date to be displayed on the Date field by selecting the desired date format in the **Component Properties** tab.
 
 
-.. _company stamp:
+.. _companystamp:
 
 Company stamp
 --------------------
@@ -1140,7 +1141,7 @@ After uploading a template, you can configure additional settings for documents 
 
 .. note::
 
-   For a detailed explanation of templates, please refer to `Creating templates using Form Builder <chpater7.html#template_fb>`__.
+   For a detailed explanation of templates, please refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
 
 .. |image1| image:: resources/menu_icon.png
 .. |image2| image:: resources/delete_icon1.png

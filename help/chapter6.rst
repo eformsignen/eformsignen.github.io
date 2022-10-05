@@ -593,7 +593,7 @@ You can click a step to set the details such as **Properties** for each workflow
 
    - **Require document password**\: Set a verification password that recipients must enter before opening the document. The password can be the recipient name, a value entered directly by the sender, or the value of a field in the document.
 
-               .. figure:: resources/en-doc-require-doc-password-setting.png
+            .. figure:: resources/en-doc-require-doc-password-setting.png
                :alt: Require document password
                :width: 400px    
       
