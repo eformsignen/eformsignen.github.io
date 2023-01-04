@@ -65,12 +65,19 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
    .. note::
 
-      There are two recipient types: reviewer and participant. The
+      **'Participant and Reviewer' recipients**
+
+      There are 2 main recipient types: reviewer and participant. The
       participants added in the Design form step are shown in the Add
       recipients step. You can enter the contact information of each
       recipient such as email. In the Add recipient screen, you can
       delete/add participants and reviewers and set detailed options for
       each recipient.
+
+      .. figure:: resources/2_recipients.png
+            :alt: Need to view
+            :width: 300px
+
 
    .. tip::
 
@@ -80,7 +87,23 @@ You can upload a file you want and then add fields onto the document. Then, you 
       each document, but reviewers cannot fill in fields and can
       only approve documents after reviewing them.
 
-      |image6|
+
+   .. note::
+
+      **'Need to view' recipient**
+
+      In addition to reviewer and participant, there is also another recipient type called 'Need to view'.
+
+      You can select 'Need to view' when selecting recipients in the workflow. A recipient who is assigned as 'Need to view' can' send a document to the next step in the workflow by only viewing the document.
+
+      .. figure:: resources/need_to_view.png
+            :alt: Need to view
+            :width: 300px
+
+      ❗Note that a recipient assigned the Need to view type cannot fill out a document, and cannot approve/reject a document.
+
+
+
 
 6. Click the **Options** step to change the document title and select whether to timestamp the document when completed.
 
@@ -233,6 +256,8 @@ The detail settings in **Recipient options** is displayed differently depending 
             :alt: Hiding files from recipients
             :width: 700px
 
+      ❗You can upload multiple PDF, Word, Excel, PowerPoint, and image files.
+
 
 
 **Options**
@@ -303,11 +328,37 @@ more information, refer to `Template Web Form Designer <chapter6.html#template_w
       To add CC recipients to the document, click the **Add CC** button and then select the members or groups you want to add in the pop-up displayed.
 
       CC'ed recipients can monitor the progress of the document, and are notified when the document is sent/completed.
-      ❗Note that only groups and members can be CC'ed and non-members cannot be CC'ed.
 
       .. figure:: resources/en-add-cc.png
          :alt: Add CC
          :width: 300px
+
+     ❗Note that only groups and members can be CC'ed and non-members cannot be CC'ed.
+
+   .. tip::
+
+      **Creating new documents from existing documents**
+
+      You can quickly create new documents from existing ones by importing field data and/or recipient information (e.g. name, email, etc.) of existing documents.
+
+      **Instructions**
+      
+      1. Go to a document inbox and click on the Create new document button under the completed document of your choice.
+
+      .. figure:: resources/create_new_document.png
+         :alt: Create new document
+         :width: 300px
+
+      2. In the Create new document options pop-up displayed, choose whether to import document data, important recipient data, or both.
+
+      .. figure:: resources/creating_new_documents2.png
+         :alt: Importing document data and recipient info
+         :width: 300px
+
+      3. Depending on what you choose, you will see that the field data and/or recipient data are automatically filled out, allowing you to quickly create and send documents.
+
+
+      ❗ Note that you can create new documents from existing ones using New from template. This feature is planned to be applied to New from my file in the near future.
 
 
 Send in bulk

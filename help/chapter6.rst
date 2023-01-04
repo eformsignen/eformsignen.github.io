@@ -119,14 +119,45 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
    :width: 400px
 
 
--  **Reviewer**
-
-   Approves or rejects documents.
 
 -  **Participant**
 
    Signs and fills out documents.
 
+-  **Reviewer**
+
+   Only approves or rejects documents.
+
+-  **Need to view**
+
+   Only views documents.
+
+
+.. tip::
+
+  **Merge workflow steps**
+
+   You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+
+  **Instructions:**
+
+   1. Go to Manage templates > Template settings> Configure > Workflow.
+
+   2. Click the workflow step you want to merge with (when merging two steps, you must click the bottom one).
+
+   3. Click the Merge signing order icon displayed at the top left corner of the selected workflow step. The bottom and top workflow steps will be merged together.
+
+   4. You can also split workflow steps by clicking the same icon.
+
+
+   .. figure:: resources/merge_workflow_steps.png
+      :alt: Merge workflow steps (before)
+
+   .. figure:: resources/merge_workflow_steps2.png
+      :alt: Merge workflow steps (after)
+
+
+      ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
 
 
 .. _template_setting:
@@ -514,9 +545,9 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
 .. tip::
 
-   **❗The difference between a participant and reviewer**
+   **❗The difference between participant, reviewer, and need to view recipients**
 
-   Participants can fill in the fields in the document while reviewers can only approve or reject the document.
+   Participants can sign and fill in the fields in the document while reviewers can only approve or reject the document and Need to view recipients can only view the document.
 
 
 4. When selected, a step is added to the workflow.
@@ -604,7 +635,7 @@ You can click a step to set the details such as **Properties** for each workflow
 
 .. note::
 
-   **Selecting participants/reviewers in a workflow step**
+   **Selecting a participant/reviewer/need to view in a workflow step**
 
    For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.
 
@@ -620,18 +651,6 @@ You can click a step to set the details such as **Properties** for each workflow
 
    -  **Recipient of a previous step**: Allows you to select the person of a previous step including the Start step.
 
-
-**Participant/Reviewer - Select recipient**
-
-.. figure:: resources/en-workflow-participants-selected.png
-   :alt: Workflow > Selecting a recipient
-   :width: 700px
-
-You can select the recipient of the step in advance.
-
--  **Group or member**: Select the groups or members who will sign and review the document. You can select multiple groups or members, but only one person among the selected can sign and review the document.
-
--  **Handler of a previous step**: Select the person of a previous step including the Start step to sign and review the document.
 
 
 
@@ -652,6 +671,36 @@ You can select the recipient of the step in advance.
 -  **Document expiration**\: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).
 
 .. _hide:
+
+
+**How to collaborate with other recipients in a workflow step**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. tip::
+
+   
+   If you add multiple recipients in a workflow step, all recipients of the step can sign or review the document.
+
+   .. figure:: resources/collaborate_workflow.png
+      :alt: All recipients can sign or review the document
+      :width: 500px
+
+   However, multiple recipients cannot work on a document simultaneously. Only one recipient can work on a document at a time, and all others are locked out from the document and can only preview it.
+
+   .. figure:: resources/document_locked.png
+      :alt: Document locked
+      :width: 500px
+
+
+   Once the recipient working on the document saves it as a draft by clicking the see more button (⋮) and then clicking **Save as draft**, then other recipients can work on the document.
+
+   .. figure:: resources/save_as_draft_collaborate.png
+      :alt: Save as draft
+      :width: 200px
+   
+
+   ❗Note that when there are multiple recipients in a workflow step, if any one of them submits a document, it is sent to the next step in the workflow. Therefore, when you finish working on a document, you should save it as as a draft and only send the document when everyone has finished working on it.
+
 
 **How to hide files in a document**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -855,7 +904,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image10| image:: resources/workflow-addstep-plus-button.png
 .. |image11| image:: resources/en-template-settings-workflow-added-step.png
    :width: 700px
-.. |image12| image:: resources/en-template-settings-workflow-order-new.png
+.. |image12| image:: resources/template_settings_workflow.png
    :width: 500px
 .. |image13| image:: resources/en-template-settings-workflow-item.png
    :width: 700px

@@ -97,13 +97,45 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
    :alt: Workflow steps
    :width: 400px
 
--  **Reviewer**
-
-   Approves or rejects documents.
-
 -  **Participant**
 
-   Signs and fills in documents.
+   Signs and fills out documents.
+
+-  **Reviewer**
+
+   Only approves or rejects documents.
+
+-  **Need to view**
+
+   Only views documents.
+
+
+.. tip::
+
+  **Merge workflow steps**
+
+   You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+
+  **Instructions:**
+
+   1. Go to Manage templates > Template settings> Configure > Workflow.
+
+   2. Click the workflow step you want to merge with (when merging two steps, you must click the bottom one).
+
+   3. Click the Merge signing order icon displayed at the top left corner of the selected workflow step. The bottom and top workflow steps will be merged together.
+
+   4. You can also split workflow steps by clicking the same icon.
+
+
+   .. figure:: resources/merge_workflow_steps.png
+      :alt: Merge workflow steps (before)
+
+   .. figure:: resources/merge_workflow_steps2.png
+      :alt: Merge workflow steps (after)
+
+
+      ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
+
 
 
 .. _template_setting:

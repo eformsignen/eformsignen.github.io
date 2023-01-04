@@ -186,13 +186,41 @@
 <a class="reference internal image-reference" href="../_images/en-workflow-steps.png"><img alt="Workflow Steps" src="../_images/en-workflow-steps.png" style="width: 400px;" /></a>
 </figure>
 <ul>
-<li><p><strong>Reviewer</strong></p>
-<p>Approves or rejects documents.</p>
-</li>
 <li><p><strong>Participant</strong></p>
 <p>Signs and fills out documents.</p>
 </li>
+<li><p><strong>Reviewer</strong></p>
+<p>Only approves or rejects documents.</p>
+</li>
+<li><p><strong>Need to view</strong></p>
+<p>Only views documents.</p>
+</li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Merge workflow steps</strong></p>
+<blockquote>
+<div><p>You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.</p>
+</div></blockquote>
+<p><strong>Instructions:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Go to Manage templates &gt; Template settings&gt; Configure &gt; Workflow.</p></li>
+<li><p>Click the workflow step you want to merge with (when merging two steps, you must click the bottom one).</p></li>
+<li><p>Click the Merge signing order icon displayed at the top left corner of the selected workflow step. The bottom and top workflow steps will be merged together.</p></li>
+<li><p>You can also split workflow steps by clicking the same icon.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="Merge workflow steps (before)" src="../_images/merge_workflow_steps.png" />
+</figure>
+<figure class="align-default" id="id1">
+<img alt="Merge workflow steps (after)" src="../_images/merge_workflow_steps2.png" />
+<figcaption>
+<p><span class="caption-text">❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</div>
 </section>
 <section id="template-settings">
 <span id="template-setting"></span><h2>Template Settings<a class="headerlink" href="#template-settings" title="Permalink to this heading"></a></h2>
@@ -341,7 +369,7 @@ Company profile</p></td>
 <td><p>The contact information entered in Manage
 company &gt; Company profile</p></td>
 </tr>
-<tr class="row-even"><td><p><a href="#id1"><span class="problematic" id="id2">Company_</span></a>
+<tr class="row-even"><td><p><a href="#id2"><span class="problematic" id="id3">Company_</span></a>
 registration_no</p></td>
 <td><p>The business registration number entered in
 Manage company &gt; Company profile</p></td>
@@ -499,8 +527,8 @@ search documents by the document number.</p>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>❗The difference between a participant and reviewer</strong></p>
-<p>Participants can fill in the fields in the document while reviewers can only approve or reject the document.</p>
+<p><strong>❗The difference between participant, reviewer, and need to view recipients</strong></p>
+<p>Participants can sign and fill in the fields in the document while reviewers can only approve or reject the document and Need to view recipients can only view the document.</p>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>When selected, a step is added to the workflow.</p></li>
@@ -510,7 +538,7 @@ search documents by the document number.</p>
 <p>Participants can be added only in the <strong>Design form</strong> step. Up to 30 participants can be added. In the workflow, you can add as many steps as you want.
 You can adjust the order of steps by clicking and dragging a workflow step.
 To delete a step, click <strong>-</strong> on the right side of the step button.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-workflow-order-new.png"><img alt="image12" src="../_images/en-template-settings-workflow-order-new.png" style="width: 500px;" /></a></p>
+<p><a class="reference internal" href="../_images/template_settings_workflow.png"><img alt="image12" src="../_images/template_settings_workflow.png" style="width: 500px;" /></a></p>
 </div>
 </section>
 <section id="configuring-the-details-of-each-workflow-step">
@@ -567,7 +595,7 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Selecting participants/reviewers in a workflow step</strong></p>
+<p><strong>Selecting a participant/reviewer/need to view in a workflow step</strong></p>
 <p>For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-workflow-participant-selected.png"><img alt="Workflow &gt; Recipients" src="../_images/en-workflow-participant-selected.png" style="width: 700px;" /></a>
@@ -579,15 +607,6 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <li><p><strong>Recipient of a previous step</strong>: Allows you to select the person of a previous step including the Start step.</p></li>
 </ul>
 </div>
-<p><strong>Participant/Reviewer - Select recipient</strong></p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-workflow-participants-selected.png"><img alt="Workflow &gt; Selecting a recipient" src="../_images/en-workflow-participants-selected.png" style="width: 700px;" /></a>
-</figure>
-<p>You can select the recipient of the step in advance.</p>
-<ul class="simple">
-<li><p><strong>Group or member</strong>: Select the groups or members who will sign and review the document. You can select multiple groups or members, but only one person among the selected can sign and review the document.</p></li>
-<li><p><strong>Handler of a previous step</strong>: Select the person of a previous step including the Start step to sign and review the document.</p></li>
-</ul>
 <p><strong>Reviewer: Recipient who can only approve or reject a document</strong></p>
 <hr class="docutils" />
 <figure class="align-default">
@@ -602,8 +621,27 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 </li>
 <li><p><strong>Document expiration</strong>: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).</p></li>
 </ul>
+<section id="how-to-collaborate-with-other-recipients-in-a-workflow-step">
+<span id="hide"></span><h5><strong>How to collaborate with other recipients in a workflow step</strong><a class="headerlink" href="#how-to-collaborate-with-other-recipients-in-a-workflow-step" title="Permalink to this heading"></a></h5>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you add multiple recipients in a workflow step, all recipients of the step can sign or review the document.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/collaborate_workflow.png"><img alt="All recipients can sign or review the document" src="../_images/collaborate_workflow.png" style="width: 500px;" /></a>
+</figure>
+<p>However, multiple recipients cannot work on a document simultaneously. Only one recipient can work on a document at a time, and all others are locked out from the document and can only preview it.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/document_locked.png"><img alt="Document locked" src="../_images/document_locked.png" style="width: 500px;" /></a>
+</figure>
+<p>Once the recipient working on the document saves it as a draft by clicking the see more button (⋮) and then clicking <strong>Save as draft</strong>, then other recipients can work on the document.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/save_as_draft_collaborate.png"><img alt="Save as draft" src="../_images/save_as_draft_collaborate.png" style="width: 200px;" /></a>
+</figure>
+<p>❗Note that when there are multiple recipients in a workflow step, if any one of them submits a document, it is sent to the next step in the workflow. Therefore, when you finish working on a document, you should save it as as a draft and only send the document when everyone has finished working on it.</p>
+</div>
+</section>
 <section id="how-to-hide-files-in-a-document">
-<span id="hide"></span><h5><strong>How to hide files in a document</strong><a class="headerlink" href="#how-to-hide-files-in-a-document" title="Permalink to this heading"></a></h5>
+<h5><strong>How to hide files in a document</strong><a class="headerlink" href="#how-to-hide-files-in-a-document" title="Permalink to this heading"></a></h5>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Using the ‘Hide files or sheets option’</strong></p>

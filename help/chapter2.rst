@@ -173,7 +173,7 @@ The dashboard is the main page displayed when logging into eformsign. In the das
    Shows the number of documents that are in progress. When clicked, the **In progress** page is displayed.
 
 **⑥ Completed**
-   Shows the number of all the completed documents you created or participatedin. When clicked, the **Completed** page is displayed.
+   Shows the number of all the completed documents you created or participated in. When clicked, the **Completed** page is displayed.
 
 **⑦ Drafts**
    Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, the **Drafts** page is displayed.
