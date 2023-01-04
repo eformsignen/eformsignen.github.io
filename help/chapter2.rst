@@ -237,6 +237,7 @@ The company information displayed in the **My profile > company** menu can be ed
    :width: 700px
 
 
+
 **Editing Company Profile**
 
 1. Click the sidebar menu icon, and go to the **Manage company > Company profile** menu.
