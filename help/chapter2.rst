@@ -26,9 +26,9 @@ The description of each menu is as follows:
 
 -  **New document:** Shows the menus in which you can create a document by uploading a file from your computer or selecting a template uploaded to eformsign.
 
-   -  **New from my file:** Allows you to create a document even when there is no template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then upload it to eformsign. Then, add fields onto the document and send it to recipients for signature.
+      -  **New from my file:** Allows you to create a document even when there is no template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then upload it to eformsign. Then, add fields onto the document and send it to recipients for signature.
 
-   -  **New from template:** Views the list of templates in which you can create documents from. You can select a template and then create a document.
+       -  **New from template:** Views the list of templates in which you can create documents from. You can select a template and then create a document.
 
 -  **Drafts**: Shows the list of documents saved as draft when creating a document by accessing the **New from my file** menu.
 
