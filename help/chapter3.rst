@@ -31,6 +31,7 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
    |image1|
 
+
 2. Upload the document file you want. The supported file types are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff with a maximum size of 9MB.
 
    |image2|
@@ -144,7 +145,7 @@ The detail settings in **Recipient options** is displayed differently depending 
    In order for a recipient to be recognized as a member, the **name** and **email/ID** must match.
 
 
--  **When the recipient is a member**
+-  **When the recipient is a member:**
 
    **Set document password:** The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.
 
@@ -164,7 +165,7 @@ The detail settings in **Recipient options** is displayed differently depending 
    |image12|
 
 
--  **When the recipient is a non-member**
+-  **When the recipient is a non-member:**
 
    If the information you enter is not the same as the member information, then the recipient is recognized as a non-member. This requires the below information to be filled in.
 

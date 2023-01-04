@@ -28,19 +28,19 @@ The description of each menu is as follows:
 
       -  **New from my file:** Allows you to create a document even when there is no template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then upload it to eformsign. Then, add fields onto the document and send it to recipients for signature.
 
-       -  **New from template:** Views the list of templates in which you can create documents from. You can select a template and then create a document.
+      -  **New from template:** Views the list of templates in which you can create documents from. You can select a template and then create a document.
 
 -  **Drafts**: Shows the list of documents saved as draft when creating a document by accessing the **New from my file** menu.
 
 -  **Documents:** Shows the menus in which documents are stored.
 
-   -  **Action required:** Shows the list of documents that you need to sign, approve, or send.
+      -  **Action required:** Shows the list of documents that you need to sign, approve, or send.
 
-   -  **In progress:** Shows the list of documents you have created or processed but are incomplete.
+      -  **In progress:** Shows the list of documents you have created or processed but are incomplete.
 
-   -  **Completed:** Shows the list of all the completed documents you have created or participated in.
+      -  **Completed:** Shows the list of all the completed documents you have created or participated in.
 
-   -  **Bulk send:** Shows the list of all the document you have sent in bulk.
+      -  **Bulk send:** Shows the list of all the document you have sent in bulk.
 
 -  **Shared**: Allows you to share your documents with others and view documents others members shared with you.
 
@@ -52,39 +52,39 @@ The description of each menu is as follows:
 
 -  **Manage company:** Only company managers can access this menu. You can view and edit company information.
 
-   -  **Company profile:** You can view and edit company information
+      -  **Company profile:** You can view and edit company information
 
-   -  **Manage groups:** You can create groups or edit group information.
+      -  **Manage groups:** You can create groups or edit group information.
 
-   -  **Manage members:** You can invite members or edit member information.
+      -  **Manage members:** You can invite members or edit member information.
 
-   -  **Manage permissions:** Allows the company administrator to assign members as company managers, template managers, and document managers, as well as manage their permissions.
+      -  **Manage permissions:** Allows the company administrator to assign members as company managers, template managers, and document managers, as well as manage their permissions.
 
-   -  **Manage company stamp** You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.
+      -  **Manage company stamp** You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.
 
-   -  **Signature settings:** Select the signature types that can be used when signing directly on documents.
+      -  **Signature settings:** Select the signature types that can be used when signing directly on documents.
 
-   -  **Notification template management:** You can view and edit email and SMS notification templates.
+      -  **Notification template management:** You can view and edit email and SMS notification templates.
 
-   -  **Manage custom fields:** You can add and configure custom fields such as company, group, and member information.
+      -  **Manage custom fields:** You can add and configure custom fields such as company, group, and member information.
 
 -  **Integration:** Only the company administrator can access this menu.You can connect eformsign with external services.
 
-   -  **Cloud storage:** You can connect your Dropbox, Google Drive, or Box accounts to store completed documents in external cloud storages.
+      -  **Cloud storage:** You can connect your Dropbox, Google Drive, or Box accounts to store completed documents in external cloud storages.
 
-   -  **Analytics & reporting:** You can connect sheets in Google Sheets or Microsoft Office 365's Excel with eformsign to store the data entered in eformsign documents to the sheets.
+      -  **Analytics & reporting:** You can connect sheets in Google Sheets or Microsoft Office 365's Excel with eformsign to store the data entered in eformsign documents to the sheets.
 
-   -  **API / Webhook:** You can create, edit, or delete API and webhook keys to use the eformsign API.
+      -  **API / Webhook:** You can create, edit, or delete API and webhook keys to use the eformsign API.
 
 -  **Billing:** You can view your plan and payment history, change your plan, or change the payment method.
 
-   -  **Plan:** You can change the plan you are using.
+      -  **Plan:** You can change the plan you are using.
 
-   -  **Real-time billing:** You can view your usage and billing status in real-time.
+      -  **Real-time billing:** You can view your usage and billing status in real-time.
 
-   -  **Payment history:** You can view your payment history for the past 1 year.
+      -  **Payment history:** You can view your payment history for the past 1 year.
 
-   -  **Payment method settings:** You can add the credit card information for payment.
+      -  **Payment method settings:** You can add the credit card information for payment.
 
 -  **Usage status:** You can monitor weekly, monthly, and annual service usage status.
 
@@ -283,7 +283,6 @@ You can replace the eformsign logo and symbol with your company logo and symbol 
 3. Click the image in the **Brand image > Logo** box.
 
 4. Select and upload a logo image file from your PC.                                      
-
    -  Image size: A 512 pixel x 128 pixel image size recommended
 
    -  File size: Up to a maximum 300 KB
@@ -340,17 +339,17 @@ Company Administrator
 
 The user who created a company is the company administrator by default, and the company administrator is the super administrator having all the permissions to use the eformsign service.
 
-The company administrator
+The company administrator:
 
--  Has access to all the menus.
+   -  Has access to all the menus.
 
--  Can create, edit, delete, and manage templates.
+   -  Can create, edit, delete, and manage templates.
 
--  Can create, view, and manage all documents.
+   -  Can create, view, and manage all documents.
 
--  Can grant permissions to each member.
+   -  Can grant permissions to each member.
 
--  Can delegate its role to another member when the company administrator needs to be changed.
+   -  Can delegate its role to another member when the company administrator needs to be changed.
 
 When the company administrator deletes her/his eformsign account, the company is also be deleted. If the administrator wants to delete only the account, then she/he can delegate the administrator permission to another member, and then delete the account.
 
@@ -740,19 +739,15 @@ If you register your signature, initial, and stamp in the **My signature** menu,
 
 
    -  **Draw**
-
       You can draw your signature on the screen.
 
    -  **Text**
-
       Type your name, and then select a signature style.
 
    -  **QR code**
-
       If you scan the QR code with your smartphone camera, you can access the sign pad page. Draw your signature on the sign pad.
 
    -  **Push notification**
-
       Select a mobile device you want to connect to and click the **Send** button. You can draw your signature using the eformsign app installed on the connected device.
 
 3. Click the **OK** button to save the signature.

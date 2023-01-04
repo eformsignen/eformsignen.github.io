@@ -58,27 +58,21 @@ MS Office files such as Word, Excel, and PowerPoint can be uploaded as a templat
 
 
 **Template settings**
-
 You can set the details for the template.
 
 -  **General**
-
    Set the template name, abbreviation, document name, document number, etc.
 
 -  **Set permissions**
-
    Grant members or groups the permission to use and edit the template and to create documents from it and manage them.
 
 -  **Workflow**
-
    Sets the workflow for the document from its creation to completion.
 
 -  **Field**
-
    Sets the default values and auto-filled values for fields.
 
 -  **Notification settings**
-
    Sets the recipients, and the content of the notification messages for notifying changes in the status of documents created from the template.
 
 .. _workflow:
@@ -98,15 +92,12 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
    :width: 400px
 
 -  **Participant**
-
    Signs and fills out documents.
 
 -  **Reviewer**
-
    Only approves or rejects documents.
 
 -  **Need to view**
-
    Only views documents.
 
 
@@ -367,7 +358,7 @@ You can set a document number for documents created in eformsign. You can set it
 
 3. Tick the **Generate a document number** checkbox in the **General** page.
 
-   -  **Selecting a document numbering rule**
+-  **Selecting a document numbering rule**
 
    .. figure:: resources/en-generate-document-number-select.png
       :alt: Selecting a Document Numbering Rule
@@ -394,7 +385,7 @@ You can set a document number for documents created in eformsign. You can set it
 
       E.g. Application 2020_1, Application 2020_2...
 
-   -  **Choosing when to numbered a document**
+- **Choosing when to number a document:**
 
    ▪ **Start**
       A number is generated when a document is created.
@@ -485,15 +476,12 @@ You can set the permissions for the template usage, template editing and documen
 
 
 **Template usage**
-
 This permission is needed to create documents from the template, and you can select **Allow all** or **Group or member** to allow all the members or some members in the company to create documents from the template.
 
 **Template editing**
-
 This permission is needed to edit the template, and you can select **Members** to allow editing the template. 
 
 **Document management**
-
 You can select groups or members to open documents created from the template, void completed documents, or remove documents permanently. You can grant permission for all or some of the three options described below.
 
 -  **Open all documents** (default): Default permission granted to a document manager and gives the permission to open all documents to authorized groups or members.
@@ -735,7 +723,6 @@ for documents created from the template.
 
 
 **Document status notifications**
-
 You can select who will receive status notifications for documents created from the template. You can also preview the following notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the notification messages for completed documents.
 
 .. figure:: resources/template-setting-notification-channel.png
@@ -858,7 +845,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image23| image:: resources/template-hamburgericon.png
    :width: 10px
 .. |image24| image:: resources/en-manage-template-menu-icon.png
-   :width: 5px
+   :width: 500px
 .. |image25| image:: resources/en-manage-template-menu-icon-change-owner.png
 .. |image26| image:: resources/en-manage-template-menu-icon-document-manager.png
 .. |image27| image:: resources/en-manage-template-search.png

@@ -54,11 +54,13 @@ Each documents menu consists of the following five sections:
 
    You can go to another menu by clicking the menu icon (|image1|) or go to the dashboard by clicking the home icon (|image2|). You can also see the name of the documents menu you are currently viewing.
 
+
 2. **Template category combo box, document status filter combo box, and search box** 
 
    You can view documents by the selected template category and filter documents by document status.
 
    In addition to performing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and many more.
+
 
 3. **Document list and actions** 
 
@@ -70,6 +72,7 @@ Each documents menu consists of the following five sections:
 
    You can also perform actions on a document such as reviewing, previewing, correcting, voiding, resending, and deleting a document.
 
+
 4. **Document status and history**
 
    You can check the documents status and history.
@@ -77,6 +80,7 @@ Each documents menu consists of the following five sections:
    In the **Document status** tab, you can see what happens to a document in each step of the workflow.
 
    In the **History** tab, you can see the activities of the document creator and recipients from document creation to completion.
+
 
 5. **The column selection icon, document download icon, and delete icon** 
 
@@ -127,6 +131,7 @@ templates according to categories as shown below:
    :width: 500px
 
 
+
 **Searching by document status**
 ------------------------------------------
 
@@ -136,13 +141,16 @@ You can search for documents by document status in each document menu.
 
 |image7|
 
+
 -  **In progress**
 
 |image8|
 
+
 -  **Completed**
 
 |image9|
+
 
 -  **Manage documents**
 
@@ -186,6 +194,7 @@ The following table describes the filters that can be used for performing search
 .. figure:: resources/userdefined_search1.png
    :alt: Custom filter
    :width: 500px
+
 
 
 2. Select the field name, field type (keyword, range, or period), and search value.
@@ -375,6 +384,7 @@ The Drafts inbox stores the documents in the **New from my file** step that have
 .. note::
 
    For more information about creating a new document from my file, please refer to `New from my file <chapter3.html#id2>`__.
+
 
 
 
