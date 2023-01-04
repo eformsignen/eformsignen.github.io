@@ -4,26 +4,15 @@ Creating documents
 ==================
 
 
-Anyone can use eformsign to easily convert existing documents into
-electronic documents and then send them for signature. In eformsign,
-there are two ways to create and send documents. You can upload a file
-from your PC to eformsign, or use an existing template saved in
-eformsign.
+Anyone can use eformsign to easily convert existing documents into electronic documents and then send them for signature. In eformsign, there are two ways to create and send documents. You can upload a file from your PC to eformsign, or use an existing template saved in eformsign.
 
--  **New from my file**: You can upload your file to create an
-   electronic document and then send it to participants.
+-  **New from my file**: You can upload your file to create an electronic document and then send it to participants.
 
--  **New from template**: You can use a template uploaded to eformsign
-   to create documents. When you click this menu, templates created by
-   the company administrator or members with template management
-   permissions are displayed on the screen.
+-  **New from template**: You can use a template uploaded to eformsign to create documents. When you click this menu, templates created by the company administrator or members with template management permissions are displayed on the screen.
 
 .. note::
 
-   Templates can be created only by the company administrator or members
-   with the template management permission, and the templates on the screen
-   are shown only to members who are given template usage permission for
-   a given template.
+   Templates can be created only by the company administrator or members with the template management permission, and the templates on the screen are shown only to members who are given template usage permission for a given template.
 
    You can create a template using Web Form Designer or Form Builder (MS Office add-in).
    For more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__ and

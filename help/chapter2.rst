@@ -11,15 +11,11 @@ Dashboard
 Menu
 ~~~~~~~
 
-After logging into the eformsign dashboard, click the menu
-icon (|image1|) at the top left corner of the screen. The sidebar menu
-will be displayed as shown below.
+After logging into the eformsign dashboard, click the menu icon (|image1|) at the top left corner of the screen. The sidebar menu will be displayed as shown below.
 
 .. note::
 
-   Each menu may appear differently depending on the permissions you
-   have. The company administrator can access all the menus and have all
-   the permissions.
+   Each menu may appear differently depending on the permissions you have. The company administrator can access all the menus and have all the permissions.
 
 .. figure:: resources/en_dashboard-side-menu.png
    :alt: eformsign Menus
@@ -28,105 +24,69 @@ will be displayed as shown below.
 
 The description of each menu is as follows:
 
--  **New document:** Shows the menus in which you can
-   create a document by uploading a file from your computer or selecting
-   a template uploaded to eformsign.
+-  **New document:** Shows the menus in which you can create a document by uploading a file from your computer or selecting a template uploaded to eformsign.
 
-   -  **New from my file:** Allows you to create a document even when there is no
-      template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then
-      upload it to eformsign. Then, add fields onto the document and
-      send it to recipients for signature.
+   -  **New from my file:** Allows you to create a document even when there is no template. Simply upload a file (pdf, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff) from your computer and then upload it to eformsign. Then, add fields onto the document and send it to recipients for signature.
 
-   -  **New from template:** Views the list of templates in which you
-      can create documents from. You can select a template and then
-      create a document.
+   -  **New from template:** Views the list of templates in which you can create documents from. You can select a template and then create a document.
 
--  **Drafts**: Shows the list of documents saved as draft when creating
-   a document by accessing the **New from my file** menu.
+-  **Drafts**: Shows the list of documents saved as draft when creating a document by accessing the **New from my file** menu.
 
 -  **Documents:** Shows the menus in which documents are stored.
 
-   -  **Action required:** Shows the list of documents
-      that you need to sign, approve, or send.
+   -  **Action required:** Shows the list of documents that you need to sign, approve, or send.
 
-   -  **In progress:** Shows the list of documents you have
-      created or processed but are incomplete.
+   -  **In progress:** Shows the list of documents you have created or processed but are incomplete.
 
-   -  **Completed:** Shows the list of all the completed
-      documents you have created or participated in.
+   -  **Completed:** Shows the list of all the completed documents you have created or participated in.
 
    -  **Bulk send:** Shows the list of all the document you have sent in bulk.
 
 -  **Shared**: Allows you to share your documents with others and view documents others members shared with you.
 
--  **Manage documents:** Only document managers can
-   access this menu. Document managers can view all documents created
-   from a template that they have permission to access.The company
-   administrator can view and manage all documents.
+-  **Manage documents:** Only document managers can access this menu. Document managers can view all documents created from a template that they have permission to access.The company administrator can view and manage all documents.
 
--  **My signature:** You can create and register your
-   signature to be used when signing a document.
+-  **My signature:** You can create and register your signature to be used when signing a document.
 
--  **Manage templates:** Only template managers can
-   access this menu. You can view the template list and configure the
-   template settings.
+-  **Manage templates:** Only template managers can access this menu. You can view the template list and configure the template settings.
 
--  **Manage company:** Only company managers can access
-   this menu. You can view and edit company information.
+-  **Manage company:** Only company managers can access this menu. You can view and edit company information.
 
-   -  **Company profile:** You can view and edit company
-      information
+   -  **Company profile:** You can view and edit company information
 
-   -  **Manage groups:** You can create groups or edit
-      group information.
+   -  **Manage groups:** You can create groups or edit group information.
 
-   -  **Manage members:** You can invite members or edit
-      member information.
+   -  **Manage members:** You can invite members or edit member information.
 
    -  **Manage permissions:** Allows the company administrator to assign members as company managers, template managers, and document managers, as well as manage their permissions.
 
    -  **Manage company stamp** You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.
 
-   -  **Signature settings:** Select the signature types that can be
-      used when signing directly on documents.
+   -  **Signature settings:** Select the signature types that can be used when signing directly on documents.
 
-   -  **Notification template management:** You can view and edit email and SMS notification
-      templates.
+   -  **Notification template management:** You can view and edit email and SMS notification templates.
 
-   -  **Manage custom fields:** You can add and
-      configure custom fields such as company, group, and member
-      information.
+   -  **Manage custom fields:** You can add and configure custom fields such as company, group, and member information.
 
--  **Integration:** Only the company administrator can
-   access this menu.You can connect eformsign with external services.
+-  **Integration:** Only the company administrator can access this menu.You can connect eformsign with external services.
 
-   -  **Cloud storage:** You can connect your Dropbox,
-      Google Drive, or Box accounts to store completed documents in
-      external cloud storages.
+   -  **Cloud storage:** You can connect your Dropbox, Google Drive, or Box accounts to store completed documents in external cloud storages.
 
-   -  **Analytics & reporting:** You can connect
-      sheets in Google Sheets or Microsoft Office 365's Excel with
-      eformsign to store the data entered in eformsign documents to the
-      sheets.
+   -  **Analytics & reporting:** You can connect sheets in Google Sheets or Microsoft Office 365's Excel with eformsign to store the data entered in eformsign documents to the sheets.
 
-   -  **API / Webhook:** You can create, edit, or delete API
-      and webhook keys to use the eformsign API.
+   -  **API / Webhook:** You can create, edit, or delete API and webhook keys to use the eformsign API.
 
--  **Billing:** You can view your plan and payment history, change your
-   plan, or change the payment method.
+-  **Billing:** You can view your plan and payment history, change your plan, or change the payment method.
 
    -  **Plan:** You can change the plan you are using.
 
-   -  **Real-time billing:** You can view your usage and billing status
-      in real-time.
+   -  **Real-time billing:** You can view your usage and billing status in real-time.
 
    -  **Payment history:** You can view your payment history for the past 1 year.
 
-   -  **Payment method settings:** You can add the credit card
-      information for payment.
+   -  **Payment method settings:** You can add the credit card information for payment.
 
--  **Usage status:** You can monitor weekly, monthly, and annual service
-   usage status.
+-  **Usage status:** You can monitor weekly, monthly, and annual service usage status.
 
 -  **Download form builder for MS Office:** You can download the eformsign form builder Microsoft Office add-in, which allows you to create electronic forms using Microsoft Office programs.
 
@@ -182,44 +142,33 @@ The dashboard is the main page displayed when logging into eformsign. In the das
    Shows the list of the three most recent documents that require your action and the number of documents requiring your action. You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button in the dashboard next to **Action required** to go to the **Action required** page.
 
 **⑨ Saved draft**
-   Shows the number of documents saved in **Drafts** and the three most
-   recent ones. You can click on a document name in the list to go to
-   the document and can click the more **(+)** button in the dashboard next to **Saved draft** to go to the
-   **Drafts** page.
+   Shows the number of documents saved in **Drafts** and the three most recent ones. You can click on a document name in the list to go to the document and can click the more **(+)** button in the dashboard next to **Saved draft** to go to the **Drafts** page.
 
 **⑩ In progress**
-   Shows the number of documents in progress. You can click on the name of a
-   document in the list to open the document. Also, you can click the
-   more **(+)** button in the dashboard next to **In progress** to go to the **In progress** page.
+   Shows the number of documents in progress. You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button in the dashboard next to **In progress** to go to the **In progress** page.
 
 **⑪ Completed**
-   Shows the list of the three most recently completed documents. You
-   can click on a document name to open the document. Also, you can
-   click the more **(+)** button in the dashboard next to **Completed** to go to the **Completed** page.
+   Shows the list of the three most recently completed documents. You can click on a document name to open the document. Also, you can click the more **(+)** button in the dashboard next to **Completed** to go to the **Completed** page.
 
 ---------------------------------------
 View and Change Basic Information
 ---------------------------------------
 
-To view your personal information you entered when signing up
-for the eformsign service and the company information, click the see
-more icon (|image6|) at the top right corner of the sidebar menu.
+To view your personal information you entered when signing up for the eformsign service and the company information, click the see more icon (|image6|) at the top right corner of the sidebar menu.
 
 .. figure:: resources/en_dashboard-side-menu-icon.png
    :alt: Location of the Menu Icon for Accessing Personal and Company Info
    :width: 1500px
 
 
-If you click the (|image7|) icon in the sidebar, the following menu is
-displayed.
+If you click the (|image7|) icon in the sidebar, the following menu is displayed.
 
 .. figure:: resources/en_dashboard-side-menu-icon-drop-down.png
    :alt: View and Edit My Profile
    :width: 1500px
 
 
--  **Change company:** If you are a member of multiple companies, click the **Change company** menu to view the list of your
-   companies and select a company to switch to.
+-  **Change company:** If you are a member of multiple companies, click the **Change company** menu to view the list of your companies and select a company to switch to.
 
 -  **My profile:** You can view and edit your personal information you entered when signing up for the eformsign service. You can also view the information of the company you are a member of.
 
@@ -255,13 +204,10 @@ My Profile
 
 
 **Basic information**
-   You can view basic information about your company including the
-   company name, country, language, and contact number.
+   You can view basic information about your company including the company name, country, language, and contact number.
 
 **Detailed information**
-   You can view detailed information about your company including the
-   company address, company registration number, homepage URL, and
-   company administrator’s email.
+   You can view detailed information about your company including the company address, company registration number, homepage URL, and company administrator’s email.
 
    .. note::
 
@@ -272,8 +218,7 @@ My Profile
 
    .. important::
 
-      Even if a member withdraws from a company, the member can still
-      use the eformsign account and join another company or create a new
+      Even if a member withdraws from a company, the member can still use the eformsign account and join another company or create a new
       company.
 
       However, if the company administrator withdraws from the company, the company will also be deleted. If the administrator wants to withdraw from the company without deleting the company, then the administrator needs to delegate permission to another member, and then withdraw from the company. You can delegate the company administrator permission in **Manage company > Company profile > Basic information**.
@@ -407,10 +352,7 @@ The company administrator
 
 -  Can delegate its role to another member when the company administrator needs to be changed.
 
-When the company administrator deletes her/his eformsign account, the
-company is also be deleted. If the administrator wants to delete only
-the account, then she/he can delegate the administrator permission to
-another member, and then delete the account.
+When the company administrator deletes her/his eformsign account, the company is also be deleted. If the administrator wants to delete only the account, then she/he can delegate the administrator permission to another member, and then delete the account.
 
 **Delegating the Company Administrator Permission**
 
@@ -592,8 +534,7 @@ Document managers can access the **Manage documents** menu, and can open, downlo
 
 Set the permissions and the scope of the permissions to be granted to the document manager.
 
-   - **Filter documents:**  A condition that filters the documents the document manager can manage by document creator and document type
-     For example, if you select a member named John Doe under document creator and All documents under Document type, then the document manager has the permission to manage all the documents created by John Doe.
+   - **Filter documents:**  A condition that filters the documents the document manager can manage by document creator and document type. For example, if you select a member named John Doe under document creator and All documents under Document type, then the document manager has the permission to manage all the documents created by John Doe.
 
       - **Document creator** 
          A condition that filters documents by document creators. You can select all members, groups, or individual members.
