@@ -25,7 +25,7 @@ eformsign.
    are shown only to members who are given template usage permission for
    a given template.
 
-   You can create a template using Web Form Designer or Form Builder.
+   You can create a template using Web Form Designer or Form Builder (MS Office add-in).
    For more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__ and
    `Tempate Form builder <chapter7.html#template_fb>`__.
 
@@ -276,7 +276,7 @@ You can create and send documents whenever necessary by uploading
 frequently used forms and saving them as templates by adding workflows
 and other details.
 
-Templates can be created by using Web Form Designer or Form Builder. For
+Templates can be created by using Web Form Designer or Form Builder (MS Office add-in). For
 more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__\  and
 `Tempate Form builder <chapter7.html#template_fb>`__.
 

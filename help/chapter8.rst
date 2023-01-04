@@ -200,11 +200,11 @@ Make sure to manually enter the Display name of the field in the document you wa
 
    2. You cannot enter special characters in the display name (", ', ;, <, >, \\).
 
-   3. Empty spaces before and after the display name are all removed. E.g. “ Time off ”  “Time off”
+   3. Empty spaces before and after the display name are all removed. E.g. “Time off ” -> “Time off”.
 
-   4. When adding or editing a search value, if you enter a duplicate value in the custom filter, then the previously entered field type
-   and field search value will be displayed. For example, when adding a custom filter again while 'years worked: 5~10' was entered in the
-   custom filter, if you enter 'years worked' in the field name, then the previous value such as Range for Type, 5 for Min value, and 10 for Max value are displayed.
+   4. When adding or editing a search value, if you enter a duplicate value in the custom filter, then the previously entered field typeand field search value will be displayed. For example, when adding a custom filter again while 'years worked: 5~10' was entered in the custom filter, if you enter 'years worked' in the field name, then the previous value such as Range for Type, 5 for Min value, and 10 for Max value are displayed.
+
+
 
 You can choose one of Keyword, Range, and Period for the field type.
 Keyword is the default.

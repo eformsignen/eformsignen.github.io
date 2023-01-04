@@ -84,13 +84,13 @@ using eformsign.
    documents from templates and send them to recipients to be reviewed
    and signed.
 
--  **Form Builder**
+-  **Form Builder (MS Office add-in)**
 
-   Form builder is a tool used to create electronic forms
+   Form builder (MS Office add-in) is a tool used to create electronic forms
    by converting Microsoft Office files such as applications, contracts,
    and agreements into electronic forms that contain fields such as
-   signature and text box. Form builder also uploads the converted
-   electronic forms onto eformsign. Form builder is an Microsoft Office
+   signature and text box. Form builder (MS Office add-in) also uploads the converted
+   electronic forms onto eformsign. Form builder (MS Office add-in) is an Microsoft Office
    add-in, and it is shown as a ribbon menu which is called **OZ in Office**.
 
 -  **Dashboard**
@@ -111,7 +111,7 @@ using eformsign.
    Templates This is an electronic form that serves as a starting point
    for a new document. With a template, you can create many documents
    from it. You can create templates by converting existing Microsoft
-   Office files using Form builder or by uploading files directly
+   Office files using Form builder (MS Office add-in)or by uploading files directly
    onto eformsign.
 
 -  **Document**
@@ -220,7 +220,7 @@ Create from template
 
 There are two ways to create a document from a template: uploading a
 file on eformsign and creating a template using Web Form Designer, and
-creating a template using Microsoft Office using Form Builder and
+creating a template using Microsoft Office using Form Builder (MS Office add-in) and
 uploading it on eformsign.
 
 1. **Using Web Form Designer**
@@ -234,7 +234,7 @@ uploading it on eformsign.
 
 
 
-2. **Using Form Builder**
+2. **Using Form Builder (MS Office add-in)**
 
    You can create a template by creating or opening a
    document file in Microsoft Office (Word, Excel, and PowerPoint), and
@@ -249,17 +249,17 @@ uploading it on eformsign.
    deployed template and send it to recipients.
 
 .. figure:: resources/use_flow2.png
-   :alt: Usage Flow of eformsign Using Form Builder
+   :alt: Usage Flow of eformsign Using Form Builder (MS Office add-in)
    :width: 700px
 
 
 Minimum System Requirements
 --------------------------------
 
-The minimum system requirements for Form builder and eformsign are as
+The minimum system requirements for Form builder (MS Office add-in) and eformsign are as
 follows:
 
--  **Form builder (OZ in Office)**
+-  **Form builder (MS Office add-in)**
 
    -  **OS:** Windows 7 and later
 

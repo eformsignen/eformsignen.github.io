@@ -16,9 +16,9 @@ and adding fields. You can upload files in the **New from template** or the **Ne
 .. note::
 
    In addition to Web Form Designer, eformsign also provides a
-   Microsoft Office Add-in feature named **OZ in Office (Form builder)**
+   Microsoft Office Add-in feature named **OZ in Office (Form Builder)**
    which allows you to create electronic documents directly in Microsoft
-   Office. To use Form builder, please install the Microsoft Office
+   Office. To use Form Builder, please install the Microsoft Office
    add-in, and refer to `Form Builder <chapter5.html#formbuilder>`__.
 
 --------------------
@@ -379,7 +379,7 @@ Enters the ID of the Text/Multiline field. For example, the ID of the field in w
 Selects who is allowed or required to fill out the field.
 
 
-**③Default value**
+**③ Default value**
 
 Sets the default text.
 

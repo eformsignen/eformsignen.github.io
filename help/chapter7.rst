@@ -1,8 +1,8 @@
 .. _template_fb:
 
-==========================================
-Creating templates using Form Builder
-==========================================
+======================================================================
+Creating templates using Form Builder (MS Office Add-in)
+======================================================================
 
 ----------------
 About Templates
@@ -25,16 +25,16 @@ paper forms such as applications, contracts, and agreements. You can create and 
 
 To create and send electronic documents via eformsign, you have to create a template first which can be transformed into an e-document.
 
-**How to create a template with Form Builder**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**How to create a template with Form Builder (MS Office Add-in)**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create a template with Form builder, you must first download eformsign Form builder.
+To create a template with Form builder (MS Office Add-in), you must first download eformsign Form builder.
 
 .. note::
 
-   For more information about Form builder, please refer to `Form builder <chapter5.html#formbuilder>`__.
+   For more information about Form builder (MS Office Add-in), please refer to `Form builder <chapter5.html#formbuilder>`__.
 
-MS Office files such as Word, Excel, and PowerPoint can be uploaded as a template using eformsign Form builder.
+MS Office files such as Word, Excel, and PowerPoint can be uploaded as a template using the eformsign Microsoft Office Add-in.
 
 1. Open a Word, Excel, or PowerPoint file.
 
@@ -483,6 +483,7 @@ You can set the permissions for the template usage, template editing and documen
    :width: 700px
 
 
+
 **Template usage**
 
 This permission is needed to create documents from the template, and you can select **Allow all** or **Group or member** to allow all the members or some members in the company to create documents from the template.
@@ -511,6 +512,7 @@ You can create or modify the workflow of the template by clicking the **Workflow
 .. figure:: resources/en-template-settings-workflow-fb.png
    :alt: Template Settings > Workflow
    :width: 700px
+
 
 
 **Adding steps to the workflow**
@@ -547,9 +549,11 @@ You can click a step to set the details such as **Properties** and **Manage item
    |image11|
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 **Start: Step for creating a document**
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
    |image12|
 
@@ -579,10 +583,11 @@ You can click a step to set the details such as **Properties** and **Manage item
       :width: 400px
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 **Recipient: Step for signing or filling out a document**
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 .. figure:: resources/en-workflow-participants-properties.png
    :alt: Workflow > Participant step properties
@@ -637,6 +642,8 @@ You can click a step to set the details such as **Properties** and **Manage item
 
 .. _hide:
 
+
+
 **How to hide files in a document**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -670,8 +677,10 @@ You can click a step to set the details such as **Properties** and **Manage item
       :width: 500px
 
 
+
 **Complete: Step in which a document is finally completed**
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
    |image19|
 
@@ -847,6 +856,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image22| image:: resources/en-template-settings-notification-status.png
    :width: 500px
 .. |image23| image:: resources/template-hamburgericon.png
+   :width: 10px
 .. |image24| image:: resources/en-manage-template-menu-icon.png
    :width: 5px
 .. |image25| image:: resources/en-manage-template-menu-icon-change-owner.png

@@ -147,7 +147,7 @@ The dashboard is the main page displayed when logging into eformsign. In the das
 **② New from my file**
    Displays the **New from my file** page where you can create new documents by upload your files from your computer.
 
-**⑧ Favorites**
+**③ Favorites**
    Displays the templates you added as your Favorites. If you click a template in the Favorites list, you can go to the page where you can create a new document using that template. You can add a template to your Favorites by clicking the Add icon (|image2|). You can delete a template from the Favorites list by clicking the Edit icon (|image3|).
 
 .. tip::
@@ -372,7 +372,7 @@ Permissions can be granted to each member. In eformsign, there are many differen
 
 -  **Template manager**
 
-   Template managers have the permission to access the **Manage template** menu. Template managers can create new templates by using Form Builder or Web Form Designer, and can also edit, deploy, and delete templates.
+   Template managers have the permission to access the **Manage template** menu. Template managers can create new templates by using Form Builder (MS Office add-in) or Web Form Designer, and can also edit, deploy, and delete templates.
 
 -  **Document manager**
 
@@ -479,7 +479,7 @@ The company manager permission can be granted in the **Manage members** or the *
       :alt: Company Manager Pop-up
       :width: 400px
 
-3. Click the **Confirm** button to grant the member the company manager permission.
+4. Click the **Confirm** button to grant the member the company manager permission.
 
 .. note::
 
@@ -538,7 +538,7 @@ The template manager permission can be granted in the **Manage members** menu or
       :alt: Add Template Manager
       :width: 400px
 
-4. Click the **Confirm** button to grant the member the template manager permission.
+5. Click the **Confirm** button to grant the member the template manager permission.
 
 
 .. note::
@@ -731,7 +731,7 @@ You can invite members to your company or manage invited members in the **Manage
    Download the list of members that belong to the company in CVS format.
 
 **⑫ Delete**
-   When you click the Trash icon, a checkbox will be activated next to each member in the member list. Tick the members you want to delete and click the Delete button.@@
+   When you click the Trash icon, a checkbox will be activated next to each member in the member list. Tick the members you want to delete and click the Delete button.
 
 
 
@@ -878,10 +878,10 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 
    To scan a stamp, you must have a stamp ready to scan and download and print out the **Scannable paper for stamps** from eformsign. 
 
+++++++++++++++++++++++++++++++++++
 
 - **Scanning a stamp on a PC**
 
-++++++++++++++++++++++++++++++++++
 
 
 1. Go to the **My signature**\  page -> click the **Register**\  button under **Stamp**\ -> click the **Scan stamp** tab on the pop-up displayed.
@@ -905,9 +905,11 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
 6. Check whether the stamp is properly recognized and touch the **Send**\  button to add the stamp on eformsign.
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++
+
 - **Scanning a stamp on a mobile device**
 
-++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 1. Go to the **My signature**\  age -> touch the **Register**\  button under **Stamp**\ -> touch the **Scan stamp** tab on the pop-up displayed.
 

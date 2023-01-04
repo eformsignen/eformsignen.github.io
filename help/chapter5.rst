@@ -1,11 +1,11 @@
 .. _formbuilder:
 
-===============================
-Introduction to Form Builder
-===============================
+===================================================
+Introduction to Form Builder (MS Office Add-in)
+===================================================
 
 
-Form Builder, also known as OZ in Office, is a form editor
+Form Builder (MS Office add-in), also known as OZ in Office, is a form editor
 that converts a document created using Microsoft Office into an
 electronic document containing fields. By using OZ in
 Office, you can easily convert existing Excel, Word, and PowerPoint
@@ -30,9 +30,9 @@ fields is as follows:
    :width: 750px
 
 
---------------------------------------------------
-Downloading and Installing Form Builder
---------------------------------------------------
+-------------------------------------------------------------
+Downloading and Installing Form Builder (MS Office Add-in)
+-------------------------------------------------------------
 
 1. Login to eformsign and then click the menu icon
 (|image1|) on the top left corner of the dashboard screen to open the
@@ -64,13 +64,11 @@ option and then click the **Next** button.
    :width: 500px
 
 
-
 4. When the installation proceeds, the following screen is displayed.
 
 .. figure:: resources/formbuilder_wizard_2.png
    :alt: Form Builder Installation Screen (2)
    :width: 500px
-
 
 
 5. Click the **Finish** button to close the installation screen.
@@ -81,7 +79,7 @@ option and then click the **Next** button.
 
 
 
-6. Check whether Form builder was installed properly by running MS
+6. Check whether Form builder (MS Office add-in) was installed properly by running MS
 Office (Word, Excel, PowerPoint). If **OZ in Word/Excel/PowerPoint** is
 displayed as below, then it was installed properly.
 
@@ -90,11 +88,11 @@ displayed as below, then it was installed properly.
    :width: 750px
 
 
--------------------------
-Form Builder Menu Layout
--------------------------
+-------------------------------------------------
+Form Builder (MS Office add-in) Menu Layout
+-------------------------------------------------
 
-If you run Microsoft Office Excel, Word, or PowerPoint after installing Form builder, you can see that the **OZ in Excel, OZ in Word, or OZ in PowerPoint** tab is added to the OZ in Office ribbon menu.
+If you run Microsoft Office Excel, Word, or PowerPoint after installing Form builder (MS Office add-in), you can see that the **OZ in Excel, OZ in Word, or OZ in PowerPoint** tab is added to the OZ in Office ribbon menu.
 
 .. figure:: resources/ozinoffice.png
    :alt: Microsoft Office OZ in Office Ribbon Menu
@@ -116,13 +114,13 @@ If you run Microsoft Office Excel, Word, or PowerPoint after installing Form bui
 
 7. **Window:** Allows to open the **Properties** tab of the selected field or display selected fields in the **Selection** tab.
 
-8. **Help:** Checks the version of Form builder and performs updates.
+8. **Help:** Checks the version of Form builder (MS Office add-in) and performs updates.
 
 -------------------------
 Overview of Fields
 -------------------------
 
-Fields are used to create fields in electronic documents that users can enter information. Many different fields including signature, check, date, and text are provided in Form builder, and each field can be configured in detail by using the **Field Properties** tab.
+Fields are used to create fields in electronic documents that users can enter information. Many different fields including signature, check, date, and text are provided in Form builder (MS Office add-in), and each field can be configured in detail by using the **Field Properties** tab.
 
 FieldTypes
 ~~~~~~~~~~~~~~~~~~~~~
@@ -502,7 +500,7 @@ Sets the number of decimal places that can be entered. The number of decimal pla
 
 Automatically marks the value entered with a comma separated by thousands.
 
-**⑤ Prefix, Suffix**
+**⑥ Prefix, Suffix**
 
 Sets the prefix/suffix required for a number to be entered automatically. For example, if you need to enter "10,000 dollars in total," set the prefix to "total" and the suffix to "dollars".
 
