@@ -430,7 +430,7 @@ The company manager permission can be granted in the **Manage members** or the *
 
 
 Template Manager
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Template managers can access the **Manage template** menu, and can create, edit, deploy, and delete templates.
 
