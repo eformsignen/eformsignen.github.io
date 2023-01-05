@@ -1,604 +1,219 @@
 
+
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Introduction to Web Form Designer &mdash; eformsign User Guide 2021.03.31 documentation</title>
+  
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
 
-    <title>Introduction to Web Form Designer &#8212; eformsign User Guide 2021.03.31 documentation</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+  
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Introduction to Form Builder (MS Office Add-in)" href="chapter5.html" />
-    <link rel="prev" title="Creating documents" href="chapter3.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
-    
+    <link rel="prev" title="Creating documents" href="chapter3.html" /> 
+</head>
 
-    <!-- Google Analytics -->
-    
-  </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+<body class="wy-body-for-nav">
 
+   
+  <div class="wy-grid-for-nav">
     
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="../_static/forcs_b.png" class="logo" alt="logo">
-      
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter1.html">
-   Introduction to eformsign
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter2.html">
-   Basic Info
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter3.html">
-   Creating documents
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Introduction to Web Form Designer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter5.html">
-   Introduction to Form Builder (MS Office Add-in)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter6.html">
-   Creating templates using Web Form Designer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter7.html">
-   Creating templates using Form Builder (MS Office Add-in)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter8.html">
-   Document Menus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter9.html">
-   Customization
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter10.html">
-   Connecting with External Services
-  </a>
- </li>
-</ul>
 
-    </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
+          
+            <a href="../index.html">
+          
+
+          
             
-            <div class="navbar_extra_footer">
-            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-            </div>
+            <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
             
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
         </div>
-    </div>
-    <div id="rtd-footer-container"></div>
-</div>
 
-
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/help/chapter4.rst.txt"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.rst</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
-</div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#file-uploading">
-   File Uploading
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#uploading-a-file-in-the-new-from-my-file-menu">
-     Uploading a file in the
-     <strong>
-      New from my file
-     </strong>
-     menu.
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#uploading-a-file-in-the-manage-templates-menu">
-     Uploading a file in the
-     <strong>
-      Manage templates
-     </strong>
-     menu.
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#web-form-designer-menu-layout">
-   Web Form Designer Menu Layout
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview-of-fields">
-   Overview of Fields
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#field-types">
-     Field Types
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#basic-fields">
-       <strong>
-        Basic fields
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#data-fields">
-       <strong>
-        Data fields
-       </strong>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-properties-for-each-field-type">
-     Setting Properties for Each Field Type
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#signature">
-       Signature
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#company-stamp">
-       Company stamp
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#text-and-multiline">
-       Text and Multiline
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#handwriting">
-       Handwriting
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#number">
-       Number
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#label">
-       Label
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#check">
-       Check
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#radio">
-       Radio
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#combo">
-       Combo
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#toggle">
-       Toggle
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#datetime">
-       Datetime
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#numeric-stepper">
-       Numeric stepper
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#camera">
-       Camera
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#voice">
-       Voice
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#attachment">
-       Attachment
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#document-id-and-document-number">
-       Document ID and Document number
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#configuring-template-settings">
-   Configuring Template Settings
-  </a>
- </li>
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to Web Form Designer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#file-uploading">File Uploading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#uploading-a-file-in-the-new-from-my-file-menu">Uploading a file in the <strong>New from my file</strong> menu.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uploading-a-file-in-the-manage-templates-menu">Uploading a file in the <strong>Manage templates</strong> menu.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#web-form-designer-menu-layout">Web Form Designer Menu Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview-of-fields">Overview of Fields</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#field-types">Field Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#basic-fields"><strong>Basic fields</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-fields"><strong>Data fields</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-properties-for-each-field-type">Setting Properties for Each Field Type</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#signature">Signature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#company-stamp">Company stamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#text-and-multiline">Text and Multiline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#handwriting">Handwriting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#number">Number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#label">Label</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#check">Check</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#radio">Radio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combo">Combo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#toggle">Toggle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#datetime">Datetime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#numeric-stepper">Numeric stepper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#camera">Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#voice">Voice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attachment">Attachment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-id-and-document-number">Document ID and Document number</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-template-settings">Configuring Template Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Introduction to Form Builder (MS Office Add-in)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Creating templates using Web Form Designer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
 </ul>
 
+            
+          
+        </div>
+        
+      </div>
     </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction to Web Form Designer</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#file-uploading">
-   File Uploading
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#uploading-a-file-in-the-new-from-my-file-menu">
-     Uploading a file in the
-     <strong>
-      New from my file
-     </strong>
-     menu.
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#uploading-a-file-in-the-manage-templates-menu">
-     Uploading a file in the
-     <strong>
-      Manage templates
-     </strong>
-     menu.
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#web-form-designer-menu-layout">
-   Web Form Designer Menu Layout
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview-of-fields">
-   Overview of Fields
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#field-types">
-     Field Types
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#basic-fields">
-       <strong>
-        Basic fields
-       </strong>
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#data-fields">
-       <strong>
-        Data fields
-       </strong>
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-properties-for-each-field-type">
-     Setting Properties for Each Field Type
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#signature">
-       Signature
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#company-stamp">
-       Company stamp
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#text-and-multiline">
-       Text and Multiline
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#handwriting">
-       Handwriting
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#number">
-       Number
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#label">
-       Label
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#check">
-       Check
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#radio">
-       Radio
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#combo">
-       Combo
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#toggle">
-       Toggle
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#datetime">
-       Datetime
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#numeric-stepper">
-       Numeric stepper
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#camera">
-       Camera
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#voice">
-       Voice
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#attachment">
-       Attachment
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#document-id-and-document-number">
-       Document ID and Document number
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#configuring-template-settings">
-   Configuring Template Settings
-  </a>
- </li>
-</ul>
 
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
-  <section id="introduction-to-web-form-designer">
-<span id="webform"></span><h1>Introduction to Web Form Designer<a class="headerlink" href="#introduction-to-web-form-designer" title="Permalink to this headline">#</a></h1>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">eformsign User Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introduction to Web Form Designer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/help/chapter4.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction-to-web-form-designer">
+<span id="webform"></span><h1>Introduction to Web Form Designer<a class="headerlink" href="#introduction-to-web-form-designer" title="Permalink to this headline">¶</a></h1>
 <p>Web Form Designer is a web form editor that allows you to create electronic documents by uploading document files to eformsign
 and adding fields. You can upload files in the <strong>New from template</strong> or the <strong>New from my file</strong> menus to create documents using Web Form Designer. After uploading a file, simply click and add the fields available in the left tree menu of Web form designer and set the properties of each field. This is all you need to do to create documents with an ease.</p>
 <div class="admonition note">
@@ -613,10 +228,10 @@ which allows you to create electronic documents directly in Microsoft
 Office. To use Form Builder, please install the Microsoft Office
 add-in, and refer to <a class="reference external" href="chapter5.html#formbuilder">Form Builder</a>.</p>
 </div>
-<section id="file-uploading">
-<h2>File Uploading<a class="headerlink" href="#file-uploading" title="Permalink to this headline">#</a></h2>
-<section id="uploading-a-file-in-the-new-from-my-file-menu">
-<h3>Uploading a file in the <strong>New from my file</strong> menu.<a class="headerlink" href="#uploading-a-file-in-the-new-from-my-file-menu" title="Permalink to this headline">#</a></h3>
+<div class="section" id="file-uploading">
+<h2>File Uploading<a class="headerlink" href="#file-uploading" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uploading-a-file-in-the-new-from-my-file-menu">
+<h3>Uploading a file in the <strong>New from my file</strong> menu.<a class="headerlink" href="#uploading-a-file-in-the-new-from-my-file-menu" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p>Click the <strong>New from my file</strong> menu.</p>
 <p><img alt="image1" src="../_images/en-new_from_myfile-menu.png" /></p>
@@ -633,48 +248,48 @@ displayed. You can add fields to the document here.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can add a file by clicking the <strong>Add file</strong> button and replace a file by clicking the see more icon (⋮) on the file tab and then clicking the <strong>Replace file</strong> button.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <img alt="Add/replace file" src="../_images/en-add-file-replace-file.png" />
-</figure>
 </div>
-</section>
-<section id="uploading-a-file-in-the-manage-templates-menu">
-<h3>Uploading a file in the <strong>Manage templates</strong> menu.<a class="headerlink" href="#uploading-a-file-in-the-manage-templates-menu" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="uploading-a-file-in-the-manage-templates-menu">
+<h3>Uploading a file in the <strong>Manage templates</strong> menu.<a class="headerlink" href="#uploading-a-file-in-the-manage-templates-menu" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Creating a template in the <strong>Manage templates</strong> menu requires either a company administrator or template manager permission.</p>
 </div>
 <ol class="arabic">
 <li><p>Go to the <strong>Manage templates</strong> menu.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/web-form_1.png"><img alt="Web Form Designer Screen" src="../_images/web-form_1.png" style="width: 700px;" /></a>
-</figure>
+</div>
 </li>
 <li><p>To upload a file, simply drag the file onto the <strong>Manage templates</strong> page or click the <strong>Select a file</strong> button and then upload the file.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/web-form_2.png"><img alt="Web Form Designer Screen" src="../_images/web-form_2.png" style="width: 700px;" /></a>
-</figure>
+</div>
 </li>
 <li><p>When a file is uploaded, the <strong>Create template</strong> page will be displayed as follows:</p></li>
 </ol>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en_web-form_3.png"><img alt="Web Form Designer Screen" src="../_images/en_web-form_3.png" style="width: 700px;" /></a>
-</figure>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can add a file by clicking the <strong>Add file</strong> button and replace a file by clicking the see more icon (⋮) on the file tab and then clicking the <strong>Replace file</strong> button.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <img alt="Add/replace file" src="../_images/en-template_addreplacefile.png" />
-</figure>
 </div>
-</section>
-</section>
-<section id="web-form-designer-menu-layout">
-<span id="webformdesigner-menus"></span><h2>Web Form Designer Menu Layout<a class="headerlink" href="#web-form-designer-menu-layout" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="web-form-designer-menu-layout">
+<span id="webformdesigner-menus"></span><h2>Web Form Designer Menu Layout<a class="headerlink" href="#web-form-designer-menu-layout" title="Permalink to this headline">¶</a></h2>
 <p>Web Form Designer consists of a screen that displays the file, the left and right panels, and the top bar.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-web-form_new1.png"><img alt="Web Form Designer Menu Layout - Create from my file" src="../_images/en-web-form_new1.png" style="width: 700px;" /></a>
-</figure>
+</div>
 <ol class="arabic">
 <li><p><strong>Top bar:</strong> In <strong>New from template</strong>, there are two steps: <strong>Design form</strong> and <strong>Configure</strong>. You can also go back to the Manage templates page and preview the template with fields added. In <strong>New from my file</strong>, there are three steps: <strong>Design form</strong>, <strong>Add recipients</strong>, and <strong>Options</strong>. After designing a form, you can create a document or save the form as a draft.</p>
 <div class="admonition note">
@@ -696,21 +311,21 @@ adding fields such as Signature, Text, and Check by clicking and
 locating them to the document display screen.</p></li>
 <li><p><strong>Bottom bar:</strong> Displays the file name, and contains the <strong>Add file</strong> button for adding files, and the see more button (⋮) that shows the <strong>Change name</strong>, <strong>Replace file</strong>, <strong>Delete file</strong>, and <strong>Move forward</strong> options.</p></li>
 </ol>
-</section>
-<section id="overview-of-fields">
-<span id="fields"></span><h2>Overview of Fields<a class="headerlink" href="#overview-of-fields" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="overview-of-fields">
+<span id="fields"></span><h2>Overview of Fields<a class="headerlink" href="#overview-of-fields" title="Permalink to this headline">¶</a></h2>
 <p>Fields are used to create fields in electronic documents
 that users can enter information. Many different fields including
 Signature, Check, Date, and Text are provided, and each fields can be
 configured in detail by using the <strong>Properties</strong> tab.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en_component_web_1.png"><img alt="Adding a field in Web Form Designer" src="../_images/en_component_web_1.png" style="width: 700px;" /></a>
-</figure>
-<section id="field-types">
-<h3>Field Types<a class="headerlink" href="#field-types" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="field-types">
+<h3>Field Types<a class="headerlink" href="#field-types" title="Permalink to this headline">¶</a></h3>
 <p>The fields provided in eformsign are as follows:</p>
-<section id="basic-fields">
-<h4><strong>Basic fields</strong><a class="headerlink" href="#basic-fields" title="Permalink to this headline">#</a></h4>
+<div class="section" id="basic-fields">
+<h4><strong>Basic fields</strong><a class="headerlink" href="#basic-fields" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference external" href="#signature2">Signature</a><strong>:</strong> Inserts a signature.</p></li>
 <li><p><a class="reference external" href="#companystamp2">Company stamp</a><strong>:</strong> Inserts a company stamp.</p></li>
@@ -730,17 +345,17 @@ camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without
 <li><p><a class="reference external" href="#record2">Voice</a><strong>:</strong> Records audio in devices with a voice recording function.</p></li>
 <li><p><a class="reference external" href="#attach2">Attachment</a><strong>:</strong> Attaches a file.</p></li>
 </ul>
-</section>
-<section id="data-fields">
-<h4><strong>Data fields</strong><a class="headerlink" href="#data-fields" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="data-fields">
+<h4><strong>Data fields</strong><a class="headerlink" href="#data-fields" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference external" href="#document2">Document ID</a><strong>:</strong> Enters the document ID in a document.</p></li>
 <li><p><a class="reference external" href="#document2">Document number</a><strong>:</strong> Enters the document number in a document.</p></li>
 </ul>
-</section>
-</section>
-<section id="setting-properties-for-each-field-type">
-<h3>Setting Properties for Each Field Type<a class="headerlink" href="#setting-properties-for-each-field-type" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="setting-properties-for-each-field-type">
+<h3>Setting Properties for Each Field Type<a class="headerlink" href="#setting-properties-for-each-field-type" title="Permalink to this headline">¶</a></h3>
 <p>All fields have common and unique properties. When you click a
 field added, the detailed properties of that field will be displayed on the right and you can set the properties. Common properties include ID and
 Tooltip Text, and the meaning of each property is as follows:</p>
@@ -761,15 +376,15 @@ speech bubble when hovering the mouse over the field. In mobile, the text is dis
 <p>For the Document field which is for providing information, Tooltip Text is not provided.</p>
 </div>
 <p>The description of each field is as follows.</p>
-<section id="signature">
-<span id="signature2"></span><h4>Signature<a class="headerlink" href="#signature" title="Permalink to this headline">#</a></h4>
+<div class="section" id="signature">
+<span id="signature2"></span><h4>Signature<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h4>
 <p>This field is used for signing a signature on a document.</p>
 <p>Clicking the signature area displays the <strong>Signature</strong> pop-up which allows you to sign a signature by drawing, entering text, or using a previously registered signature.</p>
 <p><a class="reference internal" href="../_images/signature.png"><img alt="image4" src="../_images/signature.png" style="width: 450px;" /></a></p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/Signature-component-properties_web.png"><img alt="Setting Signature Field Properties" src="../_images/Signature-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the signature field. For example, the ID of the field can be ‘signerSignature’ for contract signers.</p>
 <p><strong>② Available signature Type</strong></p>
@@ -782,9 +397,9 @@ speech bubble when hovering the mouse over the field. In mobile, the text is dis
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In some cases, you may need to use a stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the <strong>Stamp</strong> button after clicking on a signature area, and then select a stamp image and click <strong>OK</strong>.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/select-signature-type.png"><img alt="Select signature type" src="../_images/select-signature-type.png" style="width: 300px;" /></a>
-</figure>
+</div>
 </div>
 <p><strong>③ Signing method</strong></p>
 <p>If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.</p>
@@ -800,20 +415,20 @@ speech bubble when hovering the mouse over the field. In mobile, the text is dis
 <p class="admonition-title">Tip</p>
 <p><strong>Automatically entering signer and signature date</strong></p>
 <p>Click the signature field and then click the icons shown to add the signature date and signer.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/Signature-component-properties_web_icon.png"><img alt="Signature date and signer" src="../_images/Signature-component-properties_web_icon.png" style="width: 200px;" /></a>
-</figure>
+</div>
 <p><strong>① Signature date:</strong> Automatically enters the date signed. By clicking the Add date signed icon, you can set the date format in the
 date signed field properties on the right.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en_Signature-component-properties_web_date.png"><img alt="Date signed" src="../_images/en_Signature-component-properties_web_date.png" style="width: 700px;" /></a>
-</figure>
+</div>
 <p><strong>② Add signer:</strong> Automatically enters the signer information. By
 clicking the Add signer icon, you can specify the signer information
 by ID, name, department, title/position, mobile, or phone.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/Signature-component-properties_web_signer.png"><img alt="Add signer" src="../_images/Signature-component-properties_web_signer.png" style="width: 100px;" /></a>
-</figure>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can add multiple signed dates and signers for a given
@@ -822,15 +437,15 @@ repeatedly in a given document such as a contract or enter
 detailed information of a signer.</p>
 </div>
 </div>
-</section>
-<section id="company-stamp">
-<span id="companystamp2"></span><h4>Company stamp<a class="headerlink" href="#company-stamp" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="company-stamp">
+<span id="companystamp2"></span><h4>Company stamp<a class="headerlink" href="#company-stamp" title="Permalink to this headline">¶</a></h4>
 <p>The company stamp field is used for applying a company stamp onto a document.
 If you add a company stamp field, documents that require a company stamp will show a company stamp pop-up as shown below and you’ll be able to select and apply company stamps that you have permission to access.</p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/companystamp-component-properties_web.png"><img alt="Setting Text and Multiline Field Properties" src="../_images/companystamp-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the Company stamp field. For example, the ID of the field for applying a company stamp can be named ‘companystamp’.</p>
 <p><strong>② Who can fill this out</strong></p>
@@ -839,15 +454,15 @@ If you add a company stamp field, documents that require a company stamp will sh
 <p>Sets the help message displayed.</p>
 <p><strong>④ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
-</section>
-<section id="text-and-multiline">
-<span id="text2"></span><h4>Text and Multiline<a class="headerlink" href="#text-and-multiline" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="text-and-multiline">
+<span id="text2"></span><h4>Text and Multiline<a class="headerlink" href="#text-and-multiline" title="Permalink to this headline">¶</a></h4>
 <p>Both Text and Multiline fields are used to create text fields. The Textfield is suitable for short
 text with 1 to 2 words, and the Multiline field is suitable for long text with more than 1 line.</p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/wfd-text-component-properties.png"><img alt="Setting Text and Multiline Field Properties" src="../_images/wfd-text-component-properties.png" style="width: 400px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Text/Multiline field. For example, the ID of the field in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.</p>
 <div class="admonition note">
@@ -871,18 +486,18 @@ smartphones and tablets.</p>
 <p>Displays a help message when no value is entered.</p>
 <p><strong>⑦ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
-</section>
-<section id="handwriting">
-<span id="handwriting2"></span><h4>Handwriting<a class="headerlink" href="#handwriting" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="handwriting">
+<span id="handwriting2"></span><h4>Handwriting<a class="headerlink" href="#handwriting" title="Permalink to this headline">¶</a></h4>
 <p>The handwriting field is used to trace a pre-written tex.</p>
 <p>You can type in the text to be displayed on a document in which recipients can trace.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <img alt="Example of the handwriting field" src="../_images/handwriting-component-example.png" />
-</figure>
+</div>
 <p><strong>Field propertites</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/handwriting-component-properties_web.png"><img alt="Configuring handwriting field properties" src="../_images/handwriting-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the handwriting field.</p>
 <p><strong>② Pen Thickness</strong></p>
@@ -892,14 +507,14 @@ smartphones and tablets.</p>
 <p><strong>④ Show Word Tracing</strong></p>
 <p>Allows you to type in the text that will be displayed on the handwriting field.</p>
 <hr class="docutils" />
-</section>
-<section id="number">
-<span id="number2"></span><h4>Number<a class="headerlink" href="#number" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="number">
+<span id="number2"></span><h4>Number<a class="headerlink" href="#number" title="Permalink to this headline">¶</a></h4>
 <p>Enters a number.</p>
 <p><strong>Field properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <img alt="Number field properties" src="../_images/en-number_property_web.png" />
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Sets the ID of the number field.</p>
 <p><strong>② Default value</strong></p>
@@ -919,25 +534,23 @@ smartphones and tablets.</p>
 <p><strong>⑦ Prefix, Suffix</strong></p>
 <p>Sets the prefix/suffix required for a number to be entered automatically. For example, if you need to enter “10,000 dollars in total,” set the prefix to “total” and the suffix to “dollars”.</p>
 <hr class="docutils" />
-</section>
-<section id="label">
-<span id="label2"></span><h4>Label<a class="headerlink" href="#label" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="label">
+<span id="label2"></span><h4>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h4>
 <p>This field is used for setting the form ID of a document.</p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default" id="id1">
+<div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/label_property_web.png"><img alt="Setting Label Field Properties" src="../_images/label_property_web.png" style="width: 250px;" /></a>
-<figcaption>
-<p><span class="caption-text">Setting Label Field Properties</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">Setting Label Field Properties</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
 <p><strong>① ID</strong></p>
 <p>The form ID of the document is automatically generated and displayed. It can also be changed.</p>
 <p>The form ID defined here can be applied when editing the document.</p>
 <p><strong>②Text</strong></p>
 <p>Text entered in the text box is displayed on the document.</p>
-</section>
-<section id="check">
-<span id="check2"></span><h4>Check<a class="headerlink" href="#check" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="check">
+<span id="check2"></span><h4>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h4>
 <p>The Check field is used to check whether an item is checked or not. This field is similar to the Radio field, but
 the Check field is used for checking the status of an item (whether it is checked or not) while the Radio field is used for checking which item among multiple items is checked.</p>
 <div class="admonition tip">
@@ -952,9 +565,9 @@ the Check field is used for checking the status of an item (whether it is checke
 </ul>
 <p>In Word and PowerPoint, the Check field is shown in a rectangular shape. Make sure to enter data inside the rectangular shape.</p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/check-component-properties-1_web.png"><img alt="Setting Check Field Properties" src="../_images/check-component-properties-1_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.</p>
 <p><strong>② Who can fill this out</strong>
@@ -976,21 +589,21 @@ Once selected, the check style will be shown in the color and style you selected
 <p>You can select the style of each field that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.</p>
 <p><strong>⑥ Tooltip text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
-</section>
-<section id="radio">
-<span id="select2"></span><h4>Radio<a class="headerlink" href="#radio" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="radio">
+<span id="select2"></span><h4>Radio<a class="headerlink" href="#radio" title="Permalink to this headline">¶</a></h4>
 <p>The Radio field is used for checking which item is selected among multiple items. When data is downloaded in the CSV
 format, the selected item will be displayed.</p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/Radio-component-properties_web.png"><img alt="Setting Radio Field Properties" src="../_images/Radio-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>In <strong>Field Properties</strong>, make sure that all the selected radio buttons are assigned the same ID.</p>
 <p>For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. In the example shown below, the IDs of all the items are set to the same “question 1”.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID_web.png"><img alt="Example of Setting a Radio Field" src="../_images/radio-items-should-have-same-ID_web.png" style="width: 700px;" /></a>
-</figure>
+</div>
 <p><strong>② Who can fill this out</strong></p>
 <p>Selects who is allowed or required to fill out the field.</p>
 <p><strong>③ Items</strong></p>
@@ -1007,16 +620,16 @@ The black circle set as the default style, and you can change it to another styl
 <p>You can select the style of each field that is not selected.</p>
 <p><strong>⑥ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
-</section>
-<section id="combo">
-<span id="combo2"></span><h4>Combo<a class="headerlink" href="#combo" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="combo">
+<span id="combo2"></span><h4>Combo<a class="headerlink" href="#combo" title="Permalink to this headline">¶</a></h4>
 <p>The Combo field is used when you need to select one of multiple items.</p>
 <p>If you click a Combo field, a list of items is displayed as follows:</p>
 <p><a class="reference internal" href="../_images/combo-1.png"><img alt="image8" src="../_images/combo-1.png" style="width: 450px;" /></a></p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/combo-component-properties_web.png"><img alt="Setting Combo Field Properties" src="../_images/combo-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the Combo field. For example, the ID of the field for selecting the favorite color can be ‘Favorite color’.</p>
 <p><strong>② Who can fill this out</strong></p>
@@ -1033,16 +646,16 @@ The black circle set as the default style, and you can change it to another styl
 <p class="admonition-title">Note</p>
 <p>If you want to display a message such as ‘Select a color’ in a combo box, then enter ‘Select a color’ and set the default item as ‘Select a color’.</p>
 </div>
-</section>
-<section id="toggle">
-<span id="toggle2"></span><h4>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="toggle">
+<span id="toggle2"></span><h4>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h4>
 <p>This field is used for indicating a specific status such as ON/OFF. If you use this field, then the input value is switched according to a defined order whenever the field is clicked.</p>
 <p>You can change the status to Good or Bad by clicking the fields as follows:</p>
 <p><a class="reference internal" href="../_images/toggle.png"><img alt="image9" src="../_images/toggle.png" style="width: 450px;" /></a></p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/toggle-component-properties_web.png"><img alt="Toggle Field Properties" src="../_images/toggle-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Toggle field. For example, the ID of the field for the first inspection item can be named ‘APT inspection 1’.</p>
 <p><strong>② Who can fill this out</strong></p>
@@ -1053,14 +666,14 @@ The black circle set as the default style, and you can change it to another styl
 <p>Select the item set as default.</p>
 <p><strong>⑤ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
-</section>
-<section id="datetime">
-<span id="date2"></span><h4>Datetime<a class="headerlink" href="#datetime" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="datetime">
+<span id="date2"></span><h4>Datetime<a class="headerlink" href="#datetime" title="Permalink to this headline">¶</a></h4>
 <p>This field is used for entering a date. Clicking the field displays a date selection window where you can select the date you want.</p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/datetime-component-properties_02_web.png"><img alt="Setting Datetime Field Properties" src="../_images/datetime-component-properties_02_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Datetime field. For example, the ID of the field for selecting the vacation start date can be named ‘Vacation start date’.</p>
 <p><strong>② Who can fill this out</strong></p>
@@ -1081,15 +694,15 @@ The black circle set as the default style, and you can change it to another styl
 <p>Text displayed as a help message before entering information.</p>
 <p><strong>⑦ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
-</section>
-<section id="numeric-stepper">
-<span id="numeric2"></span><h4>Numeric stepper<a class="headerlink" href="#numeric-stepper" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="numeric-stepper">
+<span id="numeric2"></span><h4>Numeric stepper<a class="headerlink" href="#numeric-stepper" title="Permalink to this headline">¶</a></h4>
 <p>This field is used for entering a number.
 Clicking the field displays two arrows on the right, and you can increase or decrease the number by clicking them. In PCs, you can directly enter the desired number into the field by using a keyboard. In smartphones and tablets, you can scroll through the list of numbers and select the one you want.</p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/number-component-properties_web.png"><img alt="Setting Numeric Field Properties" src="../_images/number-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Numeric field. For example, the ID of the field for entering the number of people in a reservation can be named ‘peopleCount’.</p>
 <p><strong>② Who can fill this out</strong></p>
@@ -1111,9 +724,9 @@ change to 100.</p>
 <p>Text displayed as a help message before entering information.</p>
 <p><strong>⑦ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
-</section>
-<section id="camera">
-<span id="camera2"></span><h4>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="camera">
+<span id="camera2"></span><h4>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h4>
 <p>This field is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) to a document. In PCs without a camera, clicking the field displays a window for selecting the desired image file.</p>
 <p>If the size of the selected image is larger than the size of the field, then it is resized to fit the field.</p>
 <div class="admonition note">
@@ -1122,9 +735,9 @@ change to 100.</p>
 </div>
 <p><a class="reference internal" href="../_images/camera1.png"><img alt="image10" src="../_images/camera1.png" style="width: 400px;" /></a></p>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/Camera-component-properties_web.png"><img alt="Setting Camera Field Properties" src="../_images/Camera-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Camera field. For example, the ID of the field that takes the photo of a driver’s license can be
 ‘driverLicense’.</p>
@@ -1140,9 +753,9 @@ area.</p>
 </div>
 <p><strong>④ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
-</section>
-<section id="voice">
-<span id="record2"></span><h4>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="voice">
+<span id="record2"></span><h4>Voice<a class="headerlink" href="#voice" title="Permalink to this headline">¶</a></h4>
 <p>This field is used for storing recorded voice. You can set the maximum recording time and you can also configure the settings to allow users to only listen to the voice recording.</p>
 <p>When you add a Voice field, you can record voice or play a voice recording as follows:</p>
 <p><a class="reference internal" href="../_images/record1.png"><img alt="image12" src="../_images/record1.png" style="width: 350px;" /></a></p>
@@ -1151,9 +764,9 @@ area.</p>
 <p>Voice recording is only available in the eformsign app.</p>
 </div>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/record_component_web.png"><img alt="Setting Voice Field Properties" src="../_images/record_component_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the voice field. For example, the ID of the field that plays voice recordings can be named ‘Record1’.</p>
 <p><strong>② Who can fill this out</strong></p>
@@ -1167,9 +780,9 @@ area.</p>
 </div>
 <p><strong>④ Tooltip text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
-</section>
-<section id="attachment">
-<span id="attach2"></span><h4>Attachment<a class="headerlink" href="#attachment" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="attachment">
+<span id="attach2"></span><h4>Attachment<a class="headerlink" href="#attachment" title="Permalink to this headline">¶</a></h4>
 <p>This field is used for attaching a file to a document. When attaching a file to a document by using the Attachment field, the file will be attached at the very end of the document as a new page.</p>
 <p>The types and sizes of files that can be attached are as follows:</p>
 <ul class="simple">
@@ -1177,9 +790,9 @@ area.</p>
 <li><p>File size: Up to 5MB</p></li>
 </ul>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/Attachment-component-properties_web.png"><img alt="Setting Attachment Field Properties" src="../_images/Attachment-component-properties_web.png" style="width: 250px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Attachment field. For example, the ID of the field for attaching a resume can be named ‘myResume’.</p>
 <p><strong>② Who can fill this out</strong>
@@ -1193,9 +806,9 @@ Selects who is allowed or required to fill out the field.</p>
 </div>
 <p><strong>④ Tooltip text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
-</section>
-<section id="document-id-and-document-number">
-<span id="document2"></span><h4>Document ID and Document number<a class="headerlink" href="#document-id-and-document-number" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="document-id-and-document-number">
+<span id="document2"></span><h4>Document ID and Document number<a class="headerlink" href="#document-id-and-document-number" title="Permalink to this headline">¶</a></h4>
 <p>Data fields are used for entering document-related information in the document itself. You can select either one of the document ID or document number.</p>
 <ul>
 <li><p><strong>Document ID:</strong> A unique ID assigned to all documents in the system and is shown in 32 digit alphanumeric format. E.g. 0077af27a98846c8872f5333920679b7</p></li>
@@ -1207,16 +820,16 @@ Selects who is allowed or required to fill out the field.</p>
 </li>
 </ul>
 <p><strong>Field Properties</strong></p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/document-domponent-properties_web.png"><img alt="Setting Document field Properties" src="../_images/document-domponent-properties_web.png" style="width: 400px;" /></a>
-</figure>
+</div>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the Document field. For example, the field ID can be ‘docNum’ for document number.</p>
-</section>
-</section>
-</section>
-<section id="configuring-template-settings">
-<h2>Configuring Template Settings<a class="headerlink" href="#configuring-template-settings" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="configuring-template-settings">
+<h2>Configuring Template Settings<a class="headerlink" href="#configuring-template-settings" title="Permalink to this headline">¶</a></h2>
 <p>After uploading a file and adding fields with Web Form Designer, you can configure additional settings for documents that will be created from the template such as the document name, document number, and workflow.</p>
 <p>In the <strong>Design form</strong> screen, click the <strong>Next</strong> button to go to the <strong>Configure</strong> screen. In the <strong>Configure</strong> screen, you can configure the five settings shown below.</p>
 <ul class="simple">
@@ -1226,69 +839,70 @@ Selects who is allowed or required to fill out the field.</p>
 <li><p><strong>Field:</strong> Sets the field default values, auto-filled values, etc.</p></li>
 <li><p><strong>Notification settings:</strong> Sets the notification settings for documents created from the template.</p></li>
 </ul>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/component_web_2.png"><img alt="The 5 Configuration Tabs in Template Settings" src="../_images/component_web_2.png" style="width: 730px;" /></a>
-</figure>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>In order to create documents from a template, you must save and deploy the template. If you save a template but not deploy it, then template does not appear in the <strong>New from template</strong> page of members with permission to use that template.</p>
 <p>A template that is not deployed are indicated with the text <strong>Not deployed</strong>. To deploy a template, click on the see more (⋮) button on the template and click the <strong>Deploy</strong> option. You can also click on the template to go to <strong>Template settings</strong> and click the <strong>Save</strong> button and then click <strong>Yes</strong> to deploy.</p>
-<figure class="align-default">
+<div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/en-template_publish.png"><img alt="Template deployment" src="../_images/en-template_publish.png" style="width: 750px;" /></a>
-</figure>
+</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more information on templates, refer to <a class="reference external" href="chapter6.html#template_wd">Creating templates using Web Form Designer</a>.</p>
 </div>
-</section>
-</section>
-
-
-              </div>
-              
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="chapter3.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Creating documents</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="chapter5.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to Form Builder (MS Office Add-in)</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
-            </footer>
-        </div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="chapter5.html" class="btn btn-neutral float-right" title="Introduction to Form Builder (MS Office Add-in)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chapter3.html" class="btn btn-neutral float-left" title="Creating documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By FORCS<br/>
-  
-      &copy; Copyright 2021, FORCS CO., LTD. All rights reserved..<br/>
-</p>
-        </footer>
-    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
+
+    </p>
+  </div>
     
-</div>
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
-
+</footer>
+        </div>
       </div>
-    </div>
+
+    </section>
+
+  </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
 
-  </body>
+  
+  
+    
+   
+
+</body>
 </html>
