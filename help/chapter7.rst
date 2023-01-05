@@ -124,8 +124,7 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
    .. figure:: resources/merge_workflow_steps2.png
       :alt: Merge workflow steps (after)
 
-
-      ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
+   ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
 
 
 
@@ -492,6 +491,7 @@ You can select groups or members to open documents created from the template, vo
 
 .. _workflow_fb:
 
+
 Workflow Settings
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -809,11 +809,14 @@ In the **Manage templates** page, you can lookup and search templates by templat
    :width: 700px
 .. |image3| image:: resources/en-generate-document-no.png
 .. |image4| image:: resources/config-icon.PNG
+   :width: 20px
 .. |image5| image:: resources/config-icon.PNG
+   :width: 20px
 .. |image6| image:: resources/en-document-number-list.png
 .. |image7| image:: resources/en-manage-template-search-advanced.png
    :width: 600px
 .. |image8| image:: resources/workflow-addstep-plus-button.png
+   :width: 20px
 .. |image9| image:: resources/en-template-settings-workflow-add-steps-fb.png
    :width: 700px
 .. |image10| image:: resources/en-template-settings-workflow-order-fb.png

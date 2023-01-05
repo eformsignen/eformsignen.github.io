@@ -123,6 +123,7 @@ You can upload a file you want and then add fields onto the document. Then, you 
 8. If you click the **Send** button after reviewing/filling in the document, then the document is sent to recipients.
 
    |image11|
+   
 
 **Add recipients > Recipient options**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -404,7 +405,7 @@ document from.
 
 
 4. Click the **Preview** button on the top right corner of the screen to
-view the documents you created. 
+view the documents you created.
 
 5. To send the document right away, click the **Send now** button. To send the documents at a schedule time and date, click the **Schedule send** button.
 
@@ -461,7 +462,7 @@ view the documents you created.
 .. |image7| image:: resources/newfrommyfile-option.png
    :width: 1100px
 .. |image8| image:: resources/menu_icon_3.png
-   :width: 20px
+   :width: 15px
 .. |image9| image:: resources/newfrommyfile-saveasdrafts.png
    :width: 200px
 .. |image10| image:: resources/newfrommyfile-startfromnow.png

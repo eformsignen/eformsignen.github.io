@@ -127,7 +127,7 @@ Web Form Designer consists of a screen that displays the file, the left and righ
 
 6. **Bottom bar:** Displays the file name, and contains the **Add file** button for adding files, and the see more button (⋮) that shows the **Change name**, **Replace file**, **Delete file**, and **Move forward** options.
 
-.. _fieldss:
+.. _fields:
 
 ----------------------------
 Overview of Fields
@@ -606,6 +606,7 @@ For example, if there are six choices available in a multiple choice question, a
    :width: 700px
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Items**
@@ -655,6 +656,7 @@ If you click a Combo field, a list of items is displayed as follows:
 Enter the ID of the Combo field. For example, the ID of the field for selecting the favorite color can be ‘Favorite color’.
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Item count**
@@ -701,6 +703,7 @@ You can change the status to Good or Bad by clicking the fields as follows:
 Enters the ID of the Toggle field. For example, the ID of the field for the first inspection item can be named ‘APT inspection 1’.
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Items**
@@ -736,6 +739,7 @@ This field is used for entering a date. Clicking the field displays a date selec
 Enters the ID of the Datetime field. For example, the ID of the field for selecting the vacation start date can be named ‘Vacation start date’.
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Default value**
@@ -787,6 +791,7 @@ Clicking the field displays two arrows on the right, and you can increase or dec
 Enters the ID of the Numeric field. For example, the ID of the field for entering the number of people in a reservation can be named ‘peopleCount’.
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Default value**
@@ -846,6 +851,7 @@ Enters the ID of the Camera field. For example, the ID of the field that takes t
 ‘driverLicense’.
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Placeholder**
@@ -892,6 +898,7 @@ When you add a Voice field, you can record voice or play a voice recording as fo
 Enter the ID of the voice field. For example, the ID of the field that plays voice recordings can be named 'Record1'.
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Placeholder**
@@ -936,6 +943,7 @@ Enters the ID of the Attachment field. For example, the ID of the field for atta
 
 **② Who can fill this out**
 Selects who is allowed or required to fill out the field.
+
 
 **③  Placeholder**
 

@@ -74,6 +74,7 @@ Default templates are shown in the **Manage company > Notification template mana
 .. tip::
 
    The header is set with the eformsign logo by default. If you upload your company's logo in the **Manage company > Company profile >**  `Company brand <#brand>`__ tab menu, the logo is applied to the email templates.
+   
 
 **How to add a new notification template**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

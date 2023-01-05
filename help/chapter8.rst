@@ -274,6 +274,8 @@ Period     Start date  End date
 
 .. _additional_work:
 
+
+
 Actions that Can Be Performed in the Document List by Documents Menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -297,6 +299,7 @@ Can perform actions including preview, void, send final copy, remove, download, 
 
 .. _history:
 
+
 Document Status and History
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -315,6 +318,7 @@ In the **Document status** tab, you can see when and what happens to a document 
 
 
 .. _document_download:
+
 
 Document Download
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -498,7 +502,6 @@ If you have a document you want to added a shared folder, you can go to the Acti
 
 
 
-
 **Adding a document in a shared folder**
 
 1. Go to a document inbox (Action required, In progress, or Completed).
@@ -534,6 +537,7 @@ If you have a document you want to added a shared folder, you can go to the Acti
 .. |image10| image:: resources/documentmanage_status_search.png
    :width: 700px
 .. |image11| image:: resources/searchplus.png
+   :width: 50px
 .. |image12| image:: resources/download_icon.png
 .. |image13| image:: resources/delete_icon1.png
 .. |image14| image:: resources/column_icon.png

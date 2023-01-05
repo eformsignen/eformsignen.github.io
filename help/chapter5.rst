@@ -116,13 +116,14 @@ If you run Microsoft Office Excel, Word, or PowerPoint after installing Form bui
 
 8. **Help:** Checks the version of Form builder (MS Office add-in) and performs updates.
 
+
 -------------------------
 Overview of Fields
 -------------------------
 
 Fields are used to create fields in electronic documents that users can enter information. Many different fields including signature, check, date, and text are provided in Form builder (MS Office add-in), and each field can be configured in detail by using the **Field Properties** tab.
 
-FieldTypes
+Field Types
 ~~~~~~~~~~~~~~~~~~~~~
 
 The fields provided in eformsign are as follows:

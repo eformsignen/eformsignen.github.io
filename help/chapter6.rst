@@ -157,7 +157,7 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
       :alt: Merge workflow steps (after)
 
 
-      ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
+   ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
 
 
 .. _template_setting:
@@ -370,6 +370,7 @@ template, and can select one of four document numbering formats. The
 document number can be generated in the document using the document
 field. You can also see a separate column in the document list and
 search documents by the document number.
+
 
 **Generating a document number**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -889,11 +890,14 @@ In the **Manage templates** page, you can lookup and search templates by templat
    You can select the template sorting order in ascending or descending by template name or category.
 
 .. |image1| image:: resources/config-icon.PNG
+   :width: 20px
 .. |image2| image:: resources/template-settings.png
    :width: 700px
 .. |image3| image:: resources/en-generate-document-no.png
 .. |image4| image:: resources/config-icon.PNG
+   :width: 20px
 .. |image5| image:: resources/config-icon.PNG
+   :width: 20px
 .. |image6| image:: resources/en-document-number-component.png
    :width: 750px
 .. |image7| image:: resources/en-document-number-list.png
@@ -902,6 +906,7 @@ In the **Manage templates** page, you can lookup and search templates by templat
 .. |image9| image:: resources/template-setting-auth-doc-new.PNG
    :width: 700px
 .. |image10| image:: resources/workflow-addstep-plus-button.png
+   :width: 20px
 .. |image11| image:: resources/en-template-settings-workflow-added-step.png
    :width: 700px
 .. |image12| image:: resources/template_settings_workflow.png

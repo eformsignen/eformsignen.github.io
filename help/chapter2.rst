@@ -380,6 +380,7 @@ When the company administrator deletes her/his eformsign account, the company is
 
 5. Click the **Save** button to save the changes.
 
+
 Company Manager
 ~~~~~~~~~~~~~~~~~~~
 
