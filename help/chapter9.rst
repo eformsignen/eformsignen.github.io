@@ -77,7 +77,7 @@ Default templates are shown in the **Manage company > Notification template mana
    
 
 **How to add a new notification template**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In addition to the default templates, you can add a new notification template.
 

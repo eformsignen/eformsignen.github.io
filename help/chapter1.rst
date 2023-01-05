@@ -48,7 +48,7 @@ Electronic signatures have become legally binding in phases in the vast majority
 Information related to the legal effect of electronic contracts and electronic signatures provided by eformsign is for general information purposes only. All information is used at your own risk and is not a substitute for professional legal advice. For legal advice and defense, please consult a qualified attorney in your area. Since eformsign cannot guarantee that all legal information of electronic contracts by country/region/technology provided by eformsign is up-to-date or accurate, eformsign makes no warranty, express or implied, as to the completeness of the legal information.
 
 Basic Terms
----------------
+--------------
 
 The following are some basic terms you should be familiar with before
 using eformsign.
