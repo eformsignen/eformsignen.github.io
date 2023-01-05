@@ -434,7 +434,7 @@ For documents scheduled to be sent later, you can change or cancel the scheduled
    For more information about sending documents in bulk, please refer to `Send in bulk <chapter3.html#bulksend>`__.
 
 
------------------------------------------------
+----------------------------------------------
 
 
 .. _shared_documents:
