@@ -1,99 +1,402 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction to eformsign &mdash; eformsign User Guide 2021.03.31 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction to eformsign &#8212; eformsign User Guide 2021.03.31 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basic Info" href="chapter2.html" />
-    <link rel="prev" title="eformsign User Guide" href="../index.html" /> 
-</head>
+    <link rel="prev" title="eformsign User Guide" href="../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html">
-            <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to eformsign</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#basic-terms">Basic Terms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#eformsign-usage-flow">eformsign Usage Flow</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#new-from-my-file">New from my file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-from-template">Create from template</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#minimum-system-requirements">Minimum System Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#contract-forms">Contract Forms</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#agreement-forms">Agreement Forms</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#application-forms">Application Forms</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Introduction to Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Creating templates using Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/forcs_b.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Introduction to eformsign
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter2.html">
+   Basic Info
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter3.html">
+   Creating documents
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter4.html">
+   Introduction to Web Form Designer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter5.html">
+   Introduction to Form Builder (MS Office Add-in)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter6.html">
+   Creating templates using Web Form Designer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter7.html">
+   Creating templates using Form Builder (MS Office Add-in)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter8.html">
+   Document Menus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter9.html">
+   Customization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter10.html">
+   Connecting with External Services
+  </a>
+ </li>
 </ul>
 
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
         </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">eformsign User Guide</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Introduction to eformsign</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/help/chapter1.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/help/chapter1.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-terms">
+   Basic Terms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eformsign-usage-flow">
+   eformsign Usage Flow
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-from-my-file">
+     New from my file
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-from-template">
+     Create from template
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minimum-system-requirements">
+   Minimum System Requirements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-cases">
+   Use Cases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contract-forms">
+     Contract Forms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#agreement-forms">
+     Agreement Forms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#application-forms">
+     Application Forms
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduction to eformsign</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-terms">
+   Basic Terms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eformsign-usage-flow">
+   eformsign Usage Flow
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-from-my-file">
+     New from my file
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-from-template">
+     Create from template
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minimum-system-requirements">
+   Minimum System Requirements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-cases">
+   Use Cases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contract-forms">
+     Contract Forms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#agreement-forms">
+     Agreement Forms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#application-forms">
+     Application Forms
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
   <section id="introduction-to-eformsign">
-<h1>Introduction to eformsign<a class="headerlink" href="#introduction-to-eformsign" title="Permalink to this heading"></a></h1>
+<h1>Introduction to eformsign<a class="headerlink" href="#introduction-to-eformsign" title="Permalink to this headline">#</a></h1>
 <p><strong>Overview</strong></p>
 <p>eformsign is an electronic document solution that allows anyone to easily create electronic documents from paper documents and utilize various data stored in electronic documents. You can easily create electronic documents by uploading your files onto eformsign and converting the files to electronic forms via eformsign’s Web Form Designer feature. You can also use eformsign’s Microsoft Office add-in to create electronic forms from documents created using Microsoft Office programs including Word, Excel, and PowerPoint.</p>
 <p>eformsign allows you to create a workflow for each template according to your company’s business process. You can flexibly set a document signing process for internal documents requiring approvals as well as for external documents such as contracts, agreements, and applications. Furthermore, detailed configurations such as notifications and required input fields can be set for each workflow step or recipient, and the progress status of documents is logged as history. Moreover, an audit trail certificate is provided for the prevention of document forgery and falsification.</p>
@@ -126,7 +429,7 @@ some regions.</p>
 <p>[Disclaimer]
 Information related to the legal effect of electronic contracts and electronic signatures provided by eformsign is for general information purposes only. All information is used at your own risk and is not a substitute for professional legal advice. For legal advice and defense, please consult a qualified attorney in your area. Since eformsign cannot guarantee that all legal information of electronic contracts by country/region/technology provided by eformsign is up-to-date or accurate, eformsign makes no warranty, express or implied, as to the completeness of the legal information.</p>
 <section id="basic-terms">
-<h2>Basic Terms<a class="headerlink" href="#basic-terms" title="Permalink to this heading"></a></h2>
+<h2>Basic Terms<a class="headerlink" href="#basic-terms" title="Permalink to this headline">#</a></h2>
 <p>The following are some basic terms you should be familiar with before
 using eformsign.</p>
 <ul>
@@ -227,12 +530,12 @@ set for each template.</p>
 </ul>
 </section>
 <section id="eformsign-usage-flow">
-<h2>eformsign Usage Flow<a class="headerlink" href="#eformsign-usage-flow" title="Permalink to this heading"></a></h2>
+<h2>eformsign Usage Flow<a class="headerlink" href="#eformsign-usage-flow" title="Permalink to this headline">#</a></h2>
 <p>To use eformsign, you can either upload a file onto eformsign and
 create an electronic form online, or create a form using Microsoft Word,
 Excel, or PowerPoint and then upload it to eformsign.</p>
 <section id="new-from-my-file">
-<h3>New from my file<a class="headerlink" href="#new-from-my-file" title="Permalink to this heading"></a></h3>
+<h3>New from my file<a class="headerlink" href="#new-from-my-file" title="Permalink to this headline">#</a></h3>
 <p>You can upload a file onto eformsign and then
 create and send a document by adding fields such as text, signature,
 and date. You can easily and freely send a document by uploading a file,
@@ -244,7 +547,7 @@ it as a draft and then send it later.</p>
 </figure>
 </section>
 <section id="create-from-template">
-<h3>Create from template<a class="headerlink" href="#create-from-template" title="Permalink to this heading"></a></h3>
+<h3>Create from template<a class="headerlink" href="#create-from-template" title="Permalink to this headline">#</a></h3>
 <p>There are two ways to create a document from a template: uploading a
 file on eformsign and creating a template using Web Form Designer, and
 creating a template using Microsoft Office using Form Builder (MS Office add-in) and
@@ -275,7 +578,7 @@ deployed template and send it to recipients.</p>
 </section>
 </section>
 <section id="minimum-system-requirements">
-<h2>Minimum System Requirements<a class="headerlink" href="#minimum-system-requirements" title="Permalink to this heading"></a></h2>
+<h2>Minimum System Requirements<a class="headerlink" href="#minimum-system-requirements" title="Permalink to this headline">#</a></h2>
 <p>The minimum system requirements for Form builder (MS Office add-in) and eformsign are as
 follows:</p>
 <ul>
@@ -302,13 +605,13 @@ to use eformsign.</p>
 </ul>
 </section>
 <section id="use-cases">
-<h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this heading"></a></h2>
+<h2>Use Cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">#</a></h2>
 <p>eformsign can be used for many different cases, including creating
 contract, agreement, and application forms. All documents are encrypted
 (AES-256 method) and stored in the PDF/A format, which is the
 international standard for long-term storage of documents.</p>
 <section id="contract-forms">
-<h3>Contract Forms<a class="headerlink" href="#contract-forms" title="Permalink to this heading"></a></h3>
+<h3>Contract Forms<a class="headerlink" href="#contract-forms" title="Permalink to this headline">#</a></h3>
 <p>Electronic documents can be used to sign various types of contracts
 including employment contracts, purchase/rental contracts, maintenance
 contracts, and franchising contracts. By using eformsign, you can record
@@ -321,7 +624,7 @@ meeting face-to-face with customers or contracting parties.</p>
 </figure>
 </section>
 <section id="agreement-forms">
-<h3>Agreement Forms<a class="headerlink" href="#agreement-forms" title="Permalink to this heading"></a></h3>
+<h3>Agreement Forms<a class="headerlink" href="#agreement-forms" title="Permalink to this headline">#</a></h3>
 <p>Electronic documents can be used to sign various types of agreements
 including privacy policy and consent forms, medical informed consent
 forms, parental consent forms, and sublease agreement forms. You can use
@@ -333,7 +636,7 @@ to create and send thousands of agreement forms to recipients at once.</p>
 </figure>
 </section>
 <section id="application-forms">
-<h3>Application Forms<a class="headerlink" href="#application-forms" title="Permalink to this heading"></a></h3>
+<h3>Application Forms<a class="headerlink" href="#application-forms" title="Permalink to this headline">#</a></h3>
 <p>Electronic documents can be used to sign various types of applications
 including application forms for registrations, quotations, medical
 treatments, and purchases. eformsign’s workflow feature allows you to
@@ -351,34 +654,50 @@ document is completed.</p>
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="eformsign User Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chapter2.html" class="btn btn-neutral float-right" title="Basic Info" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, FORCS CO., LTD. All rights reserved..</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">eformsign User Guide</p>
         </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </a>
+    <a class='right-next' id="next-link" href="chapter2.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Basic Info</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By FORCS<br/>
+  
+      &copy; Copyright 2021, FORCS CO., LTD. All rights reserved..<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
-</body>
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
 </html>

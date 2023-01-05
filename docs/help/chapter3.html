@@ -1,96 +1,384 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creating documents &mdash; eformsign User Guide 2021.03.31 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Creating documents &#8212; eformsign User Guide 2021.03.31 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Introduction to Web Form Designer" href="chapter4.html" />
-    <link rel="prev" title="Basic Info" href="chapter2.html" /> 
-</head>
+    <link rel="prev" title="Basic Info" href="chapter2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html">
-            <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Creating documents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#new-from-my-file">New from my file</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#add-recipients-recipient-options"><strong>Add recipients &gt; Recipient options</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#hiding-files-from-recipients"><strong>Hiding files from recipients</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#options"><strong>Options</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#new-from-template">New from template</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#send-in-bulk">Send in bulk</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Introduction to Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Creating templates using Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/forcs_b.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter1.html">
+   Introduction to eformsign
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter2.html">
+   Basic Info
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Creating documents
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter4.html">
+   Introduction to Web Form Designer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter5.html">
+   Introduction to Form Builder (MS Office Add-in)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter6.html">
+   Creating templates using Web Form Designer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter7.html">
+   Creating templates using Form Builder (MS Office Add-in)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter8.html">
+   Document Menus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter9.html">
+   Customization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter10.html">
+   Connecting with External Services
+  </a>
+ </li>
 </ul>
 
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
         </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">eformsign User Guide</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Creating documents</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/help/chapter3.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/help/chapter3.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-from-my-file">
+   New from my file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-recipients-recipient-options">
+     <strong>
+      Add recipients &gt; Recipient options
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hiding-files-from-recipients">
+       <strong>
+        Hiding files from recipients
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#options">
+     <strong>
+      Options
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-from-template">
+   New from template
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#send-in-bulk">
+   Send in bulk
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Creating documents</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-from-my-file">
+   New from my file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-recipients-recipient-options">
+     <strong>
+      Add recipients &gt; Recipient options
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hiding-files-from-recipients">
+       <strong>
+        Hiding files from recipients
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#options">
+     <strong>
+      Options
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-from-template">
+   New from template
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#send-in-bulk">
+   Send in bulk
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
   <section id="creating-documents">
-<span id="createnew"></span><h1>Creating documents<a class="headerlink" href="#creating-documents" title="Permalink to this heading"></a></h1>
+<span id="createnew"></span><h1>Creating documents<a class="headerlink" href="#creating-documents" title="Permalink to this headline">#</a></h1>
 <p>Anyone can use eformsign to easily convert existing documents into electronic documents and then send them for signature. In eformsign, there are two ways to create and send documents. You can upload a file from your PC to eformsign, or use an existing template saved in eformsign.</p>
 <ul class="simple">
 <li><p><strong>New from my file</strong>: You can upload your file to create an electronic document and then send it to participants.</p></li>
@@ -108,7 +396,7 @@ For more information, refer to <a class="reference external" href="chapter6.html
 <p>When creating a document with <strong>New from my file</strong>, you cannot save it as a template. For documents you plan on using frequently, it is recommended to create a template first.</p>
 </div>
 <section id="new-from-my-file">
-<h2>New from my file<a class="headerlink" href="#new-from-my-file" title="Permalink to this heading"></a></h2>
+<h2>New from my file<a class="headerlink" href="#new-from-my-file" title="Permalink to this headline">#</a></h2>
 <p>You can upload a file you want and then add fields onto the document. Then, you can specify the participants that will fill in each field and enter the information of the document participants and reviewers, and then send the document.</p>
 <ol class="arabic">
 <li><p>Go to the <strong>New from my file</strong> menu.</p>
@@ -187,7 +475,7 @@ as a created document.</p>
 </li>
 </ol>
 <section id="add-recipients-recipient-options">
-<h3><strong>Add recipients &gt; Recipient options</strong><a class="headerlink" href="#add-recipients-recipient-options" title="Permalink to this heading"></a></h3>
+<h3><strong>Add recipients &gt; Recipient options</strong><a class="headerlink" href="#add-recipients-recipient-options" title="Permalink to this headline">#</a></h3>
 <p>In the <strong>Design form</strong> step or the <strong>Add recipients</strong> step, you can add participants who will receive the document.</p>
 <p>In the <strong>Add recipients</strong> step, you can set detailed settings for each participant. Additionally, you can add or remove participants as well as adding reviewers who will review the document.</p>
 <p>You have to add the name of each participant and reviewer, and their email/ID. If a participant is a member of your company, you can select the member in the drop-down menu and import their member information stored in eformsign.</p>
@@ -271,7 +559,7 @@ as a created document.</p>
 </li>
 </ul>
 <section id="hiding-files-from-recipients">
-<h4><strong>Hiding files from recipients</strong><a class="headerlink" href="#hiding-files-from-recipients" title="Permalink to this heading"></a></h4>
+<h4><strong>Hiding files from recipients</strong><a class="headerlink" href="#hiding-files-from-recipients" title="Permalink to this headline">#</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Uploading multiples files to a document and hiding files from recipients</strong></p>
@@ -309,7 +597,7 @@ as a created document.</p>
 </section>
 </section>
 <section id="options">
-<h3><strong>Options</strong><a class="headerlink" href="#options" title="Permalink to this heading"></a></h3>
+<h3><strong>Options</strong><a class="headerlink" href="#options" title="Permalink to this headline">#</a></h3>
 <p>In the Options step, you can set the document title, set and edit document notification settings, and choose whether to timestamp the document.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/wfd-option.png"><img alt="Options page" src="../_images/wfd-option.png" style="width: 700px;" /></a>
@@ -317,7 +605,7 @@ as a created document.</p>
 </section>
 </section>
 <section id="new-from-template">
-<h2>New from template<a class="headerlink" href="#new-from-template" title="Permalink to this heading"></a></h2>
+<h2>New from template<a class="headerlink" href="#new-from-template" title="Permalink to this headline">#</a></h2>
 <p>You can create and send documents whenever necessary by uploading
 frequently used forms and saving them as templates by adding workflows
 and other details.</p>
@@ -395,7 +683,7 @@ documents from templates can be found in the <strong>Action required</strong> pa
 </ol>
 </section>
 <section id="send-in-bulk">
-<h2>Send in bulk<a class="headerlink" href="#send-in-bulk" title="Permalink to this heading"></a></h2>
+<h2>Send in bulk<a class="headerlink" href="#send-in-bulk" title="Permalink to this headline">#</a></h2>
 <p>When creating a document from a template, you can use the <strong>Send in bulk</strong> feature to send a document to multiple recipients at once.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -472,34 +760,50 @@ are shown.</p>
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="chapter2.html" class="btn btn-neutral float-left" title="Basic Info" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chapter4.html" class="btn btn-neutral float-right" title="Introduction to Web Form Designer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, FORCS CO., LTD. All rights reserved..</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="chapter2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Basic Info</p>
         </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </a>
+    <a class='right-next' id="next-link" href="chapter4.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introduction to Web Form Designer</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By FORCS<br/>
+  
+      &copy; Copyright 2021, FORCS CO., LTD. All rights reserved..<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
-</body>
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
 </html>

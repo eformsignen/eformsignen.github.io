@@ -1,128 +1,618 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Info &mdash; eformsign User Guide 2021.03.31 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Basic Info &#8212; eformsign User Guide 2021.03.31 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Creating documents" href="chapter3.html" />
-    <link rel="prev" title="Introduction to eformsign" href="chapter1.html" /> 
-</head>
+    <link rel="prev" title="Introduction to eformsign" href="chapter1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html">
-            <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Info</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#dashboard">Dashboard</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#menu">Menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Dashboard</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#view-and-change-basic-information">View and Change Basic Information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#my-profile">My Profile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#edit-and-add-company-information">Edit and Add Company Information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#company-brand">Company Brand</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#permissions">Permissions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#company-administrator">Company Administrator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#company-manager">Company Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#template-manager">Template Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#document-manager">Document Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#permissions-for-each-template">Permissions for each template</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#manage-groups-and-members">Manage Groups and Members</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#manage-members">Manage Members</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#manage-groups">Manage Groups</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#my-signature">My Signature</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#registering-your-signature-and-initial"><strong>Registering Your Signature and Initial</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-your-stamp"><strong>Adding your stamp</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#stamp-image-uploading"><strong>Stamp image uploading</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#life-sized-stamp-scanning"><strong>Life-sized stamp scanning</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#manage-company-stamp">Manage company stamp</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#company-stamp-tab"><strong>Company stamp tab</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#stamp-history-tab"><strong>Stamp history tab</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Introduction to Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Creating templates using Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/forcs_b.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter1.html">
+   Introduction to eformsign
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Basic Info
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter3.html">
+   Creating documents
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter4.html">
+   Introduction to Web Form Designer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter5.html">
+   Introduction to Form Builder (MS Office Add-in)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter6.html">
+   Creating templates using Web Form Designer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter7.html">
+   Creating templates using Form Builder (MS Office Add-in)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter8.html">
+   Document Menus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter9.html">
+   Customization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter10.html">
+   Connecting with External Services
+  </a>
+ </li>
 </ul>
 
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
         </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">eformsign User Guide</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Basic Info</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/help/chapter2.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/help/chapter2.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dashboard">
+   Dashboard
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menu">
+     Menu
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Dashboard
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#view-and-change-basic-information">
+   View and Change Basic Information
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#my-profile">
+     My Profile
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#edit-and-add-company-information">
+     Edit and Add Company Information
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-brand">
+     Company Brand
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#permissions">
+   Permissions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-administrator">
+     Company Administrator
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-manager">
+     Company Manager
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#template-manager">
+     Template Manager
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#document-manager">
+     Document Manager
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#permissions-for-each-template">
+     Permissions for each template
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manage-groups-and-members">
+   Manage Groups and Members
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage-members">
+     Manage Members
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage-groups">
+     Manage Groups
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#my-signature">
+   My Signature
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#registering-your-signature-and-initial">
+     <strong>
+      Registering Your Signature and Initial
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-your-stamp">
+     <strong>
+      Adding your stamp
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stamp-image-uploading">
+       <strong>
+        Stamp image uploading
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#life-sized-stamp-scanning">
+       <strong>
+        Life-sized stamp scanning
+       </strong>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#precautions-to-take-when-scanning-life-sized-stamps">
+         <strong>
+          Precautions to take when scanning life-sized stamps
+         </strong>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manage-company-stamp">
+   Manage company stamp
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-stamp-tab">
+     <strong>
+      Company stamp tab
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stamp-history-tab">
+     <strong>
+      Stamp history tab
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Basic Info</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dashboard">
+   Dashboard
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menu">
+     Menu
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Dashboard
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#view-and-change-basic-information">
+   View and Change Basic Information
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#my-profile">
+     My Profile
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#edit-and-add-company-information">
+     Edit and Add Company Information
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-brand">
+     Company Brand
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#permissions">
+   Permissions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-administrator">
+     Company Administrator
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-manager">
+     Company Manager
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#template-manager">
+     Template Manager
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#document-manager">
+     Document Manager
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#permissions-for-each-template">
+     Permissions for each template
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manage-groups-and-members">
+   Manage Groups and Members
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage-members">
+     Manage Members
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage-groups">
+     Manage Groups
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#my-signature">
+   My Signature
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#registering-your-signature-and-initial">
+     <strong>
+      Registering Your Signature and Initial
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-your-stamp">
+     <strong>
+      Adding your stamp
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stamp-image-uploading">
+       <strong>
+        Stamp image uploading
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#life-sized-stamp-scanning">
+       <strong>
+        Life-sized stamp scanning
+       </strong>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#precautions-to-take-when-scanning-life-sized-stamps">
+         <strong>
+          Precautions to take when scanning life-sized stamps
+         </strong>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manage-company-stamp">
+   Manage company stamp
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#company-stamp-tab">
+     <strong>
+      Company stamp tab
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stamp-history-tab">
+     <strong>
+      Stamp history tab
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
   <section id="basic-info">
-<h1>Basic Info<a class="headerlink" href="#basic-info" title="Permalink to this heading"></a></h1>
+<h1>Basic Info<a class="headerlink" href="#basic-info" title="Permalink to this headline">#</a></h1>
 <section id="dashboard">
-<h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this heading"></a></h2>
+<h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">#</a></h2>
 <section id="menu">
-<h3>Menu<a class="headerlink" href="#menu" title="Permalink to this heading"></a></h3>
+<h3>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">#</a></h3>
 <p>After logging into the eformsign dashboard, click the menu icon (<img alt="image1" src="../_images/menu_icon.png" />) at the top left corner of the screen. The sidebar menu will be displayed as shown below.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -194,7 +684,7 @@
 </ul>
 </section>
 <section id="id1">
-<h3>Dashboard<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<h3>Dashboard<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>The dashboard is the main page displayed when logging into eformsign. In the dashboard, you can view documents that are in progress, require your action, etc., and use shortcuts to go to the main menus including <strong>New document</strong>.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-dashboard-main.png"><img alt="eformsign Dashboard Screen" src="../_images/en-dashboard-main.png" style="width: 800px;" /></a>
@@ -241,7 +731,7 @@
 </section>
 </section>
 <section id="view-and-change-basic-information">
-<h2>View and Change Basic Information<a class="headerlink" href="#view-and-change-basic-information" title="Permalink to this heading"></a></h2>
+<h2>View and Change Basic Information<a class="headerlink" href="#view-and-change-basic-information" title="Permalink to this headline">#</a></h2>
 <p>To view your personal information you entered when signing up for the eformsign service and the company information, click the see more icon (<img alt="image6" src="../_images/menu-hamberger-icon.png" />) at the top right corner of the sidebar menu.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en_dashboard-side-menu-icon.png"><img alt="Location of the Menu Icon for Accessing Personal and Company Info" src="../_images/en_dashboard-side-menu-icon.png" style="width: 1500px;" /></a>
@@ -256,7 +746,7 @@
 <li><p><strong>Logout:</strong> You can log out of the eformsign service.</p></li>
 </ul>
 <section id="my-profile">
-<h3>My Profile<a class="headerlink" href="#my-profile" title="Permalink to this heading"></a></h3>
+<h3>My Profile<a class="headerlink" href="#my-profile" title="Permalink to this headline">#</a></h3>
 <p><strong>My profile &gt; Personal</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-myprofile-personal.png"><img alt="My Profile &gt; Personal" src="../_images/en-myprofile-personal.png" style="width: 500px;" /></a>
@@ -295,7 +785,7 @@ company.</p>
 </dl>
 </section>
 <section id="edit-and-add-company-information">
-<h3>Edit and Add Company Information<a class="headerlink" href="#edit-and-add-company-information" title="Permalink to this heading"></a></h3>
+<h3>Edit and Add Company Information<a class="headerlink" href="#edit-and-add-company-information" title="Permalink to this headline">#</a></h3>
 <p>The company information displayed in the <strong>My profile &gt; company</strong> menu can be edited in the <strong>Manage company &gt; Company profile</strong> menu.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -317,7 +807,7 @@ company.</p>
 <p><a class="reference internal" href="../_images/en-manage-company-profile-edit2.png"><img alt="image8" src="../_images/en-manage-company-profile-edit2.png" style="width: 700px;" /></a></p>
 </section>
 <section id="company-brand">
-<span id="brand"></span><h3>Company Brand<a class="headerlink" href="#company-brand" title="Permalink to this heading"></a></h3>
+<span id="brand"></span><h3>Company Brand<a class="headerlink" href="#company-brand" title="Permalink to this headline">#</a></h3>
 <p>You can replace the eformsign logo and symbol with your company logo and symbol by registering them in the <strong>Company profile &gt; Company brand</strong> tab.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -330,7 +820,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../_images/en-manage-company-brand.png"><img alt="Company Profile &gt; Brand image" src="../_images/en-manage-company-brand.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Company Profile &gt; Brand image</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Company Profile &gt; Brand image</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic">
@@ -354,7 +844,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </section>
 </section>
 <section id="permissions">
-<span id="id2"></span><h2>Permissions<a class="headerlink" href="#permissions" title="Permalink to this heading"></a></h2>
+<span id="id2"></span><h2>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">#</a></h2>
 <p>Permissions can be granted to each member. In eformsign, there are many different permissions. The company admin has access to all.</p>
 <ul>
 <li><p><strong>Company administrator</strong></p>
@@ -381,7 +871,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </li>
 </ul>
 <section id="company-administrator">
-<h3>Company Administrator<a class="headerlink" href="#company-administrator" title="Permalink to this heading"></a></h3>
+<h3>Company Administrator<a class="headerlink" href="#company-administrator" title="Permalink to this headline">#</a></h3>
 <p>The user who created a company is the company administrator by default, and the company administrator is the super administrator having all the permissions to use the eformsign service.</p>
 <p>The company administrator:</p>
 <blockquote>
@@ -416,7 +906,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </ol>
 </section>
 <section id="company-manager">
-<h3>Company Manager<a class="headerlink" href="#company-manager" title="Permalink to this heading"></a></h3>
+<h3>Company Manager<a class="headerlink" href="#company-manager" title="Permalink to this headline">#</a></h3>
 <p>Company managers can access the <strong>Manage company</strong> menu and can view, edit, and delete information regarding the company and groups/members.</p>
 <p>The company manager permission can be granted in the <strong>Manage members</strong> or the <strong>Manage permissions</strong> menu.</p>
 <p><strong>Granting the Company Manager Permission in the Manage company &gt; Manage members menu</strong></p>
@@ -451,7 +941,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </div>
 </section>
 <section id="template-manager">
-<h3>Template Manager<a class="headerlink" href="#template-manager" title="Permalink to this heading"></a></h3>
+<h3>Template Manager<a class="headerlink" href="#template-manager" title="Permalink to this headline">#</a></h3>
 <p>Template managers can access the <strong>Manage template</strong> menu, and can create, edit, deploy, and delete templates.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -497,7 +987,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </div>
 </section>
 <section id="document-manager">
-<h3>Document Manager<a class="headerlink" href="#document-manager" title="Permalink to this heading"></a></h3>
+<h3>Document Manager<a class="headerlink" href="#document-manager" title="Permalink to this headline">#</a></h3>
 <p>Document managers can access the <strong>Manage documents</strong> menu, and can open, download, void, and remove documents created from templates that they have been granted permission to access.</p>
 <p><strong>Granting the Document Manager Permission</strong></p>
 <ol class="arabic">
@@ -571,7 +1061,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </div></blockquote>
 </section>
 <section id="permissions-for-each-template">
-<h3>Permissions for each template<a class="headerlink" href="#permissions-for-each-template" title="Permalink to this heading"></a></h3>
+<h3>Permissions for each template<a class="headerlink" href="#permissions-for-each-template" title="Permalink to this headline">#</a></h3>
 <p>You can grant two types permissions for each template: <strong>Template usage</strong> for using the template to create documents and <strong>Template editing</strong> for editing the template.</p>
 <p>A member who has been granted the <strong>Template usage</strong> permission for a template can create new documents from that template by clicking <strong>New from template</strong>.</p>
 <p>A member who has been granted the <strong>Template editing</strong> permission for a template can edit that template.</p>
@@ -602,13 +1092,13 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </section>
 </section>
 <section id="manage-groups-and-members">
-<h2>Manage Groups and Members<a class="headerlink" href="#manage-groups-and-members" title="Permalink to this heading"></a></h2>
+<h2>Manage Groups and Members<a class="headerlink" href="#manage-groups-and-members" title="Permalink to this headline">#</a></h2>
 <p>You can invite, delete, and edit members and create, add, and delete groups in the <strong>Manage company</strong> menu.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en_side-menu-manage-group-members.png"><img alt="Manage Company &gt; Manage Groups/Members" src="../_images/en_side-menu-manage-group-members.png" style="width: 700px;" /></a>
 </figure>
 <section id="manage-members">
-<h3>Manage Members<a class="headerlink" href="#manage-members" title="Permalink to this heading"></a></h3>
+<h3>Manage Members<a class="headerlink" href="#manage-members" title="Permalink to this headline">#</a></h3>
 <p>You can invite members to your company or manage invited members in the <strong>Manage members</strong> menu.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-manage-members-page.png"><img alt="Manage Company &gt; Manage Members" src="../_images/en-manage-members-page.png" style="width: 700px;" /></a>
@@ -647,7 +1137,7 @@ If an invited person does not accept the invitation within 7 days, then you must
 </dl>
 </section>
 <section id="manage-groups">
-<h3>Manage Groups<a class="headerlink" href="#manage-groups" title="Permalink to this heading"></a></h3>
+<h3>Manage Groups<a class="headerlink" href="#manage-groups" title="Permalink to this headline">#</a></h3>
 <p>You can create groups in the company and view, edit, or delete each group’s information.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-manag-groups-page.png"><img alt="Manage Company &gt; Manage Groups" src="../_images/en-manag-groups-page.png" style="width: 700px;" /></a>
@@ -667,10 +1157,10 @@ If an invited person does not accept the invitation within 7 days, then you must
 </section>
 </section>
 <section id="my-signature">
-<span id="mysignature"></span><h2>My Signature<a class="headerlink" href="#my-signature" title="Permalink to this heading"></a></h2>
+<span id="mysignature"></span><h2>My Signature<a class="headerlink" href="#my-signature" title="Permalink to this headline">#</a></h2>
 <p>If you register your signature, initial, and stamp in the <strong>My signature</strong> menu, you can easily use them when signing documents.</p>
 <section id="registering-your-signature-and-initial">
-<span id="registersignature"></span><h3><strong>Registering Your Signature and Initial</strong><a class="headerlink" href="#registering-your-signature-and-initial" title="Permalink to this heading"></a></h3>
+<span id="registersignature"></span><h3><strong>Registering Your Signature and Initial</strong><a class="headerlink" href="#registering-your-signature-and-initial" title="Permalink to this headline">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can register your signature and initial in <strong>browsers (PC and</strong> <strong>mobile)</strong> <strong>and apps (mobile).</strong></p>
@@ -712,10 +1202,10 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </div>
 </section>
 <section id="adding-your-stamp">
-<span id="registerstamp"></span><h3><strong>Adding your stamp</strong><a class="headerlink" href="#adding-your-stamp" title="Permalink to this heading"></a></h3>
+<span id="registerstamp"></span><h3><strong>Adding your stamp</strong><a class="headerlink" href="#adding-your-stamp" title="Permalink to this headline">#</a></h3>
 <p>Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after adding the image in the eformsign service.</p>
 <section id="stamp-image-uploading">
-<h4><strong>Stamp image uploading</strong><a class="headerlink" href="#stamp-image-uploading" title="Permalink to this heading"></a></h4>
+<h4><strong>Stamp image uploading</strong><a class="headerlink" href="#stamp-image-uploading" title="Permalink to this headline">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A stamp/seal image needs to be prepared.</p>
@@ -741,7 +1231,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </ol>
 </section>
 <section id="life-sized-stamp-scanning">
-<span id="scanstamp"></span><h4><strong>Life-sized stamp scanning</strong><a class="headerlink" href="#life-sized-stamp-scanning" title="Permalink to this heading"></a></h4>
+<span id="scanstamp"></span><h4><strong>Life-sized stamp scanning</strong><a class="headerlink" href="#life-sized-stamp-scanning" title="Permalink to this headline">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To scan a stamp, you must have a stamp ready to scan and download and print out the <strong>Scannable paper for stamps</strong> from eformsign.</p>
@@ -788,7 +1278,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Check whether the stamp is properly recognized and touch the <strong>OK</strong> button to add the stamp on eformsign.</p></li>
 </ol>
 <section id="precautions-to-take-when-scanning-life-sized-stamps">
-<span id="caution-scanstamp"></span><h5><strong>Precautions to take when scanning life-sized stamps</strong><a class="headerlink" href="#precautions-to-take-when-scanning-life-sized-stamps" title="Permalink to this heading"></a></h5>
+<span id="caution-scanstamp"></span><h5><strong>Precautions to take when scanning life-sized stamps</strong><a class="headerlink" href="#precautions-to-take-when-scanning-life-sized-stamps" title="Permalink to this headline">#</a></h5>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Depending on the device and environment, the stamp may have difficulties in being recognized. In this case, you can take a photo and upload it instead.</strong></p>
@@ -814,14 +1304,14 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </section>
 </section>
 <section id="manage-company-stamp">
-<span id="company-stamp"></span><h2>Manage company stamp<a class="headerlink" href="#manage-company-stamp" title="Permalink to this heading"></a></h2>
+<span id="company-stamp"></span><h2>Manage company stamp<a class="headerlink" href="#manage-company-stamp" title="Permalink to this headline">#</a></h2>
 <p>You can add and manage company stamps as well as grant stamp use permissions and view stamp use history in the <strong>Manage company stamp</strong> menu.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Only the company administrator and company managers have access to the Manage company stamp menu.</p>
 </div>
 <section id="company-stamp-tab">
-<h3><strong>Company stamp tab</strong><a class="headerlink" href="#company-stamp-tab" title="Permalink to this heading"></a></h3>
+<h3><strong>Company stamp tab</strong><a class="headerlink" href="#company-stamp-tab" title="Permalink to this headline">#</a></h3>
 <p>In this tab, you can add company stamps by uploading an image or scanning a real life-sized stamps as well as granting stamp use permission to members/groups. Once a company stamp is added, you can edit and delete it, and even view the history of all changes made to the stamp</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu_company-stamp.png"><img alt="Manage company stamp screen" src="../_images/menu_company-stamp.png" style="width: 700px;" /></a>
@@ -842,7 +1332,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </figure>
 </section>
 <section id="stamp-history-tab">
-<h3><strong>Stamp history tab</strong><a class="headerlink" href="#stamp-history-tab" title="Permalink to this heading"></a></h3>
+<h3><strong>Stamp history tab</strong><a class="headerlink" href="#stamp-history-tab" title="Permalink to this headline">#</a></h3>
 <p>In this tab, you can view the history of all the stamps used. You can view information including each of the stamps that were used, the members that used each stamp, the date each stamp was used, etc. You can also download the stamp history in CSV format.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/company-stamp-history.png"><img alt="Stamp history tab" src="../_images/company-stamp-history.png" style="width: 700px;" /></a>
@@ -852,34 +1342,50 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="chapter1.html" class="btn btn-neutral float-left" title="Introduction to eformsign" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chapter3.html" class="btn btn-neutral float-right" title="Creating documents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, FORCS CO., LTD. All rights reserved..</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="chapter1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction to eformsign</p>
         </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </a>
+    <a class='right-next' id="next-link" href="chapter3.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Creating documents</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By FORCS<br/>
+  
+      &copy; Copyright 2021, FORCS CO., LTD. All rights reserved..<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
-</body>
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
 </html>
