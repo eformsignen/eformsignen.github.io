@@ -9,7 +9,7 @@ Dashboard
 ------------
 
 Menu
-~~~~~~~
+~~~~~~
 
 After logging into the eformsign dashboard, click the menu icon (|image1|) at the top left corner of the screen. The sidebar menu will be displayed as shown below.
 

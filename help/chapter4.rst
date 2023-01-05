@@ -963,7 +963,7 @@ If you hover mouse over a field, the description you entered in the tooltip text
 .. _document2:
 
 Document ID and Document number
---------------------------------------
+-------------------------------------
  
 Data fields are used for entering document-related information in the document itself. You can select either one of the document ID or document number.
 

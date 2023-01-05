@@ -133,7 +133,7 @@ The fields provided in eformsign are as follows:
    :width: 730px
 
 Basic Fields
-------------------------
+-----------------------
 
 -  `Check <#check>`__\ **:** Ticks a check box.
 

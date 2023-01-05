@@ -716,7 +716,7 @@ You can set the default value of a field to be the value saved in company/group/
 .. _noti_fb:
 
 Notification Settings
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can select recipients of status notification message, view and edit the messages
 for documents created from the template.
