@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Creating templates using Form Builder (MS Office Add-in) &mdash; eformsign User Guide 2021.03.31 documentation</title>
+  <title>Creating templates using Form Builder (MS Office Add-in) &mdash; eformsign User Guide 2023.01.05 documentation</title>
   
 
   
@@ -756,15 +756,11 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 </div>
 <div class="section" id="notification-settings">
 <span id="noti-fb"></span><h3>Notification Settings<a class="headerlink" href="#notification-settings" title="Permalink to this headline">¶</a></h3>
-<p>You can select recipients of status notification message, view and edit the messages
-for documents created from the template.</p>
-<p><strong>Document status notifications</strong>
-You can select who will receive status notifications for documents created from the template. You can also preview the following notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the notification messages for completed documents.</p>
+<p>You can select the recipients of status notification messages, and view and edit the messages for documents created from the template.</p>
+<p><strong>Document status notifications</strong></p>
+<p>You can select who will receive status notifications for documents created from the template. You can also preview the following notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the notification messages for completed documents.</p>
 <div class="figure align-default">
 <img alt="Notification settings" src="../_images/template-setting-notification-channel.png" />
-</div>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-notification-editl.png"><img alt="Notification template editing" src="../_images/template-setting-notification-editl.png" style="width: 400px;" /></a>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -772,19 +768,38 @@ You can select who will receive status notifications for documents created from 
 <p>When the <strong>Document creator</strong> option is unchecked but the <strong>Step handler</strong> option is checked, status notifications are sent to people who have processed the document before the current step, except the document creator.</p>
 <p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both checked, status notifications are sent to both the document creator and the people who have processed the document before the current step.</p>
 <p>When the <strong>Document creator</strong> and <strong>Step handler</strong> options are both unchecked, no notifications will be sent for that status.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>❗When the <strong>Document creator</strong> option for <strong>When the document is completed</strong> is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.</p>
 </div>
-<ul>
-<li><p><strong>When documents are reviewed and signed</strong>: When the document is reviewed and signed by internal or external recipients, a
-notification will be sent stating that the document has been reviewed and signed.</p></li>
-<li><p><strong>When documents are rejected</strong>: When the document is rejected by an approver, internal or external recipients, a notification will be sent stating that the document has been rejected.</p></li>
-<li><p><strong>Document void notification</strong>: When a request for voiding a document is approved, a notification will be sent stating that the document has been voided.</p></li>
-<li><p><strong>When documents are corrected</strong>: When the document is corrected by a document creator, a notification will be sent stating that the document has been corrected.</p></li>
-<li><p><strong>When documents are completed</strong>: When the document is completed, a notification will be sent to the document creator, approvers, and recipients stating that the document has been completed.</p>
+</div>
+<p><strong>Editing document status notifications</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/template-setting-notification-edit2.png"><img alt="Editing document status notifications" src="../_images/template-setting-notification-edit2.png" style="width: 600px;" /></a>
+</div>
+<ul class="simple">
+<li><p><strong>Select notification template:</strong> The document status notification template is set to the default template, but you can change it to another template if you create one. For information on how to create a new notification template, refer to <a class="reference external" href="chapter9.html#notification-template">Notification Template Management</a>.</p></li>
+<li><p><strong>Email title:</strong> Sets the title of the email sent when a document is completed.</p></li>
+<li><p><strong>SMS message:</strong> Sets the message when a document completion notification is sent via SMS. A link for viewing the document is sent together with the message.</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When the <strong>Document creator</strong> option for <strong>When the document is completed</strong> is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.</p>
+<p>The message size can be a maximum of 65 bytes (65 characters).</p>
 </div>
+<ul>
+<li><p><strong>File attachments and methods:</strong> Select the files to be send together with the document completion notification and select the filees to be attached.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Download link:</strong> A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.</p></li>
+<li><p><strong>Attachment:</strong> PDF file(s) are included in the email. However, if the size of the document exceeds 10 MB or file(s) are sent via SMS, then a download link is included instead.</p></li>
+</ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><strong>Attachment</strong> If you send an email notification using the <strong>Attachment</strong> method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.</p>
+</div>
+</div></blockquote>
 </li>
+<li><p><strong>Edit body:</strong> Edits the body of the notification message.</p></li>
 </ul>
 </div>
 </div>

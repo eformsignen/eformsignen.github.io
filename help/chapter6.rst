@@ -109,6 +109,7 @@ Workflow Overview
 --------------------
 
 A **workflow** is a document process from its creation to completion.
++
 
 The workflow for each template can be set by template managers in **Template settings** > **Workflow**.
 
@@ -798,11 +799,6 @@ You can select who will receive status notifications for documents created from 
 .. figure:: resources/template-setting-notification-channel.png
    :alt: Notification settings
 
-.. figure:: resources/template-setting-notification-editl.png
-   :alt: Notification template editing
-   :width: 400px
-
-
 
 .. note::
 
@@ -815,21 +811,43 @@ You can select who will receive status notifications for documents created from 
    When the **Document creator** and **Step handler** options are both unchecked, no notifications will be sent for that status.
 
 
--  **When documents are reviewed and signed**: When the document is reviewed and signed by recipients, a notification will be sent stating that the document has been reviewed and signed.
 
--  **When documents are rejected**: When the document is rejected by a reviewer, member or external recipients, a notification will be sent stating that the document has been rejected.
+.. caution::
 
--  **Document void notification**: When a request for voiding a document is approved, a notification will be sent stating that the document has been voided.
-
--  **When documents are corrected**: When the document is corrected by a document creator, a notification will be sent stating that the document has been corrected.
-
--  **When documents are completed**: When the document is completed, a notification will be sent to the document creator, reviewers, and recipients stating that the document has been completed.
+      ❗When the **Document creator** option for **When the document is completed** is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.
 
 
+**Editing document status notifications**
 
-   .. note::
+.. figure:: resources/template-setting-notification-edit2.png
+   :alt: Editing document status notifications
+   :width: 600px
 
-      When the **Document creator** option for **When the document is completed** is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.
+
+- **Select notification template:** The document status notification template is set to the default template, but you can change it to another template if you create one. For information on how to create a new notification template, refer to `Notification Template Management <chapter9.html#notification-template>`_.  
+
+- **Email title:** Sets the title of the email sent when a document is completed.
+
+- **SMS message:** Sets the message when a document completion notification is sent via SMS. A link for viewing the document is sent together with the message.
+
+.. note::
+
+   The message size can be a maximum of 65 bytes (65 characters).
+
+- **File attachments and methods:** Select the files to be send together with the document completion notification and select the filees to be attached.
+
+   - **Download link:** A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.
+
+   - **Attachment:** PDF file(s) are included in the email. However, if the size of the document exceeds 10 MB or file(s) are sent via SMS, then a download link is included instead. 
+
+   .. caution::
+
+      **Attachment** If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
+
+- **Edit body:** Edits the body of the notification message.
+
+
+
 
 ---------------------------
 Menus for Each Template
