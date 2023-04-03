@@ -113,7 +113,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#actions-that-can-be-performed-in-the-document-list-by-documents-menu">Actions that Can Be Performed in the Document List by Documents Menu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-status-and-history">Document Status and History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-download">Document Download</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#deleting-documents">Deleting Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#permanently-removing-documents">Permanently Removing Documents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-menu-column-selection">Document Menu Column Selection</a></li>
 </ul>
 </li>
@@ -258,7 +258,7 @@ to download at once and choose the file type including the PDF of the completed 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>How to delete documents</strong></p>
-<p>Documents can be deleted only in the <strong>Manage documents</strong> menu and you can only delete documents in which you have document management permission. The company administrator or the template managers of a template can grant you document management permission for all documents created from a template in <strong>Manage templates &gt; Template settings &gt; Set permissions &gt; Document management</strong> and selecting the groups/members you want to grant permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the <strong>Manage documents</strong> menu.</p>
+<p>Documents can be deleted only in the <strong>Manage documents</strong> menu and you can only delete documents in which you have document manager permission. The company administrator or the template managers of a template can grant you document manager permission for all documents created from a template in <strong>Manage templates &gt; Template settings &gt; Set permissions &gt; Document management</strong> and selecting the groups/members you want to grant permission. Document manager permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the <strong>Manage documents</strong> menu.</p>
 </div>
 </li>
 </ol>
@@ -483,23 +483,23 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 </div>
 <div class="section" id="actions-that-can-be-performed-in-the-document-list-by-documents-menu">
 <span id="additional-work"></span><h3>Actions that Can Be Performed in the Document List by Documents Menu<a class="headerlink" href="#actions-that-can-be-performed-in-the-document-list-by-documents-menu" title="Permalink to this headline">¶</a></h3>
-<p>Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, and download.</p>
+<p>Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, schedule send final copy, remove, share, download, and create new document.</p>
 <ul class="simple">
 <li><p><strong>In progress</strong></p></li>
 </ul>
-<p>Can perform actions including preview, correct, void, review, resend, schedule send final copy, and download.</p>
+<p>Can perform actions including preview, correct, void, share, review, resend, schedule send final copy, download, and create new document.</p>
 <ul class="simple">
 <li><p><strong>Action required</strong></p></li>
 </ul>
-<p>Can perform actions including preview, correct, void, review, edit, resend, schedule send final copy and download.</p>
+<p>Can perform actions including preview, correct, void, share, review, edit, resend, schedule send final copy, download, and create new document.</p>
 <ul class="simple">
 <li><p><strong>Completed</strong></p></li>
 </ul>
-<p>Can perform actions including preview, void, send final copy, and download.</p>
+<p>Can perform actions including preview, share, send final copy, create new document, and download.</p>
 <ul class="simple">
 <li><p><strong>Manage documents</strong></p></li>
 </ul>
-<p>Can perform actions including preview, void, send final copy, remove, download, and delete. Documents can only be deleted in the <strong>Manage documents</strong> menu.</p>
+<p>Can perform actions including preview, void (excluding completed documents), remove, download, schedule send final copy (excluding completed documents), send final copy (only completed documents), and create new document. Documents can only be removed in the <strong>Manage documents</strong> menu.</p>
 </div>
 <div class="section" id="document-status-and-history">
 <span id="history"></span><h3>Document Status and History<a class="headerlink" href="#document-status-and-history" title="Permalink to this headline">¶</a></h3>
@@ -515,7 +515,7 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <div class="section" id="document-download">
 <span id="id2"></span><h3>Document Download<a class="headerlink" href="#document-download" title="Permalink to this headline">¶</a></h3>
 <p>Documents created in eformsign can be safely stored for long periods of time.</p>
-<p>All documents are stored in a file format for long-term storage (PDF/A) and only members with document management permission can open and delete them.</p>
+<p>All documents are stored in a file format for long-term storage (PDF/A) and only members with document manager permission can open and delete them.</p>
 <ol class="arabic simple">
 <li><p>Click the download icon (<img alt="image12" src="../_images/download_icon.png" />) on the right side of the document list.</p></li>
 <li><p>Select the document to be downloaded, and then click the <strong>Download</strong> button.</p></li>
@@ -528,13 +528,13 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <p>CSV files can also be downloaded in the <strong>Download</strong> pop-up where PDF files can be downloaded. Select <strong>CSV download</strong> in the pop-up and check the fields (columns) to be downloaded and then click the <strong>Download</strong> button.</p>
 </div>
 </div>
-<div class="section" id="deleting-documents">
-<span id="document-delete"></span><h3>Deleting Documents<a class="headerlink" href="#deleting-documents" title="Permalink to this headline">¶</a></h3>
-<p>In eformsign, only members with document management permission can delete documents.</p>
+<div class="section" id="permanently-removing-documents">
+<span id="document-delete"></span><h3>Permanently Removing Documents<a class="headerlink" href="#permanently-removing-documents" title="Permalink to this headline">¶</a></h3>
+<p>In eformsign, only members with document manager permission can permanently remove documents.</p>
 <ol class="arabic simple">
-<li><p>Click the delete icon (<img alt="image13" src="../_images/delete_icon1.png" />) on the right side of the document list.</p></li>
-<li><p>Select the document and then click the <strong>Delete</strong> button.</p></li>
-<li><p>Click the <strong>Yes</strong> button in the Delete pop-up window to delete the document.</p></li>
+<li><p>Click the remove icon (<img alt="image13" src="../_images/delete_icon1.png" />) on the right side of the document list.</p></li>
+<li><p>Select the document and then click the <strong>Remove</strong> button.</p></li>
+<li><p>Click the <strong>Yes</strong> button in the Remove pop-up window to permanently remove the document.</p></li>
 </ol>
 </div>
 <div class="section" id="document-menu-column-selection">
@@ -572,7 +572,7 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <ul class="simple">
 <li><p>Check the response status of bulk-sent documents</p></li>
 <li><p>Resend documents in bulk or individually</p></li>
-<li><p>Void documents</p></li>
+<li><p>Void documents (excluding completed ones)</p></li>
 <li><p>Download PDF or/and CSV files</p></li>
 <li><p>View the current document step, document status, and history of each document</p></li>
 </ul>

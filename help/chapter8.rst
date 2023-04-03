@@ -95,7 +95,7 @@ Each documents menu consists of the following five sections:
 
       **How to delete documents**
 
-      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document management permission. The company administrator or the template managers of a template can grant you document management permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
+      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document manager permission. The company administrator or the template managers of a template can grant you document manager permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document manager permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
 
 .. _category:
 
@@ -279,23 +279,23 @@ Period     Start date  End date
 Actions that Can Be Performed in the Document List by Documents Menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, and download.
+Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, schedule send final copy, remove, share, download, and create new document.
 
 - **In progress**
 
-Can perform actions including preview, correct, void, review, resend, schedule send final copy, and download.
+Can perform actions including preview, correct, void, share, review, resend, schedule send final copy, download, and create new document.
 
 - **Action required**
 
-Can perform actions including preview, correct, void, review, edit, resend, schedule send final copy and download.
+Can perform actions including preview, correct, void, share, review, edit, resend, schedule send final copy, download, and create new document.
 
 - **Completed**
 
-Can perform actions including preview, void, send final copy, and download.
+Can perform actions including preview, share, send final copy, create new document, and download.
 
 - **Manage documents**
 
-Can perform actions including preview, void, send final copy, remove, download, and delete. Documents can only be deleted in the **Manage documents** menu.
+Can perform actions including preview, void (excluding completed documents), remove, download, schedule send final copy (excluding completed documents), send final copy (only completed documents), and create new document. Documents can only be removed in the **Manage documents** menu.
 
 .. _history:
 
@@ -325,7 +325,7 @@ Document Download
 
 Documents created in eformsign can be safely stored for long periods of time.
 
-All documents are stored in a file format for long-term storage (PDF/A) and only members with document management permission can open and delete them.
+All documents are stored in a file format for long-term storage (PDF/A) and only members with document manager permission can open and delete them.
 
 1. Click the download icon (|image12|) on the right side of the document list.
 
@@ -342,16 +342,16 @@ All documents are stored in a file format for long-term storage (PDF/A) and only
 
 .. _document_delete:
 
-Deleting Documents
-~~~~~~~~~~~~~~~~~~~~~~
+Permanently Removing Documents
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In eformsign, only members with document management permission can delete documents.
+In eformsign, only members with document manager permission can permanently remove documents.
 
-1. Click the delete icon (|image13|) on the right side of the document list.
+1. Click the remove icon (|image13|) on the right side of the document list.
 
-2. Select the document and then click the **Delete** button.
+2. Select the document and then click the **Remove** button.
 
-3. Click the **Yes** button in the Delete pop-up window to delete the document.
+3. Click the **Yes** button in the Remove pop-up window to permanently remove the document.
 
 .. _document_column:
 
@@ -408,7 +408,7 @@ In the list of bulk sent documents, click **Detail view** to see the detailed in
 
 - Check the response status of bulk-sent documents 
 - Resend documents in bulk or individually
-- Void documents
+- Void documents (excluding completed ones)
 - Download PDF or/and CSV files
 - View the current document step, document status, and history of each document
 

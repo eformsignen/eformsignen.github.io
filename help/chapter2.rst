@@ -44,7 +44,7 @@ The description of each menu is as follows:
 
 -  **Shared**: Allows you to share your documents with others and view documents others members shared with you.
 
--  **Manage documents:** Only document managers can access this menu. Document managers can view all documents created from a template that they have permission to access.The company administrator can view and manage all documents.
+-  **Manage documents:** Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.
 
 -  **My signature:** You can create and register your signature to be used when signing a document.
 
@@ -193,7 +193,7 @@ My Profile
 **Notification**
    You can view whether you agreed to receive marketing emails. You can also change your selection.
 
-**Delete the eformsign account**
+**Delete my eformsign account**
    You can delete your eformsign account by clicking the **Delete the eformsign account** button.
 
 **My profile > Company**
@@ -321,7 +321,7 @@ Permissions can be granted to each member. In eformsign, there are many differen
 
 -  **Document manager**
 
-   Document managers have permission to access the **Manage documents** menu. They can manage documents created from templates they have access to. If a member is assigned as a document manager of a template, then the member can open, delete, download documents created from that template.
+   Document managers have permission to access the **Manage documents** menu. They can manage documents created from templates they have access to. If a member is assigned as a document manager of a template, then the member can view, download, permanently remove, and void (excluding completed documents) created from that template.
 
    .. note::
 
@@ -501,7 +501,7 @@ The template manager permission can be granted in the **Manage members** menu or
 Document Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Document managers can access the **Manage documents** menu, and can open, download, void, and remove documents created from templates that they have been granted permission to access.
+Document managers can access the **Manage documents** menu, and can view, download, permantely remove, and void (excluding completed documents) created from templates that they have been granted permission to access.
 
 
 **Granting the Document Manager Permission**
@@ -555,7 +555,7 @@ Set the permissions and the scope of the permissions to be granted to the docume
 
       -  **Open and download:** The default permission granted to the document manager. The document manager can open and download all documents filtered using **Document creator** and **Document type** conditions.
 
-      -  **Void:** Permission to void completed documents created by a selected document creator, if the document creator requested the document to be voided.
+      -  **Void:** Permission to void documents (excluding completed ones) created by a selected document creator, if the document creator requested the document to be voided.
 
       -  **Remove:** Permission to permanently remove documents from eformsign.
   
