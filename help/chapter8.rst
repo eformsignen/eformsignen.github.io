@@ -66,9 +66,7 @@ Each documents menu consists of the following five sections:
 
    Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.
 
-   The information of each document such as the document status, name, step, creator, created date, processed date, and document number is
-   provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image3|)
-   displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
+   The information of each document such as the document status, name, step, creator, created date, and document number is provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image3|) displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
 
    You can also perform actions on a document such as reviewing, previewing, correcting, voiding, resending, and deleting a document.
 
@@ -180,10 +178,10 @@ The following table describes the filters that can be used for performing search
    Template name   Template name   Step            Step
    Step            Step            Created by      Created by
    Created by      Created by      Created on      Created on
-   Created on      Created on      Processed by    Processed by
-   Requested by    Processed by    Processed on    Processed on
-   Requested on    Processed on    Custom filter   Custom filter
-                   Days passed                      
+   Created on      Created on      Recipient       Recipient
+   Requested by    Days passed     Custom filter   Custom filter 
+   Requested on    Recipient
+   Recipient
    =============== =============== =============== ====================
 
 **Using the custom filter**
@@ -191,7 +189,7 @@ The following table describes the filters that can be used for performing search
 
 1. Select **Custom Filter** in the **Advanced** search combo box.
 
-.. figure:: resources/userdefined_search1.png
+.. figure:: resources/custom_search.png
    :alt: Custom filter
    :width: 500px
 
