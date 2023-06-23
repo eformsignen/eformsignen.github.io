@@ -319,24 +319,84 @@ In the **Document status** tab, you can see when and what happens to a document 
 
 
 Document Download
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
-Documents created in eformsign can be safely stored for long periods of time.
+Documents created in eformsign can be downloaded in PDF as well as in CSV, which contains the data entered in the documents. 
 
-All documents are stored in a file format for long-term storage (PDF/A) and only members with document manager permission can open and delete them.
+.. note::
 
-1. Click the download icon (|image12|) on the right side of the document list.
+   💡 **What data is in a CSV file?**
+ 
+   The CSV file you download contains data entered into a document as well as document metadata such as document title, document ID, recipients.
 
-2. Select the document to be downloaded, and then click the **Download** button.
+PDF Download
+-------------------------------
 
-.. figure:: resources/download_popup.png
-   :alt: Document download pop-up
-   :width: 400px
+
+1. Go to a document inbox or the **Manage documents** page and click the document download icon (|image12|).
+2. Tick the check box to the left of the document(s) you want to download.
+3. Click the **Download** button.
+4. Decide whether to include the audit trail certifcate in the pop-up displayed and click the **Download** button.
+
+   .. figure:: resources/download_popup.png
+      :alt: Document downloaod pop-up
+      :width: 400px
+
+
+Export to CSV file
+-------------------------------
+
+
+1. Click the Export to CSV file icon (|image14|) in the **Completed** inbox or the **Manage documents** page.
+2. Tick the check box to the left of the document(s) you want to download.
+3. Click the **Export to CSV file** button.
+4. Select the columns and range in the **Export to CSV file** pop-up displayed. To include all fields in all templates, select **All results**.
+5. Click the **Export** button.
+
+   .. figure:: resources/cvs_file_popup.png
+      :alt: Export to CSV file pop-up
+      :width: 400px
+
+6. Name the CSV file and click **Confirm**.
+
+   .. figure:: resources/cvs_file_name_popup.png
+      :alt: Export to CSV file pop-up
+      :width: 400px
+
+7. Check the status of the file in the **CSV files** pop-up and download the file once it is created.
+ 
+   .. figure:: resources/cvs_file_list_popup.png
+      :alt: CSV files pop-up
+      :width: 600px
 
 
 .. note::
 
-   CSV files can also be downloaded in the **Download** pop-up where PDF files can be downloaded. Select **CSV download** in the pop-up and check the fields (columns) to be downloaded and then click the **Download** button.
+   **CSV files**
+
+   You can view the list of files that have been created or is being created by clicking the CSV files icon (|image17|). 
+   You can cancel while the file is being created and the files that are created can be downloaded again or deleted. The files can be downloaded again within 7 days of creation and are automatically deleted after 7 days.
+
+   .. figure:: resources/cvs_file_list_popup1.png
+      :alt: CSV files pop-up
+      :width: 400px
+
+
+.. tip::
+
+   **Downloading documents in the Bulk send inbox**
+
+   You can download bulk sent documents in the Bulk send inbox.
+
+   1. Click the **Detail view** button next to the document you want in the **Bulk send** inbox.
+
+   2. Select the document(s) to download and then click either the **Download** or **Export to CSV file** button.
+
+   .. figure:: resources/bulksend_download.png
+      :alt: Export to CSV file pop-up
+      :width: 700px
+
+
 
 .. _document_delete:
 
@@ -374,8 +434,8 @@ The Drafts inbox stores the documents in the **New from my file** step that have
 
 1. Click **Drafts** in the sidebar menu to go to the Drafts page.
 
-   |image15|
-
+.. figure:: resources/drafts-dashboard.png
+   :alt: Drafts in dashboard
 2. Select a document you want and click the **Continue** button next to it.
 
    |image16|
@@ -544,3 +604,5 @@ If you have a document you want to added a shared folder, you can go to the Acti
    :width: 700px
 .. |image16| image:: resources/draftbox-documentlist.png
    :width: 700px
+.. |image17| image:: resources/csv_file_list_icon.png
+   :width: 20px

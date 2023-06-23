@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
 
   
   
@@ -124,6 +122,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#toggle">Toggle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#datetime">Datetime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#numeric-stepper">Numeric stepper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hyperlink">Hyperlink</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#camera">Camera</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#voice">Voice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#attachment">Attachment</a></li>
@@ -162,10 +161,6 @@
 
 
       <div class="wy-nav-content">
-<div class="git-ribbon">
-  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
-</div>
-
         
         <div class="rst-content">
         
@@ -234,7 +229,9 @@ add-in, and refer to <a class="reference external" href="chapter5.html#formbuild
 <h3>Uploading a file in the <strong>New from my file</strong> menu.<a class="headerlink" href="#uploading-a-file-in-the-new-from-my-file-menu" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p>Click the <strong>New from my file</strong> menu.</p>
-<p><img alt="image1" src="../_images/en-new_from_myfile-menu.png" /></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/en-new-from-my-file-dashboard.png"><img alt="New from my file in the dashboard" src="../_images/en-new-from-my-file-dashboard.png" style="width: 700px;" /></a>
+</div>
 </li>
 <li><p>Drag and drop the file onto the screen or click the <strong>Select a file</strong>
 button and select a file from your computer to upload.</p>
@@ -340,6 +337,7 @@ configured in detail by using the <strong>Properties</strong> tab.</p>
 <li><p><a class="reference external" href="#toggle2">Toggle</a><strong>:</strong> Switches to another value if two or more values are entered.</p></li>
 <li><p><a class="reference external" href="#date2">Datetime</a><strong>:</strong> Enters a specific date.</p></li>
 <li><p><a class="reference external" href="#numeric2">Numeric stepper</a><strong>:</strong> Enters a number.</p></li>
+<li><p><a class="reference external" href="#numeric2">Hyperlink</a><strong>:</strong> Inserts a hyperlink.</p></li>
 <li><p><a class="reference external" href="#camera2">Camera</a><strong>:</strong> Takes a photo using a camera or selects a photo from an album in devices with a built-in
 camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).</p></li>
 <li><p><a class="reference external" href="#record2">Voice</a><strong>:</strong> Records audio in devices with a voice recording function.</p></li>
@@ -477,14 +475,20 @@ text with 1 to 2 words, and the Multiline field is suitable for long text with m
 <p class="admonition-title">Note</p>
 <p>This option can be set only in the Text field. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.</p>
 </div>
-<p><strong>④ Max length</strong></p>
-<p>Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters</p>
-<p><strong>⑤ Keypad type on mobile devices</strong></p>
+<p><strong>④ Input type</strong></p>
+<p>Selects either ‘’Plain text’, ‘Password’, or ‘Custom’ for the Text field and ‘Plain text’ and ‘Custom’ for the Multiline field.</p>
+<p><strong>⑤ Select custom input type</strong></p>
+<p>Selects additional input types as well as create a custom input type by creating a rule. It is enabled when <strong>Input type</strong> is set to ‘Custom’.</p>
+<p><strong>⑥ Autofit text</strong></p>
+<blockquote>
+<div><p>Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.</p>
+</div></blockquote>
+<p><strong>⑦ Keypad type on mobile devices</strong></p>
 <p>Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as
 smartphones and tablets.</p>
-<p><strong>⑥ Placeholder</strong></p>
+<p><strong>⑧ Placeholder</strong></p>
 <p>Displays a help message when no value is entered.</p>
-<p><strong>⑦ Tooltip Text</strong></p>
+<p><strong>⑨ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </div>
 <div class="section" id="handwriting">
@@ -570,8 +574,8 @@ the Check field is used for checking the status of an item (whether it is checke
 </div>
 <p><strong>① ID</strong></p>
 <p>Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.</p>
-<p><strong>② Who can fill this out</strong>
-Selects who is allowed or required to fill out the field.</p>
+<p><strong>② Who can fill this out</strong></p>
+<p>Selects who is allowed or required to fill out the field.</p>
 <p><strong>③ Items</strong></p>
 <p>You can enter the text to be displayed in the item. You can also add multiple check fields so that multiple items can be selected.</p>
 <p><strong>④ Checked Style</strong></p>
@@ -587,7 +591,9 @@ Once selected, the check style will be shown in the color and style you selected
 </div>
 <p><strong>⑤ Unchecked style</strong></p>
 <p>You can select the style of each field that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.</p>
-<p><strong>⑥ Tooltip text</strong></p>
+<p><strong>⑥ Check box alignment</strong></p>
+<p>You can choose whether to align the placeholder text to the right or left of the check box.</p>
+<p><strong>⑦ Tooltip text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="radio">
@@ -600,10 +606,7 @@ format, the selected item will be displayed.</p>
 </div>
 <p><strong>① ID</strong></p>
 <p>In <strong>Field Properties</strong>, make sure that all the selected radio buttons are assigned the same ID.</p>
-<p>For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. In the example shown below, the IDs of all the items are set to the same “question 1”.</p>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID_web.png"><img alt="Example of Setting a Radio Field" src="../_images/radio-items-should-have-same-ID_web.png" style="width: 700px;" /></a>
-</div>
+<p>For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. I</p>
 <p><strong>② Who can fill this out</strong></p>
 <p>Selects who is allowed or required to fill out the field.</p>
 <p><strong>③ Items</strong></p>
@@ -618,7 +621,9 @@ The black circle set as the default style, and you can change it to another styl
 </div>
 <p><strong>⑤ Unselected style</strong></p>
 <p>You can select the style of each field that is not selected.</p>
-<p><strong>⑥ Tooltip Text</strong></p>
+<p><strong>⑥ Radio button alignment</strong></p>
+<p>You can choose whether to align the placeholder text to the right or left of the radio button.</p>
+<p><strong>⑦ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </div>
 <div class="section" id="combo">
@@ -724,6 +729,18 @@ change to 100.</p>
 <p>Text displayed as a help message before entering information.</p>
 <p><strong>⑦ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
+</div>
+<div class="section" id="hyperlink">
+<span id="hyperlink2"></span><h4>Hyperlink<a class="headerlink" href="#hyperlink" title="Permalink to this headline">¶</a></h4>
+<p>This field is used for inserting a hyperlink. If the hyperlink is linked to a web address, the page opens with a new tab or window.</p>
+<p><strong>Field Properties</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/hyperlink-component-properties_web.png"><img alt="Setting Numeric Field Properties" src="../_images/hyperlink-component-properties_web.png" style="width: 250px;" /></a>
+</div>
+<p><strong>① Text to display</strong></p>
+<p>Enters the text to be displayed for the hyperlink.</p>
+<p><strong>② Address</strong></p>
+<p>Enters the address of the hyperlink.</p>
 </div>
 <div class="section" id="camera">
 <span id="camera2"></span><h4>Camera<a class="headerlink" href="#camera" title="Permalink to this headline">¶</a></h4>

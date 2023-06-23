@@ -46,7 +46,7 @@ The description of each menu is as follows:
 
 -  **Manage documents:** Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.
 
--  **My signature:** You can create and register your signature to be used when signing a document.
+-  **My signature:** You can create and add your signature to be used when signing a document.
 
 -  **Manage templates:** Only template managers can access this menu. You can view the template list and configure the template settings.
 
@@ -94,61 +94,34 @@ The description of each menu is as follows:
 Dashboard
 ~~~~~~~~~~~
 
-The dashboard is the main page displayed when logging into eformsign. In the dashboard, you can view documents that are in progress, require your action, etc., and use shortcuts to go to the main menus including **New document**.
+The dashboard is the main page displayed when logging into eformsign. In the dashboard, you can upload a file to create a document as well as create a document from a template you want. Also, you can go directly to a document inbox or view a template in the dashboard.
 
 .. figure:: resources/en-dashboard-main.png
    :alt: eformsign Dashboard Screen
    :width: 800px
 
 
-**① New from template**
-   Displays the **New from template** page where you can create new documents from saved templates.
+**① New from my file**
+   Opens the **New from my file** page where you can create new documents by uploading your files from your computer.
 
-**② New from my file**
-   Displays the **New from my file** page where you can create new documents by upload your files from your computer.
+**② New from template*
+   Opens the **New from template** page where you can create new documents from templates.
+   You can create 1 document from a template by clicking the create icon (|image10|), and create multiple documents at once from a template by clicking the bulk icon (|image11|).
 
 **③ Favorites**
-   Displays the templates you added as your Favorites. If you click a template in the Favorites list, you can go to the page where you can create a new document using that template. You can add a template to your Favorites by clicking the Add icon (|image2|). You can delete a template from the Favorites list by clicking the Edit icon (|image3|).
-
-.. tip::
-
-   **Adding templates to Favorites!**
-
-   You can add a template you use frequently to the Favorites list to create documents easily using that template. You can add your favorite ones on the dashboard.
-
-   1. Click the Add icon (|image4|) in the Favorites list on the dashboard.
-
-   2. The list of templates that are not added to your Favorites will be displayed in the pop-up window.
-
-   3. Tick the checkboxes of the templates you want to add to the Favorites.
-
-      |image5|
-
-   4. The templates will be added to the Favorites.
+   Displays the templates added as Favorites with a yellow star. You can add or remove the star by clicking **View all templates** and then adding/removing the star symbol on a template in the **New from template** page.
 
 **④ Action required**
-   Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When it clicked the **Action required** is displayed.
+   Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the **Action required** inbox.
 
 **⑤ In progress**
-   Shows the number of documents that are in progress. When clicked, the **In progress** page is displayed.
+   Shows the number of documents that are in progress. When clicked, it opens the **In progress** inbox.
 
 **⑥ Completed**
-   Shows the number of all the completed documents you created or participated in. When clicked, the **Completed** page is displayed.
+   When clicked, it opens the **Completed** inbox.
 
 **⑦ Drafts**
-   Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, the **Drafts** page is displayed.
-
-**⑧ Action required**
-   Shows the list of the three most recent documents that require your action and the number of documents requiring your action. You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button in the dashboard next to **Action required** to go to the **Action required** page.
-
-**⑨ Saved draft**
-   Shows the number of documents saved in **Drafts** and the three most recent ones. You can click on a document name in the list to go to the document and can click the more **(+)** button in the dashboard next to **Saved draft** to go to the **Drafts** page.
-
-**⑩ In progress**
-   Shows the number of documents in progress. You can click on the name of a document in the list to open the document. Also, you can click the more **(+)** button in the dashboard next to **In progress** to go to the **In progress** page.
-
-**⑪ Completed**
-   Shows the list of the three most recently completed documents. You can click on a document name to open the document. Also, you can click the more **(+)** button in the dashboard next to **Completed** to go to the **Completed** page.
+   Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, it opens the **Drafts** inbox.
 
 ---------------------------------------
 View and Change Basic Information
@@ -258,7 +231,7 @@ The company information displayed in the **My profile > company** menu can be ed
 Company Brand
 ~~~~~~~~~~~~~~~~~
 
-You can replace the eformsign logo and symbol with your company logo and symbol by registering them in the **Company profile > Company brand** tab.
+You can replace the eformsign logo and symbol with your company logo and symbol by adding them in the **Company profile > Company brand** tab.
 
 .. note::
 
@@ -269,7 +242,7 @@ You can replace the eformsign logo and symbol with your company logo and symbol 
 
    On eformsign, a 512 pixel X 128 pixel horizontal image size is recommended for logos, and a 120 pixel X 120 pixel square image size is recommended for symbols.
 
-**Registering the Company Logo and Symbol**
+**Adding the Company Logo and Symbol**
 
 .. figure:: resources/en-manage-company-brand.png
    :alt: Company Profile > Brand image
@@ -709,17 +682,17 @@ You can create groups in the company and view, edit, or delete each group's info
 My Signature
 ---------------
 
-If you register your signature, initial, and stamp in the **My signature** menu, you can easily use them when signing documents.
+If you add your signature, initial, and stamp in the **My signature** menu, you can easily use them when signing documents.
 
 
 .. _registersignature:
 
-**Registering Your Signature and Initial**
+**Adding Your Signature and Initial**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
-   You can register your signature and initial in **browsers (PC and** **mobile)** **and apps (mobile).**
+   You can add your signature and initial in **browsers (PC and** **mobile)** **and apps (mobile).**
 
 1. Click the sidebar menu icon, and go to the **My signature** menu.
 
@@ -733,7 +706,7 @@ If you register your signature, initial, and stamp in the **My signature** menu,
       :width: 700px
 
 
-2. Click the **OK** button to add a new signature, initial, or stamp.
+2. Click the **Register** button in the Signature or Initial section to add a new signature or initial.
 
    .. figure:: resources/en-my-signature-register.png
       :alt: Register Signature
@@ -746,13 +719,13 @@ If you register your signature, initial, and stamp in the **My signature** menu,
    -  **Text**
       Type your name, and then select a signature style.
 
-   -  **QR code**
+   -  **Mobile**
       If you scan the QR code with your smartphone camera, you can access the sign pad page. Draw your signature on the sign pad.
 
-   -  **Push notification**
+   -  **eformsign App**
       Select a mobile device you want to connect to and click the **Send** button. You can draw your signature using the eformsign app installed on the connected device.
 
-3. Click the **OK** button to save the signature.
+3. Click the **Save** button to save the signature/initial.
 
 4. Click the **Edit** or **Delete** button to edit or delete the signature.
 
@@ -772,9 +745,35 @@ If you register your signature, initial, and stamp in the **My signature** menu,
 **Adding your stamp**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some documents may require a seal or stamp rather than a signature or initial. You can apply a stamp/seal image to documents after adding the image in the eformsign service.
+Some documents may require a seal or stamp rather than a signature or initial. In eformsign, there are three ways to add a stamp: creating a stgamp, uploading an image, and scanning a stamp.
 
-**Stamp image uploading**
+
+
+**Creating a stamp**
+-----------------------------
+
+
+1. Click the sidebar menu icon, and go to the **My signature** menu.
+
+2. Click the **Register** button in the Stamp section to add a new stamp.
+
+   .. figure:: resources/en-my-signature-register-stamp.png
+      :alt: Register Stamp
+      :width: 700px
+
+
+3. Click the Create stamp tab in the pop-up displayed and create a name for the stamp and choose the date format, enter additional info, and choose the stamp color. Then, click the **Generate stamp** button and click the **Save** button to save the stamp.
+
+   .. figure:: resources/en-my-signature-create-stamp-popup.png
+      :alt: My signature > Register Stamp Pop-up
+      :width: 300px
+
+
+4. Click the **Edit** or **Delete** button to edit or delete the added stamp.
+
+
+
+**Uploading an image**
 -----------------------------
 
 .. note::
@@ -794,22 +793,22 @@ Some documents may require a seal or stamp rather than a signature or initial. Y
       :width: 700px
 
 
-3. Click the image area. A pop-up window will be displayed where you can upload an image from your PC. Select the image that you want to register.
+3. Click the image area. A pop-up window will be displayed where you can upload an image from your PC. Select the image that you want to add.
 
    .. figure:: resources/en-my-signature-register-stamp-popup.png
       :alt: My signature > Register Stamp Pop-up
       :width: 500px
 
 
-4. Click the **OK** button to save the stamp.
+4. Click the **Save** button to save the stamp.
 
-5. Click the **Edit** or **Delete** button to edit or delete the registered stamp.
+5. Click the **Edit** or **Delete** button to edit or delete the added stamp.
 
 
 
 .. _scanstamp:
 
-**Life-sized stamp scanning**
+**Scanning a stamp**
 ------------------------------
 
 .. note::
@@ -934,21 +933,20 @@ In this tab, you can add company stamps by uploading an image or scanning a real
    :width: 700px
 
 
-To add a company stamp, click the  **Add company stamp** button and upload an image or scan a stamp and also set the stamp name and give permission to groups and members to use the stamp.
+To add a company stamp, click the  **Add company stamp** button, name the stamp name, and give permission to groups and members to use the stamp. Then, click the **Register** button to scan the stamp, upload the image, or create the stamp.
 
 .. figure:: resources/company-stamp-register.png
    :alt: Add company stamp pop up
    :width: 400px
 
 
+- **Stamp name**: Enter the name of the stamp.
 
-- **Stamp name**: Enters the name of the stamp.
+- **Description**: Enter the description of the stamp.
 
-- **Description**: Enters the description of the stamp.
+- **Register**: You scan the stamp, upload the image, or create the stamp by clicking the **Register** button.
 
-- **Stamp image**\: You can add a stamp image by uploading a stamp image using the **Upload image**\  button or the scanning a stamp using the **Scan stamp**\  button.
-
-- **Permission to use**: You can grant permission to use stamp to all or specific members/groups.
+- **Permission to use stamp**: You can grant permission to use the stamp to all or specific members/groups.
 
 
 You can see the history of updates and deletions, and modifications made to a stamp. The following shows the stamp history shown when you click the **History**\  button.
@@ -975,9 +973,15 @@ In this tab, you can view the history of all the stamps used. You can view infor
 .. |image3| image:: resources/favorites-edit.PNG
 .. |image4| image:: resources/favorites-add.PNG
 .. |image5| image:: resources/en-dashboard-add-favorites.png
-   :width: 700px
+   :width: 500px
 .. |image6| image:: resources/menu-hamberger-icon.png
+   :width: 20px
 .. |image7| image:: resources/menu-hamberger-icon.png
+   :width: 20px
 .. |image8| image:: resources/en-manage-company-profile-edit2.png
-   :width: 700px
+   :width: 500px
 .. |image9| image:: resources/config-icon.PNG
+.. |image10| image:: resources/template-create-icon.PNG
+   :width: 20px
+.. |image11| image:: resources/template-bulkcreate-icon.PNG
+   :width: 20px

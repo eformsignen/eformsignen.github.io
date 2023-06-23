@@ -30,7 +30,9 @@ Uploading a file in the **New from my file** menu.
 
 1. Click the **New from my file** menu.
 
-   |image1|
+   .. figure:: resources/en-new-from-my-file-dashboard.png
+      :alt: New from my file in the dashboard
+      :width: 700px
 
 2. Drag and drop the file onto the screen or click the **Select a file**
    button and select a file from your computer to upload.
@@ -176,6 +178,8 @@ The fields provided in eformsign are as follows:
 -  `Datetime <#date2>`__\ **:** Enters a specific date.
 
 -  `Numeric stepper <#numeric2>`__\ **:** Enters a number.
+
+-  `Hyperlink <#numeric2>`__\ **:** Inserts a hyperlink.
 
 -  `Camera <#camera2>`__\ **:** Takes a photo using a camera or selects a photo from an album in devices with a built-in
    camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).
@@ -387,20 +391,28 @@ Sets the default text.
 
    This option can be set only in the Text field. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.
 
-**④ Max length**
+**④ Input type**
 
-Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters
+Selects either ''Plain text', 'Password', or 'Custom' for the Text field and 'Plain text' and 'Custom' for the Multiline field.
 
-**⑤ Keypad type on mobile devices**
+**⑤ Select custom input type**
+
+Selects additional input types as well as create a custom input type by creating a rule. It is enabled when **Input type** is set to 'Custom'. 
+
+**⑥ Autofit text**
+
+ Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.
+ 
+**⑦ Keypad type on mobile devices**
 
 Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as
 smartphones and tablets.
 
-**⑥ Placeholder**
+**⑧ Placeholder**
 
 Displays a help message when no value is entered.
 
-**⑦ Tooltip Text**
+**⑨ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field.
 
@@ -550,6 +562,7 @@ In Word and PowerPoint, the Check field is shown in a rectangular shape. Make su
 Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.
 
 **② Who can fill this out**
+
 Selects who is allowed or required to fill out the field.
 
 **③ Items**
@@ -576,11 +589,16 @@ The below example shows how checks are displayed according to the selected style
 
 You can select the style of each field that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.
 
-**⑥ Tooltip text**
+**⑥ Check box alignment**
+
+You can choose whether to align the placeholder text to the right or left of the check box.
+
+**⑦ Tooltip text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
 .. _select2:
+
 
 Radio
 --------------------
@@ -599,11 +617,7 @@ format, the selected item will be displayed.
 
 In **Field Properties**, make sure that all the selected radio buttons are assigned the same ID.
 
-For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. In the example shown below, the IDs of all the items are set to the same "question 1".
-
-.. figure:: resources/radio-items-should-have-same-ID_web.png
-   :alt: Example of Setting a Radio Field
-   :width: 700px
+For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. I
 
 **② Who can fill this out**
 
@@ -628,7 +642,13 @@ The black circle set as the default style, and you can change it to another styl
 
 You can select the style of each field that is not selected.
 
-**⑥ Tooltip Text**
+
+**⑥ Radio button alignment**
+
+You can choose whether to align the placeholder text to the right or left of the radio button.
+
+
+**⑦ Tooltip Text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -820,6 +840,31 @@ Text displayed as a help message before entering information.
 **⑦ Tooltip Text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
+
+
+
+.. _hyperlink2:
+
+Hyperlink
+--------------------
+
+This field is used for inserting a hyperlink. If the hyperlink is linked to a web address, the page opens with a new tab or window.
+
+**Field Properties**
+
+.. figure:: resources/hyperlink-component-properties_web.png
+   :alt: Setting Numeric Field Properties
+   :width: 250px
+
+
+**① Text to display**
+
+Enters the text to be displayed for the hyperlink.
+
+**② Address**
+
+Enters the address of the hyperlink.
+
 
 
 .. _camera2:

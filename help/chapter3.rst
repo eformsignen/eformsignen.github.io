@@ -29,7 +29,9 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
 1. Go to the **New from my file** menu.
 
-   |image1|
+   .. figure:: resources/en-new-from-my-file-dashboard.png
+      :alt: New from my file in the dashboard
+      :width: 700px
 
 
 2. Upload the document file you want. The supported file types are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff with a maximum size of 9MB.
@@ -47,7 +49,9 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
 4. Add the fields each participant will fill in and then set the field properties on the right.
 
-   |image4|
+   .. figure:: resources/en-new-from-my-file-design-form.png
+      :alt: Design form in New from my file
+      :width: 700px
 
 5. In the Add recipients step, you can add contact information such as email and phone number and set **Recipient options** for each participant.
 
@@ -284,11 +288,21 @@ more information, refer to `Template Web Form Designer <chapter6.html#template_w
 
 1. Click and go to **New from template** in the dashboard or the sidebar menu.
 
-   |image14|
+.. figure:: resources/en-new-from-template-dashboard-new.png
+   :alt: New from template in the dashboard
+   :width: 700px
 
-2. Click the create icon(|image15|) of the template you want to create a document from.
+2. From the dashboard you can click the Create icon of the template you want to create a document from to create a document. As well, you can click the Bulk icon to create multiple documents from the template.
 
-   |image16|
+.. figure:: resources/en-new-from-template-new-dashboard.png
+   :alt: Creating a document by selecting a template
+   :width: 700px
+
+You can also click **New from template** and then click the Create icon of the template you want to create a document from in the **New from template** page. As well, you can click the Bulk icon to create multiple documents from the template.
+
+.. figure:: resources/en-new-from-template-dashboard.png
+   :alt: New from template page
+   :width: 700px
 
 3. If you create a document and then click the **Send** button on the top right corner, then the **Send document** pop-up window will be displayed.
 
@@ -476,7 +490,7 @@ view the documents you created.
 .. |image14| image:: resources/en_menu-startfromtemplate.png
    :width: 700px
 .. |image15| image:: resources/create-icon.PNG
-   :width: 30px
+   :width: 20px
 .. |image16| image:: resources/startfromtemplate-create.png
    :width: 700px
 .. |image17| image:: resources/bulk-creation-table-blue-section.png

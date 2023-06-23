@@ -135,6 +135,10 @@ using eformsign.
 
    -  **Reviewer:** The step for requesting a person to review a document. A reviewer cannot fill in fields and can only approve or reject documents.
 
+   -  **Need to view:** The step for opening documents only.
+
+
+
    .. figure:: resources/en_workflow_new.png
       :alt: Workflow Steps
       :width: 400px
@@ -319,3 +323,4 @@ The e-application process using eformsign is as follows:
 
 
 .. |image1| image:: resources/menu_icon.png
+   :width: 15px
