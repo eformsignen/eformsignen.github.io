@@ -15,8 +15,8 @@ Anyone can use eformsign to easily convert existing documents into electronic do
    Templates can be created only by the company administrator or members with the template management permission, and the templates on the screen are shown only to members who are given template usage permission for a given template.
 
    You can create a template using Web Form Designer or Form Builder (MS Office add-in).
-   For more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__ and
-   `Tempate Form builder <chapter7.html#template_fb>`__.
+   For more information, refer to `Web Form Designer <chapter6.html#template_wd>`__ and
+   `Form builder <chapter7.html#template_fb>`__.
 
 .. tip::
 

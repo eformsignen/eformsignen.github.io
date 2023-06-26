@@ -109,7 +109,6 @@ Workflow Overview
 --------------------
 
 A **workflow** is a document process from its creation to completion.
-+
 
 The workflow for each template can be set by template managers in **Template settings** > **Workflow**.
 

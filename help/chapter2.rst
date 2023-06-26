@@ -68,7 +68,7 @@ The description of each menu is as follows:
 
       -  **Manage custom fields:** You can add and configure custom fields such as company, group, and member information.
 
--  **Integration:** Only the company administrator can access this menu.You can connect eformsign with external services.
+-  **Integration:** Only the company administrator can access this menu. You can connect eformsign with external services.
 
       -  **Cloud storage:** You can connect your Dropbox, Google Drive, or Box accounts to store completed documents in external cloud storages.
 
@@ -580,7 +580,7 @@ A member who has been granted the **Template editing** permission for a template
       :width: 700px
 
 
-4. Select the groups or members you want to grant the **Template usage** permission and the **Template usage** permission. Note that you can only select members (not groups) as template editors.
+4. Select the groups or members you want to grant the **Template usage** permission and the **Template editing** permission. Note that you can only select members (not groups) as template editors.
 
 5. Click the **Save** button.
 
@@ -981,6 +981,7 @@ In this tab, you can view the history of all the stamps used. You can view infor
 .. |image8| image:: resources/en-manage-company-profile-edit2.png
    :width: 500px
 .. |image9| image:: resources/config-icon.PNG
+   :width: 20px
 .. |image10| image:: resources/template-create-icon.PNG
    :width: 20px
 .. |image11| image:: resources/template-bulkcreate-icon.PNG
