@@ -57,6 +57,7 @@ MS Office files such as Word, Excel, and PowerPoint can be uploaded as a templat
 
 
 
+
 **Template settings**
 You can set the details for the template.
 

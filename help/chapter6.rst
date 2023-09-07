@@ -1,969 +1,1193 @@
-.. _template_wd:
+.. _formbuilder:
 
-===============================================
-Creating templates using Web Form Designer
-===============================================
+===================================================
+Introduction to Form Builder (MS Office Add-in)
+===================================================
 
-------------------
-About Templates
-------------------
 
-Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
+Form Builder (MS Office add-in), also known as OZ in Office, is a form editor
+that converts a document created using Microsoft Office into an
+electronic document containing fields. By using OZ in
+Office, you can easily convert existing Excel, Word, and PowerPoint
+forms such as contracts, applications, and agreements into electronic
+documents.
 
+Previously, converting Excel, Word, or PowerPoint documents into
+electronic documents required the use of an IDE (Integrated Development
+Environment) needing a high degree of programming knowledge for use.
+Now, with OZ in Office, anyone with the ability to use Microsoft Office
+can easily create electronic documents.
 
-.. tip::
+OZ in Office, provided as a Microsoft Office add-in, is easy to use as
+it is displayed as a ribbon menu and contains various fields
+including signature, check box, text box, camera, and voice.
 
-  **❗Why use templates?**
+The process of creating electronic documents using OZ in Office's
+fields is as follows:
 
-   Using templates is useful for documents that need to be sent often or regularly. If a tempate is registered once, you don't have to upload a document file whenever you need to send a document. You can just easily create and sent documents using the template. 
+.. figure:: resources/ozinoffice-flow_1.png
+   :alt: OZ in Office Usage Flow
+   :width: 750px
 
 
-.. note::
 
-   For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
+-------------------------------------------------------------
+Downloading and Installing Form Builder (MS Office Add-in)
+-------------------------------------------------------------
 
+1. Login to eformsign and then click the menu icon
+(|image1|) on the top left corner of the dashboard screen to open the
+sidebar menu. Then, click the **Download eformsign form builder** button
+at the bottom.
 
+.. figure:: resources/en_formbuilder_download.png
+   :alt: Location of the Download eformsign form builder button
+   :width: 750px
 
-**How to create a template with Web Form Designer**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. note::
+2. The **Download eformsign form builder** page will be displayed, as
+shown below. Click the **Download form builder** button at the bottom of
+the page.
 
-   For more information about Web form designer, please refer to `Web Form Designer <chapter4.html#webform>`__.
+.. figure:: resources/formbuilder_download_2.png
+   :alt: eformsign Form Builder Download Page
+   :width: 750px
 
 
-You can easily create a template by uploading a file online.
 
-.. note::
+3. After clicking the form builder executable file you downloaded, the
+following installation screen will be displayed. Select the **Complete**
+option and then click the **Next** button.
 
-   The file formats supported: pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, tiff
+.. figure:: resources/formbuilder_wizard_1.png
+   :alt: Form Builder Installation Screen (1)
+   :width: 500px
 
-   File size: up to 9MB
 
+4. When the installation proceeds, the following screen is displayed.
 
-1. Drag and drop the file that you want to create as a template, or click the **Select a file** button to select a file from your computer and upload it.
+.. figure:: resources/formbuilder_wizard_2.png
+   :alt: Form Builder Installation Screen (2)
+   :width: 500px
 
-   .. figure:: resources/managetemplate-upload-en.png
-      :alt: Manage Templates > Uploading a File (1)
-      :width: 700px
 
+5. Click the **Finish** button to close the installation screen.
 
-   .. figure:: resources/en-managetemplate-upload-popup.png
-      :alt: Manage Templates > Uploading a File (2)
-      :width: 500px
+.. figure:: resources/formbuilder_wizard_3.png
+   :alt: Form Builder Installation Screen (3)
+   :width: 500px
 
-2. Add participants and set the role for each participant.
 
-   .. figure:: resources/en-template-settings-wfdesign0.png
-      :alt: Dragging a field
-      :width: 500px
 
+6. Check whether Form builder (MS Office add-in) was installed properly by running MS
+Office (Word, Excel, PowerPoint). If **OZ in Word/Excel/PowerPoint** is
+displayed as below, then it was installed properly.
 
-3. Select a field that you want to add and drag it onto the uploaded file.
+.. figure:: resources/en_components-in-word.png
+   :alt: OZ in Word Ribbon Menu
+   :width: 750px
 
-   .. figure:: resources/en-template-settings-wfddesign.png
-      :alt: Dragging a field
-      :width: 700px
 
+-------------------------------------------------
+Form Builder (MS Office add-in) Menu Layout
+-------------------------------------------------
 
-4. Adjust the size and position of the field.
+If you run Microsoft Office Excel, Word, or PowerPoint after installing Form builder (MS Office add-in), you can see that the **OZ in Excel, OZ in Word, or OZ in PowerPoint** tab is added to the OZ in Office ribbon menu.
 
-5. Set the details in the **Properties** tab after clicking the field.
+.. figure:: resources/ozinoffice.png
+   :alt: Microsoft Office OZ in Office Ribbon Menu
+   :width: 750px
 
-6. View the document by clicking the **Preview** button.
 
-7. Click the **Next** button after you finish designing the form. The **Create template** page will be displayed.
 
+1. **File:** Allows to execute (preview) the document as an electronic form, upload the document to eformsign as a template, or download an electronic form from eformsign.
 
+2. **Property:** Sets the field properties including ID, and Items.
 
-**Template settings**
+3. **Input:** Adds fields used in templates.
 
-You can set the details for the template.
+4. **Info:** Adds the necessary fields in order to have information such as user and date to be automatically entered into templates.
 
--  **General**
+5. **Drawing:** Draws fields in the location and size you want. **Drawing** is supported only in Word and PowerPoint.
 
-   Sets the template name, abbreviation, document name, document number, etc.
+6. **Deletion:** Deletes fields after selecting fields and then clicking the **Delete** button.
 
--  **Set permissions**
+7. **Window:** Allows to open the **Properties** tab of the selected field or display selected fields in the **Selection** tab.
 
-   Grants members or groups the permission to use and edit the template and to create documents from it and manage them.
+8. **Help:** Checks the version of Form builder (MS Office add-in) and performs updates.
 
--  **Workflow**
 
-   Sets the workflow for the document from its creation to completion.
+-------------------------
+Overview of Fields
+-------------------------
 
--  **Field**
+Fields are used to create fields in electronic documents that users can enter information. Many different fields including signature, check, date, and text are provided in Form builder (MS Office add-in), and each field can be configured in detail by using the **Field Properties** tab.
 
-   Sets the default values and auto-filled values for fields.
-
--  **Notification settings**
-
-   Sets the recipients, and the content of the notification messages for notifying changes in the status of documents created from the template.
-
-
-.. _workflow:
-
---------------------
-Workflow Overview
---------------------
-
-A **workflow** is a document process from its creation to completion.
-
-The workflow for each template can be set by template managers in **Template settings** > **Workflow**.
-
-By default, all workflows have **Start** and **Complete** steps. You can add as many **Reviewer**, and **Participant** steps as you want for each workflow.
-
-.. figure:: resources/en-workflow-steps.png
-   :alt: Workflow Steps
-   :width: 400px
-
-
-
--  **Participant**
-
-   Signs and fills out documents.
-
--  **Reviewer**
-
-   Only approves or rejects documents.
-
--  **Need to view**
-
-   Only views documents.
-
-
-
-
-
-.. _template_setting:
-
--------------------
-Template Settings
--------------------
-
-You can set detailed configurations for each template you create.
-
-.. note::
-
-   Only the **Company administrator** or **Template manager** can perform this action.
-
-   This action can be performed in web browsers of computers and mobile devices, and also in mobile apps.
-
-1. Go to **Manage templates** in the sidebar menu.
-
-2. Click the name or settings icon (|image1|) of the template you want.
-
-   |image2|
-
-.. _general_wd:
-
-General
-~~~~~~~~~~~~
-
-.. figure:: resources/en-create-template.png
-   :alt: Template Settings > General
-   :width: 600px
-
-
-**Configure basic settings for the template**
--------------------------------------------------------
-
-
-Set basic information about the template including the template name, category, validity period, etc.
-
-**① Template name**
-   The template name will be displayed in the **Manage templates** and **New from template** pages.
-
-   The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.
-
-   .. figure:: resources/en-template-name.png
-      :alt: Template Name
-      :width: 250px
-
-
-**② Template abbreviation**
-   A short name that briefly descries the template. It is recommended to use two or three words.
-
-   **Template abbreviation** can be used in the document number, document name, mail template, etc.
-
-
-**③ Category**
-   Category is used to sort templates by type. With the category name, you can filter templates in the **Manage templates** menu, and can filter documents in the **Documents** menus and the **Manage documents** menu. You can choose from an existing category or create a new category by entering a new name.
-
-   You can set multi-level categories with a separator ( **/** ). For example, if you set a category as **HR Team/Vacation**, the Vacation category in the HR category is created.
-
-**④ Description**
-   Enter additional comments about the template. This description is displayed under the template name in **New from template.**
-
-**⑤ Template validity period**
-   Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
-
-   If you check **No expiry date**, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.
-
-
-
-**Document settings**
--------------------------------------
-
-Configure additional settings including document naming rules for documents created from the template.
-
-**⑥ Document naming rule**
-   Sets the document name when creating the document from the template. If a document naming rule is not set, the template name will be the document name.
-
-**⑦ Allow document name change**
-   If **Allow document name change** is checked, the document creator can change the document name.
-
-**⑧ Generate a document number**
-   If **Generate a document number** is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.
-
-   |image3|
-
-**⑨ Skip pop-up window when sending documents**
-   Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
-
-
-
-.. _document_naming:
-
-General > Setting the Document Naming Rule
-----------------------------------------------------
-
-In **Template settings**, you can set the document naming rule for documents created from a template.
-
-**Document naming rule**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can make a piece of information entered into a document or document-related information to be automatically entered into the document name. If you set the document naming rule, then the document name is automatically entered based on the information of the document. As well, you can see this name in all document pages (In progress, Action required and Completed) and the **Manage document** page.
-
-
-.. figure:: resources/en-manage-documents-document-list.png
-   :alt: Manage Documents > Documents List
-   :width: 700px
-
-
-
-**How to set the document naming rule**
-++++++++++++++++++++++++++++++++++++++++++++++
-
-.. figure:: resources/en-document-naming-rule.png
-   :alt: Template Settings > Setting the Document Naming Rule
-   :width: 600px
-
-
-1. In the sidebar menu, click the **Manage templates** menu.
-
-2. Click on the settings icon (|image4|) of the desired template to go to the **Template settings** page.
-
-3. Set the desired naming rule in the **Document naming rule** section in the **General** tab by adding reserved words.
-
-4. Click the **Save** button on the top right corner to save the changes.
-
-.. _reserved_words:
-
-**How to use reserved words**
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-.. figure:: resources/en-document-naming-rule-reserved.png
-   :alt: Setting Document Naming Rules Using Reserved Words
-
-
--  **Component ID**\ : Adds a piece of information in the document into the document name.
-
-   Click the **Add reserved word** button, and click **Component ID**\  to display the list of field IDs and then select the desired field ID. The information in that particular field will be added to the document name.
-
-
--  **General info**\ : Adds document-related information into the document name.
-
-   Click **General info**\  to display the list of information type and then select the desired information. Information types are as follows.
-
-
-   +-----------------------+-----------------------------------------------+
-   | Information types     | Description                                   |
-   +=======================+===============================================+
-   | Current_date          | The date in which the document is created     |
-   |                       | (e.g. Feb 20, 2020)                           |
-   +-----------------------+-----------------------------------------------+
-   | Current_time          | The time in which the document is created     |
-   |                       | (e.g. 02:59 pm)                               |
-   +-----------------------+-----------------------------------------------+
-   | Current_datetime      | The date and time in which the document is    |
-   |                       | created (e.g. Feb 20, 2020, 02:59 pm)         |
-   +-----------------------+-----------------------------------------------+
-   | Creator_ID            | The ID of the member who created the document |
-   +-----------------------+-----------------------------------------------+
-   | Creator_name          | The name of the member who created the        |
-   |                       | document                                      |
-   +-----------------------+-----------------------------------------------+
-   | Creator_dept          | The department of the member who created the  |
-   |                       | document                                      |
-   +-----------------------+-----------------------------------------------+
-   | Creator_company Name  | The name of the company in which the member   |
-   |                       | who created the document belongs to           |
-   +-----------------------+-----------------------------------------------+
-   | Template_name         | The template name entered in Template         |
-   |                       | settings > General                            |
-   +-----------------------+-----------------------------------------------+
-   | Template_abbreviation | The template abbreviation entered in Template |
-   |                       | settings > General                            |
-   +-----------------------+-----------------------------------------------+
-   | Company               | The company name entered in Manage company >  |
-   |                       | Company profile                               |
-   +-----------------------+-----------------------------------------------+
-   | Company_address       | The address entered in Manage company >       |
-   |                       | Company profile                               |
-   +-----------------------+-----------------------------------------------+
-   | Company_contact_no    | The contact information entered in Manage     |
-   |                       | company > Company profile                     |
-   +-----------------------+-----------------------------------------------+
-   | Company_              | The business registration number entered in   |
-   | registration_no       | Manage company > Company profile              |
-   +-----------------------+-----------------------------------------------+
-   | Company_homepage      | The homepage URL entered in Manage company >  |
-   |                       | Company profile                               |
-   +-----------------------+-----------------------------------------------+
-
-.. tip::
-
-   Check the status of the **Allow document name change** field.
-
-   Even if the document naming rule is set, if the **Allow document name change** option is checked, the document creator can arbitrarily change the document name. If you do not want the document name to be changed, then make sure to uncheck the **Allow document name change** option.
-
-.. figure:: resources/en-allow-document-name-change.png
-   :alt: Checking the Allow Document Name Change Option
-
-
-
-.. _docnumber_wd:
-
-General > Generating and Viewing a Document Number
------------------------------------------------------------
-
-You can set a document number for documents created in eformsign. You
-can set it so that a document number is generated automatically for each
-template, and can select one of four document numbering formats. The
-document number can be generated in the document using the document
-field. You can also see a separate column in the document list and
-search documents by the document number.
-
-
-**Generating a document number**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-.. figure:: resources/en-generate-document-number.png
-   :alt: Setting a Document Number
-   :width: 600px
-
-
-
-1. In the sidebar menu, click the **Manage templates** menu.
-
-2. Click on the settings icon (|image5|) of the desired template to go to the **Template settings** page.
-
-3. Tick the **Generate a document number** checkbox in the **General** page.
-
-   -  **Selecting a document numbering rule**
-
-   .. figure:: resources/en-generate-document-number-select.png
-      :alt: Selecting a Document Numbering Rule
-
-
-   **▪ Serial number**
-      Generated in the format of the document creation order
-
-      E.g. 1, 2, 3...
-
-   **▪ Year_serial number**
-      Generated in the format of the document creation year + document creation order
-
-      E.g. 2020_1, 2020_2...
-
-   **▪ Template_serial number**
-      Generated in the format of the template abbreviation + document creation order
-
-      E.g. Application 1, Application 2...
-
-   **▪ Template_year_serial number**
-      Generated in the format of the template abbreviation + document creation year + document creation order
-
-      E.g. Application 2020_1, Application 2020_2...
-
-   -  **Choosing when to number a document**
-
-   ▪ **Start**
-      A number is generated when a document is created.
-
-   ▪ **Complete**
-      A number is generated when a document has been completed after going through all the steps in the workflow.
-
-4. Click the **Save** button at the top right corner of the page to apply your changes.
-
-**Viewing a document number**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A document number can be viewed directly on a document using the document field and can also be viewed in the document list.
-
--  **Viewing a document number directly on a document**
-
-   You can generate a document number directly on a document by using the document number field.
-
-   1. Upload a file on Web form designer.
-
-   2. Add the document field in the location where the document number will be displayed.
-
-      |image6|
-
-   3. Click the **Next** button to go to **Template settings.**
-
-   4. In **Template settings > General,** tick the **Generate a document number** checkbox.
-
-   5. Select a document numbering rule.
-
-   6. Click the **Save** button to save the settings.
-
--  **Viewing a document number in the Completed and Manage documents pages**
-
-   .. figure:: resources/en-completed-document-box-docno.png
-      :alt: Completed - Document List
-      :width: 700px
-
-
-   .. figure:: resources/en-completed-document-list-docno-column.png
-      :alt: Completed - Document List - Document Number
-      :width: 700px
-
-
-   A document number can be viewed in the Documents menus (In progress, Action required, and Completed), and the Manage documents menu (requires document management permission).
-
-   1. In the sidebar, click the **Completed** or **Manage documents** menu.
-
-   2. Click the column settings icon at the top right corner of the page.
-
-   3. Check **Document number** in the column list.
-
-      |image7|
-
-   4. Check that the **Document number** column is added.
-
--  **Searching for a document using a document number**
-
-   |image8| 
-
-   You can search a document by its document number via advanced search.
-
-   1. Go to the **Completed** or **Manage documents** page.
-
-   2. Click the **Advanced** button at the top right corner of the page.
-
-   3. Select **Document number** among the search conditions.
-
-   4. Type in the word or number to be searched.
-
-   5. View the search results.
-
-.. _auth_wd:
-
-Set Permissions
-~~~~~~~~~~~~~~~~~~~~
-
-You can set the permissions for template usage, template editing, and document management.
-
-.. figure:: resources/en_template-settings-permissions.png
-   :alt: Template Settings > Set Permissions
-   :width: 700px
-
-
-
-**Template usage**
-
-This permission is needed to create documents from the template, and you can select **Allow all** or **Group or member** to allow all the members or some members in the company to create documents from the template.
-
-**Template editing**
-
-This permission is needed to edit the template, and you can select **Members** to allow editing the template. 
-
-**Document management**
-
-You can select groups or members to open documents created from the template, void completed documents, or remove documents permanently. You can grant permission for all or some of the three options described below.
-
--  **Open all documents** (default): Default permission granted to a document manager and gives the permission to open all documents to authorized groups or members.
-
--  **Void documents** (optional): Permission for voiding completed documents when requested by the document creator.
-
--  **Remove documents** (optional): Permission to permanently remove documents from the system.
-
-
-.. _workflow_wd:
-
-Workflow Settings
+Field Types
 ~~~~~~~~~~~~~~~~~~~~~
 
-You can create or modify the workflow of the template by clicking the **Workflow** tab in the **Template settings**\  page.
+The fields provided in eformsign are as follows:
 
-.. figure:: resources/en-template-settings-workflow.png
-   :alt: Template Settings > Workflow
-   :width: 500px
+.. figure:: resources/en-components-in-excel.png
+   :alt: Field Types
+   :width: 730px
 
+Basic Fields
+----------------------
 
+-  `Check <#check>`__\ **:** Ticks a check box.
 
-**Adding steps to the workflow**
------------------------------------------
+-  `Radio <#select>`__\ **:** Selects an item among multiple items (can also be set to select multiple items).
 
-1. Go to the **Workflow** configuration page by clicking the **Workflow** tab.
+-  `Text <#text>`__\ **:** Enters short text (usually 1 to 2 words).
 
-2. Click the add button (|image10|) which is in between the **Start** and **Complete** steps.
+-  `Handwriting <#handwriting>`__\ **:** Allows to trace text shown on the background.
 
-3. Select the type of recipient you want to add.
+-  `Multiline <#text>`__\ **:** Enters long text with multiple lines.
 
-   |image11|
+-  `Number <#number>`__\ **:** Enters a number. 
 
+-  `Label <#label>`__\ **:** Sets the form ID.
 
-.. tip::
+-  `Combo <#combo>`__\ **:** Displays a drop-down menu that allows you to select an item.
 
-   **❗The difference between participant, reviewer, and need to view recipients**
+-  `Datetime <#date>`__\ **:** Enters a specific date.
 
-   Participants can sign and fill in the fields in the document while reviewers can only approve or reject the document and Need to view recipients can only view the document.
+-  `Numeric stepper <#numeric>`__\ **:** Enters a number.
 
+-  `Toggle <#toggle>`__\ **:** Switches to another value if two or more values are entered.
 
-4. When selected, a step is added to the workflow.
+-  `Signature <#signature>`__\ **:** Enters a signature.
 
-.. tip::
+-  `Company stamp <#companystamp>`__\ **:** Inserts a company stamp.
 
-   Participants can be added only in the **Design form** step. Up to 30 participants can be added. In the workflow, you can add as many steps as you want. 
-   You can adjust the order of steps by clicking and dragging a workflow step.
-   To delete a step, click **-** on the right side of the step button.
+-  `Camera <#camera>`__\ **:** Takes a photo using a camera or selects a photo from an album in devices with a built-in camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).
 
-   |image12|
+-  `Voice <#record>`__\ **:** Records audio in devices with a voice recording function.
 
+-  `Attachment <#attach>`__\ **:** Attaches a file.
 
 
-.. tip::
+Data Fields
+--------------------------
 
-  **Merge workflow steps**
+-  `User <#user>`__\ **:** Enters information of the document user.
 
-   You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+-  `Date <#usedate>`__\ **:** Enters the date in which the document is created or modified.
 
-  **Instructions:**
+-  `Document <#document>`__\ **:** Enters the document number or ID in the document itself.
 
-   1. Go to Manage templates > Template settings> Configure > Workflow.
 
-   2. Click the workflow step you want to merge with (when merging two steps, you must click the bottom one).
+Accessing Field Properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   3. Click the Merge signing order icon displayed at the top left corner of the selected workflow step. The bottom and top workflow steps will be merged together.
+Every field has its own detailed settings called **OZ Field Properties**. The properties of each field can be accessed by
+selecting a field and then clicking the property icon or the **Properties** menu.
 
-   4. You can also split workflow steps by clicking the same icon.
+.. figure:: resources/checking-components-properties.png
+   :alt: Accessing Field Properties
+   :width: 730px
 
-
-   .. figure:: resources/merge_workflow_steps.png
-      :alt: Merge workflow steps (before)
-
-   .. figure:: resources/merge_workflow_steps2.png
-      :alt: Merge workflow steps (after)
-
-
-   ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
-
-
-
-
-**Configuring the details of each workflow step**
-----------------------------------------------------------
-
-You can click a step to set the details such as **Properties** for each workflow step.
-
-
-
-**Start: Step for creating a document**
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-
-   |image14|
-
-
-   -  **Limit the number of documents**: Set the maximum number of documents that can be created from the template.
-
-   -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.
-
-   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
-
-   -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
-
-
-.. tip::
-
-   **How to generate QR code when using the 'Create documents from URL' option**
-
-   When creating a signing link by using the 'Create document form URL' option, you can generate a QR code instead of a signing link.  You can upload the QR code image on a website or share it with others so the people can create and submit documents by scanning the image using the camera on a mobile device.
-
-   Select the **Create documents from URL** option in the Start step of the workflow and click the
-   **Generate QR code** button to download the image file.
-
-   
-   .. figure:: resources/en-workflow-step-start-QRcode.png
-      :alt: Workflow > Generate QR code
-      :width: 400px
-
-
-
-**Participant: Recipient who can sign or fill out a document**
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-.. figure:: resources/en-workflow-participant-properties.png
-   :alt: Workflow > Participant step properties
-   :width: 700px
-
--  **Notification**\: Select how recipients can receive notifications and edit their content. 
-
-   - By default, notifications are sent by email. You can also select SMS to send notifications via text messages.
-
-   - **Edit notification message:** You can edit the notification message for each step.  
-
--  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
-   
-
--  **Automatically fills in the recipient's contact info**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be filled in automatically based on the information the recipient enters into the document.
-
-
--  **Identify verification**\: Require non-member recipients to verify their identity when opening the document.   
-
-   - **Require document password**\: Set a verification password that recipients must enter before opening the document. The password can be the recipient name, a value entered directly by the sender, or the value of a field in the document.
-
-            .. figure:: resources/en-doc-require-doc-password-setting.png
-               :alt: Require document password
-               :width: 400px    
-      
-   - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window.
-      
--  **Hide files or sheets:** Allows you to choose which files/sheets in the document are hidden from the recipient, if the form consists of two or more files. This option cannot be applied to company members.
 
 
 .. note::
 
-   **Selecting a participant/reviewer/need to view in a workflow step**
-
-   For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.
-
-   .. figure:: resources/en-workflow-participant-selected.png
-      :alt: Workflow > Recipients
-      :width: 700px   
-
-   -  **Sender can add/skip recipient**: Allows the sender to enter the contact information of the recipients before sending the document. If the sender does not enter the contact information, this step is skipped.
-
-   -  **Sender needs to add recipient**: Requires the sender to enter the contact information of recipients before sending the documents. If the sender does not enter the contact information, the document is not sent.
-
-   -  **Group or member**: Allows you to pre-select recipients. You can only select groups or members in your company.
-
-   -  **Recipient of a previous step**: Allows you to select the person of a previous step including the Start step.
+   All fields must have an ID. An ID is automatically generated when you create a field, but it is recommended to rename it to
+   something you can easily recognize. For example, you can rename the ID of a field for entering John Doe, Jane Doe, etc. as 'name'. By
+   doing so, it is easier to identify fields when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
 
 
 
+Adding fields
+~~~~~~~~~~~~~~~~~~~~~~
 
-**Reviewer: Recipient who can only approve or reject a document**
+**Method 1: Adding Fields by Clicking a Field Type**
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. Open Word or PowerPoint and select the location in the document where you want to add the field.
 
-.. figure:: resources/en-workflow-reviewer-properties.png
-   :alt: Workflow > Reviewer
+.. figure:: resources/ozinword_1.png
+   :alt: Method 1: Adding Fields by Clicking a Field Type in Word or PowerPoint (1)
    :width: 700px
 
--  **Step name**\: Sets the step name.
-
--  **Notification**\: Selects how recipients can recive notification messages and edit their content.
-
-   - Edit notification message: Edits the notification messages sent to recipients for each step.
-
--  **Document expiration**\: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).
-
-.. _hide:
 
 
-**How to collaborate with other recipients in a workflow step**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2. Click the field type you want to add in the ribbon menu of **OZ in Word** or **OZ in PowerPoint**.
 
-.. tip::
-
-   
-   If you add multiple recipients in a workflow step, all recipients of the step can sign or review the document.
-
-   .. figure:: resources/collaborate_workflow.png
-      :alt: All recipients can sign or review the document
-      :width: 500px
-
-   However, multiple recipients cannot work on a document simultaneously. Only one recipient can work on a document at a time, and all others are locked out from the document and can only preview it.
-
-   .. figure:: resources/document_locked.png
-      :alt: Document locked
-      :width: 500px
+.. figure:: resources/ozinword_2.png
+   :alt: Method 1: Adding Fields by Clicking a Field Type in Word or PowerPoint (2)
+   :width: 700px
 
 
-   Once the recipient working on the document saves it as a draft by clicking the see more button (⋮) and then clicking **Save as draft**, then other recipients can work on the document.
+3. Adjust the size of the field.
 
-   .. figure:: resources/save_as_draft_collaborate.png
-      :alt: Save as draft
+.. figure:: resources/ozinword_3.png
+   :alt: Method 1: Adding Fields by Clicking a Field Type in Word or PowerPoint (2)
+   :width: 700px
+
+
+
+**Method 2: Adding Fields by Drawing a Field**
+
+1. Open Word or PowerPoint and go to the **OZ in Word/Powerpoint** ribbon menu.
+
+2. Click the **Drawing Component** icon and select the field type you want to add in the drop-down menu displayed.
+
+.. figure:: resources/ozinword_2_1.png
+   :alt: Method 2: Adding Field by Drawing a Field in Word or PowerPoint (1)
+   :width: 700px
+
+
+
+3. Add the field in the position and size you want.
+
+.. figure:: resources/ozinword_2_2.png
+   :alt: Method 2: Adding Fields by Drawing a Field in Word or PowerPoint (2)
+   :width: 700px
+
+
+Deleting fields
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Select the field you want to delete and then click the **Delete** icon (|image2|) in the **OZ in Office** menu. You can also select and delete multiple fields.
+
+How to Use Each Field Type
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+eformsign provides various types of fields such as check box, combo box, text, and signature through Microsoft Office’s **OZ in Office** ribbon menu.
+
+All fields of **OZ in Office** have both common and unique properties. You can view both the common and unique properties of fields in the **OZ Component Properties** tab. Common properties
+include ID and Tooltip Text, and the meaning of each property is as follows:
+
+-  **ID:** Unique ID that identifies each field. You can use the field ID to set a field to be required or
+   inaccessible when setting fields in the workflow and to download data in CSV format.
+
+-  **Tooltip Text:** In Windows, the text in the Tooltip Text box of a field is displayed in the form of a speech bubble when hovering the mouse over the field. In mobile, the text is displayed on the quick type bar when clicking on the field.
+
+.. note::
+
+   To open the **OZ Component Properties** window, click on a field and then click the **Properties** icon (|image3| ) in the **OZ in Office** ribbon menu.
+
+.. note::
+
+   The Tooltip Text feature is not provided for the Info group including User, Date, Document, and Label field types.
+
+The description of each field type provided in eformsign is as follows.
+
+
+.. _signature:
+
+Signature
+--------------------
+
+This field is used for signing a signature on a document.
+
+|image14|
+
+Clicking the signature area displays the **Signature** pop-up which allows you to sign a signature by drawing, entering text, or using a
+previously registered signature.
+
+|image15|
+
+**Field Properties**
+
+.. figure:: resources/Signature-component-properties.png
+   :alt: Setting Signature Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the signature field. For example, the ID of the field can be ‘signerSignature’ for contract signers.
+
+**② Signature Type**
+
+Selects the signature type to be used when signing.
+
+-  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
+
+-  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
+
+-  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
+
+
+.. note::
+
+   If there is a signature or initial added on eformsign, then it will be automatically entered in the signature area when a signature area is
+   clicked. However, if there is no added signature or initial, then a regular **Signature** pop-up will be displayed when a signature area is clicked. If more than one signature type is selected, then the buttons for each signature type will be shown as below.
+
+   .. figure:: resources/select-signature-type.png
+      :alt: Signature type selection
       :width: 200px
-   
 
-   ❗Note that when there are multiple recipients in a workflow step, if any one of them submits a document, it is sent to the next step in the workflow. Therefore, when you finish working on a document, you should save it as as a draft and only send the document when everyone has finished working on it.
+.. Tip::
 
+   In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a
+   stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** tab in the **Signature** pop-up, and then select a stamp image and click **OK**.
 
-**How to hide files in a document**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**③ Signing method:**
 
-.. tip::
+If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.
 
-   
-   **Using the 'Hide files or sheets option'**
+**④ Signature Pen Thick**
 
-   If you add multiple files to a document, you can hide certain files from recipients in a workflow step. If you upload multiple files to a document, then the **Hide files or sheets** option appears in the **Properties** tab of workflow steps in **Template settings** where you can choose to hide or show each file.
-   
+Sets the signature pen thickness.
 
-   ❗Note that the 'Hide files or sheets' option is only available when sending a document to non-member recipients.
+**⑤ Signature Pen Color**
 
-   **Instructions**
+Sets the signature pen color.
 
-   1. Go to **Sidebar menu  Manage templates**.
-   2. Click the **Settings icon (⚙)**\ of the desired template.
-   3. Go to **Configure > Workflow**.
-   4. Select the desired **recipient** step. 
-   5. Select the **Hide files or sheets** option in **Properties** on the right. 
-   6. For each file or Excel sheet, select one of the options below.
+.. Tip::
 
-      - **Required:** The file or sheet is shown to the recipient.
+   You can set the signature date to be automatically entered in documents that require signature, such as electronic contracts and electronic agreements.
 
-      - **Optional:** The document creator can choose whether to show or hide the file or sheet to the recipient.
+   1. Open the document file (Word, Excel, PowerPoint) to be converted into an electronic form or create a new document.
 
-      - **Hide:** The file or sheet is hidden from the recipient.
+   2. Add a Signature field in the area of the document to be signed.
 
-   .. figure:: resources/en-hide-setting.png
-      :alt: Hide files or sheets
+   3. Enter the ID of the Signature field in the **Component Properties** tab. For example, the ID can be named ‘employeeSignature’.
+
+   4. Add the Date (not to be confused with Datetime) field where the signature date will be entered.
+
+   5. Open the **Component Properties** tab of the Date field.
+
+   6. Select the **Date Type** as **Last modified date of the content**.
+
+   7. Enter the ID of the Signature field field in the Input Component ID field on the bottom. In this case, it would be ‘employeeSignature’.
+
+   .. figure:: resources/date-component-properties.png
+      :alt: Date field properties
       :width: 500px
 
-
-**Complete: Step in which a document is finally completed**
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ※ You can select the format of date to be displayed on the Date field by selecting the desired date format in the **Component Properties** tab.
 
 
-   |image20|
+.. _companystamp:
 
-   -  **Step name**\: Change the name of the step. The default name is ‘Complete’.
+Company stamp
+--------------------
 
-   -  **Backup completed documents in external cloud storages**: Allow the document to be stored in external cloud storages connected to eformsign by the administrator or company managers.
+The company stamp field is used for inserting a company stamp that is added to eformsign onto a document. Company stamps can be added in the **Manage company > Manage company stamp** menu and they can only be used by members who have been granted permission to use them. Also, the history of company stamp usage is recorded in the **Manage company stamp** menu.
 
-   -  **Timestamp the document when completed**: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.
+.. figure:: resources/en-form-builder-components_companystamp.png
+   :alt: Company stamp
 
-.. _field_wd:
+.. figure:: resources/en-form-builder-components_companystamp_properties.png
+   :alt: Company stamp properties
 
-Field
-~~~~~~~~~~
 
-In the **Field** menu, you can set the default values or auto-fill values for fields in the template, and adjust the order of the fields.
+.. _text:
 
-.. figure:: resources/en-template-settings-field.png
-   :alt: Template Settings > Field
+Text and Multiline
+--------------------
+
+Both Text and Multiline fields are used to create text fields. The Text field is suitable for short text with 1 to 2 words, and the Multiline field is suitable for long text with more than 1 line.
+
+|image9|
+
+**Component Properties**
+
+.. figure:: resources/text-component-properties.png
+   :alt: Setting Text and Multiline Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the text/multiline field. For example, the ID of the field in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.
+
+**② Max Length**
+
+Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters.
+
+**③ Keyboard Type**
+
+Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as smartphones and tablets.
+
+**④ Show Password Characters**
+
+This option can be set only in the text field. By checking this
+option, the password is hidden with the password symbol (●) when
+entering text. The password is also hidden with the password symbol in
+PDFs, and can only be seen when downloaded in the CSV format.
+
+**⑤ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a
+field.
+
+
+.. _handwriting:
+
+
+Handwriting
+--------------------
+
+The handwriting field is used to trace a pre-written text.
+
+You can type in the text to be displayed on a document in which recipients can trace.
+
+.. figure:: resources/handwriting-component-fb.png
+   :alt: Handwriting field
+
+
+.. figure:: resources/handwriting-component-example.png
+   :alt: Handwriting field example
+
+**Field propertites**
+
+.. figure:: resources/handwriting-component-properties_web.pnghandwriting-component-properties_fb.png
+   :alt: Setting handwriting field properties
+
+
+**① ID**
+
+Enters the ID of the handwriting field.
+
+
+**② Pen Thickness**
+
+Sets the pen thickness.
+
+**③ Pen Color**
+
+Sets the pen color.
+
+**④ Show Word Tracing**
+
+Allows you to type in the text that will be displayed on the handwriting field.
+
+
+.. _number:
+
+Number
+--------------------
+
+Enters a number.
+
+.. figure:: resources/en_number-component-fb.png
+   :alt: Number field
+
+**Field properties**
+
+.. figure:: resources/en_number_property_fb.png
+   :alt: Number field properties
+
+
+**① ID**
+
+Sets the ID of the number field.
+
+**② Allow negative value**
+
+Allows to enter a negative value. 
+
+**③ Maximum Value, Minimum Value**
+
+Sets the minimum or maximum value that can be entered. 
+
+.. caution:: 
+
+   **Important!**
+
+   If you enter a value that is lower than the minimum value set, then the value is changed to the minimum value. If you enter a value that is higher than the maximum value set, then the value is changed to the maximum value. 
+
+**④ Number of decimal places**
+
+Sets the number of decimal places that can be entered. The number of decimal places that can be entered is from 0 to 10.
+
+**⑤ Show thousands separator**
+
+Automatically marks the value entered with a comma separated by thousands.
+
+**⑥ Prefix, Suffix**
+
+Sets the prefix/suffix required for a number to be entered automatically. For example, if you need to enter "10,000 dollars in total," set the prefix to "total" and the suffix to "dollars".
+
+
+
+.. _label:
+
+Label
+--------------------
+
+This field is used for setting the form ID of a document.
+
+**Field Properties**
+
+.. figure:: resources/label_property.png
+   :alt: Setting Label Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Sets the label field ID.
+
+
+.. _check:
+
+Check
+--------------------
+
+The **Check** field is used to check whether an item is checked or not. This field is similar to the **Radio** field, but it is used for checking the status of an item (whether it
+is checked or not) while the **Radio** field is used for checking which item among multiple items is checked.
+
+|image4|
+
+When data is downloaded in the CSV format, the **Check** field’s input value is displayed as follows:
+
+-  When the item is checked: true
+
+-  When the item is not checked: false
+
+In Word and PowerPoint, the **Check** field is shown as a rectangular shape. Make sure to enter data inside the rectangular shape.
+
+**Field Properties**
+
+.. figure:: resources/check-component-properties-1.png
+   :alt: Setting Check Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.
+
+**② Check Style**
+
+You can specify the style of each cfield in **Field Properties**.
+The check box is set as the default style, and you can change it to another style (radio button or red circle).
+
+The below example shows how check boxes are displayed according to the selected style.
+
+|image5|
+
+.. _select:
+
+Radio
+--------------------
+
+The Radio field is used for checking which radio button is selected among multiple items. When data is downloaded in the CSV format, the selected item will be displayed.
+
+|image6|
+
+In Word and PowerPoint, the radio field is shown as a rectangular shape. Make sure to enter data inside the rectangular shape.
+
+**Field Properties**
+
+.. figure:: resources/Radio-component-properties.png
+   :alt: Setting Radio Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+In **Field Properties**, make sure that all the selected radio buttons are assigned the same ID.
+
+For example, if there are six choices available in a multiple choice question, assign "question1" as the ID for all of them. In the example shown below, the IDs of all the items are set to the same "question 1".
+
+.. figure:: resources/radio-items-should-have-same-ID.png
+   :alt: Example of Setting a Radio Field
    :width: 700px
 
 
-You can set the default value of a field to be the value saved in company/group/member information in **Manage custom fields**. You can also choose it to be the value entered recently or a value entered manually.
 
-.. tip::
+**② Check Style**
 
-   **How to configure auto-fill**
+You can choose the style of the Radio field in **Field Properties**. The default style is the **Circle**, and you can change it to another style (check box and radio button).
 
-   You can save information that are frequently entered into a document so that they can be used for auto-filling later.
+**③ Multiselectable**
 
-   For example, you can pre-save information about your company or group (such as department name, leader, and representative number) and information about the document creator (including name and contact details). You can add items for related fields and set the default values in **Manage company > Manage custom fields**.
+Checking the **Multi-selectable** option allows you to select multiple items. If you select more than one item, then when data is saved, each
+item is separated with a comma (,).
 
-   1. In the **Manage custom fields** screen, add a field.
+**④ Uncheckable**
 
-   2. Go to the **Manage templates** menu.
+Checking the **Uncheckable** option allows you to deselect a selected item by clicking it again.
 
-   3. Click the **Template settings** icon.
+**⑤ Tooltip Text**
 
-   4. Go to the **Field** menu.
-
-   5. Enter the default value for the field that you want to be auto-filled.
-
-   6. After completing all the settings, click the **Save** button.
-
-.. _noti_wd:
-
-Notification Settings
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can select the recipients of status notification messages, and view and edit the messages for documents created from the template.
+Displays the description in Tooltip Text when you hover the mouse over a field.
 
 
-**Document status notifications**
+.. _combo:
 
-You can select who will receive status notifications for documents created from the template. You can also preview the following notification message types: approved, reviewed and signed, rejected, voided, and corrected. As well, you can edit and preview the notification messages for completed documents.
+Combo
+--------------------
 
-.. figure:: resources/template-setting-notification-channel.png
-   :alt: Notification settings
+The Combo field is used when you need to select one of multiple items.
 
+|image7|
+
+If you click a combo field, a list of items is displayed as follows:
+
+|image8|
+
+**Field Properties**
+
+.. figure:: resources/combo-component-properties.png
+   :alt: Setting Combo Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the Combo field. For example, the ID of the field for selecting the favorite color can be 'favoriteColor’.
+
+**② Items**
+
+Enters the items you want. You can separate the items by pressing Enter.
 
 .. note::
 
-   When the **Document creator** option is checked but the **Step handler** option is unchecked, a status notification is sent to the person who originally created the document.
+   If you want to display a message such as ‘Please select a color’ in a combo box in a document for recipients to view, then enter the
+   message at the top of the list of items in the combo box and select it before sending the document.
 
-   When the **Document creator** option is unchecked but the **Step handler** option is checked, status notifications are sent to people who have processed the document before the current step, except the document creator.
+**③ Allow Empty Value**
 
-   When the **Document creator** and **Step handler** options are both checked, status notifications are sent to both the document creator and the people who have processed the document before the current step.
+Checking the **Allow Empty Value** option allows you to deselect a selected item. Empty Value can be allowed in the following ways:
 
-   When the **Document creator** and **Step handler** options are both unchecked, no notifications will be sent for that status.
+-  PC: Right-click on the field and select the **Allow Empty Value** option in the pop-up menu.
+
+-  Mobile: Click the Trash can icon.
+
+**④ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a field.
+
+
+.. _toggle:
+
+Toggle
+--------------------
+
+This field is used for indicating a specific status such as ON/OFF. If you use this field, then the input value
+is switched according to a defined order whenever the field is clicked.
+
+|image12|
+
+You can change the status to **Good** or **Bad** by clicking the fields as follows:
+
+|image13|
+
+**Field Properties**
+
+.. figure:: resources/toggle-component-properties.png
+   :alt: Toggle Field Properties
+   :width: 250px
 
 
 
-.. caution::
+**① ID**
 
-      ❗When the **Document creator** option for **When the document is completed** is checked and an external recipient creates and submits a document via a URL, the external recipient must enter his/her email in which a notification will be sent to when the document is completed.
+Enters the ID of the toggle field. For example, the ID of the field for the first inspection item can be named ‘inspection1’.
+
+**② Items**
+
+Enters the list of items that will be toggled whenever the toggle field is clicked. You can separate each item by pressing Enter.
+
+**③ Allow Empty Value**
+
+Checking this option allows you to clear the item displayed on the toggle field. When you select a toggle field, you can toggle to
+another item but cannot clear the item displayed on the field.
+However, by checking this option, you can clear the item displayed on the field as described below:
+
+-  PC: Right-click on the field to display the pop-up menu and then select the **Initialize Input Data** menu.
+
+-  Mobile: Click the Trash icon.
+
+**④ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a field.
 
 
-**Editing document status notifications**
+.. _date:
 
-.. figure:: resources/template-setting-notification-edit2.png
-   :alt: Editing document status notifications
+Datetime
+--------------------
+
+This field is used for entering a date. Clicking the field displays a date selection window where you can select the date you want.
+
+|image10|
+
+**Field Properties**
+
+.. figure:: resources/datetime-component-properties_02.png
+   :alt: Setting Datetime Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the Datetime field. For example, the ID of the field for selecting the vacation start date can be named ‘vacationStartDate’.
+
+**② Format**
+
+Sets the format in which date is displayed. The default setting is date_yyyy-MM-dd.
+
+-  **yyyy:** Displays the year.
+
+-  **MM:** Displays the month. Must be in uppercase.
+
+-  **dd:** Displays the days.
+
+For example, if you want to display the date in the format of ‘15-02-2020’, then enter **dd-MM-yyyy** in the Format field.
+
+**③ Minimum Date/Maximum Date**
+
+Sets the range of dates that can be selected in the field by specifying the minimum and maximum dates.
+
+**④ Display Today for Empty Value**
+
+Checking this option automatically enters the date (the date in which the document is opened) when the document is opened. This option is
+checked by default when you add a **Datetime** field. You can change the date by clicking the field.
+
+**⑤ Allow Empty Value**
+
+Checking this option allows you to clear the number displayed on a Numeric stepper field. In a Datetime field, once you select a date, you
+can change it to another date but cannot clear the date. However, checking this option allows you to clear the date displayed on the
+Datetime field. If no date is selected in the Datetime field but the **Display Today for Empty Value** option is checked, then the date
+field is automatically filled in with the date in which the document is opened.
+
+-  PC: Right-click on the field to display the pop-up menu and then select the **Initialize Input Data** menu.
+
+-  Mobile: Click the Trash icon.
+
+**⑥ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a field.
+
+.. _numeric:
+
+Numeric stepper
+--------------------
+
+This field is used for entering a number.
+Clicking the field displays two arrows on the right, and you can
+increase or decrease the number by clicking them. In PCs, you can
+directly enter the desired number into the field by using a
+keyboard. In smartphones and tablets, you can scroll through the list of
+numbers and select the one you want.
+
+|image11|
+
+**Field Properties**
+
+.. figure:: resources/number-component-properties.png
+   :alt: Setting Numeric stepper Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the numeric stepper field. For example, the ID of the
+field for entering the number of people in a reservation can be
+named ‘peopleCount’.
+
+**② Unit of Change**
+
+Enters the unit of number that will increase/decrease the number
+whenever the up/down arrow icon is clicked. For example, if the ‘Unit of
+Change’ is set to 100, then when you click the up arrow icon (▲), the
+number is increased by 100 such as 200, 300, 400, and so on.
+
+**③ Minimum/Maximum Value**
+
+Sets the range of numbers that can be entered into the field by
+specifying the minimum and maximum values. For example, for the date of
+birth, setting the Minimum Value to 1900, Maximum Value to the current
+year, and the Unit of Change to 1. Also, if you enter a value that is
+lower/higher than the Minimum/Maximum Value, then the Minimum/Maximum
+Value will be automatically entered. For example, if the Maximum Value
+is set to 100 and you enter 101, then the number will automatically
+change to 100.
+
+**④ Allow Empty Value**
+
+Checking the **Allow Empty Value** option allows you to clear the number
+displayed on the numeric stepper field. After entering a number in a numeric stepper
+field, you can change the number again, but cannot clear the number.
+However, by checking this option, you can clear the number displayed on
+the field as described below.
+
+-  PC: Right-click on the field to display the pop-up menu and then select the **Initialize Input Data** menu.
+
+-  Mobile: Click the Trash icon.
+
+**⑤ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a field.
+
+
+
+
+.. _camera:
+
+Camera
+--------------------
+
+This field is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) on a
+document. In PCs without a camera, clicking the field displays a window for selecting a desired image file.
+
+|image16|
+
+If the size of the selected image is larger than the size of the text box, then it is resized to fit the field.
+
+.. note::
+
+   For the device with a built-in camera, camera feature will be executed, and for the devices with no camera, a window for selecting an image file will be displayed.
+
+|image17|
+
+**Field Properties**
+
+.. figure:: resources/Camera-component-properties-.png
+   :alt: Setting Camera Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the Camera field. For example, the ID of the field that takes the photo of a driver’s license can be ‘driverLicense’.
+
+**② Tooltip Text**
+
+Displays the description in the Tooltip Text when you hover the mouse over a field.
+
+.. _record:
+
+Voice
+--------------------
+
+This field is used for storing recorded voice. You can set the maximum recording time and you can also configure the
+settings to allow users to only listen to the voice recording.
+
+When you add a Voice field in OZ in Office, you can record voice or play a voice recording as follows:
+
+|image18|
+
+.. note::
+
+   If the recording time limit is set to 1 or higher, recording is completed automatically at the time set (unit: seconds).
+
+   In the case of ActiveX viewer, the recording playback UI is supported from Windows 8 and later.
+
+   In PCs, the Voice field works only when a voice recording device is connected to a PC.
+
+**Field Properties**
+
+.. figure:: resources/record_component.png
+   :alt: Setting Voice Field Properties
+   :width: 250px
+
+
+**① ID**
+
+Enter the ID of the Voice field. For example, the ID of the field that plays voice recordings can be named 'Record1'.
+
+**② Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a field.
+
+.. _attach:
+
+Attachment
+--------------------
+
+This field is used for attaching a file to a document. When attaching a file to a document by using the Attachment
+field, the file will be attached at the very end of the document as a new page.
+
+|image19|
+
+The types and sizes of files that can be attached are as follows:
+
+-  File type: PDF, JPG, PNG, and GIF
+
+-  File size: Up to 5MB
+
+**Field Properties**
+
+.. figure:: resources/Attachment-component-properties.png
+   :alt: Setting Attachment Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the Attachment field. For example, the ID of the field for attaching a resume can be named ‘myResume’.
+
+**② Tooltip Text**
+
+Displays the description Tooltip Text when you hover the mouse over a field.
+
+
+.. _user:
+
+User
+--------------------
+
+This field is used for entering the information of the user who created or modified a document. The user’s basic
+information such as name or contact information, or custom field information is automatically entered into the user field based on the settings.
+
+|image20|
+
+**Field Properties**
+
+.. figure:: resources/user-component-properties-.png
+   :alt: Setting User Field Properties
+   :width: 250px
+
+
+
+**① ID**
+
+Enters the ID of the user field. For example, the ID of the field that displays the name of the document creator can be named ‘documentCreator’.
+
+**② User Type**
+
+-  **Document Creator:** Displays the information of the user who created the document.
+
+-  **Current User:** Displays the information of the user who has most recently opened or modified the document.
+
+-  **Last modified user of the content:** Displays the information of the user who entered information in a specific field.
+
+If you select **Last modified user of the content**, then the **Input Component ID** field will be displayed. In this field, enter the ID of the field that will display the information when triggered.
+
+|image21|
+
+.. note::
+
+   You need to have company administrator or template manager permission to perform this action.
+
+.. note::
+
+   To automatically fill in the signer’s name in the User field, create a Signature field and then name the ID (for example,
+   signer1). Then, create the User field that will display the signer’s name when triggered and name the ID (for example,
+   signer1name). Then, select **Last modified user of the content** under User Type and enter the ID of the Signature field (in this case, signer1) under **Input Component ID**.
+
+**③ User Field Name**
+
+This field allows to select the type of member information that will be displayed. You can select basic information in the **Manage member > Member info** menu of the member or information in a custom field.
+
+-  Basic member information types: Name, ID, Department, Position,
+   Mobile, and Telephone
+
+.. note::
+
+   You need to have company administrator permission to change basic member information.
+
+   To modify a member's basic information, login to eformsign and go to the **Manage company > Manage members** menu. Select a member in the member list and edit the information in the **Member info tab** on the right. Then, click the **Save** button.
+
+.. _usedate:
+
+Date
+--------------------
+
+This field is used to automatically enter the date in which a document is created or modified. The date in which the document is created, the date in which the document is accessed, or the date in which the content of a field is last modified is automatically entered, according to the date type selected.
+
+|image22|
+
+**Field Properties**
+
+.. figure:: resources/date-component-properties_.png
+   :alt: Setting Date Field Properties
+   :width: 250px
+
+
+**① ID**
+
+Enters the ID of the Date field. For example, the ID of the field that displays the date in which the document is signed can be named ‘signed date’.
+
+**② Format**
+
+Sets the format in which date will be displayed.
+
+-  **yyyy:** Displays the year.
+
+-  **MM:** Displays the month. Must be in uppercase.
+
+-  **dd:** Displays the day.
+
+For example, if you want to display the date in the format of ‘15-20-2020’, then enter dd-MM-yyyy in the Format field.
+
+**③ Date Type**
+
+-  **Date created:** Displays the date in which the document is created.
+
+-  **Date accessed:** Displays the most recent date in which the document is modified or opened.
+
+-  **Last modified date of the content:** Displays the date in which the information of a specific field is filled in.
+
+If **Last modified date of the content** is selected, the **Input Component ID** field is displayed. In this field, enter the ID of the field that will display the information when triggered.
+
+|image23|
+
+.. note::
+
+   You need to have company administrator or template manager permission to perform this action.
+
+.. note::
+
+   If you want the signature date of a signer to be displayed automatically in a contract, first add a Signature field and then name the ID (e.g. 'contractSign'). Then, add a Date fieldwhich will display the signature date when the signature is signed and name the ID (e.g. signDate). Then, select **Last modified date of the content** under Date Type and enter the ID of the signature field (in this case ‘contractSign’) in the **Input Component ID** field.
+
+.. _document:   
+
+Document
+--------------------
+
+This field is used for entering document-related information in the document itself. You can select either one of the document ID or document number.
+
+|image24|
+
+The document ID is a unique document ID assigned in the system, so it does not require separate settings. For settings related to document number, upload a template and then go to **Template settings > General**.
+
+**Field Properties**
+
+.. figure:: resources/document-domponent-properties.png
+   :alt: Setting Document Field Properties
+   :width: 250px
+
+
+**① ID**
+
+Enters the ID of the document field. For example, the field ID can be ‘docNum’ for document number.
+
+**② Document info type**
+
+Selects the type of information that will be used.
+
+-  **Document ID:** A unique ID containing 32 digits of alphanumeric characters assigned to all documents in the system. E.g. 0077af27a98846c8872f5333920679b7.
+
+-  **Document no.:** The document number set in **Template settings > General.** For information on how to set a document number, go to `Generating and viewing a document number <chapter6.html#docnumber_wd>`__.
+
+.. _upload_form_file:
+
+---------------------------
+Upload Form File
+---------------------------
+
+Form files created using OZ in Office are uploaded in the following order:
+
+1. Click the **Execute** icon (|image25|) in the File group. The login page will be displayed as a pop-up window.
+
+.. figure:: resources/form_upload_login.png
+   :alt: Login Page
+   :width: 730px
+
+
+
+2. After you log in, the document converted to a form will be displayed as a preview.
+
+.. figure:: resources/upload_preview.png
+   :alt: Preview Form File
+   :width: 730px
+
+
+
+3. Click the **Upload form file** button or click the **Upload** (|image26|) icon in the ribbon menu. The **Template list** page with the **Create template** card will be displayed.
+
+.. figure:: resources/upload_list.png
+   :alt: Template List Screen
+   :width: 730px
+
+
+
+4. Click the **Create template** card. The screen for configuring the template settings will be displayed. Click the settings tabs on the left to configure the settings for the template and then click the Save button on the top right corner to save and create a template.
+
+.. figure:: resources/upload_save.png
+   :alt: Create Template Screen
+   :width: 730px
+
+
+--------------------------------
+Configuring Template Settings
+--------------------------------
+
+After uploading a template, you can configure additional settings for documents created from the template such as the template name, document number, and workflow.
+
+1. Login to eformsign.
+
+2. Go to the **Manage templates** menu.
+
+3. Click the Template settings icon (|image27|) of the desired template.
+
+-  **General:** Sets the template name, abbreviation, document name, document number, etc.
+
+-  **Set permissions:** Sets the permissions for who can create documents created from the template and who can open, void, or
+   permanently remove documents created from the template.
+
+-  **Workflow:** Sets the steps of the document workflow from **Start** to **Complete**.
+
+-  **Field:** Sets the field default values, auto-filled values, etc.
+
+-  **Notification settings:** Sets the notification settings for documents created from the template.
+
+4. After configuring all settings, click the **Save** button to save the settings.
+
+.. important::
+
+   In order to create documents from a template, you need to first save and deploy the template first. If you save the template but don't deploy it, then the template will not be shown in the **New from template** page of the members with template usage permission.
+
+.. note::
+
+   For a detailed explanation of templates, please refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
+
+.. |image1| image:: resources/menu_icon.png
+.. |image2| image:: resources/delete_icon1.png
+.. |image3| image:: resources/property-icon.png
+.. |image4| image:: resources/form-builder-components_check.png
+   :width: 730px
+.. |image5| image:: resources/check-component-style-settings.png
    :width: 600px
-
-
-- **Select notification template:** The document status notification template is set to the default template, but you can change it to another template if you create one. For information on how to create a new notification template, refer to `Notification Template Management <chapter9.html#notification-template>`_.  
-
-- **Email title:** Sets the title of the email sent when a document is completed.
-
-- **SMS message:** Sets the message when a document completion notification is sent via SMS. A link for viewing the document is sent together with the message.
-
-.. note::
-
-   The message size can be a maximum of 65 bytes (65 characters).
-
-- **File attachments and methods:** Select the files to be send together with the document completion notification and select the filees to be attached.
-
-   - **Download link:** A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.
-
-   - **Attachment:** PDF file(s) are included in the email. However, if the size of the document exceeds 10 MB or file(s) are sent via SMS, then a download link is included instead. 
-
-   .. caution::
-
-      **Attachment** If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
-
-- **Edit body:** Edits the body of the notification message.
-
-
-
-
----------------------------
-Menus for Each Template
----------------------------
-
-Go to the **Manage templates** page, click the menu icon (|image24|) right next to the template name to see the menus that can be set for each template.
-
-|image25|
-
--  **Duplicate**: Duplicates the template. The template's file and
-   detailed settings for the template will be duplicated. You will have
-   a chance to change and save the detailed settings before the template
-   is duplicated.
-
--  **Delete**: Deletes the template. Once a template is deleted, you can
-   no longer create documents from that template.
-
--  **Deactivate**: When a template is deactivated, it will not be shown
-   in the **New from template** page for other members.
-
--  **Change owner**: You can change the owner of the template. By
-   default, the person who created the template is automatically
-   assigned as the template owner. If you want to make changes later,
-   you can change the owner to another member by clicking this menu. The
-   new template owner can be selected among members who have permission
-   to manage templates.
-
-   |image26|
-
-
--  **Reset document numbering rule**: You can reset the starting serial
-   number of the document number. The new starting serial number will be
-   applied to all documents created afterwards.
-
-   .. caution::
-
-      Take caution in that two documents with the same document number can be created.
-
-   |image28|
-
--------------------
-Search Templates
--------------------
-
-In the **Manage templates** page, you can lookup and search templates by template category.
-
-|image29|
-
-**① Lookup Templates**
-   Click the box **(1)** to lookup templates by template status and category. Click **X** to return to view all categories.
-
-   By default, templates are saved in the Sample category. You can create categories in **Template settings > General.**
-
-**② Search templates**
-   You can search templates by entering keywords for the template name and category name.
-
-**③ Sort**
-   You can select the template sorting order in ascending or descending by template name or category.
-
-.. |image1| image:: resources/config-icon.PNG
-   :width: 20px
-.. |image2| image:: resources/template-settings.png
-   :width: 700px
-.. |image3| image:: resources/en-generate-document-no.png
-.. |image4| image:: resources/config-icon.PNG
-   :width: 20px
-.. |image5| image:: resources/config-icon.PNG
-   :width: 20px
-.. |image6| image:: resources/en-document-number-component.png
-   :width: 750px
-.. |image7| image:: resources/en-document-number-list.png
-.. |image8| image:: resources/en-manage-template-search-advanced.png
-   :width: 700px
-.. |image9| image:: resources/template-setting-auth-doc-new.PNG
-   :width: 700px
-.. |image10| image:: resources/workflow-addstep-plus-button.png
-   :width: 20px
-.. |image11| image:: resources/en-template-settings-workflow-added-step.png
-   :width: 700px
-.. |image12| image:: resources/template_settings_workflow.png
+.. |image6| image:: resources/form-builder-components.png
+   :width: 730px
+.. |image7| image:: resources/form-builder-components_Combo.png
+   :width: 730px
+.. |image8| image:: resources/combo-1.png
    :width: 500px
-.. |image13| image:: resources/en-template-settings-workflow-item.png
-   :width: 700px
-.. |image14| image:: resources/en-template-settings-workflow-start.png
-   :width: 700px
-.. |image15| image:: resources/en-template-settings-workflow-approver.png
-   :width: 700px
-.. |image16| image:: resources/en-template-settings-approver-display-name.png
+.. |image9| image:: resources/text-and-muliline-components.png
+   :width: 730px
+.. |image10| image:: resources/form-builder-components_datetime.png
+   :width: 730px
+.. |image11| image:: resources/form-builder-components_numeric.png
+   :width: 730px
+.. |image12| image:: resources/form-builder-components_toggle.png
+   :width: 730px
+.. |image13| image:: resources/toggle.png
+   :width: 400px
+.. |image14| image:: resources/form-builder-components_signature.png
+   :width: 730px
+.. |image15| image:: resources/signature.png
+   :width: 400px
+.. |image16| image:: resources/form-builder-components_camera.png
+   :width: 730px
+.. |image17| image:: resources/camera1.png
    :width: 350px
-.. |image17| image:: resources/en-template-settings-workflow-internal.png
-   :width: 700px
-.. |image18| image:: resources/en-template-settings-workflow-external.png
-   :width: 700px
-.. |image19| image:: resources/workflow-step-external-recipient-property-pw.png
-   :width: 500px
-.. |image20| image:: resources/en-template-settings-workflow-completed.png
-   :width: 700px
-.. |image21| image:: resources/en-template-settings-edit-notification-messages.png
+.. |image18| image:: resources/record1.png
    :width: 400px
-.. |image22| image:: resources/en-template-settings-edit-notification-messages-popup.png
-   :width: 700px
-.. |image23| image:: resources/en-template-settings-notification-status.png
-   :width: 500px
-.. |image24| image:: resources/template-hamburgericon.png
-   :width: 10px
-.. |image25| image:: resources/en-manage-template-menu-icon-wd.png
-   :width: 700px
-.. |image26| image:: resources/en-manage-template-menu-icon-change-owner.png
-.. |image27| image:: resources/en-manage-template-menu-icon-document-manager.png
-.. |image28| image:: resources/template-manage-menu-wfd-numbersetting.png
-   :width: 400px
-.. |image29| image:: resources/en-manage-template-search.png
-   :width: 700px
+.. |image19| image:: resources/form-builder-components_attachment.png
+   :width: 730px
+.. |image20| image:: resources/form-builder-components_user.png
+   :width: 730px
+.. |image21| image:: resources/user-input-certain-component.png
+   :width: 250px
+.. |image22| image:: resources/form-builder-components_date.png
+   :width: 730px
+.. |image23| image:: resources/date-component-connecting-other-component.png
+   :width: 250px
+.. |image24| image:: resources/document-component-in-list.png
+   :width: 730px
+.. |image25| image:: resources/excute_button.png
+.. |image26| image:: resources/upload_button.png
+.. |image27| image:: resources/config-icon.PNG

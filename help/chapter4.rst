@@ -9,6 +9,7 @@ Web Form Designer is a web form editor that allows you to create electronic docu
 and adding fields. You can upload files in the **New from template** or the **New from my file** menus to create documents using Web Form Designer. After uploading a file, simply click and add the fields available in the left tree menu of Web form designer and set the properties of each field. This is all you need to do to create documents with an ease.
 
 
+
 .. note::
 
    File formats that can be uploaded are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff. The maximum file size supported is 9MB.

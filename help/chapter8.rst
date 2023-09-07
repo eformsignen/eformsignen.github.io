@@ -35,7 +35,6 @@ Aside from the three document menus, there is another menu for managing document
    :width: 700px
 
 
-
 .. note::
 
    The layout of the Documents menus are very similar to each other, but the documents that are displayed differ according to the document status or granted permission to users.

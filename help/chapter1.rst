@@ -16,6 +16,7 @@ companies' members and their permissions, configure detailed notification settin
    :width: 700px
 
 
+
 The eformsign solution also provides an electronic signature feature which
 allows you to sign e-signatures on electronic documents.
 
