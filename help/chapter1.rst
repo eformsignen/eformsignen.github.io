@@ -3,7 +3,7 @@ Introduction to eformsign
 
 **Overview**
 
-eformsign is an electronic document service that allows anyone to easily create electronic documents from paper documents and utilize various data stored in electronic documents. You can easily create electronic documents by uploading your files onto eformsign and converting the files to electronic forms via eformsign's Web Form Designer feature. You can also use eformsign's Microsoft Office add-in to create electronic forms from documents created using Microsoft Office programs including Word, Excel, and PowerPoint.
+eformsign is an e-document service that allows anyone to easily create electronic documents from paper documents and utilize various data stored in electronic documents. You can easily create electronic documents by uploading your files onto eformsign and converting the files to electronic forms via eformsign's Web Form Designer feature. You can also use eformsign's Microsoft Office add-in to create electronic forms from documents created using Microsoft Office programs including Word, Excel, and PowerPoint.
 
 eformsign allows you to create a workflow for each template according to your company's business process. You can flexibly set a document signing process for internal documents requiring approvals as well as for external documents such as contracts, agreements, and applications. Furthermore, detailed configurations such as notifications and required input fields can be set for each workflow step or recipient, and the progress status of documents is logged as history. Moreover, an audit trail certificate is provided for the prevention of document forgery and falsification.
 
