@@ -45,6 +45,8 @@ The description of each menu is as follows:
 
 -  **Manage documents:** Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.
 
+-  **Manage bulk sent documents:** Only document managers can access this menu and can view documents bulk created from templates in which you are given permission. However, the company administrator can view and manage all documents.
+
 -  **My signature:** You can create and add your signature to be used when signing a document.
 
 -  **Manage templates:** Only template managers can access this menu. You can view the template list and configure the template settings.
@@ -505,6 +507,60 @@ Document managers can access the **Manage documents** menu, and can view, downlo
       :alt: Add document manager settings
       :width: 700px
 
+
+   .. note::
+
+      **Document manager settings**
+
+      Set the conditions for granting document permission for the document manager.
+
+      - **Document permission:**   A condition that filters the documents the document manager can manage by document creator and document type. For example, if you select a member named John Doe under document creator and All documents under Document type, then the document manager has the permission to manage all the documents created by John Doe.
+
+         - **Document creator** 
+         
+            A condition that filters documents by document creators. You can select all members, groups, or individual members.
+
+            - **Advanced**: The Document creator (advanced) option is displayed when you click Advanced under Document creator. It searches for documents whose creator information matches or contains the keywords.
+
+               .. figure:: resources/docmanager-advancedsetting-creator.png
+                  :alt: Manage permissionas > Document manager settings pop-up > Document creator (advanced)
+                  :width: 400px
+
+         - **Document type**
+            - **All documents:** All documents created by the document creators selected above.
+            - **All documents created from a template:** All documents created by the document creators selected above that are created from a template.
+            - **All documents created without a template:** All documents created by the document creators selected above that are created using **New from my file**.
+            - **Template list:** All documents created by the document creators selected above from the selected templates that are created from the selected templates.
+
+               .. figure:: resources/docmanager-setting-doctype.png
+                  :alt: Manage permissionas > Document manager settings pop-up > Document type
+                  :width: 400px
+
+            - **Advanced:** The Field (advanced) option is displayed when you click Advanced under Document type. It searches for documents containing a particular field within a specific period/range or searches for documents containing a specific field with a specific value.
+
+               .. figure:: resources/docmanager-advancedsetting-doctype.png
+                  :alt: Manage permissions > Document manager settings pop-up > Field (advanced)
+                  :width: 400px
+         
+         📣 The Advanced option allows you to add/delete multiple conditions and filter with an “OR” condition. Also, it cannot be applied in **Manage bulk sent documents**.
+               
+
+      - **Give permissions:** Check the permissions you want to give to the document manager for the filtered documents.
+
+         -  **Open and download:** The default permission granted to the document manager. The document manager can open and download all documents filtered using **Document creator** and **Document type** conditions.
+
+         -  **Void:** Permission to void documents (excluding completed ones) created by a selected document creator, if the document creator requested the document to be voided
+
+         -  **Remove:** Permission to permanently remove documents from eformsign.
+  
+   .. tip::
+
+      You can click the below **+ Add a document permission** button to add more document conditions.
+
+         .. figure:: resources/en-add-document-permission.png
+            :alt: Add a document permission
+            :width: 400px
+
 Set the permissions and the scope of the permissions to be granted to the document manager.
 
    - **Filter documents:**  A condition that filters the documents the document manager can manage by document creator and document type. For example, if you select a member named John Doe under document creator and All documents under Document type, then the document manager has the permission to manage all the documents created by John Doe.
@@ -523,21 +579,7 @@ Set the permissions and the scope of the permissions to be granted to the docume
          
          - **Template list:** All documents created by the document creators selected above from the selected templates that are created from the selected templates.
 
-   - **Give permissions:** Check the permissions you want to give to the document manager for the filtered documents.
 
-      -  **Open and download:** The default permission granted to the document manager. The document manager can open and download all documents filtered using **Document creator** and **Document type** conditions.
-
-      -  **Void:** Permission to void documents (excluding completed ones) created by a selected document creator, if the document creator requested the document to be voided.
-
-      -  **Remove:** Permission to permanently remove documents from eformsign.
-  
-   .. tip::
-
-      You can click the below **+ Add a document permission** button to add more document conditions.
-
-         .. figure:: resources/en-add-document-permission.png
-            :alt: Add a document permission
-            :width: 400px
 
 
 

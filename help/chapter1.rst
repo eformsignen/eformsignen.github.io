@@ -162,7 +162,7 @@ using eformsign.
 
 -  **Document manager**
 
-   With this permission, a member can open, download, void (excluding completed documents), and permanently remove documents created from the templates the member has access to. Note that the document manager permission can be set for each template.
+   With this permission, a member can access the **Manage documents** menu and the **Manage bulk sent documents** menu to view, void, or permanently remove documents they have been granted permission. A document manager can be assigned by template or document.
 
 -  **Template user**
 

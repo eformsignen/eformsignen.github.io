@@ -77,7 +77,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter6.html">Introduction to Form Builder (MS Office Add-in)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Inboxes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
 </ul>
@@ -587,6 +587,7 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <li><p><strong>Require email/SMS verification</strong>: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients’ email address/mobile number and the recipients must enter the code in the identity verification window.</p></li>
 </ul>
 </li>
+<li><p><strong>Disable the decline feature:</strong> Blocks recipients from being able to decline documents.</p></li>
 <li><p><strong>Hide files or sheets:</strong> Allows you to choose which files/sheets in the document are hidden from the recipient, if the form consists of two or more files. This option cannot be applied to company members.</p></li>
 </ul>
 <div class="admonition note">
@@ -617,8 +618,31 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 </li>
 <li><p><strong>Document expiration</strong>: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).</p></li>
 </ul>
+<p id="hide"><strong>Need to view: Recipient who can only view a document.</strong></p>
+<hr class="docutils" />
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/workflow-needtoview-properties.png"><img alt="Workflow &gt; Need to view" src="../_images/workflow-needtoview-properties.png" style="width: 700px;" /></a>
+</figure>
+<ul>
+<li><p><strong>Step name</strong>: Sets the step name.</p></li>
+<li><p><strong>Notification</strong>: Selects how recipients can recive notification messages and edit their content.</p>
+<ul class="simple">
+<li><p>Edit notification message: Edits the notification messages sent to recipients for each step.</p></li>
+</ul>
+</li>
+<li><p><strong>Document expiration</strong>: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).</p></li>
+<li><p><strong>Select when to send the document to the next step</strong>: Selects the option in which the document is sent to the next step.</p>
+<ul class="simple">
+<li><p><strong>When the recipient views the document:</strong> The document is sent to the next step when the recipient of the Need to view step views the document.</p></li>
+<li><p><strong>Send the document regardless of whether the recipient views it or not:</strong> The document is sent to the next step regardless of whether the recipient of the Need to view step views the document.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/needtoview_option.png"><img alt="../_images/needtoview_option.png" src="../_images/needtoview_option.png" style="width: 300px;" /></a>
+</figure>
+</li>
+</ul>
 <section id="how-to-collaborate-with-other-recipients-in-a-workflow-step">
-<span id="hide"></span><h5><strong>How to collaborate with other recipients in a workflow step</strong><a class="headerlink" href="#how-to-collaborate-with-other-recipients-in-a-workflow-step" title="Link to this heading"></a></h5>
+<h5><strong>How to collaborate with other recipients in a workflow step</strong><a class="headerlink" href="#how-to-collaborate-with-other-recipients-in-a-workflow-step" title="Link to this heading"></a></h5>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you add multiple recipients in a workflow step, all recipients of the step can sign or review the document.</p>
@@ -805,7 +829,7 @@ applied to all documents created afterwards.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, FORCS CO., LTD. All rights reserved..</p>
+    <p>&#169; Copyright 2023, FORCS CO., LTD. All rights reserved..</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

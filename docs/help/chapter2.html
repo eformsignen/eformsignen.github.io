@@ -91,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter5.html">Creating templates using Web Form Designer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter6.html">Introduction to Form Builder (MS Office Add-in)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Menus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Inboxes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
 </ul>
@@ -157,6 +157,7 @@
 </li>
 <li><p><strong>Shared</strong>: Allows you to share your documents with others and view documents others members shared with you.</p></li>
 <li><p><strong>Manage documents:</strong> Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.</p></li>
+<li><p><strong>Manage bulk sent documents:</strong> Only document managers can access this menu and can view documents bulk created from templates in which you are given permission. However, the company administrator can view and manage all documents.</p></li>
 <li><p><strong>My signature:</strong> You can create and add your signature to be used when signing a document.</p></li>
 <li><p><strong>Manage templates:</strong> Only template managers can access this menu. You can view the template list and configure the template settings.</p></li>
 <li><p><strong>Manage company:</strong> Only company managers can access this menu. You can view and edit company information.</p>
@@ -503,6 +504,75 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en_adding-document-manager_settings.png"><img alt="Add document manager settings" src="../_images/en_adding-document-manager_settings.png" style="width: 700px;" /></a>
 </figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Document manager settings</strong></p>
+<p>Set the conditions for granting document permission for the document manager.</p>
+<ul>
+<li><p><strong>Document permission:</strong>   A condition that filters the documents the document manager can manage by document creator and document type. For example, if you select a member named John Doe under document creator and All documents under Document type, then the document manager has the permission to manage all the documents created by John Doe.</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Document creator</strong></p>
+<blockquote>
+<div><p>A condition that filters documents by document creators. You can select all members, groups, or individual members.</p>
+<ul>
+<li><p><strong>Advanced</strong>: The Document creator (advanced) option is displayed when you click Advanced under Document creator. It searches for documents whose creator information matches or contains the keywords.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-creator.png"><img alt="Manage permissionas &gt; Document manager settings pop-up &gt; Document creator (advanced)" src="../_images/docmanager-advancedsetting-creator.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl>
+<dt><strong>Document type</strong></dt><dd><ul>
+<li><p><strong>All documents:</strong> All documents created by the document creators selected above.</p></li>
+<li><p><strong>All documents created from a template:</strong> All documents created by the document creators selected above that are created from a template.</p></li>
+<li><p><strong>All documents created without a template:</strong> All documents created by the document creators selected above that are created using <strong>New from my file</strong>.</p></li>
+<li><p><strong>Template list:</strong> All documents created by the document creators selected above from the selected templates that are created from the selected templates.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/docmanager-setting-doctype.png"><img alt="Manage permissionas &gt; Document manager settings pop-up &gt; Document type" src="../_images/docmanager-setting-doctype.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</li>
+<li><p><strong>Advanced:</strong> The Field (advanced) option is displayed when you click Advanced under Document type. It searches for documents containing a particular field within a specific period/range or searches for documents containing a specific field with a specific value.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-doctype.png"><img alt="Manage permissions &gt; Document manager settings pop-up &gt; Field (advanced)" src="../_images/docmanager-advancedsetting-doctype.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>📣 The Advanced option allows you to add/delete multiple conditions and filter with an “OR” condition. Also, it cannot be applied in <strong>Manage bulk sent documents</strong>.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Give permissions:</strong> Check the permissions you want to give to the document manager for the filtered documents.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Open and download:</strong> The default permission granted to the document manager. The document manager can open and download all documents filtered using <strong>Document creator</strong> and <strong>Document type</strong> conditions.</p></li>
+<li><p><strong>Void:</strong> Permission to void documents (excluding completed ones) created by a selected document creator, if the document creator requested the document to be voided</p></li>
+<li><p><strong>Remove:</strong> Permission to permanently remove documents from eformsign.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can click the below <strong>+ Add a document permission</strong> button to add more document conditions.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/en-add-document-permission.png"><img alt="Add a document permission" src="../_images/en-add-document-permission.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</div>
 </li>
 </ol>
 <p>Set the permissions and the scope of the permissions to be granted to the document manager.</p>
@@ -530,25 +600,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>Give permissions:</strong> Check the permissions you want to give to the document manager for the filtered documents.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Open and download:</strong> The default permission granted to the document manager. The document manager can open and download all documents filtered using <strong>Document creator</strong> and <strong>Document type</strong> conditions.</p></li>
-<li><p><strong>Void:</strong> Permission to void documents (excluding completed ones) created by a selected document creator, if the document creator requested the document to be voided.</p></li>
-<li><p><strong>Remove:</strong> Permission to permanently remove documents from eformsign.</p></li>
 </ul>
-</div></blockquote>
-</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can click the below <strong>+ Add a document permission</strong> button to add more document conditions.</p>
-<blockquote>
-<div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-document-permission.png"><img alt="Add a document permission" src="../_images/en-add-document-permission.png" style="width: 400px;" /></a>
-</figure>
-</div></blockquote>
-</div>
 </div></blockquote>
 </section>
 <section id="permissions-for-each-template">
@@ -860,7 +912,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, FORCS CO., LTD. All rights reserved..</p>
+    <p>&#169; Copyright 2023, FORCS CO., LTD. All rights reserved..</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

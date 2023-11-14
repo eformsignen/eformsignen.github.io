@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2021, FORCS CO., LTD. All rights reserved.'
+copyright = '2023, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version

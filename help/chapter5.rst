@@ -639,6 +639,8 @@ You can click a step to set the details such as **Properties** for each workflow
       
    - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window.
       
+-  **Disable the decline feature:** Blocks recipients from being able to decline documents.
+
 -  **Hide files or sheets:** Allows you to choose which files/sheets in the document are hidden from the recipient, if the form consists of two or more files. This option cannot be applied to company members.
 
 
@@ -680,6 +682,34 @@ You can click a step to set the details such as **Properties** for each workflow
 -  **Document expiration**\: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).
 
 .. _hide:
+
+
+**Need to view: Recipient who can only view a document.**
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. figure:: resources/workflow-needtoview-properties.png
+   :alt: Workflow > Need to view
+   :width: 700px
+
+-  **Step name**\ : Sets the step name.
+
+-  **Notification**\ : Selects how recipients can recive notification messages and edit their content.
+
+   - Edit notification message: Edits the notification messages sent to recipients for each step.
+
+
+-  **Document expiration**\: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).
+
+
+-  **Select when to send the document to the next step**\ : Selects the option in which the document is sent to the next step.
+
+   - **When the recipient views the document:** The document is sent to the next step when the recipient of the Need to view step views the document.
+ 
+   - **Send the document regardless of whether the recipient views it or not:** The document is sent to the next step regardless of whether the recipient of the Need to view step views the document.
+
+   .. figure:: resources/needtoview_option.png
+      :width: 300px
 
 
 **How to collaborate with other recipients in a workflow step**

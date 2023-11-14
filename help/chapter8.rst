@@ -1,47 +1,42 @@
 .. _documents:
 
 ==================
-Document Menus
+Document Inboxes
 ==================
 
 ------------
 Documents
 ------------
 
-Documents are stored in the following three menus according to the document status:
+Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the In progress inbox in which you can select and send.
 
 
--  **In progress:** View the list of documents you have created or signed/approved that are incomplete.
+-  **In progress:** View the list of documents you created or signed/approved that are incomplete.
 
--  **Action required:** View the list of documents you have saved as a draft, requested by other members for you to sign or approve, or sent to external recipients but have yet to be signed.
+-  **Action required:** View the list of documents you saved as a draft, requested by other members for you to sign or approve, or sent to non-member recipients but have yet to be signed.
 
 -  **Completed:** View the list of completed documents among the documents created by you.
 
-By using these menus, you can easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents.
+-  **Manage bulk sent documents:** View the progress of the list of documents you created.
 
-All documents and related activities are stored in the Documents menus, and you can view detailed information about the document status and
-history.
+--------------------------
 
-Aside from the three document menus, there is another menu for managing documents.
+- **Shared:** If you share documents you own with other members or have access to a shared inbox, you can view the shared documents at-a-glance.
 
--  **Manage documents:** View and manage all documents created from a template in which you have been given access permission.
+-------------------------
 
-.. note::
 
-   The company administrator can view and manage all documents in the company.
+-  **Manage documents** and **Manage bulk sent documents**: These are inboxes for document managers and they can view documents in which they have permission.
 
-.. figure:: resources/en_inbox_ex1.png
-   :alt: Location of the Documents Menus and the Manage Documents Menu
+  **Manage documents:** Only members with the document manager permission can access this inbox. They can view all documents created from templates in which they are given permission to view.
+
+-  **Manage bulk sent documents** Only members with the document manager permission can access this inbox. They can view all documents bulk created from templates in which they are given permission to view.
+
+
+.. figure:: resources/document inboxes_en.png
+   :alt: Document inboxes
    :width: 700px
 
-
-.. note::
-
-   The layout of the Documents menus are very similar to each other, but the documents that are displayed differ according to the document status or granted permission to users.
-
-.. figure:: resources/inbox_layout.png
-   :alt: Documents Menus Layout
-   :width: 750px
 
 ---------------
 Documents menu
@@ -383,7 +378,7 @@ Export to CSV file
 
 .. tip::
 
-   **Downloading documents in the Bulk send inbox**
+   **Downloading documents in the Bulk send inbox and Manage bulk sent documents inbox**
 
    You can download bulk sent documents in the Bulk send inbox.
 
