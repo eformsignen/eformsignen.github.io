@@ -30,10 +30,10 @@ Documents are stored in document menus (inboxes) according to their status. You 
 
   **Manage documents:** Only members with the document manager permission can access this inbox. They can view all documents created from templates in which they are given permission to view.
 
--  **Manage bulk sent documents** Only members with the document manager permission can access this inbox. They can view all documents bulk created from templates in which they are given permission to view.
+-  **Manage bulk sent documents:** Only members with the document manager permission can access this inbox. They can view all documents bulk created from templates in which they are given permission to view.
 
 
-.. figure:: resources/document inboxes_en.png
+.. figure:: resources/new_document_inboxes_en.png
    :alt: Document inboxes
    :width: 700px
 
@@ -428,7 +428,7 @@ The Drafts inbox stores the documents in the **New from my file** step that have
 
 1. Click **Drafts** in the sidebar menu to go to the Drafts page.
 
-.. figure:: resources/drafts-dashboard.png
+.. figure:: resources/drafts-dashboard-en.png
    :alt: Drafts in dashboard
 2. Select a document you want and click the **Continue** button next to it.
 

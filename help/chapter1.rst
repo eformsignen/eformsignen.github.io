@@ -131,7 +131,7 @@ using eformsign.
    default steps, **Start – Complete**, and can add
    three more types of steps as shown below:
 
-   -  **Participant:** The step for requesting a person to fill out and sign a document.
+   -  **Signer:** The step for requesting a person to fill out and sign a document.
 
 
    -  **Reviewer:** The step for requesting a person to review a document. A reviewer cannot fill in fields and can only approve or reject documents.
@@ -188,7 +188,7 @@ New from my file
 You can upload a file onto eformsign and then
 create and send a document by adding fields such as text, signature,
 and date. You can easily and freely send a document by uploading a file,
-without the need to create a template. Just simply add the participants who can fill in the document and add fields to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options step**, and then press the **Start Now** button to send.
+without the need to create a template. Just simply add the signers who can fill in the document and add fields to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options step**, and then press the **Start Now** button to send.
 
 Also, before sending a document to recipients, you can temporarily save
 it as a draft and then send it later.
@@ -209,7 +209,7 @@ uploading it on eformsign.
 1. **Using Web Form Designer**
 
    You can create a template by uploading a document
-   file (PDF, Word, Excel, PowerPoint, or image files) on eformsign and then adding the participants who can fill in the document and adding fields to the uploaded document in the **Design form** step. Then, configure settings including General, Set permissions, Workflow, Field, and Notification settings in the **Configure step**. Then, you can save and deploy the template for use. Finally, you can go to **New from template**, select a template you want to create a document from, and then send the document to recipients.
+   file (PDF, Word, Excel, PowerPoint, or image files) on eformsign and then adding the signers who can fill in the document and adding fields to the uploaded document in the **Design form** step. Then, configure settings including General, Set permissions, Workflow, Field, and Notification settings in the **Configure step**. Then, you can save and deploy the template for use. Finally, you can go to **New from template**, select a template you want to create a document from, and then send the document to recipients.
 
    .. figure:: resources/use_flow.png
       :alt: Usage Flow of eformsign Using Web Form Designer

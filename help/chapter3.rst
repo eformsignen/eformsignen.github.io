@@ -7,7 +7,7 @@ Creating documents
 
 Anyone can use eformsign to easily convert existing documents into electronic documents and then send them for signature. In eformsign, there are two ways to create and send documents. You can upload a file from your PC to eformsign, or use an existing template saved in eformsign.
 
--  **New from my file**: You can upload your file to create an electronic document and then send it to participants.
+-  **New from my file**: You can upload your file to create an electronic document and then send it to signers.
 
 -  **New from template**: You can use a template uploaded to eformsign to create documents. When you click this menu, templates created by the company administrator or members with template management permissions are displayed on the screen.
 
@@ -26,7 +26,7 @@ Anyone can use eformsign to easily convert existing documents into electronic do
 New from my file
 -------------------
 
-You can upload a file you want and then add fields onto the document. Then, you can specify the participants that will fill in each field and enter the information of the document participants and reviewers, and then send the document.
+You can upload a file you want and then add fields onto the document. Then, you can specify the signers that will fill in each field and enter the information of the document signers and reviewers, and then send the document.
 
 1. Go to the **New from my file** menu.
 
@@ -40,45 +40,47 @@ You can upload a file you want and then add fields onto the document. Then, you 
    |image2|
 
 
-3. Add the **document participants** that will be participating in document creation and select their roles.
+3. Add the **document signers** that will be participating in document creation and select their roles.
 
-   |image3|
+   .. figure:: resources/en-signers-popup.png
+      :alt: Signers pop-up
+      :width: 300px
 
    .. note::
 
-      You can add participants by clicking **Add new participant** and up to 30 can be added. Note that you can change, add, or delete participant information in the **Add recipient** step after the **Design form** step.
+      You can add signers by clicking **Add new signer** and up to 30 can be added. Note that you can change, add, or delete signer information in the **Add recipient** step after the **Design form** step.
 
-4. Add the fields each participant will fill in and then set the field properties on the right.
+4. Add the fields each signer will fill in and then set the field properties on the right.
 
    .. figure:: resources/en-new-from-my-file-design-form.png
       :alt: Design form in New from my file
       :width: 700px
 
-5. In the Add recipients step, you can add contact information such as email and phone number and set **Recipient options** for each participant.
+5. In the Add recipients step, you can add contact information such as email and phone number and set **Recipient options** for each signer.
 
    |image5|
 
    .. note::
 
-      **'Participant and Reviewer' recipients**
+      **'Signer and Reviewer' recipients**
 
-      There are 2 main recipient types: reviewer and participant. The
-      participants added in the Design form step are shown in the Add
+      There are 2 main recipient types: reviewer and signer. The
+      signers added in the Design form step are shown in the Add
       recipients step. You can enter the contact information of each
       recipient such as email. In the Add recipient screen, you can
-      delete/add participants and reviewers and set detailed options for
+      delete/add signers and reviewers and set detailed options for
       each recipient.
 
       .. figure:: resources/2_recipients.png
-            :alt: Need to view
+            :alt: Reviewer and Signer
             :width: 300px
 
 
    .. tip::
 
-      **The difference between participants and reviewers**
+      **The difference between signers and reviewers**
 
-      Participants can fill in fields such as signature and text on
+      Signers can fill in fields such as signature and text on
       each document, but reviewers cannot fill in fields and can
       only approve documents after reviewing them.
 
@@ -87,7 +89,7 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
       **'Need to view' recipient**
 
-      In addition to reviewer and participant, there is also another recipient type called 'Need to view'.
+      In addition to reviewer and signer, there is also another recipient type called 'Need to view'.
 
       You can select 'Need to view' when selecting recipients in the workflow. A recipient who is assigned as 'Need to view' can' send a document to the next step in the workflow by only viewing the document.
 
@@ -133,17 +135,17 @@ You can upload a file you want and then add fields onto the document. Then, you 
 **Add recipients > Recipient options**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the **Design form** step or the **Add recipients** step, you can add participants who will receive the document.
+In the **Design form** step or the **Add recipients** step, you can add signers who will receive the document.
 
-In the **Add recipients** step, you can set detailed settings for each participant. Additionally, you can add or remove participants as well as adding reviewers who will review the document.
+In the **Add recipients** step, you can set detailed settings for each signer. Additionally, you can add or remove signers as well as adding reviewers who will review the document.
 
-You have to add the name of each participant and reviewer, and their email/ID. If a participant is a member of your company, you can select the member in the drop-down menu and import their member information stored in eformsign.
+You have to add the name of each signer and reviewer, and their email/ID. If a signer is a member of your company, you can select the member in the drop-down menu and import their member information stored in eformsign.
 
-The detail settings in **Recipient options** is displayed differently depending on whether the participant or reviewer is a member of your company or is a non-member.
+The detail settings in **Recipient options** is displayed differently depending on whether the signer or reviewer is a member of your company or is a non-member.
 
 .. note::
 
-   In addition to participants and reviewers, you can also add CCs. CCed recipients can monitor the document progress and will receive a notification email when the document is sent and completed. CCs can only be added by members. 
+   In addition to signers and reviewers, you can also add CCs. CCed recipients can monitor the document progress and will receive a notification email when the document is sent and completed. CCs can only be added by members. 
 
 
 .. caution::

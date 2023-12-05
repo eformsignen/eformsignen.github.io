@@ -43,7 +43,9 @@ Uploading a file in the **New from my file** menu.
 3. Once the file is uploaded, the Web Form Designer screen will be
    displayed. You can add fields to the document here.
 
-   |image3|
+   .. figure:: resources/en-web-form-designer-signers-popup.png
+      :alt: New from my file in the dashboard
+      :width: 700px
 
 
 .. tip::
@@ -115,7 +117,7 @@ Web Form Designer consists of a screen that displays the file, the left and righ
 2. **Document display screen:** Displays the uploaded file.
 
 
-3. **Participants:** Select the participants of the document and then drag and drop the fields to be filled in by each participant. You can add new participants by clicking the **Add new participant**. There can be up to 30 participants for each document.
+3. **Signers:** Select the signers of the document and then drag and drop the fields to be filled in by each signer. You can add new signers by clicking the **Add new signer**. There can be up to 30 signers for each document.
 
 
 4. **Field list:** There are 14 basic fields including text,
@@ -205,10 +207,10 @@ Tooltip Text, and the meaning of each property is as follows:
 
 -  **ID:** Unique ID that identifies each field. When assigning who can fill out a field, you can use the field ID to do so. You can also use the field ID to extract data in CSV format.
 
--  **Who can fill this out:** Sets which participants are allowed and/or required to fill in the field. All the participants added for this document are shown, and you can check or uncheck the Allowed and Required check boxes for each one. When a documents is sent, fields that are checked as Allowed are highlighted in yellow, and fields that are check as Required are highlighted in red.
+-  **Who can fill this out:** Sets which signers are allowed and/or required to fill in the field. All the signers added for this document are shown, and you can check or uncheck the Allowed and Required check boxes for each one. When a documents is sent, fields that are checked as Allowed are highlighted in yellow, and fields that are check as Required are highlighted in red.
 
-   - **Allowed:** Allows the participant to fill in the field.
-   - **Required:** Requires the participant to fill in the field.
+   - **Allowed:** Allows the signer to fill in the field.
+   - **Required:** Requires the signer to fill in the field.
 
 
 -  **Placeholder:** Text displayed as a help message before entering information.

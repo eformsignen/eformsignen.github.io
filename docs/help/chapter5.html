@@ -143,9 +143,9 @@
 <a class="reference internal image-reference" href="../_images/en-managetemplate-upload-popup.png"><img alt="Manage Templates &gt; Uploading a File (2)" src="../_images/en-managetemplate-upload-popup.png" style="width: 500px;" /></a>
 </figure>
 </li>
-<li><p>Add participants and set the role for each participant.</p>
+<li><p>Add signers and set the role for each signer.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-template-settings-wfdesign0.png"><img alt="Dragging a field" src="../_images/en-template-settings-wfdesign0.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-template-settings-wfdesign0.png"><img alt="Dragging a field" src="../_images/en-template-settings-wfdesign0.png" style="width: 300px;" /></a>
 </figure>
 </li>
 <li><p>Select a field that you want to add and drag it onto the uploaded file.</p>
@@ -183,12 +183,12 @@
 <span id="workflow"></span><h2>Workflow Overview<a class="headerlink" href="#workflow-overview" title="Link to this heading"></a></h2>
 <p>A <strong>workflow</strong> is a document process from its creation to completion.</p>
 <p>The workflow for each template can be set by template managers in <strong>Template settings</strong> &gt; <strong>Workflow</strong>.</p>
-<p>By default, all workflows have <strong>Start</strong> and <strong>Complete</strong> steps. You can add as many <strong>Reviewer</strong>, and <strong>Participant</strong> steps as you want for each workflow.</p>
+<p>By default, all workflows have <strong>Start</strong> and <strong>Complete</strong> steps. You can add as many <strong>Reviewer</strong>, and <strong>Signer</strong> steps as you want for each workflow.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-workflow-steps.png"><img alt="Workflow Steps" src="../_images/en-workflow-steps.png" style="width: 400px;" /></a>
 </figure>
 <ul>
-<li><p><strong>Participant</strong></p>
+<li><p><strong>Signer</strong></p>
 <p>Signs and fills out documents.</p>
 </li>
 <li><p><strong>Reviewer</strong></p>
@@ -491,33 +491,38 @@ search documents by the document number.</p>
 </figure>
 <section id="adding-steps-to-the-workflow">
 <h4><strong>Adding steps to the workflow</strong><a class="headerlink" href="#adding-steps-to-the-workflow" title="Link to this heading"></a></h4>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>Go to the <strong>Workflow</strong> configuration page by clicking the <strong>Workflow</strong> tab.</p></li>
 <li><p>Click the add button (<a class="reference internal" href="../_images/workflow-addstep-plus-button.png"><img alt="image10" src="../_images/workflow-addstep-plus-button.png" style="width: 20px;" /></a>) which is in between the <strong>Start</strong> and <strong>Complete</strong> steps.</p></li>
-<li><p>Select the type of recipient you want to add.</p>
-<p><a class="reference internal" href="../_images/en-template-settings-workflow-added-step.png"><img alt="image11" src="../_images/en-template-settings-workflow-added-step.png" style="width: 700px;" /></a></p>
-</li>
+<li><p>Select the type of recipient you want to add.</p></li>
 </ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/adding-workflow-steps-en.png"><img alt="Template Settings &gt; Workflow &gt; Select recipient type" src="../_images/adding-workflow-steps-en.png" style="width: 500px;" /></a>
+</figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>❗The difference between participant, reviewer, and need to view recipients</strong></p>
-<p>Participants can sign and fill in the fields in the document while reviewers can only approve or reject the document and Need to view recipients can only view the document.</p>
+<p><strong>❗The difference between signer, reviewer, and need to view recipients</strong></p>
+<p>Signers can sign and fill in the fields in the document while reviewers can only approve or reject the document and Need to view recipients can only view the document.</p>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>When selected, a step is added to the workflow.</p></li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Participants can be added only in the <strong>Design form</strong> step. Up to 30 participants can be added. In the workflow, you can add as many steps as you want.
+<blockquote>
+<div><p>Signers can be added only in the <strong>Design form</strong> step. Up to 30 signers can be added. In the workflow, you can add as many steps as you want.
 You can adjust the order of steps by clicking and dragging a workflow step.
 To delete a step, click <strong>-</strong> on the right side of the step button.</p>
-<p><a class="reference internal" href="../_images/template_settings_workflow.png"><img alt="image12" src="../_images/template_settings_workflow.png" style="width: 500px;" /></a></p>
+</div></blockquote>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/adding-signer-en.png"><img alt="Template Settings &gt; Workflow &gt; Add signer" src="../_images/adding-signer-en.png" style="width: 500px;" /></a>
+</figure>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>Merge workflow steps</strong></p>
+<p><strong>Merge workflow steps - Parallel signing</strong></p>
 <blockquote>
-<div><p>You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.</p>
+<div><p>You can merge multiple workflow steps into o/e so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.</p>
 </div></blockquote>
 <p><strong>Instructions:</strong></p>
 <blockquote>
@@ -543,7 +548,9 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <p><strong>Start: Step for creating a document</strong></p>
 <hr class="docutils" />
 <blockquote>
-<div><p><a class="reference internal" href="../_images/en-template-settings-workflow-start.png"><img alt="image14" src="../_images/en-template-settings-workflow-start.png" style="width: 700px;" /></a></p>
+<div><figure class="align-default">
+<img alt="Start step" src="../_images/start_step_en.png" />
+</figure>
 <ul class="simple">
 <li><p><strong>Limit the number of documents</strong>: Set the maximum number of documents that can be created from the template.</p></li>
 <li><p><strong>Create documents from URL</strong>: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.</p></li>
@@ -561,10 +568,10 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <a class="reference internal image-reference" href="../_images/en-workflow-step-start-QRcode.png"><img alt="Workflow &gt; Generate QR code" src="../_images/en-workflow-step-start-QRcode.png" style="width: 400px;" /></a>
 </figure>
 </div>
-<p><strong>Participant: Recipient who can sign or fill out a document</strong></p>
+<p><strong>Signer: Recipient who can sign or fill out a document</strong></p>
 <hr class="docutils" />
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-workflow-participant-properties.png"><img alt="Workflow &gt; Participant step properties" src="../_images/en-workflow-participant-properties.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-workflow-signer-properties.png"><img alt="Workflow &gt; Signer step properties" src="../_images/en-workflow-signer-properties.png" style="width: 700px;" /></a>
 </figure>
 <ul>
 <li><p><strong>Notification</strong>: Select how recipients can receive notifications and edit their content.</p>
@@ -592,10 +599,10 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Selecting a participant/reviewer/need to view in a workflow step</strong></p>
+<p><strong>Selecting a signer/reviewer/need to view in a workflow step</strong></p>
 <p>For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-workflow-participant-selected.png"><img alt="Workflow &gt; Recipients" src="../_images/en-workflow-participant-selected.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-workflow-signer-selected.png"><img alt="Workflow &gt; Recipients" src="../_images/en-workflow-signer-selected.png" style="width: 700px;" /></a>
 </figure>
 <ul class="simple">
 <li><p><strong>Sender can add/skip recipient</strong>: Allows the sender to enter the contact information of the recipients before sending the document. If the sender does not enter the contact information, this step is skipped.</p></li>
@@ -603,6 +610,27 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <li><p><strong>Group or member</strong>: Allows you to pre-select recipients. You can only select groups or members in your company.</p></li>
 <li><p><strong>Recipient of a previous step</strong>: Allows you to select the person of a previous step including the Start step.</p></li>
 </ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Adding in-person signers to a workflow</strong></p>
+<p>You can add in-person signers to a Reviewer, Start, or a Signer workflow step so that you can collection signature in person from signers using a single device.</p>
+<p><strong>Instructions:</strong></p>
+<ol class="arabic simple">
+<li><p>Go to <strong>Add recipients</strong> in <strong>New from my file</strong> or go to <strong>Configure</strong> &gt; <strong>Workflow</strong> in <strong>Manage templates</strong>.</p></li>
+<li><p>Add a Signer step to the workflow and tick the <strong>In-person signing</strong> check box. The Signer step becomes an <strong>In-person signer</strong> and the step above it (Start, Signer, or Reviewer) becomes the Host.</p></li>
+<li><p>To add more <strong>In-person signers</strong>, add another <strong>Signer</strong> and tick the <strong>In-person signing</strong> check box.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="Add in-person signer (before)" src="../_images/in_person_signer_before.png" />
+</figure>
+<figure class="align-default">
+<img alt="Add in-person signer (after)" src="../_images/in_person_signer_after.png" />
+</figure>
+<p>※Documents with an <strong>In-person signer</strong> at the start step cannot be sent in bulk.</p>
+<p>※You cannot add <strong>In-person signers</strong> to a parallel signing step.</p>
+<p>※You cannot have a parallel signing step before and after a step with an <strong>In-person signer</strong>.</p>
+<p>※Only <strong>Members</strong> can be the <strong>Host</strong>.</p>
 </div>
 <p><strong>Reviewer: Recipient who can only approve or reject a document</strong></p>
 <hr class="docutils" />
@@ -689,11 +717,13 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <p><strong>Complete: Step in which a document is finally completed</strong></p>
 <hr class="docutils" />
 <blockquote>
-<div><p><a class="reference internal" href="../_images/en-template-settings-workflow-completed.png"><img alt="image20" src="../_images/en-template-settings-workflow-completed.png" style="width: 700px;" /></a></p>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/en-complete-setting.png"><img alt="Complete step" src="../_images/en-complete-setting.png" style="width: 500px;" /></a>
+</figure>
 <ul class="simple">
-<li><p><strong>Step name</strong>: Change the name of the step. The default name is ‘Complete’.</p></li>
+<li><p><strong>Step name</strong>: You can change the name of the step. The default name is ‘Complete’.</p></li>
 <li><p><strong>Backup completed documents in external cloud storages</strong>: Allow the document to be stored in external cloud storages connected to eformsign by the administrator or company managers.</p></li>
-<li><p><strong>Timestamp the document when completed</strong>: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.</p></li>
+<li><p><strong>Timestamp</strong>: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.</p></li>
 </ul>
 </div></blockquote>
 </section>

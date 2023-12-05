@@ -54,11 +54,11 @@ You can easily create a template by uploading a file online.
       :alt: Manage Templates > Uploading a File (2)
       :width: 500px
 
-2. Add participants and set the role for each participant.
+2. Add signers and set the role for each signer.
 
    .. figure:: resources/en-template-settings-wfdesign0.png
       :alt: Dragging a field
-      :width: 500px
+      :width: 300px
 
 
 3. Select a field that you want to add and drag it onto the uploaded file.
@@ -113,7 +113,7 @@ A **workflow** is a document process from its creation to completion.
 
 The workflow for each template can be set by template managers in **Template settings** > **Workflow**.
 
-By default, all workflows have **Start** and **Complete** steps. You can add as many **Reviewer**, and **Participant** steps as you want for each workflow.
+By default, all workflows have **Start** and **Complete** steps. You can add as many **Reviewer**, and **Signer** steps as you want for each workflow.
 
 .. figure:: resources/en-workflow-steps.png
    :alt: Workflow Steps
@@ -121,7 +121,7 @@ By default, all workflows have **Start** and **Complete** steps. You can add as 
 
 
 
--  **Participant**
+-  **Signer**
 
    Signs and fills out documents.
 
@@ -518,33 +518,37 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
 3. Select the type of recipient you want to add.
 
-   |image11|
+.. figure:: resources/adding-workflow-steps-en.png
+   :alt: Template Settings > Workflow > Select recipient type
+   :width: 500px
 
 
 .. tip::
 
-   **❗The difference between participant, reviewer, and need to view recipients**
+   **❗The difference between signer, reviewer, and need to view recipients**
 
-   Participants can sign and fill in the fields in the document while reviewers can only approve or reject the document and Need to view recipients can only view the document.
+   Signers can sign and fill in the fields in the document while reviewers can only approve or reject the document and Need to view recipients can only view the document.
 
 
 4. When selected, a step is added to the workflow.
 
 .. tip::
 
-   Participants can be added only in the **Design form** step. Up to 30 participants can be added. In the workflow, you can add as many steps as you want. 
+   Signers can be added only in the **Design form** step. Up to 30 signers can be added. In the workflow, you can add as many steps as you want. 
    You can adjust the order of steps by clicking and dragging a workflow step.
    To delete a step, click **-** on the right side of the step button.
 
-   |image12|
+ .. figure:: resources/adding-signer-en.png
+   :alt: Template Settings > Workflow > Add signer
+   :width: 500px
 
 
 
 .. tip::
 
-  **Merge workflow steps**
+  **Merge workflow steps - Parallel signing**
 
-   You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+   You can merge multiple workflow steps into o/e so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
 
   **Instructions:**
 
@@ -559,6 +563,10 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
    .. figure:: resources/merge_workflow_steps.png
       :alt: Merge workflow steps (before)
+
+   .. raw:: latex
+
+      \vspace{10mm}
 
    .. figure:: resources/merge_workflow_steps2.png
       :alt: Merge workflow steps (after)
@@ -581,8 +589,8 @@ You can click a step to set the details such as **Properties** for each workflow
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 
-   |image14|
-
+   .. figure:: resources/start_step_en.png
+      :alt: Start step
 
    -  **Limit the number of documents**: Set the maximum number of documents that can be created from the template.
 
@@ -609,12 +617,12 @@ You can click a step to set the details such as **Properties** for each workflow
 
 
 
-**Participant: Recipient who can sign or fill out a document**
+**Signer: Recipient who can sign or fill out a document**
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. figure:: resources/en-workflow-participant-properties.png
-   :alt: Workflow > Participant step properties
+.. figure:: resources/en-workflow-signer-properties.png
+   :alt: Workflow > Signer step properties
    :width: 700px
 
 -  **Notification**\: Select how recipients can receive notifications and edit their content. 
@@ -646,11 +654,11 @@ You can click a step to set the details such as **Properties** for each workflow
 
 .. note::
 
-   **Selecting a participant/reviewer/need to view in a workflow step**
+   **Selecting a signer/reviewer/need to view in a workflow step**
 
    For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.
 
-   .. figure:: resources/en-workflow-participant-selected.png
+   .. figure:: resources/en-workflow-signer-selected.png
       :alt: Workflow > Recipients
       :width: 700px   
 
@@ -662,6 +670,39 @@ You can click a step to set the details such as **Properties** for each workflow
 
    -  **Recipient of a previous step**: Allows you to select the person of a previous step including the Start step.
 
+
+.. note::
+
+   **Adding in-person signers to a workflow**
+
+   You can add in-person signers to a Reviewer, Start, or a Signer workflow step so that you can collection signature in person from signers using a single device.
+
+   **Instructions:**
+
+   1. Go to **Add recipients** in **New from my file** or go to **Configure** > **Workflow** in **Manage templates**.
+
+   2. Add a Signer step to the workflow and tick the **In-person signing** check box. The Signer step becomes an **In-person signer** and the step above it (Start, Signer, or Reviewer) becomes the Host.
+
+   3. To add more **In-person signers**, add another **Signer** and tick the **In-person signing** check box.
+
+
+   .. figure:: resources/in_person_signer_before.png
+      :alt: Add in-person signer (before)
+
+   .. raw:: latex
+
+      \vspace{10mm}
+
+   .. figure:: resources/in_person_signer_after.png
+      :alt: Add in-person signer (after)
+
+   ※Documents with an **In-person signer** at the start step cannot be sent in bulk.
+
+   ※You cannot add **In-person signers** to a parallel signing step.
+
+   ※You cannot have a parallel signing step before and after a step with an **In-person signer**.
+
+   ※Only **Members** can be the **Host**.
 
 
 
@@ -779,13 +820,15 @@ You can click a step to set the details such as **Properties** for each workflow
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-   |image20|
+   .. figure:: resources/en-complete-setting.png
+      :alt: Complete step
+      :width: 500px
 
-   -  **Step name**\: Change the name of the step. The default name is ‘Complete’.
+   -  **Step name**: You can change the name of the step. The default name is ‘Complete’.
 
    -  **Backup completed documents in external cloud storages**: Allow the document to be stored in external cloud storages connected to eformsign by the administrator or company managers.
 
-   -  **Timestamp the document when completed**: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.
+   -  **Timestamp**: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.
 
 .. _field_wd:
 

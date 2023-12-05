@@ -86,19 +86,16 @@ A **workflow** is a document process from its creation to completion.
 
 The workflow for each template can be set by template managers by going to **Template settings** > **Workflow**.
 
-By default, all workflows have **Start** and **Complete** steps. You can add as many **Reviewer**, and **Participant** steps as you want for each workflow.
+By default, all workflows have **Start** and **Complete** steps. You can add as many **Recipient**, and **Need to view** steps as you want for each workflow.
 
-.. figure:: resources/en-workflow-steps.png
+.. figure:: resources/en-workflow-steps-form-builder.png
    :alt: Workflow steps
    :width: 400px
 
--  **Participant**
+-  **Recipient:**
    Signs and fills out documents.
 
--  **Reviewer**
-   Only approves or rejects documents.
-
--  **Need to view**
+-  **Need to view:**
    Only views documents.
 
 
@@ -489,7 +486,10 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
 3. Select the type of recipient which you want to add.
 
-   |image9|
+.. figure:: resources/en-template-settings-workflow-adding-steps.png
+   :alt: Template Settings > Workflow
+   :width: 700px
+
 
 
    .. tip::
@@ -535,7 +535,8 @@ You can click a step to set the details such as **Properties** and **Manage item
 
 -  In **Manage items**, you can set the fields in which the recipient has access to or is required to fill in.
 
-   |image11|
+   .. figure:: resources/configure-details-of-each-step.png
+      :alt: Workflow > Manage items
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -543,8 +544,8 @@ You can click a step to set the details such as **Properties** and **Manage item
 **Start: Step for creating a document**
 
 
-
-   |image12|
+   .. figure:: resources/steps-for-creating-document.png
+      :alt: Workflow > Start step
 
    -  **Step name**: Change the name of the step. The default name is 'Start'.
 
@@ -608,10 +609,11 @@ You can click a step to set the details such as **Properties** and **Manage item
       
 -  **Hide files or sheets:** Allows you to choose which files/sheets in the document are hidden from the recipient, if the form consists of two or more files. This option cannot be applied to company members.
 
+-  **Disable the decline feature:** Does not allow recipients to decline documents.
 
 .. note::
 
-   **Selecting participants/reviewers in a workflow step**
+   **Selecting recipients in a workflow step**
 
    For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.
 
@@ -671,13 +673,15 @@ You can click a step to set the details such as **Properties** and **Manage item
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-   |image19|
+   .. figure:: resources/complete-step-en.png
+      :alt: Complete step
+      :width: 800px
 
    -  **Step name**\: Change the name of the step. The default name is ‘Complete’.
 
    -  **Backup completed documents in external cloud storages**: Allow the document to be stored in external cloud storages connected to eformsign by the administrator or company managers.
 
-   -  **Timestamp the document when completed**: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.
+   -  **Timestamp**: Allow the completed document to be timestamped which proves that the document remains unchanged since that time. This feature will incur an extra charge.
 
 
 .. _field_fb:
