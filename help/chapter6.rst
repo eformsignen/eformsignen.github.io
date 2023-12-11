@@ -31,10 +31,9 @@ fields is as follows:
 
 
 
--------------------------------------------------------------
+------------------------------------------------------------
 Downloading and Installing Form Builder (MS Office Add-in)
--------------------------------------------------------------
-
+------------------------------------------------------------
 1. Login to eformsign and then click the menu icon
 (|image1|) on the top left corner of the dashboard screen to open the
 sidebar menu. Then, click the **Download eformsign form builder** button
