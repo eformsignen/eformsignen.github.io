@@ -1,8 +1,8 @@
 .. _formbuilder:
 
-===================================================
+==================================================
 Introduction to Form Builder (MS Office Add-in)
-===================================================
+==================================================
 
 
 Form Builder (MS Office add-in), also known as OZ in Office, is a form editor
