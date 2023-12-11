@@ -1,5 +1,5 @@
 Connecting with External Services
-=====================================
+===================================
 
 
 ---------------------------------------------
@@ -40,6 +40,7 @@ eformsign can automatically save completed documents in external cloud storage s
 .. figure:: resources/connect_5.png
    :alt: The Backup Completed Documents in External Cloud Storages Checkbox
    :width: 750px
+
 
 
 

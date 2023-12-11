@@ -1,41 +1,20 @@
 Introduction to eformsign
-=============================
+==============================
 
-Overview
-------------------------
+**Overview**
 
-eformsign is an electronic document solution that allows anyone to
-easily create electronic documents from paper documents and utilize
-various data stored in electronic documents. You can easily create
-electronic documents by uploading your files onto eformsign and
-converting the files to electronic forms via eformsign's Web Form
-Designer feature. You can also use eformsign's Microsoft Office add-in
-to create electronic forms from documents created using Microsoft Office
-programs including Word, Excel, and PowerPoint.
+FORCS's eformsign is an e-document service that allows anyone to easily create electronic documents from paper documents and utilize various data stored in electronic documents. You can easily create electronic documents by uploading your files onto eformsign and converting the files to electronic forms via eformsign's Web Form Designer feature. You can also use eformsign's Microsoft Office add-in to create electronic forms from documents created using Microsoft Office programs including Word, Excel, and PowerPoint.
 
-eformsign allows you to create a workflow for each template according to
-your company's business process. You can flexibly set a document signing
-process for internal documents requiring approvals as well as for
-external documents such as contracts, agreements, and applications.
-Furthermore, detailed configurations such as notifications and required
-input fields can be set for each workflow step or recipient, and the
-progress status of documents is logged as history. Moreover, an audit
-trail certificate is provided for the prevention of document forgery and
-falsification.
+eformsign allows you to create a workflow for each template according to your company's business process. You can flexibly set a document signing process for internal documents requiring approvals as well as for external documents such as contracts, agreements, and applications. Furthermore, detailed configurations such as notifications and required input fields can be set for each workflow step or recipient, and the progress status of documents is logged as history. Moreover, an audit trail certificate is provided for the prevention of document forgery and falsification.
 
-eformsign also provides a bulk send feature, by which users can create
-and send multiple documents at once and can minimize repetitive input
-with the auto-fill feature. Also, by adding and configuring custom
-fields, fields in documents such as company information, group and
-member information, recent input value, and date can be automatically
-filled in. Furthermore, eformsign allows users to easily manage
-companies' members and their permissions, configure detailed
-notification settings for documents, and manage and utilize data
-entered in documents by extracting input data.
+eformsign also provides a bulk send feature, by which users can create and send multiple documents at once and can minimize repetitive input with the auto-fill feature. Also, by adding and configuring custom
+fields, fields in documents such as company information, group and member information, recent input value, and date can be automatically filled in. Furthermore, eformsign allows users to easily manage
+companies' members and their permissions, configure detailed notification settings for documents, and manage and utilize data entered in documents by extracting input data.
 
 .. figure:: resources/main_feature.png
    :alt: Key Features
    :width: 700px
+
 
 
 The eformsign solution also provides an electronic signature feature which
@@ -70,7 +49,7 @@ Electronic signatures have become legally binding in phases in the vast majority
 Information related to the legal effect of electronic contracts and electronic signatures provided by eformsign is for general information purposes only. All information is used at your own risk and is not a substitute for professional legal advice. For legal advice and defense, please consult a qualified attorney in your area. Since eformsign cannot guarantee that all legal information of electronic contracts by country/region/technology provided by eformsign is up-to-date or accurate, eformsign makes no warranty, express or implied, as to the completeness of the legal information.
 
 Basic Terms
----------------
+-------------
 
 The following are some basic terms you should be familiar with before
 using eformsign.
@@ -79,19 +58,19 @@ using eformsign.
 
    Web form designer is a tool for quickly and easily
    creating electronic forms by uploading existing document files onto
-   eformsign. You can create templates by adding components such as
+   eformsign. You can create templates by adding fields such as
    signature, text box, and check box to documents such as agreements,
    applications, and contracts. You can then create
    documents from templates and send them to recipients to be reviewed
    and signed.
 
--  **Form Builder**
+-  **Form Builder (MS Office add-in)**
 
-   Form builder is a tool used to create electronic forms
+   Form builder (MS Office add-in) is a tool used to create electronic forms
    by converting Microsoft Office files such as applications, contracts,
-   and agreements into electronic forms that contain components such as
-   signature and text box. Form builder also uploads the converted
-   electronic forms onto eformsign. Form builder is an Microsoft Office
+   and agreements into electronic forms that contain fields such as
+   signature and text box. Form builder (MS Office add-in) also uploads the converted
+   electronic forms onto eformsign. Form builder (MS Office add-in) is an Microsoft Office
    add-in, and it is shown as a ribbon menu which is called **OZ in Office**.
 
 -  **Dashboard**
@@ -112,7 +91,7 @@ using eformsign.
    Templates This is an electronic form that serves as a starting point
    for a new document. With a template, you can create many documents
    from it. You can create templates by converting existing Microsoft
-   Office files using Form builder or by uploading files directly
+   Office files using Form builder (MS Office add-in)or by uploading files directly
    onto eformsign.
 
 -  **Document**
@@ -124,8 +103,9 @@ using eformsign.
    the **New from template** menu. Any document created like this counts
    as a document created in eformsign.
 
--  This is a cloud space for storing and viewing documents. It consists of the following three menus according to the
-   document status:
+-  **Documents**
+
+   This is a cloud space for storing and viewing documents. It consists of the following menus according to the document status:
 
    -  **Action required:** Shows the list of documents
       that you need to sign, approve, or send.
@@ -151,19 +131,23 @@ using eformsign.
    default steps, **Start – Complete**, and can add
    three more types of steps as shown below:
 
-   -  **Participant:** The step for requesting a person to fill out and sign a document.
+   -  **Signer:** The step for requesting a person to fill out and sign a document.
 
 
    -  **Reviewer:** The step for requesting a person to review a document. A reviewer cannot fill in fields and can only approve or reject documents.
 
-   .. figure:: resources/workflow_new.png
+   -  **Need to view:** The step for opening documents only.
+
+
+
+   .. figure:: resources/en_workflow_new.png
       :alt: Workflow Steps
       :width: 400px
 
 
 -  **Company Administrator**
 
-   The representative of a company and has full permission to use eformsign.
+   The representative of a company with full permission to use eformsign.
 
 -  **Company manager**
 
@@ -176,24 +160,22 @@ using eformsign.
    menu and can manage templates. Managing templates includes creating,
    deploying, editing, and deleting eformsign templates.
 
--  **Document creator**
+-  **Document manager**
 
-   With this permission, a member can can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the New from template page.
+   With this permission, a member can access the **Manage documents** menu and the **Manage bulk sent documents** menu to view, void, or permanently remove documents they have been granted permission. A document manager can be assigned by template or document.
+
+-  **Template user**
+
+   With this permission, a member can create documents from a template. You can grant this permission for each template. When the permission for a template is granted to a member, the member can create documents from that template in the New from template page.
 
 -  **Template editor**
 
    With this permission, a member who is a template editor of a template can edit the template. You can grant this permission for each template.
 
--  **Document manager**
 
-   With this permission, a member can access the **Manage documents**
-   menu to view the documents created from each template, approve
-   documents requested to be voided, or permanently remove documents
-   from the system. Note that the document management permission can be
-   set for each separate template.
 
 eformsign Usage Flow
-------------------------
+-----------------------
 
 To use eformsign, you can either upload a file onto eformsign and
 create an electronic form online, or create a form using Microsoft Word,
@@ -204,9 +186,9 @@ New from my file
 ~~~~~~~~~~~~~~~~~~~~
 
 You can upload a file onto eformsign and then
-create and send a document by adding components such as text, signature,
+create and send a document by adding fields such as text, signature,
 and date. You can easily and freely send a document by uploading a file,
-without the need to create a template. Just simply add the participants who can fill in the document and add components to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options ste**p**, and then press the **Start Now** button to send.
+without the need to create a template. Just simply add the signers who can fill in the document and add fields to the uploaded document in the **Design form** step, set the workflow in the **Add recipients** step, set options in the **Options step**, and then press the **Start Now** button to send.
 
 Also, before sending a document to recipients, you can temporarily save
 it as a draft and then send it later.
@@ -221,13 +203,13 @@ Create from template
 
 There are two ways to create a document from a template: uploading a
 file on eformsign and creating a template using Web Form Designer, and
-creating a template using Microsoft Office using Form Builder and
+creating a template using Microsoft Office using Form Builder (MS Office add-in) and
 uploading it on eformsign.
 
 1. **Using Web Form Designer**
 
    You can create a template by uploading a document
-   file (PDF, Word, Excel, PowerPoint, or image files) on eformsign and then adding the participants who can fill in the document and adding components to the uploaded document in the **Design form** step. Then, configure settings including General, Set permissions, Workflow, Field, and Notification settings in the **Configure step**. Then, you can save and deploy the template for use. Finally, you can go to **New from template**, select a template you want to create a document from, and then send the document to recipients.
+   file (PDF, Word, Excel, PowerPoint, or image files) on eformsign and then adding the signers who can fill in the document and adding fields to the uploaded document in the **Design form** step. Then, configure settings including General, Set permissions, Workflow, Field, and Notification settings in the **Configure step**. Then, you can save and deploy the template for use. Finally, you can go to **New from template**, select a template you want to create a document from, and then send the document to recipients.
 
    .. figure:: resources/use_flow.png
       :alt: Usage Flow of eformsign Using Web Form Designer
@@ -235,11 +217,11 @@ uploading it on eformsign.
 
 
 
-2. **Using Form Builder**
+2. **Using Form Builder (MS Office add-in)**
 
    You can create a template by creating or opening a
    document file in Microsoft Office (Word, Excel, and PowerPoint), and
-   then using the ribbon menu (named OZ in Office) to add the components
+   then using the ribbon menu (named OZ in Office) to add the fields
    you want such as text, signature, and date onto the document. Then,
    you can upload the template you created onto eformsign by clicking
    the Upload button in the ribbon menu.
@@ -250,17 +232,17 @@ uploading it on eformsign.
    deployed template and send it to recipients.
 
 .. figure:: resources/use_flow2.png
-   :alt: Usage Flow of eformsign Using Form Builder
+   :alt: Usage Flow of eformsign Using Form Builder (MS Office add-in)
    :width: 700px
 
 
 Minimum System Requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
-The minimum system requirements for Form builder and eformsign are as
+The minimum system requirements for Form builder (MS Office add-in) and eformsign are as
 follows:
 
--  **Form builder (OZ in Office)**
+-  **Form builder (MS Office add-in)**
 
    -  **OS:** Windows 7 and later
 
@@ -282,7 +264,7 @@ follows:
       to use eformsign.
 
 Use Cases
----------
+------------
 
 eformsign can be used for many different cases, including creating
 contract, agreement, and application forms. All documents are encrypted
@@ -290,7 +272,7 @@ contract, agreement, and application forms. All documents are encrypted
 international standard for long-term storage of documents.
 
 Contract Forms
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 Electronic documents can be used to sign various types of contracts
 including employment contracts, purchase/rental contracts, maintenance
@@ -307,7 +289,7 @@ The e-contract process using eformsign is as follows:
 
 
 Agreement Forms
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 Electronic documents can be used to sign various types of agreements
 including privacy policy and consent forms, medical informed consent
@@ -323,7 +305,7 @@ The e-agreement process using eformsign is as follows:
 
 
 Application Forms
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 Electronic documents can be used to sign various types of applications
 including application forms for registrations, quotations, medical
@@ -342,3 +324,4 @@ The e-application process using eformsign is as follows:
 
 
 .. |image1| image:: resources/menu_icon.png
+   :width: 15px

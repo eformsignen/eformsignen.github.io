@@ -1,54 +1,42 @@
 .. _documents:
 
 ==================
-Document Menus
+Document Inboxes
 ==================
 
 ------------
 Documents
 ------------
 
-Documents are stored in the following three menus according to the document status:
-
-.. note::
-
-   For information on documents sent in bulk, go to `Bulk send <#bulksend-documents>`__.
+Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the In progress inbox in which you can select and send.
 
 
+-  **In progress:** View the list of documents you created or signed/approved that are incomplete.
 
-
--  **In progress:** View the list of documents you have created or signed/approved that are incomplete.
-
--  **Action required:** View the list of documents you have saved as a draft, requested by other members for you to sign or approve, or sent to external recipients but have yet to be signed.
+-  **Action required:** View the list of documents you saved as a draft, requested by other members for you to sign or approve, or sent to non-member recipients but have yet to be signed.
 
 -  **Completed:** View the list of completed documents among the documents created by you.
 
-By using these menus, you can easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents.
+-  **Manage bulk sent documents:** View the progress of the list of documents you created.
 
-All documents and related activities are stored in the Documents menus, and you can view detailed information about the document status and
-history.
+--------------------------
 
-Aside from the three document menus, there is another menu for managing documents.
+- **Shared:** If you share documents you own with other members or have access to a shared inbox, you can view the shared documents at-a-glance.
 
--  **Manage documents:** View and manage all documents created from a template in which you have been given access permission.
+-------------------------
 
-.. note::
 
-   The company administrator can view and manage all documents in the company.
+-  **Manage documents** and **Manage bulk sent documents**: These are inboxes for document managers and they can view documents in which they have permission.
 
-.. figure:: resources/inbox_ex1.png
-   :alt: Location of the Documents Menus and the Manage Documents Menu
+  **Manage documents:** Only members with the document manager permission can access this inbox. They can view all documents created from templates in which they are given permission to view.
+
+-  **Manage bulk sent documents:** Only members with the document manager permission can access this inbox. They can view all documents bulk created from templates in which they are given permission to view.
+
+
+.. figure:: resources/new_document_inboxes_en.png
+   :alt: Document inboxes
    :width: 700px
 
-
-
-.. note::
-
-   The layout of the Documents menus are very similar to each other, but the documents that are displayed differ according to the document status or granted permission to users.
-
-.. figure:: resources/inbox_layout.png
-   :alt: Documents Menus Layout
-   :width: 750px
 
 ---------------
 Documents menu
@@ -60,23 +48,24 @@ Each documents menu consists of the following five sections:
 
    You can go to another menu by clicking the menu icon (|image1|) or go to the dashboard by clicking the home icon (|image2|). You can also see the name of the documents menu you are currently viewing.
 
-2. Template category combo box, document status filter combo box, and `search box <#category>`__
+
+2. **Template category combo box, document status filter combo box, and search box** 
 
    You can view documents by the selected template category and filter documents by document status.
 
    In addition to performing searches using keywords, you can also use advanced methods such as searching by name + contents, document ID, date, and many more.
 
-3. **Document list and**\  `actions <#additional_work>`__
+
+3. **Document list and actions** 
 
    Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.
 
-   The information of each document such as the document status, name, step, creator, created date, processed date, and document number is
-   provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image3|)
-   displayed at the top right corner of the page, and then check the columns you want to display in the `column check box <#document_column>`__.
+   The information of each document such as the document status, name, step, creator, created date, and document number is provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image3|) displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
 
    You can also perform actions on a document such as reviewing, previewing, correcting, voiding, resending, and deleting a document.
 
-4. `Document status and history <#history>`__
+
+4. **Document status and history**
 
    You can check the documents status and history.
 
@@ -84,7 +73,8 @@ Each documents menu consists of the following five sections:
 
    In the **History** tab, you can see the activities of the document creator and recipients from document creation to completion.
 
-5. `The column selection icon <#document_column>`__\ , \ `document download icon <#document_download>`__\ , \ `delete icon <#document_delete>`__\
+
+5. **The column selection icon, document download icon, and delete icon** 
 
    Clicking the column selection icon (|image4|) displays the column types which you can check to select which columns will be displayed in the document list.
 
@@ -97,12 +87,12 @@ Each documents menu consists of the following five sections:
 
       **How to delete documents**
 
-      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document management permission. The company administrator or the template managers of a template can grant you document management permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document management permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
+      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document manager permission. The company administrator or the template managers of a template can grant you document manager permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document manager permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
 
 .. _category:
 
 Template Category Combo Box, Document Status Filter Combo Box, and Search Box
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The template category combo box, document status filter combo box, and search box are located at the top left side of the **Documents** menus and the **Manage documents** menu.
 
@@ -133,6 +123,7 @@ templates according to categories as shown below:
    :width: 500px
 
 
+
 **Searching by document status**
 ------------------------------------------
 
@@ -142,13 +133,16 @@ You can search for documents by document status in each document menu.
 
 |image7|
 
+
 -  **In progress**
 
 |image8|
 
+
 -  **Completed**
 
 |image9|
+
 
 -  **Manage documents**
 
@@ -178,10 +172,10 @@ The following table describes the filters that can be used for performing search
    Template name   Template name   Step            Step
    Step            Step            Created by      Created by
    Created by      Created by      Created on      Created on
-   Created on      Created on      Processed by    Processed by
-   Requested by    Processed by    Processed on    Processed on
-   Requested on    Processed on    Custom filter   Custom filter
-                   Days passed                      
+   Created on      Created on      Recipient       Recipient
+   Requested by    Days passed     Custom filter   Custom filter 
+   Requested on    Recipient
+   Recipient
    =============== =============== =============== ====================
 
 **Using the custom filter**
@@ -189,9 +183,10 @@ The following table describes the filters that can be used for performing search
 
 1. Select **Custom Filter** in the **Advanced** search combo box.
 
-.. figure:: resources/userdefined_search1.png
+.. figure:: resources/custom_search.png
    :alt: Custom filter
    :width: 500px
+
 
 
 2. Select the field name, field type (keyword, range, or period), and search value.
@@ -206,11 +201,11 @@ Make sure to manually enter the Display name of the field in the document you wa
 
    2. You cannot enter special characters in the display name (", ', ;, <, >, \\).
 
-   3. Empty spaces before and after the display name are all removed. E.g. “ Time off ”  “Time off”
+   3. Empty spaces before and after the display name are all removed. E.g. “Time off ” -> “Time off”.
 
-   4. When adding or editing a search value, if you enter a duplicate value in the custom filter, then the previously entered field type
-   and field search value will be displayed. For example, when adding a custom filter again while 'years worked: 5~10' was entered in the
-   custom filter, if you enter 'years worked' in the field name, then the previous value such as Range for Type, 5 for Min value, and 10 for Max value are displayed.
+   4. When adding or editing a search value, if you enter a duplicate value in the custom filter, then the previously entered field typeand field search value will be displayed. For example, when adding a custom filter again while 'years worked: 5~10' was entered in the custom filter, if you enter 'years worked' in the field name, then the previous value such as Range for Type, 5 for Min value, and 10 for Max value are displayed.
+
+
 
 You can choose one of Keyword, Range, and Period for the field type.
 Keyword is the default.
@@ -271,28 +266,31 @@ Period     Start date  End date
 
 .. _additional_work:
 
+
+
 Actions that Can Be Performed in the Document List by Documents Menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, and download.
+Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, schedule send final copy, remove, share, download, and create new document.
 
 - **In progress**
 
-Can perform actions including preview, correct, void, review, resend, schedule send final copy, and download.
+Can perform actions including preview, correct, void, share, review, resend, schedule send final copy, download, and create new document.
 
 - **Action required**
 
-Can perform actions including preview, correct, void, review, edit, resend, schedule send final copy and download.
+Can perform actions including preview, correct, void, share, review, edit, resend, schedule send final copy, download, and create new document.
 
 - **Completed**
 
-Can perform actions including preview, void, send final copy, and download.
+Can perform actions including preview, share, send final copy, create new document, and download.
 
 - **Manage documents**
 
-Can perform actions including preview, void, send final copy, remove, download, and delete. Documents can only be deleted in the **Manage documents** menu.
+Can perform actions including preview, void (excluding completed documents), remove, download, schedule send final copy (excluding completed documents), send final copy (only completed documents), and create new document. Documents can only be removed in the **Manage documents** menu.
 
 .. _history:
+
 
 Document Status and History
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -313,38 +311,99 @@ In the **Document status** tab, you can see when and what happens to a document 
 
 .. _document_download:
 
+
 Document Download
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
-Documents created in eformsign can be safely stored for long periods of time.
+Documents created in eformsign can be downloaded in PDF as well as in CSV, which contains the data entered in the documents. 
 
-All documents are stored in a file format for long-term storage (PDF/A) and only members with document management permission can open and delete them.
+.. note::
 
-1. Click the download icon (|image12|) on the right side of the document list.
+   💡 **What data is in a CSV file?**
+ 
+   The CSV file you download contains data entered into a document as well as document metadata such as document title, document ID, recipients.
 
-2. Select the document to be downloaded, and then click the **Download** button.
+PDF Download
+-------------------------------
 
-.. figure:: resources/download_popup.png
-   :alt: Document download pop-up
-   :width: 400px
+
+1. Go to a document inbox or the **Manage documents** page and click the document download icon (|image12|).
+2. Tick the check box to the left of the document(s) you want to download.
+3. Click the **Download** button.
+4. Decide whether to include the audit trail certifcate in the pop-up displayed and click the **Download** button.
+
+   .. figure:: resources/download_popup.png
+      :alt: Document downloaod pop-up
+      :width: 400px
+
+
+Export to CSV file
+-------------------------------
+
+
+1. Click the Export to CSV file icon (|image14|) in the **Completed** inbox or the **Manage documents** page.
+2. Tick the check box to the left of the document(s) you want to download.
+3. Click the **Export to CSV file** button.
+4. Select the columns and range in the **Export to CSV file** pop-up displayed. To include all fields in all templates, select **All results**.
+5. Click the **Export** button.
+
+   .. figure:: resources/cvs_file_popup.png
+      :alt: Export to CSV file pop-up
+      :width: 400px
+
+6. Name the CSV file and click **Confirm**.
+
+   .. figure:: resources/cvs_file_name_popup.png
+      :alt: Export to CSV file pop-up
+      :width: 400px
+
+7. Check the status of the file in the **CSV files** pop-up and download the file once it is created.
+ 
+   .. figure:: resources/cvs_file_list_popup.png
+      :alt: CSV files pop-up
+      :width: 600px
 
 
 .. note::
 
-   CSV files can also be downloaded in the **Download** pop-up where PDF files can be downloaded. Select **CSV download** in the pop-up and check the fields (columns) to be downloaded and then click the **Download** button.
+   **CSV files**
+
+   You can view the list of files that have been created or is being created by clicking the CSV files icon (|image17|). 
+   You can cancel while the file is being created and the files that are created can be downloaded again or deleted. The files can be downloaded again within 7 days of creation and are automatically deleted after 7 days.
+
+   .. figure:: resources/cvs_file_list_popup1.png
+      :alt: CSV files pop-up
+      :width: 400px
+
+
+.. tip::
+
+   **Downloading documents in the Bulk send inbox and Manage bulk sent documents inbox**
+
+   You can download bulk sent documents in the Bulk send inbox.
+
+   1. Click the **Detail view** button next to the document you want in the **Bulk send** inbox.
+
+   2. Select the document(s) to download and then click either the **Download** or **Export to CSV file** button.
+
+   .. figure:: resources/bulksend_download.png
+      :alt: Export to CSV file pop-up
+      :width: 700px
+
+
 
 .. _document_delete:
 
-Deleting Documents
-~~~~~~~~~~~~~~~~~~~~~~
+Permanently Removing Documents
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In eformsign, only members with document management permission can delete documents.
+In eformsign, only members with document manager permission can permanently remove documents.
 
-1. Click the delete icon (|image13|) on the right side of the document list.
+1. Click the remove icon (|image13|) on the right side of the document list.
 
-2. Select the document and then click the **Delete** button.
+2. Select the document and then click the **Remove** button.
 
-3. Click the **Yes** button in the Delete pop-up window to delete the document.
+3. Click the **Yes** button in the Remove pop-up window to permanently remove the document.
 
 .. _document_column:
 
@@ -365,12 +424,12 @@ If you click the column (|image14|) icon on the right side of the document list,
 Drafts
 ---------
 
-The Drafts menu stores the documents in the **New from my file** step that have been saved by clicking **Save as a draft** before sending the document. You can open the files stored in the **Drafts** menu anytime and proceed or delete.
+The Drafts inbox stores the documents in the **New from my file** step that have been saved by clicking **Save as a draft** before sending the document. You can open the files stored in the **Drafts** menu anytime and proceed or delete.
 
 1. Click **Drafts** in the sidebar menu to go to the Drafts page.
 
-   |image15|
-
+.. figure:: resources/drafts-dashboard-en.png
+   :alt: Drafts in dashboard
 2. Select a document you want and click the **Continue** button next to it.
 
    |image16|
@@ -384,12 +443,13 @@ The Drafts menu stores the documents in the **New from my file** step that have 
 
 
 
+
 .. _bulksend_documents:
 -------------------------
-Bulk send document box
+Bulk send
 -------------------------
 
-In the **Bulk send document box**, you can see all the documents sent in bulk. You can check the status of documents sent in bulk, cancel or change the date & time of scheduled sends, or resend bulk-sent documents.
+In the **Bulk send** inbox, you can see all the documents sent in bulk. You can check the status of documents sent in bulk, cancel or change the date & time of scheduled sends, or resend bulk-sent documents.
 
 .. figure:: resources/bulksend-documents.png
    :alt: Bulk send document box
@@ -400,7 +460,7 @@ In the list of bulk sent documents, click **Detail view** to see the detailed in
 
 - Check the response status of bulk-sent documents 
 - Resend documents in bulk or individually
-- Void documents
+- Void documents (excluding completed ones)
 - Download PDF or/and CSV files
 - View the current document step, document status, and history of each document
 
@@ -426,6 +486,85 @@ For documents scheduled to be sent later, you can change or cancel the scheduled
    For more information about sending documents in bulk, please refer to `Send in bulk <chapter3.html#bulksend>`__.
 
 
+----------------------------------------------
+
+
+.. _shared_documents:
+
+-------------------------
+Shared
+-------------------------
+
+In the **Shared** inbox, you can share your documents with other members by creating shared folders and also access the documents other members shared with you.
+
+
+.. figure:: resources/en-shared-documents-inbox.png
+   :alt: Shared inbox
+
+A member can create a shared folder and choose the members and groups that can access the folder.
+
+If you have a document you want to added a shared folder, you can go to the Action required, In progress, or Completed inbox and add the document to a shared folder.
+
+**Creating a shared folder**
+
+1. Click **Shared** in the sidebar menu.
+2. Click the **Add shared folder** button to create a shared folder.
+3. Enter the folder name and description in the pop-up window displayed and select the members/groups you want to grant access permission.
+
+.. figure:: resources/en-create-shared-document-inbox.png
+   :alt: Creating a shared folder
+
+4. Click the see more (⋯) button next to the shared folder you created to configure its settings.
+
+.. figure:: resources/en-shared-document-inbox-settings.png
+   :alt: Shared folder settings
+
+- **General settings:** Sets the folder name, description, and access permission.
+
+- **Set auto-sharing rule:** Sets the rules for auto-sharing documents in the shared folder.
+    If you select the document type and words included in the document title, documents will be automatically shared in the shared folder according to the rule.
+
+    For example, if you add the word "contract" in **Words included in the document title** and select documents created without a template in **Document type**, documents containing the word "contract" in the document title that were created without a template are shared in the shared folder.
+
+
+- **Change owner:** Changes the owner of the shared folder.
+
+   .. note::
+
+      ❗A member who creates a shared folder automatically becomes the owner of the shared folder.
+
+- **Delete:** Deletes a shared folder. If a shared folder is deleted, all documents shared in the shared folder are unshared.
+
+.. tip::
+
+   **Tip. How to set the auto-sharing rule.**
+
+   1. Click the see more (⋯) button next to the desired shared folder and click the **Set auto-sharing rule** option.
+
+   2. Set the rule for auto-sharing documents in the pop-up displayed. Adding words under **Words included in the document title** automatically adds the documents containing the words in the document title. Selecting a template under **Document type** automatically adds the documents created from the template in the shared folder.
+
+   - **Words included in the document title:** If you add a word, documents containing that word in the document title are automatically shared in the shared document. You can add multiple words, and if a document contains any one of the words, it is shared in the shared folder.
+
+   - **Document type:** If you select a template in the template list, when a document containing any of the words in **Words included in the document title** is created from that template, the document is automatically shared in the shared folder. If you select "Documents created without a template" in the template list, when a document containing any of the words in **Words included in the document title** is created from **New from my file**, the document is automatically shared in the shared folder.
+
+
+      .. figure:: resources/en-shared-rule-setting.png
+         :alt: Auto-sharing rule
+         :width: 300px
+
+
+
+**Adding a document in a shared folder**
+
+1. Go to a document inbox (Action required, In progress, or Completed).
+2. Click "Shared" under a document name to add a document to a shared folder of your choice.
+
+   .. figure:: resources/en-share-document.png
+      :alt: Sharing documents
+
+.. tip::
+
+   To share multiple documents at the same time, click the share icon at the top right corner of the screen. Then, select the documents you want to share and click the **Share** button at the top of the screen.
 
 
 
@@ -450,11 +589,14 @@ For documents scheduled to be sent later, you can change or cancel the scheduled
 .. |image10| image:: resources/documentmanage_status_search.png
    :width: 700px
 .. |image11| image:: resources/searchplus.png
+   :width: 50px
 .. |image12| image:: resources/download_icon.png
 .. |image13| image:: resources/delete_icon1.png
 .. |image14| image:: resources/column_icon.png
    :width: 35px
-.. |image15| image:: resources/draftbox-menu.png
-   :width: 400px
+.. |image15| image:: resources/en-draftbox-menu.png
+   :width: 700px
 .. |image16| image:: resources/draftbox-documentlist.png
    :width: 700px
+.. |image17| image:: resources/csv_file_list_icon.png
+   :width: 20px

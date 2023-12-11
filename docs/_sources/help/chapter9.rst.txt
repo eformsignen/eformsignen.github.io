@@ -1,8 +1,8 @@
 .. _Custumization:
 
-========================
+=======================
 Customization
-========================
+=======================
 
 ---------------------------------------------
 Manage Custom Fields
@@ -14,6 +14,7 @@ You can add and edit fields for companies, groups, and members in the **Manage c
 
    By using custom fields, you can set frequently used companies, groups, and member information (e.g., company phone number, address,
    company representative name, etc.) to be added automatically in documents. After adding custom fields in the **Manage custom fields** menu, go to the **Template settings > Field settings** menu to set which information is to be entered automatically in the documents.
+
 
 
 
@@ -64,7 +65,7 @@ Notification templates can be edited in the **Manage company > Notification temp
 Default templates are shown in the **Manage company > Notification template management** menu. You can change the contents of the default templates and add new notification templates.
 
 **Basic template types (select from Mail or SMS)**
------------------------------------------------------
+----------------------------------------------------
 
 - Notification for document completion
 - Notification for document rejection
@@ -74,9 +75,10 @@ Default templates are shown in the **Manage company > Notification template mana
 .. tip::
 
    The header is set with the eformsign logo by default. If you upload your company's logo in the **Manage company > Company profile >**  `Company brand <#brand>`__ tab menu, the logo is applied to the email templates.
+   
 
 **How to add a new notification template**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In addition to the default templates, you can add a new notification template.
 
