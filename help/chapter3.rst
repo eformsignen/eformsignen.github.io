@@ -265,7 +265,7 @@ The detail settings in **Recipient options** is displayed differently depending 
 
 
 **Options**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In the Options step, you can set the document title, set and edit document notification settings, and choose whether to timestamp the document.
 
 .. figure:: resources/wfd-option.png
