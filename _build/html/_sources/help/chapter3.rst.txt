@@ -58,7 +58,7 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
 5. In the Add recipients step, you can add contact information such as email and phone number and set **Recipient options** for each signer.
 
-   .. figure:: resources/english-new-from-my-file-enter-contact-info.png
+   .. figure:: resources/new-en-add-recipients-enter-contact-info.png
       :alt: New from my file > Enter contact info
       :width: 700px
 
@@ -172,7 +172,7 @@ The detail settings in **Recipient options** is displayed differently depending 
 
          Setting the valid period to 0 days 0 hours disables the document expiration period.
 
-   .. figure:: resources/english-recipients-recipient-options.png
+   .. figure:: resources/new-en-recipients-recipient-options.png
       :alt: Add recipients > Recipient options
       :width: 700px
 
