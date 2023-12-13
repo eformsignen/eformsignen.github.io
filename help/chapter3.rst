@@ -172,7 +172,7 @@ The detail settings in **Recipient options** is displayed differently depending 
 
          Setting the valid period to 0 days 0 hours disables the document expiration period.
 
-   .. figure:: resources/en-add-recipients-recipient-options.png
+   .. figure:: resources/en-recipients-recipient-options.png
       :alt: Add recipients > Recipient options
       :width: 700px
 
