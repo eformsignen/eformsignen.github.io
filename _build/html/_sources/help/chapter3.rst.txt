@@ -58,7 +58,9 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
 5. In the Add recipients step, you can add contact information such as email and phone number and set **Recipient options** for each signer.
 
-   |image5|
+   .. figure:: resources/en-new-from-my-file-enter-contact.png
+      :alt: New from my file > Enter contact info
+      :width: 700px
 
    .. note::
 
@@ -170,7 +172,10 @@ The detail settings in **Recipient options** is displayed differently depending 
 
          Setting the valid period to 0 days 0 hours disables the document expiration period.
 
-   |image12|
+   .. figure:: resources/en-add-recipients-recipient-options.png
+      :alt: Add recipients > Recipient options
+      :width: 700px
+
 
 
 -  **When the recipient is a non-member:**
@@ -216,6 +221,7 @@ The detail settings in **Recipient options** is displayed differently depending 
 
             Additional charges will be applied if the 6 digit PIN code is sent via SMS.
 
+   -  **Disable the decline feature:** Blocks recipients from being able to decline documents.
 
 **Hiding files from recipients**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
