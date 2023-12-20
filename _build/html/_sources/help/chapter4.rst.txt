@@ -27,7 +27,7 @@ File Uploading
 --------------------
 
 Uploading a file in the **New from my file** menu.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Click the **New from my file** menu.
 
