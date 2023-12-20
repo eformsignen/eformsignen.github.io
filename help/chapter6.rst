@@ -395,27 +395,49 @@ Both Text and Multiline fields are used to create text fields. The Text field is
 
 **① ID**
 
-Enters the ID of the text/multiline field. For example, the ID of the field in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.
+Enters the ID of the Text/Multiline field. For example, the ID of the field in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.
 
-**② Max Length**
+.. note::
 
-Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters.
+   All fields must have an ID. An ID is automatically generated when you create a field, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a field for entering John Doe, Jane Doe, etc. as 'name'. By doing so, it is easier to identify fields when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
 
-**③ Keyboard Type**
+**② Who can fill this out**
 
-Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as smartphones and tablets.
+Selects who is allowed or required to fill out the field.
 
-**④ Show Password Characters**
 
-This option can be set only in the text field. By checking this
-option, the password is hidden with the password symbol (●) when
-entering text. The password is also hidden with the password symbol in
-PDFs, and can only be seen when downloaded in the CSV format.
+**③ Default value**
 
-**⑤ Tooltip Text**
+Sets the default text.
 
-Displays the description in Tooltip Text when you hover the mouse over a
-field.
+.. note::
+
+   This option can be set only in the Text field. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.
+
+**④ Input type**
+
+Selects either ''Plain text', 'Password', or 'Custom' for the Text field and 'Plain text' and 'Custom' for the Multiline field.
+
+**⑤ Select custom input type**
+
+Selects additional input types as well as create a custom input type by creating a rule. It is enabled when **Input type** is set to 'Custom'. 
+
+**⑥ Autofit text**
+
+ Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.
+ 
+**⑦ Keypad type on mobile devices**
+
+Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as
+smartphones and tablets.
+
+**⑧ Placeholder**
+
+Displays a help message when no value is entered.
+
+**⑨ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a field.
 
 
 .. _handwriting:
@@ -557,7 +579,7 @@ In Word and PowerPoint, the **Check** field is shown as a rectangular shape. Mak
 
 Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.
 
-**② Check Style**
+**② Selected Style**
 
 You can specify the style of each cfield in **Field Properties**.
 The check box is set as the default style, and you can change it to another style (radio button or red circle).
@@ -565,6 +587,18 @@ The check box is set as the default style, and you can change it to another styl
 The below example shows how check boxes are displayed according to the selected style.
 
 |image5|
+
+**③ Unselected Style**
+
+You can select the style of each field that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.
+
+**④ Check box alignment**
+
+You can choose whether to align the placeholder text to the right or left of the check box.
+
+**⑤ Tooltip Text**
+
+If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
 .. _select:
 
@@ -593,26 +627,34 @@ For example, if there are six choices available in a multiple choice question, a
 
 .. figure:: resources/radio-items-should-have-same-ID.png
    :alt: Example of Setting a Radio Field
-   :width: 700px
+   :width: 500px
 
 
+**② Selected style**
 
-**② Check Style**
+You can specify the style of each field in **Field Properties**.
+The black circle set as the default style, and you can change it to another style in the dropdown menu.
 
-You can choose the style of the Radio field in **Field Properties**. The default style is the **Circle**, and you can change it to another style (check box and radio button).
+**③ Unselected style**
 
-**③ Multiselectable**
+You can select the style of each field that is not selected.
 
-Checking the **Multi-selectable** option allows you to select multiple items. If you select more than one item, then when data is saved, each
-item is separated with a comma (,).
+**④ MultiSelectable**
 
-**④ Uncheckable**
+Checking the **MultiSelectable** option allows you to select multiple items. If you select more than one item, then when data is saved, each item is separated with a comma (,).
+
+**⑤ Uncheckable**
 
 Checking the **Uncheckable** option allows you to deselect a selected item by clicking it again.
 
-**⑤ Tooltip Text**
+**⑥ Radio button alignment**
 
-Displays the description in Tooltip Text when you hover the mouse over a field.
+Select whether to place the button to the left or right of the text.
+
+
+**⑦ Tooltip Text**
+
+If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
 
 .. _combo:

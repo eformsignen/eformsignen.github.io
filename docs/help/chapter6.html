@@ -383,19 +383,34 @@ stamp image to stamp the signature on a document. To use a stamp image when subm
 <a class="reference internal image-reference" href="../_images/text-component-properties.png"><img alt="Setting Text and Multiline Field Properties" src="../_images/text-component-properties.png" style="width: 250px;" /></a>
 </figure>
 <p><strong>① ID</strong></p>
-<p>Enters the ID of the text/multiline field. For example, the ID of the field in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.</p>
-<p><strong>② Max Length</strong></p>
-<p>Sets the maximum length of characters (including space) that can be entered. By default, it is set to ‘0’, and in this case, there is no limit for the number of characters.</p>
-<p><strong>③ Keyboard Type</strong></p>
-<p>Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as smartphones and tablets.</p>
-<p><strong>④ Show Password Characters</strong></p>
-<p>This option can be set only in the text field. By checking this
-option, the password is hidden with the password symbol (●) when
-entering text. The password is also hidden with the password symbol in
-PDFs, and can only be seen when downloaded in the CSV format.</p>
-<p><strong>⑤ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a
-field.</p>
+<p>Enters the ID of the Text/Multiline field. For example, the ID of the field in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All fields must have an ID. An ID is automatically generated when you create a field, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a field for entering John Doe, Jane Doe, etc. as ‘name’. By doing so, it is easier to identify fields when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.</p>
+</div>
+<p><strong>② Who can fill this out</strong></p>
+<p>Selects who is allowed or required to fill out the field.</p>
+<p><strong>③ Default value</strong></p>
+<p>Sets the default text.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option can be set only in the Text field. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.</p>
+</div>
+<p><strong>④ Input type</strong></p>
+<p>Selects either ‘’Plain text’, ‘Password’, or ‘Custom’ for the Text field and ‘Plain text’ and ‘Custom’ for the Multiline field.</p>
+<p><strong>⑤ Select custom input type</strong></p>
+<p>Selects additional input types as well as create a custom input type by creating a rule. It is enabled when <strong>Input type</strong> is set to ‘Custom’.</p>
+<p><strong>⑥ Autofit text</strong></p>
+<blockquote>
+<div><p>Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.</p>
+</div></blockquote>
+<p><strong>⑦ Keypad type on mobile devices</strong></p>
+<p>Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as
+smartphones and tablets.</p>
+<p><strong>⑧ Placeholder</strong></p>
+<p>Displays a help message when no value is entered.</p>
+<p><strong>⑨ Tooltip Text</strong></p>
+<p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="handwriting">
 <span id="id2"></span><h4>Handwriting<a class="headerlink" href="#handwriting" title="Link to this heading"></a></h4>
@@ -475,11 +490,17 @@ is checked or not) while the <strong>Radio</strong> field is used for checking w
 </figure>
 <p><strong>① ID</strong></p>
 <p>Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.</p>
-<p><strong>② Check Style</strong></p>
+<p><strong>② Selected Style</strong></p>
 <p>You can specify the style of each cfield in <strong>Field Properties</strong>.
 The check box is set as the default style, and you can change it to another style (radio button or red circle).</p>
 <p>The below example shows how check boxes are displayed according to the selected style.</p>
 <p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image5" src="../_images/check-component-style-settings.png" style="width: 600px;" /></a></p>
+<p><strong>③ Unselected Style</strong></p>
+<p>You can select the style of each field that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.</p>
+<p><strong>④ Check box alignment</strong></p>
+<p>You can choose whether to align the placeholder text to the right or left of the check box.</p>
+<p><strong>⑤ Tooltip Text</strong></p>
+<p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="radio">
 <span id="select"></span><h4>Radio<a class="headerlink" href="#radio" title="Link to this heading"></a></h4>
@@ -494,17 +515,21 @@ The check box is set as the default style, and you can change it to another styl
 <p>In <strong>Field Properties</strong>, make sure that all the selected radio buttons are assigned the same ID.</p>
 <p>For example, if there are six choices available in a multiple choice question, assign “question1” as the ID for all of them. In the example shown below, the IDs of all the items are set to the same “question 1”.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID.png"><img alt="Example of Setting a Radio Field" src="../_images/radio-items-should-have-same-ID.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID.png"><img alt="Example of Setting a Radio Field" src="../_images/radio-items-should-have-same-ID.png" style="width: 500px;" /></a>
 </figure>
-<p><strong>② Check Style</strong></p>
-<p>You can choose the style of the Radio field in <strong>Field Properties</strong>. The default style is the <strong>Circle</strong>, and you can change it to another style (check box and radio button).</p>
-<p><strong>③ Multiselectable</strong></p>
-<p>Checking the <strong>Multi-selectable</strong> option allows you to select multiple items. If you select more than one item, then when data is saved, each
-item is separated with a comma (,).</p>
-<p><strong>④ Uncheckable</strong></p>
+<p><strong>② Selected style</strong></p>
+<p>You can specify the style of each field in <strong>Field Properties</strong>.
+The black circle set as the default style, and you can change it to another style in the dropdown menu.</p>
+<p><strong>③ Unselected style</strong></p>
+<p>You can select the style of each field that is not selected.</p>
+<p><strong>④ MultiSelectable</strong></p>
+<p>Checking the <strong>MultiSelectable</strong> option allows you to select multiple items. If you select more than one item, then when data is saved, each item is separated with a comma (,).</p>
+<p><strong>⑤ Uncheckable</strong></p>
 <p>Checking the <strong>Uncheckable</strong> option allows you to deselect a selected item by clicking it again.</p>
-<p><strong>⑤ Tooltip Text</strong></p>
-<p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
+<p><strong>⑥ Radio button alignment</strong></p>
+<p>Select whether to place the button to the left or right of the text.</p>
+<p><strong>⑦ Tooltip Text</strong></p>
+<p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="combo">
 <span id="id6"></span><h4>Combo<a class="headerlink" href="#combo" title="Link to this heading"></a></h4>
