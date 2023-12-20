@@ -603,7 +603,7 @@ If you hover mouse over a field, the description you entered in the tooltip text
 .. _select:
 
 Radio
--------------------
+------------------
 
 The Radio field is used for checking which radio button is selected among multiple items. When data is downloaded in the CSV format, the selected item will be displayed.
 
