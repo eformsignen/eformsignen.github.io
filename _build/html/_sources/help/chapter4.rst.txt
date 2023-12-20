@@ -648,7 +648,7 @@ You can select the style of each field that is not selected.
 
 **⑥ Radio button alignment**
 
-You can choose whether to align the placeholder text to the right or left of the radio button.
+Select whether to place the button to the left or right of the text.
 
 
 **⑦ Tooltip Text**
