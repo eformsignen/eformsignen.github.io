@@ -600,6 +600,20 @@ You can click a step to set the details such as **Properties** for each workflow
 
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
 
+   -  **Block automated document generation by bots**: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.
+
+   .. note::
+
+      **Block automated document generation by bots**
+
+      By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the "I'm not a robot" check box. 
+
+      .. figure:: resources/URL-option-recaptcha.png
+         :alt: reCAPTCHA
+         :width: 250px
+
+      ❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.
+
 
 .. tip::
 

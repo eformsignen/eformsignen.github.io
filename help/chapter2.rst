@@ -774,7 +774,7 @@ If you add your signature, initial, and stamp in the **My signature** menu, you 
 
    You can select the signature types that can be used when signing on documents.
 
-   Go to **Manage company** > **Signature settings** to select the signature types (Draw, Text) that can be used when signing on documents.
+   In **Manage company** > **Signature settings**, you can disable or enable the signing methods (such as signing with text and create stamp) that can be used when signing a signature or stamp.
 
    .. figure:: resources/signature-method.png
       :alt: Signature type settings
@@ -786,9 +786,15 @@ If you add your signature, initial, and stamp in the **My signature** menu, you 
 **Adding your stamp**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some documents may require a seal or stamp rather than a signature or initial. In eformsign, there are three ways to add a stamp: creating a stgamp, uploading an image, and scanning a stamp.
+Some documents may require a seal or stamp rather than a signature or initial. In eformsign, there are three ways to add a stamp: creating a stamp, uploading an image, and scanning a stamp.
 
+.. important::
 
+   **❗The stamps in My signature are not the same as company stamps.** 
+
+   For official stamps such as corporate seals, use them by adding them as company stamps.
+
+   Once you adding one as a company stamp, you can grant permissions to members/groups, and can view its usage history.
 
 **Creating a stamp**
 -----------------------------
@@ -812,6 +818,16 @@ Some documents may require a seal or stamp rather than a signature or initial. I
 
 4. Click the **Edit** or **Delete** button to edit or delete the added stamp.
 
+.. tip::
+
+   **Disabling the create stamp feature**
+
+   To disable the **Create stamp** feature when applying a stamp in the signature field, disable the feature in **Manage company > Signature settings**.
+
+
+   .. figure:: resources/signature-method-createstamp.png
+      :alt: Signature setings screen
+      :width: 700px
 
 
 **Uploading an image**
@@ -889,9 +905,9 @@ Some documents may require a seal or stamp rather than a signature or initial. I
 
 
 
-1. Go to the **My signature**\  age -> touch the **Register**\  button under **Stamp**\ -> touch the **Scan stamp** tab on the pop-up displayed.
+1. Go to the **My signature**\  page -> touch the **Register**\  button under **Stamp**\ -> touch the **Scan stamp** tab on the pop-up displayed.
 
-   .. figure:: resources/signature-stamp-scan-popup-mobile.png
+   .. figure:: resources/stamp-scan-popup-mobile-en.png
       :alt: Scan stamp pop-up
       :width: 300px
 
