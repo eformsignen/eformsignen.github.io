@@ -257,45 +257,51 @@ As well, you can see this name in all document pages (In progress, Action requir
    +-----------------------+-----------------------------------------------+
    | Information types     | Description                                   |
    +=======================+===============================================+
-   | Current_date          | The date in which the document is created     |
+   |Current_date           | The date in which the document is created     |
    |                       | (e.g. Feb 20, 2020)                           |
    +-----------------------+-----------------------------------------------+
-   | Current_time          | The time in which the document is created     |
+   |Current_time           | The time in which the document is created     |
    |                       | (e.g. 02:59 pm)                               |
    +-----------------------+-----------------------------------------------+
-   | Current_datetime      | The date and time in which the document is    |
+   |Current_datetime       | The date and time in which the document is    |
    |                       | created (e.g. Feb 20, 2020, 02:59 pm)         |
    +-----------------------+-----------------------------------------------+
-   | Creator_ID            | The ID of the member who created the document |
+   |Creator_ID             | The ID of the member who created the document |
    +-----------------------+-----------------------------------------------+
-   | Creator_name          | The name of the member who created the        |
+   |Creator_name           | The name of the member who created the        |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_dept          | The department of the member who created the  |
+   |Creator_dept           | The department of the member who created the  |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_company Name  | The name of the company in which the member   |
+   |Creator_company Name   | The name of the company in which the member   |
    |                       | who created the document belongs to           |
    +-----------------------+-----------------------------------------------+
-   | Template_name         | The template name entered in Template         |
+   |Template_name          | The template name entered in Template         |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Template_abbreviation | The template abbreviation entered in Template |
+   |Template_abbreviation  | The template abbreviation entered in Template |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Company               | The company name entered in Manage company >  |
+   |Document_ID            | A unique ID for the document, represented by  |
+   |                       | a 32-digit alphanumeric combination           |
+   +-----------------------+-----------------------------------------------+
+   |Document_number        | The number generated when the Generate a      |
+   |                       | document number option is enabled in General  |
+   +-----------------------+-----------------------------------------------+
+   |Company                | The company name entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_address       | The address entered in Manage company >       |
+   |Company_address        | The address entered in Manage company >       |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_contact_no    | The contact information entered in Manage     |
+   |Company_contact_no     | The contact information entered in Manage     |
    |                       | company > Company profile                     |
    +-----------------------+-----------------------------------------------+
-   | Company_              | The business registration number entered in   |
-   | registration_no       | Manage company > Company profile              |
+   |Company_registration_no| The business registration number entered in   |
+   |                       | Manage company > Company profile              |
    +-----------------------+-----------------------------------------------+
-   | Company_homepage      | The homepage URL entered in Manage company >  |
+   |Company_homepage       | The homepage URL entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
 
