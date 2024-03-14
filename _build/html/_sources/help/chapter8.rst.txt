@@ -26,9 +26,13 @@ Documents are stored in document menus (inboxes) according to their status. You 
 -------------------------
 
 
--  **Manage documents** and **Manage bulk sent documents**: These are inboxes for document managers and they can view documents in which they have permission.
+**Manage documents** and **Manage bulk sent documents**: These are inboxes for document managers and they can view documents in which they have permission.
 
-  **Manage documents:** Only members with the document manager permission can access this inbox. They can view all documents created from templates in which they are given permission to view.
+.. note::
+
+   For information on granting the document manager permission refer to the `Document manager <chapter2.html#document-manager>`_ section. Note that the company administrawtor can view and manage all documents in the company.
+
+-  **Manage documents:** Only members with the document manager permission can access this inbox. They can view all documents created from templates in which they are given permission to view.
 
 -  **Manage bulk sent documents:** Only members with the document manager permission can access this inbox. They can view all documents bulk created from templates in which they are given permission to view.
 
@@ -42,7 +46,17 @@ Documents are stored in document menus (inboxes) according to their status. You 
 Documents menu
 ---------------
 
+.. note::
+
+   While the screen layout for the **Action required, In progress, and Completed inboxes** and the **Manage documents** page are almost identical, there are differences in the documents you see based on the document status or the permissions you have.
+
+
 Each documents menu consists of the following five sections:
+
+.. figure:: resources/document_inbox_layout.png
+   :alt: Document inbox layout
+   :width: 700px
+
 
 1. **Menu and home icon, and document menu name**
 
@@ -60,7 +74,7 @@ Each documents menu consists of the following five sections:
 
    Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.
 
-   The information of each document such as the document status, name, step, creator, created date, and document number is provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image3|) displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
+   The information of each document such as the document status, name, step, creator, created date, and document number is provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image4|) displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
 
    You can also perform actions on a document such as reviewing, previewing, correcting, voiding, resending, and deleting a document.
 
@@ -74,20 +88,22 @@ Each documents menu consists of the following five sections:
    In the **History** tab, you can see the activities of the document creator and recipients from document creation to completion.
 
 
-5. **The column selection icon, document download icon, and delete icon** 
+5. **The share, column, download, and delete icons** 
 
-   Clicking the column selection icon (|image4|) displays the column types which you can check to select which columns will be displayed in the document list.
+   - Share (|image20|): Clicking the share icon allows you to select a document you want to share in a shared folder.
 
-   Clicking the download icon (|image5|) allows to select the documents in the list you want to download. You can select multiple documents
-   to download at once and choose the file type including the PDF of the completed documents, audit certificate, and CSV of selected fields.
+   - Column (|image21|): Clicking the column icon allows you to view the column types and select the columns in the document list that you want to be displayed.
 
-   Note that the delete icon (|image6|) is disabled in the three document menus, but is enabled in the **Manage documents** menu.
-
+   - Download (|image22|): Clicking the icons allows you to download documents in PDF or CSV format and view the list of CSV files that have been generated.
    .. note::
 
       **How to delete documents**
 
-      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document manager permission. The company administrator or the template managers of a template can grant you document manager permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document manager permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
+      In document inboxes, the delete icon is disabled.
+
+      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document manager permission. The company administrator or the template managers of a template can grant you document manager permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. 
+
+      The document manager permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
 
 .. _category:
 
@@ -574,7 +590,7 @@ If you have a document you want to added a shared folder, you can go to the Acti
    :width: 25px
 .. |image3| image:: resources/column_icon.png
    :width: 35px
-.. |image4| image:: resources/column_icon.png
+.. |image4| image:: resources/column_icon1.png
    :width: 35px
 .. |image5| image:: resources/download-icon.PNG
    :width: 30px
@@ -592,11 +608,17 @@ If you have a document you want to added a shared folder, you can go to the Acti
    :width: 50px
 .. |image12| image:: resources/download_icon.png
 .. |image13| image:: resources/delete_icon1.png
-.. |image14| image:: resources/column_icon.png
-   :width: 35px
+.. |image14| image:: resources/csv_download_icon.png
+   :width: 25px
 .. |image15| image:: resources/en-draftbox-menu.png
    :width: 700px
 .. |image16| image:: resources/draftbox-documentlist.png
    :width: 700px
 .. |image17| image:: resources/csv_file_list_icon.png
    :width: 20px
+.. |image20| image:: resources/share_icon.png
+   :width: 25px
+.. |image21| image:: resources/column_icon1.png
+   :width: 35px
+.. |image22| image:: resources/download_icon1.png
+   :width: 90px

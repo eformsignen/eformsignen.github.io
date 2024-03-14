@@ -223,6 +223,21 @@ Configure additional settings including document naming rules for documents crea
 **⑨ Skip pop-up window when sending documents**
    Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
 
+**➉ Document retention period**
+   Sets the retention period for documents created from the template. If this is not set, then the document retention period for the template follows the company-wide settings.
+
+   .. note::
+
+      The retention period can be set from a minimum of 1 day to a maximum of 15 years.
+
+      **Maximum retention period by year/month/day**
+      
+      - 15 years
+      - 180 months
+      - 5,475 days
+
+      💡For information on how to set the company-wide document retention period, go to `Document retention period <chapter2.html#retention>`_.
+
 
 
 .. _document_naming:
@@ -283,45 +298,51 @@ You can make a piece of information entered into a document or document-related 
    +-----------------------+-----------------------------------------------+
    | Information types     | Description                                   |
    +=======================+===============================================+
-   | Current_date          | The date in which the document is created     |
+   |Current_date           | The date in which the document is created     |
    |                       | (e.g. Feb 20, 2020)                           |
    +-----------------------+-----------------------------------------------+
-   | Current_time          | The time in which the document is created     |
+   |Current_time           | The time in which the document is created     |
    |                       | (e.g. 02:59 pm)                               |
    +-----------------------+-----------------------------------------------+
-   | Current_datetime      | The date and time in which the document is    |
+   |Current_datetime       | The date and time in which the document is    |
    |                       | created (e.g. Feb 20, 2020, 02:59 pm)         |
    +-----------------------+-----------------------------------------------+
-   | Creator_ID            | The ID of the member who created the document |
+   |Creator_ID             | The ID of the member who created the document |
    +-----------------------+-----------------------------------------------+
-   | Creator_name          | The name of the member who created the        |
+   |Creator_name           | The name of the member who created the        |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_dept          | The department of the member who created the  |
+   |Creator_dept           | The department of the member who created the  |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_company Name  | The name of the company in which the member   |
+   |Creator_company Name   | The name of the company in which the member   |
    |                       | who created the document belongs to           |
    +-----------------------+-----------------------------------------------+
-   | Template_name         | The template name entered in Template         |
+   |Template_name          | The template name entered in Template         |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Template_abbreviation | The template abbreviation entered in Template |
+   |Template_abbreviation  | The template abbreviation entered in Template |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Company               | The company name entered in Manage company >  |
+   |Document_ID            | A unique ID for the document, represented by  |
+   |                       | a 32-digit alphanumeric combination           |
+   +-----------------------+-----------------------------------------------+
+   |Document_number        | The number generated when the Generate a      |
+   |                       | document number option is enabled in General  |
+   +-----------------------+-----------------------------------------------+
+   |Company                | The company name entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_address       | The address entered in Manage company >       |
+   |Company_address        | The address entered in Manage company >       |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_contact_no    | The contact information entered in Manage     |
+   |Company_contact_no     | The contact information entered in Manage     |
    |                       | company > Company profile                     |
    +-----------------------+-----------------------------------------------+
-   | Company_              | The business registration number entered in   |
-   | registration_no       | Manage company > Company profile              |
+   |Company_registration_no| The business registration number entered in   |
+   |                       | Manage company > Company profile              |
    +-----------------------+-----------------------------------------------+
-   | Company_homepage      | The homepage URL entered in Manage company >  |
+   |Company_homepage       | The homepage URL entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
 
@@ -599,6 +620,20 @@ You can click a step to set the details such as **Properties** for each workflow
    - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
 
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
+
+   -  **Block automated document generation by bots**: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.
+
+   .. note::
+
+      **Block automated document generation by bots**
+
+      By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the "I'm not a robot" check box. 
+
+      .. figure:: resources/URL-option-recaptcha.png
+         :alt: reCAPTCHA
+         :width: 250px
+
+      ❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.
 
 
 .. tip::

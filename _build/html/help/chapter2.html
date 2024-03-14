@@ -84,6 +84,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#stamp-history-tab"><strong>Stamp history tab</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#security-settings">Security settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-retention-period">Document retention period</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
@@ -171,6 +173,8 @@
 <li><p><strong>Signature settings:</strong> Select the signature types that can be used when signing directly on documents.</p></li>
 <li><p><strong>Notification template management:</strong> You can view and edit email and SMS notification templates.</p></li>
 <li><p><strong>Manage custom fields:</strong> You can add and configure custom fields such as company, group, and member information.</p></li>
+<li><p><strong>Security settings:</strong> You can set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign.</p></li>
+<li><p><strong>Document retention settings:</strong> You can set the document retention period for all the documents created in the company.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -309,10 +313,10 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <p>On eformsign, a 512 pixel X 128 pixel horizontal image size is recommended for logos, and a 120 pixel X 120 pixel square image size is recommended for symbols.</p>
 </div>
 <p><strong>Adding the Company Logo and Symbol</strong></p>
-<figure class="align-default" id="id5">
+<figure class="align-default" id="id6">
 <a class="reference internal image-reference" href="../_images/en-manage-company-brand.png"><img alt="Company Profile &gt; Brand image" src="../_images/en-manage-company-brand.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Company Profile &gt; Brand image</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+<p><span class="caption-text">Company Profile &gt; Brand image</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <ol class="arabic">
@@ -738,7 +742,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can select the signature types that can be used when signing on documents.</p>
-<p>Go to <strong>Manage company</strong> &gt; <strong>Signature settings</strong> to select the signature types (Draw, Text) that can be used when signing on documents.</p>
+<p>In <strong>Manage company</strong> &gt; <strong>Signature settings</strong>, you can disable or enable the signing methods (such as signing with text and create stamp) that can be used when signing a signature or stamp.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/signature-method.png"><img alt="Signature type settings" src="../_images/signature-method.png" style="width: 400px;" /></a>
 </figure>
@@ -746,7 +750,13 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </section>
 <section id="adding-your-stamp">
 <span id="registerstamp"></span><h3><strong>Adding your stamp</strong><a class="headerlink" href="#adding-your-stamp" title="Link to this heading"></a></h3>
-<p>Some documents may require a seal or stamp rather than a signature or initial. In eformsign, there are three ways to add a stamp: creating a stgamp, uploading an image, and scanning a stamp.</p>
+<p>Some documents may require a seal or stamp rather than a signature or initial. In eformsign, there are three ways to add a stamp: creating a stamp, uploading an image, and scanning a stamp.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>❗The stamps in My signature are not the same as company stamps.</strong></p>
+<p>For official stamps such as corporate seals, use them by adding them as company stamps.</p>
+<p>Once you adding one as a company stamp, you can grant permissions to members/groups, and can view its usage history.</p>
+</div>
 <section id="creating-a-stamp">
 <h4><strong>Creating a stamp</strong><a class="headerlink" href="#creating-a-stamp" title="Link to this heading"></a></h4>
 <ol class="arabic">
@@ -763,6 +773,14 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </li>
 <li><p>Click the <strong>Edit</strong> or <strong>Delete</strong> button to edit or delete the added stamp.</p></li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Disabling the create stamp feature</strong></p>
+<p>To disable the <strong>Create stamp</strong> feature when applying a stamp in the signature field, disable the feature in <strong>Manage company &gt; Signature settings</strong>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/signature-method-createstamp.png"><img alt="Signature setings screen" src="../_images/signature-method-createstamp.png" style="width: 700px;" /></a>
+</figure>
+</div>
 </section>
 <section id="uploading-an-image">
 <h4><strong>Uploading an image</strong><a class="headerlink" href="#uploading-an-image" title="Link to this heading"></a></h4>
@@ -821,9 +839,9 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p><strong>Scanning a stamp on a mobile device</strong></p></li>
 </ul>
 <ol class="arabic">
-<li><p>Go to the <strong>My signature</strong> age -&gt; touch the <strong>Register</strong> button under <strong>Stamp</strong>-&gt; touch the <strong>Scan stamp</strong> tab on the pop-up displayed.</p>
+<li><p>Go to the <strong>My signature</strong> page -&gt; touch the <strong>Register</strong> button under <strong>Stamp</strong>-&gt; touch the <strong>Scan stamp</strong> tab on the pop-up displayed.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup-mobile.png"><img alt="Scan stamp pop-up" src="../_images/signature-stamp-scan-popup-mobile.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/stamp-scan-popup-mobile-en.png"><img alt="Scan stamp pop-up" src="../_images/stamp-scan-popup-mobile-en.png" style="width: 300px;" /></a>
 </figure>
 </li>
 <li><p>Download and print out <strong>Scannable paper for stamps</strong>.</p></li>
@@ -898,6 +916,79 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <a class="reference internal image-reference" href="../_images/company-stamp-history.png"><img alt="Stamp history tab" src="../_images/company-stamp-history.png" style="width: 700px;" /></a>
 </figure>
 </section>
+</section>
+<section id="security-settings">
+<span id="id5"></span><h2>Security settings<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
+<p>To secure your account in eformsign, you can set permissions to allow login from specific IP addresses only.</p>
+<p><strong>How to filter IP addresses by permission level</strong></p>
+<ol class="arabic simple">
+<li><p>Go to the <strong>Manage company &gt; Security settings</strong> menu.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings.png"><img alt="Security settings" src="../_images/security-settings.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Under <strong>IP access settings</strong>, select <strong>Allow access only to allowed IP addresses</strong>.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="Security settings" src="../_images/security-settings2.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Enter the IP address or range you want to allow access from.</p></li>
+<li><p>Select the permission level (company administrator/company manager/member) you want to allow logins from the IP address.</p></li>
+<li><p>Click the <strong>Add</strong> button.</p></li>
+<li><p>Review the list of allowed IP addresses and then click the <strong>Save</strong> button.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="Security settings" src="../_images/security-settings1.png" style="width: 700px;" /></a>
+</figure>
+</section>
+<section id="document-retention-period">
+<span id="retention"></span><h2>Document retention period<a class="headerlink" href="#document-retention-period" title="Link to this heading"></a></h2>
+<p>To increase the safety and efficiency of managing documents, you can set a retention period. The document retention period can be set company-wide or template specific, and documentss are automatically deleted from the document inbox once the retention period expires.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For information on how to set the document retention period by template, go to <a class="reference external" href="chapter5.html#general-wd">Template settings</a>.</p>
+</div>
+<p><strong>How to set the document retention period</strong></p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>❗Only the company administrator can perform this action, and once changing the retention period, the change is applied to all the documents in the company.</p>
+<p>However, this does not affect the documents created from templates with their own document retention period.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Go to the <strong>Manage company &gt; Document retention period</strong> menu.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/retention-period.png"><img alt="Document retention period settings" src="../_images/retention-period.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Click <strong>Settings</strong> in the Document retention period page.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/retention-period1.png"><img alt="Document retention period settings" src="../_images/retention-period1.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic" start="3">
+<li><p>Select months/years in the drop-down box and enter the period.</p>
+<p>➡The retention period can be set from a minimum of 1 month to a maximum of 15 years.</p>
+</li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/retention-period2.png"><img alt="Document retention period settings" src="../_images/retention-period2.png" style="width: 700px;" /></a>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Click the <strong>Save</strong> button to update the retention preiod, and the change will apply to the documents created hereafter.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>📣 <strong>Some notes about the document retention period</strong></p>
+<ul class="simple">
+<li><p>Documents are automatically deleted permanently after a grace period of 14 days after the retention period.</p></li>
+<li><p>The document retention period is set to 15 years by default.</p></li>
+<li><p>If the document retention period is set both company-wide and in an individual template, the retention period set in the template takes precendence.</p></li>
+<li><p>If you change the document retention period, the change is applied started to the documents created hereafter.</p></li>
+</ul>
+</div>
 </section>
 </section>
 

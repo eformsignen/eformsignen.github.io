@@ -69,6 +69,10 @@ The description of each menu is as follows:
 
       -  **Manage custom fields:** You can add and configure custom fields such as company, group, and member information.
 
+      -  **Security settings:** You can set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign. 
+
+      -  **Document retention settings:** You can set the document retention period for all the documents created in the company.
+
 -  **Integration:** Only the company administrator can access this menu. You can connect eformsign with external services.
 
       -  **Cloud storage:** You can connect your Dropbox, Google Drive, or Box accounts to store completed documents in external cloud storages.
@@ -1022,6 +1026,98 @@ In this tab, you can view the history of all the stamps used. You can view infor
    :alt: Stamp history tab
    :width: 700px
 
+
+
+
+.. _security_settings:
+
+------------------
+Security settings
+------------------
+
+To secure your account in eformsign, you can set permissions to allow login from specific IP addresses only. 
+
+
+**How to filter IP addresses by permission level**
+
+1. Go to the **Manage company > Security settings** menu.
+
+.. figure:: resources/security-settings.png
+   :alt: Security settings
+   :width: 700px
+
+2. Under **IP access settings**, select **Allow access only to allowed IP addresses**.
+
+.. figure:: resources/security-settings2.png
+   :alt: Security settings
+   :width: 700px
+
+3. Enter the IP address or range you want to allow access from.
+4. Select the permission level (company administrator/company manager/member) you want to allow logins from the IP address.
+5. Click the **Add** button.
+6. Review the list of allowed IP addresses and then click the **Save** button.
+
+.. figure:: resources/security-settings1.png
+   :alt: Security settings
+   :width: 700px
+
+.. _retention:
+
+---------------------------
+Document retention period
+---------------------------
+
+To increase the safety and efficiency of managing documents, you can set a retention period. The document retention period can be set company-wide or template specific, and documentss are automatically deleted from the document inbox once the retention period expires. 
+
+.. note::
+
+   For information on how to set the document retention period by template, go to `Template settings <chapter5.html#general-wd>`_.
+
+**How to set the document retention period**
+
+.. caution::
+
+   ❗Only the company administrator can perform this action, and once changing the retention period, the change is applied to all the documents in the company. 
+   
+   However, this does not affect the documents created from templates with their own document retention period.
+
+1. Go to the **Manage company > Document retention period** menu.
+
+.. figure:: resources/retention-period.png
+   :alt: Document retention period settings
+   :width: 700px
+
+
+2. Click **Settings** in the Document retention period page.
+
+.. figure:: resources/retention-period1.png
+   :alt: Document retention period settings
+   :width: 700px
+
+
+3. Select months/years in the drop-down box and enter the period.
+
+   ➡The retention period can be set from a minimum of 1 month to a maximum of 15 years.
+
+.. figure:: resources/retention-period2.png
+   :alt: Document retention period settings
+   :width: 700px
+
+4. Click the **Save** button to update the retention preiod, and the change will apply to the documents created hereafter.
+
+
+
+.. important::
+
+   📣 **Some notes about the document retention period**
+
+   - Documents are automatically deleted permanently after a grace period of 14 days after the retention period.
+
+   - The document retention period is set to 15 years by default.
+
+   - If the document retention period is set both company-wide and in an individual template, the retention period set in the template takes precendence.
+
+   - If you change the document retention period, the change is applied started to the documents created hereafter.
 
 
 

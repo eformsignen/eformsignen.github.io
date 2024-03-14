@@ -177,12 +177,12 @@ The fields provided in eformsign are as follows:
 -  `Combo <#combo2>`__\ **:** Displays a drop-down menu that allows you to select an item.
 
 -  `Toggle <#toggle2>`__\ **:** Switches to another value if two or more values are entered.
-
+\
 -  `Datetime <#date2>`__\ **:** Enters a specific date.
 
 -  `Numeric stepper <#numeric2>`__\ **:** Enters a number.
 
--  `Hyperlink <#numeric2>`__\ **:** Inserts a hyperlink.
+-  `Hyperlink <#hyperlink>`__\ **:** Inserts a hyperlink.
 
 -  `Camera <#camera2>`__\ **:** Takes a photo using a camera or selects a photo from an album in devices with a built-in
    camera (e.g. smartphone, tablet, etc.). Selects an image file in devices without a camera (e.g. desktop PC).
@@ -846,7 +846,7 @@ If you hover mouse over a field, the description you entered in the tooltip text
 
 
 
-.. _hyperlink2:
+.. _hyperlink:
 
 Hyperlink
 --------------------

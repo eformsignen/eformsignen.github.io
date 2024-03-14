@@ -254,6 +254,19 @@
 </dd>
 <dt><strong>⑨ Skip pop-up window when sending documents</strong></dt><dd><p>Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When <strong>Skip pop-up window when sending documents</strong> is checked, the pop-up window does not appear and the page proceeds to the next step.</p>
 </dd>
+<dt><strong>➉ Document retention period</strong></dt><dd><p>Sets the retention period for documents created from the template. If this is not set, then the document retention period for the template follows the company-wide settings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The retention period can be set from a minimum of 1 day to a maximum of 15 years.</p>
+<p><strong>Maximum retention period by year/month/day</strong></p>
+<ul class="simple">
+<li><p>15 years</p></li>
+<li><p>180 months</p></li>
+<li><p>5,475 days</p></li>
+</ul>
+<p>💡For information on how to set the company-wide document retention period, go to <a class="reference external" href="chapter2.html#retention">Document retention period</a>.</p>
+</div>
+</dd>
 </dl>
 </section>
 <section id="general-setting-the-document-naming-rule">
@@ -330,6 +343,14 @@ settings &gt; General</p></td>
 <td><p>The template abbreviation entered in Template
 settings &gt; General</p></td>
 </tr>
+<tr class="row-odd"><td><p>Document_ID</p></td>
+<td><p>A unique ID for the document, represented by
+a 32-digit alphanumeric combination</p></td>
+</tr>
+<tr class="row-even"><td><p>Document_number</p></td>
+<td><p>The number generated when the Generate a
+document number option is enabled in General</p></td>
+</tr>
 <tr class="row-odd"><td><p>Company</p></td>
 <td><p>The company name entered in Manage company &gt;
 Company profile</p></td>
@@ -342,8 +363,7 @@ Company profile</p></td>
 <td><p>The contact information entered in Manage
 company &gt; Company profile</p></td>
 </tr>
-<tr class="row-even"><td><p><a href="#id1"><span class="problematic" id="id2">Company_</span></a>
-registration_no</p></td>
+<tr class="row-even"><td><p>Company_registration_no</p></td>
 <td><p>The business registration number entered in
 Manage company &gt; Company profile</p></td>
 </tr>
@@ -556,7 +576,17 @@ To delete a step, click <strong>-</strong> on the right side of the step button.
 <li><p><strong>Create documents from URL</strong>: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.</p></li>
 <li><p><strong>Approved domain IP</strong>: Set to allow creating documents only form approved domains or IPs.</p></li>
 <li><p><strong>Do not allow duplicate documents</strong>: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.</p></li>
+<li><p><strong>Block automated document generation by bots</strong>: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Block automated document generation by bots</strong></p>
+<p>By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the “I’m not a robot” check box.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/URL-option-recaptcha.png"><img alt="reCAPTCHA" src="../_images/URL-option-recaptcha.png" style="width: 250px;" /></a>
+</figure>
+<p>❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.</p>
+</div>
 </div></blockquote>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>

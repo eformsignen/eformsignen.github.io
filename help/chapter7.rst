@@ -196,6 +196,22 @@ Configure additional settings including document naming rules for documents crea
    Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
 
 
+**⑪ Document retention period**
+   Sets the retention period for documents created from the template. If this is not set, then the document retention period for the template follows the company-wide settings.
+
+   .. note::
+
+      The retention period can be set from a minimum of 1 day to a maximum of 15 years.
+
+      **Maximum retention period by year/month/day**
+      
+      - 15 years
+      - 180 months
+      - 5,475 days
+
+      💡For information on how to set the company-wide document retention period, go to `Document retention period <chapter2.html#retention>`_.
+
+
 
 
 .. _document_naming:
