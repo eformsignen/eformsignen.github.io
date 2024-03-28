@@ -177,7 +177,7 @@ The fields provided in eformsign are as follows:
 -  `Combo <#combo2>`__\ **:** Displays a drop-down menu that allows you to select an item.
 
 -  `Toggle <#toggle2>`__\ **:** Switches to another value if two or more values are entered.
-\
+
 -  `Datetime <#date2>`__\ **:** Enters a specific date.
 
 -  `Numeric stepper <#numeric2>`__\ **:** Enters a number.
