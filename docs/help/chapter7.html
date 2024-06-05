@@ -552,9 +552,28 @@ You can select groups or members to open documents created from the template, vo
 <li><p><strong>Step name</strong>: Change the name of the step. The default name is ‘Start’.</p></li>
 <li><p><strong>Limit the number of documents</strong>: Set the maximum number of documents that can be created from the template.</p></li>
 <li><p><strong>Create documents from URL</strong>: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.</p></li>
-<li><p><strong>Approved domain IP</strong>: Set to allow creating documents only form approved domains or IPs.</p></li>
+<li><p><strong>Document creator information</strong>: Require users to enter their information (name, email, etc.) before they open documents created from URL.</p></li>
 <li><p><strong>Do not allow duplicate documents</strong>: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.</p></li>
+<li><p><strong>Identity verification</strong>: Require document creators to verify their identity before opening documents created from URL.</p>
+<ul>
+<li><p><strong>Require email/SMS verification:</strong> Send a 6-digit verification code to the recipient’s email or mobile phone number. The recipient can enter the verification code into the verification window to open the document.</p></li>
 </ul>
+</li>
+</ul>
+<p>If both the Document creator information and Identity verification options are enabled in a template’s workflow, then when document creators create a document from this template, they need to enter their information and verify their identity to create documents. Note that the document creator’s information and identify verification will be displayed in document inboxes and on the audit trail certificate.</p>
+<ul class="simple">
+<li><p><strong>Approved domain IP</strong>: Set to allow creating documents only form approved domains or IPs.</p></li>
+<li><p><strong>Block automated document generation by bots</strong>: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Block automated document generation by bots</strong></p>
+<p>By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the “I’m not a robot” check box.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/URL-option-recaptcha.png"><img alt="reCAPTCHA" src="../_images/URL-option-recaptcha.png" style="width: 250px;" /></a>
+</figure>
+<p>❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.</p>
+</div>
 </div></blockquote>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -707,7 +726,7 @@ You can select groups or members to open documents created from the template, vo
 <p>The message size can be a maximum of 65 bytes (65 characters).</p>
 </div>
 <ul>
-<li><p><strong>File attachments and methods:</strong> Select the files to be send together with the document completion notification and select the filees to be attached.</p>
+<li><p><strong>Files attached &amp; Method:</strong> Select the files to be send together with the document completion notification and select the filees to be attached.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>Download link:</strong> A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.</p></li>
@@ -715,7 +734,7 @@ You can select groups or members to open documents created from the template, vo
 </ul>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p><strong>Attachment</strong> If you send an email notification using the <strong>Attachment</strong> method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.</p>
+<p>If you send an email notification using the <strong>Attachment</strong> method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.</p>
 </div>
 </div></blockquote>
 </li>

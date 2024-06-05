@@ -111,12 +111,10 @@ You can upload a file you want and then add fields onto the document. Then, you 
    .. note::
 
       The above three steps are the steps you need to go through before
-      creating a document. If you save the document as a draft before
+      creating a document. If you save the document before
       clicking the **Start now** button, the document is saved in
-      `Drafts <chapter8.html#drafts>`__, and the saved file can be opened again so
-      that you can begin creating a document. To save a document as a
-      draft, click the (|image8|) icon at the top right corner and then
-      click **Save as a draft**.
+      `My saved documents <chapter8.html#my-saved-documents>`__, and the saved file can be opened again so
+      that you can begin creating a document. To save a document, click the **Save** button at the top right corner of the screen.
 
       |image9|
 
@@ -147,24 +145,28 @@ The detail settings in **Recipient options** is displayed differently depending 
 
 .. note::
 
-   In addition to signers and reviewers, you can also add CCs. CCed recipients can monitor the document progress and will receive a notification email when the document is sent and completed. CCs can only be added by members. 
+   In addition to signers and reviewers, you can also add CCs. CCed recipients can monitor the document progress and will receive a notification email when the document is sent and completed. Only members can be set as CCs. 
 
 
-.. caution::
+.. note::
 
    In order for a recipient to be recognized as a member, the **name** and **email/ID** must match.
 
 
 -  **When the recipient is a member:**
 
-   **Set document password:** The email address and mobile number are automatically filled-in. You can select whether to send the document via email or mobile.
+   .. figure:: resources/whenrecipientismember.png
+      :alt: When the recipient is a member
+      :width: 700px
 
-   .. note::
+   -  **Select document delivery method:** You can select whether to send the document via email or mobile. The email address and mobile number are automatically filled-in if a member is selected.
 
-      When the mobile number option is selected, then the document will be sent via SMS and additional charges will occur.
+      .. note::
+
+         When the mobile number option is selected, then the document will be sent via SMS and additional charges will occur.
 
 
-   -  **Notification:** **Edit notification message**\ allows you to edit the email or SMS notification message sent to recipients.      
+   -  **Notification:** **Edit notification message** Allows to edit the email or SMS notification message sent to recipients.      
 
    -  **Document expiration:** Allows to set the period in which recipients can open and submit documents.
 
@@ -172,9 +174,27 @@ The detail settings in **Recipient options** is displayed differently depending 
 
          Setting the valid period to 0 days 0 hours disables the document expiration period.
 
-   .. figure:: resources/new-en-recipients-recipient-options.png
-      :alt: Add recipients > Recipient options
+
+   -  **Disable the decline feature:** Allows to block recipients from declining documents. If you select this option, the **Decline** feature will not appear on the recipients' screen.
+
+.. tip::
+
+   💡 **Using the In-person signing feature**
+    
+   The In-person signing feature allows you to collect signatures in person from signers using a single device, whether it’s a PC, tablet, or smartphone. By using this feature, even when you collect signatures from signers in person, the signers’ information is recorded in document history and audit trail certificate, and completed documents are automatically sent to the signers.
+
+   To get started, select **In-person signing** in the recipient step where you want to use the feature.
+   This recipient of this step becomes the **In-person signer** and the recipient of the step before it becomes **Host**. You can configure the settings so that an In-person signer needs to verify their identity before opening the document.
+
+   - **Host:** The Host can start and complete In-person signing sessions. If the Host is a signer recipient, then the Host can sign as well. Note that only members can be in-person signers and Need to view recipients cannot be the Host. 
+   - **In-person signer:** In-person signers can sign and only signer recipients can be in-person signers.
+
+   .. figure:: resources/inperson-signing-wf.png
+      :alt: In-person signing settings
       :width: 700px
+   
+
+   ✅ For instructions on how to use the In-person signing feature, refer to the following `blog <https://www.eformsign.com/en/blog/whats-new-in-eformsign-nov-2023/>`_. 
 
 
 
@@ -272,6 +292,47 @@ In the Options step, you can set the document title, set and edit document notif
    :alt: Options page
    :width: 700px
 
+- **Document title**: Sets the document title. Documents are sent and saved with the document title set here.
+
+- **Document notification settings:** Sets notifications about the document's status and completion to be sent to recipients, and previews or edits notification messages. 
+
+
+   **When documents are completed**
+
+      .. figure:: resources/template-setting-notification-editl.png
+        :alt: Edit notification
+        :width: 600px
+
+   - **Select notification template:** The document status notification template is set to the default template, but you can change it to another template if you create one. For information on how to create a new notification template, refer to `Notification template management <chapter9.html#notification-template-management>`_.  
+
+   - **Email title:** Sets the title of the email sent when a document is completed.
+   - **SMS message:** Sets the message when a document completion notification is sent via SMS. A link for viewing the document is sent together with the message.
+
+      .. note::
+
+         The length of the message can be set up to 65 characters.
+
+   - **Edit body:** Edits the content of the notification message.
+
+   - **Files attached & Method:** Select the files to be send together with the document completion notification and select the filees to be attached.
+
+      - **Download link:** A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.
+
+      - **Attachment:** PDF file(s) are included in the email. However, if the size of the document exceeds 10 MB or file(s) are sent via SMS, then a download link is included instead.
+
+      .. caution::
+
+        If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document..
+
+
+
+- **Timestamp:** Applies a timestamp to the completed document.
+
+
+.. note::
+
+      ❗Applying a timestamp incurs an additional charge of 0.5 USD.
+
 
 New from template
 -----------------
@@ -323,7 +384,7 @@ You can also click **New from template** and then click the Create icon of the t
    .. important::
 
       Documents saved when clicking the **Save as draft** when creating
-      documents from templates can be found in the **Action required** page, not the **Drafts** page.
+      documents from templates can be found in the **Action required** page, not the **My saved documents** page.
 
       To continue to create a document saved as a draft, click the **Edit** button in the **Action required** page.
 
@@ -487,7 +548,7 @@ view the documents you created.
 .. |image8| image:: resources/menu_icon_3.png
    :width: 15px
 .. |image9| image:: resources/newfrommyfile-saveasdrafts.png
-   :width: 200px
+   :width: 800px
 .. |image10| image:: resources/newfrommyfile-startfromnow.png
    :width: 700px
 .. |image11| image:: resources/newfrommyfile-startfromnow-send.png

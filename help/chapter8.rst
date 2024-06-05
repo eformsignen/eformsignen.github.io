@@ -8,22 +8,22 @@ Document Inboxes
 Documents
 ------------
 
-Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the In progress inbox in which you can select and send.
+Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the Action required inbox in which you can select and send.
 
 
--  **In progress:** View the list of documents you created or signed/approved that are incomplete.
+-  **In progress:** View the list of documents you created or signed/approved that are in progress.
 
 -  **Action required:** View the list of documents you saved as a draft, requested by other members for you to sign or approve, or sent to non-member recipients but have yet to be signed.
 
 -  **Completed:** View the list of completed documents among the documents created by you.
 
--  **Manage bulk sent documents:** View the progress of the list of documents you created.
+-  **Manage bulk sent documents:** View the list of documents you created in bulk. For more information, go to the section on Manage bulk sent documents inbox.
 
---------------------------
+
 
 - **Shared:** If you share documents you own with other members or have access to a shared inbox, you can view the shared documents at-a-glance.
 
--------------------------
+
 
 
 **Manage documents** and **Manage bulk sent documents**: These are inboxes for document managers and they can view documents in which they have permission.
@@ -299,7 +299,7 @@ Can perform actions including preview, correct, void, share, review, edit, resen
 
 - **Completed**
 
-Can perform actions including preview, share, send final copy, create new document, and download.
+Can perform actions including preview, share, send final copy, create new document, set reminder and download.
 
 - **Manage documents**
 
@@ -434,18 +434,18 @@ If you click the column (|image14|) icon on the right side of the document list,
 
 
 
-.. _drafts:
+.. _my_saved_documents:
 
----------
-Drafts
----------
+--------------------
+My saved documents
+--------------------
 
-The Drafts inbox stores the documents in the **New from my file** step that have been saved by clicking **Save as a draft** before sending the document. You can open the files stored in the **Drafts** menu anytime and proceed or delete.
+The My saved documents inbox stores the documents in the **New from my file** step that have been saved by clicking **Save** before sending the document. You can open the files stored in the **My saved documents** menu anytime and proceed or delete.
 
-1. Click **Drafts** in the sidebar menu to go to the Drafts page.
+1. Click **My saved documents** in the sidebar menu to go to the My saved documents page.
 
-.. figure:: resources/drafts-dashboard-en.png
-   :alt: Drafts in dashboard
+.. figure:: resources/my-saved-documents-dashboard-en.png
+   :alt: My saved documents in dashboard
 2. Select a document you want and click the **Continue** button next to it.
 
    |image16|

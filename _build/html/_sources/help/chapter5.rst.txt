@@ -617,9 +617,20 @@ You can click a step to set the details such as **Properties** for each workflow
 
    -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.
 
-   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
+   -  **Document creator information**: Require users to enter their information (name, email, etc.) before they open documents created from URL.
 
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
+
+   -  **Identity verification**: Require document creators to verify their identity before opening documents created from URL.
+
+      - **Require email/SMS verification:** Send a 6-digit verification code to the recipient's email or mobile phone number. The recipient can enter the verification code into the verification window to open the document.
+
+
+   .. tip::
+
+   If both the Document creator information and Identity verification options are enabled in a template's workflow, then when document creators create a document from this template, they need to enter their information and verify their identity to create documents. Note that the document creator’s information and identify verification will be displayed in document inboxes and on the audit trail certificate.
+
+   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
 
    -  **Block automated document generation by bots**: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.
 
@@ -667,6 +678,11 @@ You can click a step to set the details such as **Properties** for each workflow
    - **Edit notification message:** You can edit the notification message for each step.  
 
 -  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
+
+   .. tip::
+
+      You can configure the settings so that there is no document expiration for members. Simply set **Document expiration to 0 Day(s) 0 Hour(s)**\
+      You can set the document expiration to be up to 50 days for non-members. 
    
 
 -  **Automatically fills in the recipient's contact info**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be filled in automatically based on the information the recipient enters into the document.
@@ -680,7 +696,7 @@ You can click a step to set the details such as **Properties** for each workflow
                :alt: Require document password
                :width: 400px    
       
-   - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window.
+   - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window. Note that a charge of 0.1 USD incurs per SMS verification.
       
 -  **Disable the decline feature:** Blocks recipients from being able to decline documents.
 
@@ -949,7 +965,7 @@ You can select who will receive status notifications for documents created from 
 
    The message size can be a maximum of 65 bytes (65 characters).
 
-- **File attachments and methods:** Select the files to be send together with the document completion notification and select the filees to be attached.
+- **Files attached & Method:** Select the files to be send together with the document completion notification and select the filees to be attached.
 
    - **Download link:** A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.
 
@@ -957,7 +973,7 @@ You can select who will receive status notifications for documents created from 
 
    .. caution::
 
-      **Attachment** If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
+       If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
 
 - **Edit body:** Edits the body of the notification message.
 
@@ -1021,6 +1037,23 @@ In the **Manage templates** page, you can lookup and search templates by templat
 
 **③ Sort**
    You can select the template sorting order in ascending or descending by template name or category.
+
+**④ Viewing method**
+   You can select between Thumbnail view and List view for viewing templates.
+
+   - Thumbnail: Preview templates as thumbnails.
+
+      .. figure:: resources/template-lists-thumnail.png
+         :alt: Thumbnail view
+         :width: 600px
+
+   - List: Preview templates as lists. 
+
+      .. figure:: resources/template-lists.png
+         :alt: List view
+         :width: 600px
+
+
 
 .. |image1| image:: resources/config-icon.PNG
    :width: 20px

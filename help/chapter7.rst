@@ -575,10 +575,34 @@ You can click a step to set the details such as **Properties** and **Manage item
 
    -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.
 
-   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
+   -  **Document creator information**: Require users to enter their information (name, email, etc.) before they open documents created from URL.
 
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
 
+   -  **Identity verification**: Require document creators to verify their identity before opening documents created from URL.
+
+      - **Require email/SMS verification:** Send a 6-digit verification code to the recipient's email or mobile phone number. The recipient can enter the verification code into the verification window to open the document.
+
+   .. tip::
+
+   If both the Document creator information and Identity verification options are enabled in a template's workflow, then when document creators create a document from this template, they need to enter their information and verify their identity to create documents. Note that the document creator’s information and identify verification will be displayed in document inboxes and on the audit trail certificate.
+
+
+   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
+
+   -  **Block automated document generation by bots**: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.
+
+   .. note::
+
+      **Block automated document generation by bots**
+
+      By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the "I'm not a robot" check box. 
+
+      .. figure:: resources/URL-option-recaptcha.png
+         :alt: reCAPTCHA
+         :width: 250px
+
+      ❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.
 
 .. tip::
 
@@ -791,7 +815,7 @@ You can select who will receive status notifications for documents created from 
 
    The message size can be a maximum of 65 bytes (65 characters).
 
-- **File attachments and methods:** Select the files to be send together with the document completion notification and select the filees to be attached.
+- **Files attached & Method:** Select the files to be send together with the document completion notification and select the filees to be attached.
 
    - **Download link:** A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.
 
@@ -799,7 +823,7 @@ You can select who will receive status notifications for documents created from 
 
    .. caution::
 
-      **Attachment** If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
+      If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
 
 - **Edit body:** Edits the body of the notification message.
 

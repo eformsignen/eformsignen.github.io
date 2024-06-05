@@ -29,7 +29,7 @@ The description of each menu is as follows:
 
       -  **New from template:** Views the list of templates in which you can create documents from. You can select a template and then create a document.
 
--  **Drafts**: Shows the list of documents saved as draft when creating a document by accessing the **New from my file** menu.
+-  **My saved documents**: Shows the list of documents saved when creating a document by accessing the **New from my file** menu.
 
 -  **Documents:** Shows the menus in which documents are stored.
 
@@ -48,6 +48,8 @@ The description of each menu is as follows:
 -  **Manage bulk sent documents:** Only document managers can access this menu and can view documents bulk created from templates in which you are given permission. However, the company administrator can view and manage all documents.
 
 -  **My signature:** You can create and add your signature to be used when signing a document.
+
+-  **Contacts:** You can add non-member contacts to the contact list and manage them.
 
 -  **Manage templates:** Only template managers can access this menu. You can view the template list and configure the template settings.
 
@@ -109,7 +111,7 @@ The dashboard is the main page displayed when logging into eformsign. In the das
 **① New from my file**
    Opens the **New from my file** page where you can create new documents by uploading your files from your computer.
 
-**② New from template*
+**② New from template**
    Opens the **New from template** page where you can create new documents from templates.
    You can create 1 document from a template by clicking the create icon (|image10|), and create multiple documents at once from a template by clicking the bulk icon (|image11|).
 
@@ -125,8 +127,8 @@ The dashboard is the main page displayed when logging into eformsign. In the das
 **⑥ Completed**
    When clicked, it opens the **Completed** inbox.
 
-**⑦ Drafts**
-   Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, it opens the **Drafts** inbox.
+**⑦ My saved documents**
+   Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, it opens the **My saved documents** inbox.
 
 ---------------------------------------
 View and Change Basic Information
@@ -164,6 +166,9 @@ My Profile
 
 **Account information**
    You can view and edit the name, email or ID, password, and contact number of your eformsign account.
+
+**Security**
+   You can set up notifications to be sent to your email when you log in to your account.
 
 **Link social accounts**
    You can link or unlink your Google and Facebook social accounts.
@@ -330,7 +335,7 @@ The company administrator:
 
    -  Can delegate its role to another member when the company administrator needs to be changed.
 
-When the company administrator deletes her/his eformsign account, the company is also be deleted. If the administrator wants to delete only the account, then she/he can delegate the administrator permission to another member, and then delete the account.
+When the company administrator deletes their eformsign account, the company is also deleted. If the administrator wants to delete only the account, then she/he can delegate the administrator permission to another member, and then delete the account.
 
 **Delegating the Company Administrator Permission**
 
@@ -347,16 +352,16 @@ When the company administrator deletes her/his eformsign account, the company is
       :width: 2000px
 
 
-3. Select a member to delegate the company administrator role in the **Delegate role** pop-up window.
+3. Enter your password and then click the **Next** button.
 
-   .. figure:: resources/en-manage-company-delegate-admin-role-popup.png
-      :alt: Delegate Role Pop-up
+   .. figure:: resources/enter-password-popup.png
+      :alt: Enter password pop-up
       :width: 500px
 
 
-4. Enter the password of the company administrator.
+4. Select the member you want.
 
-5. Click the **Save** button to save the changes.
+5. Click the **Confirm** button to change the company administrator.
 
 
 Company Manager
