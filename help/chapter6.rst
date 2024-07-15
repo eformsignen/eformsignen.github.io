@@ -28,9 +28,9 @@ fields is as follows:
 
 
 
-------------------------------------------------------------
+-----------------------------------------------------------
 Downloading and Installing eformsign for Microsoft Office
-------------------------------------------------------------
+-----------------------------------------------------------
 1. Login to eformsign and then click the menu icon
 (|image1|) on the top left corner of the dashboard screen to open the
 sidebar menu. Then, click the **Download eformsign for Microsoft Office** button
@@ -56,7 +56,7 @@ the page.
 following installation screen will be displayed. Read the license agreement carefully and click the **Accept and Continue**
 button if you agree to all the terms of the license agreement. The installation will proceed.
 
-.. figure:: resources/eformsign-install-menu.png
+.. figure:: resources/eformsignaddininstall.png
    :alt: eformsign for Microsoft Office Installation Screen (1)
    :width: 300px
 

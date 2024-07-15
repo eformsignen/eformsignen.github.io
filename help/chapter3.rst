@@ -24,7 +24,7 @@ Anyone can use eformsign to easily convert existing documents into electronic do
    When creating a document with **New from my file**, you cannot save it as a template. For documents you plan on using frequently, it is recommended to create a template first.
 
 New from my file
-------------------
+-------------------
 
 You can upload a file you want and then add fields onto the document. Then, you can specify the signers that will fill in each field and enter the information of the document signers and reviewers, and then send the document.
 

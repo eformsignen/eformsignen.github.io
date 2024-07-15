@@ -22,9 +22,9 @@ and adding fields. You can upload files in the **New from template** or the **Ne
    Office. To use eformsign for Microsoft Office, please install the Microsoft Office
    add-in. Refer to `Introduction to eformsign for Microsoft Office <chapter6.html#_formbuilder>`__ for more information.
 
---------------------
+-------------------
 File Uploading
---------------------
+-------------------
 
 Uploading a file in the **New from my file** menu.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

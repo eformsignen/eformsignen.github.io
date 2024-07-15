@@ -4,9 +4,9 @@
 Document Inboxes
 =================
 
------------
+------------
 Documents
------------
+------------
 
 Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the Action required inbox in which you can select and send.
 
