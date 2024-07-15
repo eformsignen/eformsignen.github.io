@@ -17,10 +17,10 @@ and adding fields. You can upload files in the **New from template** or the **Ne
 .. note::
 
    In addition to Web Form Designer, eformsign also provides a
-   Microsoft Office Add-in feature named **OZ in Office (Form Builder)**
+   Microsoft Office Add-in feature named **eformsign for Microsoft Office**
    which allows you to create electronic documents directly in Microsoft
-   Office. To use Form Builder, please install the Microsoft Office
-   add-in, and refer to `Form Builder <chapter5.html#formbuilder>`__.
+   Office. To use eformsign for Microsoft Office, please install the Microsoft Office
+   add-in. Refer to `Introduction to eformsign for Microsoft Office <chapter6.html#_formbuilder>`__ for more information.
 
 --------------------
 File Uploading
@@ -967,7 +967,7 @@ If you hover mouse over a field, the description you entered in the tooltip text
 .. _attach2:
 
 Attachment
---------------------
+-------------------
 
 This field is used for attaching a file to a document. When attaching a file to a document by using the Attachment field, the file will be attached at the very end of the document as a new page.
 

@@ -1,102 +1,91 @@
 .. _formbuilder:
 
 ==================================================
-Introduction to Form Builder (MS Office Add-in)
+Introduction to eformsign for Microsoft Office
 ==================================================
 
 
-Form Builder (MS Office add-in), also known as OZ in Office, is a form editor
-that converts a document created using Microsoft Office into an
-electronic document containing fields. By using OZ in
-Office, you can easily convert existing Excel, Word, and PowerPoint
+eformsign for Microsoft Office is an Office add-in that converts documents created using Microsoft Office into electronic documents containing fields. By eformsign for Microsoft Office, you can easily convert existing Excel, Word, and PowerPoint
 forms such as contracts, applications, and agreements into electronic
 documents.
 
 Previously, converting Excel, Word, or PowerPoint documents into
 electronic documents required the use of an IDE (Integrated Development
 Environment) needing a high degree of programming knowledge for use.
-Now, with OZ in Office, anyone with the ability to use Microsoft Office
+Now, with eformsign for Microsoft Office, anyone with the ability to use Microsoft Office
 can easily create electronic documents.
 
-OZ in Office, provided as a Microsoft Office add-in, is easy to use as
+eformsign for Microsoft Office, provided as a Microsoft Office add-in, is easy to use as
 it is displayed as a ribbon menu and contains various fields
 including signature, check box, text box, camera, and voice.
 
-The process of creating electronic documents using OZ in Office's
+The process of creating electronic documents using eformsign for Microsoft Office's
 fields is as follows:
 
 .. figure:: resources/ozinoffice-flow_1.png
-   :alt: OZ in Office Usage Flow
+   :alt: eformsign for Microsoft Office Usage Flow
    :width: 750px
 
 
 
 ------------------------------------------------------------
-Downloading and Installing Form Builder (MS Office Add-in)
+Downloading and Installing eformsign for Microsoft Office
 ------------------------------------------------------------
 1. Login to eformsign and then click the menu icon
 (|image1|) on the top left corner of the dashboard screen to open the
-sidebar menu. Then, click the **Download eformsign form builder** button
+sidebar menu. Then, click the **Download eformsign for Microsoft Office** button
 at the bottom.
 
 .. figure:: resources/en_formbuilder_download.png
-   :alt: Location of the Download eformsign form builder button
+   :alt: Location of the Download eformsign for Microsoft Office button
    :width: 750px
 
 
 
-2. The **Download eformsign form builder** page will be displayed, as
-shown below. Click the **Download form builder** button at the bottom of
+2. The **Download eformsign for Microsoft Office** page will be displayed, as
+shown below. Click the **Download eformsign for Microsoft Office** button at the bottom of
 the page.
 
 .. figure:: resources/formbuilder_download_2.png
-   :alt: eformsign Form Builder Download Page
+   :alt: eformsign for Microsoft Office Download Page
    :width: 750px
 
 
 
-3. After clicking the form builder executable file you downloaded, the
-following installation screen will be displayed. Select the **Complete**
-option and then click the **Next** button.
+3. After clicking the eformsign for Microsoft Office executable file you downloaded, the
+following installation screen will be displayed. Read the license agreement carefully and click the **Accept and Continue**
+button if you agree to all the terms of the license agreement. The installation will proceed.
 
-.. figure:: resources/formbuilder_wizard_1.png
-   :alt: Form Builder Installation Screen (1)
-   :width: 500px
-
-
-4. When the installation proceeds, the following screen is displayed.
-
-.. figure:: resources/formbuilder_wizard_2.png
-   :alt: Form Builder Installation Screen (2)
-   :width: 500px
+.. figure:: resources/install-menu.png
+   :alt: eformsign for Microsoft Office Installation Screen (1)
+   :width: 300px
 
 
-5. Click the **Finish** button to close the installation screen.
+4. The following pop-up will be displayed when the installation is completed.
 
-.. figure:: resources/formbuilder_wizard_3.png
-   :alt: Form Builder Installation Screen (3)
-   :width: 500px
+.. figure:: resources/installation-popup.png
+   :alt: eformsign for Microsoft Office Installation Screen (2)
+   :width: 300px
 
 
 
-6. Check whether Form builder (MS Office add-in) was installed properly by running MS
-Office (Word, Excel, PowerPoint). If **OZ in Word/Excel/PowerPoint** is
+5. Check whether eformsign for Microsoft Office was installed properly by running MS
+Office (Word, Excel, PowerPoint). If **eformsign** is
 displayed as below, then it was installed properly.
 
 .. figure:: resources/en_components-in-word.png
-   :alt: OZ in Word Ribbon Menu
-   :width: 750px
-
+   :alt: eformsign for Microsoft Office Ribbon Menu
+   :width: 700px
 
 -------------------------------------------------
-Form Builder (MS Office add-in) Menu Layout
+eformsign for Microsoft Office Menu Layout
 -------------------------------------------------
 
-If you run Microsoft Office Excel, Word, or PowerPoint after installing Form builder (MS Office add-in), you can see that the **OZ in Excel, OZ in Word, or OZ in PowerPoint** tab is added to the OZ in Office ribbon menu.
+If you run Microsoft Office Excel, Word, or PowerPoint after installing eformsign for Microsoft Office, you can see that the **eformsign** tab is added to the Office ribbon menu.
 
 .. figure:: resources/ozinoffice.png
-   :alt: Microsoft Office OZ in Office Ribbon Menu
-   :width: 750px
+   :alt: eformsign for Microsoft Office Ribbon Menu
+   :width: 1000px
 
 
 
@@ -114,21 +103,21 @@ If you run Microsoft Office Excel, Word, or PowerPoint after installing Form bui
 
 7. **Window:** Allows to open the **Properties** tab of the selected field or display selected fields in the **Selection** tab.
 
-8. **Help:** Checks the version of Form builder (MS Office add-in) and performs updates.
+8. **Help:** Checks the version of eformsign for Microsoft Office and performs updates.
 
 
 -------------------------
 Overview of Fields
 -------------------------
 
-Fields are used to create fields in electronic documents that users can enter information. Many different fields including signature, check, date, and text are provided in Form builder (MS Office add-in), and each field can be configured in detail by using the **Field Properties** tab.
+Fields are used to create fields in electronic documents that users can enter information. Many different fields including signature, check, date, and text are provided in eformsign for Microsoft Office, and each field can be configured in detail by using the **Field Properties** tab.
 
 Field Types
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 The fields provided in eformsign are as follows:
 
-.. figure:: resources/en-components-in-excel.png
+.. figure:: resources/en_components-in-word.png
    :alt: Field Types
    :width: 730px
 
@@ -181,7 +170,7 @@ Data Fields
 Accessing Field Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Every field has its own detailed settings called **OZ Field Properties**. The properties of each field can be accessed by
+Every field has its own detailed settings called **OZ Component Properties**. The properties of each field can be accessed by
 selecting a field and then clicking the property icon or the **Properties** menu.
 
 .. figure:: resources/checking-components-properties.png
@@ -203,32 +192,34 @@ Adding fields
 
 **Method 1: Adding Fields by Clicking a Field Type**
 
-1. Open Word or PowerPoint and select the location in the document where you want to add the field.
+1. Open Word, Excel, or PowerPoint and select the location in the document where you want to add the field.
 
 .. figure:: resources/ozinword_1.png
-   :alt: Method 1: Adding Fields by Clicking a Field Type in Word or PowerPoint (1)
+   :alt: Method 1: Adding Fields by Clicking a Field Type in Word, Excel, or PowerPoint (1)
    :width: 700px
 
 
 
-2. Click the field type you want to add in the ribbon menu of **OZ in Word** or **OZ in PowerPoint**.
+2. Click the field type you want to add in the ribbon menu under **eformsign**.
 
 .. figure:: resources/ozinword_2.png
-   :alt: Method 1: Adding Fields by Clicking a Field Type in Word or PowerPoint (2)
+   :alt: Method 1: Adding Fields by Clicking a Field Type in Word, Excel, or PowerPoint (2)
    :width: 700px
 
 
 3. Adjust the size of the field.
+   *Size cannot be adjusted in Excel.
 
 .. figure:: resources/ozinword_3.png
-   :alt: Method 1: Adding Fields by Clicking a Field Type in Word or PowerPoint (2)
+   :alt: Method 1: Adding Fields by Clicking a Field Type in Word, Excel, or PowerPoint (3
    :width: 700px
 
 
 
 **Method 2: Adding Fields by Drawing a Field**
 
-1. Open Word or PowerPoint and go to the **OZ in Word/Powerpoint** ribbon menu.
+1. Open Word or PowerPoint and go to the **eformsign** ribbon menu.
+   *Drawing is not available in Excel.
 
 2. Click the **Drawing Component** icon and select the field type you want to add in the drop-down menu displayed.
 
@@ -248,14 +239,14 @@ Adding fields
 Deleting fields
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Select the field you want to delete and then click the **Delete** icon (|image2|) in the **OZ in Office** menu. You can also select and delete multiple fields.
+Select the field you want to delete and then click the **Delete** icon (|image2|) in the **eformsign** ribbon menu. You can also select and delete multiple fields.
 
 How to Use Each Field Type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-eformsign provides various types of fields such as check box, combo box, text, and signature through Microsoft Office’s **OZ in Office** ribbon menu.
+eformsign provides various types of fields such as check box, combo box, text, and signature through Microsoft Office’s **eformsign** ribbon menu.
 
-All fields of **OZ in Office** have both common and unique properties. You can view both the common and unique properties of fields in the **OZ Component Properties** tab. Common properties
+All fields of **eformsign** have both common and unique properties. You can view both the common and unique properties of fields in the **OZ Component Properties** tab. Common properties
 include ID and Tooltip Text, and the meaning of each property is as follows:
 
 -  **ID:** Unique ID that identifies each field. You can use the field ID to set a field to be required or
@@ -265,7 +256,7 @@ include ID and Tooltip Text, and the meaning of each property is as follows:
 
 .. note::
 
-   To open the **OZ Component Properties** window, click on a field and then click the **Properties** icon (|image3| ) in the **OZ in Office** ribbon menu.
+   To open the **OZ Component Properties** window, click on a field and then click the **Properties** icon (|image3| ) in the **eformsign** ribbon menu.
 
 .. note::
 
@@ -281,17 +272,18 @@ Signature
 
 This field is used for signing a signature on a document.
 
-|image14|
+.. figure:: resources/officesignaturefield.png
+   :width: 1000px
 
 Clicking the signature area displays the **Signature** pop-up which allows you to sign a signature by drawing, entering text, or using a
 previously registered signature.
 
-|image15|
+.. figure:: resources/signature.png
+   :width: 230px
 
 **Field Properties**
 
 .. figure:: resources/Signature-component-properties.png
-   :alt: Setting Signature Field Properties
    :width: 250px
 
 
@@ -304,11 +296,13 @@ Enters the ID of the signature field. For example, the ID of the field can be �
 
 Selects the signature type to be used when signing.
 
--  **Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
+-  **Enter directly:** The user manually creates a signature by drawing it.
 
--  **Initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
+-  **Registered Signature:** If the user already has a signature added on eformsign, then clicking the signature area inserts the added signature onto the document. If not, then the user manually creates a signature.
 
--  **Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
+-  **Registered initial:** If the user already has an initial added on eformsign, then clicking the signature area inserts the added initial onto the document. If not, then the user manually creates an initial.
+
+-  **Registered Stamp:** If the user already has a company stamp added on eformsign, then clicking the signature area inserts the added stamp onto the document. If not, then the user manually applies a stamp by scanning and uploading a stamp.
 
 
 .. note::
@@ -325,15 +319,12 @@ Selects the signature type to be used when signing.
    In some cases, you may need to use a seal or stamp on a document rather than your own signature. With eformsign, you can also use a
    stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the **Stamp** tab in the **Signature** pop-up, and then select a stamp image and click **OK**.
 
-**③ Signing method:**
 
-If you check the Disable auto-fill check box, it prevents the signature field from being automatically filled when clicked/touched.
-
-**④ Signature Pen Thick**
+**③ Signature Pen Thick**
 
 Sets the signature pen thickness.
 
-**⑤ Signature Pen Color**
+**④ Signature Pen Color**
 
 Sets the signature pen color.
 
@@ -353,7 +344,7 @@ Sets the signature pen color.
 
    6. Select the **Date Type** as **Last modified date of the content**.
 
-   7. Enter the ID of the Signature field field in the Input Component ID field on the bottom. In this case, it would be ‘employeeSignature’.
+   7. Enter the ID of the Signature field in the Input Component ID field on the bottom. In this case, it would be ‘employeeSignature’.
 
    .. figure:: resources/date-component-properties.png
       :alt: Date field properties
@@ -383,11 +374,13 @@ Text and Multiline
 
 Both Text and Multiline fields are used to create text fields. The Text field is suitable for short text with 1 to 2 words, and the Multiline field is suitable for long text with more than 1 line.
 
-|image9|
+.. figure:: resources/text-component-properties.png
+   :alt: Setting Text and Multiline Fields
+   :width: 750px
 
 **Component Properties**
 
-.. figure:: resources/text-component-properties.png
+.. figure:: resources/text-field-properties.png
    :alt: Setting Text and Multiline Field Properties
    :width: 250px
 
@@ -401,41 +394,32 @@ Enters the ID of the Text/Multiline field. For example, the ID of the field in w
 
    All fields must have an ID. An ID is automatically generated when you create a field, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a field for entering John Doe, Jane Doe, etc. as 'name'. By doing so, it is easier to identify fields when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
 
-**② Who can fill this out**
 
-Selects who is allowed or required to fill out the field.
+**② Input type**
+
+Selects either ‘’Plain text’, ‘Password’, or ‘Custom’ for the Text field and ‘Plain text’ and ‘Custom’ for the Multiline field.
 
 
-**③ Default value**
+**③ Select custom input type**
 
-Sets the default text.
+Selects additional input types as well as create a custom input type by creating a rule. It is enabled when **Input type** is set to ‘Custom’.
 
-.. note::
+     
+**④ Autofit text**
 
-   This option can be set only in the Text field. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.
+Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.
 
-**④ Input type**
 
-Selects either ''Plain text', 'Password', or 'Custom' for the Text field and 'Plain text' and 'Custom' for the Multiline field.
+**⑤ Keypad type (mobile only)**
 
-**⑤ Select custom input type**
+Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as smartphones and tablets.
 
-Selects additional input types as well as create a custom input type by creating a rule. It is enabled when **Input type** is set to 'Custom'. 
 
-**⑥ Autofit text**
-
- Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.
- 
-**⑦ Keypad type on mobile devices**
-
-Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as
-smartphones and tablets.
-
-**⑧ Placeholder**
+**⑥ Placeholder**
 
 Displays a help message when no value is entered.
-
-**⑨ Tooltip Text**
+ 
+**⑦ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field.
 
@@ -454,12 +438,9 @@ You can type in the text to be displayed on a document in which recipients can t
    :alt: Handwriting field
 
 
-.. figure:: resources/handwriting-component-example.png
-   :alt: Handwriting field example
-
 **Field propertites**
 
-.. figure:: resources/handwriting-component-properties_web.pnghandwriting-component-properties_fb.png
+.. figure:: resources/handwriting-component-properties_fb.png
    :alt: Setting handwriting field properties
 
 
@@ -501,31 +482,41 @@ Enters a number.
 
 Sets the ID of the number field.
 
-**② Allow negative value**
+**② Select custom input type**
 
-Allows to enter a negative value. 
+Selects additional input types as well as create a custom input type by creating a rule. It is enabled when **Input type** is set to 'Custom'. 
 
-**③ Maximum Value, Minimum Value**
+**③ Allow negative value**
 
-Sets the minimum or maximum value that can be entered. 
+Allows to enter a negative value.
 
-.. caution:: 
+**④ Maximum Value, Minimum Value**
 
-   **Important!**
+Sets the minimum or maximum value that can be entered.
+
+.. note:: 
 
    If you enter a value that is lower than the minimum value set, then the value is changed to the minimum value. If you enter a value that is higher than the maximum value set, then the value is changed to the maximum value. 
 
-**④ Number of decimal places**
+**⑤ Number of decimal places**
 
 Sets the number of decimal places that can be entered. The number of decimal places that can be entered is from 0 to 10.
 
-**⑤ Show thousands separator**
+**⑥ Show thousands separator**
 
 Automatically marks the value entered with a comma separated by thousands.
 
-**⑥ Prefix, Suffix**
+**⑦ Prefix, Suffix**
 
 Sets the prefix/suffix required for a number to be entered automatically. For example, if you need to enter "10,000 dollars in total," set the prefix to "total" and the suffix to "dollars".
+
+**⑧ Placeholder**
+
+Displays a help message when no value is entered.
+
+**⑨ Tooltip Text**
+
+Displays the description in Tooltip Text when you hover the mouse over a field.
 
 
 
@@ -557,7 +548,9 @@ Check
 The **Check** field is used to check whether an item is checked or not. This field is similar to the **Radio** field, but it is used for checking the status of an item (whether it
 is checked or not) while the **Radio** field is used for checking which item among multiple items is checked.
 
-|image4|
+.. figure:: resources/check-field.png
+   :alt: Check field
+   :width: 750px
 
 When data is downloaded in the CSV format, the **Check** field’s input value is displayed as follows:
 
@@ -607,7 +600,9 @@ Radio
 
 The Radio field is used for checking which radio button is selected among multiple items. When data is downloaded in the CSV format, the selected item will be displayed.
 
-|image6|
+.. figure:: resources/radio-field.png
+   :alt: Setting Radio Field Properties
+   :width: 750px
 
 In Word and PowerPoint, the radio field is shown as a rectangular shape. Make sure to enter data inside the rectangular shape.
 
@@ -664,7 +659,9 @@ Combo
 
 The Combo field is used when you need to select one of multiple items.
 
-|image7|
+.. figure:: resources/combo-field.png
+   :alt: Combo field
+   :width: 750px
 
 If you click a combo field, a list of items is displayed as follows:
 
@@ -699,7 +696,13 @@ Checking the **Allow Empty Value** option allows you to deselect a selected item
 
 -  Mobile: Click the Trash can icon.
 
-**④ Tooltip Text**
+
+**④ Placeholder**
+
+Displays a help message when no value is entered.
+
+
+**⑤ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field.
 
@@ -712,7 +715,9 @@ Toggle
 This field is used for indicating a specific status such as ON/OFF. If you use this field, then the input value
 is switched according to a defined order whenever the field is clicked.
 
-|image12|
+.. figure:: resources/toggle-field.png
+   :alt: Toggle field
+   :width: 750px
 
 You can change the status to **Good** or **Bad** by clicking the fields as follows:
 
@@ -756,7 +761,10 @@ Datetime
 
 This field is used for entering a date. Clicking the field displays a date selection window where you can select the date you want.
 
-|image10|
+
+.. figure:: resources/datetime-field.png
+   :alt: Setting Datetime Field Properties
+   :width: 750px
 
 **Field Properties**
 
@@ -818,7 +826,9 @@ directly enter the desired number into the field by using a
 keyboard. In smartphones and tablets, you can scroll through the list of
 numbers and select the one you want.
 
-|image11|
+.. figure:: resources/numeric-stepper.png
+   :alt: Numeric stepper field
+   :width: 750px
 
 **Field Properties**
 
@@ -864,7 +874,13 @@ the field as described below.
 
 -  Mobile: Click the Trash icon.
 
-**⑤ Tooltip Text**
+
+**⑤Placeholder**
+
+Displays a help message when no value is entered.
+
+
+**⑥ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field.
 
@@ -879,7 +895,9 @@ Camera
 This field is for uploading photos (taken with a device with a built-in camera such as smartphones and tablets) on a
 document. In PCs without a camera, clicking the field displays a window for selecting a desired image file.
 
-|image16|
+.. figure:: resources/camera-field.png
+   :alt: Camera field
+   :width: 750px
 
 If the size of the selected image is larger than the size of the text box, then it is resized to fit the field.
 
@@ -891,7 +909,7 @@ If the size of the selected image is larger than the size of the text box, then 
 
 **Field Properties**
 
-.. figure:: resources/Camera-component-properties-.png
+.. figure:: resources/Camera-component-properties.png
    :alt: Setting Camera Field Properties
    :width: 250px
 
@@ -901,7 +919,18 @@ If the size of the selected image is larger than the size of the text box, then 
 
 Enters the ID of the Camera field. For example, the ID of the field that takes the photo of a driver’s license can be ‘driverLicense’.
 
-**② Tooltip Text**
+
+**② Placeholder**
+
+Enters the text displayed before taking a photo.
+
+.. tip::
+
+   If you check the Show icon check box, the camera icon is shown on the camera
+   area.
+
+
+**③ Tooltip Text**
 
 Displays the description in the Tooltip Text when you hover the mouse over a field.
 
@@ -913,7 +942,11 @@ Voice
 This field is used for storing recorded voice. You can set the maximum recording time and you can also configure the
 settings to allow users to only listen to the voice recording.
 
-When you add a Voice field in OZ in Office, you can record voice or play a voice recording as follows:
+.. figure:: resources/voice-field.png
+   :alt: Voice field
+   :width: 750px
+
+When you add a Voice field in eformsign for Microsoft Office, you can record voice or play a voice recording as follows:
 
 |image18|
 
@@ -936,7 +969,15 @@ When you add a Voice field in OZ in Office, you can record voice or play a voice
 
 Enter the ID of the Voice field. For example, the ID of the field that plays voice recordings can be named 'Record1'.
 
-**② Tooltip Text**
+**② Placeholder**
+
+Enters the text shown before recording.
+
+.. tip::
+
+   If you check the Show icon check box, the mic icon will be displayed on the voice recording area.
+
+**③ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field.
 
@@ -948,7 +989,9 @@ Attachment
 This field is used for attaching a file to a document. When attaching a file to a document by using the Attachment
 field, the file will be attached at the very end of the document as a new page.
 
-|image19|
+.. figure:: resources/attachment-field.png
+   :alt: Attachment field
+   :width: 750px
 
 The types and sizes of files that can be attached are as follows:
 
@@ -968,7 +1011,17 @@ The types and sizes of files that can be attached are as follows:
 
 Enters the ID of the Attachment field. For example, the ID of the field for attaching a resume can be named ‘myResume’.
 
-**② Tooltip Text**
+
+**② Placeholder**
+
+Enters the text shown before attachment.
+
+.. tip::
+
+   If you check the Shown icon check box, the clip icon will be displayed on the attachement area.
+
+
+**③ Tooltip Text**
 
 Displays the description Tooltip Text when you hover the mouse over a field.
 
@@ -981,11 +1034,13 @@ User
 This field is used for entering the information of the user who created or modified a document. The user’s basic
 information such as name or contact information, or custom field information is automatically entered into the user field based on the settings.
 
-|image20|
+.. figure:: resources/user-field.png
+   :alt: User field
+   :width: 750px
 
 **Field Properties**
 
-.. figure:: resources/user-component-properties-.png
+.. figure:: resources/user-component-properties.png
    :alt: Setting User Field Properties
    :width: 250px
 
@@ -1005,7 +1060,9 @@ Enters the ID of the user field. For example, the ID of the field that displays 
 
 If you select **Last modified user of the content**, then the **Input Component ID** field will be displayed. In this field, enter the ID of the field that will display the information when triggered.
 
-|image21|
+.. figure:: resources/last-modified.png
+   :alt: Last modified user of the content
+   :width: 250px
 
 .. note::
 
@@ -1037,11 +1094,13 @@ Date
 
 This field is used to automatically enter the date in which a document is created or modified. The date in which the document is created, the date in which the document is accessed, or the date in which the content of a field is last modified is automatically entered, according to the date type selected.
 
-|image22|
+.. figure:: resources/date-field.png
+   :alt: Date field
+   :width: 750px
 
 **Field Properties**
 
-.. figure:: resources/date-component-properties_.png
+.. figure:: resources/date-field-properties.png
    :alt: Setting Date Field Properties
    :width: 250px
 
@@ -1072,7 +1131,10 @@ For example, if you want to display the date in the format of ‘15-20-2020’, 
 
 If **Last modified date of the content** is selected, the **Input Component ID** field is displayed. In this field, enter the ID of the field that will display the information when triggered.
 
-|image23|
+.. figure:: resources/input-component-ID.png
+   :alt: Input component ID
+   :width: 250px
+
 
 .. note::
 
@@ -1089,13 +1151,15 @@ Document
 
 This field is used for entering document-related information in the document itself. You can select either one of the document ID or document number.
 
-|image24|
+.. figure:: resources/document-field.png
+   :alt: Document field
+   :width: 750
 
 The document ID is a unique document ID assigned in the system, so it does not require separate settings. For settings related to document number, upload a template and then go to **Template settings > General**.
 
 **Field Properties**
 
-.. figure:: resources/document-domponent-properties.png
+.. figure:: resources/document-component-properties.png
    :alt: Setting Document Field Properties
    :width: 250px
 
@@ -1118,7 +1182,7 @@ Selects the type of information that will be used.
 Upload Form File
 ---------------------------
 
-Form files created using OZ in Office are uploaded in the following order:
+Form files created using eformsign for Microsoft Office are uploaded in the following order:
 
 1. Click the **Execute** icon (|image25|) in the File group. The login page will be displayed as a pop-up window.
 
@@ -1182,10 +1246,11 @@ After uploading a template, you can configure additional settings for documents 
 
 .. note::
 
-   For a detailed explanation of templates, please refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
+   For a detailed explanation of templates, please refer to `Creating templates using eformsign for Microsoft Office <chapter7.html#template_fb>`__.
 
 .. |image1| image:: resources/menu_icon.png
 .. |image2| image:: resources/delete_icon1.png
+   :width: 20px
 .. |image3| image:: resources/property-icon.png
 .. |image4| image:: resources/form-builder-components_check.png
    :width: 730px
@@ -1232,3 +1297,4 @@ After uploading a template, you can configure additional settings for documents 
 .. |image25| image:: resources/excute_button.png
 .. |image26| image:: resources/upload_button.png
 .. |image27| image:: resources/config-icon.PNG
+   :width: 20px

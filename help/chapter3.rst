@@ -15,16 +15,16 @@ Anyone can use eformsign to easily convert existing documents into electronic do
 
    Templates can be created only by the company administrator or members with the template management permission, and the templates on the screen are shown only to members who are given template usage permission for a given template.
 
-   You can create a template using Web Form Designer or Form Builder (MS Office add-in).
-   For more information, refer to `Web Form Designer <chapter6.html#template_wd>`__ and
-   `Form builder <chapter7.html#template_fb>`__.
+   You can create a template using Web Form Designer or eformsign for Microsoft Office.
+   For more information, refer to `Creating templates using Web Form Designer <chapter6.html#template_wd>`__ and
+   `Creating templates using eformsign for Microsoft Office <chapter7.html#template_fb>`__.
 
 .. tip::
 
    When creating a document with **New from my file**, you cannot save it as a template. For documents you plan on using frequently, it is recommended to create a template first.
 
 New from my file
--------------------
+------------------
 
 You can upload a file you want and then add fields onto the document. Then, you can specify the signers that will fill in each field and enter the information of the document signers and reviewers, and then send the document.
 
@@ -341,16 +341,11 @@ You can create and send documents whenever necessary by uploading
 frequently used forms and saving them as templates by adding workflows
 and other details.
 
-Templates can be created by using Web Form Designer or Form Builder (MS Office add-in). For
-more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__\  and
-`Tempate Form builder <chapter7.html#template_fb>`__.
+Templates can be created by using Web Form Designer or eformsign for Microsoft Office. For
+more information, refer to `Web Form Designer <chapter5.html#_template_wd>`__\  and
+`eformsign for Microsoft Office <chapter7.html#_template_fb>`__.
 
 .. note::
-
-   A document can only be created by members or groups that have been
-   granted template usage permission (allows to create documents from
-   the template) for a template by a member with template management
-   permission for that template.
 
    A template is shown in the **Manage templates** page only to
    member/groups that have been granted template usage permission for

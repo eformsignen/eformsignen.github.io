@@ -4,9 +4,9 @@
 Document Inboxes
 =================
 
-------------
+-----------
 Documents
-------------
+-----------
 
 Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the Action required inbox in which you can select and send.
 
@@ -581,6 +581,72 @@ If you have a document you want to added a shared folder, you can go to the Acti
 .. tip::
 
    To share multiple documents at the same time, click the share icon at the top right corner of the screen. Then, select the documents you want to share and click the **Share** button at the top of the screen.
+
+
+
+.. _trash:
+
+-------------------------
+Trash
+-------------------------
+
+In the **Trash** inbox, you can view the list of deleted documents that are not deleted permanently. Documents that are manually deleted and those that are automatically deleted according to the Document retention period are stored here.
+
+
+.. figure:: resources/en-trash.png
+   :alt: Trash inbox
+
+- The **Trash** inbox is visible to all members, but the list of documents shown and the available actions differ depending on your permissions (company administrator, document manager, member).
+
+- Documents sent to the **Trash** page are deleted permanently after 14 days, and members can manually restore or permanently delete them.
+
+- Restoring documents is only possible for manually deleted ones.
+
+- Documents in the **Trash** can be permanently deleted if they were deleted by you, while automatically deleted documents can only be fully deleted by the company administrator or a document admin. Permissions determine which articles can be fully deleted.
+
+- Depending on your permissions, you can delete the following documents.
+
+   - **Company administrator:** All documents created by company members that are shown on the **Manage documents** page.
+
+   - **Document manager:** Documents in which you have been granted permission to delete that are shown in the **Manage documents** page.
+
+   - **Member:** Your draft documents in your inbox and documents you created that have been rejected.
+
+**Permanently deleting a document from Trash**
+
+1. Click the **Trash** menu in the sidebar to navigate to the **Trash** inbox.
+
+2. Click the **Delete permanently** button below the document you want to delete permanently. If you want to delete multiple documents, tick the boxes to the left of the documents and click the **Delete Permanently** button at the top of the screen.
+
+3. In the pop-up displayed, click the **Delete permanently** button to delete the document permanently from the system.
+
+.. figure:: resources/en-permanent-deletion.png
+   :alt: Permanently deleting a document from Trash
+
+.. Caution::
+
+   Caution: Permanently deleted documents cannot be restored.
+
+
+
+
+**Restoring a deleted document**
+
+1. Click the **Trash** menu in the sidebar to navigate to the **Trash** page.
+
+2. Click the **Restore** button below the document. If you want to restore multiple documents, tick the checkboxes to the left of the documents and click the **Restore** button on the top right corner of the screen.
+
+3. In the pop-up displayed, click the **Restore** button to restore the document to its original inbox.
+
+.. figure:: resources/en-document-restoration.png
+   :alt: Sestoring a deleted document
+
+
+.. note::
+
+   Note that you cannot restore documents that have been automatically deleted after the retention period has ended.
+
+
 
 
 

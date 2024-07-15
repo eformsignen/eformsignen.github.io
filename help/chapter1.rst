@@ -1,5 +1,5 @@
 Introduction to eformsign
-=============================
+============================
 
 **Overview**
 
@@ -64,14 +64,9 @@ using eformsign.
    documents from templates and send them to recipients to be reviewed
    and signed.
 
--  **Form Builder (MS Office add-in)**
+-  **eformsign for Microsoft Office (Office add-in)**
 
-   Form builder (MS Office add-in) is a tool used to create electronic forms
-   by converting Microsoft Office files such as applications, contracts,
-   and agreements into electronic forms that contain fields such as
-   signature and text box. Form builder (MS Office add-in) also uploads the converted
-   electronic forms onto eformsign. Form builder (MS Office add-in) is an Microsoft Office
-   add-in, and it is shown as a ribbon menu which is called **OZ in Office**.
+   eformsign for Microsoft Office is an Office add-in that creates electronic forms by converting Microsoft Office files, such as applications, contracts, and agreements, into forms with fields like signatures and text boxes. The add-in also uploads these electronic forms to eformsign and integrates into the Office ribbon menu as **eformsign**.
 
 -  **Dashboard**
 
@@ -91,8 +86,8 @@ using eformsign.
    Templates This is an electronic form that serves as a starting point
    for a new document. With a template, you can create many documents
    from it. You can create templates by converting existing Microsoft
-   Office files using Form builder (MS Office add-in)or by uploading files directly
-   onto eformsign.
+   Office files using eformsign for Microsoft Office or by uploading files directly
+   to eformsign.
 
 -  **Document**
 
@@ -202,9 +197,9 @@ Create from template
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 There are two ways to create a document from a template: uploading a
-file on eformsign and creating a template using Web Form Designer, and
-creating a template using Microsoft Office using Form Builder (MS Office add-in) and
-uploading it on eformsign.
+file to eformsign and creating a template using Web Form Designer, and
+creating a template using eformsign for Microsoft Office and
+uploading it to eformsign.
 
 1. **Using Web Form Designer**
 
@@ -217,11 +212,11 @@ uploading it on eformsign.
 
 
 
-2. **Using Form Builder (MS Office add-in)**
+2. **Using eformsign for Microsoft Office**
 
    You can create a template by creating or opening a
    document file in Microsoft Office (Word, Excel, and PowerPoint), and
-   then using the ribbon menu (named OZ in Office) to add the fields
+   then using the ribbon menu named eformsign to add the fields
    you want such as text, signature, and date onto the document. Then,
    you can upload the template you created onto eformsign by clicking
    the Upload button in the ribbon menu.
@@ -232,23 +227,23 @@ uploading it on eformsign.
    deployed template and send it to recipients.
 
 .. figure:: resources/use_flow2.png
-   :alt: Usage Flow of eformsign Using Form Builder (MS Office add-in)
+   :alt: Usage Flow of eformsign for Microsoft Office
    :width: 700px
 
 
 Minimum System Requirements
 --------------------------------
 
-The minimum system requirements for Form builder (MS Office add-in) and eformsign are as
+The minimum system requirements for eformsign for Microsoft Office and eformsign are as
 follows:
 
--  **Form builder (MS Office add-in)**
+-  **eformsign for Microsoft Office**
 
    -  **OS:** Windows 7 and later
 
    -  **MS Office:** Microsoft Office 2010 and later
 
--  **eformsign and Web form designer**
+-  **eformsign and Web Form Designer**
 
    -  **OS:** Windows 7 and later, OS X Mavericks and later
 

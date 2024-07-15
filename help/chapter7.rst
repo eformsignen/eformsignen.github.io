@@ -1,7 +1,7 @@
 .. _template_fb:
 
 =====================================================================
-Creating templates using Form Builder (MS Office Add-in)
+Creating templates using eformsign for Microsoft Office
 =====================================================================
 
 ----------------
@@ -9,7 +9,7 @@ About Templates
 ----------------
 
 Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing
-paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
+paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **eformsign for Microsoft Office**. 
 
 
 .. tip::
@@ -25,20 +25,20 @@ paper forms such as applications, contracts, and agreements. You can create and 
 
 To create and send electronic documents via eformsign, you have to create a template first which can be transformed into an e-document.
 
-**How to create a template with Form Builder (MS Office Add-in)**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**How to create a template with eformsign for Microsoft Office**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create a template with Form builder (MS Office Add-in), you must first download eformsign Form builder.
+To create a template with eformsign for Microsoft Office, you must first download eformsign for Microsoft Office.
 
 .. note::
 
-   For more information about Form builder (MS Office Add-in), please refer to `Form builder <chapter5.html#formbuilder>`__.
+   For more information about eformsign for Microsoft Office, please refer to `Introduction to eformsign for Microsoft Office <chapter5.html#formbuilder>`__.
 
 MS Office files such as Word, Excel, and PowerPoint can be uploaded as a template using the eformsign Microsoft Office Add-in.
 
 1. Open a Word, Excel, or PowerPoint file.
 
-2. Go to the **OZ in Word/Excel/PowerPoint** menu in the file.
+2. Go to the **eformsign** ribbon menu in the file.
 
 3. Choose a location you want to add a field.
 
@@ -142,7 +142,7 @@ General
 Set basic information about the template including the template name, category, validity period, etc.
 
 **① Form file**
-   The name of the form file which is uploaded to eformsign from Word, PowerPoint, or Excel using Form Builder. To change the form file name, you need to change the file name of the uploaded Word, PowerPoint, or Excel file and then update it.
+   The name of the form file which is uploaded to eformsign from Word, PowerPoint, or Excel using eformsign for Microsoft Office. To change the form file name, you need to change the file name of the uploaded Word, PowerPoint, or Excel file and then update it.
 
 **② Template name**
    The template name will be displayed in the **Manage templates** and **New from template** pages.
@@ -399,7 +399,7 @@ A document number can be viewed directly on a document using the document field 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-   You can generate a document number directly on a document by using the document field in Form builder.
+   You can generate a document number directly on a document by using the document field in eformsign for Microsoft Office.
 
    1. Open a file in Word, Excel, or PowerPoint.
 

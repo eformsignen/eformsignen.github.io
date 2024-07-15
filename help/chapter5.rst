@@ -8,7 +8,7 @@ Creating templates using Web Form Designer
 About Templates
 ------------------
 
-Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
+Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **eformsign for Microsoft Office**. 
 
 
 
@@ -21,17 +21,17 @@ Templates are **electronic documents** used for the eformsign service. They are 
 
 .. note::
 
-   For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
+   For more information about eformsign for Microsoft Office, refer to `Creating templates using eformsign for Microsoft Office <chapter7.html#template_fb>`__.
 
 
 
 **How to create a template with Web Form Designer**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. note::
 
-   For more information about Web form designer, please refer to `Web Form Designer <chapter4.html#webform>`__.
+   For more information about Web form designer, please refer to `Introduction to Web Form Designer <chapter4.html#webform>`__.
 
 
 You can easily create a template by uploading a file online.

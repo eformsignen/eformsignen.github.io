@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Info &mdash; eformsign User Guide 2023.01.05 documentation</title>
+  <title>Basic Info &mdash; eformsign User Guide 2024.07.15 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,7 +13,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=b77e92f4"></script>
+        <script src="../_static/documentation_options.js?v=ccfe6086"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -84,15 +84,20 @@
 <li class="toctree-l3"><a class="reference internal" href="#stamp-history-tab"><strong>Stamp history tab</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#security-settings">Security settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#security-settings">Security settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#login-settings"><strong>Login settings</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ip-access-settings"><strong>IP access settings</strong></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#document-retention-period">Document retention period</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manage-activity-history">Manage activity history</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter5.html">Creating templates using Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Introduction to Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Introduction to eformsign for Microsoft Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using eformsign for Microsoft Office</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Inboxes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
@@ -158,6 +163,7 @@
 </div></blockquote>
 </li>
 <li><p><strong>Shared</strong>: Allows you to share your documents with others and view documents others members shared with you.</p></li>
+<li><p><strong>Trash</strong>: Shows the list of deleted documents that are not deleted permanently.</p></li>
 <li><p><strong>Manage documents:</strong> Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.</p></li>
 <li><p><strong>Manage bulk sent documents:</strong> Only document managers can access this menu and can view documents bulk created from templates in which you are given permission. However, the company administrator can view and manage all documents.</p></li>
 <li><p><strong>My signature:</strong> You can create and add your signature to be used when signing a document.</p></li>
@@ -174,8 +180,9 @@
 <li><p><strong>Signature settings:</strong> Select the signature types that can be used when signing directly on documents.</p></li>
 <li><p><strong>Notification template management:</strong> You can view and edit email and SMS notification templates.</p></li>
 <li><p><strong>Manage custom fields:</strong> You can add and configure custom fields such as company, group, and member information.</p></li>
-<li><p><strong>Security settings:</strong> You can set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign.</p></li>
-<li><p><strong>Document retention settings:</strong> You can set the document retention period for all the documents created in the company.</p></li>
+<li><p><strong>Security settings:</strong> You can set security settings including <strong>Login settings</strong> and <strong>IP access settings</strong>. <strong>Login settings</strong> allows you to enable 2-step verification, disable multiple logins, and lock inactive accounts for fortied security. <strong>IP access settings</strong> allows you to set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign.</p></li>
+<li><p><strong>Document retention period:</strong> You can set the document retention period for all the documents created in the company.</p></li>
+<li><p><strong>Manage activity history:</strong> You can view the history of logins, profile revisions, downloads, and permissions, as well as download the history in the CSV format.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -199,7 +206,7 @@
 </div></blockquote>
 </li>
 <li><p><strong>Usage status:</strong> You can monitor weekly, monthly, and annual service usage status.</p></li>
-<li><p><strong>Download form builder for MS Office:</strong> You can download the eformsign form builder Microsoft Office add-in, which allows you to create electronic forms using Microsoft Office programs.</p></li>
+<li><p><strong>Download eformsign for Microsoft Office:</strong> You can download eformsign for Microsoft Office, which allows you to create electronic forms using Microsoft Office programs.</p></li>
 </ul>
 </section>
 <section id="id1">
@@ -208,23 +215,40 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-dashboard-main.png"><img alt="eformsign Dashboard Screen" src="../_images/en-dashboard-main.png" style="width: 800px;" /></a>
 </figure>
-<dl class="simple">
-<dt><strong>① New from my file</strong></dt><dd><p>Opens the <strong>New from my file</strong> page where you can create new documents by uploading your files from your computer.</p>
-</dd>
-<dt><strong>② New from template</strong></dt><dd><p>Opens the <strong>New from template</strong> page where you can create new documents from templates.
+<p><strong>① Document inbox shortcut</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Action required</strong>: Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the <strong>Action required</strong> inbox.</p></li>
+<li><p><strong>In progress</strong>: Shows the number of documents that are in progress. When clicked, it opens the <strong>In progress</strong> inbox.</p></li>
+<li><p><strong>Completed</strong>: When clicked, it opens the <strong>Completed</strong> inbox.</p></li>
+<li><p><strong>My saved documents</strong>: Shows the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, it opens the <strong>My saved documents</strong> inbox.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>② New from my file</strong></p>
+<blockquote>
+<div><p>Opens the <strong>New from my file</strong> page where you can create new documents by uploading your files from your computer.</p>
+</div></blockquote>
+<p><strong>③ New from template</strong></p>
+<blockquote>
+<div><p>Opens the <strong>New from template</strong> page where you can create new documents from templates.
 You can create 1 document from a template by clicking the create icon (<a class="reference internal" href="../_images/template-create-icon.PNG"><img alt="image10" src="../_images/template-create-icon.PNG" style="width: 20px;" /></a>), and create multiple documents at once from a template by clicking the bulk icon (<a class="reference internal" href="../_images/template-bulkcreate-icon.PNG"><img alt="image11" src="../_images/template-bulkcreate-icon.PNG" style="width: 20px;" /></a>).</p>
-</dd>
-<dt><strong>③ Favorites</strong></dt><dd><p>Displays the templates added as Favorites with a yellow star. You can add or remove the star by clicking <strong>View all templates</strong> and then adding/removing the star symbol on a template in the <strong>New from template</strong> page.</p>
-</dd>
-<dt><strong>④ Action required</strong></dt><dd><p>Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the <strong>Action required</strong> inbox.</p>
-</dd>
-<dt><strong>⑤ In progress</strong></dt><dd><p>Shows the number of documents that are in progress. When clicked, it opens the <strong>In progress</strong> inbox.</p>
-</dd>
-<dt><strong>⑥ Completed</strong></dt><dd><p>When clicked, it opens the <strong>Completed</strong> inbox.</p>
-</dd>
-<dt><strong>⑦ My saved documents</strong></dt><dd><p>Shows the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, it opens the <strong>My saved documents</strong> inbox.</p>
-</dd>
-</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>How to add template favorites</strong></p>
+<p>The templates you use most often will appear first in your dashboard when you favourite them. You can add templates as favorites in the <strong>New from template</strong> page.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template_favorite.png"><img alt="Template favorites" src="../_images/template_favorite.png" style="width: 500px;" /></a>
+</figure>
+<ol class="arabic simple">
+<li><p>Go to the <strong>New from template</strong> menu.</p></li>
+<li><p>Click the star icon of the template to add it as a favorite.</p></li>
+<li><p>In your dashboard, you’ll notice that your favourite templates are listed first.</p></li>
+<li><p>Click the favorites star icon again to remove the template from the favorites list.</p></li>
+</ol>
+</div></blockquote>
+</div>
+</div></blockquote>
 </section>
 </section>
 <section id="view-and-change-basic-information">
@@ -353,7 +377,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <p>Company managers have the ability to access the <strong>Manage company</strong> menu. Company managers can view and edit company, group, and member information and grant permissions to members as well as having the ability to edit messages in eformsign email and SMS notification templates.</p>
 </li>
 <li><p><strong>Template manager</strong></p>
-<p>Template managers have the permission to access the <strong>Manage template</strong> menu. Template managers can create new templates by using Form Builder (MS Office add-in) or Web Form Designer, and can also edit, deploy, and delete templates.</p>
+<p>Template managers have the permission to access the <strong>Manage template</strong> menu. Template managers can create new templates by using eformsign for Microsoft Office or Web Form Designer, and can also edit, deploy, and delete templates.</p>
 </li>
 <li><p><strong>Document manager</strong></p>
 <p>Document managers have permission to access the <strong>Manage documents</strong> menu. They can manage documents created from templates they have access to. If a member is assigned as a document manager of a template, then the member can view, download, permanently remove, and void (excluding completed documents) created from that template.</p>
@@ -922,19 +946,58 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </section>
 <section id="security-settings">
 <span id="id3"></span><h2>Security settings<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
-<p>To secure your account in eformsign, you can set permissions to allow login from specific IP addresses only.</p>
-<p><strong>How to filter IP addresses by permission level</strong></p>
-<ol class="arabic simple">
-<li><p>Go to the <strong>Manage company &gt; Security settings</strong> menu.</p></li>
-</ol>
+<p>You can secure your account via <strong>Login settings</strong> and <strong>IP access settings</strong>. With <strong>Login settings</strong>, you can enable 2-step verification, disable multiple logins, and lock inactive accounts. With <strong>IP access settings</strong>, you can set permissions to allow login from specific IP addresses only.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/security-settings.png"><img alt="Security settings" src="../_images/security-settings.png" style="width: 700px;" /></a>
 </figure>
-<ol class="arabic simple" start="2">
-<li><p>Under <strong>IP access settings</strong>, select <strong>Allow access only to allowed IP addresses</strong>.</p></li>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings-page.png"><img alt="Security settings" src="../_images/security-settings-page.png" style="width: 700px;" /></a>
+</figure>
+<section id="login-settings">
+<h3><strong>Login settings</strong><a class="headerlink" href="#login-settings" title="Link to this heading"></a></h3>
+<p><strong>2-step verification</strong></p>
+<ul>
+<li><p>The <strong>2-step verification</strong> feature uses Google Authenticator, email, or SMS verification for additional verification at login to protect your account.</p></li>
+<li><p>You can configure the settings in the <strong>Manage company</strong> &gt; <strong>Security settings</strong> &gt; Login settings menu and only the company administrator can access it.</p></li>
+<li><p>If you enable this feature, you will be automatically logged out, and any subsequent logins will require two-factor authentication.</p></li>
+<li><p>The default authentication method is Google Authenticator.</p></li>
+<li><p>The default authentication method can be changed to any of the following if this feature is enabled</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Google Authenticator</strong></p></li>
+<li><p><strong>Email verification code</strong></p></li>
+<li><p><strong>SMS verification code</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Disable multiple logins</strong></p>
+<ul class="simple">
+<li><p>The <strong>Disable multiple logins</strong> feature allows you to restrict multiple logins from the same account.</p></li>
+<li><p>You can enable it in the <strong>Manage company</strong> &gt; <strong>Security settings</strong> &gt; <strong>Login settings</strong> menu and it can only be enabled by the company administrator.</p></li>
+<li><p>When enabled, only the last device or browser you accessed (or logged into) will remain logged in, and everyone else will be automatically logged out.</p></li>
+<li><p>When enabled, you can change the <strong>Auto logout time</strong> and <strong>Auto logout warning</strong>.</p></li>
+<li><p><strong>Auto logout time</strong> allows you to set the time after which you are automatically logged out if no activity is detected for a certain period of time after signing in, from a minimum of 10 minutes to a maximum of 1,440 minutes (24 hours).</p></li>
+<li><p><strong>Auto logout warning</strong> allows you to set the time at which you want users to see a warning message before being automatically logged out. You can set it from 30 seconds to 300 seconds.</p></li>
+</ul>
+<p><strong>Lock inactive accounts</strong></p>
+<ul class="simple">
+<li><p>The <strong>Lock inactive accounts</strong> feature allows you to restrict logins from accounts that have not accessed eformsign for a certain period of time.</p></li>
+<li><p>You can enable it in the <strong>Manage company</strong> &gt; <strong>Security settings</strong> &gt; <strong>Login settings</strong> menu and can only be enabled by the company administrator.</p></li>
+<li><p>When you enable this feature, it restricts logins from accounts that have not logged in to eformsign for a set period of time from that point forward.</p></li>
+<li><p><strong>Set inactive period</strong> allows you to set the period of inactivity after which accounts will be automatically locked. The inactive period can be set between 7 and 365 days.</p></li>
+<li><p>Members with locked accounts can use eformsign after requesting the company administrator to unlock their accounts. The company administrator can unlock accounts on the <strong>Manage members</strong> page.</p></li>
+</ul>
+</section>
+<section id="ip-access-settings">
+<h3><strong>IP access settings</strong><a class="headerlink" href="#ip-access-settings" title="Link to this heading"></a></h3>
+<p>This feature allows you to specify IP addresses for eformsign member access. You can customize access by member permissions, enabling specific members to access designated IPs. You can easily configure IP access for companh administrators, managers, and members.</p>
+<p><strong>How to filter IP addresses by permission level</strong></p>
+<ol class="arabic simple">
+<li><p>Go to the <strong>Manage company &gt; Security settings</strong> menu and click IP access settings on the left side of the screen. Under <strong>IP access settings</strong>, select <strong>Allow access only to allowed IP addresses</strong>.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="Security settings" src="../_images/security-settings2.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="IP access settings" src="../_images/security-settings2.png" style="width: 700px;" /></a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Enter the IP address or range you want to allow access from.</p></li>
@@ -943,8 +1006,9 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Review the list of allowed IP addresses and then click the <strong>Save</strong> button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="Security settings" src="../_images/security-settings1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="SIP access settings" src="../_images/security-settings1.png" style="width: 700px;" /></a>
 </figure>
+</section>
 </section>
 <section id="document-retention-period">
 <span id="retention"></span><h2>Document retention period<a class="headerlink" href="#document-retention-period" title="Link to this heading"></a></h2>
@@ -980,7 +1044,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <a class="reference internal image-reference" href="../_images/retention-period2.png"><img alt="Document retention period settings" src="../_images/retention-period2.png" style="width: 700px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>Click the <strong>Save</strong> button to update the retention preiod, and the change will apply to the documents created hereafter.</p></li>
+<li><p>Click the <strong>Save</strong> button to update the retention period, and the change will apply to the documents created hereafter.</p></li>
 </ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -992,6 +1056,22 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>If you change the document retention period, the change is applied started to the documents created hereafter.</p></li>
 </ul>
 </div>
+</section>
+<section id="manage-activity-history">
+<span id="activityhistory"></span><h2>Manage activity history<a class="headerlink" href="#manage-activity-history" title="Link to this heading"></a></h2>
+<p>he Manage activity history feature allows you to view the history of logins, profile revisions, downloads, and permissions, as well as download the history in the CSV format. You can access it in the <strong>Manage company</strong> &gt; <strong>Manage activity history</strong> menu and it can be accessed only by the company administrator.</p>
+<ul class="simple">
+<li><p><strong>Login history</strong>: View the login history of company members.</p></li>
+<li><p><strong>Profile revision history</strong>: View the revision history of members’ profiles.</p></li>
+<li><p><strong>Download history</strong>: View the download history and reason of company members.</p></li>
+<li><p><strong>Permission management history</strong>: View the history of activities that occured in the <strong>Manage permissions</strong> page.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/activity-history1.png"><img alt="Manage activity history" src="../_images/activity-history1.png" style="width: 700px;" /></a>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/activity-history2.png"><img alt="Manage activity history" src="../_images/activity-history2.png" style="width: 700px;" /></a>
+</figure>
 </section>
 </section>
 
@@ -1006,7 +1086,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, FORCS CO., LTD. All rights reserved..</p>
+    <p>&#169; Copyright 2024, FORCS CO., LTD. All rights reserved..</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
