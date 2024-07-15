@@ -56,7 +56,7 @@ the page.
 following installation screen will be displayed. Read the license agreement carefully and click the **Accept and Continue**
 button if you agree to all the terms of the license agreement. The installation will proceed.
 
-.. figure:: resources/install-menu.png
+.. figure:: resources/eformsign-install-menu.png
    :alt: eformsign for Microsoft Office Installation Screen (1)
    :width: 300px
 
