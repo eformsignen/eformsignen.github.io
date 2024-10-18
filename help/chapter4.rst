@@ -1057,7 +1057,7 @@ In the **Design form** screen, click the **Next** button to go to the **Configur
    :width: 730px
 
 
-.. important::
+.. Important::
 
    In order to create documents from a template, you must save and deploy the template. If you save a template but not deploy it, then template does not appear in the **New from template** page of members with permission to use that template.
 

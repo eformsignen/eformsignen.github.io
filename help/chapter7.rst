@@ -132,7 +132,7 @@ General
 
 .. figure:: resources/en-manage-template-settings-fb.png
    :alt: Template Settings > General
-   :width: 700px
+   :width: 350px
 
 
 **Configure basic settings for the template**
@@ -141,20 +141,17 @@ General
 
 Set basic information about the template including the template name, category, validity period, etc.
 
-**① Form file**
+**Form file**
    The name of the form file which is uploaded to eformsign from Word, PowerPoint, or Excel using eformsign for Microsoft Office. To change the form file name, you need to change the file name of the uploaded Word, PowerPoint, or Excel file and then update it.
 
-**② Template name**
+**Template name**
    The template name will be displayed in the **Manage templates** and **New from template** pages.
 
    The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.
 
-   .. figure:: resources/en-template-name.png
-      :alt: Template Name
-      :width: 250px
 
 
-**③ Template abbreviation**
+**Template abbreviation**
    A short name that briefly descries the template. It is recommended to use two or three words.
 
    **Template abbreviation** can be used in the document number, document name, mail template, etc.
@@ -163,15 +160,15 @@ Set basic information about the template including the template name, category, 
       :alt: Template Abbreviation
 
 
-**④ Category**
+**Category**
    Category is used to sort templates by type. With the category name, you can filter templates in the **Manage templates** menu, and can filter documents in the **Documents** menus and the **Manage documents** menu. You can choose from an existing category or create a new category by entering a new name.
 
    You can set multi-level categories with a separator ( **/** ). For example, if you set a category as **HR Team/Vacation**, the Vacation category in the HR category is created.
 
-**⑤ Description**
+**Description**
    Enter additional comments about the template. This description is displayed under the template name in the **New from template.**
 
-**⑥ Template validity period**
+**Template availability**
    Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
 
    When **No expiry date** is checked, documents can be created without a time limit. If you check **No expiry date**, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.
@@ -181,22 +178,22 @@ Set basic information about the template including the template name, category, 
 
 Configure additional settings including document naming rules for documents created from the template.
 
-**⑦ Document naming rule**
+**Document naming rule**
    Sets the document name when creating the document from the template. If a document naming rule is not set, the template name will be the document name.
 
-**⑧ Allow document name change**
+**Allow document name change**
    If **Allow document name change** is checked, the document creator can change the document name.
 
-**⑨ Generate a document number**
+**Generate a document number**
    If **Generate a document number** is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.
 
    |image3|
 
-**⑩ Skip pop-up window when sending documents**
+**Skip pop-up window when sending documents**
    Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
 
 
-**⑪ Document retention period**
+**Document retention period**
    Sets the retention period for documents created from the template. If this is not set, then the document retention period for the template follows the company-wide settings.
 
    .. note::

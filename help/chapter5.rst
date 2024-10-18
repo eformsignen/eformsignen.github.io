@@ -178,10 +178,6 @@ Set basic information about the template including the template name, category, 
 
    The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.
 
-   .. figure:: resources/en-template-name.png
-      :alt: Template Name
-      :width: 250px
-
 
 **② Template abbreviation**
    A short name that briefly descries the template. It is recommended to use two or three words.
@@ -197,7 +193,7 @@ Set basic information about the template including the template name, category, 
 **④ Description**
    Enter additional comments about the template. This description is displayed under the template name in **New from template.**
 
-**⑤ Template validity period**
+**⑤ Template availability**
    Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
 
    If you check **No expiry date**, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.
@@ -569,7 +565,7 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
   **Merge workflow steps - Parallel signing**
 
-   You can merge multiple workflow steps into o/e so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+   You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
 
   **Instructions:**
 
@@ -593,7 +589,6 @@ You can create or modify the workflow of the template by clicking the **Workflow
       :alt: Merge workflow steps (after)
 
 
-   ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
 
 
 
@@ -1038,20 +1033,6 @@ In the **Manage templates** page, you can lookup and search templates by templat
 **③ Sort**
    You can select the template sorting order in ascending or descending by template name or category.
 
-**④ Viewing method**
-   You can select between Thumbnail view and List view for viewing templates.
-
-   - Thumbnail: Preview templates as thumbnails.
-
-      .. figure:: resources/template-lists-thumnail.png
-         :alt: Thumbnail view
-         :width: 600px
-
-   - List: Preview templates as lists. 
-
-      .. figure:: resources/template-lists.png
-         :alt: List view
-         :width: 600px
 
 
 

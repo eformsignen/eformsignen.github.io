@@ -1222,6 +1222,8 @@ he Manage activity history feature allows you to view the history of logins, pro
 
 - **Download history**: View the download history and reason of company members. 
 
+- **Document history**: View the history of users’ activities related to documents.
+
 - **Permission management history**: View the history of activities that occured in the **Manage permissions** page.
 
 .. figure:: resources/activity-history1.png

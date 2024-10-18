@@ -102,6 +102,24 @@ You can upload a file you want and then add fields onto the document. Then, you 
       ❗Note that a recipient assigned the Need to view type cannot fill out a document, and cannot approve/reject a document.
 
 
+.. tip::
+
+  **Merge workflow steps - Parallel signing**
+
+   You can merge multiple workflow steps into o/e so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+
+  **Instructions:**
+
+   1. Click the workflow step you want to merge with (when merging two steps, you must click the bottom one).
+
+   2. Click the Merge signing order icon displayed at the top left corner of the selected workflow step. The bottom and top workflow steps will be merged together.
+
+   3. You can also split workflow steps by clicking the same icon.
+
+
+   .. figure:: resources/merge_workflow_steps_newfrommyfile.png
+      :alt: Merge workflow steps
+
 
 
 6. Click the **Options** step to change the document title and select whether to timestamp the document when completed.
@@ -286,13 +304,12 @@ The detail settings in **Recipient options** is displayed differently depending 
 
 **Options**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In the Options step, you can set the document title, set and edit document notification settings, and choose whether to timestamp the document.
+In the Options step, you can set and edit document notification settings, and choose whether to timestamp the document.
 
 .. figure:: resources/wfd-option.png
    :alt: Options page
    :width: 700px
 
-- **Document title**: Sets the document title. Documents are sent and saved with the document title set here.
 
 - **Document notification settings:** Sets notifications about the document's status and completion to be sent to recipients, and previews or edits notification messages. 
 
@@ -332,6 +349,16 @@ In the Options step, you can set the document title, set and edit document notif
 .. note::
 
       ❗Applying a timestamp incurs an additional charge of 0.5 USD.
+
+
+.. note::
+
+      ❗You can change the document name once you click the **Start now** button to fill out the document.
+
+
+.. note::
+
+      ❗Clicking the **Save** button before you click the **Start now** button allows you to save the document to the **My saved documents** inbox.
 
 
 New from template
