@@ -15,9 +15,9 @@ Anyone can use eformsign to easily convert existing documents into electronic do
 
    Templates can be created only by the company administrator or members with the template management permission, and the templates on the screen are shown only to members who are given template usage permission for a given template.
 
-   You can create a template using Web Form Designer or Form Builder (MS Office add-in).
-   For more information, refer to `Web Form Designer <chapter6.html#template_wd>`__ and
-   `Form builder <chapter7.html#template_fb>`__.
+   You can create a template using Web Form Designer or eformsign for Microsoft Office.
+   For more information, refer to `Creating templates using Web Form Designer <chapter6.html#template_wd>`__ and
+   `Creating templates using eformsign for Microsoft Office <chapter7.html#template_fb>`__.
 
 .. tip::
 
@@ -101,6 +101,24 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
       ❗Note that a recipient assigned the Need to view type cannot fill out a document, and cannot approve/reject a document.
 
+
+.. tip::
+
+  **Merge workflow steps - Parallel signing**
+
+   You can merge multiple workflow steps into o/e so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+
+  **Instructions:**
+
+   1. Click the workflow step you want to merge with (when merging two steps, you must click the bottom one).
+
+   2. Click the Merge signing order icon displayed at the top left corner of the selected workflow step. The bottom and top workflow steps will be merged together.
+
+   3. You can also split workflow steps by clicking the same icon.
+
+
+   .. figure:: resources/merge_workflow_steps_newfrommyfile.png
+      :alt: Merge workflow steps
 
 
 
@@ -286,13 +304,12 @@ The detail settings in **Recipient options** is displayed differently depending 
 
 **Options**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In the Options step, you can set the document title, set and edit document notification settings, and choose whether to timestamp the document.
+In the Options step, you can set and edit document notification settings, and choose whether to timestamp the document.
 
 .. figure:: resources/wfd-option.png
    :alt: Options page
    :width: 700px
 
-- **Document title**: Sets the document title. Documents are sent and saved with the document title set here.
 
 - **Document notification settings:** Sets notifications about the document's status and completion to be sent to recipients, and previews or edits notification messages. 
 
@@ -334,6 +351,16 @@ In the Options step, you can set the document title, set and edit document notif
       ❗Applying a timestamp incurs an additional charge of 0.5 USD.
 
 
+.. note::
+
+      ❗You can change the document name once you click the **Start now** button to fill out the document.
+
+
+.. note::
+
+      ❗Clicking the **Save** button before you click the **Start now** button allows you to save the document to the **My saved documents** inbox.
+
+
 New from template
 -----------------
 
@@ -341,16 +368,11 @@ You can create and send documents whenever necessary by uploading
 frequently used forms and saving them as templates by adding workflows
 and other details.
 
-Templates can be created by using Web Form Designer or Form Builder (MS Office add-in). For
-more information, refer to `Template Web Form Designer <chapter6.html#template_wd>`__\  and
-`Tempate Form builder <chapter7.html#template_fb>`__.
+Templates can be created by using Web Form Designer or eformsign for Microsoft Office. For
+more information, refer to `Web Form Designer <chapter5.html#_template_wd>`__\  and
+`eformsign for Microsoft Office <chapter7.html#_template_fb>`__.
 
 .. note::
-
-   A document can only be created by members or groups that have been
-   granted template usage permission (allows to create documents from
-   the template) for a template by a member with template management
-   permission for that template.
 
    A template is shown in the **Manage templates** page only to
    member/groups that have been granted template usage permission for

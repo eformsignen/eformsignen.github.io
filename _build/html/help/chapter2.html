@@ -1,98 +1,260 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Info &mdash; eformsign User Guide 2023.01.05 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=b77e92f4"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Basic Info &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
+    <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Creating documents" href="chapter3.html" />
     <link rel="prev" title="Introduction to eformsign" href="chapter1.html" /> 
-</head>
+  </head><body data-dark_mode_code_blocks="true">
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../index.html">
-            
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<div id="top_nav">
+    
+        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
+    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">Go to eformsign</a></p>
+    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
+
+<script>
+(function() {
+    const topNav = document.querySelector('#top_nav')
+    const notificationContent = document.querySelector('#notification_banner p#content').innerText
+    const localStorageKey = 'readNotification'
+    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
+    const cssVariableName = '--navbarHeight'
+    const rootElement = document.documentElement
+
+    /*************************************************************************/
+    // Local storage for remembering if the user has read the notification.
+
+    function checkAlreadyRead() {
+        return localStorage.getItem(localStorageKey) == notificationContent
+    }
+
+    function setRead() {
+        localStorage.setItem(localStorageKey, notificationContent)
+    }
+
+    function clearRead() {
+        localStorage.removeItem(localStorageKey)
+    }
+
+    const alreadyRead = checkAlreadyRead()
+    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
+
+    /*************************************************************************/
+    // Updating a CSS variable so other elements adjust to the nav bar height.
+
+    function updateNavbarHeight() {
+        // Only update it if the delta is significant. Otherwise it causes
+        // unnecessary browser repaints.
+        const documentStyles = getComputedStyle(rootElement)
+        // We store the value in REM, so need to convert to pixels
+        const currentValue = parseFloat(
+            documentStyles.getPropertyValue(cssVariableName)
+        ) * parseFloat(documentStyles.fontSize)
+
+        const newValue = topNav.clientHeight
+
+        if (newValue - 5 > currentValue) {
+            console.log(`Updating ${cssVariableName} - overlapping`)
+            rootElement.style.setProperty(
+                cssVariableName, newValue + "px"
+            );
+        } else if (currentValue - newValue >= 30) {
+            console.log(`Updating ${cssVariableName} - gap too large`)
+            rootElement.style.setProperty(
+                cssVariableName, newValue + "px"
+            );
+        }
+    }
+
+    /*************************************************************************/
+    // After loading the page, and resizing the window, recalculate the nav bar
+    // height.
+
+    if (!permanentlyHidden) {
+        // This height is approximately correct when there's a banner, so
+        // shouldn't require any page reflow:
+        rootElement.style.setProperty(
+            '--navbarHeight', "5.5rem"
+        );
+
+        document.addEventListener("DOMContentLoaded", function() {
+            updateNavbarHeight()
+        });
+
+        var interval = undefined
+
+        window.addEventListener('resize', () => {
+            if (interval) {
+                clearTimeout(interval)
+            }
+            interval = setTimeout(() => {
+                console.log("Finished resizing")
+                updateNavbarHeight()
+            }, 100)
+        })
+    }
+
+    /*************************************************************************/
+
+    PetiteVue.createApp({
+        visible: !alreadyRead,
+        permanentlyHidden: permanentlyHidden,
+        bannerHiding: bannerHiding,
+        $delimiters: ['[[', ']]'],
+        toggleVisible() {
+            this.visible = !this.visible
+
+            if (this.visible) {
+                clearRead()
+            } else {
+                setRead()
+            }
+
+            if (!this.visible && bannerHiding == 'permanent') {
+                this.permanentlyHidden = true
+            }
+
+            // Run this after Vue has had time to update the DOM:
+            setTimeout(
+                updateNavbarHeight,
+                0
+            )
+        }
+    }).mount('#notification_banner')
+})()
+</script>
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../index.html" title="Go to homepage">eformsign user guide</a></h1>
+            <a id="source_link" href="https://www.eformsign.com/">
+    
+        <svg width="100%" height="100%" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <path fill="white" d="M89.42,41.51l-39.794,-39.791c-2.29,-2.292 -6.006,-2.292 -8.299,-0l-8.263,8.264l10.481,10.482c2.437,-0.823 5.23,-0.271 7.171,1.67c1.952,1.954 2.5,4.771 1.657,7.216l10.102,10.102c2.444,-0.842 5.264,-0.298 7.215,1.657c2.729,2.728 2.729,7.148 0,9.876c-2.729,2.73 -7.148,2.73 -9.878,-0c-2.052,-2.053 -2.56,-5.067 -1.52,-7.595l-9.422,-9.422l-0.001,24.793c0.666,0.329 1.293,0.769 1.847,1.321c2.728,2.727 2.728,7.146 0,9.878c-2.728,2.727 -7.15,2.727 -9.876,-0c-2.728,-2.732 -2.728,-7.151 0,-9.878c0.675,-0.674 1.454,-1.183 2.287,-1.524l0,-25.023c-0.833,-0.34 -1.611,-0.846 -2.287,-1.524c-2.066,-2.065 -2.564,-5.098 -1.504,-7.635l-10.333,-10.335l-27.285,27.284c-2.291,2.294 -2.291,6.011 0,8.303l39.794,39.791c2.291,2.291 6.007,2.291 8.301,-0l39.607,-39.607c2.292,-2.293 2.292,-6.011 0,-8.303Z"/>
+        </svg>
+    
+</a>
+        
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Info</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#dashboard">Dashboard</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#menu">Menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Dashboard</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#view-and-change-basic-information">View and Change Basic Information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#my-profile">My Profile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#edit-and-add-company-information">Edit and Add Company Information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#company-brand">Company Brand</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#permissions">Permissions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#company-administrator">Company Administrator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#company-manager">Company Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#template-manager">Template Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#document-manager">Document Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#permissions-for-each-template">Permissions for each template</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#manage-groups-and-members">Manage Groups and Members</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#manage-members">Manage Members</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#manage-groups">Manage Groups</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#my-signature">My Signature</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#adding-your-signature-and-initial"><strong>Adding Your Signature and Initial</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-your-stamp"><strong>Adding your stamp</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#creating-a-stamp"><strong>Creating a stamp</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#uploading-an-image"><strong>Uploading an image</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scanning-a-stamp"><strong>Scanning a stamp</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#manage-company-stamp">Manage company stamp</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#company-stamp-tab"><strong>Company stamp tab</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#stamp-history-tab"><strong>Stamp history tab</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#security-settings">Security settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#document-retention-period">Document retention period</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Info</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">Creating documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Introduction to Web Form Designer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter5.html">Creating templates using Web Form Designer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Introduction to Form Builder (MS Office Add-in)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using Form Builder (MS Office Add-in)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Introduction to eformsign for Microsoft Office</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">Creating templates using eformsign for Microsoft Office</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">Document Inboxes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">Customization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">Connecting with External Services</a></li>
@@ -100,28 +262,13 @@
 
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">eformsign User Guide</a>
-      </nav>
 
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Basic Info</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/help/chapter2.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <section id="basic-info">
 <h1>Basic Info<a class="headerlink" href="#basic-info" title="Link to this heading"></a></h1>
 <section id="dashboard">
@@ -158,6 +305,7 @@
 </div></blockquote>
 </li>
 <li><p><strong>Shared</strong>: Allows you to share your documents with others and view documents others members shared with you.</p></li>
+<li><p><strong>Trash</strong>: Shows the list of deleted documents that are not deleted permanently.</p></li>
 <li><p><strong>Manage documents:</strong> Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.</p></li>
 <li><p><strong>Manage bulk sent documents:</strong> Only document managers can access this menu and can view documents bulk created from templates in which you are given permission. However, the company administrator can view and manage all documents.</p></li>
 <li><p><strong>My signature:</strong> You can create and add your signature to be used when signing a document.</p></li>
@@ -174,8 +322,9 @@
 <li><p><strong>Signature settings:</strong> Select the signature types that can be used when signing directly on documents.</p></li>
 <li><p><strong>Notification template management:</strong> You can view and edit email and SMS notification templates.</p></li>
 <li><p><strong>Manage custom fields:</strong> You can add and configure custom fields such as company, group, and member information.</p></li>
-<li><p><strong>Security settings:</strong> You can set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign.</p></li>
-<li><p><strong>Document retention settings:</strong> You can set the document retention period for all the documents created in the company.</p></li>
+<li><p><strong>Security settings:</strong> You can set security settings including <strong>Login settings</strong> and <strong>IP access settings</strong>. <strong>Login settings</strong> allows you to enable 2-step verification, disable multiple logins, and lock inactive accounts for fortied security. <strong>IP access settings</strong> allows you to set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign.</p></li>
+<li><p><strong>Document retention period:</strong> You can set the document retention period for all the documents created in the company.</p></li>
+<li><p><strong>Manage activity history:</strong> You can view the history of logins, profile revisions, downloads, and permissions, as well as download the history in the CSV format.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -199,7 +348,7 @@
 </div></blockquote>
 </li>
 <li><p><strong>Usage status:</strong> You can monitor weekly, monthly, and annual service usage status.</p></li>
-<li><p><strong>Download form builder for MS Office:</strong> You can download the eformsign form builder Microsoft Office add-in, which allows you to create electronic forms using Microsoft Office programs.</p></li>
+<li><p><strong>Download eformsign for Microsoft Office:</strong> You can download eformsign for Microsoft Office, which allows you to create electronic forms using Microsoft Office programs.</p></li>
 </ul>
 </section>
 <section id="id1">
@@ -208,23 +357,40 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-dashboard-main.png"><img alt="eformsign Dashboard Screen" src="../_images/en-dashboard-main.png" style="width: 800px;" /></a>
 </figure>
-<dl class="simple">
-<dt><strong>① New from my file</strong></dt><dd><p>Opens the <strong>New from my file</strong> page where you can create new documents by uploading your files from your computer.</p>
-</dd>
-<dt><strong>② New from template</strong></dt><dd><p>Opens the <strong>New from template</strong> page where you can create new documents from templates.
+<p><strong>① Document inbox shortcut</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Action required</strong>: Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the <strong>Action required</strong> inbox.</p></li>
+<li><p><strong>In progress</strong>: Shows the number of documents that are in progress. When clicked, it opens the <strong>In progress</strong> inbox.</p></li>
+<li><p><strong>Completed</strong>: When clicked, it opens the <strong>Completed</strong> inbox.</p></li>
+<li><p><strong>My saved documents</strong>: Shows the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, it opens the <strong>My saved documents</strong> inbox.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>② New from my file</strong></p>
+<blockquote>
+<div><p>Opens the <strong>New from my file</strong> page where you can create new documents by uploading your files from your computer.</p>
+</div></blockquote>
+<p><strong>③ New from template</strong></p>
+<blockquote>
+<div><p>Opens the <strong>New from template</strong> page where you can create new documents from templates.
 You can create 1 document from a template by clicking the create icon (<a class="reference internal" href="../_images/template-create-icon.PNG"><img alt="image10" src="../_images/template-create-icon.PNG" style="width: 20px;" /></a>), and create multiple documents at once from a template by clicking the bulk icon (<a class="reference internal" href="../_images/template-bulkcreate-icon.PNG"><img alt="image11" src="../_images/template-bulkcreate-icon.PNG" style="width: 20px;" /></a>).</p>
-</dd>
-<dt><strong>③ Favorites</strong></dt><dd><p>Displays the templates added as Favorites with a yellow star. You can add or remove the star by clicking <strong>View all templates</strong> and then adding/removing the star symbol on a template in the <strong>New from template</strong> page.</p>
-</dd>
-<dt><strong>④ Action required</strong></dt><dd><p>Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the <strong>Action required</strong> inbox.</p>
-</dd>
-<dt><strong>⑤ In progress</strong></dt><dd><p>Shows the number of documents that are in progress. When clicked, it opens the <strong>In progress</strong> inbox.</p>
-</dd>
-<dt><strong>⑥ Completed</strong></dt><dd><p>When clicked, it opens the <strong>Completed</strong> inbox.</p>
-</dd>
-<dt><strong>⑦ My saved documents</strong></dt><dd><p>Shows the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, it opens the <strong>My saved documents</strong> inbox.</p>
-</dd>
-</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>How to add template favorites</strong></p>
+<p>The templates you use most often will appear first in your dashboard when you favourite them. You can add templates as favorites in the <strong>New from template</strong> page.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template_favorite.png"><img alt="Template favorites" src="../_images/template_favorite.png" style="width: 500px;" /></a>
+</figure>
+<ol class="arabic simple">
+<li><p>Go to the <strong>New from template</strong> menu.</p></li>
+<li><p>Click the star icon of the template to add it as a favorite.</p></li>
+<li><p>In your dashboard, you’ll notice that your favourite templates are listed first.</p></li>
+<li><p>Click the favorites star icon again to remove the template from the favorites list.</p></li>
+</ol>
+</div></blockquote>
+</div>
+</div></blockquote>
 </section>
 </section>
 <section id="view-and-change-basic-information">
@@ -353,7 +519,7 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <p>Company managers have the ability to access the <strong>Manage company</strong> menu. Company managers can view and edit company, group, and member information and grant permissions to members as well as having the ability to edit messages in eformsign email and SMS notification templates.</p>
 </li>
 <li><p><strong>Template manager</strong></p>
-<p>Template managers have the permission to access the <strong>Manage template</strong> menu. Template managers can create new templates by using Form Builder (MS Office add-in) or Web Form Designer, and can also edit, deploy, and delete templates.</p>
+<p>Template managers have the permission to access the <strong>Manage template</strong> menu. Template managers can create new templates by using eformsign for Microsoft Office or Web Form Designer, and can also edit, deploy, and delete templates.</p>
 </li>
 <li><p><strong>Document manager</strong></p>
 <p>Document managers have permission to access the <strong>Manage documents</strong> menu. They can manage documents created from templates they have access to. If a member is assigned as a document manager of a template, then the member can view, download, permanently remove, and void (excluding completed documents) created from that template.</p>
@@ -922,19 +1088,58 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </section>
 <section id="security-settings">
 <span id="id3"></span><h2>Security settings<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
-<p>To secure your account in eformsign, you can set permissions to allow login from specific IP addresses only.</p>
-<p><strong>How to filter IP addresses by permission level</strong></p>
-<ol class="arabic simple">
-<li><p>Go to the <strong>Manage company &gt; Security settings</strong> menu.</p></li>
-</ol>
+<p>You can secure your account via <strong>Login settings</strong> and <strong>IP access settings</strong>. With <strong>Login settings</strong>, you can enable 2-step verification, disable multiple logins, and lock inactive accounts. With <strong>IP access settings</strong>, you can set permissions to allow login from specific IP addresses only.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/security-settings.png"><img alt="Security settings" src="../_images/security-settings.png" style="width: 700px;" /></a>
 </figure>
-<ol class="arabic simple" start="2">
-<li><p>Under <strong>IP access settings</strong>, select <strong>Allow access only to allowed IP addresses</strong>.</p></li>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/security-settings-page.png"><img alt="Security settings" src="../_images/security-settings-page.png" style="width: 700px;" /></a>
+</figure>
+<section id="login-settings">
+<h3><strong>Login settings</strong><a class="headerlink" href="#login-settings" title="Link to this heading"></a></h3>
+<p><strong>2-step verification</strong></p>
+<ul>
+<li><p>The <strong>2-step verification</strong> feature uses Google Authenticator, email, or SMS verification for additional verification at login to protect your account.</p></li>
+<li><p>You can configure the settings in the <strong>Manage company</strong> &gt; <strong>Security settings</strong> &gt; Login settings menu and only the company administrator can access it.</p></li>
+<li><p>If you enable this feature, you will be automatically logged out, and any subsequent logins will require two-factor authentication.</p></li>
+<li><p>The default authentication method is Google Authenticator.</p></li>
+<li><p>The default authentication method can be changed to any of the following if this feature is enabled</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Google Authenticator</strong></p></li>
+<li><p><strong>Email verification code</strong></p></li>
+<li><p><strong>SMS verification code</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Disable multiple logins</strong></p>
+<ul class="simple">
+<li><p>The <strong>Disable multiple logins</strong> feature allows you to restrict multiple logins from the same account.</p></li>
+<li><p>You can enable it in the <strong>Manage company</strong> &gt; <strong>Security settings</strong> &gt; <strong>Login settings</strong> menu and it can only be enabled by the company administrator.</p></li>
+<li><p>When enabled, only the last device or browser you accessed (or logged into) will remain logged in, and everyone else will be automatically logged out.</p></li>
+<li><p>When enabled, you can change the <strong>Auto logout time</strong> and <strong>Auto logout warning</strong>.</p></li>
+<li><p><strong>Auto logout time</strong> allows you to set the time after which you are automatically logged out if no activity is detected for a certain period of time after signing in, from a minimum of 10 minutes to a maximum of 1,440 minutes (24 hours).</p></li>
+<li><p><strong>Auto logout warning</strong> allows you to set the time at which you want users to see a warning message before being automatically logged out. You can set it from 30 seconds to 300 seconds.</p></li>
+</ul>
+<p><strong>Lock inactive accounts</strong></p>
+<ul class="simple">
+<li><p>The <strong>Lock inactive accounts</strong> feature allows you to restrict logins from accounts that have not accessed eformsign for a certain period of time.</p></li>
+<li><p>You can enable it in the <strong>Manage company</strong> &gt; <strong>Security settings</strong> &gt; <strong>Login settings</strong> menu and can only be enabled by the company administrator.</p></li>
+<li><p>When you enable this feature, it restricts logins from accounts that have not logged in to eformsign for a set period of time from that point forward.</p></li>
+<li><p><strong>Set inactive period</strong> allows you to set the period of inactivity after which accounts will be automatically locked. The inactive period can be set between 7 and 365 days.</p></li>
+<li><p>Members with locked accounts can use eformsign after requesting the company administrator to unlock their accounts. The company administrator can unlock accounts on the <strong>Manage members</strong> page.</p></li>
+</ul>
+</section>
+<section id="ip-access-settings">
+<h3><strong>IP access settings</strong><a class="headerlink" href="#ip-access-settings" title="Link to this heading"></a></h3>
+<p>This feature allows you to specify IP addresses for eformsign member access. You can customize access by member permissions, enabling specific members to access designated IPs. You can easily configure IP access for companh administrators, managers, and members.</p>
+<p><strong>How to filter IP addresses by permission level</strong></p>
+<ol class="arabic simple">
+<li><p>Go to the <strong>Manage company &gt; Security settings</strong> menu and click IP access settings on the left side of the screen. Under <strong>IP access settings</strong>, select <strong>Allow access only to allowed IP addresses</strong>.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="Security settings" src="../_images/security-settings2.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="IP access settings" src="../_images/security-settings2.png" style="width: 700px;" /></a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Enter the IP address or range you want to allow access from.</p></li>
@@ -943,8 +1148,9 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Review the list of allowed IP addresses and then click the <strong>Save</strong> button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="Security settings" src="../_images/security-settings1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="SIP access settings" src="../_images/security-settings1.png" style="width: 700px;" /></a>
 </figure>
+</section>
 </section>
 <section id="document-retention-period">
 <span id="retention"></span><h2>Document retention period<a class="headerlink" href="#document-retention-period" title="Link to this heading"></a></h2>
@@ -980,7 +1186,7 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <a class="reference internal image-reference" href="../_images/retention-period2.png"><img alt="Document retention period settings" src="../_images/retention-period2.png" style="width: 700px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>Click the <strong>Save</strong> button to update the retention preiod, and the change will apply to the documents created hereafter.</p></li>
+<li><p>Click the <strong>Save</strong> button to update the retention period, and the change will apply to the documents created hereafter.</p></li>
 </ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -993,37 +1199,122 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </ul>
 </div>
 </section>
+<section id="manage-activity-history">
+<span id="activityhistory"></span><h2>Manage activity history<a class="headerlink" href="#manage-activity-history" title="Link to this heading"></a></h2>
+<p>he Manage activity history feature allows you to view the history of logins, profile revisions, downloads, and permissions, as well as download the history in the CSV format. You can access it in the <strong>Manage company</strong> &gt; <strong>Manage activity history</strong> menu and it can be accessed only by the company administrator.</p>
+<ul class="simple">
+<li><p><strong>Login history</strong>: View the login history of company members.</p></li>
+<li><p><strong>Profile revision history</strong>: View the revision history of members’ profiles.</p></li>
+<li><p><strong>Download history</strong>: View the download history and reason of company members.</p></li>
+<li><p><strong>Document history</strong>: View the history of users’ activities related to documents.</p></li>
+<li><p><strong>Permission management history</strong>: View the history of activities that occured in the <strong>Manage permissions</strong> page.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/activity-history1.png"><img alt="Manage activity history" src="../_images/activity-history1.png" style="width: 700px;" /></a>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/activity-history2.png"><img alt="Manage activity history" src="../_images/activity-history2.png" style="width: 700px;" /></a>
+</figure>
+</section>
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="chapter1.html" class="btn btn-neutral float-left" title="Introduction to eformsign" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chapter3.html" class="btn btn-neutral float-right" title="Creating documents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2023, FORCS CO., LTD. All rights reserved..</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
 
-</body>
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Basic Info</a><ul>
+<li><a class="reference internal" href="#dashboard">Dashboard</a><ul>
+<li><a class="reference internal" href="#menu">Menu</a></li>
+<li><a class="reference internal" href="#id1">Dashboard</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#view-and-change-basic-information">View and Change Basic Information</a><ul>
+<li><a class="reference internal" href="#my-profile">My Profile</a></li>
+<li><a class="reference internal" href="#edit-and-add-company-information">Edit and Add Company Information</a></li>
+<li><a class="reference internal" href="#company-brand">Company Brand</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#permissions">Permissions</a><ul>
+<li><a class="reference internal" href="#company-administrator">Company Administrator</a></li>
+<li><a class="reference internal" href="#company-manager">Company Manager</a></li>
+<li><a class="reference internal" href="#template-manager">Template Manager</a></li>
+<li><a class="reference internal" href="#document-manager">Document Manager</a></li>
+<li><a class="reference internal" href="#permissions-for-each-template">Permissions for each template</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#manage-groups-and-members">Manage Groups and Members</a><ul>
+<li><a class="reference internal" href="#manage-members">Manage Members</a></li>
+<li><a class="reference internal" href="#manage-groups">Manage Groups</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#my-signature">My Signature</a><ul>
+<li><a class="reference internal" href="#adding-your-signature-and-initial"><strong>Adding Your Signature and Initial</strong></a></li>
+<li><a class="reference internal" href="#adding-your-stamp"><strong>Adding your stamp</strong></a><ul>
+<li><a class="reference internal" href="#creating-a-stamp"><strong>Creating a stamp</strong></a></li>
+<li><a class="reference internal" href="#uploading-an-image"><strong>Uploading an image</strong></a></li>
+<li><a class="reference internal" href="#scanning-a-stamp"><strong>Scanning a stamp</strong></a><ul>
+<li><a class="reference internal" href="#precautions-to-take-when-scanning-life-sized-stamps"><strong>Precautions to take when scanning life-sized stamps</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#manage-company-stamp">Manage company stamp</a><ul>
+<li><a class="reference internal" href="#company-stamp-tab"><strong>Company stamp tab</strong></a></li>
+<li><a class="reference internal" href="#stamp-history-tab"><strong>Stamp history tab</strong></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#security-settings">Security settings</a><ul>
+<li><a class="reference internal" href="#login-settings"><strong>Login settings</strong></a></li>
+<li><a class="reference internal" href="#ip-access-settings"><strong>IP access settings</strong></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#document-retention-period">Document retention period</a></li>
+<li><a class="reference internal" href="#manage-activity-history">Manage activity history</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="chapter1.html">
+                    <span class="icon">&lt;</span><span>Introduction to eformsign</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="chapter3.html"><span>Creating documents</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
 </html>

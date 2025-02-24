@@ -43,6 +43,8 @@ The description of each menu is as follows:
 
 -  **Shared**: Allows you to share your documents with others and view documents others members shared with you.
 
+-  **Trash**: Shows the list of deleted documents that are not deleted permanently.
+
 -  **Manage documents:** Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.
 
 -  **Manage bulk sent documents:** Only document managers can access this menu and can view documents bulk created from templates in which you are given permission. However, the company administrator can view and manage all documents.
@@ -71,9 +73,12 @@ The description of each menu is as follows:
 
       -  **Manage custom fields:** You can add and configure custom fields such as company, group, and member information.
 
-      -  **Security settings:** You can set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign. 
+      -  **Security settings:** You can set security settings including **Login settings** and **IP access settings**. **Login settings** allows you to enable 2-step verification, disable multiple logins, and lock inactive accounts for fortied security. **IP access settings** allows you to set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign. 
 
-      -  **Document retention settings:** You can set the document retention period for all the documents created in the company.
+      -  **Document retention period:** You can set the document retention period for all the documents created in the company.
+
+      -  **Manage activity history:** You can view the history of logins, profile revisions, downloads, and permissions, as well as download the history in the CSV format.
+
 
 -  **Integration:** Only the company administrator can access this menu. You can connect eformsign with external services.
 
@@ -95,7 +100,7 @@ The description of each menu is as follows:
 
 -  **Usage status:** You can monitor weekly, monthly, and annual service usage status.
 
--  **Download form builder for MS Office:** You can download the eformsign form builder Microsoft Office add-in, which allows you to create electronic forms using Microsoft Office programs.
+-  **Download eformsign for Microsoft Office:** You can download eformsign for Microsoft Office, which allows you to create electronic forms using Microsoft Office programs.
 
    
 Dashboard
@@ -107,28 +112,44 @@ The dashboard is the main page displayed when logging into eformsign. In the das
    :alt: eformsign Dashboard Screen
    :width: 800px
 
+**① Document inbox shortcut**
 
-**① New from my file**
+   - **Action required**\ : Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the **Action required** inbox.
+
+   - **In progress**\ : Shows the number of documents that are in progress. When clicked, it opens the **In progress** inbox.
+
+   - **Completed**\ : When clicked, it opens the **Completed** inbox.
+
+   - **My saved documents**\ : Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, it opens the **My saved documents** inbox.
+
+**② New from my file**
+   
    Opens the **New from my file** page where you can create new documents by uploading your files from your computer.
 
-**② New from template**
+
+**③ New from template**
+
    Opens the **New from template** page where you can create new documents from templates.
    You can create 1 document from a template by clicking the create icon (|image10|), and create multiple documents at once from a template by clicking the bulk icon (|image11|).
 
-**③ Favorites**
-   Displays the templates added as Favorites with a yellow star. You can add or remove the star by clicking **View all templates** and then adding/removing the star symbol on a template in the **New from template** page.
 
-**④ Action required**
-   Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the **Action required** inbox.
 
-**⑤ In progress**
-   Shows the number of documents that are in progress. When clicked, it opens the **In progress** inbox.
+   .. tip::
 
-**⑥ Completed**
-   When clicked, it opens the **Completed** inbox.
+      **How to add template favorites**
 
-**⑦ My saved documents**
-   Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, it opens the **My saved documents** inbox.
+      The templates you use most often will appear first in your dashboard when you favourite them. You can add templates as favorites in the **New from template** page.
+
+         .. figure:: resources/template_favorite.png
+            :alt: Template favorites
+            :width: 500px
+
+         1. Go to the **New from template** menu.
+         2. Click the star icon of the template to add it as a favorite. 
+         3. In your dashboard, you'll notice that your favourite templates are listed first. 
+         4. Click the favorites star icon again to remove the template from the favorites list.
+
+
 
 ---------------------------------------
 View and Change Basic Information
@@ -300,7 +321,7 @@ Permissions can be granted to each member. In eformsign, there are many differen
 
 -  **Template manager**
 
-   Template managers have the permission to access the **Manage template** menu. Template managers can create new templates by using Form Builder (MS Office add-in) or Web Form Designer, and can also edit, deploy, and delete templates.
+   Template managers have the permission to access the **Manage template** menu. Template managers can create new templates by using eformsign for Microsoft Office or Web Form Designer, and can also edit, deploy, and delete templates.
 
 -  **Document manager**
 
@@ -1040,21 +1061,81 @@ In this tab, you can view the history of all the stamps used. You can view infor
 Security settings
 ------------------
 
-To secure your account in eformsign, you can set permissions to allow login from specific IP addresses only. 
-
-
-**How to filter IP addresses by permission level**
-
-1. Go to the **Manage company > Security settings** menu.
+You can secure your account via **Login settings** and **IP access settings**. With **Login settings**, you can enable 2-step verification, disable multiple logins, and lock inactive accounts. With **IP access settings**, you can set permissions to allow login from specific IP addresses only. 
 
 .. figure:: resources/security-settings.png
    :alt: Security settings
    :width: 700px
 
-2. Under **IP access settings**, select **Allow access only to allowed IP addresses**.
+.. figure:: resources/security-settings-page.png
+   :alt: Security settings
+   :width: 700px
+
+
+
+**Login settings**
+~~~~~~~~~~~~~~~~~~~~~~
+
+**2-step verification**
+
+- The **2-step verification** feature uses Google Authenticator, email, or SMS verification for additional verification at login to protect your account.
+
+- You can configure the settings in the **Manage company** > **Security settings** > Login settings menu and only the company administrator can access it.
+
+- If you enable this feature, you will be automatically logged out, and any subsequent logins will require two-factor authentication. 
+
+- The default authentication method is Google Authenticator.
+
+- The default authentication method can be changed to any of the following if this feature is enabled
+
+   - **Google Authenticator**
+   - **Email verification code**
+   - **SMS verification code**
+
+
+**Disable multiple logins**
+
+- The **Disable multiple logins** feature allows you to restrict multiple logins from the same account.
+
+- You can enable it in the **Manage company** > **Security settings** > **Login settings** menu and it can only be enabled by the company administrator.
+
+- When enabled, only the last device or browser you accessed (or logged into) will remain logged in, and everyone else will be automatically logged out.
+
+- When enabled, you can change the **Auto logout time** and **Auto logout warning**.
+
+- **Auto logout time** allows you to set the time after which you are automatically logged out if no activity is detected for a certain period of time after signing in, from a minimum of 10 minutes to a maximum of 1,440 minutes (24 hours).
+
+- **Auto logout warning** allows you to set the time at which you want users to see a warning message before being automatically logged out. You can set it from 30 seconds to 300 seconds.
+
+
+**Lock inactive accounts**
+
+- The **Lock inactive accounts** feature allows you to restrict logins from accounts that have not accessed eformsign for a certain period of time.
+
+- You can enable it in the **Manage company** > **Security settings** > **Login settings** menu and can only be enabled by the company administrator.
+
+- When you enable this feature, it restricts logins from accounts that have not logged in to eformsign for a set period of time from that point forward. 
+
+- **Set inactive period** allows you to set the period of inactivity after which accounts will be automatically locked. The inactive period can be set between 7 and 365 days.
+
+- Members with locked accounts can use eformsign after requesting the company administrator to unlock their accounts. The company administrator can unlock accounts on the **Manage members** page.
+
+
+
+
+**IP access settings**
+~~~~~~~~~~~~~~~~~~~~~~
+
+This feature allows you to specify IP addresses for eformsign member access. You can customize access by member permissions, enabling specific members to access designated IPs. You can easily configure IP access for companh administrators, managers, and members.
+
+
+**How to filter IP addresses by permission level**
+
+
+1. Go to the **Manage company > Security settings** menu and click IP access settings on the left side of the screen. Under **IP access settings**, select **Allow access only to allowed IP addresses**.
 
 .. figure:: resources/security-settings2.png
-   :alt: Security settings
+   :alt: IP access settings
    :width: 700px
 
 3. Enter the IP address or range you want to allow access from.
@@ -1063,7 +1144,7 @@ To secure your account in eformsign, you can set permissions to allow login from
 6. Review the list of allowed IP addresses and then click the **Save** button.
 
 .. figure:: resources/security-settings1.png
-   :alt: Security settings
+   :alt: SIP access settings
    :width: 700px
 
 .. _retention:
@@ -1108,7 +1189,7 @@ To increase the safety and efficiency of managing documents, you can set a reten
    :alt: Document retention period settings
    :width: 700px
 
-4. Click the **Save** button to update the retention preiod, and the change will apply to the documents created hereafter.
+4. Click the **Save** button to update the retention period, and the change will apply to the documents created hereafter.
 
 
 
@@ -1124,6 +1205,34 @@ To increase the safety and efficiency of managing documents, you can set a reten
 
    - If you change the document retention period, the change is applied started to the documents created hereafter.
 
+
+
+
+.. _activityhistory:
+
+---------------------------
+Manage activity history
+---------------------------
+
+he Manage activity history feature allows you to view the history of logins, profile revisions, downloads, and permissions, as well as download the history in the CSV format. You can access it in the **Manage company** > **Manage activity history** menu and it can be accessed only by the company administrator.
+
+- **Login history**: View the login history of company members. 
+
+- **Profile revision history**: View the revision history of members’ profiles.  
+
+- **Download history**: View the download history and reason of company members. 
+
+- **Document history**: View the history of users’ activities related to documents.
+
+- **Permission management history**: View the history of activities that occured in the **Manage permissions** page.
+
+.. figure:: resources/activity-history1.png
+   :alt: Manage activity history
+   :width: 700px
+
+.. figure:: resources/activity-history2.png
+   :alt: Manage activity history
+   :width: 700px
 
 
 .. |image1| image:: resources/menu_icon.png
