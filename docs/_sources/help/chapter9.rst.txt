@@ -65,7 +65,7 @@ Notification templates can be edited in the **Manage company > Notification temp
 Default templates are shown in the **Manage company > Notification template management** menu. You can change the contents of the default templates and add new notification templates.
 
 **Basic template types (select from Mail or SMS)**
-----------------------------------------------------
+---------------------------------------------------
 
 - Notification for document completion
 - Notification for document rejection

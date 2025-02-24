@@ -77,9 +77,9 @@ displayed as below, then it was installed properly.
    :alt: eformsign for Microsoft Office Ribbon Menu
    :width: 700px
 
--------------------------------------------------
+------------------------------------------------
 eformsign for Microsoft Office Menu Layout
--------------------------------------------------
+------------------------------------------------
 
 If you run Microsoft Office Excel, Word, or PowerPoint after installing eformsign for Microsoft Office, you can see that the **eformsign** tab is added to the Office ribbon menu.
 

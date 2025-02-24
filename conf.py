@@ -284,11 +284,9 @@ html_theme_options = {
 }
 
 
-
 html_logo = "C:\docbook\eformsignen.github.io\images\\eformsign_guide_logo1.png"
 
 #html_logo = "C:\docbook\eformsignen.github.io\images\\forcs_b.png"
-
 
 
 
@@ -367,7 +365,6 @@ pdf_use_numbered_links = True
 # Background images fitting mode
 pdf_fit_background_mode = 'scale'
 
-
 from sphinx.builders.latex import LaTeXBuilder
 
 class AllPdfBuilder(LaTeXBuilder):
@@ -378,7 +375,6 @@ class AllPdfBuilder(LaTeXBuilder):
 
 def setup(app):
     app.add_builder(AllPdfBuilder)
-
 
 
 def remove_query_string(app, pagename, templatename, context, doctree):

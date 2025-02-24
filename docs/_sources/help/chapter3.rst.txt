@@ -1,7 +1,7 @@
 .. _createnew:
 
 Creating documents
-====================
+===================
 
 
 
