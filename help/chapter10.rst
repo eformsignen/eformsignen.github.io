@@ -1,10 +1,10 @@
 Connecting with External Services
-===================================
+==================================
 
 
-----------------------------------------------
+---------------------------------------------
 How to Connect with External Cloud Storages
-----------------------------------------------
+---------------------------------------------
 
 eformsign can automatically save completed documents in external cloud storage services. Currently, Dropbox, Google Drive, OneDrive, and box are supported.
 
