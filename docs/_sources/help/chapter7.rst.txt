@@ -1,15 +1,15 @@
 .. _template_fb:
 
-=====================================================================
-Creating templates using Form Builder (MS Office Add-in)
-=====================================================================
+====================================================================
+Creating templates using eformsign for Microsoft Office
+====================================================================
 
 ----------------
 About Templates
 ----------------
 
 Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing
-paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
+paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **eformsign for Microsoft Office**. 
 
 
 .. tip::
@@ -25,20 +25,20 @@ paper forms such as applications, contracts, and agreements. You can create and 
 
 To create and send electronic documents via eformsign, you have to create a template first which can be transformed into an e-document.
 
-**How to create a template with Form Builder (MS Office Add-in)**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**How to create a template with eformsign for Microsoft Office**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create a template with Form builder (MS Office Add-in), you must first download eformsign Form builder.
+To create a template with eformsign for Microsoft Office, you must first download eformsign for Microsoft Office.
 
 .. note::
 
-   For more information about Form builder (MS Office Add-in), please refer to `Form builder <chapter5.html#formbuilder>`__.
+   For more information about eformsign for Microsoft Office, please refer to `Introduction to eformsign for Microsoft Office <chapter5.html#formbuilder>`__.
 
 MS Office files such as Word, Excel, and PowerPoint can be uploaded as a template using the eformsign Microsoft Office Add-in.
 
 1. Open a Word, Excel, or PowerPoint file.
 
-2. Go to the **OZ in Word/Excel/PowerPoint** menu in the file.
+2. Go to the **eformsign** ribbon menu in the file.
 
 3. Choose a location you want to add a field.
 
@@ -132,7 +132,7 @@ General
 
 .. figure:: resources/en-manage-template-settings-fb.png
    :alt: Template Settings > General
-   :width: 700px
+   :width: 350px
 
 
 **Configure basic settings for the template**
@@ -141,20 +141,17 @@ General
 
 Set basic information about the template including the template name, category, validity period, etc.
 
-**① Form file**
-   The name of the form file which is uploaded to eformsign from Word, PowerPoint, or Excel using Form Builder. To change the form file name, you need to change the file name of the uploaded Word, PowerPoint, or Excel file and then update it.
+**Form file**
+   The name of the form file which is uploaded to eformsign from Word, PowerPoint, or Excel using eformsign for Microsoft Office. To change the form file name, you need to change the file name of the uploaded Word, PowerPoint, or Excel file and then update it.
 
-**② Template name**
+**Template name**
    The template name will be displayed in the **Manage templates** and **New from template** pages.
 
    The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.
 
-   .. figure:: resources/en-template-name.png
-      :alt: Template Name
-      :width: 250px
 
 
-**③ Template abbreviation**
+**Template abbreviation**
    A short name that briefly descries the template. It is recommended to use two or three words.
 
    **Template abbreviation** can be used in the document number, document name, mail template, etc.
@@ -163,15 +160,15 @@ Set basic information about the template including the template name, category, 
       :alt: Template Abbreviation
 
 
-**④ Category**
+**Category**
    Category is used to sort templates by type. With the category name, you can filter templates in the **Manage templates** menu, and can filter documents in the **Documents** menus and the **Manage documents** menu. You can choose from an existing category or create a new category by entering a new name.
 
    You can set multi-level categories with a separator ( **/** ). For example, if you set a category as **HR Team/Vacation**, the Vacation category in the HR category is created.
 
-**⑤ Description**
+**Description**
    Enter additional comments about the template. This description is displayed under the template name in the **New from template.**
 
-**⑥ Template validity period**
+**Template availability**
    Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
 
    When **No expiry date** is checked, documents can be created without a time limit. If you check **No expiry date**, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.
@@ -181,19 +178,35 @@ Set basic information about the template including the template name, category, 
 
 Configure additional settings including document naming rules for documents created from the template.
 
-**⑦ Document naming rule**
+**Document naming rule**
    Sets the document name when creating the document from the template. If a document naming rule is not set, the template name will be the document name.
 
-**⑧ Allow document name change**
+**Allow document name change**
    If **Allow document name change** is checked, the document creator can change the document name.
 
-**⑨ Generate a document number**
+**Generate a document number**
    If **Generate a document number** is checked, documents are automatically numbered. You can select the document number format and the workflow step in which document numbers are generated.
 
    |image3|
 
-**⑩ Skip pop-up window when sending documents**
+**Skip pop-up window when sending documents**
    Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
+
+
+**Document retention period**
+   Sets the retention period for documents created from the template. If this is not set, then the document retention period for the template follows the company-wide settings.
+
+   .. note::
+
+      The retention period can be set from a minimum of 1 day to a maximum of 15 years.
+
+      **Maximum retention period by year/month/day**
+      
+      - 15 years
+      - 180 months
+      - 5,475 days
+
+      💡For information on how to set the company-wide document retention period, go to `Document retention period <chapter2.html#retention>`_.
 
 
 
@@ -257,45 +270,51 @@ As well, you can see this name in all document pages (In progress, Action requir
    +-----------------------+-----------------------------------------------+
    | Information types     | Description                                   |
    +=======================+===============================================+
-   | Current_date          | The date in which the document is created     |
+   |Current_date           | The date in which the document is created     |
    |                       | (e.g. Feb 20, 2020)                           |
    +-----------------------+-----------------------------------------------+
-   | Current_time          | The time in which the document is created     |
+   |Current_time           | The time in which the document is created     |
    |                       | (e.g. 02:59 pm)                               |
    +-----------------------+-----------------------------------------------+
-   | Current_datetime      | The date and time in which the document is    |
+   |Current_datetime       | The date and time in which the document is    |
    |                       | created (e.g. Feb 20, 2020, 02:59 pm)         |
    +-----------------------+-----------------------------------------------+
-   | Creator_ID            | The ID of the member who created the document |
+   |Creator_ID             | The ID of the member who created the document |
    +-----------------------+-----------------------------------------------+
-   | Creator_name          | The name of the member who created the        |
+   |Creator_name           | The name of the member who created the        |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_dept          | The department of the member who created the  |
+   |Creator_dept           | The department of the member who created the  |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_company Name  | The name of the company in which the member   |
+   |Creator_company Name   | The name of the company in which the member   |
    |                       | who created the document belongs to           |
    +-----------------------+-----------------------------------------------+
-   | Template_name         | The template name entered in Template         |
+   |Template_name          | The template name entered in Template         |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Template_abbreviation | The template abbreviation entered in Template |
+   |Template_abbreviation  | The template abbreviation entered in Template |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Company               | The company name entered in Manage company >  |
+   |Document_ID            | A unique ID for the document, represented by  |
+   |                       | a 32-digit alphanumeric combination           |
+   +-----------------------+-----------------------------------------------+
+   |Document_number        | The number generated when the Generate a      |
+   |                       | document number option is enabled in General  |
+   +-----------------------+-----------------------------------------------+
+   |Company                | The company name entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_address       | The address entered in Manage company >       |
+   |Company_address        | The address entered in Manage company >       |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_contact_no    | The contact information entered in Manage     |
+   |Company_contact_no     | The contact information entered in Manage     |
    |                       | company > Company profile                     |
    +-----------------------+-----------------------------------------------+
-   | Company_              | The business registration number entered in   |
-   | registration_no       | Manage company > Company profile              |
+   |Company_registration_no| The business registration number entered in   |
+   |                       | Manage company > Company profile              |
    +-----------------------+-----------------------------------------------+
-   | Company_homepage      | The homepage URL entered in Manage company >  |
+   |Company_homepage       | The homepage URL entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
 
@@ -377,7 +396,7 @@ A document number can be viewed directly on a document using the document field 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-   You can generate a document number directly on a document by using the document field in Form builder.
+   You can generate a document number directly on a document by using the document field in eformsign for Microsoft Office.
 
    1. Open a file in Word, Excel, or PowerPoint.
 
@@ -553,10 +572,34 @@ You can click a step to set the details such as **Properties** and **Manage item
 
    -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.
 
-   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
+   -  **Document creator information**: Require users to enter their information (name, email, etc.) before they open documents created from URL.
 
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
 
+   -  **Identity verification**: Require document creators to verify their identity before opening documents created from URL.
+
+      - **Require email/SMS verification:** Send a 6-digit verification code to the recipient's email or mobile phone number. The recipient can enter the verification code into the verification window to open the document.
+
+   .. tip::
+
+   If both the Document creator information and Identity verification options are enabled in a template's workflow, then when document creators create a document from this template, they need to enter their information and verify their identity to create documents. Note that the document creator’s information and identify verification will be displayed in document inboxes and on the audit trail certificate.
+
+
+   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
+
+   -  **Block automated document generation by bots**: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.
+
+   .. note::
+
+      **Block automated document generation by bots**
+
+      By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the "I'm not a robot" check box. 
+
+      .. figure:: resources/URL-option-recaptcha.png
+         :alt: reCAPTCHA
+         :width: 250px
+
+      ❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.
 
 .. tip::
 
@@ -769,7 +812,7 @@ You can select who will receive status notifications for documents created from 
 
    The message size can be a maximum of 65 bytes (65 characters).
 
-- **File attachments and methods:** Select the files to be send together with the document completion notification and select the filees to be attached.
+- **Files attached & Method:** Select the files to be send together with the document completion notification and select the filees to be attached.
 
    - **Download link:** A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.
 
@@ -777,7 +820,7 @@ You can select who will receive status notifications for documents created from 
 
    .. caution::
 
-      **Attachment** If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
+      If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
 
 - **Edit body:** Edits the body of the notification message.
 

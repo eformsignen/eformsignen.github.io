@@ -8,27 +8,31 @@ Document Inboxes
 Documents
 ------------
 
-Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the In progress inbox in which you can select and send.
+Documents are stored in document menus (inboxes) according to their status. You can use these inboxes to easily view the status and history of each document, find the documents you want by filtering and searching, resend documents, void/reject documents that have yet to be completed in the workflow, and edit draft documents. Documents saved as a draft are shown in the Action required inbox in which you can select and send.
 
 
--  **In progress:** View the list of documents you created or signed/approved that are incomplete.
+-  **In progress:** View the list of documents you created or signed/approved that are in progress.
 
 -  **Action required:** View the list of documents you saved as a draft, requested by other members for you to sign or approve, or sent to non-member recipients but have yet to be signed.
 
 -  **Completed:** View the list of completed documents among the documents created by you.
 
--  **Manage bulk sent documents:** View the progress of the list of documents you created.
+-  **Manage bulk sent documents:** View the list of documents you created in bulk. For more information, go to the section on Manage bulk sent documents inbox.
 
---------------------------
+
 
 - **Shared:** If you share documents you own with other members or have access to a shared inbox, you can view the shared documents at-a-glance.
 
--------------------------
 
 
--  **Manage documents** and **Manage bulk sent documents**: These are inboxes for document managers and they can view documents in which they have permission.
 
-  **Manage documents:** Only members with the document manager permission can access this inbox. They can view all documents created from templates in which they are given permission to view.
+**Manage documents** and **Manage bulk sent documents**: These are inboxes for document managers and they can view documents in which they have permission.
+
+.. note::
+
+   For information on granting the document manager permission refer to the `Document manager <chapter2.html#document-manager>`_ section. Note that the company administrawtor can view and manage all documents in the company.
+
+-  **Manage documents:** Only members with the document manager permission can access this inbox. They can view all documents created from templates in which they are given permission to view.
 
 -  **Manage bulk sent documents:** Only members with the document manager permission can access this inbox. They can view all documents bulk created from templates in which they are given permission to view.
 
@@ -42,7 +46,17 @@ Documents are stored in document menus (inboxes) according to their status. You 
 Documents menu
 ---------------
 
+.. note::
+
+   While the screen layout for the **Action required, In progress, and Completed inboxes** and the **Manage documents** page are almost identical, there are differences in the documents you see based on the document status or the permissions you have.
+
+
 Each documents menu consists of the following five sections:
+
+.. figure:: resources/document_inbox_layout.png
+   :alt: Document inbox layout
+   :width: 700px
+
 
 1. **Menu and home icon, and document menu name**
 
@@ -60,7 +74,7 @@ Each documents menu consists of the following five sections:
 
    Up to 20 documents are listed per page and you can view the documents in other pages by clicking the page numbers at the bottom.
 
-   The information of each document such as the document status, name, step, creator, created date, and document number is provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image3|) displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
+   The information of each document such as the document status, name, step, creator, created date, and document number is provided in columns in the document list. You can also change the column information displayed. Click the column icon (|image4|) displayed at the top right corner of the page, and then check the columns you want to display in the column check box.
 
    You can also perform actions on a document such as reviewing, previewing, correcting, voiding, resending, and deleting a document.
 
@@ -74,20 +88,22 @@ Each documents menu consists of the following five sections:
    In the **History** tab, you can see the activities of the document creator and recipients from document creation to completion.
 
 
-5. **The column selection icon, document download icon, and delete icon** 
+5. **The share, column, download, and delete icons** 
 
-   Clicking the column selection icon (|image4|) displays the column types which you can check to select which columns will be displayed in the document list.
+   - Share (|image20|): Clicking the share icon allows you to select a document you want to share in a shared folder.
 
-   Clicking the download icon (|image5|) allows to select the documents in the list you want to download. You can select multiple documents
-   to download at once and choose the file type including the PDF of the completed documents, audit certificate, and CSV of selected fields.
+   - Column (|image21|): Clicking the column icon allows you to view the column types and select the columns in the document list that you want to be displayed.
 
-   Note that the delete icon (|image6|) is disabled in the three document menus, but is enabled in the **Manage documents** menu.
-
+   - Download (|image22|): Clicking the icons allows you to download documents in PDF or CSV format and view the list of CSV files that have been generated.
    .. note::
 
       **How to delete documents**
 
-      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document manager permission. The company administrator or the template managers of a template can grant you document manager permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. Document manager permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
+      In document inboxes, the delete icon is disabled.
+
+      Documents can be deleted only in the **Manage documents** menu and you can only delete documents in which you have document manager permission. The company administrator or the template managers of a template can grant you document manager permission for all documents created from a template in **Manage templates > Template settings > Set permissions > Document management** and selecting the groups/members you want to grant permission. 
+
+      The document manager permission can be set for each template. Members with this permission can open, delete, and download the documents (PDF, CSV) created from this template in the **Manage documents** menu.
 
 .. _category:
 
@@ -283,7 +299,7 @@ Can perform actions including preview, correct, void, share, review, edit, resen
 
 - **Completed**
 
-Can perform actions including preview, share, send final copy, create new document, and download.
+Can perform actions including preview, share, send final copy, create new document, set reminder and download.
 
 - **Manage documents**
 
@@ -418,18 +434,18 @@ If you click the column (|image14|) icon on the right side of the document list,
 
 
 
-.. _drafts:
+.. _my_saved_documents:
 
----------
-Drafts
----------
+--------------------
+My saved documents
+--------------------
 
-The Drafts inbox stores the documents in the **New from my file** step that have been saved by clicking **Save as a draft** before sending the document. You can open the files stored in the **Drafts** menu anytime and proceed or delete.
+The My saved documents inbox stores the documents in the **New from my file** step that have been saved by clicking **Save** before sending the document. You can open the files stored in the **My saved documents** menu anytime and proceed or delete.
 
-1. Click **Drafts** in the sidebar menu to go to the Drafts page.
+1. Click **My saved documents** in the sidebar menu to go to the My saved documents page.
 
-.. figure:: resources/drafts-dashboard-en.png
-   :alt: Drafts in dashboard
+.. figure:: resources/my-saved-documents-dashboard-en.png
+   :alt: My saved documents in dashboard
 2. Select a document you want and click the **Continue** button next to it.
 
    |image16|
@@ -568,13 +584,79 @@ If you have a document you want to added a shared folder, you can go to the Acti
 
 
 
+.. _trash:
+
+-------------------------
+Trash
+-------------------------
+
+In the **Trash** inbox, you can view the list of deleted documents that are not deleted permanently. Documents that are manually deleted and those that are automatically deleted according to the Document retention period are stored here.
+
+
+.. figure:: resources/en-trash.png
+   :alt: Trash inbox
+
+- The **Trash** inbox is visible to all members, but the list of documents shown and the available actions differ depending on your permissions (company administrator, document manager, member).
+
+- Documents sent to the **Trash** page are deleted permanently after 14 days, and members can manually restore or permanently delete them.
+
+- Restoring documents is only possible for manually deleted ones.
+
+- Documents in the **Trash** can be permanently deleted if they were deleted by you, while automatically deleted documents can only be fully deleted by the company administrator or a document admin. Permissions determine which articles can be fully deleted.
+
+- Depending on your permissions, you can delete the following documents.
+
+   - **Company administrator:** All documents created by company members that are shown on the **Manage documents** page.
+
+   - **Document manager:** Documents in which you have been granted permission to delete that are shown in the **Manage documents** page.
+
+   - **Member:** Your draft documents in your inbox and documents you created that have been rejected.
+
+**Permanently deleting a document from Trash**
+
+1. Click the **Trash** menu in the sidebar to navigate to the **Trash** inbox.
+
+2. Click the **Delete permanently** button below the document you want to delete permanently. If you want to delete multiple documents, tick the boxes to the left of the documents and click the **Delete Permanently** button at the top of the screen.
+
+3. In the pop-up displayed, click the **Delete permanently** button to delete the document permanently from the system.
+
+.. figure:: resources/en-permanent-deletion.png
+   :alt: Permanently deleting a document from Trash
+
+.. Caution::
+
+   Caution: Permanently deleted documents cannot be restored.
+
+
+
+
+**Restoring a deleted document**
+
+1. Click the **Trash** menu in the sidebar to navigate to the **Trash** page.
+
+2. Click the **Restore** button below the document. If you want to restore multiple documents, tick the checkboxes to the left of the documents and click the **Restore** button on the top right corner of the screen.
+
+3. In the pop-up displayed, click the **Restore** button to restore the document to its original inbox.
+
+.. figure:: resources/en-document-restoration.png
+   :alt: Sestoring a deleted document
+
+
+.. note::
+
+   Note that you cannot restore documents that have been automatically deleted after the retention period has ended.
+
+
+
+
+
 .. |image1| image:: resources/menu_icon_2.png
    :width: 25px
 .. |image2| image:: resources/home_icon_2.png
    :width: 25px
 .. |image3| image:: resources/column_icon.png
    :width: 35px
-.. |image4| image:: resources/column_icon.png
+.. |image4| image:: resources/column_icon1.png
    :width: 35px
 .. |image5| image:: resources/download-icon.PNG
    :width: 30px
@@ -592,11 +674,17 @@ If you have a document you want to added a shared folder, you can go to the Acti
    :width: 50px
 .. |image12| image:: resources/download_icon.png
 .. |image13| image:: resources/delete_icon1.png
-.. |image14| image:: resources/column_icon.png
-   :width: 35px
+.. |image14| image:: resources/csv_download_icon.png
+   :width: 25px
 .. |image15| image:: resources/en-draftbox-menu.png
    :width: 700px
 .. |image16| image:: resources/draftbox-documentlist.png
    :width: 700px
 .. |image17| image:: resources/csv_file_list_icon.png
    :width: 20px
+.. |image20| image:: resources/share_icon.png
+   :width: 25px
+.. |image21| image:: resources/column_icon1.png
+   :width: 35px
+.. |image22| image:: resources/download_icon1.png
+   :width: 90px

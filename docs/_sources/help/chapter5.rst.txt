@@ -8,7 +8,7 @@ Creating templates using Web Form Designer
 About Templates
 ------------------
 
-Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **Form builder**. 
+Templates are **electronic documents** used for the eformsign service. They are e-documents transformed from existing paper forms such as applications, contracts, and agreements. You can create and upload templates in the eformsign service with its **Web form designer** or **eformsign for Microsoft Office**. 
 
 
 
@@ -21,17 +21,17 @@ Templates are **electronic documents** used for the eformsign service. They are 
 
 .. note::
 
-   For more information about Form builder, refer to `Creating templates using Form Builder <chapter7.html#template_fb>`__.
+   For more information about eformsign for Microsoft Office, refer to `Creating templates using eformsign for Microsoft Office <chapter7.html#template_fb>`__.
 
 
 
 **How to create a template with Web Form Designer**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. note::
 
-   For more information about Web form designer, please refer to `Web Form Designer <chapter4.html#webform>`__.
+   For more information about Web form designer, please refer to `Introduction to Web Form Designer <chapter4.html#webform>`__.
 
 
 You can easily create a template by uploading a file online.
@@ -178,10 +178,6 @@ Set basic information about the template including the template name, category, 
 
    The recommended length of the template name is about 11 characters, including spaces. If the name is longer than 11 characters, you can see the full name by hovering the mouse over the name.
 
-   .. figure:: resources/en-template-name.png
-      :alt: Template Name
-      :width: 250px
-
 
 **② Template abbreviation**
    A short name that briefly descries the template. It is recommended to use two or three words.
@@ -197,7 +193,7 @@ Set basic information about the template including the template name, category, 
 **④ Description**
    Enter additional comments about the template. This description is displayed under the template name in **New from template.**
 
-**⑤ Template validity period**
+**⑤ Template availability**
    Sets the time period in which documents can be created from this template. By default, the start date is set to the uploaded date and you can change the date.
 
    If you check **No expiry date**, documents can be created without a time limit. If you uncheck it and set the date, then documents can be created from the template up to that date.
@@ -222,6 +218,21 @@ Configure additional settings including document naming rules for documents crea
 
 **⑨ Skip pop-up window when sending documents**
    Use it when many documents are created and submitted. If this option is unchecked, a pop-up window for entering a message will appear when sending a document. When **Skip pop-up window when sending documents** is checked, the pop-up window does not appear and the page proceeds to the next step.
+
+**➉ Document retention period**
+   Sets the retention period for documents created from the template. If this is not set, then the document retention period for the template follows the company-wide settings.
+
+   .. note::
+
+      The retention period can be set from a minimum of 1 day to a maximum of 15 years.
+
+      **Maximum retention period by year/month/day**
+      
+      - 15 years
+      - 180 months
+      - 5,475 days
+
+      💡For information on how to set the company-wide document retention period, go to `Document retention period <chapter2.html#retention>`_.
 
 
 
@@ -283,45 +294,51 @@ You can make a piece of information entered into a document or document-related 
    +-----------------------+-----------------------------------------------+
    | Information types     | Description                                   |
    +=======================+===============================================+
-   | Current_date          | The date in which the document is created     |
+   |Current_date           | The date in which the document is created     |
    |                       | (e.g. Feb 20, 2020)                           |
    +-----------------------+-----------------------------------------------+
-   | Current_time          | The time in which the document is created     |
+   |Current_time           | The time in which the document is created     |
    |                       | (e.g. 02:59 pm)                               |
    +-----------------------+-----------------------------------------------+
-   | Current_datetime      | The date and time in which the document is    |
+   |Current_datetime       | The date and time in which the document is    |
    |                       | created (e.g. Feb 20, 2020, 02:59 pm)         |
    +-----------------------+-----------------------------------------------+
-   | Creator_ID            | The ID of the member who created the document |
+   |Creator_ID             | The ID of the member who created the document |
    +-----------------------+-----------------------------------------------+
-   | Creator_name          | The name of the member who created the        |
+   |Creator_name           | The name of the member who created the        |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_dept          | The department of the member who created the  |
+   |Creator_dept           | The department of the member who created the  |
    |                       | document                                      |
    +-----------------------+-----------------------------------------------+
-   | Creator_company Name  | The name of the company in which the member   |
+   |Creator_company Name   | The name of the company in which the member   |
    |                       | who created the document belongs to           |
    +-----------------------+-----------------------------------------------+
-   | Template_name         | The template name entered in Template         |
+   |Template_name          | The template name entered in Template         |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Template_abbreviation | The template abbreviation entered in Template |
+   |Template_abbreviation  | The template abbreviation entered in Template |
    |                       | settings > General                            |
    +-----------------------+-----------------------------------------------+
-   | Company               | The company name entered in Manage company >  |
+   |Document_ID            | A unique ID for the document, represented by  |
+   |                       | a 32-digit alphanumeric combination           |
+   +-----------------------+-----------------------------------------------+
+   |Document_number        | The number generated when the Generate a      |
+   |                       | document number option is enabled in General  |
+   +-----------------------+-----------------------------------------------+
+   |Company                | The company name entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_address       | The address entered in Manage company >       |
+   |Company_address        | The address entered in Manage company >       |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
-   | Company_contact_no    | The contact information entered in Manage     |
+   |Company_contact_no     | The contact information entered in Manage     |
    |                       | company > Company profile                     |
    +-----------------------+-----------------------------------------------+
-   | Company_              | The business registration number entered in   |
-   | registration_no       | Manage company > Company profile              |
+   |Company_registration_no| The business registration number entered in   |
+   |                       | Manage company > Company profile              |
    +-----------------------+-----------------------------------------------+
-   | Company_homepage      | The homepage URL entered in Manage company >  |
+   |Company_homepage       | The homepage URL entered in Manage company >  |
    |                       | Company profile                               |
    +-----------------------+-----------------------------------------------+
 
@@ -548,7 +565,7 @@ You can create or modify the workflow of the template by clicking the **Workflow
 
   **Merge workflow steps - Parallel signing**
 
-   You can merge multiple workflow steps into o/e so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
+   You can merge multiple workflow steps into one so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
 
   **Instructions:**
 
@@ -572,7 +589,6 @@ You can create or modify the workflow of the template by clicking the **Workflow
       :alt: Merge workflow steps (after)
 
 
-   ❗ Note that this feature is available only in New from template. For New from my file, the feature is planned to be available in the future.
 
 
 
@@ -596,9 +612,34 @@ You can click a step to set the details such as **Properties** for each workflow
 
    -  **Create documents from URL**: Create a public link for external recipients (non-members) to review and sign documents directly via URL without the need to login to the eformsign service.
 
-   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
+   -  **Document creator information**: Require users to enter their information (name, email, etc.) before they open documents created from URL.
 
    -  **Do not allow duplicate documents**: Prevent the creation of duplicate documents and allows to select a field for determining whether a document is duplicated or not.
+
+   -  **Identity verification**: Require document creators to verify their identity before opening documents created from URL.
+
+      - **Require email/SMS verification:** Send a 6-digit verification code to the recipient's email or mobile phone number. The recipient can enter the verification code into the verification window to open the document.
+
+
+   .. tip::
+
+   If both the Document creator information and Identity verification options are enabled in a template's workflow, then when document creators create a document from this template, they need to enter their information and verify their identity to create documents. Note that the document creator’s information and identify verification will be displayed in document inboxes and on the audit trail certificate.
+
+   - **Approved domain IP**: Set to allow creating documents only form approved domains or IPs.
+
+   -  **Block automated document generation by bots**: Require users to tick the reCAPTCHA check box before submitting documents to prevent bots from auto-generating documents.
+
+   .. note::
+
+      **Block automated document generation by bots**
+
+      By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the "I'm not a robot" check box. 
+
+      .. figure:: resources/URL-option-recaptcha.png
+         :alt: reCAPTCHA
+         :width: 250px
+
+      ❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.
 
 
 .. tip::
@@ -632,6 +673,11 @@ You can click a step to set the details such as **Properties** for each workflow
    - **Edit notification message:** You can edit the notification message for each step.  
 
 -  **Document expiration**\: Set the time period in which documents can be sent by the recipient of the step. If the time period is set to 0 day 0 hour, then there is no document expiration. No document expiration is only available for members.  
+
+   .. tip::
+
+      You can configure the settings so that there is no document expiration for members. Simply set **Document expiration to 0 Day(s) 0 Hour(s)**\
+      You can set the document expiration to be up to 50 days for non-members. 
    
 
 -  **Automatically fills in the recipient's contact info**\: When sending documents to a recipient, this option allows the name and contact of the recipient to be filled in automatically based on the information the recipient enters into the document.
@@ -645,7 +691,7 @@ You can click a step to set the details such as **Properties** for each workflow
                :alt: Require document password
                :width: 400px    
       
-   - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window.
+   - **Require email/SMS verification**\: Require recipients to verify their identity using email/SMS. A 6-digit code will be sent to recipients' email address/mobile number and the recipients must enter the code in the identity verification window. Note that a charge of 0.1 USD incurs per SMS verification.
       
 -  **Disable the decline feature:** Blocks recipients from being able to decline documents.
 
@@ -914,7 +960,7 @@ You can select who will receive status notifications for documents created from 
 
    The message size can be a maximum of 65 bytes (65 characters).
 
-- **File attachments and methods:** Select the files to be send together with the document completion notification and select the filees to be attached.
+- **Files attached & Method:** Select the files to be send together with the document completion notification and select the filees to be attached.
 
    - **Download link:** A download link button is included in the email or SMS of a completed document, and opens a document viewer page when clicked. In the viewer page, you can view and download the document.
 
@@ -922,7 +968,7 @@ You can select who will receive status notifications for documents created from 
 
    .. caution::
 
-      **Attachment** If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
+       If you send an email notification using the **Attachment** method, the completed document is included in the email. Therefore, even if is configured to require the recipient to go through identity verification, the recipient can still view and download the document.
 
 - **Edit body:** Edits the body of the notification message.
 
@@ -986,6 +1032,9 @@ In the **Manage templates** page, you can lookup and search templates by templat
 
 **③ Sort**
    You can select the template sorting order in ascending or descending by template name or category.
+
+
+
 
 .. |image1| image:: resources/config-icon.PNG
    :width: 20px
