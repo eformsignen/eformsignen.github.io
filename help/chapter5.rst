@@ -1014,6 +1014,88 @@ Go to the **Manage templates** page, click the menu icon (|image24|) right next 
 
    |image28|
 
+
+-  **Restore previous version**: This is a rollback feature that makes it easy to revert a published template to a previous version. If the most recently saved template version is higher than the published version, you can restore it to the previous version. Once restored, any versions higher than the restored version is deleted.
+
+   **Example**
+
+   - Published version: v.2
+   - A saved version that has not yet been published: v.3
+   - If you roll back, v.3 is deleted, and the template is restored to v.2.
+
+   ❗ **Rollback Conditions**
+
+   - The most recently saved version must be v.2 or later.
+   - The most recently published version must be lower than the current saved version.
+   - Rollback is only available when the template is in the Need to publish status.
+   - Rollback permissions: Template owner, members with template edit permission, adminstrator, and the most recent publisher.
+
+When you successfully roll back, all editable values on the template settings page name, version, status, category, template publisher, etc.) revert to the previous version’s values. However, items not connected to the template version remain in their most recent status.
+
+
+**How to Roll Back a Template Version**
+
+1. Go to the **Manage templates** page.
+
+2. Click the see more icon on the template you wish to roll back, then select the **Restore previous version** option (this option is only activated for templates whose most recent saved version is v.2 or above and is in the **Need to publish** status).
+
+3. In the **Restore previous version** pop-up, review the instructions and click the **Restore** button. The template will revert to the previous version.
+
+.. figure:: resources/rollbacktemplate.png
+   :alt: Roll back template version
+   :width: 700px
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------
+Template creation permission and publishing process
+-------------------------------------------------------
+
+You can grant the template creation permission to a member. A member with the template creation permission can send a publication request to a template manager or the administrator to gain approval.
+
+
+
+
+How to grant the Create template permission
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Navigate to the **Manage company > Manage permissions** page and then click the **Create template** menu on the left side of the screen.
+2. Select the **Manager** or group option at the top of the screen.
+3. Click the **Add a manager or group** button on the right side of the screen.
+4. Select the manager type or group. and click the **Confirm** button to finish.
+5. To grant the Create template permission to all members, click the **All members** option and click **OK** to finish.
+
+ 
+How to send a request to publish a template
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Navigate to the **Manage templates** page, click the **Create template** button, and select the **Settings** button of the desired template.
+2. Navigate to the **Configure > Set permissions** page and select the group or member you want to grant the template usage permission.
+3. Click the **Save** button and then click the **Publish** button.
+4. Select the desired template publisher and click the **Send publish request** button.
+
+
+How template managers can publish a template
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Navigate to the **Manage templates** page and click the **Publish** button next to the template with the publish request.
+2. Review the template, and check the “I have reviewed the template.” check box.
+3. Click the **Publish** button to finish.
+
+
+
+
+
+
+
+
+
 -------------------
 Search Templates
 -------------------

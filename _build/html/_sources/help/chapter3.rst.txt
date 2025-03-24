@@ -502,7 +502,7 @@ document from.
 
    **Method 2. Upload file: max 1000 documents (rows)**
 
-   Select **Upload file**\ and download the Excel file for data entry. Once the file is downloaded, enter the neccessary data into the file and upload it.
+   Select **Upload file** and download the Excel file for data entry. Once the file is downloaded, enter the neccessary data into the file and upload it.
 
    .. figure:: resources/bulksend-fileupload.png
       :alt: Send in bulk upload file option

@@ -1029,6 +1029,8 @@ To add a company stamp, click the  **Add company stamp** button, name the stamp 
 
 - **Stamp name**: Enter the name of the stamp.
 
+- **Category**: Choose an existing category or create a new category.
+
 - **Description**: Enter the description of the stamp.
 
 - **Register**: You scan the stamp, upload the image, or create the stamp by clicking the **Register** button.
@@ -1036,7 +1038,74 @@ To add a company stamp, click the  **Add company stamp** button, name the stamp 
 - **Permission to use stamp**: You can grant permission to use the stamp to all or specific members/groups.
 
 
-You can see the history of updates and deletions, and modifications made to a stamp. The following shows the stamp history shown when you click the **History**\  button.
+
+
+
+
+
+**How to Create and Add Company Stamp Categories**
+
+When adding a company stamp, you can select an existing category or enter a new category name to create a new category automatically.
+
+1. Navigate to the **Manage company > Manage company stamps** page.
+
+2. Click the **Add company stamp** button or click the **Edit** button of the desired stamp.
+
+3. In the Add/Edit company stamp pop-up, you can create a new category or select an existing one.
+
+   - If you want to use an existing category, click the input field under **Category**, select one from the displayed categories, and then click the **Save** button.
+
+   - If you want to create a new category, type in a new category name in the input field. A new category will be created automatically once you save.
+
+4. Once you have clicked the **Save** button after selecting a category or creating one, the stamp will be saved under that category.
+
+   - You can create multiple categories by using a slash (/) as a separator (e.g. ACME Inc/Finance Team).
+
+   .. figure:: resources/createaddcompanystamp.png
+      :alt: Create and add company stamp
+      :width: 300px
+
+
+**How to Filter and Search Categories**
+
+You can quickly search for specific company stamps by entering keywords such as category name, stamp name, and permissions.
+
+- **Category Filtering**: Click the search bar with the placeholder“ All Stamps” on the top-left of the Manage company stamps page. A list of existing company stamp categories will be displayed. Select your preferred category to filter stamps belonging to that category.
+
+- **Keyword Search**: Enter keywords such as the category name, stamp name, or permissions into the search field to quickly find the stamp you need.
+
+.. figure:: resources/filterandsearchcategories.png
+      :alt: Filter and search categories
+      :width: 800px
+
+
+
+**How to Set Advanced Usage Permissions**
+
+Permissions for using company stamps can be further refined so that only users meeting certain criteria (department, ID, name, etc.) are allowed to use them.
+
+1. Click the **Add company stamp** button or the Edit button of the desired stamp.
+
+2. In the **Add/Edit company stamp** pop-up, click **Advanced** under **Permission to use stamp**.to display the User conditions secdtion.
+
+3. Configure the detailed user conditions:
+
+   - Select a specific condition (ID, Department, Name, etc.) and choose either the **Keyword is exactly** or **Keyword contains** options for your keyword.
+
+   - Enter a keyword in the field below and click the **Add** button to add it to your conditions.
+
+   - For example, if you choose “Name” + “Keyword is exactly” and enter “John Doe”, only a member whose name is exactly “John Doe” will have permission to use that stamp.
+
+4. Once you have finished setting your conditions, click the **Save** button.
+
+.. figure:: resources/userconditions.png
+      :alt: User conditions
+      :width: 400px
+
+
+
+
+Also, you can see the history of updates and deletions, and modifications made to a stamp. The following shows the stamp history shown when you click the **History**\  button.
 
 .. figure:: resources/company-stamp-register-history.png
    :alt: Stamp history screen

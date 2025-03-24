@@ -287,23 +287,23 @@ Period     Start date  End date
 Actions that Can Be Performed in the Document List by Documents Menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Actions on documents that can be performed in the document list include preview, correct, void, resend, send final copy, schedule send final copy, remove, share, download, and create new document.
+Actions on documents that can be performed in the document list include preview, correct, void, resend, forward, schedule forward final copy, remove, share, download, and create new document.
 
 - **In progress**
 
-Can perform actions including preview, correct, void, share, review, resend, schedule send final copy, download, and create new document.
+Can perform actions including preview, correct, void, share, review, resend, schedule foward final copy, download, and create new document.
 
 - **Action required**
 
-Can perform actions including preview, correct, void, share, review, edit, resend, schedule send final copy, download, and create new document.
+Can perform actions including preview, correct, void, share, review, edit, resend, schedule forward final copy, download, and create new document.
 
 - **Completed**
 
-Can perform actions including preview, share, send final copy, create new document, set reminder and download.
+Can perform actions including preview, share, forward, create new document, set reminder and download.
 
 - **Manage documents**
 
-Can perform actions including preview, void (excluding completed documents), remove, download, schedule send final copy (excluding completed documents), send final copy (only completed documents), and create new document. Documents can only be removed in the **Manage documents** menu.
+Can perform actions including preview, void (excluding completed documents), remove, download, schedule foward final copy (excluding completed documents), forward (only completed documents), and create new document. Documents can only be removed in the **Manage documents** menu.
 
 .. _history:
 

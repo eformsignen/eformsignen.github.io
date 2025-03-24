@@ -1033,7 +1033,63 @@ applied to all documents created afterwards.</p>
 </div>
 <p><a class="reference internal" href="../_images/template-manage-menu-wfd-numbersetting.png"><img alt="image28" src="../_images/template-manage-menu-wfd-numbersetting.png" style="width: 400px;" /></a></p>
 </li>
+<li><p><strong>Restore previous version</strong>: This is a rollback feature that makes it easy to revert a published template to a previous version. If the most recently saved template version is higher than the published version, you can restore it to the previous version. Once restored, any versions higher than the restored version is deleted.</p>
+<p><strong>Example</strong></p>
+<ul class="simple">
+<li><p>Published version: v.2</p></li>
+<li><p>A saved version that has not yet been published: v.3</p></li>
+<li><p>If you roll back, v.3 is deleted, and the template is restored to v.2.</p></li>
 </ul>
+<p>❗ <strong>Rollback Conditions</strong></p>
+<ul class="simple">
+<li><p>The most recently saved version must be v.2 or later.</p></li>
+<li><p>The most recently published version must be lower than the current saved version.</p></li>
+<li><p>Rollback is only available when the template is in the Need to publish status.</p></li>
+<li><p>Rollback permissions: Template owner, members with template edit permission, adminstrator, and the most recent publisher.</p></li>
+</ul>
+</li>
+</ul>
+<p>When you successfully roll back, all editable values on the template settings page name, version, status, category, template publisher, etc.) revert to the previous version’s values. However, items not connected to the template version remain in their most recent status.</p>
+<p><strong>How to Roll Back a Template Version</strong></p>
+<ol class="arabic simple">
+<li><p>Go to the <strong>Manage templates</strong> page.</p></li>
+<li><p>Click the see more icon on the template you wish to roll back, then select the <strong>Restore previous version</strong> option (this option is only activated for templates whose most recent saved version is v.2 or above and is in the <strong>Need to publish</strong> status).</p></li>
+<li><p>In the <strong>Restore previous version</strong> pop-up, review the instructions and click the <strong>Restore</strong> button. The template will revert to the previous version.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/rollbacktemplate.png"><img alt="Roll back template version" src="../_images/rollbacktemplate.png" style="width: 700px;" /></a>
+</figure>
+</section>
+<section id="template-creation-permission-and-publishing-process">
+<h2>Template creation permission and publishing process<a class="headerlink" href="#template-creation-permission-and-publishing-process" title="Link to this heading"></a></h2>
+<p>You can grant the template creation permission to a member. A member with the template creation permission can send a publication request to a template manager or the administrator to gain approval.</p>
+<section id="how-to-grant-the-create-template-permission">
+<h3>How to grant the Create template permission<a class="headerlink" href="#how-to-grant-the-create-template-permission" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to the <strong>Manage company &gt; Manage permissions</strong> page and then click the <strong>Create template</strong> menu on the left side of the screen.</p></li>
+<li><p>Select the <strong>Manager</strong> or group option at the top of the screen.</p></li>
+<li><p>Click the <strong>Add a manager or group</strong> button on the right side of the screen.</p></li>
+<li><p>Select the manager type or group. and click the <strong>Confirm</strong> button to finish.</p></li>
+<li><p>To grant the Create template permission to all members, click the <strong>All members</strong> option and click <strong>OK</strong> to finish.</p></li>
+</ol>
+</section>
+<section id="how-to-send-a-request-to-publish-a-template">
+<h3>How to send a request to publish a template<a class="headerlink" href="#how-to-send-a-request-to-publish-a-template" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to the <strong>Manage templates</strong> page, click the <strong>Create template</strong> button, and select the <strong>Settings</strong> button of the desired template.</p></li>
+<li><p>Navigate to the <strong>Configure &gt; Set permissions</strong> page and select the group or member you want to grant the template usage permission.</p></li>
+<li><p>Click the <strong>Save</strong> button and then click the <strong>Publish</strong> button.</p></li>
+<li><p>Select the desired template publisher and click the <strong>Send publish request</strong> button.</p></li>
+</ol>
+</section>
+<section id="how-template-managers-can-publish-a-template">
+<h3>How template managers can publish a template<a class="headerlink" href="#how-template-managers-can-publish-a-template" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to the <strong>Manage templates</strong> page and click the <strong>Publish</strong> button next to the template with the publish request.</p></li>
+<li><p>Review the template, and check the “I have reviewed the template.” check box.</p></li>
+<li><p>Click the <strong>Publish</strong> button to finish.</p></li>
+</ol>
+</section>
 </section>
 <section id="search-templates">
 <h2>Search Templates<a class="headerlink" href="#search-templates" title="Link to this heading"></a></h2>
@@ -1105,6 +1161,12 @@ applied to all documents created afterwards.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#menus-for-each-template">Menus for Each Template</a></li>
+<li><a class="reference internal" href="#template-creation-permission-and-publishing-process">Template creation permission and publishing process</a><ul>
+<li><a class="reference internal" href="#how-to-grant-the-create-template-permission">How to grant the Create template permission</a></li>
+<li><a class="reference internal" href="#how-to-send-a-request-to-publish-a-template">How to send a request to publish a template</a></li>
+<li><a class="reference internal" href="#how-template-managers-can-publish-a-template">How template managers can publish a template</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#search-templates">Search Templates</a></li>
 </ul>
 </li>
