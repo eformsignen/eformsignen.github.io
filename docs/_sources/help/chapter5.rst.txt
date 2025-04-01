@@ -26,7 +26,7 @@ Templates are **electronic documents** used for the eformsign service. They are 
 
 
 **How to create a template with Web Form Designer**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. note::

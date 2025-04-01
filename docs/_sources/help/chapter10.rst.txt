@@ -44,9 +44,9 @@ eformsign can automatically save completed documents in external cloud storage s
 
 
 
--------------------------
+------------------------
 Analytics and Reporting
--------------------------
+------------------------
 
 If you find it cumbersome and repetitive to download a CSV file every time a new document is added, using this feature is recommended. You can set the entered data to be automatically saved in a sheet in Google Sheets and Excel of Microsoft Office 365.
 
