@@ -353,6 +353,40 @@ PDF Download
       :width: 400px
 
 
+
+.. tip::
+
+   💡 **How to Download More Than 20 PDF Documents**
+
+   By default, only 20 documents are displayed in the document box, and downloads are also limited to 20 documents at a time. However, by using the method below, you can download up to 100 documents at once.
+
+   1. At the bottom of the screen in the **Document inbox/Manage documents page**, you can select how many documents are displayed in the list.
+
+   .. figure:: resources/document-list-100.png
+      :alt: Download More Than 20 PDF Documents
+      :width: 700px
+
+
+   2. Select **Show 50 per page** or **Show 100 per page**. 
+
+   3. Click the Download icon (|image12|) at the top right corner of the screen.
+   4. Select all the check boxes and then click the **Download** button.
+   5. In the pop-up, choose whether to tick the **Include audit certificate** pop-up, name the file, and then click the **Export** button.
+   6. In the **Downloadable files list** pop-up, click  the **Refresh** button.
+      :width: 600px
+
+   7. You can see that the Download button is enabled. Click the **Download** button to download the document.
+
+   .. figure:: resources/document-download-popup1.png
+      :alt: Document download list
+      :width: 600px
+
+   ❗ If you are downloading more than 20 documents in PDF format, you can download them by clicking the **Downloadable files list** icon|image17|). 
+
+
+
+
+
 Export to CSV file
 -------------------------------
 
