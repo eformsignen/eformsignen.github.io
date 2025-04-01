@@ -356,7 +356,7 @@ Sets the signature pen color.
 .. _companystamp:
 
 Company stamp
---------------------
+-------------------
 
 The company stamp field is used for inserting a company stamp that is added to eformsign onto a document. Company stamps can be added in the **Manage company > Manage company stamp** menu and they can only be used by members who have been granted permission to use them. Also, the history of company stamp usage is recorded in the **Manage company stamp** menu.
 

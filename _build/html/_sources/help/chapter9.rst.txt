@@ -4,9 +4,9 @@
 Customization
 =======================
 
------------------------------------------
+----------------------------------------
 Manage Custom Fields
------------------------------------------
+----------------------------------------
 
 You can add and edit fields for companies, groups, and members in the **Manage company > Manage custom fields** menu.
 
