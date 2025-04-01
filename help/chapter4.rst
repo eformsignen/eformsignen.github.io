@@ -423,7 +423,7 @@ Displays the description in Tooltip Text when you hover the mouse over a field.
 .. _handwriting2:
 
 Handwriting
--------------------
+------------------
 
 The handwriting field is used to trace a pre-written tex. 
 

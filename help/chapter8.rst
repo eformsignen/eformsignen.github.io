@@ -381,7 +381,7 @@ PDF Download
       :alt: Document download list
       :width: 600px
 
-   ❗ If you are downloading more than 20 documents in PDF format, you can download them by clicking the **Downloadable files list** icon |image17| at the top right corner of the screen. 
+   ❗ If you are downloading more than 20 documents in PDF format, you can download them by clicking the **Downloadable files list** icon at the top right corner of the screen. 
 
 
 
