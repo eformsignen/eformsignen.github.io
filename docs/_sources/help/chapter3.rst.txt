@@ -1,7 +1,7 @@
 .. _createnew:
 
 Creating documents
-===================
+====================
 
 
 
@@ -104,6 +104,23 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
 .. tip::
 
+  **💡 How to select a notification language for each recipient step when using New from my file**
+
+   1. Navigate to the ‘New from my file’ page.
+   2. Upload a file and navigate to the ‘Add recipients’ step.
+   3. Select a workflow step you want and then click the language symbol on the right.
+   4. Select the language you want.
+   5. Click the ‘Edit message’ button on the right under ‘Recipient options > Notification’.
+   6. In the ‘Edit notification message’ pop-up displayed, view and edit the content in the selected language.
+
+      .. figure:: resources/notificationlanguage.png
+         :alt: Notification language
+         :width: 300px
+
+
+
+.. tip::
+
   **Merge workflow steps - Parallel signing**
 
    You can merge multiple workflow steps into o/e so that documents can be sent to all recipients at the same time, regardless of the signing order. You can also split workflow steps that are merged together.
@@ -124,7 +141,9 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
 6. Click the **Options** step to change the document title and select whether to timestamp the document when completed.
 
-   |image7|
+   .. figure:: resources/optionstep.png
+         :alt: Options step
+         :width: 1200px
 
    .. note::
 
@@ -134,12 +153,14 @@ You can upload a file you want and then add fields onto the document. Then, you 
       `My saved documents <chapter8.html#my-saved-documents>`__, and the saved file can be opened again so
       that you can begin creating a document. To save a document, click the **Save** button at the top right corner of the screen.
 
-      |image9|
+      .. figure:: resources/threesteps.png
+         :alt: Three steps
+         :width: 1200px
 
 7. When you are done with all the settings, click **Start now**.
 
-   |image10|
-
+   .. figure:: resources/startnow.png
+      :alt: Start now
    .. caution::
 
       A document is created once you click **Start now**, and it counts
@@ -147,7 +168,9 @@ You can upload a file you want and then add fields onto the document. Then, you 
 
 8. If you click the **Send** button after reviewing/filling in the document, then the document is sent to recipients.
 
-   |image11|
+   .. figure:: resources/senddocument.png
+         :alt: Send document
+         :width: 1200px
    
 
 **Add recipients > Recipient options**
@@ -413,7 +436,12 @@ You can also click **New from template** and then click the Create icon of the t
 
 4. In the **Send document** pop-up displayed, select either one of Email or SMS as the delivery method for sending the document. You can also select both.
 
-5. Fill in the recipient's name and contact information and enter an optional message, if desired.
+5. Fill in the recipient's name and contact information. If you want to change the language, then click the language button.
+
+.. figure:: resources/changelanguage.png
+   :alt: Change language
+   :width: 500px
+
 
 6. Click the **Confirm** button to send the document.
 

@@ -67,10 +67,14 @@ Default templates are shown in the **Manage company > Notification template mana
 **Basic template types (select from Mail or SMS)**
 ---------------------------------------------------
 
-- Notification for document completion
-- Notification for document rejection
-- Notification for document status 
-- Notification for review and sign
+   - **Document forwarded:** Notification sent to recipients when the document is completed.
+   - **Need to view:** Viewing request notification sent to the viewer.
+   - **Document completion (CC'd):** Notification sent to a CC recipient when the document is completed.
+   - **Document CC'd:** Notification sent to the CC recipient when they are added to the document.
+   - **Document status:** Notification sent to the designated recipients based on the document status.
+   - **Document completion:** Notification sent to designated recipients when the document is completed.
+   - **Document rejection:** Notification sent to the sender when the document is rejected by the recipient.
+   - **Review and sign:**  Notification sent to the participants and reviewers of the document.
 
 .. tip::
 
@@ -86,16 +90,27 @@ In addition to the default templates, you can add a new notification template.
 
 2. Click the **Add notification template** button located at the top right corner of the **Notification template management** screen.
 
-3. Select the appropriate **Type**.
+3. Fill in the following items.
 
-   |image6|
+.. figure:: resources/notification-template-manage.png
+   :alt: Manage company > Notification template management
+   :width: 700px
 
-4. Enter Email title and SMS message. 
-   **SMS message**\ is sent for SMS notification with the URL link which connects to the body. 
+- **Notification template name:** Enter a name to identify the notification template.
 
-5. Write a new notification message.
+- **Type:** Select the type that applies to the notification template.
 
-6. Click the **Save** button to add it as a notification template.
+- **Language:**  Configure and manage the template in three languages. Click each language tab to edit content per language.
+
+- **Email title:** Enter the subject line for the email that will be sent to recipients.
+
+- **SMS message:**  Enter the message for SMS notifications. (SMS will include a link to the main content.)
+
+- **Edit body:**  Edit the body content of the email notification and the page linked from the SMS message.
+
+- **Description:** Enter a description of the template’s purpose.
+
+4. Click the **Save** button to add it as a notification template.
 
 .. |image1| image:: resources/Customfield.PNG
    :width: 700px

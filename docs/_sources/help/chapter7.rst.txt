@@ -26,7 +26,7 @@ paper forms such as applications, contracts, and agreements. You can create and 
 To create and send electronic documents via eformsign, you have to create a template first which can be transformed into an e-document.
 
 **How to create a template with eformsign for Microsoft Office**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To create a template with eformsign for Microsoft Office, you must first download eformsign for Microsoft Office.
 

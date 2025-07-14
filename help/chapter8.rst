@@ -346,7 +346,7 @@ PDF Download
 1. Go to a document inbox or the **Manage documents** page and click the document download icon (|image12|).
 2. Tick the check box to the left of the document(s) you want to download.
 3. Click the **Download** button.
-4. Decide whether to include the audit trail certifcate in the pop-up displayed and click the **Download** button.
+4. Decide whether to include the audit trail certifcate in the pop-up displayed and enter the reason for downloading (optional). Then, click the **Download** button.
 
    .. figure:: resources/download_popup.png
       :alt: Document downloaod pop-up
@@ -391,32 +391,49 @@ Export to CSV file
 -------------------------------
 
 
-1. Click the Export to CSV file icon (|image14|) in the **Completed** inbox or the **Manage documents** page.
+1. Click the Export to CSV file icon (|image14|) in an inbox or the **Manage documents** page.
 2. Tick the check box to the left of the document(s) you want to download.
-3. Click the **Export to CSV file** button.
-4. Select the columns and range in the **Export to CSV file** pop-up displayed. To include all fields in all templates, select **All results**.
-5. Click the **Export** button.
+3. Click the **Export to CSV file** button and then select either **Selected documents** or **All results**.
+4. Select the desired columns/fields under **Document info fields** and **Fields** in the **Export to CSV file** pop-up displayed.
 
    .. figure:: resources/cvs_file_popup.png
       :alt: Export to CSV file pop-up
       :width: 400px
 
-6. Name the CSV file and click **Confirm**.
+5. Name the CSV file and set the password (both optional) and click **Generate**.
 
-   .. figure:: resources/cvs_file_name_popup.png
-      :alt: Export to CSV file pop-up
-      :width: 400px
 
-7. Check the status of the file in the **CSV files** pop-up and download the file once it is created.
+7. Check the status of the file in the **Downloadable files list** pop-up and download the file once it is created.
  
    .. figure:: resources/cvs_file_list_popup.png
       :alt: CSV files pop-up
       :width: 600px
 
 
+
+.. tip::
+
+   **Downloading all fields across multiple templates**
+
+   If you select multiple templates in one category (or all templates) and generate a CSV, every field from all included templates will be presented as separate columns.
+
+   1. Navigate to a document inbox or the **Manage templates** page and click the Export to CSV file icon on the top right corner.
+
+   2. Select the documents you want to download and the click the **Export to CSV file** button.
+
+   3. Select the drop-down menu under **Fields** in the **Export to CSV file** pop-up.
+
+   4. All the fields in the selected documents will be displayed. Either select only the fields you want or select them all and then click the **Generate** button to export to a CSV file.
+
+   .. figure:: resources/downloadallfields.png
+      :alt: Downloading all fields across multiple templates
+      :width: 700px
+
+
+
 .. note::
 
-   **CSV files**
+   **Downloadable files list**
 
    You can view the list of files that have been created or is being created by clicking the CSV files icon (|image17|). 
    You can cancel while the file is being created and the files that are created can be downloaded again or deleted. The files can be downloaded again within 7 days of creation and are automatically deleted after 7 days.
@@ -439,6 +456,9 @@ Export to CSV file
    .. figure:: resources/bulksend_download.png
       :alt: Export to CSV file pop-up
       :width: 700px
+
+
+
 
 
 

@@ -38,7 +38,10 @@ Uploading a file in the **New from my file** menu.
 2. Drag and drop the file onto the screen or click the **Select a file**
    button and select a file from your computer to upload.
 
-   |image2|
+   .. figure:: resources/en-new-from-my-file-upload.png
+      :alt: New from my file upload
+      :width: 700px
+
 
 3. Once the file is uploaded, the Web Form Designer screen will be
    displayed. You can add fields to the document here.
@@ -423,7 +426,7 @@ Displays the description in Tooltip Text when you hover the mouse over a field.
 .. _handwriting2:
 
 Handwriting
--------------------
+------------------
 
 The handwriting field is used to trace a pre-written tex. 
 
@@ -1033,6 +1036,30 @@ Data fields are used for entering document-related information in the document i
 **① ID**
 
 Enter the ID of the Document field. For example, the field ID can be ‘docNum’ for document number.
+
+
+
+-----------------------------------------
+Change Field Types
+-----------------------------------------
+
+The change field types feature allows you to change the type of an already-added field when designing forms online.
+
+**Instructions**
+
+
+1. When designing a form, right-click on the desired field and then select the ‘Change field type’ option.
+
+
+2. Select the field type you want to change to.
+
+
+.. figure:: resources/changefieldtypes.png
+   :alt: Change field types
+   :width: 1000px
+
+
+※ This feature is not available in eformsign for Microsoft Office.
 
 -----------------------------------------
 Configuring Template Settings

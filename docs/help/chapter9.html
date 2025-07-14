@@ -3,7 +3,7 @@
 <html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Customization &#8212; eformsign User Guide 2024.12.27 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -313,12 +313,18 @@ company representative name, etc.) to be added automatically in documents. After
 <p>Default templates are shown in the <strong>Manage company &gt; Notification template management</strong> menu. You can change the contents of the default templates and add new notification templates.</p>
 <section id="basic-template-types-select-from-mail-or-sms">
 <h3><strong>Basic template types (select from Mail or SMS)</strong><a class="headerlink" href="#basic-template-types-select-from-mail-or-sms" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Notification for document completion</p></li>
-<li><p>Notification for document rejection</p></li>
-<li><p>Notification for document status</p></li>
-<li><p>Notification for review and sign</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Document forwarded:</strong> Notification sent to recipients when the document is completed.</p></li>
+<li><p><strong>Need to view:</strong> Viewing request notification sent to the viewer.</p></li>
+<li><p><strong>Document completion (CC’d):</strong> Notification sent to a CC recipient when the document is completed.</p></li>
+<li><p><strong>Document CC’d:</strong> Notification sent to the CC recipient when they are added to the document.</p></li>
+<li><p><strong>Document status:</strong> Notification sent to the designated recipients based on the document status.</p></li>
+<li><p><strong>Document completion:</strong> Notification sent to designated recipients when the document is completed.</p></li>
+<li><p><strong>Document rejection:</strong> Notification sent to the sender when the document is rejected by the recipient.</p></li>
+<li><p><strong>Review and sign:</strong>  Notification sent to the participants and reviewers of the document.</p></li>
 </ul>
+</div></blockquote>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The header is set with the eformsign logo by default. If you upload your company’s logo in the <strong>Manage company &gt; Company profile &gt;</strong>  <a class="reference external" href="#brand">Company brand</a> tab menu, the logo is applied to the email templates.</p>
@@ -326,15 +332,24 @@ company representative name, etc.) to be added automatically in documents. After
 <section id="how-to-add-a-new-notification-template">
 <h4><strong>How to add a new notification template</strong><a class="headerlink" href="#how-to-add-a-new-notification-template" title="Link to this heading"></a></h4>
 <p>In addition to the default templates, you can add a new notification template.</p>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>In the sidebar menu, click the <strong>Manage company &gt; Manage Notification Templates</strong> menu.</p></li>
 <li><p>Click the <strong>Add notification template</strong> button located at the top right corner of the <strong>Notification template management</strong> screen.</p></li>
-<li><p>Select the appropriate <strong>Type</strong>.</p>
-<p><a class="reference internal" href="../_images/notification-template-new.PNG"><img alt="image6" src="../_images/notification-template-new.PNG" style="width: 700px;" /></a></p>
-</li>
-<li><p>Enter Email title and SMS message.
-<strong>SMS message</strong>is sent for SMS notification with the URL link which connects to the body.</p></li>
-<li><p>Write a new notification message.</p></li>
+<li><p>Fill in the following items.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="Manage company &gt; Notification template management" src="../_images/notification-template-manage.png" style="width: 700px;" /></a>
+</figure>
+<ul class="simple">
+<li><p><strong>Notification template name:</strong> Enter a name to identify the notification template.</p></li>
+<li><p><strong>Type:</strong> Select the type that applies to the notification template.</p></li>
+<li><p><strong>Language:</strong>  Configure and manage the template in three languages. Click each language tab to edit content per language.</p></li>
+<li><p><strong>Email title:</strong> Enter the subject line for the email that will be sent to recipients.</p></li>
+<li><p><strong>SMS message:</strong>  Enter the message for SMS notifications. (SMS will include a link to the main content.)</p></li>
+<li><p><strong>Edit body:</strong>  Edit the body content of the email notification and the page linked from the SMS message.</p></li>
+<li><p><strong>Description:</strong> Enter a description of the template’s purpose.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
 <li><p>Click the <strong>Save</strong> button to add it as a notification template.</p></li>
 </ol>
 </section>
