@@ -29,7 +29,7 @@ The description of each menu is as follows:
 
       -  **New from template:** Views the list of templates in which you can create documents from. You can select a template and then create a document.
 
--  **My saved documents**: Shows the list of documents saved when creating a document by accessing the **New from my file** menu.
+-  **My saved files**: Shows the list of documents saved when creating a document by accessing the **New from my file** menu.
 
 -  **Documents:** Shows the menus in which documents are stored.
 
@@ -120,7 +120,7 @@ The dashboard is the main page displayed when logging into eformsign. In the das
 
    - **Completed**\ : When clicked, it opens the **Completed** inbox.
 
-   - **My saved documents**\ : Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, it opens the **My saved documents** inbox.
+   - **My saved files**\ : Shows the number of documents saved temporarily before clicking the **Start now** button when creating a document from **New from my file**. When clicked, it opens the **My saved files** inbox.
 
 **② New from my file**
    

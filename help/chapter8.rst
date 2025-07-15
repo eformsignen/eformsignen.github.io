@@ -491,15 +491,15 @@ If you click the column (|image14|) icon on the right side of the document list,
 .. _my_saved_documents:
 
 --------------------
-My saved documents
+My saved files
 --------------------
 
-The My saved documents inbox stores the documents in the **New from my file** step that have been saved by clicking **Save** before sending the document. You can open the files stored in the **My saved documents** menu anytime and proceed or delete.
+The My saved files inbox stores the documents in the **New from my file** step that have been saved by clicking **Save** before sending the document. You can open the files stored in the **My saved files** menu anytime and proceed or delete.
 
-1. Click **My saved documents** in the sidebar menu to go to the My saved documents page.
+1. Click **My saved files** in the sidebar menu to go to the My saved files page.
 
 .. figure:: resources/my-saved-documents-dashboard-en.png
-   :alt: My saved documents in dashboard
+   :alt: My saved files in dashboard
 2. Select a document you want and click the **Continue** button next to it.
 
    |image16|

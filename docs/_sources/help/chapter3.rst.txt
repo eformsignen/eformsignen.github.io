@@ -150,7 +150,7 @@ You can upload a file you want and then add fields onto the document. Then, you 
       The above three steps are the steps you need to go through before
       creating a document. If you save the document before
       clicking the **Start now** button, the document is saved in
-      `My saved documents <chapter8.html#my-saved-documents>`__, and the saved file can be opened again so
+      `My saved files <chapter8.html#my-saved-documents>`__, and the saved file can be opened again so
       that you can begin creating a document. To save a document, click the **Save** button at the top right corner of the screen.
 
       .. figure:: resources/threesteps.png
@@ -381,7 +381,7 @@ In the Options step, you can set and edit document notification settings, and ch
 
 .. note::
 
-      ❗Clicking the **Save** button before you click the **Start now** button allows you to save the document to the **My saved documents** inbox.
+      ❗Clicking the **Save** button before you click the **Start now** button allows you to save the document to the **My saved files** inbox.
 
 
 New from template
@@ -429,7 +429,7 @@ You can also click **New from template** and then click the Create icon of the t
    .. important::
 
       Documents saved when clicking the **Save as draft** when creating
-      documents from templates can be found in the **Action required** page, not the **My saved documents** page.
+      documents from templates can be found in the **Action required** page, not the **My saved files** page.
 
       To continue to create a document saved as a draft, click the **Edit** button in the **Action required** page.
 
