@@ -26,7 +26,7 @@ Templates are **electronic documents** used for the eformsign service. They are 
 
 
 **How to create a template with Web Form Designer**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. note::
@@ -764,7 +764,10 @@ You can click a step to set the details such as **Properties** for each workflow
 
 -  **Notification**\: Selects how recipients can recive notification messages and edit their content.
 
-   - Edit notification message: Edits the notification messages sent to recipients for each step.
+   - **Edit notification message:** You can edit the document request notifications sent to recipients at each step. Additional languages (English, Japanese) can be added to customize and manage messages by language. The added language options will appear in the language selection menu of the document sending popup.
+
+   .. figure:: resources/notificationlanguage.png
+
 
 -  **Document expiration**\: Sets the time period for document expiration. If it is set to 0 days and 0 hours, there is no document expiration (applies only to recipients who are members).
 

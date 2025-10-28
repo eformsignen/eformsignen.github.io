@@ -3,7 +3,7 @@
 <html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Basic Info &#8212; eformsign User Guide 2024.12.27 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -293,7 +293,7 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>My saved documents</strong>: Shows the list of documents saved when creating a document by accessing the <strong>New from my file</strong> menu.</p></li>
+<li><p><strong>My saved files</strong>: Shows the list of documents saved when creating a document by accessing the <strong>New from my file</strong> menu.</p></li>
 <li><p><strong>Documents:</strong> Shows the menus in which documents are stored.</p>
 <blockquote>
 <div><ul class="simple">
@@ -318,6 +318,13 @@
 <li><p><strong>Manage groups:</strong> You can create groups or edit group information.</p></li>
 <li><p><strong>Manage members:</strong> You can invite members or edit member information.</p></li>
 <li><p><strong>Manage permissions:</strong> Allows the company administrator to assign members as company managers, template managers, and document managers, as well as manage their permissions.</p></li>
+<li><p><strong>Additional features settings:</strong> Allows administrators to easily manage and control various additional features for the entire company.</p>
+<ul>
+<li><p><strong>Paid options:</strong> Control the use of paid options such SMS verification and timestamps.</p></li>
+<li><p><strong>Signature types:</strong> Disable/enable Signing with text and Create stamp features.</p></li>
+<li><p><strong>Comments and memos:</strong> Control whether members can use the comments and memos features when filling in documents.</p></li>
+</ul>
+</li>
 <li><p><strong>Manage company stamp</strong> You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.</p></li>
 <li><p><strong>Signature settings:</strong> Select the signature types that can be used when signing directly on documents.</p></li>
 <li><p><strong>Notification template management:</strong> You can view and edit email and SMS notification templates.</p></li>
@@ -363,7 +370,7 @@
 <li><p><strong>Action required</strong>: Shows the number of documents you received from members or non-members that you need to sign, approve, or send. When clicked, it opens the <strong>Action required</strong> inbox.</p></li>
 <li><p><strong>In progress</strong>: Shows the number of documents that are in progress. When clicked, it opens the <strong>In progress</strong> inbox.</p></li>
 <li><p><strong>Completed</strong>: When clicked, it opens the <strong>Completed</strong> inbox.</p></li>
-<li><p><strong>My saved documents</strong>: Shows the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, it opens the <strong>My saved documents</strong> inbox.</p></li>
+<li><p><strong>My saved files</strong>: Shows the number of documents saved temporarily before clicking the <strong>Start now</strong> button when creating a document from <strong>New from my file</strong>. When clicked, it opens the <strong>My saved files</strong> inbox.</p></li>
 </ul>
 </div></blockquote>
 <p><strong>② New from my file</strong></p>
@@ -426,6 +433,13 @@ You can create 1 document from a template by clicking the create icon (<a class=
 <dt><strong>Delete my eformsign account</strong></dt><dd><p>You can delete your eformsign account by clicking the <strong>Delete the eformsign account</strong> button.</p>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Key personal information such as name and email are masked in the My profile menu. To view or edit, you must complete login verification by clicking the <strong>*View and edit hidden informtio n</strong> button. Members can only view information while the administrator and company managers can both view and edit information.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/myinfor-personalinfo-masking.png"><img alt="My profile &gt; Personal" src="../_images/myinfor-personalinfo-masking.png" style="width: 500px;" /></a>
+</figure>
+</div>
 <p><strong>My profile &gt; Company</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/en-myprofile-company.png"><img alt="My Profile &gt; Company" src="../_images/en-myprofile-company.png" style="width: 500px;" /></a>
@@ -872,6 +886,141 @@ If an invited person does not accept the invitation within 7 days, then you must
 </dl>
 </section>
 </section>
+<section id="contacts">
+<span id="mycontacts"></span><h2>Contacts<a class="headerlink" href="#contacts" title="Link to this heading"></a></h2>
+<p>The <strong>Contacts</strong> menu allows you to add and manage non-member contacts, as well as view company contacts added by the administrator.
+Contacts can be easily selected from the contact list when sending documents.</p>
+<ul class="simple">
+<li><p><strong>My contacts:</strong> Non-member contacts added in <strong>My contacts</strong> or in the <strong>Send document</strong> pop-up.</p></li>
+<li><p><strong>Shared contacts:</strong> Contacts shared with all members due to the admin or company managers adding them.</p></li>
+</ul>
+<section id="my-contacts">
+<h3>My contacts<a class="headerlink" href="#my-contacts" title="Link to this heading"></a></h3>
+<p>Allows you to add and manage non-member contacts that you use frequently.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/mycontacts.png"><img alt="My contacts" src="../_images/mycontacts.png" style="width: 700px;" /></a>
+</figure>
+<p><strong>① Search and sort contacts</strong></p>
+<ul class="simple">
+<li><p>Keyword search: You can search the contact list by entering keywords such as name or email.</p></li>
+<li><p>Sort: Click the sort icon on the top right corner to sort the contact list in ascending or descending order by name, email, and more.</p></li>
+</ul>
+<p><strong>② Select and add contacts</strong></p>
+<ul class="simple">
+<li><p>Select all: Select all the contacts shown in the list.</p></li>
+<li><p>Delete: Delete all selected contacts.</p></li>
+<li><p>Download: Download all selected contact info as an Excel file.</p></li>
+<li><p>Add contact: Add new contact.</p></li>
+<li><p>Bulk add contacts: Add new contacts in bulk. You can add up to 1,000 contacts at once.</p></li>
+</ul>
+<dl class="simple">
+<dt><strong>③ Contact list</strong></dt><dd><p>Shows all added list of contacts. You can click the see more (⋯) menu on the right to <strong>Update</strong> or <strong>Delete</strong>.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When you enter information for a non-member recipient that is not added in your contacts in the <strong>Send document</strong> popup, the contact will be automatically added to <strong>My contacts</strong>.</p>
+</div>
+<section id="how-to-add-contacts-in-bulk">
+<h4>How to add contacts in bulk<a class="headerlink" href="#how-to-add-contacts-in-bulk" title="Link to this heading"></a></h4>
+<p>You can add up to 1,000 contacts in bulk using an Excel file.</p>
+<ol class="arabic simple">
+<li><p>Click the <strong>Bulk add contacts</strong> button.</p></li>
+<li><p>Click  the <strong>Download Excel file</strong> to download the file.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/add-bulk-contacts.png"><img alt="Bulk add contacts" src="../_images/add-bulk-contacts.png" style="width: 400px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Open the downloaded Excel file, enter the contact information in the specified format, and save it.</p></li>
+<li><p>Click the <strong>Upload file</strong> button to upload the file.</p></li>
+<li><p>Click the <strong>Register</strong> button to bulk add contacts.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Instructions for filling out out the bulk add contacts Excel file</strong></p>
+<ul>
+<li><p>You must enter both the name and contact information (email or mobile number).</p></li>
+<li><p>If the contact information entered in the Excel file matches an existing contact under the following conditions, the existing contact will be updated with the latest information:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Same name and email</p></li>
+<li><p>Same name and mobile number</p></li>
+<li><p>Same name, email, and mobile number</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Duplicate contacts will not be added. Instead, the existing information will be updated.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="shared-contacts">
+<h3>Shared contacts<a class="headerlink" href="#shared-contacts" title="Link to this heading"></a></h3>
+<p>You can view and download as an Excel file the external recipient contacts shared across the entire company by the administrator.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only the <strong>administrator</strong> or <strong>company managers</strong> can add or edit shared contacts in <strong>Manage company &gt; Manage shared contacts</strong>.</p>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/shared-contacts.png"><img alt="Shared contacts" src="../_images/shared-contacts.png" style="width: 700px;" /></a>
+</figure>
+</section>
+</section>
+<section id="managing-shared-contacts">
+<span id="managesharedcontacts"></span><h2>Managing shared contacts<a class="headerlink" href="#managing-shared-contacts" title="Link to this heading"></a></h2>
+<p>You can add and manage shared contacts that can be accessed by all company members.
+Added contacts are automatically shared with all members and displayed under <strong>Contacts</strong> &gt; <strong>Shared contacts</strong>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/company-shared-contacts.png"><img alt="Shared contacts" src="../_images/company-shared-contacts.png" style="width: 700px;" /></a>
+</figure>
+<section id="adding-shared-contacts">
+<h3>Adding shared contacts<a class="headerlink" href="#adding-shared-contacts" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Add contacts</strong> button.</p></li>
+<li><p>Enter the contact information and then click the <strong>Register</strong> button.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/add-contacts.png"><img alt="Add contact pop-up" src="../_images/add-contacts.png" style="width: 400px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Added contacts can be viewed by all members under <strong>Contacts &gt; Shared contacts</strong>.</p></li>
+</ol>
+</section>
+<section id="how-to-bulk-add-shared-contacts">
+<h3>How to bulk add shared contacts<a class="headerlink" href="#how-to-bulk-add-shared-contacts" title="Link to this heading"></a></h3>
+<p>You can register up to 1,000 contacts at once using an Excel file.</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Bulk add contacts</strong>.</p></li>
+<li><p>Click the <strong>Download Excel file</strong> button to download the file.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/add-bulk-contacts.png"><img alt="Bulk add contactss" src="../_images/add-bulk-contacts.png" style="width: 400px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Open the downloaded Excel file, enter the contact information according to the template format, and save it.</p></li>
+<li><p>Click the <strong>Upload File</strong> button to upload the completed file.</p></li>
+<li><p>Click the <strong>Register</strong> button to bulk add contacts.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Instructions for filling out the bulk add contacts Excel File</strong></p>
+<ul>
+<li><p>You must enter both the name and contact information (email or mobile number).</p></li>
+<li><p>If the contact information entered in the Excel file matches an existing contact under the following conditions, the existing contact will be updated with the latest information:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Same name and email</p></li>
+<li><p>Same name and mobile number</p></li>
+<li><p>Same name, email, and mobile number</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Duplicate contacts will not be added. Instead, existing information will be updated instead.</p></li>
+</ul>
+</div>
+</section>
+</section>
 <section id="my-signature">
 <span id="mysignature"></span><h2>My Signature<a class="headerlink" href="#my-signature" title="Link to this heading"></a></h2>
 <p>If you add your signature, initial, and stamp in the <strong>My signature</strong> menu, you can easily use them when signing documents.</p>
@@ -1133,6 +1282,62 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </figure>
 </section>
 </section>
+<section id="additional-features-settings">
+<h2>Additional features settings<a class="headerlink" href="#additional-features-settings" title="Link to this heading"></a></h2>
+<p><strong>Additional features settings</strong> allows administrators to easily manage and control various additional features for the entire company.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only the administrator and company managers can access this menu. Changes take effect immediately across the entire company.</p>
+</div>
+<p>Additional features that can be managed in the menu include:</p>
+<ul class="simple">
+<li><p>Paid options</p></li>
+<li><p>Signature types</p></li>
+<li><p>Comments and memos</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/additional-features-settings.png"><img alt="Additional features settings" src="../_images/additional-features-settings.png" style="width: 700px;" /></a>
+</figure>
+<section id="paid-options">
+<h3>Paid options<a class="headerlink" href="#paid-options" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Allows you to control the use of paid options such SMS verification and timestamps.</p>
+</div></blockquote>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/paid-options-settings.png"><img alt="Paid options" src="../_images/paid-options-settings.png" style="width: 700px;" /></a>
+</figure>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>If a paid option is disabled, it will no longer be available for use from that point on, even if it was previously set in existing templates. This also applies to both documents already in progress and newly created ones.</p>
+</div>
+</section>
+<section id="signature-types">
+<h3>Signature types<a class="headerlink" href="#signature-types" title="Link to this heading"></a></h3>
+<p>Allows you to disable/enable <strong>Signing with text</strong> and <strong>Create stamp</strong> features.</p>
+<ul class="simple">
+<li><p><strong>Disable signing with Text</strong> Disables the feature that automatically generates a signature by typing in text and selecting a style.</p></li>
+<li><p><strong>Disable Create stamp:</strong> Disables the feature that automatically generates a stamp by selecting a stamp style. This also applies to company stamps.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/signature-types-settings.png"><img alt="Signature types" src="../_images/signature-types-settings.png" style="width: 700px;" /></a>
+</figure>
+</section>
+<section id="comments-and-memos">
+<h3>Comments and memos<a class="headerlink" href="#comments-and-memos" title="Link to this heading"></a></h3>
+<p>Control whether members can use the comments and memos features when filling in documents.</p>
+<ul class="simple">
+<li><p><strong>Enable comments:</strong> Enable users to add comments on the document using the pen or highlight pen tool.</p></li>
+<li><p><strong>Enable memos:</strong> Enable users to insert text or images on the document using the memo tool.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/comments-memos-settings.png"><img alt="Comments and memos" src="../_images/comments-memos-settings.png" style="width: 700px;" /></a>
+</figure>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Content added using comments or memos is not recorded in the document’s field type change history. Be aware that adding comments or memos to a document may unintentionally alter its original content.</p>
+</div>
+</section>
+</section>
 <section id="security-settings">
 <span id="id3"></span><h2>Security settings<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
 <p>You can secure your account via <strong>Login settings</strong> and <strong>IP access settings</strong>. With <strong>Login settings</strong>, you can enable 2-step verification, disable multiple logins, and lock inactive accounts. With <strong>IP access settings</strong>, you can set permissions to allow login from specific IP addresses only.</p>
@@ -1304,6 +1509,19 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><a class="reference internal" href="#manage-groups">Manage Groups</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#contacts">Contacts</a><ul>
+<li><a class="reference internal" href="#my-contacts">My contacts</a><ul>
+<li><a class="reference internal" href="#how-to-add-contacts-in-bulk">How to add contacts in bulk</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#shared-contacts">Shared contacts</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#managing-shared-contacts">Managing shared contacts</a><ul>
+<li><a class="reference internal" href="#adding-shared-contacts">Adding shared contacts</a></li>
+<li><a class="reference internal" href="#how-to-bulk-add-shared-contacts">How to bulk add shared contacts</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#my-signature">My Signature</a><ul>
 <li><a class="reference internal" href="#adding-your-signature-and-initial"><strong>Adding Your Signature and Initial</strong></a></li>
 <li><a class="reference internal" href="#adding-your-stamp"><strong>Adding your stamp</strong></a><ul>
@@ -1320,6 +1538,12 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><a class="reference internal" href="#manage-company-stamp">Manage company stamp</a><ul>
 <li><a class="reference internal" href="#company-stamp-tab"><strong>Company stamp tab</strong></a></li>
 <li><a class="reference internal" href="#stamp-history-tab"><strong>Stamp history tab</strong></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#additional-features-settings">Additional features settings</a><ul>
+<li><a class="reference internal" href="#paid-options">Paid options</a></li>
+<li><a class="reference internal" href="#signature-types">Signature types</a></li>
+<li><a class="reference internal" href="#comments-and-memos">Comments and memos</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#security-settings">Security settings</a><ul>

@@ -65,6 +65,14 @@ The description of each menu is as follows:
 
       -  **Manage permissions:** Allows the company administrator to assign members as company managers, template managers, and document managers, as well as manage their permissions.
 
+      -  **Additional features settings:** Allows administrators to easily manage and control various additional features for the entire company.
+
+         -  **Paid options:** Control the use of paid options such SMS verification and timestamps.
+
+         -  **Signature types:** Disable/enable Signing with text and Create stamp features.
+
+         -  **Comments and memos:** Control whether members can use the comments and memos features when filling in documents.
+
       -  **Manage company stamp** You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.
 
       -  **Signature settings:** Select the signature types that can be used when signing directly on documents.
@@ -199,6 +207,16 @@ My Profile
 
 **Delete my eformsign account**
    You can delete your eformsign account by clicking the **Delete the eformsign account** button.
+
+
+.. note::
+
+   Key personal information such as name and email are masked in the My profile menu. To view or edit, you must complete login verification by clicking the ***View and edit hidden informtio n** button. Members can only view information while the administrator and company managers can both view and edit information.
+
+   .. figure:: resources/myinfor-personalinfo-masking.png
+      :alt: My profile > Personal
+      :width: 500px
+
 
 **My profile > Company**
 
@@ -747,6 +765,183 @@ You can create groups in the company and view, edit, or delete each group's info
 **⑤ Delete a group**
    When you click the **Trash** icon, a checkbox will be activated next to each group in the group list. Tick the groups you want to delete and click the **Delete** button.
 
+
+
+
+
+
+
+
+
+.. _mycontacts:
+
+----------------
+Contacts
+----------------
+
+The **Contacts** menu allows you to add and manage non-member contacts, as well as view company contacts added by the administrator.
+Contacts can be easily selected from the contact list when sending documents.
+
+- **My contacts:** Non-member contacts added in **My contacts** or in the **Send document** pop-up.
+
+- **Shared contacts:** Contacts shared with all members due to the admin or company managers adding them.
+
+
+My contacts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Allows you to add and manage non-member contacts that you use frequently.
+
+.. figure:: resources/mycontacts.png
+   :alt: My contacts
+   :width: 700px
+
+**① Search and sort contacts**
+
+- Keyword search: You can search the contact list by entering keywords such as name or email.
+- Sort: Click the sort icon on the top right corner to sort the contact list in ascending or descending order by name, email, and more.
+
+**② Select and add contacts**
+
+- Select all: Select all the contacts shown in the list.
+- Delete: Delete all selected contacts.
+- Download: Download all selected contact info as an Excel file.
+- Add contact: Add new contact.
+- Bulk add contacts: Add new contacts in bulk. You can add up to 1,000 contacts at once.
+
+**③ Contact list**
+   Shows all added list of contacts. You can click the see more (⋯) menu on the right to **Update** or **Delete**. 
+
+.. tip::
+
+   When you enter information for a non-member recipient that is not added in your contacts in the **Send document** popup, the contact will be automatically added to **My contacts**.
+
+
+
+How to add contacts in bulk
+-----------------------------
+
+You can add up to 1,000 contacts in bulk using an Excel file.
+
+1. Click the **Bulk add contacts** button.
+
+2. Click  the **Download Excel file** to download the file.
+
+.. figure:: resources/add-bulk-contacts.png
+   :alt: Bulk add contacts
+   :width: 400px
+
+3. Open the downloaded Excel file, enter the contact information in the specified format, and save it.
+
+4. Click the **Upload file** button to upload the file.
+
+5. Click the **Register** button to bulk add contacts.
+
+
+.. note::
+
+   **Instructions for filling out out the bulk add contacts Excel file**
+
+   - You must enter both the name and contact information (email or mobile number).
+
+   - If the contact information entered in the Excel file matches an existing contact under the following conditions, the existing contact will be updated with the latest information:
+   
+      - Same name and email
+      - Same name and mobile number
+      - Same name, email, and mobile number
+
+   - Duplicate contacts will not be added. Instead, the existing information will be updated.
+
+
+
+Shared contacts
+~~~~~~~~~~~~~~~~~
+
+You can view and download as an Excel file the external recipient contacts shared across the entire company by the administrator.
+
+.. note::
+
+   Only the **administrator** or **company managers** can add or edit shared contacts in **Manage company > Manage shared contacts**.
+
+
+.. figure:: resources/shared-contacts.png
+   :alt: Shared contacts
+   :width: 700px
+
+
+.. _managesharedcontacts:
+
+-------------------------
+Managing shared contacts
+-------------------------
+
+You can add and manage shared contacts that can be accessed by all company members.
+Added contacts are automatically shared with all members and displayed under **Contacts** > **Shared contacts**.
+
+.. figure:: resources/company-shared-contacts.png
+   :alt: Shared contacts
+   :width: 700px
+
+
+
+
+Adding shared contacts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+1. Click the **Add contacts** button.
+2. Enter the contact information and then click the **Register** button.
+
+.. figure:: resources/add-contacts.png
+   :alt:  Add contact pop-up
+   :width: 400px
+
+3. Added contacts can be viewed by all members under **Contacts > Shared contacts**.
+
+
+
+How to bulk add shared contacts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can register up to 1,000 contacts at once using an Excel file.
+
+1. Click **Bulk add contacts**.
+
+2. Click the **Download Excel file** button to download the file.
+
+.. figure:: resources/add-bulk-contacts.png
+   :alt: Bulk add contactss
+   :width: 400px
+
+3. Open the downloaded Excel file, enter the contact information according to the template format, and save it.
+
+4. Click the **Upload File** button to upload the completed file.
+
+5. Click the **Register** button to bulk add contacts.
+
+
+.. note::
+
+   **Instructions for filling out the bulk add contacts Excel File**
+
+   - You must enter both the name and contact information (email or mobile number).
+
+   - If the contact information entered in the Excel file matches an existing contact under the following conditions, the existing contact will be updated with the latest information:
+
+      - Same name and email
+      - Same name and mobile number
+      - Same name, email, and mobile number
+
+   - Duplicate contacts will not be added. Instead, existing information will be updated instead.
+
+
+
+
+
+
+
+
+
 .. _mysignature:
 
 ---------------
@@ -1120,6 +1315,115 @@ In this tab, you can view the history of all the stamps used. You can view infor
 .. figure:: resources/company-stamp-history.png
    :alt: Stamp history tab
    :width: 700px
+
+
+
+
+
+--------------------------------
+Additional features settings
+--------------------------------
+
+**Additional features settings** allows administrators to easily manage and control various additional features for the entire company.
+
+.. note::
+
+   Only the administrator and company managers can access this menu. Changes take effect immediately across the entire company.
+
+
+Additional features that can be managed in the menu include:
+
+- Paid options
+- Signature types
+- Comments and memos
+
+.. figure:: resources/additional-features-settings.png
+   :alt: Additional features settings
+   :width: 700px
+
+
+Paid options
+~~~~~~~~~~~~~~~~~~~~~~
+
+ Allows you to control the use of paid options such SMS verification and timestamps.
+  
+
+.. figure:: resources/paid-options-settings.png
+   :alt: Paid options
+   :width: 700px
+
+
+.. caution::
+
+   If a paid option is disabled, it will no longer be available for use from that point on, even if it was previously set in existing templates. This also applies to both documents already in progress and newly created ones.
+
+
+
+Signature types
+~~~~~~~~~~~~~~~~~~~~~~
+
+Allows you to disable/enable **Signing with text** and **Create stamp** features.
+
+- **Disable signing with Text** Disables the feature that automatically generates a signature by typing in text and selecting a style.
+
+- **Disable Create stamp:** Disables the feature that automatically generates a stamp by selecting a stamp style. This also applies to company stamps.
+
+.. figure:: resources/signature-types-settings.png
+   :alt: Signature types
+   :width: 700px
+
+
+Comments and memos
+~~~~~~~~~~~~~~~~~~~~~~
+
+Control whether members can use the comments and memos features when filling in documents.
+
+- **Enable comments:** Enable users to add comments on the document using the pen or highlight pen tool.  
+
+- **Enable memos:** Enable users to insert text or images on the document using the memo tool.
+
+
+.. figure:: resources/comments-memos-settings.png
+   :alt: Comments and memos
+   :width: 700px
+
+.. caution::
+
+   Content added using comments or memos is not recorded in the document's field type change history. Be aware that adding comments or memos to a document may unintentionally alter its original content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

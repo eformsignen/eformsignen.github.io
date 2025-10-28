@@ -117,23 +117,29 @@ Web Form Designer consists of a screen that displays the file, the left and righ
       step. You can set the workflow, permission, etc. Make sure to
       configure the settings before you finish creating a document.
 
-2. **Document display screen:** Displays the uploaded file.
+
+2. **Signers:** Select the signers of the document and then drag and drop the fields to be filled in by each signer. You can add new signers by clicking the **Add new signer**. There can be up to 30 signers for each document.
 
 
-3. **Signers:** Select the signers of the document and then drag and drop the fields to be filled in by each signer. You can add new signers by clicking the **Add new signer**. There can be up to 30 signers for each document.
-
-
-4. **Field list:** There are 14 basic fields including text,
+3. **Field list:** There are 14 basic fields including text,
    multiline, signature, check, and radio. There are also two data
    fields which are document ID and document number. More fields
    including custom and shape fields are planned to be added in the
    future.
 
-5. **Properties:** Allows to set the properties of each field after
+
+4. **Document display screen:** Displays the uploaded file.
+
+
+5. **Bottom bar:** Displays the file name, and contains the **Add file** button for adding files, and the see more button (⋮) that shows the **Change name**, **Replace file**, **Delete file**, and **Move forward** options.
+
+
+6. **Added fields:** Displays all added input fields such as text, checkbox, and signature. Clicking an item takes you directly to its location in the document. You can also change the field type, but, copy, or delete ifields directly from the list.
+
+
+7. **Properties:** Allows to set the properties of each field after
    adding fields such as Signature, Text, and Check by clicking and
    locating them to the document display screen.
-
-6. **Bottom bar:** Displays the file name, and contains the **Add file** button for adding files, and the see more button (⋮) that shows the **Change name**, **Replace file**, **Delete file**, and **Move forward** options.
 
 .. _fields:
 
