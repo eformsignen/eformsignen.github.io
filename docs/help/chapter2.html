@@ -309,7 +309,14 @@
 <li><p><strong>Manage documents:</strong> Only document managers can access this menu. Document managers can view, download, permanently remove, and void (excluding completed documents) all documents created from a template that they have permission to access. The company administrator by default has permission to do all this for all documents in the company.</p></li>
 <li><p><strong>Manage bulk sent documents:</strong> Only document managers can access this menu and can view documents bulk created from templates in which you are given permission. However, the company administrator can view and manage all documents.</p></li>
 <li><p><strong>My signature:</strong> You can create and add your signature to be used when signing a document.</p></li>
-<li><p><strong>Contacts:</strong> You can add non-member contacts to the contact list and manage them.</p></li>
+<li><p><strong>Contacts:</strong> You can add non-member contacts to the contact list and manage them.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>My contacts:</strong> You can add and view the contact information of non-members.</p></li>
+<li><p><strong>Shared contacts:</strong> You can add the contacts you want to share with other members in the Manage shared contacts page.</p></li>
+</ul>
+</div></blockquote>
+</li>
 <li><p><strong>Manage templates:</strong> Only template managers can access this menu. You can view the template list and configure the template settings.</p></li>
 <li><p><strong>Manage company:</strong> Only company managers can access this menu. You can view and edit company information.</p>
 <blockquote>
@@ -326,7 +333,7 @@
 </ul>
 </li>
 <li><p><strong>Manage company stamp</strong> You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.</p></li>
-<li><p><strong>Signature settings:</strong> Select the signature types that can be used when signing directly on documents.</p></li>
+<li><p><strong>Manage watermarks:</strong> You can add and manage watermarks.</p></li>
 <li><p><strong>Notification template management:</strong> You can view and edit email and SMS notification templates.</p></li>
 <li><p><strong>Manage custom fields:</strong> You can add and configure custom fields such as company, group, and member information.</p></li>
 <li><p><strong>Security settings:</strong> You can set security settings including <strong>Login settings</strong> and <strong>IP access settings</strong>. <strong>Login settings</strong> allows you to enable 2-step verification, disable multiple logins, and lock inactive accounts for fortied security. <strong>IP access settings</strong> allows you to set allowed IPs by admin, manager, and member permissions so that only certain IP addresses can log in to eformsign.</p></li>
@@ -1338,6 +1345,85 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </div>
 </section>
 </section>
+<section id="managing-watermarks">
+<span id="watermark-settings"></span><h2>Managing watermarks<a class="headerlink" href="#managing-watermarks" title="Link to this heading"></a></h2>
+<p>You can add and manage watermarks to be applied to documents.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Only the <strong>Company administrator</strong> or <strong>Company managers</strong> can access the <strong>Manage watermarks</strong> menu.</p></li>
+<li><p>Once a watermark is added and enabled, it is automatically applied to all documents according to the configured scope and timing.</p></li>
+</ul>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/manage-watermarks.png"><img alt="Manage watermarks" src="../_images/manage-watermarks.png" style="width: 700px;" /></a>
+</figure>
+<section id="adding-watermarks">
+<h3>Adding watermarks<a class="headerlink" href="#adding-watermarks" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Add watermark</strong> button.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/register-watermark.png"><img alt="Add watermark" src="../_images/register-watermark.png" style="width: 600px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Enter the watermark name and the text to be displayed.</p>
+<ul class="simple">
+<li><p>Watermark name: The name shown in the list.</p></li>
+<li><p>Watermark text: The text displayed on the document as a watermark.</p></li>
+</ul>
+</li>
+<li><p>Set text properties such as font, size, color, rotation, and opacity.</p></li>
+<li><p>Set when and where to apply watermarks to documents.</p>
+<ul class="simple">
+<li><p>Apply to: <strong>Body, Attachment, Body + attachment</strong>, <strong>All pages</strong>, <strong>First page</strong></p></li>
+<li><p>When to apply watermark document: <strong>Screen</strong>, <strong>Save</strong>, <strong>Print</strong> for each In progress/Completed/Voided status.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/register-watermark2.png"><img alt="Add watermark" src="../_images/register-watermark2.png" style="width: 400px;" /></a>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>View the preview on the right and click the <strong>Add</strong> button.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Newly added watermarks are saved in the disabled status by default. Once you enable the status, the watermark will be applied to all documents.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>💡 <strong>How to use watermark reserved words</strong></p>
+<p>You can use reserved words to automatically display different information for each document, enhancing document traceability and security.</p>
+<p><strong>Example</strong></p>
+<ul class="simple">
+<li><p>View date/time and viewer information - $$Datetime$$$$Current_user_name (ID)$$</p></li>
+<li><p>Access tracking - $IP$</p></li>
+<li><p>Document identification - $$Document_name$$ ($$Document_name$$/$$Document_ID$$)</p></li>
+<li><p>Confidential document - CONFIDENTIAL_$$Current_user_name$$_$$Date$$</p></li>
+</ul>
+</div>
+</section>
+<section id="change-layer-order">
+<h3>Change layer order<a class="headerlink" href="#change-layer-order" title="Link to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 <strong>What is a layer order?</strong></p>
+<p>If watermarks overlap, their order determines which one appears on top.</p>
+</div>
+<p>Click the <strong>Change layer order</strong> button at the top right part of the screen. Then click the <strong>Change layer order</strong> button at the top right part of the screen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/watermark-layer.png"><img alt="Change layer order" src="../_images/watermark-layer.png" style="width: 400px;" /></a>
+</figure>
+</section>
+<section id="preview-watermark">
+<h3>Preview watermark<a class="headerlink" href="#preview-watermark" title="Link to this heading"></a></h3>
+<p>Allows you to preview how watermarks will appear when applied for each document status.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/preview-watermark.png"><img alt="Preview watermark" src="../_images/preview-watermark.png" style="width: 400px;" /></a>
+</figure>
+</section>
+</section>
 <section id="security-settings">
 <span id="id3"></span><h2>Security settings<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
 <p>You can secure your account via <strong>Login settings</strong> and <strong>IP access settings</strong>. With <strong>Login settings</strong>, you can enable 2-step verification, disable multiple logins, and lock inactive accounts. With <strong>IP access settings</strong>, you can set permissions to allow login from specific IP addresses only.</p>
@@ -1382,6 +1468,21 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p><strong>Set inactive period</strong> allows you to set the period of inactivity after which accounts will be automatically locked. The inactive period can be set between 7 and 365 days.</p></li>
 <li><p>Members with locked accounts can use eformsign after requesting the company administrator to unlock their accounts. The company administrator can unlock accounts on the <strong>Manage members</strong> page.</p></li>
 </ul>
+<section id="allow-access-to-document-links-without-login">
+<h4>Allow access to document links without login<a class="headerlink" href="#allow-access-to-document-links-without-login" title="Link to this heading"></a></h4>
+<p>Allow members to access documents via links in email or SMS notifications without logging in.</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/no-login.png"><img alt="Allow access to document links without login" src="../_images/no-login.png" style="width: 500px;" /></a>
+</figure>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>This applies only to members who are logged out, and some features (such as my signature, company stamp, and contacts) will be restricted.</p></li>
+</ul>
+</div>
+</section>
 </section>
 <section id="ip-access-settings">
 <h3><strong>IP access settings</strong><a class="headerlink" href="#ip-access-settings" title="Link to this heading"></a></h3>
@@ -1546,8 +1647,17 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><a class="reference internal" href="#comments-and-memos">Comments and memos</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#managing-watermarks">Managing watermarks</a><ul>
+<li><a class="reference internal" href="#adding-watermarks">Adding watermarks</a></li>
+<li><a class="reference internal" href="#change-layer-order">Change layer order</a></li>
+<li><a class="reference internal" href="#preview-watermark">Preview watermark</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#security-settings">Security settings</a><ul>
-<li><a class="reference internal" href="#login-settings"><strong>Login settings</strong></a></li>
+<li><a class="reference internal" href="#login-settings"><strong>Login settings</strong></a><ul>
+<li><a class="reference internal" href="#allow-access-to-document-links-without-login">Allow access to document links without login</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#ip-access-settings"><strong>IP access settings</strong></a></li>
 </ul>
 </li>

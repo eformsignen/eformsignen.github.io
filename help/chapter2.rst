@@ -53,6 +53,10 @@ The description of each menu is as follows:
 
 -  **Contacts:** You can add non-member contacts to the contact list and manage them.
 
+      -  **My contacts:** You can add and view the contact information of non-members.
+
+      -  **Shared contacts:** You can add the contacts you want to share with other members in the Manage shared contacts page.
+
 -  **Manage templates:** Only template managers can access this menu. You can view the template list and configure the template settings.
 
 -  **Manage company:** Only company managers can access this menu. You can view and edit company information.
@@ -75,7 +79,7 @@ The description of each menu is as follows:
 
       -  **Manage company stamp** You can grant stamp use permissions and view stamp use history, as well as adding and managing company stamps.
 
-      -  **Signature settings:** Select the signature types that can be used when signing directly on documents.
+      -  **Manage watermarks:** You can add and manage watermarks.
 
       -  **Notification template management:** You can view and edit email and SMS notification templates.
 
@@ -1394,33 +1398,102 @@ Control whether members can use the comments and memos features when filling in 
 
 
 
+.. _watermark_settings:
+
+---------------------
+Managing watermarks
+---------------------
+
+You can add and manage watermarks to be applied to documents.
+
+.. note::
+
+   - Only the **Company administrator** or **Company managers** can access the **Manage watermarks** menu.
+   - Once a watermark is added and enabled, it is automatically applied to all documents according to the configured scope and timing.
 
 
+.. figure:: resources/manage-watermarks.png
+   :alt: Manage watermarks
+   :width: 700px
+
+   
+
+Adding watermarks
+~~~~~~~~~~~~~~~~~~~~~~
 
 
+1. Click the **Add watermark** button.
+
+.. figure:: resources/register-watermark.png
+   :alt: Add watermark
+   :width: 600px
 
 
+2. Enter the watermark name and the text to be displayed.
+
+   - Watermark name: The name shown in the list.
+   - Watermark text: The text displayed on the document as a watermark.
+
+3. Set text properties such as font, size, color, rotation, and opacity.
+
+4. Set when and where to apply watermarks to documents.
+
+   - Apply to: **Body, Attachment, Body + attachment**, **All pages**, **First page**
+   - When to apply watermark document: **Screen**, **Save**, **Print** for each In progress/Completed/Voided status.
+
+.. figure:: resources/register-watermark2.png
+   :alt: Add watermark
+   :width: 400px
+
+5. View the preview on the right and click the **Add** button. 
+
+.. note::
+
+   Newly added watermarks are saved in the disabled status by default. Once you enable the status, the watermark will be applied to all documents.
 
 
+.. tip::
+
+   💡 **How to use watermark reserved words**
+
+   You can use reserved words to automatically display different information for each document, enhancing document traceability and security.
+
+   **Example**
+
+   - View date/time and viewer information - $$Datetime$$$$Current_user_name (ID)$$
+
+   - Access tracking - $IP$
+
+   - Document identification - $$Document_name$$ ($$Document_name$$/$$Document_ID$$)
+
+   - Confidential document - CONFIDENTIAL_$$Current_user_name$$_$$Date$$
 
 
+Change layer order
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+ 
+   💡 **What is a layer order?** 
+
+   If watermarks overlap, their order determines which one appears on top.
 
 
+Click the **Change layer order** button at the top right part of the screen. Then click the **Change layer order** button at the top right part of the screen.
+
+.. figure:: resources/watermark-layer.png
+   :alt: Change layer order
+   :width: 400px
 
 
+Preview watermark
+~~~~~~~~~~~~~~~~~~~~~~
+ 
+Allows you to preview how watermarks will appear when applied for each document status.
 
-
-
-
-
-
-
-
-
-
-
-
-
+.. figure:: resources/preview-watermark.png
+   :alt: Preview watermark
+   :width: 400px
 
 
 
@@ -1493,6 +1566,21 @@ You can secure your account via **Login settings** and **IP access settings**. W
 
 - Members with locked accounts can use eformsign after requesting the company administrator to unlock their accounts. The company administrator can unlock accounts on the **Manage members** page.
 
+
+
+
+Allow access to document links without login
+--------------------------------------------------
+
+Allow members to access documents via links in email or SMS notifications without logging in. 
+
+   .. figure:: resources/no-login.png
+      :alt: Allow access to document links without login
+      :width: 500px
+
+.. note::
+   
+   - This applies only to members who are logged out, and some features (such as my signature, company stamp, and contacts) will be restricted.
 
 
 
