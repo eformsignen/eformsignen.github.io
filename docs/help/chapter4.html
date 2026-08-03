@@ -5,14 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction to Web Form Designer &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <title>Introduction to Web Form Designer &#8212; eformsign User Guide 2026.08.03 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom_override.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/documentation_options.js?v=0d29811c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
@@ -25,123 +26,6 @@
 
 <div id="top_nav">
     
-        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
-    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">Go to eformsign</a></p>
-    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
-</div>
-
-<script>
-(function() {
-    const topNav = document.querySelector('#top_nav')
-    const notificationContent = document.querySelector('#notification_banner p#content').innerText
-    const localStorageKey = 'readNotification'
-    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
-    const cssVariableName = '--navbarHeight'
-    const rootElement = document.documentElement
-
-    /*************************************************************************/
-    // Local storage for remembering if the user has read the notification.
-
-    function checkAlreadyRead() {
-        return localStorage.getItem(localStorageKey) == notificationContent
-    }
-
-    function setRead() {
-        localStorage.setItem(localStorageKey, notificationContent)
-    }
-
-    function clearRead() {
-        localStorage.removeItem(localStorageKey)
-    }
-
-    const alreadyRead = checkAlreadyRead()
-    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
-
-    /*************************************************************************/
-    // Updating a CSS variable so other elements adjust to the nav bar height.
-
-    function updateNavbarHeight() {
-        // Only update it if the delta is significant. Otherwise it causes
-        // unnecessary browser repaints.
-        const documentStyles = getComputedStyle(rootElement)
-        // We store the value in REM, so need to convert to pixels
-        const currentValue = parseFloat(
-            documentStyles.getPropertyValue(cssVariableName)
-        ) * parseFloat(documentStyles.fontSize)
-
-        const newValue = topNav.clientHeight
-
-        if (newValue - 5 > currentValue) {
-            console.log(`Updating ${cssVariableName} - overlapping`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        } else if (currentValue - newValue >= 30) {
-            console.log(`Updating ${cssVariableName} - gap too large`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        }
-    }
-
-    /*************************************************************************/
-    // After loading the page, and resizing the window, recalculate the nav bar
-    // height.
-
-    if (!permanentlyHidden) {
-        // This height is approximately correct when there's a banner, so
-        // shouldn't require any page reflow:
-        rootElement.style.setProperty(
-            '--navbarHeight', "5.5rem"
-        );
-
-        document.addEventListener("DOMContentLoaded", function() {
-            updateNavbarHeight()
-        });
-
-        var interval = undefined
-
-        window.addEventListener('resize', () => {
-            if (interval) {
-                clearTimeout(interval)
-            }
-            interval = setTimeout(() => {
-                console.log("Finished resizing")
-                updateNavbarHeight()
-            }, 100)
-        })
-    }
-
-    /*************************************************************************/
-
-    PetiteVue.createApp({
-        visible: !alreadyRead,
-        permanentlyHidden: permanentlyHidden,
-        bannerHiding: bannerHiding,
-        $delimiters: ['[[', ']]'],
-        toggleVisible() {
-            this.visible = !this.visible
-
-            if (this.visible) {
-                clearRead()
-            } else {
-                setRead()
-            }
-
-            if (!this.visible && bannerHiding == 'permanent') {
-                this.permanentlyHidden = true
-            }
-
-            // Run this after Vue has had time to update the DOM:
-            setTimeout(
-                updateNavbarHeight,
-                0
-            )
-        }
-    }).mount('#notification_banner')
-})()
-</script>
-    
 
     <nav>
         
@@ -151,7 +35,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">eformsign user guide</a></h1>
+        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/eformsign_guide_logo1.png"/></a></h1>
             <a id="source_link" href="https://www.eformsign.com/">
     
         <svg width="100%" height="100%" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -231,7 +115,7 @@
 
         <div class="searchbox_wrapper">
             
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
@@ -239,14 +123,14 @@
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
     </nav>
 </div>
 
     
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
@@ -292,19 +176,22 @@ add-in. Refer to <a class="reference external" href="chapter6.html#_formbuilder"
 <ol class="arabic">
 <li><p>Click the <strong>New from my file</strong> menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-new-from-my-file-dashboard.png"><img alt="New from my file in the dashboard" src="../_images/en-new-from-my-file-dashboard.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-new-from-my-file-dashboard.png"><img alt="New from my file in the dashboard" src="../_images/en-new-from-my-file-dashboard.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Drag and drop the file onto the screen or click the <strong>Select a file</strong>
 button and select a file from your computer to upload.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-new-from-my-file-upload.png"><img alt="New from my file upload" src="../_images/en-new-from-my-file-upload.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-new-from-my-file-upload.png"><img alt="New from my file upload" src="../_images/en-new-from-my-file-upload.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Once the file is uploaded, the Web Form Designer screen will be
 displayed. You can add fields to the document here.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-web-form-designer-signers-popup.png"><img alt="New from my file in the dashboard" src="../_images/en-web-form-designer-signers-popup.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-web-form-designer-signers-popup.png"><img alt="New from my file in the dashboard" src="../_images/en-web-form-designer-signers-popup.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -325,18 +212,21 @@ displayed. You can add fields to the document here.</p>
 <ol class="arabic">
 <li><p>Go to the <strong>Manage templates</strong> menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/web-form_1.png"><img alt="Web Form Designer Screen" src="../_images/web-form_1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/web-form_1.png"><img alt="Web Form Designer Screen" src="../_images/web-form_1.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>To upload a file, simply drag the file onto the <strong>Manage templates</strong> page or click the <strong>Select a file</strong> button and then upload the file.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/web-form_2.png"><img alt="Web Form Designer Screen" src="../_images/web-form_2.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/web-form_2.png"><img alt="Web Form Designer Screen" src="../_images/web-form_2.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>When a file is uploaded, the <strong>Create template</strong> page will be displayed as follows:</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_web-form_3.png"><img alt="Web Form Designer Screen" src="../_images/en_web-form_3.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_web-form_3.png"><img alt="Web Form Designer Screen" src="../_images/en_web-form_3.png" style="width: 700px;" />
+</a>
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -351,7 +241,8 @@ displayed. You can add fields to the document here.</p>
 <span id="webformdesigner-menus"></span><h2>Web Form Designer Menu Layout<a class="headerlink" href="#web-form-designer-menu-layout" title="Link to this heading"></a></h2>
 <p>Web Form Designer consists of a screen that displays the file, the left and right panels, and the top bar.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-web-form_new1.png"><img alt="Web Form Designer Menu Layout - Create from my file" src="../_images/en-web-form_new1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-web-form_new1.png"><img alt="Web Form Designer Menu Layout - Create from my file" src="../_images/en-web-form_new1.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic">
 <li><p><strong>Top bar:</strong> In <strong>New from template</strong>, there are two steps: <strong>Design form</strong> and <strong>Configure</strong>. You can also go back to the Manage templates page and preview the template with fields added. In <strong>New from my file</strong>, there are three steps: <strong>Design form</strong>, <strong>Add recipients</strong>, and <strong>Options</strong>. After designing a form, you can create a document or save the form as a draft.</p>
@@ -383,7 +274,8 @@ that users can enter information. Many different fields including
 Signature, Check, Date, and Text are provided, and each fields can be
 configured in detail by using the <strong>Properties</strong> tab.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_component_web_1.png"><img alt="Adding a field in Web Form Designer" src="../_images/en_component_web_1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_component_web_1.png"><img alt="Adding a field in Web Form Designer" src="../_images/en_component_web_1.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="field-types">
 <h3>Field Types<a class="headerlink" href="#field-types" title="Link to this heading"></a></h3>
@@ -448,7 +340,8 @@ speech bubble when hovering the mouse over the field. In mobile, the text is dis
 <p><a class="reference internal" href="../_images/signature.png"><img alt="image4" src="../_images/signature.png" style="width: 450px;" /></a></p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Signature-component-properties_web.png"><img alt="Setting Signature Field Properties" src="../_images/Signature-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/Signature-component-properties_web.png"><img alt="Setting Signature Field Properties" src="../_images/Signature-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the signature field. For example, the ID of the field can be ‘signerSignature’ for contract signers.</p>
@@ -463,7 +356,8 @@ speech bubble when hovering the mouse over the field. In mobile, the text is dis
 <p class="admonition-title">Note</p>
 <p>In some cases, you may need to use a stamp on a document rather than your own signature. With eformsign, you can also use a stamp image to stamp the signature on a document. To use a stamp image when submitting a document, click the <strong>Stamp</strong> button after clicking on a signature area, and then select a stamp image and click <strong>OK</strong>.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/select-signature-type.png"><img alt="Select signature type" src="../_images/select-signature-type.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/select-signature-type.png"><img alt="Select signature type" src="../_images/select-signature-type.png" style="width: 300px;" />
+</a>
 </figure>
 </div>
 <p><strong>③ Signing method</strong></p>
@@ -481,18 +375,21 @@ speech bubble when hovering the mouse over the field. In mobile, the text is dis
 <p><strong>Automatically entering signer and signature date</strong></p>
 <p>Click the signature field and then click the icons shown to add the signature date and signer.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Signature-component-properties_web_icon.png"><img alt="Signature date and signer" src="../_images/Signature-component-properties_web_icon.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../_images/Signature-component-properties_web_icon.png"><img alt="Signature date and signer" src="../_images/Signature-component-properties_web_icon.png" style="width: 200px;" />
+</a>
 </figure>
 <p><strong>① Signature date:</strong> Automatically enters the date signed. By clicking the Add date signed icon, you can set the date format in the
 date signed field properties on the right.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_Signature-component-properties_web_date.png"><img alt="Date signed" src="../_images/en_Signature-component-properties_web_date.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_Signature-component-properties_web_date.png"><img alt="Date signed" src="../_images/en_Signature-component-properties_web_date.png" style="width: 700px;" />
+</a>
 </figure>
 <p><strong>② Add signer:</strong> Automatically enters the signer information. By
 clicking the Add signer icon, you can specify the signer information
 by ID, name, department, title/position, mobile, or phone.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Signature-component-properties_web_signer.png"><img alt="Add signer" src="../_images/Signature-component-properties_web_signer.png" style="width: 100px;" /></a>
+<a class="reference internal image-reference" href="../_images/Signature-component-properties_web_signer.png"><img alt="Add signer" src="../_images/Signature-component-properties_web_signer.png" style="width: 100px;" />
+</a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -509,15 +406,14 @@ detailed information of a signer.</p>
 If you add a company stamp field, documents that require a company stamp will show a company stamp pop-up as shown below and you’ll be able to select and apply company stamps that you have permission to access.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/companystamp-component-properties_web.png"><img alt="Setting Text and Multiline Field Properties" src="../_images/companystamp-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/companystamp-component-properties_web.png"><img alt="Setting Text and Multiline Field Properties" src="../_images/companystamp-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the Company stamp field. For example, the ID of the field for applying a company stamp can be named ‘companystamp’.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Sets whether the recipient is required or allowed to fill in this field.</p>
-<p><strong>③ Placeholder</strong></p>
+<p><strong>② Placeholder</strong></p>
 <p>Sets the help message displayed.</p>
-<p><strong>④ Tooltip Text</strong></p>
+<p><strong>③ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="text-and-multiline">
@@ -526,7 +422,8 @@ If you add a company stamp field, documents that require a company stamp will sh
 text with 1 to 2 words, and the Multiline field is suitable for long text with more than 1 line.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/wfd-text-component-properties.png"><img alt="Setting Text and Multiline Field Properties" src="../_images/wfd-text-component-properties.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/wfd-text-component-properties.png"><img alt="Setting Text and Multiline Field Properties" src="../_images/wfd-text-component-properties.png" style="width: 400px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Text/Multiline field. For example, the ID of the field in which John Doe, Jane Doe, etc. are entered can be named ‘personName’.</p>
@@ -534,28 +431,26 @@ text with 1 to 2 words, and the Multiline field is suitable for long text with m
 <p class="admonition-title">Note</p>
 <p>All fields must have an ID. An ID is automatically generated when you create a field, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a field for entering John Doe, Jane Doe, etc. as ‘name’. By doing so, it is easier to identify fields when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.</p>
 </div>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Default value</strong></p>
+<p><strong>② Default value</strong></p>
 <p>Sets the default text.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This option can be set only in the Text field. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.</p>
 </div>
-<p><strong>④ Input type</strong></p>
+<p><strong>③ Input type</strong></p>
 <p>Selects either ‘’Plain text’, ‘Password’, or ‘Custom’ for the Text field and ‘Plain text’ and ‘Custom’ for the Multiline field.</p>
-<p><strong>⑤ Select custom input type</strong></p>
+<p><strong>④ Select custom input type</strong></p>
 <p>Selects additional input types as well as create a custom input type by creating a rule. It is enabled when <strong>Input type</strong> is set to ‘Custom’.</p>
-<p><strong>⑥ Autofit text</strong></p>
+<p><strong>⑤ Autofit text</strong></p>
 <blockquote>
 <div><p>Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.</p>
 </div></blockquote>
-<p><strong>⑦ Keypad type on mobile devices</strong></p>
+<p><strong>⑥ Keypad type on mobile devices</strong></p>
 <p>Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as
 smartphones and tablets.</p>
-<p><strong>⑧ Placeholder</strong></p>
+<p><strong>⑦ Placeholder</strong></p>
 <p>Displays a help message when no value is entered.</p>
-<p><strong>⑨ Tooltip Text</strong></p>
+<p><strong>⑧ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="handwriting">
@@ -567,7 +462,8 @@ smartphones and tablets.</p>
 </figure>
 <p><strong>Field propertites</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/handwriting-component-properties_web.png"><img alt="Configuring handwriting field properties" src="../_images/handwriting-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/handwriting-component-properties_web.png"><img alt="Configuring handwriting field properties" src="../_images/handwriting-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the handwriting field.</p>
@@ -611,7 +507,8 @@ smartphones and tablets.</p>
 <p>This field is used for setting the form ID of a document.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/label_property_web.png"><img alt="Setting Label Field Properties" src="../_images/label_property_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/label_property_web.png"><img alt="Setting Label Field Properties" src="../_images/label_property_web.png" style="width: 250px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Setting Label Field Properties</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
@@ -639,15 +536,14 @@ the Check field is used for checking the status of an item (whether it is checke
 <p>In Word and PowerPoint, the Check field is shown in a rectangular shape. Make sure to enter data inside the rectangular shape.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/check-component-properties-1_web.png"><img alt="Setting Check Field Properties" src="../_images/check-component-properties-1_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/check-component-properties-1_web.png"><img alt="Setting Check Field Properties" src="../_images/check-component-properties-1_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Items</strong></p>
+<p><strong>② Items</strong></p>
 <p>You can enter the text to be displayed in the item. You can also add multiple check fields so that multiple items can be selected.</p>
-<p><strong>④ Checked Style</strong></p>
+<p><strong>③ Checked Style</strong></p>
 <p>You can specify the style of each field in <strong>Field Properties</strong>.
 The check box is set as the default style, and you can change it to another style (radio button or red circle).</p>
 <p>The below example shows how checks are displayed according to the selected style.</p>
@@ -658,11 +554,11 @@ The check box is set as the default style, and you can change it to another styl
 Once selected, the check style will be shown in the color and style you selected.</p>
 <p><a class="reference internal" href="../_images/check-component-properties-web-style.png"><img alt="image6" src="../_images/check-component-properties-web-style.png" style="width: 300px;" /></a></p>
 </div>
-<p><strong>⑤ Unchecked style</strong></p>
+<p><strong>④ Unchecked style</strong></p>
 <p>You can select the style of each field that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.</p>
-<p><strong>⑥ Check box alignment</strong></p>
+<p><strong>⑤ Check box alignment</strong></p>
 <p>You can choose whether to align the placeholder text to the right or left of the check box.</p>
-<p><strong>⑦ Tooltip text</strong></p>
+<p>** Tooltip text**</p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="radio">
@@ -671,16 +567,15 @@ Once selected, the check style will be shown in the color and style you selected
 format, the selected item will be displayed.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Radio-component-properties_web.png"><img alt="Setting Radio Field Properties" src="../_images/Radio-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/Radio-component-properties_web.png"><img alt="Setting Radio Field Properties" src="../_images/Radio-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>In <strong>Field Properties</strong>, make sure that all the selected radio buttons are assigned the same ID.</p>
 <p>For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. I</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Items</strong></p>
+<p><strong>② Items</strong></p>
 <p>Items with the same ID are shown in the item list of the field properties window and you can edit text easily.</p>
-<p><strong>④ Selected style</strong></p>
+<p><strong>③ Selected style</strong></p>
 <p>You can specify the style of each field in <strong>Field Properties</strong>.
 The black circle set as the default style, and you can change it to another style in the dropdown menu.</p>
 <div class="admonition tip">
@@ -688,11 +583,11 @@ The black circle set as the default style, and you can change it to another styl
 <p>You can select the color of each style by clicking the drop-down icon. Once selected, the circle will be in the color you selected.</p>
 <p><a class="reference internal" href="../_images/Radio-component-properties_web-style.png"><img alt="image7" src="../_images/Radio-component-properties_web-style.png" style="width: 300px;" /></a></p>
 </div>
-<p><strong>⑤ Unselected style</strong></p>
+<p><strong>④ Unselected style</strong></p>
 <p>You can select the style of each field that is not selected.</p>
-<p><strong>⑥ Radio button alignment</strong></p>
+<p><strong>⑤ Radio button alignment</strong></p>
 <p>Select whether to place the button to the left or right of the text.</p>
-<p><strong>⑦ Tooltip Text</strong></p>
+<p><strong>⑥ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="combo">
@@ -702,19 +597,18 @@ The black circle set as the default style, and you can change it to another styl
 <p><a class="reference internal" href="../_images/combo-1.png"><img alt="image8" src="../_images/combo-1.png" style="width: 450px;" /></a></p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/combo-component-properties_web.png"><img alt="Setting Combo Field Properties" src="../_images/combo-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/combo-component-properties_web.png"><img alt="Setting Combo Field Properties" src="../_images/combo-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the Combo field. For example, the ID of the field for selecting the favorite color can be ‘Favorite color’.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Item count</strong></p>
+<p><strong>② Item count</strong></p>
 <p>Enter the items you want. You can separate the items by pressing Enter.</p>
-<p><strong>④ Default item</strong></p>
+<p><strong>③ Default item</strong></p>
 <p>Select the item set as default.</p>
-<p><strong>⑤ Placeholder</strong></p>
+<p><strong>④ Placeholder</strong></p>
 <p>Text displayed as a help message before entering information.</p>
-<p><strong>⑥ Tooltip Text</strong></p>
+<p><strong>⑤ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -728,17 +622,16 @@ The black circle set as the default style, and you can change it to another styl
 <p><a class="reference internal" href="../_images/toggle.png"><img alt="image9" src="../_images/toggle.png" style="width: 450px;" /></a></p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/toggle-component-properties_web.png"><img alt="Toggle Field Properties" src="../_images/toggle-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/toggle-component-properties_web.png"><img alt="Toggle Field Properties" src="../_images/toggle-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Toggle field. For example, the ID of the field for the first inspection item can be named ‘APT inspection 1’.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Items</strong></p>
+<p><strong>② Items</strong></p>
 <p>Enters the list of items that will be toggled whenever the Toggle field is clicked. You can separate the items by pressing Enter.</p>
-<p><strong>④ Default item</strong></p>
+<p><strong>③ Default item</strong></p>
 <p>Select the item set as default.</p>
-<p><strong>⑤ Tooltip Text</strong></p>
+<p><strong>④ Tooltip Text</strong></p>
 <p>Displays the description in Tooltip Text when you hover the mouse over a field.</p>
 </section>
 <section id="datetime">
@@ -746,15 +639,14 @@ The black circle set as the default style, and you can change it to another styl
 <p>This field is used for entering a date. Clicking the field displays a date selection window where you can select the date you want.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/datetime-component-properties_02_web.png"><img alt="Setting Datetime Field Properties" src="../_images/datetime-component-properties_02_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/datetime-component-properties_02_web.png"><img alt="Setting Datetime Field Properties" src="../_images/datetime-component-properties_02_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Datetime field. For example, the ID of the field for selecting the vacation start date can be named ‘Vacation start date’.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Default value</strong></p>
+<p><strong>② Default value</strong></p>
 <p>Sets the date to be displayed as default. If you check <strong>Set today’s date as default date</strong>, then today’s date is automatically entered when a document is opened.</p>
-<p><strong>④ Format</strong></p>
+<p><strong>③ Format</strong></p>
 <p>Sets the format in which date will be displayed. The default setting is date_yyyy-MM-dd.</p>
 <ul class="simple">
 <li><p><strong>yyyy:</strong> Displays the year.</p></li>
@@ -762,11 +654,28 @@ The black circle set as the default style, and you can change it to another styl
 <li><p><strong>dd:</strong> Displays the day.</p></li>
 </ul>
 <p>For example, if you want to display the date in the format of ‘15-02-2020’, then enter <strong>dd-MM-yyyy</strong> in the Format field.</p>
-<p><strong>⑤ Minimum Date/Maximum Date</strong></p>
+<p><strong>④ Minimum Date/Maximum Date</strong></p>
 <p>Sets the range of dates that can be selected in the field by specifying the minimum and maximum dates.</p>
-<p><strong>⑥ Placeholder</strong></p>
+<p><strong>⑤ Excluded Days</strong></p>
+<p>Sets specific days of the week so that they cannot be selected when choosing a date. You can select up to 6 days of the week to exclude.</p>
+<p><strong>⑥ Excluded Dates</strong></p>
+<p>Sets specific dates so that they cannot be selected when choosing a date. Enter the dates to be excluded directly in the yyyy-MM-dd format, and separate multiple dates with a comma (,). There is no limit to the number of excluded dates you can enter, and any value that does not match the date format is automatically deleted.</p>
+<p>For example, to block weekends, the company’s founding anniversary (March 5), and the official holiday period (July 29 to August 1) in advance, configure the settings as follows:</p>
+<ul class="simple">
+<li><p>Excluded days: Select Sat and Sun</p></li>
+<li><p>Excluded dates: 2026-03-05, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01</p></li>
+</ul>
+<figure class="align-default">
+<img alt="Setting Datetime Field Properties Sample" src="../_images/exclude-datetime-sample-en.png" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The excluded days of the week and excluded dates features are supported only on PC and mobile web.
+They are also supported only in Web Form Designer, and will be applied to eformsign for Microsoft Office at a later date.</p>
+</div>
+<p><strong>⑦ Placeholder</strong></p>
 <p>Text displayed as a help message before entering information.</p>
-<p><strong>⑦ Tooltip Text</strong></p>
+<p><strong>⑧ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="numeric-stepper">
@@ -775,17 +684,16 @@ The black circle set as the default style, and you can change it to another styl
 Clicking the field displays two arrows on the right, and you can increase or decrease the number by clicking them. In PCs, you can directly enter the desired number into the field by using a keyboard. In smartphones and tablets, you can scroll through the list of numbers and select the one you want.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/number-component-properties_web.png"><img alt="Setting Numeric Field Properties" src="../_images/number-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/number-component-properties_web.png"><img alt="Setting Numeric Field Properties" src="../_images/number-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Numeric field. For example, the ID of the field for entering the number of people in a reservation can be named ‘peopleCount’.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Default value</strong></p>
+<p><strong>⑥ Default value</strong></p>
 <p>Enters the default number to be displayed.</p>
-<p><strong>④ Unit of Change</strong></p>
+<p><strong>③ Unit of Change</strong></p>
 <p>Enters the unit of number that will increase/decrease the number whenever the up/down arrow icon is clicked. For example, if the <strong>Unit of Change</strong> is set to 100, then when you click the up arrow icon (▲), the number is increased by 100 such as 200, 300, 400, and so on.</p>
-<p><strong>⑤ Minimum/Maximum Value</strong></p>
+<p><strong>④ Minimum/Maximum Value</strong></p>
 <p>Sets the range of numbers that can be entered into the field by
 specifying the minimum and maximum values. For example, for the date of
 birth, setting the Minimum Value to 1900, Maximum Value to the current
@@ -794,9 +702,9 @@ lower/higher than the Minimum/Maximum Value, then the Minimum/Maximum
 Value will be automatically entered. For example, if the Maximum Value
 is set to 100 and you enter 101, then the number will automatically
 change to 100.</p>
-<p><strong>⑥ Placeholder</strong></p>
+<p><strong>⑤ Placeholder</strong></p>
 <p>Text displayed as a help message before entering information.</p>
-<p><strong>⑦ Tooltip Text</strong></p>
+<p><strong>⑥ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="hyperlink">
@@ -804,7 +712,8 @@ change to 100.</p>
 <p>This field is used for inserting a hyperlink. If the hyperlink is linked to a web address, the page opens with a new tab or window.</p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/hyperlink-component-properties_web.png"><img alt="Setting Numeric Field Properties" src="../_images/hyperlink-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/hyperlink-component-properties_web.png"><img alt="Setting Numeric Field Properties" src="../_images/hyperlink-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① Text to display</strong></p>
 <p>Enters the text to be displayed for the hyperlink.</p>
@@ -822,14 +731,13 @@ change to 100.</p>
 <p><a class="reference internal" href="../_images/camera1.png"><img alt="image10" src="../_images/camera1.png" style="width: 400px;" /></a></p>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Camera-component-properties_web.png"><img alt="Setting Camera Field Properties" src="../_images/Camera-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/Camera-component-properties_web.png"><img alt="Setting Camera Field Properties" src="../_images/Camera-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Camera field. For example, the ID of the field that takes the photo of a driver’s license can be
 ‘driverLicense’.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Placeholder</strong></p>
+<p><strong>② Placeholder</strong></p>
 <p>Enters the text displayed before taking a photo.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -837,7 +745,7 @@ change to 100.</p>
 area.</p>
 <p><img alt="image11" src="../_images/Camera-component-properties_icon.png" /></p>
 </div>
-<p><strong>④ Tooltip Text</strong></p>
+<p><strong>③ Tooltip Text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="voice">
@@ -851,20 +759,19 @@ area.</p>
 </div>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/record_component_web.png"><img alt="Setting Voice Field Properties" src="../_images/record_component_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/record_component_web.png"><img alt="Setting Voice Field Properties" src="../_images/record_component_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the voice field. For example, the ID of the field that plays voice recordings can be named ‘Record1’.</p>
-<p><strong>② Who can fill this out</strong></p>
-<p>Selects who is allowed or required to fill out the field.</p>
-<p><strong>③ Placeholder</strong></p>
+<p><strong>② Placeholder</strong></p>
 <p>Enters the text shown before recording.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you check the Show icon check box, the mic icon will be displayed on the voice recording area.</p>
 <p><img alt="image13" src="../_images/record_component_web_icon.png" /></p>
 </div>
-<p><strong>④ Tooltip text</strong></p>
+<p><strong>③ Tooltip text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="attachment">
@@ -877,20 +784,19 @@ area.</p>
 </ul>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Attachment-component-properties_web.png"><img alt="Setting Attachment Field Properties" src="../_images/Attachment-component-properties_web.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/Attachment-component-properties_web.png"><img alt="Setting Attachment Field Properties" src="../_images/Attachment-component-properties_web.png" style="width: 250px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enters the ID of the Attachment field. For example, the ID of the field for attaching a resume can be named ‘myResume’.</p>
-<p><strong>② Who can fill this out</strong>
-Selects who is allowed or required to fill out the field.</p>
-<p><strong>③  Placeholder</strong></p>
+<p><strong>②  Placeholder</strong></p>
 <p>Enters the text shown before attachment.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you check the Shown icon check box, the clip icon will be displayed on the attachement area.</p>
 <p><img alt="image14" src="../_images/Attachment-component-properties_web_icon.png" /></p>
 </div>
-<p><strong>④ Tooltip text</strong></p>
+<p><strong>③ Tooltip text</strong></p>
 <p>If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.</p>
 </section>
 <section id="document-id-and-document-number">
@@ -907,7 +813,8 @@ Selects who is allowed or required to fill out the field.</p>
 </ul>
 <p><strong>Field Properties</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document-domponent-properties_web.png"><img alt="Setting Document field Properties" src="../_images/document-domponent-properties_web.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/document-domponent-properties_web.png"><img alt="Setting Document field Properties" src="../_images/document-domponent-properties_web.png" style="width: 400px;" />
+</a>
 </figure>
 <p><strong>① ID</strong></p>
 <p>Enter the ID of the Document field. For example, the field ID can be ‘docNum’ for document number.</p>
@@ -923,7 +830,8 @@ Selects who is allowed or required to fill out the field.</p>
 <li><p>Select the field type you want to change to.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/changefieldtypes.png"><img alt="Change field types" src="../_images/changefieldtypes.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../_images/changefieldtypes.png"><img alt="Change field types" src="../_images/changefieldtypes.png" style="width: 1000px;" />
+</a>
 </figure>
 <p>※ This feature is not available in eformsign for Microsoft Office.</p>
 </section>
@@ -939,14 +847,16 @@ Selects who is allowed or required to fill out the field.</p>
 <li><p><strong>Notification settings:</strong> Sets the notification settings for documents created from the template.</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/component_web_2.png"><img alt="The 5 Configuration Tabs in Template Settings" src="../_images/component_web_2.png" style="width: 730px;" /></a>
+<a class="reference internal image-reference" href="../_images/component_web_2.png"><img alt="The 5 Configuration Tabs in Template Settings" src="../_images/component_web_2.png" style="width: 730px;" />
+</a>
 </figure>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>In order to create documents from a template, you must save and deploy the template. If you save a template but not deploy it, then template does not appear in the <strong>New from template</strong> page of members with permission to use that template.</p>
 <p>A template that is not deployed are indicated with the text <strong>Not deployed</strong>. To deploy a template, click on the see more (⋮) button on the template and click the <strong>Deploy</strong> option. You can also click on the template to go to <strong>Template settings</strong> and click the <strong>Save</strong> button and then click <strong>Yes</strong> to deploy.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-template_publish.png"><img alt="Template deployment" src="../_images/en-template_publish.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-template_publish.png"><img alt="Template deployment" src="../_images/en-template_publish.png" style="width: 750px;" />
+</a>
 </figure>
 </div>
 <div class="admonition note">
@@ -1036,8 +946,8 @@ Selects who is allowed or required to fill out the field.</p>
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    &#169; Copyright 2026, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

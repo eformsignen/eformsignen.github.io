@@ -5,14 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Creating templates using eformsign for Microsoft Office &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <title>Creating templates using eformsign for Microsoft Office &#8212; eformsign User Guide 2026.08.03 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom_override.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/documentation_options.js?v=0d29811c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
@@ -25,123 +26,6 @@
 
 <div id="top_nav">
     
-        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
-    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">Go to eformsign</a></p>
-    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
-</div>
-
-<script>
-(function() {
-    const topNav = document.querySelector('#top_nav')
-    const notificationContent = document.querySelector('#notification_banner p#content').innerText
-    const localStorageKey = 'readNotification'
-    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
-    const cssVariableName = '--navbarHeight'
-    const rootElement = document.documentElement
-
-    /*************************************************************************/
-    // Local storage for remembering if the user has read the notification.
-
-    function checkAlreadyRead() {
-        return localStorage.getItem(localStorageKey) == notificationContent
-    }
-
-    function setRead() {
-        localStorage.setItem(localStorageKey, notificationContent)
-    }
-
-    function clearRead() {
-        localStorage.removeItem(localStorageKey)
-    }
-
-    const alreadyRead = checkAlreadyRead()
-    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
-
-    /*************************************************************************/
-    // Updating a CSS variable so other elements adjust to the nav bar height.
-
-    function updateNavbarHeight() {
-        // Only update it if the delta is significant. Otherwise it causes
-        // unnecessary browser repaints.
-        const documentStyles = getComputedStyle(rootElement)
-        // We store the value in REM, so need to convert to pixels
-        const currentValue = parseFloat(
-            documentStyles.getPropertyValue(cssVariableName)
-        ) * parseFloat(documentStyles.fontSize)
-
-        const newValue = topNav.clientHeight
-
-        if (newValue - 5 > currentValue) {
-            console.log(`Updating ${cssVariableName} - overlapping`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        } else if (currentValue - newValue >= 30) {
-            console.log(`Updating ${cssVariableName} - gap too large`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        }
-    }
-
-    /*************************************************************************/
-    // After loading the page, and resizing the window, recalculate the nav bar
-    // height.
-
-    if (!permanentlyHidden) {
-        // This height is approximately correct when there's a banner, so
-        // shouldn't require any page reflow:
-        rootElement.style.setProperty(
-            '--navbarHeight', "5.5rem"
-        );
-
-        document.addEventListener("DOMContentLoaded", function() {
-            updateNavbarHeight()
-        });
-
-        var interval = undefined
-
-        window.addEventListener('resize', () => {
-            if (interval) {
-                clearTimeout(interval)
-            }
-            interval = setTimeout(() => {
-                console.log("Finished resizing")
-                updateNavbarHeight()
-            }, 100)
-        })
-    }
-
-    /*************************************************************************/
-
-    PetiteVue.createApp({
-        visible: !alreadyRead,
-        permanentlyHidden: permanentlyHidden,
-        bannerHiding: bannerHiding,
-        $delimiters: ['[[', ']]'],
-        toggleVisible() {
-            this.visible = !this.visible
-
-            if (this.visible) {
-                clearRead()
-            } else {
-                setRead()
-            }
-
-            if (!this.visible && bannerHiding == 'permanent') {
-                this.permanentlyHidden = true
-            }
-
-            // Run this after Vue has had time to update the DOM:
-            setTimeout(
-                updateNavbarHeight,
-                0
-            )
-        }
-    }).mount('#notification_banner')
-})()
-</script>
-    
 
     <nav>
         
@@ -151,7 +35,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">eformsign user guide</a></h1>
+        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/eformsign_guide_logo1.png"/></a></h1>
             <a id="source_link" href="https://www.eformsign.com/">
     
         <svg width="100%" height="100%" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -231,7 +115,7 @@
 
         <div class="searchbox_wrapper">
             
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
@@ -239,14 +123,14 @@
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
     </nav>
 </div>
 
     
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
@@ -327,7 +211,8 @@ Sets the recipients, and the content of the notification messages for notifying 
 <p>The workflow for each template can be set by template managers by going to <strong>Template settings</strong> &gt; <strong>Workflow</strong>.</p>
 <p>By default, all workflows have <strong>Start</strong> and <strong>Complete</strong> steps. You can add as many <strong>Recipient</strong>, and <strong>Need to view</strong> steps as you want for each workflow.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-workflow-steps-form-builder.png"><img alt="Workflow steps" src="../_images/en-workflow-steps-form-builder.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-workflow-steps-form-builder.png"><img alt="Workflow steps" src="../_images/en-workflow-steps-form-builder.png" style="width: 400px;" />
+</a>
 </figure>
 <ul class="simple">
 <li><p><strong>Recipient:</strong>
@@ -354,7 +239,8 @@ Only views documents.</p></li>
 <section id="general">
 <span id="general-fb"></span><h3>General<a class="headerlink" href="#general" title="Link to this heading"></a></h3>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manage-template-settings-fb.png"><img alt="Template Settings &gt; General" src="../_images/en-manage-template-settings-fb.png" style="width: 350px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-template-settings-fb.png"><img alt="Template Settings &gt; General" src="../_images/en-manage-template-settings-fb.png" style="width: 350px;" />
+</a>
 </figure>
 <section id="configure-basic-settings-for-the-template">
 <h4><strong>Configure basic settings for the template</strong><a class="headerlink" href="#configure-basic-settings-for-the-template" title="Link to this heading"></a></h4>
@@ -419,12 +305,14 @@ As well, you can see this name in all document pages (In progress, Action requir
 <p>Only the <strong>Company administrator</strong> or <strong>Template managers</strong> can perform this action.</p>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manage-documents-document-list.png"><img alt="Manage Documents &gt; Documents List" src="../_images/en-manage-documents-document-list.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-documents-document-list.png"><img alt="Manage Documents &gt; Documents List" src="../_images/en-manage-documents-document-list.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="how-to-set-the-document-naming-rule">
 <h5><strong>How to set the document naming rule</strong><a class="headerlink" href="#how-to-set-the-document-naming-rule" title="Link to this heading"></a></h5>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-document-naming-rule.png"><img alt="Template Settings &gt; Setting the Document Naming Rule" src="../_images/en-document-naming-rule.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-document-naming-rule.png"><img alt="Template Settings &gt; Setting the Document Naming Rule" src="../_images/en-document-naming-rule.png" style="width: 600px;" />
+</a>
 </figure>
 <ol class="arabic simple">
 <li><p>In the sidebar menu, click the <strong>Manage templates</strong> menu.</p></li>
@@ -534,7 +422,8 @@ Company profile</p></td>
 <section id="generating-a-document-number">
 <h5><strong>Generating a document number</strong><a class="headerlink" href="#generating-a-document-number" title="Link to this heading"></a></h5>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-generate-document-number.png"><img alt="Setting a Document Number" src="../_images/en-generate-document-number.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-generate-document-number.png"><img alt="Setting a Document Number" src="../_images/en-generate-document-number.png" style="width: 600px;" />
+</a>
 </figure>
 <ol class="arabic simple">
 <li><p>In the sidebar menu, click the <strong>Manage templates</strong> menu.</p></li>
@@ -600,10 +489,12 @@ Company profile</p></td>
 <hr class="docutils" />
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-completed-document-box-docno.png"><img alt="Completed - Document List" src="../_images/en-completed-document-box-docno.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-completed-document-box-docno.png"><img alt="Completed - Document List" src="../_images/en-completed-document-box-docno.png" style="width: 700px;" />
+</a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-completed-document-list-docno-column.png"><img alt="Completed - Document List - Document Number" src="../_images/en-completed-document-list-docno-column.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-completed-document-list-docno-column.png"><img alt="Completed - Document List - Document Number" src="../_images/en-completed-document-list-docno-column.png" style="width: 700px;" />
+</a>
 </figure>
 <p>A document number can be viewed in the Documents menus (In progress, Action required, and Completed), and the Manage documents menu (requires document management permission).</p>
 <ol class="arabic">
@@ -637,7 +528,8 @@ Company profile</p></td>
 <span id="auth-fb"></span><h3>Set Permissions<a class="headerlink" href="#set-permissions" title="Link to this heading"></a></h3>
 <p>You can set the permissions for the template usage, template editing and document management.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_template-setting-set-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en_template-setting-set-permissions.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_template-setting-set-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en_template-setting-set-permissions.png" style="width: 700px;" />
+</a>
 </figure>
 <p><strong>Template usage</strong>
 This permission is needed to create documents from the template, and you can select <strong>Allow all</strong> or <strong>Group or member</strong> to allow all the members or some members in the company to create documents from the template.</p>
@@ -655,7 +547,8 @@ You can select groups or members to open documents created from the template, vo
 <span id="workflow-fb"></span><h3>Workflow Settings<a class="headerlink" href="#workflow-settings" title="Link to this heading"></a></h3>
 <p>You can create or modify the workflow of the template by clicking the <strong>Workflow</strong> tab in the <strong>Template settings</strong> page.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-template-settings-workflow-fb.png"><img alt="Template Settings &gt; Workflow" src="../_images/en-template-settings-workflow-fb.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-template-settings-workflow-fb.png"><img alt="Template Settings &gt; Workflow" src="../_images/en-template-settings-workflow-fb.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="adding-steps-to-the-workflow">
 <h4><strong>Adding steps to the workflow</strong><a class="headerlink" href="#adding-steps-to-the-workflow" title="Link to this heading"></a></h4>
@@ -665,7 +558,8 @@ You can select groups or members to open documents created from the template, vo
 <li><p>Select the type of recipient which you want to add.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-template-settings-workflow-adding-steps.png"><img alt="Template Settings &gt; Workflow" src="../_images/en-template-settings-workflow-adding-steps.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-template-settings-workflow-adding-steps.png"><img alt="Template Settings &gt; Workflow" src="../_images/en-template-settings-workflow-adding-steps.png" style="width: 700px;" />
+</a>
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -730,7 +624,8 @@ You can select groups or members to open documents created from the template, vo
 <p><strong>Block automated document generation by bots</strong></p>
 <p>By selecting this option, when a person submits a document after creating a document via URL, the reCAPTCHA feature is dispalyed on the Submit document pop-up. The person can submit the document after ticking the “I’m not a robot” check box.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/URL-option-recaptcha.png"><img alt="reCAPTCHA" src="../_images/URL-option-recaptcha.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/URL-option-recaptcha.png"><img alt="reCAPTCHA" src="../_images/URL-option-recaptcha.png" style="width: 250px;" />
+</a>
 </figure>
 <p>❗Disabling this option allows bots to mass-generate documents from the document URL, resulting in excessive charges.</p>
 </div>
@@ -742,13 +637,15 @@ You can select groups or members to open documents created from the template, vo
 <p>Select the <strong>Create documents from URL</strong> option in the Start step of the workflow and click the
 <strong>Generate QR code</strong> button to download the image file.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-workflow-step-start-QRcode.png"><img alt="Workflow &gt; Generate QR code" src="../_images/en-workflow-step-start-QRcode.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-workflow-step-start-QRcode.png"><img alt="Workflow &gt; Generate QR code" src="../_images/en-workflow-step-start-QRcode.png" style="width: 400px;" />
+</a>
 </figure>
 </div>
 <hr class="docutils" />
 <p><strong>Recipient: Step for signing or filling out a document</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-workflow-participants-properties.png"><img alt="Workflow &gt; Participant step properties" src="../_images/en-workflow-participants-properties.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-workflow-participants-properties.png"><img alt="Workflow &gt; Participant step properties" src="../_images/en-workflow-participants-properties.png" style="width: 700px;" />
+</a>
 </figure>
 <ul>
 <li><p><strong>Step name</strong>: Change the name of the step. The default name is ‘Start’.</p></li>
@@ -765,7 +662,8 @@ You can select groups or members to open documents created from the template, vo
 <li><p><strong>Require document password</strong>: Set a verification password that recipients must enter before opening the document. The password can be the recipient name, a value entered directly by the sender, or the value of a field in the document.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-doc-require-doc-password-setting.png"><img alt="Require document password" src="../_images/en-doc-require-doc-password-setting.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-doc-require-doc-password-setting.png"><img alt="Require document password" src="../_images/en-doc-require-doc-password-setting.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 </li>
@@ -780,7 +678,8 @@ You can select groups or members to open documents created from the template, vo
 <p><strong>Selecting recipients in a workflow step</strong></p>
 <p>For any given step other than Start and Complete, you can choose to pre-select recipients or choose to allow the sender to select recipients before sending a document.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-workflow-participant-selected.png"><img alt="Workflow &gt; Recipients" src="../_images/en-workflow-participant-selected.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-workflow-participant-selected.png"><img alt="Workflow &gt; Recipients" src="../_images/en-workflow-participant-selected.png" style="width: 700px;" />
+</a>
 </figure>
 <ul class="simple">
 <li><p><strong>Sender can add/skip recipient</strong>: Allows the sender to enter the contact information of the recipients before sending the document. If the sender does not enter the contact information, this step is skipped.</p></li>
@@ -812,14 +711,16 @@ You can select groups or members to open documents created from the template, vo
 </li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-hide-setting.png"><img alt="Hide files or sheets" src="../_images/en-hide-setting.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-hide-setting.png"><img alt="Hide files or sheets" src="../_images/en-hide-setting.png" style="width: 500px;" />
+</a>
 </figure>
 </div>
 <section id="complete-step-in-which-a-document-is-finally-completed">
 <h6><strong>Complete: Step in which a document is finally completed</strong><a class="headerlink" href="#complete-step-in-which-a-document-is-finally-completed" title="Link to this heading"></a></h6>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/complete-step-en.png"><img alt="Complete step" src="../_images/complete-step-en.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../_images/complete-step-en.png"><img alt="Complete step" src="../_images/complete-step-en.png" style="width: 800px;" />
+</a>
 </figure>
 <ul class="simple">
 <li><p><strong>Step name</strong>: Change the name of the step. The default name is ‘Complete’.</p></li>
@@ -835,7 +736,8 @@ You can select groups or members to open documents created from the template, vo
 <span id="field-fb"></span><h3>Field<a class="headerlink" href="#field" title="Link to this heading"></a></h3>
 <p>In the <strong>Field</strong> menu, you can set the default values or auto-fill values for fields in the template, and adjust the order of the fields.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-template-settings-field-fb.png"><img alt="Template Settings &gt; Field" src="../_images/en-template-settings-field-fb.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-template-settings-field-fb.png"><img alt="Template Settings &gt; Field" src="../_images/en-template-settings-field-fb.png" style="width: 700px;" />
+</a>
 </figure>
 <p>You can set the default value of a field to be the value saved in company/group/member information in <strong>Manage custom fields</strong>. You can also choose it to be the value entered recently or a value entered manually.</p>
 <div class="admonition tip">
@@ -874,7 +776,8 @@ You can select groups or members to open documents created from the template, vo
 </div>
 <p><strong>Editing document status notifications</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-notification-edit2.png"><img alt="Editing document status notifications" src="../_images/template-setting-notification-edit2.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/template-setting-notification-edit2.png"><img alt="Editing document status notifications" src="../_images/template-setting-notification-edit2.png" style="width: 600px;" />
+</a>
 </figure>
 <ul class="simple">
 <li><p><strong>Select notification template:</strong> The document status notification template is set to the default template, but you can change it to another template if you create one. For information on how to create a new notification template, refer to <a class="reference external" href="chapter9.html#notification-template">Notification Template Management</a>.</p></li>
@@ -1016,8 +919,8 @@ a chance to change and save the detailed settings before the template is duplica
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    &#169; Copyright 2026, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

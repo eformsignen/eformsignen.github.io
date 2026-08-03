@@ -5,14 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Document Inboxes &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <title>Document Inboxes &#8212; eformsign User Guide 2026.08.03 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom_override.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/documentation_options.js?v=0d29811c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
@@ -25,123 +26,6 @@
 
 <div id="top_nav">
     
-        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
-    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">Go to eformsign</a></p>
-    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
-</div>
-
-<script>
-(function() {
-    const topNav = document.querySelector('#top_nav')
-    const notificationContent = document.querySelector('#notification_banner p#content').innerText
-    const localStorageKey = 'readNotification'
-    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
-    const cssVariableName = '--navbarHeight'
-    const rootElement = document.documentElement
-
-    /*************************************************************************/
-    // Local storage for remembering if the user has read the notification.
-
-    function checkAlreadyRead() {
-        return localStorage.getItem(localStorageKey) == notificationContent
-    }
-
-    function setRead() {
-        localStorage.setItem(localStorageKey, notificationContent)
-    }
-
-    function clearRead() {
-        localStorage.removeItem(localStorageKey)
-    }
-
-    const alreadyRead = checkAlreadyRead()
-    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
-
-    /*************************************************************************/
-    // Updating a CSS variable so other elements adjust to the nav bar height.
-
-    function updateNavbarHeight() {
-        // Only update it if the delta is significant. Otherwise it causes
-        // unnecessary browser repaints.
-        const documentStyles = getComputedStyle(rootElement)
-        // We store the value in REM, so need to convert to pixels
-        const currentValue = parseFloat(
-            documentStyles.getPropertyValue(cssVariableName)
-        ) * parseFloat(documentStyles.fontSize)
-
-        const newValue = topNav.clientHeight
-
-        if (newValue - 5 > currentValue) {
-            console.log(`Updating ${cssVariableName} - overlapping`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        } else if (currentValue - newValue >= 30) {
-            console.log(`Updating ${cssVariableName} - gap too large`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        }
-    }
-
-    /*************************************************************************/
-    // After loading the page, and resizing the window, recalculate the nav bar
-    // height.
-
-    if (!permanentlyHidden) {
-        // This height is approximately correct when there's a banner, so
-        // shouldn't require any page reflow:
-        rootElement.style.setProperty(
-            '--navbarHeight', "5.5rem"
-        );
-
-        document.addEventListener("DOMContentLoaded", function() {
-            updateNavbarHeight()
-        });
-
-        var interval = undefined
-
-        window.addEventListener('resize', () => {
-            if (interval) {
-                clearTimeout(interval)
-            }
-            interval = setTimeout(() => {
-                console.log("Finished resizing")
-                updateNavbarHeight()
-            }, 100)
-        })
-    }
-
-    /*************************************************************************/
-
-    PetiteVue.createApp({
-        visible: !alreadyRead,
-        permanentlyHidden: permanentlyHidden,
-        bannerHiding: bannerHiding,
-        $delimiters: ['[[', ']]'],
-        toggleVisible() {
-            this.visible = !this.visible
-
-            if (this.visible) {
-                clearRead()
-            } else {
-                setRead()
-            }
-
-            if (!this.visible && bannerHiding == 'permanent') {
-                this.permanentlyHidden = true
-            }
-
-            // Run this after Vue has had time to update the DOM:
-            setTimeout(
-                updateNavbarHeight,
-                0
-            )
-        }
-    }).mount('#notification_banner')
-})()
-</script>
-    
 
     <nav>
         
@@ -151,7 +35,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">eformsign user guide</a></h1>
+        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/eformsign_guide_logo1.png"/></a></h1>
             <a id="source_link" href="https://www.eformsign.com/">
     
         <svg width="100%" height="100%" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -231,7 +115,7 @@
 
         <div class="searchbox_wrapper">
             
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
@@ -239,14 +123,14 @@
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
     </nav>
 </div>
 
     
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
@@ -291,7 +175,8 @@
 <li><p><strong>Manage bulk sent documents:</strong> Only members with the document manager permission can access this inbox. They can view all documents bulk created from templates in which they are given permission to view.</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/new_document_inboxes_en.png"><img alt="Document inboxes" src="../_images/new_document_inboxes_en.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/new_document_inboxes_en.png"><img alt="Document inboxes" src="../_images/new_document_inboxes_en.png" style="width: 700px;" />
+</a>
 </figure>
 </section>
 <section id="documents-menu">
@@ -302,7 +187,8 @@
 </div>
 <p>Each documents menu consists of the following five sections:</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document_inbox_layout.png"><img alt="Document inbox layout" src="../_images/document_inbox_layout.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/document_inbox_layout.png"><img alt="Document inbox layout" src="../_images/document_inbox_layout.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic">
 <li><p><strong>Menu and home icon, and document menu name</strong></p>
@@ -360,7 +246,8 @@ available in the <strong>Manage templates</strong> menu.</p>
 <p>Clicking the <strong>X</strong> icon of the template category combo displays the
 templates according to categories as shown below:</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/category_search.png"><img alt="Template category combo box" src="../_images/category_search.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/category_search.png"><img alt="Template category combo box" src="../_images/category_search.png" style="width: 500px;" />
+</a>
 </figure>
 <section id="searching-by-document-status">
 <h4><strong>Searching by document status</strong><a class="headerlink" href="#searching-by-document-status" title="Link to this heading"></a></h4>
@@ -464,7 +351,8 @@ templates according to categories as shown below:</p>
 <li><p>Select <strong>Custom Filter</strong> in the <strong>Advanced</strong> search combo box.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/custom_search.png"><img alt="Custom filter" src="../_images/custom_search.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/custom_search.png"><img alt="Custom filter" src="../_images/custom_search.png" style="width: 500px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Select the field name, field type (keyword, range, or period), and search value.</p></li>
@@ -574,10 +462,12 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <p>If you select a document in the document list, you can view the status and history of that document on the right side of the screen.</p>
 <p>In the <strong>Document status</strong> tab, you can see when and what happens to a document in each step of the workflow. In the <strong>History</strong> tab, you can see the activities of the document creator and recipients from document creation to completion.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document_status.png"><img alt="Document status tab" src="../_images/document_status.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/document_status.png"><img alt="Document status tab" src="../_images/document_status.png" style="width: 300px;" />
+</a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document_history.png"><img alt="History tab" src="../_images/document_history.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/document_history.png"><img alt="History tab" src="../_images/document_history.png" style="width: 300px;" />
+</a>
 </figure>
 </section>
 <section id="document-download">
@@ -596,7 +486,8 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <li><p>Click the <strong>Download</strong> button.</p></li>
 <li><p>Decide whether to include the audit trail certifcate in the pop-up displayed and enter the reason for downloading (optional). Then, click the <strong>Download</strong> button.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/download_popup.png"><img alt="Document downloaod pop-up" src="../_images/download_popup.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/download_popup.png"><img alt="Document downloaod pop-up" src="../_images/download_popup.png" style="width: 400px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -608,7 +499,8 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <li><p>At the bottom of the screen in the <strong>Document inbox/Manage documents page</strong>, you can select how many documents are displayed in the list.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document-list-100.png"><img alt="Download More Than 20 PDF Documents" src="../_images/document-list-100.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/document-list-100.png"><img alt="Download More Than 20 PDF Documents" src="../_images/document-list-100.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Select <strong>Show 50 per page</strong> or <strong>Show 100 per page</strong>.</p></li>
@@ -620,7 +512,8 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <li><p>You can see that the Download button is enabled. Click the <strong>Download</strong> button to download the document.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document-download-popup1.png"><img alt="Document download list" src="../_images/document-download-popup1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/document-download-popup1.png"><img alt="Document download list" src="../_images/document-download-popup1.png" style="width: 600px;" />
+</a>
 </figure>
 <p>❗ If you are downloading more than 20 documents in PDF format, you can download them by clicking the <strong>Downloadable files list</strong> icon at the top right corner of the screen.</p>
 </div>
@@ -633,7 +526,8 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <li><p>Click the <strong>Export to CSV file</strong> button and then select either <strong>Selected documents</strong> or <strong>All results</strong>.</p></li>
 <li><p>Select the desired columns/fields under <strong>Document info fields</strong> and <strong>Fields</strong> in the <strong>Export to CSV file</strong> pop-up displayed.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/cvs_file_popup.png"><img alt="Export to CSV file pop-up" src="../_images/cvs_file_popup.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/cvs_file_popup.png"><img alt="Export to CSV file pop-up" src="../_images/cvs_file_popup.png" style="width: 400px;" />
+</a>
 </figure>
 </li>
 <li><p>Name the CSV file and set the password (both optional) and click <strong>Generate</strong>.</p></li>
@@ -641,7 +535,8 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <ol class="arabic" start="7">
 <li><p>Check the status of the file in the <strong>Downloadable files list</strong> pop-up and download the file once it is created.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/cvs_file_list_popup.png"><img alt="CSV files pop-up" src="../_images/cvs_file_list_popup.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/cvs_file_list_popup.png"><img alt="CSV files pop-up" src="../_images/cvs_file_list_popup.png" style="width: 600px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -656,7 +551,8 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <li><p>All the fields in the selected documents will be displayed. Either select only the fields you want or select them all and then click the <strong>Generate</strong> button to export to a CSV file.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/downloadallfields.png"><img alt="Downloading all fields across multiple templates" src="../_images/downloadallfields.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/downloadallfields.png"><img alt="Downloading all fields across multiple templates" src="../_images/downloadallfields.png" style="width: 700px;" />
+</a>
 </figure>
 </div>
 <div class="admonition note">
@@ -665,7 +561,8 @@ values entered. E.g. Field name: fruit / Field type: keyword / Value1: strawberr
 <p>You can view the list of files that have been created or is being created by clicking the CSV files icon (<a class="reference internal" href="../_images/csv_file_list_icon.png"><img alt="image17" src="../_images/csv_file_list_icon.png" style="width: 20px;" /></a>).
 You can cancel while the file is being created and the files that are created can be downloaded again or deleted. The files can be downloaded again within 7 days of creation and are automatically deleted after 7 days.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/cvs_file_list_popup1.png"><img alt="CSV files pop-up" src="../_images/cvs_file_list_popup1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/cvs_file_list_popup1.png"><img alt="CSV files pop-up" src="../_images/cvs_file_list_popup1.png" style="width: 400px;" />
+</a>
 </figure>
 </div>
 <div class="admonition tip">
@@ -677,7 +574,8 @@ You can cancel while the file is being created and the files that are created ca
 <li><p>Select the document(s) to download and then click either the <strong>Download</strong> or <strong>Export to CSV file</strong> button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulksend_download.png"><img alt="Export to CSV file pop-up" src="../_images/bulksend_download.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulksend_download.png"><img alt="Export to CSV file pop-up" src="../_images/bulksend_download.png" style="width: 700px;" />
+</a>
 </figure>
 </div>
 </section>
@@ -695,7 +593,8 @@ You can cancel while the file is being created and the files that are created ca
 <span id="document-column"></span><h3>Document Menu Column Selection<a class="headerlink" href="#document-menu-column-selection" title="Link to this heading"></a></h3>
 <p>If you click the column (<a class="reference internal" href="../_images/csv_download_icon.png"><img alt="image14" src="../_images/csv_download_icon.png" style="width: 25px;" /></a>) icon on the right side of the document list, you can select which column to be displayed on the list.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/column_type.png"><img alt="Document column selection icon" src="../_images/column_type.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/column_type.png"><img alt="Document column selection icon" src="../_images/column_type.png" style="width: 400px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -743,7 +642,8 @@ It you want to change the contact information, resend documents seperately.</p>
 </div>
 <p>For documents scheduled to be sent later, you can change or cancel the scheduled send.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulksend-schedule-change.png"><img alt="Bulk send document box-change schedule" src="../_images/bulksend-schedule-change.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulksend-schedule-change.png"><img alt="Bulk send document box-change schedule" src="../_images/bulksend-schedule-change.png" style="width: 500px;" />
+</a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -804,7 +704,8 @@ It you want to change the contact information, resend documents seperately.</p>
 <li><p><strong>Document type:</strong> If you select a template in the template list, when a document containing any of the words in <strong>Words included in the document title</strong> is created from that template, the document is automatically shared in the shared folder. If you select “Documents created without a template” in the template list, when a document containing any of the words in <strong>Words included in the document title</strong> is created from <strong>New from my file</strong>, the document is automatically shared in the shared folder.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-shared-rule-setting.png"><img alt="Auto-sharing rule" src="../_images/en-shared-rule-setting.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-shared-rule-setting.png"><img alt="Auto-sharing rule" src="../_images/en-shared-rule-setting.png" style="width: 300px;" />
+</a>
 </figure>
 </div></blockquote>
 </li>
@@ -944,8 +845,8 @@ It you want to change the contact information, resend documents seperately.</p>
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    &#169; Copyright 2026, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

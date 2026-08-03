@@ -5,14 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Creating documents &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <title>Creating documents &#8212; eformsign User Guide 2026.08.03 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom_override.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/documentation_options.js?v=0d29811c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
@@ -25,123 +26,6 @@
 
 <div id="top_nav">
     
-        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
-    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">Go to eformsign</a></p>
-    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
-</div>
-
-<script>
-(function() {
-    const topNav = document.querySelector('#top_nav')
-    const notificationContent = document.querySelector('#notification_banner p#content').innerText
-    const localStorageKey = 'readNotification'
-    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
-    const cssVariableName = '--navbarHeight'
-    const rootElement = document.documentElement
-
-    /*************************************************************************/
-    // Local storage for remembering if the user has read the notification.
-
-    function checkAlreadyRead() {
-        return localStorage.getItem(localStorageKey) == notificationContent
-    }
-
-    function setRead() {
-        localStorage.setItem(localStorageKey, notificationContent)
-    }
-
-    function clearRead() {
-        localStorage.removeItem(localStorageKey)
-    }
-
-    const alreadyRead = checkAlreadyRead()
-    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
-
-    /*************************************************************************/
-    // Updating a CSS variable so other elements adjust to the nav bar height.
-
-    function updateNavbarHeight() {
-        // Only update it if the delta is significant. Otherwise it causes
-        // unnecessary browser repaints.
-        const documentStyles = getComputedStyle(rootElement)
-        // We store the value in REM, so need to convert to pixels
-        const currentValue = parseFloat(
-            documentStyles.getPropertyValue(cssVariableName)
-        ) * parseFloat(documentStyles.fontSize)
-
-        const newValue = topNav.clientHeight
-
-        if (newValue - 5 > currentValue) {
-            console.log(`Updating ${cssVariableName} - overlapping`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        } else if (currentValue - newValue >= 30) {
-            console.log(`Updating ${cssVariableName} - gap too large`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        }
-    }
-
-    /*************************************************************************/
-    // After loading the page, and resizing the window, recalculate the nav bar
-    // height.
-
-    if (!permanentlyHidden) {
-        // This height is approximately correct when there's a banner, so
-        // shouldn't require any page reflow:
-        rootElement.style.setProperty(
-            '--navbarHeight', "5.5rem"
-        );
-
-        document.addEventListener("DOMContentLoaded", function() {
-            updateNavbarHeight()
-        });
-
-        var interval = undefined
-
-        window.addEventListener('resize', () => {
-            if (interval) {
-                clearTimeout(interval)
-            }
-            interval = setTimeout(() => {
-                console.log("Finished resizing")
-                updateNavbarHeight()
-            }, 100)
-        })
-    }
-
-    /*************************************************************************/
-
-    PetiteVue.createApp({
-        visible: !alreadyRead,
-        permanentlyHidden: permanentlyHidden,
-        bannerHiding: bannerHiding,
-        $delimiters: ['[[', ']]'],
-        toggleVisible() {
-            this.visible = !this.visible
-
-            if (this.visible) {
-                clearRead()
-            } else {
-                setRead()
-            }
-
-            if (!this.visible && bannerHiding == 'permanent') {
-                this.permanentlyHidden = true
-            }
-
-            // Run this after Vue has had time to update the DOM:
-            setTimeout(
-                updateNavbarHeight,
-                0
-            )
-        }
-    }).mount('#notification_banner')
-})()
-</script>
-    
 
     <nav>
         
@@ -151,7 +35,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">eformsign user guide</a></h1>
+        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/eformsign_guide_logo1.png"/></a></h1>
             <a id="source_link" href="https://www.eformsign.com/">
     
         <svg width="100%" height="100%" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -231,7 +115,7 @@
 
         <div class="searchbox_wrapper">
             
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
@@ -239,14 +123,14 @@
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
     </nav>
 </div>
 
     
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">Basic Info</a></li>
@@ -293,7 +177,8 @@ For more information, refer to <a class="reference external" href="chapter6.html
 <ol class="arabic">
 <li><p>Go to the <strong>New from my file</strong> menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-new-from-my-file-dashboard.png"><img alt="New from my file in the dashboard" src="../_images/en-new-from-my-file-dashboard.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-new-from-my-file-dashboard.png"><img alt="New from my file in the dashboard" src="../_images/en-new-from-my-file-dashboard.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Upload the document file you want. The supported file types are pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, and tiff with a maximum size of 9MB.</p>
@@ -301,7 +186,8 @@ For more information, refer to <a class="reference external" href="chapter6.html
 </li>
 <li><p>Add the <strong>document signers</strong> that will be participating in document creation and select their roles.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-signers-popup.png"><img alt="Signers pop-up" src="../_images/en-signers-popup.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-signers-popup.png"><img alt="Signers pop-up" src="../_images/en-signers-popup.png" style="width: 300px;" />
+</a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -310,12 +196,14 @@ For more information, refer to <a class="reference external" href="chapter6.html
 </li>
 <li><p>Add the fields each signer will fill in and then set the field properties on the right.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-new-from-my-file-design-form.png"><img alt="Design form in New from my file" src="../_images/en-new-from-my-file-design-form.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-new-from-my-file-design-form.png"><img alt="Design form in New from my file" src="../_images/en-new-from-my-file-design-form.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>In the Add recipients step, you can add contact information such as email and phone number and set <strong>Recipient options</strong> for each signer.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/new-en-add-recipients-enter-contact-info.png"><img alt="New from my file &gt; Enter contact info" src="../_images/new-en-add-recipients-enter-contact-info.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/new-en-add-recipients-enter-contact-info.png"><img alt="New from my file &gt; Enter contact info" src="../_images/new-en-add-recipients-enter-contact-info.png" style="width: 700px;" />
+</a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -327,7 +215,8 @@ recipient such as email. In the Add recipient screen, you can
 delete/add signers and reviewers and set detailed options for
 each recipient.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/2_recipients.png"><img alt="Reviewer and Signer" src="../_images/2_recipients.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/2_recipients.png"><img alt="Reviewer and Signer" src="../_images/2_recipients.png" style="width: 300px;" />
+</a>
 </figure>
 </div>
 <div class="admonition tip">
@@ -343,7 +232,8 @@ only approve documents after reviewing them.</p>
 <p>In addition to reviewer and signer, there is also another recipient type called ‘Need to view’.</p>
 <p>You can select ‘Need to view’ when selecting recipients in the workflow. A recipient who is assigned as ‘Need to view’ can’ send a document to the next step in the workflow by only viewing the document.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/need_to_view.png"><img alt="Need to view" src="../_images/need_to_view.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/need_to_view.png"><img alt="Need to view" src="../_images/need_to_view.png" style="width: 300px;" />
+</a>
 </figure>
 <p>❗Note that a recipient assigned the Need to view type cannot fill out a document, and cannot approve/reject a document.</p>
 </div>
@@ -361,7 +251,8 @@ only approve documents after reviewing them.</p>
 <li><p>Click the ‘Edit message’ button on the right under ‘Recipient options &gt; Notification’.</p></li>
 <li><p>In the ‘Edit notification message’ pop-up displayed, view and edit the content in the selected language.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/notificationlanguage.png"><img alt="Notification language" src="../_images/notificationlanguage.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/notificationlanguage.png"><img alt="Notification language" src="../_images/notificationlanguage.png" style="width: 300px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -388,7 +279,8 @@ only approve documents after reviewing them.</p>
 <ol class="arabic" start="6">
 <li><p>Click the <strong>Options</strong> step to change the document title and select whether to timestamp the document when completed.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/optionstep.png"><img alt="Options step" src="../_images/optionstep.png" style="width: 1200px;" /></a>
+<a class="reference internal image-reference" href="../_images/optionstep.png"><img alt="Options step" src="../_images/optionstep.png" style="width: 1200px;" />
+</a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -398,7 +290,8 @@ clicking the <strong>Start now</strong> button, the document is saved in
 <a class="reference external" href="chapter8.html#my-saved-documents">My saved files</a>, and the saved file can be opened again so
 that you can begin creating a document. To save a document, click the <strong>Save</strong> button at the top right corner of the screen.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/threesteps.png"><img alt="Three steps" src="../_images/threesteps.png" style="width: 1200px;" /></a>
+<a class="reference internal image-reference" href="../_images/threesteps.png"><img alt="Three steps" src="../_images/threesteps.png" style="width: 1200px;" />
+</a>
 </figure>
 </div>
 </li>
@@ -414,7 +307,8 @@ as a created document.</p>
 </li>
 <li><p>If you click the <strong>Send</strong> button after reviewing/filling in the document, then the document is sent to recipients.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/senddocument.png"><img alt="Send document" src="../_images/senddocument.png" style="width: 1200px;" /></a>
+<a class="reference internal image-reference" href="../_images/senddocument.png"><img alt="Send document" src="../_images/senddocument.png" style="width: 1200px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -435,7 +329,8 @@ as a created document.</p>
 <ul>
 <li><p><strong>When the recipient is a member:</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/whenrecipientismember.png"><img alt="When the recipient is a member" src="../_images/whenrecipientismember.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/whenrecipientismember.png"><img alt="When the recipient is a member" src="../_images/whenrecipientismember.png" style="width: 700px;" />
+</a>
 </figure>
 <ul>
 <li><p><strong>Select document delivery method:</strong> You can select whether to send the document via email or mobile. The email address and mobile number are automatically filled-in if a member is selected.</p>
@@ -466,7 +361,8 @@ This recipient of this step becomes the <strong>In-person signer</strong> and th
 <li><p><strong>In-person signer:</strong> In-person signers can sign and only signer recipients can be in-person signers.</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/inperson-signing-wf.png"><img alt="In-person signing settings" src="../_images/inperson-signing-wf.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/inperson-signing-wf.png"><img alt="In-person signing settings" src="../_images/inperson-signing-wf.png" style="width: 700px;" />
+</a>
 </figure>
 <p>✅ For instructions on how to use the In-person signing feature, refer to the following <a class="reference external" href="https://www.eformsign.com/en/blog/whats-new-in-eformsign-nov-2023/">blog</a>.</p>
 </div>
@@ -494,7 +390,8 @@ This recipient of this step becomes the <strong>In-person signer</strong> and th
 <li><p>Field value: You can select a field and the value entered in that field becomes the password.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-doc-password-setting.png"><img alt="Password settings for opening documents" src="../_images/en-doc-password-setting.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-doc-password-setting.png"><img alt="Password settings for opening documents" src="../_images/en-doc-password-setting.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 </li>
@@ -508,7 +405,8 @@ This recipient of this step becomes the <strong>In-person signer</strong> and th
 <li><p><strong>Require identity verification when opening completed documents:</strong> Checking this option requires the recipient to also verify their identity when opening the completed document.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-additional-verification.png"><img alt="Additional verification" src="../_images/en-additional-verification.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-additional-verification.png"><img alt="Additional verification" src="../_images/en-additional-verification.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 </li>
@@ -537,10 +435,12 @@ This recipient of this step becomes the <strong>In-person signer</strong> and th
 <li><p>For each file, click the see more button (⋮) to perform actions including Change name, Replace file, Delete file, and Move forward.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-file.png"><img alt="Add file" src="../_images/en-add-file.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-file.png"><img alt="Add file" src="../_images/en-add-file.png" style="width: 700px;" />
+</a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-file-menu.png"><img alt="Add file menu" src="../_images/en-add-file-menu.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-file-menu.png"><img alt="Add file menu" src="../_images/en-add-file-menu.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 <p>As described below, you can also hide files from recipients as long as they are non-members.</p>
@@ -555,7 +455,8 @@ This recipient of this step becomes the <strong>In-person signer</strong> and th
 </li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-hide-files.png"><img alt="Hiding files from recipients" src="../_images/en-hide-files.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-hide-files.png"><img alt="Hiding files from recipients" src="../_images/en-hide-files.png" style="width: 700px;" />
+</a>
 </figure>
 </div></blockquote>
 <p>❗You can upload multiple PDF, Word, Excel, PowerPoint, and image files.</p>
@@ -566,7 +467,8 @@ This recipient of this step becomes the <strong>In-person signer</strong> and th
 <h3><strong>Options</strong><a class="headerlink" href="#options" title="Link to this heading"></a></h3>
 <p>In the Options step, you can set and edit document notification settings, and choose whether to timestamp the document.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/wfd-option.png"><img alt="Options page" src="../_images/wfd-option.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/wfd-option.png"><img alt="Options page" src="../_images/wfd-option.png" style="width: 700px;" />
+</a>
 </figure>
 <ul>
 <li><p><strong>Document notification settings:</strong> Sets notifications about the document’s status and completion to be sent to recipients, and previews or edits notification messages.</p>
@@ -574,7 +476,8 @@ This recipient of this step becomes the <strong>In-person signer</strong> and th
 <div><p><strong>When documents are completed</strong></p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-notification-editl.png"><img alt="Edit notification" src="../_images/template-setting-notification-editl.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/template-setting-notification-editl.png"><img alt="Edit notification" src="../_images/template-setting-notification-editl.png" style="width: 600px;" />
+</a>
 </figure>
 </div></blockquote>
 <ul>
@@ -638,17 +541,20 @@ that template.</p>
 <li><p>Click and go to <strong>New from template</strong> in the dashboard or the sidebar menu.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-new-from-template-dashboard-new.png"><img alt="New from template in the dashboard" src="../_images/en-new-from-template-dashboard-new.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-new-from-template-dashboard-new.png"><img alt="New from template in the dashboard" src="../_images/en-new-from-template-dashboard-new.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>From the dashboard you can click the Create icon of the template you want to create a document from to create a document. As well, you can click the Bulk icon to create multiple documents from the template.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-new-from-template-new-dashboard.png"><img alt="Creating a document by selecting a template" src="../_images/en-new-from-template-new-dashboard.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-new-from-template-new-dashboard.png"><img alt="Creating a document by selecting a template" src="../_images/en-new-from-template-new-dashboard.png" style="width: 700px;" />
+</a>
 </figure>
 <p>You can also click <strong>New from template</strong> and then click the Create icon of the template you want to create a document from in the <strong>New from template</strong> page. As well, you can click the Bulk icon to create multiple documents from the template.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-new-from-template-dashboard.png"><img alt="New from template page" src="../_images/en-new-from-template-dashboard.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-new-from-template-dashboard.png"><img alt="New from template page" src="../_images/en-new-from-template-dashboard.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic" start="3">
 <li><p>If you create a document and then click the <strong>Send</strong> button on the top right corner, then the <strong>Send document</strong> pop-up window will be displayed.</p>
@@ -668,7 +574,8 @@ documents from templates can be found in the <strong>Action required</strong> pa
 <li><p>Fill in the recipient’s name and contact information. If you want to change the language, then click the language button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/changelanguage.png"><img alt="Change language" src="../_images/changelanguage.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/changelanguage.png"><img alt="Change language" src="../_images/changelanguage.png" style="width: 500px;" />
+</a>
 </figure>
 <ol class="arabic" start="6">
 <li><p>Click the <strong>Confirm</strong> button to send the document.</p>
@@ -679,7 +586,8 @@ documents from templates can be found in the <strong>Action required</strong> pa
 <p>To add CC recipients to the document, click the <strong>Add CC</strong> button and then select the members or groups you want to add in the pop-up displayed.</p>
 <p>CC’ed recipients can monitor the progress of the document, and are notified when the document is sent/completed.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-cc.png"><img alt="Add CC" src="../_images/en-add-cc.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-cc.png"><img alt="Add CC" src="../_images/en-add-cc.png" style="width: 300px;" />
+</a>
 </figure>
 </div></blockquote>
 <p>❗Note that only groups and members can be CC’ed and non-members cannot be CC’ed.</p>
@@ -693,13 +601,15 @@ documents from templates can be found in the <strong>Action required</strong> pa
 <li><p>Go to a document inbox and click on the Create new document button under the completed document of your choice.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/create_new_document.png"><img alt="Create new document" src="../_images/create_new_document.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/create_new_document.png"><img alt="Create new document" src="../_images/create_new_document.png" style="width: 300px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>In the Create new document options pop-up displayed, choose whether to import document data, important recipient data, or both.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/creating_new_documents2.png"><img alt="Importing document data and recipient info" src="../_images/creating_new_documents2.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/creating_new_documents2.png"><img alt="Importing document data and recipient info" src="../_images/creating_new_documents2.png" style="width: 300px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Depending on what you choose, you will see that the field data and/or recipient data are automatically filled out, allowing you to quickly create and send documents.</p></li>
@@ -723,13 +633,15 @@ documents from templates can be found in the <strong>Action required</strong> pa
 <p>2. Click the Send in bulk icon of the template you want to create a
 document from.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulk-creation-icon.png"><img alt="Send in bulk icon" src="../_images/bulk-creation-icon.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulk-creation-icon.png"><img alt="Send in bulk icon" src="../_images/bulk-creation-icon.png" style="width: 250px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Select whether to enter data either by manually (Enter manually) or by uploading an Excel file (Upload file).</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="Send in bulk screen" src="../_images/bulk_create.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="Send in bulk screen" src="../_images/bulk_create.png" style="width: 800px;" />
+</a>
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -739,12 +651,14 @@ document from.</p>
 <p>Tables are filled in a similar way as in Excel. You can double-click on each cell to enter a value and right-click on the mouse to add or delete columns. The value entered in a cell can be copied and pasted, and dragged to another cell.</p>
 <p>When entering data by uploading an Excel file, you must first download the Excel file for data entry shown on the screen, then enter data into the fields in the file, and then finally upload the file.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulksend-edit.png"><img alt="Send in bulk enter manually option" src="../_images/bulksend-edit.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulksend-edit.png"><img alt="Send in bulk enter manually option" src="../_images/bulksend-edit.png" style="width: 700px;" />
+</a>
 </figure>
 <p><strong>Method 2. Upload file: max 1000 documents (rows)</strong></p>
 <p>Select <strong>Upload file</strong> and download the Excel file for data entry. Once the file is downloaded, enter the neccessary data into the file and upload it.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulksend-fileupload.png"><img alt="Send in bulk upload file option" src="../_images/bulksend-fileupload.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulksend-fileupload.png"><img alt="Send in bulk upload file option" src="../_images/bulksend-fileupload.png" style="width: 500px;" />
+</a>
 </figure>
 </div>
 <p>4. Click the <strong>Preview</strong> button on the top right corner of the screen to
@@ -752,7 +666,8 @@ view the documents you created.</p>
 <ol class="arabic" start="5">
 <li><p>To send the document right away, click the <strong>Send now</strong> button. To send the documents at a schedule time and date, click the <strong>Schedule send</strong> button.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulksend-sending.png"><img alt="send in bulk" src="../_images/bulksend-sending.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulksend-sending.png"><img alt="send in bulk" src="../_images/bulksend-sending.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -760,7 +675,8 @@ view the documents you created.</p>
 <p class="admonition-title">Note</p>
 <p>In the <strong>Schedule bulk send</strong> pop-up displayed, select the date and time you want to schedule send the documents. Note that the scheduled time must be at least 10 minutes from the current time.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-schedule-send-in-bulk.png"><img alt="Schedule send in bulk" src="../_images/en-schedule-send-in-bulk.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-schedule-send-in-bulk.png"><img alt="Schedule send in bulk" src="../_images/en-schedule-send-in-bulk.png" style="width: 400px;" />
+</a>
 </figure>
 </div>
 <ol class="arabic simple" start="6">
@@ -770,7 +686,8 @@ view the documents you created.</p>
 <p class="admonition-title">Tip</p>
 <p>Right before sending documents in bulk, eformsign will automatically check to see if there are any errors in the document. Documents with an error will not be sent and only normal documents will be sent.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-bulksend-data-validation.png"><img alt="Data validation" src="../_images/en-bulksend-data-validation.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-bulksend-data-validation.png"><img alt="Data validation" src="../_images/en-bulksend-data-validation.png" style="width: 400px;" />
+</a>
 </figure>
 </div>
 <div class="admonition tip">
@@ -840,8 +757,8 @@ are shown.</p>
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    &#169; Copyright 2026, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

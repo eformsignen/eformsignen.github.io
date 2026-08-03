@@ -5,14 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Basic Info &#8212; eformsign User Guide 2024.12.27 documentation</title>
+    <title>Basic Info &#8212; eformsign User Guide 2026.08.03 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic_mod.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom_override.css" type="text/css" />
     <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=5680ed0d"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/documentation_options.js?v=0d29811c"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
@@ -25,123 +26,6 @@
 
 <div id="top_nav">
     
-        <div id="notification_banner" data-banner-hiding="temporary" v-show="!permanentlyHidden">
-    <p v-if="visible" id="content"><a href="https://www.eformsign.com/">Go to eformsign</a></p>
-    <a class="close" href="#" @click.prevent="toggleVisible()">[[ visible ? '&#x25B2; HIDE' : '&#x25BC; SHOW BANNER' ]]</a>
-</div>
-
-<script>
-(function() {
-    const topNav = document.querySelector('#top_nav')
-    const notificationContent = document.querySelector('#notification_banner p#content').innerText
-    const localStorageKey = 'readNotification'
-    const bannerHiding = document.querySelector('#notification_banner').dataset['bannerHiding']
-    const cssVariableName = '--navbarHeight'
-    const rootElement = document.documentElement
-
-    /*************************************************************************/
-    // Local storage for remembering if the user has read the notification.
-
-    function checkAlreadyRead() {
-        return localStorage.getItem(localStorageKey) == notificationContent
-    }
-
-    function setRead() {
-        localStorage.setItem(localStorageKey, notificationContent)
-    }
-
-    function clearRead() {
-        localStorage.removeItem(localStorageKey)
-    }
-
-    const alreadyRead = checkAlreadyRead()
-    const permanentlyHidden = alreadyRead && bannerHiding == 'permanent'
-
-    /*************************************************************************/
-    // Updating a CSS variable so other elements adjust to the nav bar height.
-
-    function updateNavbarHeight() {
-        // Only update it if the delta is significant. Otherwise it causes
-        // unnecessary browser repaints.
-        const documentStyles = getComputedStyle(rootElement)
-        // We store the value in REM, so need to convert to pixels
-        const currentValue = parseFloat(
-            documentStyles.getPropertyValue(cssVariableName)
-        ) * parseFloat(documentStyles.fontSize)
-
-        const newValue = topNav.clientHeight
-
-        if (newValue - 5 > currentValue) {
-            console.log(`Updating ${cssVariableName} - overlapping`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        } else if (currentValue - newValue >= 30) {
-            console.log(`Updating ${cssVariableName} - gap too large`)
-            rootElement.style.setProperty(
-                cssVariableName, newValue + "px"
-            );
-        }
-    }
-
-    /*************************************************************************/
-    // After loading the page, and resizing the window, recalculate the nav bar
-    // height.
-
-    if (!permanentlyHidden) {
-        // This height is approximately correct when there's a banner, so
-        // shouldn't require any page reflow:
-        rootElement.style.setProperty(
-            '--navbarHeight', "5.5rem"
-        );
-
-        document.addEventListener("DOMContentLoaded", function() {
-            updateNavbarHeight()
-        });
-
-        var interval = undefined
-
-        window.addEventListener('resize', () => {
-            if (interval) {
-                clearTimeout(interval)
-            }
-            interval = setTimeout(() => {
-                console.log("Finished resizing")
-                updateNavbarHeight()
-            }, 100)
-        })
-    }
-
-    /*************************************************************************/
-
-    PetiteVue.createApp({
-        visible: !alreadyRead,
-        permanentlyHidden: permanentlyHidden,
-        bannerHiding: bannerHiding,
-        $delimiters: ['[[', ']]'],
-        toggleVisible() {
-            this.visible = !this.visible
-
-            if (this.visible) {
-                clearRead()
-            } else {
-                setRead()
-            }
-
-            if (!this.visible && bannerHiding == 'permanent') {
-                this.permanentlyHidden = true
-            }
-
-            // Run this after Vue has had time to update the DOM:
-            setTimeout(
-                updateNavbarHeight,
-                0
-            )
-        }
-    }).mount('#notification_banner')
-})()
-</script>
-    
 
     <nav>
         
@@ -151,7 +35,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">eformsign user guide</a></h1>
+        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/eformsign_guide_logo1.png"/></a></h1>
             <a id="source_link" href="https://www.eformsign.com/">
     
         <svg width="100%" height="100%" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -231,7 +115,7 @@
 
         <div class="searchbox_wrapper">
             
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
@@ -239,14 +123,14 @@
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
     </nav>
 </div>
 
     
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">Introduction to eformsign</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Info</a></li>
@@ -281,7 +165,8 @@
 <p>Each menu may appear differently depending on the permissions you have. The company administrator can access all the menus and have all the permissions.</p>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_dashboard-side-menu.png"><img alt="eformsign Menus" src="../_images/en_dashboard-side-menu.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_dashboard-side-menu.png"><img alt="eformsign Menus" src="../_images/en_dashboard-side-menu.png" style="width: 700px;" />
+</a>
 </figure>
 <p>The description of each menu is as follows:</p>
 <ul>
@@ -369,7 +254,8 @@
 <h3>Dashboard<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>The dashboard is the main page displayed when logging into eformsign. In the dashboard, you can upload a file to create a document as well as create a document from a template you want. Also, you can go directly to a document inbox or view a template in the dashboard.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-dashboard-main.png"><img alt="eformsign Dashboard Screen" src="../_images/en-dashboard-main.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-dashboard-main.png"><img alt="eformsign Dashboard Screen" src="../_images/en-dashboard-main.png" style="width: 800px;" />
+</a>
 </figure>
 <p><strong>① Document inbox shortcut</strong></p>
 <blockquote>
@@ -387,14 +273,15 @@
 <p><strong>③ New from template</strong></p>
 <blockquote>
 <div><p>Opens the <strong>New from template</strong> page where you can create new documents from templates.
-You can create 1 document from a template by clicking the create icon (<a class="reference internal" href="../_images/template-create-icon.PNG"><img alt="image10" src="../_images/template-create-icon.PNG" style="width: 20px;" /></a>), and create multiple documents at once from a template by clicking the bulk icon (<a class="reference internal" href="../_images/template-bulkcreate-icon.PNG"><img alt="image11" src="../_images/template-bulkcreate-icon.PNG" style="width: 20px;" /></a>).</p>
+You can create 1 document from a template by clicking the create icon (<a class="reference internal" href="../_images/template-create-icon.png"><img alt="image10" src="../_images/template-create-icon.png" style="width: 20px;" /></a>), and create multiple documents at once from a template by clicking the bulk icon (<a class="reference internal" href="../_images/template-bulkcreate-icon.png"><img alt="image11" src="../_images/template-bulkcreate-icon.png" style="width: 20px;" /></a>).</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>How to add template favorites</strong></p>
 <p>The templates you use most often will appear first in your dashboard when you favourite them. You can add templates as favorites in the <strong>New from template</strong> page.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template_favorite.png"><img alt="Template favorites" src="../_images/template_favorite.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/template_favorite.png"><img alt="Template favorites" src="../_images/template_favorite.png" style="width: 500px;" />
+</a>
 </figure>
 <ol class="arabic simple">
 <li><p>Go to the <strong>New from template</strong> menu.</p></li>
@@ -411,11 +298,13 @@ You can create 1 document from a template by clicking the create icon (<a class=
 <h2>View and Change Basic Information<a class="headerlink" href="#view-and-change-basic-information" title="Link to this heading"></a></h2>
 <p>To view your personal information you entered when signing up for the eformsign service and the company information, click the see more icon (<a class="reference internal" href="../_images/menu-hamberger-icon.png"><img alt="image6" src="../_images/menu-hamberger-icon.png" style="width: 20px;" /></a>) at the top right corner of the sidebar menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_dashboard-side-menu-icon.png"><img alt="Location of the Menu Icon for Accessing Personal and Company Info" src="../_images/en_dashboard-side-menu-icon.png" style="width: 1500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_dashboard-side-menu-icon.png"><img alt="Location of the Menu Icon for Accessing Personal and Company Info" src="../_images/en_dashboard-side-menu-icon.png" style="width: 1500px;" />
+</a>
 </figure>
 <p>If you click the (<a class="reference internal" href="../_images/menu-hamberger-icon.png"><img alt="image7" src="../_images/menu-hamberger-icon.png" style="width: 20px;" /></a>) icon in the sidebar, the following menu is displayed.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_dashboard-side-menu-icon-drop-down.png"><img alt="View and Edit My Profile" src="../_images/en_dashboard-side-menu-icon-drop-down.png" style="width: 1500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_dashboard-side-menu-icon-drop-down.png"><img alt="View and Edit My Profile" src="../_images/en_dashboard-side-menu-icon-drop-down.png" style="width: 1500px;" />
+</a>
 </figure>
 <ul class="simple">
 <li><p><strong>Change company:</strong> If you are a member of multiple companies, click the <strong>Change company</strong> menu to view the list of your companies and select a company to switch to.</p></li>
@@ -426,7 +315,8 @@ You can create 1 document from a template by clicking the create icon (<a class=
 <h3>My Profile<a class="headerlink" href="#my-profile" title="Link to this heading"></a></h3>
 <p><strong>My profile &gt; Personal</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-myprofile-personal.png"><img alt="My Profile &gt; Personal" src="../_images/en-myprofile-personal.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-myprofile-personal.png"><img alt="My Profile &gt; Personal" src="../_images/en-myprofile-personal.png" style="width: 500px;" />
+</a>
 </figure>
 <dl class="simple">
 <dt><strong>Account information</strong></dt><dd><p>You can view and edit the name, email or ID, password, and contact number of your eformsign account.</p>
@@ -444,12 +334,14 @@ You can create 1 document from a template by clicking the create icon (<a class=
 <p class="admonition-title">Note</p>
 <p>Key personal information such as name and email are masked in the My profile menu. To view or edit, you must complete login verification by clicking the <strong>*View and edit hidden informtio n</strong> button. Members can only view information while the administrator and company managers can both view and edit information.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/myinfor-personalinfo-masking.png"><img alt="My profile &gt; Personal" src="../_images/myinfor-personalinfo-masking.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/myinfor-personalinfo-masking.png"><img alt="My profile &gt; Personal" src="../_images/myinfor-personalinfo-masking.png" style="width: 500px;" />
+</a>
 </figure>
 </div>
 <p><strong>My profile &gt; Company</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-myprofile-company.png"><img alt="My Profile &gt; Company" src="../_images/en-myprofile-company.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-myprofile-company.png"><img alt="My Profile &gt; Company" src="../_images/en-myprofile-company.png" style="width: 500px;" />
+</a>
 </figure>
 <dl>
 <dt><strong>Basic information</strong></dt><dd><p>You can view basic information about your company including the company name, country, language, and contact number.</p>
@@ -478,13 +370,15 @@ company.</p>
 <p>You need to have either the company administrator or company manager permission to perform this action.</p>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_manage-company-profile.png"><img alt="Manage Company &gt; Company profile" src="../_images/en_manage-company-profile.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_manage-company-profile.png"><img alt="Manage Company &gt; Company profile" src="../_images/en_manage-company-profile.png" style="width: 700px;" />
+</a>
 </figure>
 <p><strong>Editing Company Profile</strong></p>
 <ol class="arabic">
 <li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Company profile</strong> menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manage-company-profile-edit.png"><img alt="Company Profile" src="../_images/en-manage-company-profile-edit.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-company-profile-edit.png"><img alt="Company Profile" src="../_images/en-manage-company-profile-edit.png" style="width: 1000px;" />
+</a>
 </figure>
 </li>
 <li><p>Edit the information you want to change in the <strong>Company profile &gt; Basic information</strong> tab.</p></li>
@@ -504,7 +398,8 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 </div>
 <p><strong>Adding the Company Logo and Symbol</strong></p>
 <figure class="align-default" id="id4">
-<a class="reference internal image-reference" href="../_images/en-manage-company-brand.png"><img alt="Company Profile &gt; Brand image" src="../_images/en-manage-company-brand.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-company-brand.png"><img alt="Company Profile &gt; Brand image" src="../_images/en-manage-company-brand.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Company Profile &gt; Brand image</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
@@ -523,7 +418,8 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Apply your changes by clicking the <strong>Save</strong> button.</p></li>
 <li><p>Check whether the new logo was applied to the dashboard.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manage-company-brand-logo-changed.png"><img alt="Dashboard with the Logo Changed" src="../_images/en-manage-company-brand-logo-changed.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-company-brand-logo-changed.png"><img alt="Dashboard with the Logo Changed" src="../_images/en-manage-company-brand-logo-changed.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -579,12 +475,14 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Company profile</strong> menu.</p></li>
 <li><p>Click the <strong>Edit</strong> button in the <strong>Detailed information</strong> section, and then click the <strong>Delegate role</strong> button on the right side of the <strong>Administrator</strong> item.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manage-company-delegate-admin-role.png"><img alt="Delegate Company Administrator Role" src="../_images/en-manage-company-delegate-admin-role.png" style="width: 2000px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-company-delegate-admin-role.png"><img alt="Delegate Company Administrator Role" src="../_images/en-manage-company-delegate-admin-role.png" style="width: 2000px;" />
+</a>
 </figure>
 </li>
 <li><p>Enter your password and then click the <strong>Next</strong> button.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/enter-password-popup.png"><img alt="Enter password pop-up" src="../_images/enter-password-popup.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/enter-password-popup.png"><img alt="Enter password pop-up" src="../_images/enter-password-popup.png" style="width: 500px;" />
+</a>
 </figure>
 </li>
 <li><p>Select the member you want.</p></li>
@@ -601,7 +499,8 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Select the member in the member list you want to grant the company manager permission.</p></li>
 <li><p>Tick the <strong>Manage company</strong> checkbox in the Permission item displayed at the bottom of the Member info tab located to the right of the member list.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_manage-company-member-permission.png"><img alt="Company Manager Permission" src="../_images/en_manage-company-member-permission.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_manage-company-member-permission.png"><img alt="Company Manager Permission" src="../_images/en_manage-company-member-permission.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Save</strong> button.</p></li>
@@ -611,12 +510,14 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Click the sidebar menu icon, and go to the <strong>Manage company &gt; Manage permissions</strong> menu.</p></li>
 <li><p>Select the <strong>Add a company manager</strong> button at the top right corner of the screen.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-company-manager-permission.png"><img alt="Add Company Manager" src="../_images/en-company-manager-permission.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-company-manager-permission.png"><img alt="Add Company Manager" src="../_images/en-company-manager-permission.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Select the member you want to grant the company manager permission.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-company-manager-popup.png"><img alt="Company Manager Pop-up" src="../_images/en-company-manager-popup.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-company-manager-popup.png"><img alt="Company Manager Pop-up" src="../_images/en-company-manager-popup.png" style="width: 400px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Confirm</strong> button to grant the member the company manager permission.</p></li>
@@ -641,7 +542,8 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Select the member in the member list you want to grant the permission.</p></li>
 <li><p>Tick the <strong>Manage templates</strong> checkbox in the Permission item displayed at the bottom of the Member info tab to the right of the member list.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_granted-template-manager-permission.png"><img alt="Company Manager Permission" src="../_images/en_granted-template-manager-permission.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_granted-template-manager-permission.png"><img alt="Company Manager Permission" src="../_images/en_granted-template-manager-permission.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Save</strong> button.</p></li>
@@ -652,12 +554,14 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Click <strong>Template manager</strong> on the left side of the screen.</p></li>
 <li><p>Click the <strong>Add a template manager</strong> button at the top right corner of the screen.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_granting-template-manager-permission.png"><img alt="Template Manager Permission" src="../_images/en_granting-template-manager-permission.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_granting-template-manager-permission.png"><img alt="Template Manager Permission" src="../_images/en_granting-template-manager-permission.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Select the member you want to grant the template manager permission.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-template-manager-popup.png"><img alt="Add Template Manager" src="../_images/en-add-template-manager-popup.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-template-manager-popup.png"><img alt="Add Template Manager" src="../_images/en-add-template-manager-popup.png" style="width: 400px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Confirm</strong> button to grant the member the template manager permission.</p></li>
@@ -667,7 +571,8 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <p><strong>Viewing the number of templates owned by each template manager</strong></p>
 <p>You can view the number of templates owned by each template manager in the template manager screen, and can view the list of all templates each template manager owns by clicking the <strong>Settings</strong> button next to each template manager.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-template-manager-settings.png"><img alt="Template Manager Settings" src="../_images/en-template-manager-settings.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-template-manager-settings.png"><img alt="Template Manager Settings" src="../_images/en-template-manager-settings.png" style="width: 500px;" />
+</a>
 </figure>
 <p>In the <strong>Template manager settings</strong> pop-up, you can view the list of all the templates owned by the template manager. To change the owner of a template, hover the mouse over the desired template, and then click the <strong>Change owner</strong> button that will be displayed. Then, select the new template owner in the <strong>Change owner</strong> pop-up and click the <strong>Change</strong> button.</p>
 </div>
@@ -681,22 +586,26 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Click <strong>Document manager</strong>.</p></li>
 <li><p>Click the <strong>Add a document manager</strong> button on the top right corner of the screen.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-document-manager.png"><img alt="Add Document Manager Popup" src="../_images/en-add-document-manager.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-document-manager.png"><img alt="Add Document Manager Popup" src="../_images/en-add-document-manager.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Select the member you want to grant the document manager permission.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-document-manager-popup.png"><img alt="Add Document Manager Popup" src="../_images/en-add-document-manager-popup.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-document-manager-popup.png"><img alt="Add Document Manager Popup" src="../_images/en-add-document-manager-popup.png" style="width: 400px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Confirm</strong> button to add the member as a document manager.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-document-manager-added.png"><img alt="Document manager added" src="../_images/en-add-document-manager-added.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-document-manager-added.png"><img alt="Document manager added" src="../_images/en-add-document-manager-added.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Settings</strong> button to the right of the document manager to configure the settings.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_adding-document-manager_settings.png"><img alt="Add document manager settings" src="../_images/en_adding-document-manager_settings.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_adding-document-manager_settings.png"><img alt="Add document manager settings" src="../_images/en_adding-document-manager_settings.png" style="width: 700px;" />
+</a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -713,7 +622,8 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p><strong>Advanced</strong>: The Document creator (advanced) option is displayed when you click Advanced under Document creator. It searches for documents whose creator information matches or contains the keywords.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-creator.png"><img alt="Manage permissionas &gt; Document manager settings pop-up &gt; Document creator (advanced)" src="../_images/docmanager-advancedsetting-creator.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-creator.png"><img alt="Manage permissionas &gt; Document manager settings pop-up &gt; Document creator (advanced)" src="../_images/docmanager-advancedsetting-creator.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 </li>
@@ -728,14 +638,16 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p><strong>Template list:</strong> All documents created by the document creators selected above from the selected templates that are created from the selected templates.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/docmanager-setting-doctype.png"><img alt="Manage permissionas &gt; Document manager settings pop-up &gt; Document type" src="../_images/docmanager-setting-doctype.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/docmanager-setting-doctype.png"><img alt="Manage permissionas &gt; Document manager settings pop-up &gt; Document type" src="../_images/docmanager-setting-doctype.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 </li>
 <li><p><strong>Advanced:</strong> The Field (advanced) option is displayed when you click Advanced under Document type. It searches for documents containing a particular field within a specific period/range or searches for documents containing a specific field with a specific value.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-doctype.png"><img alt="Manage permissions &gt; Document manager settings pop-up &gt; Field (advanced)" src="../_images/docmanager-advancedsetting-doctype.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/docmanager-advancedsetting-doctype.png"><img alt="Manage permissions &gt; Document manager settings pop-up &gt; Field (advanced)" src="../_images/docmanager-advancedsetting-doctype.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 </li>
@@ -763,7 +675,8 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <p>You can click the below <strong>+ Add a document permission</strong> button to add more document conditions.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-add-document-permission.png"><img alt="Add a document permission" src="../_images/en-add-document-permission.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-add-document-permission.png"><img alt="Add a document permission" src="../_images/en-add-document-permission.png" style="width: 400px;" />
+</a>
 </figure>
 </div></blockquote>
 </div>
@@ -815,12 +728,14 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <li><p>Click the sidebar menu icon, and go to the <strong>Manage templates</strong> menu.</p></li>
 <li><p>Click the <strong>Template settings</strong> (<a class="reference internal" href="../_images/config-icon.PNG"><img alt="image9" src="../_images/config-icon.PNG" style="width: 20px;" /></a>) icon.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manage-template-settings-icon.png"><img alt="Template Settings Icon" src="../_images/en-manage-template-settings-icon.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-template-settings-icon.png"><img alt="Template Settings Icon" src="../_images/en-manage-template-settings-icon.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Go to the <strong>Set permissions</strong> tab.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_template-setting-set-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en_template-setting-set-permissions.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_template-setting-set-permissions.png"><img alt="Template Settings &gt; Set Permissions" src="../_images/en_template-setting-set-permissions.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Select the groups or members you want to grant the <strong>Template usage</strong> permission and the <strong>Template editing</strong> permission. Note that you can only select members (not groups) as template editors.</p></li>
@@ -832,13 +747,15 @@ Usually, a logo has a long horizontal format that includes its brand name and a 
 <h2>Manage Groups and Members<a class="headerlink" href="#manage-groups-and-members" title="Link to this heading"></a></h2>
 <p>You can invite, delete, and edit members and create, add, and delete groups in the <strong>Manage company</strong> menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_side-menu-manage-group-members.png"><img alt="Manage Company &gt; Manage Groups/Members" src="../_images/en_side-menu-manage-group-members.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_side-menu-manage-group-members.png"><img alt="Manage Company &gt; Manage Groups/Members" src="../_images/en_side-menu-manage-group-members.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="manage-members">
 <h3>Manage Members<a class="headerlink" href="#manage-members" title="Link to this heading"></a></h3>
 <p>You can invite members to your company or manage invited members in the <strong>Manage members</strong> menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manage-members-page.png"><img alt="Manage Company &gt; Manage Members" src="../_images/en-manage-members-page.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manage-members-page.png"><img alt="Manage Company &gt; Manage Members" src="../_images/en-manage-members-page.png" style="width: 700px;" />
+</a>
 </figure>
 <dl>
 <dt><strong>① Active</strong></dt><dd><p>You can view the list of active members in the company and their information.</p>
@@ -877,7 +794,8 @@ If an invited person does not accept the invitation within 7 days, then you must
 <h3>Manage Groups<a class="headerlink" href="#manage-groups" title="Link to this heading"></a></h3>
 <p>You can create groups in the company and view, edit, or delete each group’s information.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-manag-groups-page.png"><img alt="Manage Company &gt; Manage Groups" src="../_images/en-manag-groups-page.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-manag-groups-page.png"><img alt="Manage Company &gt; Manage Groups" src="../_images/en-manag-groups-page.png" style="width: 700px;" />
+</a>
 </figure>
 <dl class="simple">
 <dt><strong>① Group information</strong></dt><dd><p>When you select a group in the list, you can view the name and description of the group on the right side. You can also edit the group information in the Group information tab.</p>
@@ -905,7 +823,8 @@ Contacts can be easily selected from the contact list when sending documents.</p
 <h3>My contacts<a class="headerlink" href="#my-contacts" title="Link to this heading"></a></h3>
 <p>Allows you to add and manage non-member contacts that you use frequently.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/mycontacts.png"><img alt="My contacts" src="../_images/mycontacts.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/mycontacts.png"><img alt="My contacts" src="../_images/mycontacts.png" style="width: 700px;" />
+</a>
 </figure>
 <p><strong>① Search and sort contacts</strong></p>
 <ul class="simple">
@@ -936,7 +855,8 @@ Contacts can be easily selected from the contact list when sending documents.</p
 <li><p>Click  the <strong>Download Excel file</strong> to download the file.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/add-bulk-contacts.png"><img alt="Bulk add contacts" src="../_images/add-bulk-contacts.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/add-bulk-contacts.png"><img alt="Bulk add contacts" src="../_images/add-bulk-contacts.png" style="width: 400px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Open the downloaded Excel file, enter the contact information in the specified format, and save it.</p></li>
@@ -970,7 +890,8 @@ Contacts can be easily selected from the contact list when sending documents.</p
 <p>Only the <strong>administrator</strong> or <strong>company managers</strong> can add or edit shared contacts in <strong>Manage company &gt; Manage shared contacts</strong>.</p>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/shared-contacts.png"><img alt="Shared contacts" src="../_images/shared-contacts.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/shared-contacts.png"><img alt="Shared contacts" src="../_images/shared-contacts.png" style="width: 700px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -979,7 +900,8 @@ Contacts can be easily selected from the contact list when sending documents.</p
 <p>You can add and manage shared contacts that can be accessed by all company members.
 Added contacts are automatically shared with all members and displayed under <strong>Contacts</strong> &gt; <strong>Shared contacts</strong>.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/company-shared-contacts.png"><img alt="Shared contacts" src="../_images/company-shared-contacts.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/company-shared-contacts.png"><img alt="Shared contacts" src="../_images/company-shared-contacts.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="adding-shared-contacts">
 <h3>Adding shared contacts<a class="headerlink" href="#adding-shared-contacts" title="Link to this heading"></a></h3>
@@ -988,7 +910,8 @@ Added contacts are automatically shared with all members and displayed under <st
 <li><p>Enter the contact information and then click the <strong>Register</strong> button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/add-contacts.png"><img alt="Add contact pop-up" src="../_images/add-contacts.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/add-contacts.png"><img alt="Add contact pop-up" src="../_images/add-contacts.png" style="width: 400px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Added contacts can be viewed by all members under <strong>Contacts &gt; Shared contacts</strong>.</p></li>
@@ -1002,7 +925,8 @@ Added contacts are automatically shared with all members and displayed under <st
 <li><p>Click the <strong>Download Excel file</strong> button to download the file.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/add-bulk-contacts.png"><img alt="Bulk add contactss" src="../_images/add-bulk-contacts.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/add-bulk-contacts.png"><img alt="Bulk add contactss" src="../_images/add-bulk-contacts.png" style="width: 400px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Open the downloaded Excel file, enter the contact information according to the template format, and save it.</p></li>
@@ -1040,15 +964,18 @@ Added contacts are automatically shared with all members and displayed under <st
 <ol class="arabic">
 <li><p>Click the sidebar menu icon, and go to the <strong>My signature</strong> menu.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en_side-menu-my-signature.png"><img alt="My Signature Page" src="../_images/en_side-menu-my-signature.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en_side-menu-my-signature.png"><img alt="My Signature Page" src="../_images/en_side-menu-my-signature.png" style="width: 700px;" />
+</a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-my-signature-main.png"><img alt="My Signature Page" src="../_images/en-my-signature-main.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-my-signature-main.png"><img alt="My Signature Page" src="../_images/en-my-signature-main.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Register</strong> button in the Signature or Initial section to add a new signature or initial.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-my-signature-register.png"><img alt="Register Signature" src="../_images/en-my-signature-register.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-my-signature-register.png"><img alt="Register Signature" src="../_images/en-my-signature-register.png" style="width: 500px;" />
+</a>
 </figure>
 <ul class="simple">
 <li><p><strong>Draw</strong>
@@ -1069,7 +996,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <p>You can select the signature types that can be used when signing on documents.</p>
 <p>In <strong>Manage company</strong> &gt; <strong>Signature settings</strong>, you can disable or enable the signing methods (such as signing with text and create stamp) that can be used when signing a signature or stamp.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-method.png"><img alt="Signature type settings" src="../_images/signature-method.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/signature-method.png"><img alt="Signature type settings" src="../_images/signature-method.png" style="width: 400px;" />
+</a>
 </figure>
 </div>
 </section>
@@ -1088,12 +1016,14 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Click the sidebar menu icon, and go to the <strong>My signature</strong> menu.</p></li>
 <li><p>Click the <strong>Register</strong> button in the Stamp section to add a new stamp.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp.png"><img alt="Register Stamp" src="../_images/en-my-signature-register-stamp.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp.png"><img alt="Register Stamp" src="../_images/en-my-signature-register-stamp.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the Create stamp tab in the pop-up displayed and create a name for the stamp and choose the date format, enter additional info, and choose the stamp color. Then, click the <strong>Generate stamp</strong> button and click the <strong>Save</strong> button to save the stamp.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-my-signature-create-stamp-popup.png"><img alt="My signature &gt; Register Stamp Pop-up" src="../_images/en-my-signature-create-stamp-popup.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-my-signature-create-stamp-popup.png"><img alt="My signature &gt; Register Stamp Pop-up" src="../_images/en-my-signature-create-stamp-popup.png" style="width: 300px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Edit</strong> or <strong>Delete</strong> button to edit or delete the added stamp.</p></li>
@@ -1103,7 +1033,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <p><strong>Disabling the create stamp feature</strong></p>
 <p>To disable the <strong>Create stamp</strong> feature when applying a stamp in the signature field, disable the feature in <strong>Manage company &gt; Signature settings</strong>.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-method-createstamp.png"><img alt="Signature setings screen" src="../_images/signature-method-createstamp.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/signature-method-createstamp.png"><img alt="Signature setings screen" src="../_images/signature-method-createstamp.png" style="width: 700px;" />
+</a>
 </figure>
 </div>
 </section>
@@ -1121,12 +1052,14 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Click the sidebar menu icon, and go to the <strong>My signature</strong> menu.</p></li>
 <li><p>Click the <strong>Register</strong> button in the Stamp section to add a new stamp.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp.png"><img alt="Register Stamp" src="../_images/en-my-signature-register-stamp.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp.png"><img alt="Register Stamp" src="../_images/en-my-signature-register-stamp.png" style="width: 700px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the image area. A pop-up window will be displayed where you can upload an image from your PC. Select the image that you want to add.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp-popup.png"><img alt="My signature &gt; Register Stamp Pop-up" src="../_images/en-my-signature-register-stamp-popup.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/en-my-signature-register-stamp-popup.png"><img alt="My signature &gt; Register Stamp Pop-up" src="../_images/en-my-signature-register-stamp-popup.png" style="width: 500px;" />
+</a>
 </figure>
 </li>
 <li><p>Click the <strong>Save</strong> button to save the stamp.</p></li>
@@ -1146,12 +1079,14 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <ol class="arabic">
 <li><p>Go to the <strong>My signature</strong> page -&gt; click the <strong>Register</strong> button under <strong>Stamp</strong>-&gt; click the <strong>Scan stamp</strong> tab on the pop-up displayed.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup.png"><img alt="Register button" src="../_images/signature-stamp-scan-popup.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup.png"><img alt="Register button" src="../_images/signature-stamp-scan-popup.png" style="width: 300px;" />
+</a>
 </figure>
 </li>
 <li><p>Download and print out <strong>Scannable paper for stamps</strong>.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-stamp-scan-paper.png"><img alt="Scannable paper for stamps" src="../_images/signature-stamp-scan-paper.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/signature-stamp-scan-paper.png"><img alt="Scannable paper for stamps" src="../_images/signature-stamp-scan-paper.png" style="width: 400px;" />
+</a>
 </figure>
 </li>
 <li><p>Apply the stamp in the center of the scan area in <strong>Scannable paper for stamp</strong>.</p></li>
@@ -1166,7 +1101,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <ol class="arabic">
 <li><p>Go to the <strong>My signature</strong> page -&gt; touch the <strong>Register</strong> button under <strong>Stamp</strong>-&gt; touch the <strong>Scan stamp</strong> tab on the pop-up displayed.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/stamp-scan-popup-mobile-en.png"><img alt="Scan stamp pop-up" src="../_images/stamp-scan-popup-mobile-en.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/stamp-scan-popup-mobile-en.png"><img alt="Scan stamp pop-up" src="../_images/stamp-scan-popup-mobile-en.png" style="width: 300px;" />
+</a>
 </figure>
 </li>
 <li><p>Download and print out <strong>Scannable paper for stamps</strong>.</p></li>
@@ -1174,7 +1110,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Touch the <strong>Scan</strong> button.</p></li>
 <li><p>Allow camera access in the camera screen.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/stamp-scan-mobile-camera.png"><img alt="Allow camera access" src="../_images/stamp-scan-mobile-camera.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/stamp-scan-mobile-camera.png"><img alt="Allow camera access" src="../_images/stamp-scan-mobile-camera.png" style="width: 300px;" />
+</a>
 </figure>
 </li>
 <li><p>In the <strong>Scan stamp</strong>  screen, scan the scan area in which the stamp is applied.</p></li>
@@ -1217,11 +1154,13 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <h3><strong>Company stamp tab</strong><a class="headerlink" href="#company-stamp-tab" title="Link to this heading"></a></h3>
 <p>In this tab, you can add company stamps by uploading an image or scanning a real life-sized stamps as well as granting stamp use permission to members/groups. Once a company stamp is added, you can edit and delete it, and even view the history of all changes made to the stamp</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/menu_company-stamp.png"><img alt="Manage company stamp screen" src="../_images/menu_company-stamp.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/menu_company-stamp.png"><img alt="Manage company stamp screen" src="../_images/menu_company-stamp.png" style="width: 700px;" />
+</a>
 </figure>
 <p>To add a company stamp, click the  <strong>Add company stamp</strong> button, name the stamp name, and give permission to groups and members to use the stamp. Then, click the <strong>Register</strong> button to scan the stamp, upload the image, or create the stamp.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/company-stamp-register.png"><img alt="Add company stamp pop up" src="../_images/company-stamp-register.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/company-stamp-register.png"><img alt="Add company stamp pop up" src="../_images/company-stamp-register.png" style="width: 400px;" />
+</a>
 </figure>
 <ul class="simple">
 <li><p><strong>Stamp name</strong>: Enter the name of the stamp.</p></li>
@@ -1246,7 +1185,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>You can create multiple categories by using a slash (/) as a separator (e.g. ACME Inc/Finance Team).</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/createaddcompanystamp.png"><img alt="Create and add company stamp" src="../_images/createaddcompanystamp.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/createaddcompanystamp.png"><img alt="Create and add company stamp" src="../_images/createaddcompanystamp.png" style="width: 300px;" />
+</a>
 </figure>
 </li>
 </ol>
@@ -1257,7 +1197,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p><strong>Keyword Search</strong>: Enter keywords such as the category name, stamp name, or permissions into the search field to quickly find the stamp you need.</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/filterandsearchcategories.png"><img alt="Filter and search categories" src="../_images/filterandsearchcategories.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../_images/filterandsearchcategories.png"><img alt="Filter and search categories" src="../_images/filterandsearchcategories.png" style="width: 800px;" />
+</a>
 </figure>
 <p><strong>How to Set Advanced Usage Permissions</strong></p>
 <p>Permissions for using company stamps can be further refined so that only users meeting certain criteria (department, ID, name, etc.) are allowed to use them.</p>
@@ -1274,18 +1215,21 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Once you have finished setting your conditions, click the <strong>Save</strong> button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/userconditions.png"><img alt="User conditions" src="../_images/userconditions.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/userconditions.png"><img alt="User conditions" src="../_images/userconditions.png" style="width: 400px;" />
+</a>
 </figure>
 <p>Also, you can see the history of updates and deletions, and modifications made to a stamp. The following shows the stamp history shown when you click the <strong>History</strong> button.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/company-stamp-register-history.png"><img alt="Stamp history screen" src="../_images/company-stamp-register-history.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/company-stamp-register-history.png"><img alt="Stamp history screen" src="../_images/company-stamp-register-history.png" style="width: 700px;" />
+</a>
 </figure>
 </section>
 <section id="stamp-history-tab">
 <h3><strong>Stamp history tab</strong><a class="headerlink" href="#stamp-history-tab" title="Link to this heading"></a></h3>
 <p>In this tab, you can view the history of all the stamps used. You can view information including each of the stamps that were used, the members that used each stamp, the date each stamp was used, etc. You can also download the stamp history in CSV format.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/company-stamp-history.png"><img alt="Stamp history tab" src="../_images/company-stamp-history.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/company-stamp-history.png"><img alt="Stamp history tab" src="../_images/company-stamp-history.png" style="width: 700px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -1303,7 +1247,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Comments and memos</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/additional-features-settings.png"><img alt="Additional features settings" src="../_images/additional-features-settings.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/additional-features-settings.png"><img alt="Additional features settings" src="../_images/additional-features-settings.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="paid-options">
 <h3>Paid options<a class="headerlink" href="#paid-options" title="Link to this heading"></a></h3>
@@ -1311,7 +1256,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <div><p>Allows you to control the use of paid options such SMS verification and timestamps.</p>
 </div></blockquote>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/paid-options-settings.png"><img alt="Paid options" src="../_images/paid-options-settings.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/paid-options-settings.png"><img alt="Paid options" src="../_images/paid-options-settings.png" style="width: 700px;" />
+</a>
 </figure>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
@@ -1326,7 +1272,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p><strong>Disable Create stamp:</strong> Disables the feature that automatically generates a stamp by selecting a stamp style. This also applies to company stamps.</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-types-settings.png"><img alt="Signature types" src="../_images/signature-types-settings.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/signature-types-settings.png"><img alt="Signature types" src="../_images/signature-types-settings.png" style="width: 700px;" />
+</a>
 </figure>
 </section>
 <section id="comments-and-memos">
@@ -1337,7 +1284,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p><strong>Enable memos:</strong> Enable users to insert text or images on the document using the memo tool.</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/comments-memos-settings.png"><img alt="Comments and memos" src="../_images/comments-memos-settings.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/comments-memos-settings.png"><img alt="Comments and memos" src="../_images/comments-memos-settings.png" style="width: 700px;" />
+</a>
 </figure>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
@@ -1356,7 +1304,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </ul>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/manage-watermarks.png"><img alt="Manage watermarks" src="../_images/manage-watermarks.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/manage-watermarks.png"><img alt="Manage watermarks" src="../_images/manage-watermarks.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="adding-watermarks">
 <h3>Adding watermarks<a class="headerlink" href="#adding-watermarks" title="Link to this heading"></a></h3>
@@ -1364,7 +1313,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Click the <strong>Add watermark</strong> button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/register-watermark.png"><img alt="Add watermark" src="../_images/register-watermark.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/register-watermark.png"><img alt="Add watermark" src="../_images/register-watermark.png" style="width: 600px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Enter the watermark name and the text to be displayed.</p>
@@ -1382,7 +1332,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/register-watermark2.png"><img alt="Add watermark" src="../_images/register-watermark2.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/register-watermark2.png"><img alt="Add watermark" src="../_images/register-watermark2.png" style="width: 400px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="5">
 <li><p>View the preview on the right and click the <strong>Add</strong> button.</p></li>
@@ -1413,14 +1364,16 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </div>
 <p>Click the <strong>Change layer order</strong> button at the top right part of the screen. Then click the <strong>Change layer order</strong> button at the top right part of the screen.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/watermark-layer.png"><img alt="Change layer order" src="../_images/watermark-layer.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/watermark-layer.png"><img alt="Change layer order" src="../_images/watermark-layer.png" style="width: 400px;" />
+</a>
 </figure>
 </section>
 <section id="preview-watermark">
 <h3>Preview watermark<a class="headerlink" href="#preview-watermark" title="Link to this heading"></a></h3>
 <p>Allows you to preview how watermarks will appear when applied for each document status.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/preview-watermark.png"><img alt="Preview watermark" src="../_images/preview-watermark.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/preview-watermark.png"><img alt="Preview watermark" src="../_images/preview-watermark.png" style="width: 400px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -1428,10 +1381,12 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <span id="id3"></span><h2>Security settings<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
 <p>You can secure your account via <strong>Login settings</strong> and <strong>IP access settings</strong>. With <strong>Login settings</strong>, you can enable 2-step verification, disable multiple logins, and lock inactive accounts. With <strong>IP access settings</strong>, you can set permissions to allow login from specific IP addresses only.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings.png"><img alt="Security settings" src="../_images/security-settings.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings.png"><img alt="Security settings" src="../_images/security-settings.png" style="width: 700px;" />
+</a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings-page.png"><img alt="Security settings" src="../_images/security-settings-page.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings-page.png"><img alt="Security settings" src="../_images/security-settings-page.png" style="width: 700px;" />
+</a>
 </figure>
 <section id="login-settings">
 <h3><strong>Login settings</strong><a class="headerlink" href="#login-settings" title="Link to this heading"></a></h3>
@@ -1473,7 +1428,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <p>Allow members to access documents via links in email or SMS notifications without logging in.</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/no-login.png"><img alt="Allow access to document links without login" src="../_images/no-login.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/no-login.png"><img alt="Allow access to document links without login" src="../_images/no-login.png" style="width: 500px;" />
+</a>
 </figure>
 </div></blockquote>
 <div class="admonition note">
@@ -1492,7 +1448,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Go to the <strong>Manage company &gt; Security settings</strong> menu and click IP access settings on the left side of the screen. Under <strong>IP access settings</strong>, select <strong>Allow access only to allowed IP addresses</strong>.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="IP access settings" src="../_images/security-settings2.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings2.png"><img alt="IP access settings" src="../_images/security-settings2.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Enter the IP address or range you want to allow access from.</p></li>
@@ -1501,7 +1458,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Review the list of allowed IP addresses and then click the <strong>Save</strong> button.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="SIP access settings" src="../_images/security-settings1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/security-settings1.png"><img alt="SIP access settings" src="../_images/security-settings1.png" style="width: 700px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -1522,13 +1480,15 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p>Go to the <strong>Manage company &gt; Document retention period</strong> menu.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/retention-period.png"><img alt="Document retention period settings" src="../_images/retention-period.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/retention-period.png"><img alt="Document retention period settings" src="../_images/retention-period.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Click <strong>Settings</strong> in the Document retention period page.</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/retention-period1.png"><img alt="Document retention period settings" src="../_images/retention-period1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/retention-period1.png"><img alt="Document retention period settings" src="../_images/retention-period1.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic" start="3">
 <li><p>Select months/years in the drop-down box and enter the period.</p>
@@ -1536,7 +1496,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 </li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/retention-period2.png"><img alt="Document retention period settings" src="../_images/retention-period2.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/retention-period2.png"><img alt="Document retention period settings" src="../_images/retention-period2.png" style="width: 700px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>Click the <strong>Save</strong> button to update the retention period, and the change will apply to the documents created hereafter.</p></li>
@@ -1563,10 +1524,12 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 <li><p><strong>Permission management history</strong>: View the history of activities that occured in the <strong>Manage permissions</strong> page.</p></li>
 </ul>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/activity-history1.png"><img alt="Manage activity history" src="../_images/activity-history1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/activity-history1.png"><img alt="Manage activity history" src="../_images/activity-history1.png" style="width: 700px;" />
+</a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/activity-history2.png"><img alt="Manage activity history" src="../_images/activity-history2.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/activity-history2.png"><img alt="Manage activity history" src="../_images/activity-history2.png" style="width: 700px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -1692,8 +1655,8 @@ Select a mobile device you want to connect to and click the <strong>Send</strong
 
 
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    &#169; Copyright 2026, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
