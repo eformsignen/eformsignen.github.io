@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2025, FORCS CO., LTD. All rights reserved.'
+copyright = '2026, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2024.1211.209'
+version = 'version 10.2026.0624'
 # The full version, including alpha/beta/rc tags
-release = '2024.12.27'
+release = '2026.08.03'
 
 
 # -- General configuration ---------------------------------------------------
@@ -91,7 +91,7 @@ html_theme = 'piccolo_theme'
 
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-html_css_files = []
+html_css_files = ['custom_override.css']
 
 
 #html_theme_options = {
@@ -279,12 +279,12 @@ pygments_style = "stata-dark"
 
 html_theme_options = {
     "source_url": 'https://www.eformsign.com/',
-    "source_icon": "C:\Docbook\eformsignen.github.io\docs\_static\favicon.png",
-    "banner_text": '<a href="https://www.eformsign.com/">Go to eformsign</a>'
+    "source_icon": r"images\favicon.png",
+#    "banner_text": '<a href="https://www.eformsign.com/">Go to eformsign</a>'
 }
 
 
-html_logo = "C:\docbook\eformsignen.github.io\images\\eformsign_guide_logo1.png"
+html_logo = r"images\eformsign_guide_logo1.png"
 
 #html_logo = "C:\docbook\eformsignen.github.io\images\\forcs_b.png"
 

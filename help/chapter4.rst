@@ -255,7 +255,6 @@ Clicking the signature area displays the **Signature** pop-up which allows you t
 
 Enters the ID of the signature field. For example, the ID of the field can be ‘signerSignature’ for contract signers.
 
-
 **② Available signature Type**
 
 Selects the signature type to be used when signing.
@@ -352,17 +351,12 @@ If you add a company stamp field, documents that require a company stamp will sh
 Enter the ID of the Company stamp field. For example, the ID of the field for applying a company stamp can be named ‘companystamp’.
 
 
-**② Who can fill this out**
-
-Sets whether the recipient is required or allowed to fill in this field.
-
-
-**③ Placeholder**
+**② Placeholder**
 
 Sets the help message displayed.
 
 
-**④ Tooltip Text**
+**③ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field. 
 
@@ -390,12 +384,7 @@ Enters the ID of the Text/Multiline field. For example, the ID of the field in w
 
    All fields must have an ID. An ID is automatically generated when you create a field, but it is recommended to rename it to something you can easily recognize. For example, you can rename the ID of a field for entering John Doe, Jane Doe, etc. as 'name'. By doing so, it is easier to identify fields when deciding whether to display a field to a specific user when you are configuring the Field settings of a template.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-
-**③ Default value**
+**② Default value**
 
 Sets the default text.
 
@@ -403,28 +392,28 @@ Sets the default text.
 
    This option can be set only in the Text field. By checking this option, the password is hidden with the password symbol (●) or asterisk (*) when entering text. The password is also hidden with the password symbol in PDFs, and can only be seen when downloaded in the CSV format.
 
-**④ Input type**
+**③ Input type**
 
 Selects either ''Plain text', 'Password', or 'Custom' for the Text field and 'Plain text' and 'Custom' for the Multiline field.
 
-**⑤ Select custom input type**
+**④ Select custom input type**
 
 Selects additional input types as well as create a custom input type by creating a rule. It is enabled when **Input type** is set to 'Custom'. 
 
-**⑥ Autofit text**
+**⑤ Autofit text**
 
  Allows you to limit character count to fit the text field, resize font to fit the text field, and set the character limit for each text and multiline field.
  
-**⑦ Keypad type on mobile devices**
+**⑥ Keypad type on mobile devices**
 
 Selects the keyboard type to be used when entering text in the field. Keyboard Type can only be used in mobile devices such as
 smartphones and tablets.
 
-**⑧ Placeholder**
+**⑦ Placeholder**
 
 Displays a help message when no value is entered.
 
-**⑨ Tooltip Text**
+**⑧ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field.
 
@@ -573,15 +562,11 @@ In Word and PowerPoint, the Check field is shown in a rectangular shape. Make su
 
 Each Check field must be given a different ID. If multiple check fields are given the same ID, then only the value of the last field is displayed.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Items**
+**② Items**
 
 You can enter the text to be displayed in the item. You can also add multiple check fields so that multiple items can be selected.
 
-**④ Checked Style**
+**③ Checked Style**
 
 You can specify the style of each field in **Field Properties**.
 The check box is set as the default style, and you can change it to another style (radio button or red circle).
@@ -597,15 +582,15 @@ The below example shows how checks are displayed according to the selected style
 
    |image6|
 
-**⑤ Unchecked style**
+**④ Unchecked style**
 
 You can select the style of each field that is not selected. For unchecked style, checks display square boxes, radio buttons display circles, and circles display nothing.
 
-**⑥ Check box alignment**
+**⑤ Check box alignment**
 
 You can choose whether to align the placeholder text to the right or left of the check box.
 
-**⑦ Tooltip text**
+** Tooltip text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -631,15 +616,11 @@ In **Field Properties**, make sure that all the selected radio buttons are assig
 
 For example, if there are six choices available in a multiple choice question, assign ‘question1’ as the ID for all of them. I
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Items**
+**② Items**
 
 Items with the same ID are shown in the item list of the field properties window and you can edit text easily.
 
-**④ Selected style**
+**③ Selected style**
 
 You can specify the style of each field in **Field Properties**.
 The black circle set as the default style, and you can change it to another style in the dropdown menu.
@@ -650,17 +631,17 @@ The black circle set as the default style, and you can change it to another styl
 
    |image7|
 
-**⑤ Unselected style**
+**④ Unselected style**
 
 You can select the style of each field that is not selected.
 
 
-**⑥ Radio button alignment**
+**⑤ Radio button alignment**
 
 Select whether to place the button to the left or right of the text.
 
 
-**⑦ Tooltip Text**
+**⑥ Tooltip Text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -687,23 +668,19 @@ If you click a Combo field, a list of items is displayed as follows:
 
 Enter the ID of the Combo field. For example, the ID of the field for selecting the favorite color can be ‘Favorite color’.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Item count**
+**② Item count**
 
 Enter the items you want. You can separate the items by pressing Enter.
 
-**④ Default item**
+**③ Default item**
 
 Select the item set as default.
 
-**⑤ Placeholder**
+**④ Placeholder**
 
 Text displayed as a help message before entering information.
 
-**⑥ Tooltip Text**
+**⑤ Tooltip Text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -734,19 +711,15 @@ You can change the status to Good or Bad by clicking the fields as follows:
 
 Enters the ID of the Toggle field. For example, the ID of the field for the first inspection item can be named ‘APT inspection 1’.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Items**
+**② Items**
 
 Enters the list of items that will be toggled whenever the Toggle field is clicked. You can separate the items by pressing Enter.
 
-**④ Default item**
+**③ Default item**
 
 Select the item set as default.
 
-**⑤ Tooltip Text**
+**④ Tooltip Text**
 
 Displays the description in Tooltip Text when you hover the mouse over a field.
 
@@ -770,15 +743,11 @@ This field is used for entering a date. Clicking the field displays a date selec
 
 Enters the ID of the Datetime field. For example, the ID of the field for selecting the vacation start date can be named ‘Vacation start date’.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Default value**
+**② Default value**
 
 Sets the date to be displayed as default. If you check **Set today's date as default date**, then today's date is automatically entered when a document is opened.
 
-**④ Format**
+**③ Format**
 
 Sets the format in which date will be displayed. The default setting is date_yyyy-MM-dd.
 
@@ -790,15 +759,37 @@ Sets the format in which date will be displayed. The default setting is date_yyy
 
 For example, if you want to display the date in the format of ‘15-02-2020’, then enter **dd-MM-yyyy** in the Format field.
 
-**⑤ Minimum Date/Maximum Date**
+**④ Minimum Date/Maximum Date**
 
 Sets the range of dates that can be selected in the field by specifying the minimum and maximum dates.
 
-**⑥ Placeholder**
+**⑤ Excluded Days**
+
+Sets specific days of the week so that they cannot be selected when choosing a date. You can select up to 6 days of the week to exclude. 
+
+**⑥ Excluded Dates**
+
+Sets specific dates so that they cannot be selected when choosing a date. Enter the dates to be excluded directly in the yyyy-MM-dd format, and separate multiple dates with a comma (,). There is no limit to the number of excluded dates you can enter, and any value that does not match the date format is automatically deleted.
+
+For example, to block weekends, the company's founding anniversary (March 5), and the official holiday period (July 29 to August 1) in advance, configure the settings as follows:
+
+- Excluded days: Select Sat and Sun
+- Excluded dates: 2026-03-05, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01
+
+.. figure:: resources/exclude-datetime-sample-en.png
+   :alt: Setting Datetime Field Properties Sample
+
+
+.. note::
+
+   The excluded days of the week and excluded dates features are supported only on PC and mobile web.
+   They are also supported only in Web Form Designer, and will be applied to eformsign for Microsoft Office at a later date.
+
+**⑦ Placeholder**
 
 Text displayed as a help message before entering information.
 
-**⑦ Tooltip Text**
+**⑧ Tooltip Text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -822,19 +813,15 @@ Clicking the field displays two arrows on the right, and you can increase or dec
 
 Enters the ID of the Numeric field. For example, the ID of the field for entering the number of people in a reservation can be named ‘peopleCount’.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Default value**
+**⑥ Default value**
 
 Enters the default number to be displayed.
 
-**④ Unit of Change**
+**③ Unit of Change**
 
 Enters the unit of number that will increase/decrease the number whenever the up/down arrow icon is clicked. For example, if the **Unit of Change** is set to 100, then when you click the up arrow icon (▲), the number is increased by 100 such as 200, 300, 400, and so on.
 
-**⑤ Minimum/Maximum Value**
+**④ Minimum/Maximum Value**
 
 Sets the range of numbers that can be entered into the field by
 specifying the minimum and maximum values. For example, for the date of
@@ -845,11 +832,11 @@ Value will be automatically entered. For example, if the Maximum Value
 is set to 100 and you enter 101, then the number will automatically
 change to 100.
 
-**⑥ Placeholder**
+**⑤ Placeholder**
 
 Text displayed as a help message before entering information.
 
-**⑦ Tooltip Text**
+**⑥ Tooltip Text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -907,11 +894,7 @@ If the size of the selected image is larger than the size of the field, then it 
 Enters the ID of the Camera field. For example, the ID of the field that takes the photo of a driver’s license can be
 ‘driverLicense’.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Placeholder**
+**② Placeholder**
 
 Enters the text displayed before taking a photo.
 
@@ -922,7 +905,7 @@ Enters the text displayed before taking a photo.
 
    |image11|
 
-**④ Tooltip Text**
+**③ Tooltip Text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -954,11 +937,7 @@ When you add a Voice field, you can record voice or play a voice recording as fo
 
 Enter the ID of the voice field. For example, the ID of the field that plays voice recordings can be named 'Record1'.
 
-**② Who can fill this out**
-
-Selects who is allowed or required to fill out the field.
-
-**③ Placeholder**
+**② Placeholder**
 
 Enters the text shown before recording.
 
@@ -968,7 +947,7 @@ Enters the text shown before recording.
 
    |image13|
 
-**④ Tooltip text**
+**③ Tooltip text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 
@@ -998,11 +977,7 @@ The types and sizes of files that can be attached are as follows:
 
 Enters the ID of the Attachment field. For example, the ID of the field for attaching a resume can be named ‘myResume’.
 
-**② Who can fill this out**
-Selects who is allowed or required to fill out the field.
-
-
-**③  Placeholder**
+**②  Placeholder**
 
 Enters the text shown before attachment.
 
@@ -1012,7 +987,7 @@ Enters the text shown before attachment.
 
    |image14|
 
-**④ Tooltip text**
+**③ Tooltip text**
 
 If you hover mouse over a field, the description you entered in the tooltip text will be displayed. In the eformsign app, this will be displayed at the top center of the keypad.
 

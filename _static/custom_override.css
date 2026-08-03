@@ -1,0 +1,30 @@
+/* eformsign 영문 매뉴얼 - 헤더 커스터마이징
+ *
+ * piccolo_theme 의 basic_mod.css 기본값을 덮어쓴다.
+ * 값은 한국어 매뉴얼(eformsignkr)의 docs/_static/basic_mod.css 와 동일하게 맞춤.
+ *
+ * 이 파일이 있어야 make html 결과(_build)가 배포본(docs)과 같은 모습이 된다.
+ * (예전에는 docs/_static/basic_mod.css 를 직접 수정해서 관리했기 때문에
+ *  빌드할 때마다 테마 기본값으로 되돌아갔다.)
+ */
+
+:root {
+    --mainNavColor: #0E73C3;          /* 상단 바 배경 (테마 기본 #3889ce) */
+    --navbarHeight: 5rem;             /* 상단 바 높이 (테마 기본 4rem) */
+    --notificationBannerColor: white; /* 알림 배너 배경 */
+}
+
+/* 상단 바 로고 크기 (테마 기본 1.3rem) */
+div#top_nav nav h1 img {
+    height: 2rem;
+    width: auto;
+}
+
+/* 알림 배너는 사용하지 않음 (conf.py 의 banner_text 도 주석 처리됨) */
+div#top_nav div#notification_banner {
+    display: none;
+}
+
+div#top_nav div#notification_banner p {
+    color: #0E73C3;
+}
