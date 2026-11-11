@@ -421,14 +421,20 @@ The company manager permission can be granted in the **Manage members** or the *
 
 2. Select the member in the member list you want to grant the company manager permission.
 
-3. Tick the **Manage company** checkbox in the Permission item displayed at the bottom of the Member info tab located to the right of the member list.
+3. Click the more (•••) button on the right of the member list, and then click **Edit member information**.
 
-   .. figure:: resources/en_manage-company-member-permission.png
-      :alt: Company Manager Permission
+   .. figure:: resources/edit-member-info-more.png
+      :alt: Manage members > Edit member information
       :width: 700px
 
 
-4. Click the **Save** button.
+4. In the **Edit member information** pop-up, tick **Manage company** in **Permission** at the bottom.
+
+   .. figure:: resources/en_manage-company-member-permission.png
+      :alt: Company Manager Permission
+      :width: 400px
+
+5. Click the **Save** button.
 
 
 **Granting the Company Manager Permission in the Manage company > Manage permissions menu**
@@ -475,14 +481,19 @@ The template manager permission can be granted in the **Manage members** menu or
 
 2. Select the member in the member list you want to grant the permission.
 
-3. Tick the **Manage templates** checkbox in the Permission item displayed at the bottom of the Member info tab to the right of the member list.
+3. Click the more (•••) button on the right of the member list, and then click **Edit member information**.
 
-   .. figure:: resources/en_granted-template-manager-permission.png
-      :alt: Company Manager Permission
+   .. figure:: resources/edit-member-info-more.png
+      :alt: Manage members > Edit member information
       :width: 700px
 
+4. In the **Edit member information** pop-up, tick **Manage templates** in **Permission** at the bottom.
 
-4. Click the **Save** button.
+   .. figure:: resources/en_granted-template-manager-permission.png
+      :alt: Template Manager Permission
+      :width: 400px
+
+5. Click the **Save** button.
 
 .. _permissionsfortemplate:
 
@@ -709,11 +720,10 @@ You can invite members to your company or manage invited members in the **Manage
    You can view the list of members invited to the company and their information.
 
 **④ Member list**
-   You can view, edit, or delete the information of a member by selecting a member in the member list and then going to the Member
-   info tab on the right.
+   You can view the list of members and their information. To edit a member's information, click the more (•••) button of the member.
 
 **⑤ Member info**
-   You can view the member information, change the member status, and grant permissions including Manage company and Manage templates to members.
+   You can view the member information, edit the member's groups, change the member status, and grant permissions including Manage company and Manage templates to members.
 
 **⑥ Field value settings**
    You can set the field values that are related to members.
@@ -736,13 +746,54 @@ You can invite members to your company or manage invited members in the **Manage
       If an invited person does not accept the invitation within 7 days, then you must reinvite the person. 
 
 **⑪ Download member list**
-   Download the list of members that belong to the company in CVS format.
+   Download the list of members that belong to the company in CSV format.
 
 **⑫ Delete**
    When you click the Trash icon, a checkbox will be activated next to each member in the member list. Tick the members you want to delete and click the Delete button.
 
+**⑬ Advanced search**
+   Click **Advanced** next to the search box, select the item you want to search by, and enter a keyword to search for members.
+
+**⑭ Column settings**
+   Click the column icon at the top right of the member list to select the items to be displayed in the list.
+
+   -    Available items: Department, Position, ID, Email, Mobile, Telephone, Groups, Permission
+
+   .. figure:: resources/manage-member-column.png
+      :alt: Manage members > Column settings
+      :width: 100px
 
 
+Editing a Member's Groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can view and edit a member's groups in the **Edit member information** pop-up.
+
+1. Go to the **Manage company > Manage members** menu.
+
+2. Click the more (•••) button of the member whose groups you want to edit, and then click **Edit member information**.
+
+3. In the **Groups** section of the pop-up, click **Add groups**.
+
+   .. figure:: resources/member-edit-group-add.png
+      :alt: Edit member information - Add groups
+      :width: 500px
+
+4. In the **Add groups** pop-up, search for and select a group, and then click **OK**.
+
+   .. figure:: resources/member-group-add-popup.png
+      :alt: Add groups pop-up
+      :width: 500px
+
+5. Check the group added to the group list, and click **Save**. To remove the member from a group, click **X** next to the group name, and click **Save**.
+
+   .. figure:: resources/member-edit-group-save.png
+      :alt: Edit member information - Save
+      :width: 500px
+
+.. note::
+
+   For members who declined the invitation or whose invitation has expired, you can only remove groups.
 
 Manage Groups
 ~~~~~~~~~~~~~~~
@@ -759,6 +810,10 @@ You can create groups in the company and view, edit, or delete each group's info
 
 **② Member list**
    You can view the list of the members in the group and can add or remove members from the group.
+
+.. note::
+
+   You can also edit a member's groups in **Manage company > Manage members > Edit member information**.
 
 **③ Field value settings**
    You can set the field values that are related to the group.

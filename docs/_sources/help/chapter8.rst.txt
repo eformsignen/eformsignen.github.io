@@ -458,6 +458,45 @@ Export to CSV file
       :width: 700px
 
 
+.. _reminder_list:
+
+Reminders List
+~~~~~~~~~~~~~~~
+
+You can view all the reminders set in the Completed inbox at once in the **Reminders list** and edit, delete, or set them again depending on their status.
+
+1. Go to the **Completed** inbox.
+
+2. Click the reminders list icon (|image23|) at the top right of the screen.
+
+   .. figure:: resources/completed-reminder-list.png
+         :alt: Completed inbox - Reminders list
+         :width: 600px
+
+3. In the **Reminders list** pop-up, select the reminder status (Scheduled or Sent) and the period.
+
+   .. figure:: resources/reminder-list-status.png
+         :alt: Reminders list - Status
+         :width: 500px
+
+4. For a scheduled reminder, click **Edit** to change the reminder settings or click **Delete** to delete the reminder.
+
+   .. figure:: resources/reminder-list-scheduled.png
+         :alt: Reminders list - Scheduled
+         :width: 500px
+
+5. For a sent reminder, click **Set again** to set a reminder for the same document again.
+
+   .. figure:: resources/reminder-list-done.png
+         :alt: Reminders list - Sent
+         :width: 500px
+
+
+.. note::
+
+   - The list shows the Reminder date and time, Reminder recipient, and Last updated on of each reminder. Reminders due within 30 days also show the remaining days (e.g. 1 day(s) remaining), and repeating reminders show their progress (e.g. 2 of 5 sent).
+
+   - You cannot set a reminder again if the same document already has a scheduled reminder.
 
 
 
@@ -742,3 +781,6 @@ In the **Trash** inbox, you can view the list of deleted documents that are not 
    :width: 35px
 .. |image22| image:: resources/download_icon1.png
    :width: 90px
+
+.. |image23| image:: resources/reminder-list-icon.png
+   :width: 25px   
